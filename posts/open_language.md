@@ -18,8 +18,9 @@
   - [Technology](#technology)
     - [Smart speakers](#smart-speakers)
     - [Unmanned stores](#unmanned-stores)
-  - [Service](#service)
+  - [Life](#life)
     - [Emergency response](#emergency-response)
+    - [Last-minute shopping](#last-minute-shopping)
 
 周计划
 
@@ -1025,7 +1026,7 @@
 
 - 是`convenience store`，不是`convenient store`。
 
-## Service
+## Life
 
 ### Emergency response
 
@@ -1100,3 +1101,39 @@
     - 担心秃顶。
   - `In an effort to go green, Starbucks recently announced that ...`
     - 为实现环保
+
+### Last-minute shopping
+
+```markdown
+1. What's been the highlight of your trip to San Francisco?
+2. Either driving ... or exploring ...
+1. Nice. Those are touristy spots but definitely worth checking out. Did you pick up any souvenirs?
+2. No! I totally forgot. And my flight leaves in 6 hours.
+1. That's so typical. You're always putting things off until later.
+   > 你就是这样。总拖延。
+```
+
+- touristy
+  - 游客很多的
+- souvenirs
+  - 纪念品
+- last-minute
+  - 最后一刻的
+- put things off
+  - 拖延
+
+```markdown
+1. Should I go to xxx?
+2. Nah, that place is a tourist trap. It's all chain restaurants.
+   > 那地方是一个旅游陷阱。都是连锁餐厅。
+1. What about that trendy area by your place? It has a lot of boutiques.
+   > 你家附近那个时尚街区怎么样？那儿有很多精品店。
+2. That's an idea, but it's a bit far.
+```
+
+- trendy
+  - 时尚的，时髦的
+- boutique
+  - 精品店，专卖店
+- duty-free
+  - 免税店
