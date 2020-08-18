@@ -62,6 +62,7 @@ conda install pkg_name -y  # 默认yes。注意要先进入环境
 
 - 一直在solving：删除除`defaults`外所有channels。
 - 超时：删除`defaults`，并把`https`都改为`http`。
+- `CondaVerificationError`：`conda clean --all`
 
 ## Pip
 
