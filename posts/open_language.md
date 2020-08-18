@@ -1117,8 +1117,10 @@
   - 游客很多的
 - souvenirs
   - 纪念品
+  - 法语发音
 - last-minute
   - 最后一刻的
+  - `last-minute shopping/decision/cancellation`
 - put things off
   - 拖延
 
@@ -1131,9 +1133,18 @@
 2. That's an idea, but it's a bit far.
 ```
 
+- chain
+  - 连锁
+  - `coffee/clothing chain`
 - trendy
   - 时尚的，时髦的
+  - 比`fashionable`更常用
+  - `trendy bar/restaurant`
 - boutique
   - 精品店，专卖店
+  - fancy store
+  - 法语发音
 - duty-free
   - 免税店
+  - 可以不说`store`。
+  - 赋税：`pay the duty`

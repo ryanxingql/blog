@@ -18,6 +18,7 @@
     - [单词剖析](#单词剖析)
     - [常见问题](#常见问题)
   - [IELTS vocab (learning)](#ielts-vocab-learning)
+  - [Others](#others)
 
 ## 写作专栏
 
@@ -110,6 +111,10 @@
   - `Mason kicks it off by saying "Laura you..."`
     - 在对话开头，Mason说……
   - `Today's dialogue kicks off with a probably not very happy customer calling her bank.`
+- You can always ...
+  - 加上`always`，表示更礼貌的建议。可以说`could always ...`
+  - 如果你的朋友没有地方住，你可以说：`You can always sleep on my couch.`
+  - `You could always shop at the duty-free.`
 
 ## 词语剖析
 
@@ -199,3 +204,8 @@
   - `The government is a hierarchy.`
   - `Wisdom and emotional intelligence seem pretty high on the hierarchy of needs.`  
     智商和情商看上去是更高层次的需求。
+
+## Others
+
+- `Mike was talking about the places that he went to in SF.`
+  - 别忘了`to`。
