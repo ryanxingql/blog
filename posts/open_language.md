@@ -21,6 +21,7 @@
   - [Life](#life)
     - [Emergency response](#emergency-response)
     - [Last-minute shopping](#last-minute-shopping)
+    - [Going on a blind date](#going-on-a-blind-date)
 
 周计划
 
@@ -1148,3 +1149,54 @@
   - 免税店
   - 可以不说`store`。
   - 赋税：`pay the duty`
+
+**Others**
+
+- sales tax
+  - 消费税
+
+### Going on a blind date
+
+```markdown
+1. Have you been seeing anyone lately?
+2. Nah. I've been enjoying the dating scene since I broke up with Lindsay.
+   > 我蛮享受这种自由约会的状态。
+```
+
+- seeing
+  - 交往
+- dating scene
+  - 约会场合
+
+```markdown
+1. In that case, I've got a single friend I think you'd like.
+2. Oh, so you want to set me up on a blind date, do you?
+   > 所以你想安排我相亲？
+1. Yep, you deserve someone special! I can show you a picture if it helps.
+```
+
+- blind date
+  - 由他人安排的初次约会
+
+```markdown
+2. Okay, sure, but what's she like? I'm not picky, but I do have a type.
+   > 我有自己喜欢的类型。
+1. She's super easygoing and has a great sense of humor.
+2. That does sound like my type, but Lindsay and I were good on paper and it still didn't work out.
+1. Honestly, I think you guys would really click. Plus, you don't have to commit to anything yet.
+2. Alright, I'll give it a shot.
+1. Great! I will let her know.
+```
+
+- picky
+  - 挑剔的
+- easygoing
+  - 好相处的
+- on paper
+  - 理论上
+- click
+  - 合得来
+- commit
+  - 承诺，许诺
+- give it a shot
+  - 试试看
