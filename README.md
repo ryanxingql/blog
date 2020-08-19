@@ -41,6 +41,7 @@ Welcome to my blog. My page: https://ryanxingql.github.io/
 - [PYCHARM](https://github.com/RyanXingQL/Blog/blob/master/posts/pycharm.md)
 
 - [PYTHON](https://github.com/RyanXingQL/Blog/blob/master/posts/python.md)
+  - [PYTHON UTILS](https://github.com/RyanXingQL/Blog/blob/master/posts/python_utils.py)
   - [读书笔记：《Python编程：从入门到实践》](https://drive.google.com/drive/folders/1UU703I_zM1pPx5UVzIVLSN8NZwqxo5Tf?usp=sharing)
 
 - [PYTORCH](https://github.com/RyanXingQL/Blog/blob/master/posts/PyTorch.md)
