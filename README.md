@@ -4,6 +4,7 @@
   - [论文速览](#论文速览)
   - [Tools and Softwares](#tools-and-softwares)
   - [Others](#others)
+  - [Note](#note)
 
 Welcome to my blog. My page: https://ryanxingql.github.io/
 
@@ -61,30 +62,32 @@ Welcome to my blog. My page: https://ryanxingql.github.io/
 - [ENGLISH](https://github.com/RyanXingQL/Blog/blob/master/posts/english.md)
   - [OPEN LANGUAGE](https://github.com/RyanXingQL/Blog/blob/master/posts/open_language.md)
 
-- **Flow**
-  - Blog
-    - 尽量纯文本，本地编辑，同步GitHub。
-    - 多图文档，存为PDF，放到Drive共享。可避免存多图。
-  - Read
-    - arXiv找到最新版，下载PDF。
-    - 拖入zotero。以项目为分类，允许一文件多项目。这样可避免分类困局。
-    - 在Acrobat内开启注释功能，阅读并做笔记。
-    - 在zotero添加一句话概括，添加完善的标签以便后续检索。
-  - Work
-    - 在`gitzone`建立项目仓库。注意代码和数据、模型隔离（`.gitignore`）。
-    - 远程同步`gitzone`。
-    - 用VSCode远程调试。
-    - 用tmux远程跑代码。
-    - 一切完成，远程同步至GitHub，再同步至本地保存。
-
 - [PAPERS](https://github.com/RyanXingQL/Blog/blob/master/posts/papers.md)
 
 - [READING](https://github.com/RyanXingQL/Blog/blob/master/posts/reading.md)
+
+- [快捷键和快捷操作](https://github.com/RyanXingQL/Blog/blob/master/posts/shortcuts.md)
+
+- [论文和PPT美工](https://drive.google.com/drive/folders/1UU703I_zM1pPx5UVzIVLSN8NZwqxo5Tf?usp=sharing)
 
 - **北航电子信息课程笔记**
   - [本科专业课](https://drive.google.com/drive/folders/1UU703I_zM1pPx5UVzIVLSN8NZwqxo5Tf?usp=sharing)：其中图像处理、嵌入式、微机原理的笔记自认为非常好，能帮学弟学妹们期末快速涨分。
   - [研究生课程](https://drive.google.com/drive/folders/1UU703I_zM1pPx5UVzIVLSN8NZwqxo5Tf?usp=sharing)：其中网络安全、泛函分析、算法设计的笔记自认为不错。
 
-- [快捷键和快捷操作](https://github.com/RyanXingQL/Blog/blob/master/posts/shortcuts.md)
+## Note
 
-- [论文和PPT美工](https://drive.google.com/drive/folders/1UU703I_zM1pPx5UVzIVLSN8NZwqxo5Tf?usp=sharing)
+- **Flow**
+  - Blog
+    - 尽量纯文本，方便GitHub同步。
+    - 多图文档，应存为PDF，放到Drive共享。Markdown和图保存在本地。
+    - 标题全大写，文中标题首字母大写，网址小写。
+  - Read
+    - arXiv找到最新版，下载PDF。
+    - 在Acrobat内开启注释功能，阅读并做笔记。
+    - 一句话总结，记录在博文Papers里。分类为项目。
+  - Work
+    - 在`gitzone`建立项目仓库。注意代码和数据（包括模型）隔离，用`.gitignore`注明。
+    - GitHub同步`gitzone`。
+    - 用VSCode-Remote远程调试。
+    - 用tmux远程跑代码。
+    - 一切完成，远程同步至GitHub，再同步至本地保存。
