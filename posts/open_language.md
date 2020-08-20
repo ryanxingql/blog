@@ -1165,8 +1165,12 @@
 
 - seeing
   - 交往
+  - 一般用进行时。
+    - `Are you seeing anyone?`
+    - `How long has she been seeing him?`
 - dating scene
   - 约会场合
+  - `I personally don't really go to clubs very much because clubs are not really my scene.`
 
 ```markdown
 1. In that case, I've got a single friend I think you'd like.
@@ -1175,8 +1179,12 @@
 1. Yep, you deserve someone special! I can show you a picture if it helps.
 ```
 
+- set sb up with
+  - `I could set you up with my friend.`
+  - `I could set you up with a job.`
 - blind date
   - 由他人安排的初次约会
+  - `Oh, the sun was blinding. I can't see.`
 
 ```markdown
 2. Okay, sure, but what's she like? I'm not picky, but I do have a type.
@@ -1188,15 +1196,26 @@
 1. Great! I will let her know.
 ```
 
+- type
+  - `He's totally her type.`
 - picky
   - 挑剔的
+  - picky about sth
 - easygoing
   - 好相处的
+- sense
+  - `sense of direction`
 - on paper
   - 理论上
+  - `He looks good on paper.`：简历看着不错。
+- work out
 - click
+  - get along well
   - 合得来
+  - 同义：`We have chemistry.`
 - commit
   - 承诺，许诺
+  - commit to sth
+  - `Getting a dog/getting married is a big commitment.`
 - give it a shot
   - 试试看
