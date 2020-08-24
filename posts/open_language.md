@@ -18,10 +18,12 @@
   - [Technology](#technology)
     - [Smart speakers](#smart-speakers)
     - [Unmanned stores](#unmanned-stores)
+    - [Deepfakes](#deepfakes)
   - [Life](#life)
     - [Emergency response](#emergency-response)
     - [Last-minute shopping](#last-minute-shopping)
     - [Going on a blind date](#going-on-a-blind-date)
+    - [Love at first sight](#love-at-first-sight)
 
 周计划
 
@@ -1027,6 +1029,61 @@
 
 - 是`convenience store`，不是`convenient store`。
 
+### Deepfakes
+
+- deepfakes
+  - compound word
+
+```markdown
+1. I keep seeing this word deepfake everywhere. What on earth is a deepfake?
+2. It's a realistic simulation generated using AI.
+```
+
+- What on earth ...
+- realistic
+  - 逼真的
+- simulation
+  - `flight simulator game`
+
+```markdown
+1. That's terrifying! How will we be able to tell them apart from the real thing?
+2. Well, deepfakes might deceive us a bit at first. But think of the benefits!
+   > 它也有可取之处！
+1. Apart from having more amusing videos, I can't really see any potential upside here.
+2. Well, think education: Imaging going to a museum and interacting with Da Vinci!
+1. I'm not sure that would be worth the risk of potential abuse.
+2. Okay well what about in medicine?
+1. That seems more appropriate, but I still think this opens a huge can of worms.
+2. You need to have more faith in humanity!
+   > 你要对人性更有信心！
+```
+
+- tell them apart
+  - 区分
+- apart from ...
+  - `It's not a terrible job apart from the low salary.`
+- deceive
+  - 欺骗
+  - 比`lie`更正式。可能是一种trick。
+  - `Salesmen can be very deceptive.`
+- upside
+  - 优点，好处
+  - downside
+- potential
+  - `A plan could be potentially dangerous.`
+  - `a potential customer`
+- abuse
+  - v, [n,sing.]
+  - 动词是`/z/`，名词是`/s/`
+  - 滥用
+  - abuse alcohol
+  - abusive relationships：可能是心理或身体上的
+- can of worm
+  - 极为麻烦的局面
+  - `let sleeping dogs lie`
+- humanity
+  - 人性
+
 ## Life
 
 ### Emergency response
@@ -1219,3 +1276,36 @@
   - `Getting a dog/getting married is a big commitment.`
 - give it a shot
   - 试试看
+
+### Love at first sight
+
+```markdown
+1. Do you believe in love at first sight, Jen?
+2. Personally, I've always thought the idea was a bit far-fetched.
+1. Really? You've never experienced it? What about with your husband?
+2. We hit it off, sure. But there was no spark. He just grew on me over time.
+1. Not with my wife and me. When I first saw her, there was an instant attraction.
+2. It could be because of outcome bias, meaning that because you guys are in a healthy long-term relationship now, you believe that it was great from the get-go.
+   > 可能是结果带来的偏见，即因为你们已经有很健康的长期关系，因此你觉得从一开始就很好。
+1. If that's the case, then you should feel the same way, right?
+   > 你也应该有相同的感觉吧（结果偏见）？
+2. I'm not sure. I actually read a study that said men reported they experienced love at the first sight more than women.
+1. I wonder if that includes your husband.
+   > 说不定这些男性也包括你的丈夫。
+```
+
+- love at first sight
+  - 一见钟情
+- far-fetched
+  - 牵强的
+- hit it off
+  - 一拍即合，投缘
+  - click?
+- spark
+  - 火花
+- grow on me
+  - 让我逐渐喜欢
+- instant
+  - 立即的
+- from the get-go
+  - 从一开始
