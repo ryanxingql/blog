@@ -390,8 +390,7 @@ def import_yuv_v1(video_path, startfrm, nfs, height_frame=0,
 
 def import_y_v1(video_path, height_frame, width_frame, nfs,
         startfrm, opt_bar=False, opt_clear=False):
-    """Wasted.
-    import Y channel from a yuv 420p video.
+    """Import Y channel from a yuv 420p video.
     startfrm: start from 0
     return: y_batch, (nfs * height * width), dtype=uint8
     """
@@ -427,8 +426,7 @@ def import_y_v1(video_path, height_frame, width_frame, nfs,
 
 
 def calculate_psnr_v1(img1, img2, data_range=1.):
-    """Wasted.
-    Calculate PSNR (Peak Signal-to-Noise Ratio).
+    """Calculate PSNR (Peak Signal-to-Noise Ratio).
 
     Args:
         img1 (ndarray): Input image 1/2 with type of np.float32 and range of 
@@ -462,8 +460,7 @@ def calculate_psnr_v1(img1, img2, data_range=1.):
 
 
 def calculate_mse_v1(img1, img2):
-    """Wasted.
-    Calculate MSE (Mean Square Error).
+    """Calculate MSE (Mean Square Error).
     
     Args:
         img1 (ndarray): Input image 1/2 with type of np.float32.
