@@ -1340,15 +1340,27 @@
   - 极其兴奋的
 - playdate
   - 和小朋友玩
+  - 通常是父母安排小朋友在某地聚会，如娱乐园
+- amuse
+  - `She would probably be pretty amused because the park is really amusing.`
+- nostalgic
+  - `They're quite nostalgic for me.`
+  - `How nostalgic!`
+- sleepover
+  - v., n.
+  - 过夜的晚会
+  - 用于小朋友
 - carefree
   - 无忧无虑的
 - envy
   - v.
   - 羡慕
+  - envy sb
 - all fun and games
   - 轻松愉快、快乐玩耍
 - tag
   - 捉人游戏
+  - I touch you, and you're it.
 
 ```markdown
 1. The bulk of their time is spent studying.
@@ -1363,9 +1375,15 @@
   - 课业压力
 - bulk
   - 大部分
+- tiger mom
+  - 虎妈
 - overbearing
   - 强势的，严格的
 - free-range parenting
   - 自由散养教育
+  - 反义是helicopter parenting，走哪儿跟哪儿
+- I've notice
+  - I have been told
+  - I've seen/heard
 - do as they please
   - 做他们喜欢的事
