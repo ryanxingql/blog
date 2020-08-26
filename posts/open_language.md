@@ -24,6 +24,7 @@
     - [Last-minute shopping](#last-minute-shopping)
     - [Going on a blind date](#going-on-a-blind-date)
     - [Love at first sight](#love-at-first-sight)
+    - [Childhood memories](#childhood-memories)
 
 周计划
 
@@ -1301,11 +1302,70 @@
 - hit it off
   - 一拍即合，投缘
   - click?
+  - get along really well
+  - `They met, they hit it off and sparks flew.`
 - spark
   - 火花
 - grow on me
   - 让我逐渐喜欢
+  - `You grow on me.`
 - instant
   - 立即的
+- outcome bias
+  - 事后回头看，会有偏见。因为结果影响了判断。
+- bias
+  - n, v.
+  - kind of the prejudice.
+  - `I have a bias against sth.`
+  - `gender bias`
+    - 类似性别歧视
+  - `I am biased against sth.`
 - from the get-go
   - 从一开始
+  - from the beginning
+  - `Adam's always been ready from the get-go.`
+
+### Childhood memories
+
+```markdown
+1. It's Children's Day tomorrow! I bet your kids are ecstatic!
+2. They certainly are! Tomorrow, they have a school performance and a playdate at the amusement park.
+   > 明天，学校有演出，还会去游乐园和其他小朋友玩。
+1. How nostalgic! I remember being that age. I played sports outdoors and had sleepovers with friends. Life was so much more carefree!
+   > 好怀念啊！
+2. I envy you! I played tag. My childhood wasn't all fun and games, though.
+```
+
+- ecstatic
+  - 极其兴奋的
+- playdate
+  - 和小朋友玩
+- carefree
+  - 无忧无虑的
+- envy
+  - v.
+  - 羡慕
+- all fun and games
+  - 轻松愉快、快乐玩耍
+- tag
+  - 捉人游戏
+
+```markdown
+1. The bulk of their time is spent studying.
+2. For sure. We also have a lot of tiger moms who can be pretty overbearing.
+1. So I've noticed. Thankfully, my parents preferred free-range parenting.
+   > 我也发现了。
+2. It's nice to let the kids do as they please.
+1. Definitely. The breaks are important. It's good to have Children's Day.
+```
+
+- academic pressure
+  - 课业压力
+- bulk
+  - 大部分
+- overbearing
+  - 强势的，严格的
+- free-range parenting
+  - 自由散养教育
+- do as they please
+  - 做他们喜欢的事

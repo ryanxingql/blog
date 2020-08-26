@@ -101,6 +101,9 @@
 
 ### 其余固定搭配
 
+- at first glance
+  - at first blush
+  - 注意没有the
 - colloquial pattern
   - 口语句式
   - `This colloquial pattern is used to ask somebody about ...`
