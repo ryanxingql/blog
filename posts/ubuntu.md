@@ -133,11 +133,11 @@ sudo umount /media/usr/DiskName
   - 手动下载v2ray内核，转移到`~/snap/qv2ray/2729/`，按要求解压为`vcore/`。检查核心设置，通过。注意不要sudo！！！
   - 在操作界面中将服务器导入。
   - Network中设为手动，Firefox中设为系统proxy即可。
-  - Chrome要下载SwitchOmega，记得改端口号。
+  - Chrome要下载[SwitchOmega](https://github.com/FelisCatus/SwitchyOmega/releases)，记得改端口号。
 - ss（失败）
   - 先买了一个Vultr服务器：https://www.vultrblog.com/vultr-ss.html
   - 其中一键ssserver脚本用的是：https://github.com/dlxg/shadowsocks_install
-  - ubuntu上安装sslocal，写json，命令行即可开启。[教程](codetd.com/article/1790848)
+  - ubuntu上安装sslocal，写json，命令行即可开启。[教程](http://codetd.com/article/1790848)
   - 设置里修改Network协议和端口。
   - 注意这是全局的。未考虑分流。
   - 常用指令
