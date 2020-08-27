@@ -34,7 +34,6 @@ echo "hello world!" > README.md
   > Ubuntu有很多工具可以与APT进行交互，其中`apt`、`apt-cache`、`apt-get`等广受欢迎。  
   > `apt`是后者的大一统（虽然没有完全向下兼容），也是趋势。尽量使用`apt`，已经涵盖了`apt-get`的基础功能。
 
-
 ## 硬盘
 
 挂载硬盘
@@ -119,6 +118,36 @@ sudo umount /media/usr/DiskName
 7. 选择上海时区。用户名和计算机名字任意，但提醒一点：计算机名字不要太长。因为在terminal中，计算机名会出现在`bash`的每一行命令之前。如果计算机名太长，会导致命令很长。
 8. 等待。安装过程有点漫长，可能在20分钟左右。
 9. [更换Ubuntu的软件源](https://blog.csdn.net/baidu_36602427/article/details/86551862)。
+
+然后安装必要软件：
+- [拼音](https://blog.csdn.net/wu10188/article/details/86540464)
+  - win+空格切换
+- pip3: `sudo apt install python3-pip`
+- git
+- ssh
+- tmux
+- vim
+- q2ray
+  - 参考：[教程](https://medium.com/@eleveninstrangerthings/%E5%9C%A8ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85%E5%9B%BE%E5%BD%A2%E5%8C%96v2ray%E5%AE%A2%E6%88%B7%E7%AB%AFqv2ray-d0f690b7c519)
+  - 用snap安装：`sudo snap install qv2ray`
+  - 手动下载v2ray内核，转移到`~/snap/qv2ray/2729/`，按要求解压为`vcore/`。检查核心设置，通过。注意不要sudo！！！
+  - 在操作界面中将服务器导入。
+  - Network中设为手动，Firefox中设为系统proxy即可。
+  - Chrome要下载SwitchOmega，记得改端口号。
+- ss（失败）
+  - 先买了一个Vultr服务器：https://www.vultrblog.com/vultr-ss.html
+  - 其中一键ssserver脚本用的是：https://github.com/dlxg/shadowsocks_install
+  - ubuntu上安装sslocal，写json，命令行即可开启。[教程](codetd.com/article/1790848)
+  - 设置里修改Network协议和端口。
+  - 注意这是全局的。未考虑分流。
+  - 常用指令
+    - 可能要sudo，否则会报错。
+    - `sudo sslocal -c ss.json -d start`
+      - 后端启动，无任何信息。
+    - `sudo sslocal -c ss.json -d stop`
+    - `sudo sslocal -c ss.json`
+      - 前端启动，有日志。
+    - `sslocal -c xxx.xxx.xxx.xxx -p 2020 -k xxxx -b 127.0.0.1 -l 10808`
 
 ## 其他
 
