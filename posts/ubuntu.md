@@ -8,6 +8,8 @@
     - [查询](#查询)
     - [编辑](#编辑)
     - [安装](#安装)
+      - [装系统](#装系统)
+      - [安装必要软件：](#安装必要软件)
   - [其他](#其他)
 
 ## 文件
@@ -84,6 +86,8 @@ sudo umount /media/usr/DiskName
 
 ### 安装
 
+#### 装系统
+
 以Ubuntu 18.04 LTS为例。
 
 想看图片的可以参考：[教程](https://blog.csdn.net/baidu_36602427/article/details/86548203#commentBox)
@@ -119,14 +123,16 @@ sudo umount /media/usr/DiskName
 8. 等待。安装过程有点漫长，可能在20分钟左右。
 9. [更换Ubuntu的软件源](https://blog.csdn.net/baidu_36602427/article/details/86551862)。
 
-然后安装必要软件：
+#### 安装必要软件：
+
 - [拼音](https://blog.csdn.net/wu10188/article/details/86540464)
-  - win+空格切换
+  - 切换：win+空格，或shift
 - pip3: `sudo apt install python3-pip`
 - git
 - ssh
 - tmux
 - vim
+- vscode
 - anaconda3
   - 记得`export PATH`
 - q2ray
