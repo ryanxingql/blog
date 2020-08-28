@@ -127,6 +127,8 @@ sudo umount /media/usr/DiskName
 - ssh
 - tmux
 - vim
+- anaconda3
+  - 记得`export PATH`
 - q2ray
   - 参考：[教程](https://medium.com/@eleveninstrangerthings/%E5%9C%A8ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85%E5%9B%BE%E5%BD%A2%E5%8C%96v2ray%E5%AE%A2%E6%88%B7%E7%AB%AFqv2ray-d0f690b7c519)
   - 用snap安装：`sudo snap install qv2ray`

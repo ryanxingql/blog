@@ -25,6 +25,8 @@
     - [Going on a blind date](#going-on-a-blind-date)
     - [Love at first sight](#love-at-first-sight)
     - [Childhood memories](#childhood-memories)
+  - [Amusement](#amusement)
+    - [Mobile games](#mobile-games)
 
 周计划
 
@@ -1375,6 +1377,7 @@
   - 课业压力
 - bulk
   - 大部分
+  - `I usually buy paper in bulk since it's much cheaper when you buy large quantities.`
 - tiger mom
   - 虎妈
 - overbearing
@@ -1387,3 +1390,39 @@
   - I've seen/heard
 - do as they please
   - 做他们喜欢的事
+
+## Amusement
+
+### Mobile games
+
+```markdown
+1. A lot of companies are recycling their old titles these days.
+   > 很多公司都在翻新之前的老游戏。
+```
+
+```markdown
+1. "Honor of Kings" is so crazy popular in China. They've also made a game assistant, which has in turn also become crazy popular.
+2. You guys are serious about your gaming!
+   > 中国人真爱手游！
+1. We are! Even my mother is addicted to playing "Happy Mahjong".
+2. It seems like a lot of these games are steeped in Chinese traditions and culture. I'm not really sure they'd be my thing.
+   > 好像这些都和中国传统文化密不可分。我不确定是否适合我。
+```
+
+- in turn
+  - 对应地
+- steep in
+  - 沉浸于
+- my thing
+  - 适合我的东西
+- racing
+  - 赛车
+
+```markdown
+1. Do you play Tetris?
+2. You've got to be kidding me. At least try something more current.
+   > 至少玩些现代的吧。
+1. Tetrics is a classic. I just need something to kill time on my commute.
+2. Ok. Point taken.
+   > 有道理。
+```
