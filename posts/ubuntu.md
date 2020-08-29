@@ -59,8 +59,9 @@ echo "hello world!" > README.md
   - 用snap安装：`sudo snap install qv2ray`
   - 手动下载v2ray内核，转移到`~/snap/qv2ray/2729/`，按要求解压为`vcore/`。检查核心设置，通过。注意不要sudo！！！
   - 在操作界面中将服务器导入。
-  - Network中设为手动，Firefox中设为系统proxy即可。
+  - Firefox中设为系统proxy即可。
   - Chrome要下载[SwitchOmega](https://github.com/FelisCatus/SwitchyOmega/releases)，记得改端口号。
+  - 系统Network设置貌似不需要动。如果你选择q2ray的系统代理->禁用，network proxy会自动off，反之，会自动manual，甚至端口号都设置好了。
 - ss（失败）
   - 先买了一个Vultr服务器：https://www.vultrblog.com/vultr-ss.html
   - 其中一键ssserver脚本用的是：https://github.com/dlxg/shadowsocks_install

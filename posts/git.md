@@ -42,7 +42,7 @@ git push -u origin master
 
 如果经常访问一个地址，建议彼此之间保存公私钥。
 
-- 首先编辑`C:\Users\xxx\.ssh\config`
+- 首先在本地编辑`C:\Users\xxx\.ssh\config`或`~/.ssh/config`（没有就新建）：
   
   ```jason
   Host xxx
@@ -50,10 +50,16 @@ git push -u origin master
     User xx
   IdentityFile C:\Users\xxx\.ssh\id_rsa
   ```
+
+  最后一行指定了本地的私钥位置。会自动发送给服务器，和以下的公钥合作，以识别身份。
+- 然后将本地公钥`id_rsa.pub`传到服务器的`~/.ssh/`路径下：
   
-  即指定了本地的私钥位置。
-- 然后将公钥`id_rsa.pub`传到服务器的`~/.ssh/`路径下。
-- 执行：`cat x1c.pub >> authorized_keys`，即将公钥加入可信列表。
+  ```bash
+  $ scp id_rsa.pub xxx:~/.ssh/hello.pub
+  ```
+  
+  一定要改名！！！不要覆盖了服务器的`id_ras.pub`！
+- 在服务器执行：`cat hello.pub >> authorized_keys`，即将公钥加入可信列表。
 
 今后，直接`ssh xxx`，就可以免密登录啦！
 
