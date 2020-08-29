@@ -1411,18 +1411,41 @@
 
 - in turn
   - 对应地
+  - 要么是时间顺序，要么是逻辑顺序。这里是逻辑顺序，表示因果。
+  - `Each of us takes a break in turn.`
+- addict
+  - `I have a addiction to coffee.`
+  - `I am addicted to coffee.`
 - steep in
   - 沉浸于
+  - 效果是soaked
+  - super connected
 - my thing
   - 适合我的东西
-- racing
-  - 赛车
+  - my cup of tea
+  - 或者表示是我擅长的
+  - `Basketball is not really my thing.`
 
 ```markdown
 1. Do you play Tetris?
 2. You've got to be kidding me. At least try something more current.
    > 至少玩些现代的吧。
-1. Tetrics is a classic. I just need something to kill time on my commute.
+1. Tetris is a classic. I just need something to kill time on my commute.
 2. Ok. Point taken.
    > 有道理。
 ```
+
+- commute
+  - v., n.
+  - `How long is your commute?`
+  - `My commute is two hours.`
+- Point taken.
+  - I take your point.
+  - I see your point.
+
+**Others**
+
+- racing
+  - 赛车
+- Tetris
+  - 俄罗斯方块
