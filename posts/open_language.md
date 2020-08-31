@@ -25,6 +25,7 @@
     - [Going on a blind date](#going-on-a-blind-date)
     - [Love at first sight](#love-at-first-sight)
     - [Childhood memories](#childhood-memories)
+    - [Love lives and nosy relatives](#love-lives-and-nosy-relatives)
   - [Amusement](#amusement)
     - [Mobile games](#mobile-games)
 
@@ -1391,9 +1392,62 @@
 - do as they please
   - 做他们喜欢的事
 
+### Love lives and nosy relatives
+
+**Words & Phrases**
+
+- nosy
+  - 好管闲事的
+- love life
+  - 情感生活
+- brainy
+  - 有头脑的
+- left behind
+  - 遗留
+- ease up
+  - 放松
+- narrow-minded
+  - 目光短浅的
+- match
+  - 对象
+
+**Pattern**
+
+- 我近期没有结婚的打算。
+  - `I'm not looking to get married any time soon.`
+- 但时间不等人呀。
+  - `But the clock is ticking.`
+- 你不会想被剩下的。
+  - `You don't want to get left behind.`
+- 哦，放松点，不要对她这么紧张。她这么漂亮，肯定找得到对象。
+  - `Oh ease up on her. A girl as beautiful as her won't have any problems finding a match.`
+- 我们会安排你相亲。
+  - `We can set you two up.`
+- 我对相亲没有兴趣
+  - `I'm not interested in blind dates.`
+- 谁说是相亲？只是让你们聊天，看看情况。
+  - `Who said anything about a blind date? We'll just get together for a chat and see where it goes from there.`
+- 我去要他电话。
+  - `I'll just go grab his number.`
+- 我知道她管太多，但她为你好。
+  - `I know she can be a little much, but she only wants what's best for you.`
+- 我希望她眼界别这么窄（开阔些）。
+  - `I just wish she could be a bit less narrow-minded.`
+- 我们这代人就是这样。
+  - `It's just the way our generation is wired.`
+- 对不起，我说错了。
+  - `Sorry, that came out wrong.`
+- 遵从你的内心，我会支持你。
+  - `As long as you follow your heart, I will always have your back.`
+
 ## Amusement
 
 ### Mobile games
+
+- racing
+  - 赛车
+- Tetris
+  - 俄罗斯方块
 
 ```markdown
 1. A lot of companies are recycling their old titles these days.
@@ -1420,6 +1474,11 @@
   - 沉浸于
   - 效果是soaked
   - super connected
+  - `The best leaders are those who are steeped in their company's core culture.`
+  - `From a young age, her parents steeped her in history.`
+    - 熏陶
+  - `Our little hotel is steeped in traditional European flavor and charm.`
+    - 充满了传统欧洲风情
 - my thing
   - 适合我的东西
   - my cup of tea
@@ -1443,9 +1502,17 @@
   - I take your point.
   - I see your point.
 
-**Others**
+**Translate**
 
-- racing
-  - 赛车
-- Tetris
-  - 俄罗斯方块
+- 最近在干什么
+  - `What games are you playing these day?`
+- 我玩过
+  - `I used to play xxx.`
+- 你们真的好爱游戏！- 是的!
+  - `You guys are serious about gaming!`
+  - `We are!`
+- 和中国传统文化关系很强烈
+  - `A lot of games are steeped in Chinese traditions and culture.`
+- 我不确定是否喜欢
+  - `I'm not sure they'd be my thing.`
+  - would

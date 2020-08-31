@@ -166,6 +166,8 @@
 
 ### 常见问题
 
+- anything vs. something
+  - `I don't really need anything too complicated. I just need something to help me kill time on my commute.`
 - finally vs. eventually
   - `finally`不能用于将来，但`eventually`可以。
   - `eventually`通常指漫长的过程结束，例如大量问题或努力。
