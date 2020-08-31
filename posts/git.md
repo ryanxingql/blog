@@ -59,7 +59,13 @@ git push -u origin master
   ```
   
   一定要改名！！！不要覆盖了服务器的`id_ras.pub`！
-- 在服务器执行：`cat hello.pub >> authorized_keys`，即将公钥加入可信列表。
+- 在服务器`~/.ssh/`下执行
+  
+  ```bash
+  $ cat hello.pub >> authorized_keys
+  ```
+
+  即将公钥加入可信列表。
 
 今后，直接`ssh xxx`，就可以免密登录啦！
 
