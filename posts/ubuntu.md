@@ -165,4 +165,6 @@ sudo umount /media/usr/DiskName
 ## 其他
 
 - 停止广播：`mesg n`
-- 切换工作区：`ctrl+alt+shift+上/下`
+- 切换工作区
+  - `ctrl+alt+shift+上/下`
+  - 按`win`进入工作区视图，鼠标中键滑动可顺滑查看所有工作区。
