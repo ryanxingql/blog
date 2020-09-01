@@ -1406,10 +1406,15 @@
   - 遗留
 - ease up
   - 放松
+  - `Ease up, darling.`
+  - `Can you ease up on the amount of work?`
 - narrow-minded
   - 目光短浅的
 - match
+  - n.
   - 对象
+  - `a match made in heaven`
+    - 天作之合
 
 **Pattern**
 
@@ -1439,6 +1444,7 @@
   - `Sorry, that came out wrong.`
 - 遵从你的内心，我会支持你。
   - `As long as you follow your heart, I will always have your back.`
+    - `I got your back.`
 
 ## Amusement
 

@@ -164,4 +164,5 @@ sudo umount /media/usr/DiskName
 
 ## 其他
 
-停止广播：`mesg n`
+- 停止广播：`mesg n`
+- 切换工作区：`ctrl+alt+shift+上/下`

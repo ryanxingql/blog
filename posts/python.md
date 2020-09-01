@@ -87,7 +87,7 @@ shutil.rmtree(APath)  # 递归删除文件夹及文件
 
 ## tqdm
 
-基础用法
+**基础用法**
 
 ```python3
 from tqdm import tqdm
@@ -96,7 +96,7 @@ for i in tqdm(range(1e3)):
     pass
 ```
 
-简化
+**简化**
 
 ```python3
 from tqdm import trange
@@ -105,7 +105,7 @@ for i in trange(1e3):
     pass
 ```
 
-手动控制更新
+**手动控制更新**
 
 ```python3
 from tqdm import tqdm
@@ -115,7 +115,7 @@ with tqdm(total=1e3) as pbar:
         pbar.update(10)  # 每次更新，进度+10
 ```
 
-设置文字描述
+**设置文字描述**
 
 ```python3
 from tqdm import tqdm
@@ -125,12 +125,21 @@ for name in pbar:
     pbar.set_description("processing %s" % name)
 ```
 
-设置`pbar`属性，如宽度
+**进一步设置属性（如宽度和描述）**
 
 ```python3
+# 可以避免太宽换行显示
 tqdm(alist, ncols=80)
+
+# 可以把eta等去掉，只保留描述，百分比和bar
+with tqdm(
+    total=60*24, 
+    ncols=40, 
+    bar_format='{desc}{percentage:.1f}% |{bar}|'
+    ) as pbar:
+    pbar.update(accum_minute)
 ```
 
-可以避免太宽换行显示。
+**关闭对象**
 
 如果有多个pbar，一定要在每个pbar完成使命后`pbar.close()`，否则不换行。
