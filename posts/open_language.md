@@ -26,6 +26,7 @@
     - [Love at first sight](#love-at-first-sight)
     - [Childhood memories](#childhood-memories)
     - [Love lives and nosy relatives](#love-lives-and-nosy-relatives)
+    - [Different parenting styles](#different-parenting-styles)
   - [Amusement](#amusement)
     - [Mobile games](#mobile-games)
 
@@ -1445,6 +1446,25 @@
 - 遵从你的内心，我会支持你。
   - `As long as you follow your heart, I will always have your back.`
     - `I got your back.`
+
+### Different parenting styles
+
+**Words & Phrases**
+
+- free-range parenting
+  - 散养
+- independence
+  - 自主
+  - `We should be less protective. Let him explore and gain some independence.`
+- discipline
+  - n.
+  - 纪律，约束，控制
+  - `He needs discipline.`
+
+**Pattern**
+
+- 为什么我是唯一关心他的人？
+  - `Why is it that I'm the only person who cares about him?`
 
 ## Amusement
 
