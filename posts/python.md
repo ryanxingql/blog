@@ -170,6 +170,22 @@ end 3
 
 可以看到，同时只有2个进程并行。即当0和1执行后，循环阻塞，直至0结束后，2或3才开始执行。
 
+**工作记录**
+
+曾经在`pool.apply_asygn(func)`外面写`pbar.update()`。
+后果就是，pbar速度飞快，然而`func()`却没有执行完。
+通过查看htop可知，`apply_sygn(func)`是创建了众多进程，并且不受外部代码影响（不堵塞），
+直到`pool.close()`。
+因此，`pbar.update()`最好放到`callback()`内部。否则进度是虚假的。写法：
+
+```python3
+...
+callback=lambda x :pbar.update(1)
+```
+
+注意得有一个形参x。因为callback必须接收参数，哪怕是无用的。
+能放到`func()`里吗？貌似可以，但冲突很严重，速度慢。
+
 **背景知识**
 
 [[进程 vs. 线程]](https://zhuanlan.zhihu.com/p/76343641)
