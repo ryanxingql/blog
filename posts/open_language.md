@@ -1453,6 +1453,9 @@
 
 - free-range parenting
   - 散养
+  - free-range多用于养鸡哈哈。
+  - 反义：tiger parenting
+  - 通常是lenient的，与strict反义。
 - independence
   - 自主
   - `We should be less protective. Let him explore and gain some independence.`
@@ -1465,6 +1468,9 @@
 
 - 为什么我是唯一关心他的人？
   - `Why is it that I'm the only person who cares about him?`
+  - `Why is it the bus is always late?`
+  - `Why is it your room is always messy?`
+  - `Where is it you lived?`
 
 ## Amusement
 
