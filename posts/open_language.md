@@ -29,6 +29,7 @@
     - [Different parenting styles](#different-parenting-styles)
   - [Amusement](#amusement)
     - [Mobile games](#mobile-games)
+    - [Game of Thrones](#game-of-thrones)
 
 周计划
 
@@ -1471,6 +1472,9 @@
   - `Why is it the bus is always late?`
   - `Why is it your room is always messy?`
   - `Where is it you lived?`
+  - `Which is it you want?`
+  - `How is it that I've been cleaning for a whole day, but this house is still messy?`
+  - `Where is it that we're going?`
 
 ## Amusement
 
@@ -1548,3 +1552,26 @@
 - 我不确定是否喜欢
   - `I'm not sure they'd be my thing.`
   - would
+
+### Game of Thrones
+
+**Words & Phrases**
+
+- storyline
+  - 故事线
+- greed
+  - n.
+  - 贪婪
+- center around
+  - 围绕，主要是
+- baddies
+  - 反派，坏蛋
+- fantasy
+  - 幻想作品
+- stand a chance
+  - 有机会
+- spoilers
+  - n.
+  - 剧透
+
+**Pattern**
