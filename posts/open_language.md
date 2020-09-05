@@ -1604,7 +1604,13 @@
 
 **Pattern**
 
-- 你认为结局会是怎么样？
+- 它主要在讲大军屠杀人类。
+  - `It centers around an amy coming to kill everyone.`
+- 僵尸没有机会赢。
+  - `The zombies don't stand a chance.`
+- 为什么这么火？
+  - `I just don't get why it's so popular?`
+- 你觉得结局会如何？
   - `How do you think it's going to end?`
-- 快去看！我不会剧透的。
+- 你去看！我不剧透。
   - `Go watch it! I'm not giving any spoilers.`
