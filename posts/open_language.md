@@ -1557,8 +1557,38 @@
 
 **Words & Phrases**
 
+- season
+  - 就像季节一样，一年只有一季。
+- episode
+- finale
+  - the very last episode
+
+==========
+
 - storyline
   - 故事线
+  - plot
+  - plot line
+- fantasy
+  - 幻想作品
+- spoilers
+  - n.
+  - 剧透
+  - sth spoils
+    - 坏掉，损毁。例如食物
+  - `The news is full of a story's spoiler.`
+
+==========
+
+- throne
+  - n.
+  - 宝座，君权
+- fight
+  - fighting over sth
+    - 争夺
+    - `Children are fighting over toys.`
+  - fighting about sth
+    - 争执，争论
 - greed
   - n.
   - 贪婪
@@ -1566,12 +1596,15 @@
   - 围绕，主要是
 - baddies
   - 反派，坏蛋
-- fantasy
-  - 幻想作品
 - stand a chance
   - 有机会
-- spoilers
-  - n.
-  - 剧透
+  - 通常用于否定。
+  - `The zombies don't stand a chance.`
+  - `The don't stand a chance against that team.`
 
 **Pattern**
+
+- 你认为结局会是怎么样？
+  - `How do you think it's going to end?`
+- 快去看！我不会剧透的。
+  - `Go watch it! I'm not giving any spoilers.`
