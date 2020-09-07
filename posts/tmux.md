@@ -4,8 +4,8 @@
   - [Session](#session)
   - [Window](#window)
   - [Panel](#panel)
+  - [设置](#设置)
   - [无root安装](#无root安装)
-  - [其他](#其他)
 
 ## Session
 
@@ -27,6 +27,12 @@
 - 调整：`ctrl+b -> 空格`
 - 关闭：`ctrl+b -> x`
 
+## 设置
+
+- 进入命令行：`ctrl+b -> :`
+- 开启鼠标滚轮：进入命令行，输入`set -g mouse on`
+- 在鼠标模式关闭的情况下，可以右键复制粘贴。在鼠标模式开启时，要同时按住`shift`。
+
 ## 无root安装
 
 - [[ref]](https://gist.github.com/ryin/3106801)：网友在不断更新脚本。
@@ -34,7 +40,3 @@
   - `vim ~/.bashrc`
   - 在文件末尾添加：`export PATH=$PATH:/home/x/local/bin`
   - `source ~/.bashrc`
-
-## 其他
-
-- 和系统互动：貌似是`shift + 鼠标右键`，可以选择paste之类。不同终端（例如VSCode和Moba的终端）不一样。
