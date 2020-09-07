@@ -19,7 +19,7 @@
 - 切换：`ctrl+b -> number`
 - 改名：`ctrl+b -> , -> new name`
 - 关闭：`ctrl+b -> &`；或关掉所有panel。
-- 改变窗格序号：`ctrl+b -> : -> swap-windows -s 3 -t 1`
+- 改变窗格序号：`ctrl+b -> : -> swap-window -s 3 -t 1`
 
 ## Panel
 

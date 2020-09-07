@@ -19,6 +19,7 @@
     - [Smart speakers](#smart-speakers)
     - [Unmanned stores](#unmanned-stores)
     - [Deepfakes](#deepfakes)
+    - [How the Internet has changed our lives](#how-the-internet-has-changed-our-lives)
   - [Life](#life)
     - [Emergency response](#emergency-response)
     - [Last-minute shopping](#last-minute-shopping)
@@ -1089,6 +1090,45 @@
   - `let sleeping dogs lie`
 - humanity
   - 人性
+
+### How the Internet has changed our lives
+
+**Word**
+
+- reception
+  - 信号接收质量
+- connected
+  - 接通的
+- informed
+  - 了解情况的
+- streaming
+  - v.
+  - 在线收听（或收看）
+- antisocial
+  - adj.
+  - 孤僻的，不合群的
+- a breeze
+  - n.
+  - 轻而易举的事
+
+**Pattern**
+
+- 我断网两小时了，要疯了！
+  - `I've had no reception for the last 2 hours, and it's driving me crazy.`
+- 我讨厌断网。
+  - `I hate not being connected.`
+- 没有GPS，我容易走丢。
+  - `I used to get so lost without GPS.`
+- 网络让获取信息更方便。
+  - `It's way easier to stay informed.`
+- 看视频一天都不会无聊。娱乐更简单了。
+  - `Can't get bored when we're streaming all day. Entertainment is so much more accessible now.`
+- 我觉得我更社交了。
+  - `I'd say I'm more social.`
+- 你说得对。
+  - `Point taken.`
+- 通过网络，找到爱好相似的人，很简单。
+  - `It definitely makes finding people with similar interests a breeze.`
 
 ## Life
 
