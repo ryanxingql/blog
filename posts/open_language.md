@@ -1101,20 +1101,28 @@
   - 接通的
 - informed
   - 了解情况的
-- streaming
+- stream
   - v.
   - 在线收听（或收看）
+  - `I'm streaming a video.`
 - antisocial
   - adj.
   - 孤僻的，不合群的
 - a breeze
   - n.
   - 轻而易举的事
+  - `It will be a breeze for you guys.`
 
 **Pattern**
 
 - 我断网两小时了，要疯了！
   - `I've had no reception for the last 2 hours, and it's driving me crazy.`
+  - `I have no signal.`
+  - `I got disconnected from the internet.`
+- 你有信号吗？
+  - `Are you getting any reception?`
+- 电梯里信号不好。
+  - `I've got really poor reception in the elevator.`
 - 我讨厌断网。
   - `I hate not being connected.`
 - 没有GPS，我容易走丢。
@@ -1129,6 +1137,11 @@
   - `Point taken.`
 - 通过网络，找到爱好相似的人，很简单。
   - `It definitely makes finding people with similar interests a breeze.`
+- 跟踪最新技术。
+  - `Keep up with new developments in technology.`
+- 知道家里发生什么。
+  - `Keep up with what's going on at home.`
+
 
 ## Life
 
