@@ -28,6 +28,7 @@
     - [Childhood memories](#childhood-memories)
     - [Love lives and nosy relatives](#love-lives-and-nosy-relatives)
     - [Different parenting styles](#different-parenting-styles)
+    - [Couple fighting](#couple-fighting)
   - [Amusement](#amusement)
     - [Mobile games](#mobile-games)
     - [Game of Thrones](#game-of-thrones)
@@ -1132,7 +1133,9 @@
 - 看视频一天都不会无聊。娱乐更简单了。
   - `Can't get bored when we're streaming all day. Entertainment is so much more accessible now.`
 - 我觉得我更社交了。
-  - `I'd say I'm more social.`
+  - `If anything, I'd say I'm more social.`
+  - `If anything`是表达相反之意。
+    - `Bringing up these issues won't harm your relationship. If anything, it will strengthen it.`
 - 你说得对。
   - `Point taken.`
 - 通过网络，找到爱好相似的人，很简单。
@@ -1528,6 +1531,56 @@
   - `Which is it you want?`
   - `How is it that I've been cleaning for a whole day, but this house is still messy?`
   - `Where is it that we're going?`
+
+### Couple fighting
+
+**Word**
+
+- cut me some slack
+  - 放我一马
+- spare me
+  - 被浪费口舌
+- here we go again
+  - 又来了
+- pick a fight
+  - 挑起战争
+- got a lot on my plate
+  - 忙不过来
+- brush off
+  - 拒绝听；不理睬，敷衍
+- your share
+  - 该你做的
+- split
+  - 分摊
+- chores
+  - 家务
+
+**Pattern**
+
+- 怎么这么乱？你不是说会打扫的吗？
+  - `What's with the mess? I thought you said you were going to clean.`
+- 让我松口气吧！我今天工作很累。
+  - `Cut me some slack! I had a tough day at work.`
+- 辛苦得连衣服都挂不了？
+  - `So tough that you couldn't hang your jacket?`
+- 得了吧，别找借口了。
+  - `Please, spare me the excuses.`
+
+==========
+
+- 你是想吵架吗？
+  - `Are you trying to pick a fight?`
+- 别把我说的话不当回事。
+  - `Don't brush off what I say!`
+
+==========
+
+- 我的事情不少。
+  - `I've got a lot on my plate.`
+- 你应该分担一点家务。我们应该分担家务。
+  - `Do your share around the house. It's only right that we split the chores.`
+- 好的，我会尽力的。
+  - `I'll work on that.`
 
 ## Amusement
 
