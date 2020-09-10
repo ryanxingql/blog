@@ -1538,8 +1538,10 @@
 
 - cut me some slack
   - 放我一马
-- spare me
-  - 被浪费口舌
+  - give me a break
+- spare me from excuses
+  - 不想听借口
+  - `It spares me the trouble of going there myself.`
 - here we go again
   - 又来了
 - pick a fight
@@ -1548,10 +1550,12 @@
   - 忙不过来
 - brush off
   - 拒绝听；不理睬，敷衍
+  - `brush off your responsibility`
 - your share
   - 该你做的
 - split
   - 分摊
+  - `split the bill`
 - chores
   - 家务
 
