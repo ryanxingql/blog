@@ -29,6 +29,7 @@
     - [Love lives and nosy relatives](#love-lives-and-nosy-relatives)
     - [Different parenting styles](#different-parenting-styles)
     - [Couple fighting](#couple-fighting)
+    - [Talking to teacher](#talking-to-teacher)
   - [Amusement](#amusement)
     - [Mobile games](#mobile-games)
     - [Game of Thrones](#game-of-thrones)
@@ -1542,6 +1543,10 @@
 - spare me from excuses
   - 不想听借口
   - `It spares me the trouble of going there myself.`
+  - `You spare me the trouble of going all the way back.`
+    - （多亏了你的帮助，）省去了我走回去的麻烦。
+  - `It's best to spare her feelings and not tell her about the mistake.`
+    - 别让她操心。
 - here we go again
   - 又来了
 - pick a fight
@@ -1549,10 +1554,17 @@
 - got a lot on my plate
   - 忙不过来
 - brush off
-  - 拒绝听；不理睬，敷衍
+  - `She told him about her concerns, but he brushed them off.`
+    - 置之不理
+  - `Some people are better at brushing off embarrassment than others.`
+    - 有的人更善于摆脱尴尬。
   - `brush off your responsibility`
 - your share
   - 该你做的
+  - `He's had a rough childhood, so he's had his share of ups and downs.`
+    - 他经历过大起大落。
+  - `I've had my share, thanks.`
+    - 我已经有一份了，谢谢啦。
 - split
   - 分摊
   - `split the bill`
@@ -1585,6 +1597,22 @@
   - `Do your share around the house. It's only right that we split the chores.`
 - 好的，我会尽力的。
   - `I'll work on that.`
+
+### Talking to teacher
+
+- strong points
+- weak points
+- retaining
+  - v.
+  - 记忆，保留
+- where it could be
+- household
+- do the trick
+  - 奏效
+- soak everything up
+  - 照单全收
+- sponge
+  - 海绵
 
 ## Amusement
 
