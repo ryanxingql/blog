@@ -1600,12 +1600,16 @@
 
 ### Talking to teacher
 
+**Words**
+
 - strong points
 - weak points
 - retaining
   - v.
   - 记忆，保留
-- where it could be
+  - `retain vocabulary`
+- around the house
+  - 在家里
 - household
 - do the trick
   - 奏效
@@ -1613,6 +1617,22 @@
   - 照单全收
 - sponge
   - 海绵
+
+**Pattern**
+
+- 感谢你抽出时间与我交流。
+  - `Thanks for taking time out of your day to speak with me.`
+- 很开心能与你沟通。我家乔治表现如何？
+  - `Happy to do it. How's my George doing?`
+- 恩，有些方面他很出色，但有些方面他还需要进步。
+  - `Well, there are some areas where he is really excelling, and there are other areas where George could stand to improve a bit.`
+
+==========
+
+- 在我看来，他的发音还没有达到应有的水平。
+  - `In my opinion, his pronunciation still isn't where it could be.`
+- 以我对他的了解，他像一块海绵（接受能力强）。
+  - `Knowing George, he'll just soak everything up like a sponge.`
 
 ## Amusement
 
