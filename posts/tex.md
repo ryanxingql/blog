@@ -1,14 +1,9 @@
 # TEX
 
 - [TEX](#tex)
-  - [安装MikTeX + TeXstudio](#安装miktex--texstudio)
   - [写完论文检查](#写完论文检查)
-
-## 安装MikTeX + TeXstudio
-
-- 按顺序下载和安装。
-- 重启。
-- TexStudio里要设置zh_CN语言，将`pdflatex`改为`xzelatex`。
+  - [安装MikTeX + TeXstudio](#安装miktex--texstudio)
+  - [Ubuntu 20.04 安装LaTeX + TeXstudio](#ubuntu-2004-安装latex--texstudio)
 
 ## 写完论文检查
 
@@ -40,3 +35,21 @@
     
   - 期刊通常不用`[h]`
   - IEEE通常不会在第一页或第一个column放floats。
+
+## 安装MikTeX + TeXstudio
+
+- 按顺序下载和安装。
+- 重启。
+- TexStudio里要设置zh_CN语言，将`pdflatex`改为`xzelatex`。
+
+## Ubuntu 20.04 安装LaTeX + TeXstudio
+
+Ubuntu 20.04暂不支持MikTeX。——20200913
+
+安装LaTeX：`$ sudo apt install texlive-full`
+
+注意一定是`full`。
+
+安装TeXstudio：`$ sudo apt install texstudio`
+
+Build中选择pdflatex，图像可正常显示。
