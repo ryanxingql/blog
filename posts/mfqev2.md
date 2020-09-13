@@ -22,21 +22,9 @@
 
 MFQEv2没有使用任何“花哨”的结构设计和训练技巧。我们用最简单的CNN结构实现了我们的思路，网络参数量仅255k。欢迎大家使用。
 
-**【论文】**
-
 这篇论文是*Multi-frame quality enhancement for compressed video*（CVPR 2018）的升级版本，2019年9月26日被**TPAMI**（2018年IF=17.730）接收。博主和导师关振宇是共同一作，通讯作者为导师徐迈。
 
-[[arXiv]](https://arxiv.org/pdf/1902.09707.pdf) [[ResearchGate]](https://www.researchgate.net/publication/336227649_MFQE_20_A_New_Approach_for_Multi-frame_Quality_Enhancement_on_Compressed_Video)
-
-**【开源代码】**
-
-[[GitHub]](https://github.com/RyanXingQL/MFQEv2.0)
-
-**【所需数据】**
-
-[[北航云盘]](https://bhpan.buaa.edu.cn/#/link/0EBF3709E3168E9A78206391258715A3)
-
-**【Citation】**
+[[arXiv]](https://arxiv.org/pdf/1902.09707.pdf) [[GitHub]](https://github.com/RyanXingQL/MFQEv2.0)
 
 ```latex
 @ARTICLE{8855019,
