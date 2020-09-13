@@ -77,7 +77,7 @@ Feel free to contact: ryanxingql@gmail.com.
 
 > arXiv找到最新PDF，下载，在Acrobat内开启注释，边读边做笔记。一句话总结，记录在博文【Papers】里。
 
-- [READING AND THINKING](https://github.com/RyanXingQL/Blog/blob/master/posts/reading.md)
+- [READING AND THINKING](https://github.com/RyanXingQL/Blog/blob/master/posts/reading_and_thinking.md)
 
 - [快捷键和快捷操作](https://github.com/RyanXingQL/Blog/blob/master/posts/shortcuts.md)
 
