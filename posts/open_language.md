@@ -1600,39 +1600,54 @@
 
 ### Talking to teacher
 
+2020/09/13
+
 **Words**
 
-- strong points
-- weak points
-- retaining
+- strong points vs. weak points
+- retain
   - v.
   - 记忆，保留
   - `retain vocabulary`
-- around the house
-  - 在家里
-- household
-- do the trick
-  - 奏效
-- soak everything up
-  - 照单全收
-- sponge
-  - 海绵
+  - `retain the youth`
+    - 永葆青春
+  - `retain the flavor`
+    - 保持风味
+  - `I retained much of what I learned.`
+  - `The family sold the house but retained the land.`
 
 **Pattern**
 
-- 感谢你抽出时间与我交流。
+- 感谢你**抽出时间**与我交流。
   - `Thanks for taking time out of your day to speak with me.`
-- 很开心能与你沟通。我家乔治表现如何？
+  - `making time`也可以。
+- 很开心能与你沟通。我家乔治**表现如何**？
   - `Happy to do it. How's my George doing?`
-- 恩，有些方面他很出色，但有些方面他还需要进步。
+- 恩，有些方面他很**出色**，但有些方面他还**有潜力提升**。
   - `Well, there are some areas where he is really excelling, and there are other areas where George could stand to improve a bit.`
+  - sb excels at/in sth.
 
-==========
+- 他**还能**减肥。
+  - `He sure could stand to lose some weight.`
+  - `could stand to`表示建议或方法。
+    - `Most people could stand to be a bit more considerate of others.`
+      - 大多数人都能多体谅别人。
 
-- 在我看来，他的发音还没有达到应有的水平。
+- 在我看来，他的发音还**没有达到应有的水平**。
   - `In my opinion, his pronunciation still isn't where it could be.`
-- 以我对他的了解，他像一块海绵（接受能力强）。
+  - `Not as good as it could be.`
+- **在家**多**接触**英语会**有所帮助****。
+  - `Exposing him to more English in the household should help do the trick.`
+- 以我对他的了解，他**接受能力强**。
   - `Knowing George, he'll just soak everything up like a sponge.`
+
+- 这不是我该做的/不是我的**职责**。
+  - `That's not my area (of work).`
+  - `area of expertise`
+    - 专业领域
+
+- 乔纳森对乔治**评价很高**。
+  - `Jonathan thinks pretty highly of George.`
 
 ## Amusement
 
