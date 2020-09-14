@@ -30,6 +30,7 @@
     - [Different parenting styles](#different-parenting-styles)
     - [Couple fighting](#couple-fighting)
     - [Talking to teacher](#talking-to-teacher)
+    - [Dining etiquette](#dining-etiquette)
   - [Amusement](#amusement)
     - [Mobile games](#mobile-games)
     - [Game of Thrones](#game-of-thrones)
@@ -1648,6 +1649,53 @@
 
 - 乔纳森对乔治**评价很高**。
   - `Jonathan thinks pretty highly of George.`
+
+### Dining etiquette
+
+- fine dining
+  - 高级餐厅用餐
+- course
+  - 一道菜
+  - `one fork for each course`
+- entree
+  - 主菜
+  - `/'ɔntrei/`
+- rule of thumb
+  - 经验之谈
+- etiquette
+  - 礼节，礼仪
+- napkin
+  - 餐巾纸
+  - `put your napkin on your lap`
+- silverware
+  - 镀银餐具
+- table manners
+  - 餐桌礼仪
+  - `Shouting for the waiter isn't good table manner.`
+
+> 这是我第一次在高级餐厅用餐！
+
+This is my first time fine dining!
+
+> 我的经验是：从外向里使用（四把叉子）。
+
+A good rule of thumb is to start from the outside and work your way in.
+
+> 那我可得小心了！
+
+I ought to be careful!
+
+> 吃完后，我应该把餐具放哪？
+
+Where do I put the silverware when I'm done with it?
+
+> 挨个放就行。
+
+Just place them next to each other.
+
+> 听起来挺容易的。
+
+Sounds easy.
 
 ## Amusement
 
