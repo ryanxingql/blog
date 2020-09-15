@@ -1654,8 +1654,10 @@
 
 - fine dining
   - 高级餐厅用餐
+  - fine art collection, fine wines
 - course
   - 一道菜
+  - not school
   - `one fork for each course`
 - entree
   - 主菜
@@ -1669,6 +1671,8 @@
   - `put your napkin on your lap`
 - silverware
   - 镀银餐具
+  - serviette
+  - housewares, kitchenware
 - table manners
   - 餐桌礼仪
   - `Shouting for the waiter isn't good table manner.`
@@ -1680,6 +1684,9 @@ This is my first time fine dining!
 > 我的经验是：从外向里使用（四把叉子）。
 
 A good rule of thumb is to start from the outside and work your way in.
+
+- You can slowly work your way through a crowd to get to the other side.
+- You can work your way up the corporate ladder in a company.
 
 > 那我可得小心了！
 
