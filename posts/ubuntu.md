@@ -5,10 +5,11 @@
   - [软件](#软件)
   - [硬盘](#硬盘)
   - [系统](#系统)
+    - [微软雅黑](#微软雅黑)
     - [查询](#查询)
     - [编辑](#编辑)
     - [安装](#安装)
-  - [其他](#其他)
+    - [其他](#其他)
 
 ## 文件
 
@@ -128,6 +129,10 @@ $ sudo umount /media/usr/DiskName
 
 ## 系统
 
+### 微软雅黑
+
+[[tutorial]](https://www.cnblogs.com/feipeng8848/p/9649089.html)
+
 ### 查询
 
 - 当前目录下的文件信息（包括大小）：`ll`
@@ -186,7 +191,7 @@ $ sudo umount /media/usr/DiskName
 
 > [[图片教程]](https://blog.csdn.net/baidu_36602427/article/details/86548203#commentBox)
 
-## 其他
+### 其他
 
 - 停止广播：`mesg n`
 - 切换工作区
