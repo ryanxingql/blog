@@ -20,6 +20,8 @@
     - [Unmanned stores](#unmanned-stores)
     - [Deepfakes](#deepfakes)
     - [How the Internet has changed our lives](#how-the-internet-has-changed-our-lives)
+  - [Housing](#housing)
+    - [Interior design](#interior-design)
   - [Life](#life)
     - [Emergency response](#emergency-response)
     - [Last-minute shopping](#last-minute-shopping)
@@ -1147,6 +1149,37 @@
 - 知道家里发生什么。
   - `Keep up with what's going on at home.`
 
+## Housing
+
+### Interior design
+
+- decor
+  - [n.] 装饰，布置
+- retro
+  - [adj.] 复古的
+- sleek
+  - [adj.] 简洁的，流畅的
+- chrome
+  - [n.] 镀铬的金属
+- heirloom
+  - [adj.] 祖传的
+- color scheme
+  - [n.] 配色
+- dated
+  - [adj.] 陈旧的
+  - `It looks dated.`
+
+> 咋们聊聊你的装修偏好。
+
+Let's chat about what direction you want to take with your decor.
+
+> 不是我的强项。
+
+Out of my element.
+
+> 这就是我的价值。
+
+That's why I am here for.
 
 ## Life
 
@@ -1691,6 +1724,8 @@ A good rule of thumb is to start from the outside and work your way in.
 > 那我可得小心了！
 
 I ought to be careful!
+
+比`should`更强。
 
 > 吃完后，我应该把餐具放哪？
 
