@@ -58,9 +58,14 @@ $ sudo apt-get update && apt-get upgrade
 
 **拼音**
 
+推荐：搜狗输入法，有人维护啊！
+
+不推荐：
+
 - [ref](https://blog.csdn.net/wu10188/article/details/86540464)
 - 输入法切换：`win+space`
 - 中英切换：`shift`
+- bug：选中文字会删除文字，很痛苦。
 
 **pip3**
 

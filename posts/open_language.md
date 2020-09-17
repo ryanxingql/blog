@@ -1157,8 +1157,10 @@
   - [n.] 装饰，布置
 - retro
   - [adj.] 复古的
+  - retro elements
 - sleek
   - [adj.] 简洁的，流畅的
+  - sleek look
 - chrome
   - [n.] 镀铬的金属
 - heirloom
@@ -1173,13 +1175,57 @@
 
 Let's chat about what direction you want to take with your decor.
 
-> 不是我的强项。
+- 可以描述`haircut`偏好。
+- 还可以说`path`，例如`life path`。
 
-Out of my element.
+> 这方面我不太懂，希望你能指点我。
 
-> 这就是我的价值。
+I'm a little out of my element here, so I hope you can guide me.
+
+- fish out of water
+- 相反，享受时可以说：`in my element`。
+
+> 这就是我的工作。
 
 That's why I am here for.
+
+===
+
+> 我比较喜欢极简、现代风。
+
+I'm more of a minimalistic modern kind of guy.
+
+- 反之，喜欢贮藏东西的人被称为`hoarder`。
+
+===
+
+> 你喜欢复古元素吗？有一种流畅感。
+
+Would you like any retro elements? They can have a sleek look.
+
+> 什么复古元素呢？我确实喜欢金属铬。
+
+It depends on what it is. I do like chrome though.
+
+===
+
+> 我有一张祖传餐桌，我想保留。
+
+I have an heirloom dining table I'd like to keep though.
+
+> 一定要留。可以考虑下升级？
+
+It's definitely a keeper. How would you feel about upscaling it?
+
+> 那样确实会更和谐。
+
+That would make it tie in a little better.
+
+===
+
+> 很符合现代风。
+
+That would go with the modern feel.
 
 ## Life
 
