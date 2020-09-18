@@ -36,6 +36,7 @@
   - [Amusement](#amusement)
     - [Mobile games](#mobile-games)
     - [Game of Thrones](#game-of-thrones)
+    - [Digital addiction](#digital-addiction)
 
 周计划
 
@@ -1165,6 +1166,8 @@
   - [n.] 镀铬的金属
 - heirloom
   - [adj.] 祖传的
+  - `[ˈerluːm]`
+  - something you will pass on to your children.
 - color scheme
   - [n.] 配色
 - dated
@@ -1220,6 +1223,8 @@ It's definitely a keeper. How would you feel about upscaling it?
 > 那样确实会更和谐。
 
 That would make it tie in a little better.
+
+- If you're writing an essay, you have to tie your ideas in together.
 
 ===
 
@@ -1923,3 +1928,13 @@ Sounds easy.
   - `How do you think it's going to end?`
 - 你去看！我不剧透。
   - `Go watch it! I'm not giving any spoilers.`
+
+### Digital addiction
+
+- black hole
+  - 黑洞
+  - 花费太多时间精力的东西
+- hooked
+  - 上瘾的
+- curb
+  - 抑制
