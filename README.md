@@ -70,6 +70,8 @@ Feel free to contact: ryanxingql@gmail.com.
 
 ## Others
 
+- [ART](https://github.com/RyanXingQL/Blog/blob/master/posts/art.md)
+
 - [ENGLISH](https://github.com/RyanXingQL/Blog/blob/master/posts/english.md)
   - [OPEN LANGUAGE](https://github.com/RyanXingQL/Blog/blob/master/posts/open_language.md)
 
@@ -80,8 +82,6 @@ Feel free to contact: ryanxingql@gmail.com.
 - [READING AND THINKING](https://github.com/RyanXingQL/Blog/blob/master/posts/reading_and_thinking.md)
 
 - [快捷键和快捷操作](https://github.com/RyanXingQL/Blog/blob/master/posts/shortcuts.md)
-
-- [论文和PPT美工](https://drive.google.com/drive/folders/1UU703I_zM1pPx5UVzIVLSN8NZwqxo5Tf?usp=sharing)
 
 - **北航电子信息课程笔记**
   - [本科专业课](https://drive.google.com/drive/folders/1UU703I_zM1pPx5UVzIVLSN8NZwqxo5Tf?usp=sharing)
