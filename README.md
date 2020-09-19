@@ -76,8 +76,7 @@ Feel free to contact: ryanxingql@gmail.com.
   - [OPEN LANGUAGE](https://github.com/RyanXingQL/Blog/blob/master/posts/open_language.md)
 
 - [PAPERS](https://github.com/RyanXingQL/Blog/blob/master/posts/papers.md)
-
-> arXiv找到最新PDF，下载，在Acrobat内开启注释，边读边做笔记。一句话总结，记录在博文【Papers】里。
+  - [PAPER NOTE](https://github.com/RyanXingQL/Blog/blob/master/posts/paper_note.md)
 
 - [READING AND THINKING](https://github.com/RyanXingQL/Blog/blob/master/posts/reading_and_thinking.md)
 

@@ -1192,15 +1192,15 @@ I'm a little out of my element here, so I hope you can guide me.
 
 That's why I am here for.
 
-===
+> 我们谈一谈主题吧。
+
+Why don't we talk about themes.
 
 > 我比较喜欢极简、现代风。
 
 I'm more of a minimalistic modern kind of guy.
 
 - 反之，喜欢贮藏东西的人被称为`hoarder`。
-
-===
 
 > 你喜欢复古元素吗？有一种流畅感。
 
@@ -1209,8 +1209,6 @@ Would you like any retro elements? They can have a sleek look.
 > 什么复古元素呢？我确实喜欢金属铬。
 
 It depends on what it is. I do like chrome though.
-
-===
 
 > 我有一张祖传餐桌，我想保留。
 
@@ -1225,8 +1223,6 @@ It's definitely a keeper. How would you feel about upscaling it?
 That would make it tie in a little better.
 
 - If you're writing an essay, you have to tie your ideas in together.
-
-===
 
 > 很符合现代风。
 
@@ -1938,3 +1934,24 @@ Sounds easy.
   - 上瘾的
 - curb
   - 抑制
+  - `Timers are designed to curb your time.`
+
+> 我以为你不玩游戏。
+> 我本来也是这么认为的。但我玩之后就停不下来了。
+> 当心！别上瘾了！
+> 老实说，我快了。
+
+I though you weren't a gamer.
+That's what I thought. But then I got sucked into this one and now I'm hooked!
+Careful! You don't want to end up with a digital addiction.
+Honestly, I'm halfway there.
+
+> 有一些防沉迷功能正在推出。
+> 你是说那个为了应对公众压力推出的？
+
+Some anti-addiction features are **rolling out**.
+You mean the ones that were introduced in response to public pressure?
+
+> 很多网站设定都是连续播放和娱乐，容易失控。
+
+Many sites have been designed for binge watching and gaming that it's gotten out of control.
