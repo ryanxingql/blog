@@ -1175,56 +1175,56 @@
   - `It looks dated.`
 
 > 咋们聊聊你的装修偏好。
+> 
+> 这方面我不太懂，希望你能指点我。
+> 
+> 这就是我的工作。
 
 Let's chat about what direction you want to take with your decor.
 
 - 可以描述`haircut`偏好。
 - 还可以说`path`，例如`life path`。
 
-> 这方面我不太懂，希望你能指点我。
-
 I'm a little out of my element here, so I hope you can guide me.
 
 - fish out of water
 - 相反，享受时可以说：`in my element`。
 
-> 这就是我的工作。
-
 That's why I am here for.
 
 > 我们谈一谈主题吧。
+> 
+> 我比较喜欢极简、现代风。
 
 Why don't we talk about themes.
-
-> 我比较喜欢极简、现代风。
 
 I'm more of a minimalistic modern kind of guy.
 
 - 反之，喜欢贮藏东西的人被称为`hoarder`。
 
 > 你喜欢复古元素吗？有一种流畅感。
+> 
+> 什么复古元素呢？我确实喜欢金属铬。
 
 Would you like any retro elements? They can have a sleek look.
-
-> 什么复古元素呢？我确实喜欢金属铬。
 
 It depends on what it is. I do like chrome though.
 
 > 我有一张祖传餐桌，我想保留。
+> 
+> 一定要留。可以考虑下升级？
+> 
+> 那样确实会更和谐。
+> 
+> 很符合现代风。
 
 I have an heirloom dining table I'd like to keep though.
 
-> 一定要留。可以考虑下升级？
-
 It's definitely a keeper. How would you feel about upscaling it?
-
-> 那样确实会更和谐。
 
 That would make it tie in a little better.
 
 - If you're writing an essay, you have to tie your ideas in together.
-
-> 很符合现代风。
 
 That would go with the modern feel.
 
@@ -1937,19 +1937,27 @@ Sounds easy.
   - `Timers are designed to curb your time.`
 
 > 我以为你不玩游戏。
+> 
 > 我本来也是这么认为的。但我玩之后就停不下来了。
+> 
 > 当心！别上瘾了！
+> 
 > 老实说，我快了。
 
 I though you weren't a gamer.
+
 That's what I thought. But then I got sucked into this one and now I'm hooked!
+
 Careful! You don't want to end up with a digital addiction.
+
 Honestly, I'm halfway there.
 
 > 有一些防沉迷功能正在推出。
+> 
 > 你是说那个为了应对公众压力推出的？
 
 Some anti-addiction features are **rolling out**.
+
 You mean the ones that were introduced in response to public pressure?
 
 > 很多网站设定都是连续播放和娱乐，容易失控。
