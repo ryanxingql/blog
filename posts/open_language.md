@@ -1930,8 +1930,12 @@ Sounds easy.
 - black hole
   - 黑洞
   - 花费太多时间精力的东西
+  - `sucked into these black holes.`
 - hooked
   - 上瘾的
+  - `fish hook`
+  - `be hooked on sth`
+    - 多用于不好的东西。也可以用于好东西。
 - curb
   - 抑制
   - `Timers are designed to curb your time.`
@@ -1950,6 +1954,8 @@ That's what I thought. But then I got sucked into this one and now I'm hooked!
 
 Careful! You don't want to end up with a digital addiction.
 
+- Where did you end up going last night?
+
 Honestly, I'm halfway there.
 
 > 有一些防沉迷功能正在推出。
@@ -1963,3 +1969,7 @@ You mean the ones that were introduced in response to public pressure?
 > 很多网站设定都是连续播放和娱乐，容易失控。
 
 Many sites have been designed for binge watching and gaming that it's gotten out of control.
+
+- `When you binge on anything basically, you're doing a lot at one time.`
+- `binge eating`
+- `binge drinking`
