@@ -33,6 +33,7 @@
     - [Couple fighting](#couple-fighting)
     - [Talking to teacher](#talking-to-teacher)
     - [Dining etiquette](#dining-etiquette)
+    - [Should I get a dog](#should-i-get-a-dog)
   - [Amusement](#amusement)
     - [Mobile games](#mobile-games)
     - [Game of Thrones](#game-of-thrones)
@@ -1785,6 +1786,80 @@ Just place them next to each other.
 > 听起来挺容易的。
 
 Sounds easy.
+
+### Should I get a dog
+
+- pooch
+  - [n.]
+  - 狗（俚语）
+- pup
+  - [n.]
+  - 小狗
+- furry
+  - [adj.]
+  - 毛茸茸的
+- companion
+  - [n.]
+  - 伙伴，同伴
+- downsides
+  - [n.]
+  - 坏处
+- grooming
+  - [n.]
+  - 给动物的刷洗
+- vet
+  - [n.]
+  - 兽医
+- shed
+  - [v.]
+  - 掉毛
+- rewarding
+  - [adj.]
+  - 值得的
+
+> A: 我在考虑养只狗，但我还在犹豫。
+> 
+> B: 可以理解。养狗意味着巨大的责任。
+
+I'm considering getting a dog, but I'm still **on the fence** about it.
+
+That's **understandable**. Having a pooch **comes with a lot of responsibility**.
+
+> B: 我喜欢有狗狗陪伴。
+
+I love having my dog **by my side**.
+
+> A: 有哪些坏处？
+> 
+> B: 要训练，散步，梳洗等。
+
+What about the **downsides**?
+
+**Between** things like training, walking and **grooming**.
+
+> A: 我听说看兽医很花钱？
+>
+> B：是的。狗越大，花得越多。
+>
+> A: 所以，从长远看，哈士奇比吉娃娃花费更大？
+>
+> B: 很有可能。掉的毛也更多。
+
+I heard going to the vet can be pretty **costly** too.
+
+The bigger your dog, the more it costs.
+
+A husky will probably costs me more than chihuahua **in the long run**.
+
+Most likely. They will probably **shed more hair** too.
+
+> 听说要投入很多。
+> 
+> 确实。但很值得。
+
+Sounds like quite the **commitment**.
+
+**Having a dog sure is**, but it's **rewarding** as well.
 
 ## Amusement
 
