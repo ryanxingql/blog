@@ -28,8 +28,8 @@
 |Model-blind|对视频前几帧执行Noise2Noise，训练盲去噪模型|Model-Blind Video Denoising via Frame-To-Frame Training|CVPR 2019|
 |**Noise2Self**||Noise2Self: Blind Denoising by Self-Supervision|ICML 2019|
 |Noise2Void|从自身找相似性；遵循N2N原理。卷积时要挖掉中间点，否则会学成trivial的恒等映射|Noise2Void - Learning Denoising From Single Noisy Images|CVPR 2019|
-|**Path-Restore**|多个不同难度子路径CNN，加一个path-finder，根据增强难度选择路径|Path-Restore: Learning Network Path Selection for Image Restoration|arXiv 2019|
-|**TOFlow**|ME不应趋近GT，而应根据任务不同、遮挡情况不同等自行学习|Video Enhancement with Task-Oriented Flow|IJCV 2019|
+|**Path-Restore**|多个不同难度子路径CNN，加一个path-finder，根据增强难度选择路径。依据是训练时的MSE loss|Path-Restore: Learning Network Path Selection for Image Restoration|arXiv 2019|
+|**TOFlow**|ME不应趋近GT，而应根据任务不同、遮挡情况不同等自行学习。此外还提供了Vimeo-90K数据库|Video Enhancement with Task-Oriented Flow|IJCV 2019|
 |**MFQE**|好帧补差帧，渐进融合|Multi-frame Quality Enhancement for Compressed Video|CVPR 2018|
 |**Noise2Noise**|噪声图像的期望是干净图像|Noise2Noise: Learning image restoration without clean data|ICML 2018|
 |QE-CNN|提出所谓的I/P帧分离、融合处理。但实际功效是否达到理想设定未验证|Enhancing Quality for HEVC Compressed Videos|TCSVT 2018|
@@ -42,7 +42,7 @@
 
 |Abbr.|Summary|Title|Where|
 |:-|:-|:-|:-|
-|DifficultySR|分easy和hard支路；预测难度，gt为bicubic PSNR|DIFFICULTY-AWARE IMAGE SUPER RESOLUTION VIA DEEP ADAPTIVE DUAL-NETWORK|ICME 2019|
+|DifficultySR|分easy和hard支路，分别增强easy和hard图像区域；预测难度，gt为bicubic PSNR|Difficulty-aware Image Super Resolution via Deep Adaptive Dual-Network|ICME 2019|
 |**EDVR**|可形变卷积完成feature alignment；通道注意力|Video Restoration with Enhanced Deformable Convolutional Networks|CVPRW 2019|
 |VESPCN|视频超分辨的早期工作，包含一个当时较好的MEMC模块|Real-Time Video Super-Resolution with Spatio-Temporal Networks and Motion Compensation|CVPR 2017|
 
