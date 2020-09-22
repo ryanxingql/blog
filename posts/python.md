@@ -4,6 +4,8 @@
   - [数据结构](#数据结构)
     - [字符串](#字符串)
   - [输入输出](#输入输出)
+    - [一般文件](#一般文件)
+    - [CSV](#csv)
   - [常用模块和方法](#常用模块和方法)
     - [argparse](#argparse)
     - [assert](#assert)
@@ -68,6 +70,8 @@ Hello World!
 
 ## 输入输出
 
+### 一般文件
+
 ```python3
 fp = open("xxx.txt", 'w')
 fp.write("haha\nhaha")
@@ -78,6 +82,27 @@ fp.close()
 
 numpy提供了更快的二进制读写方式：
 `np.fromfile(fp, dtype=np.uint8, count=block_size)`
+
+### CSV
+
+```python3
+import csv
+
+csv_path = 'demo.csv'
+
+# read
+csv_fp = open(csv_path, 'r', newline='')
+reader = csv.reader(csv_fp)
+for line_list in reader:
+    print(line_list)
+
+# write
+csv_fp = open(csv_path, 'w', newline='')
+writer = csv.writer(csv_fp)
+writer.writerow(['index_vid','psnr_ori','psnr_enh','dpsnr','name_vid'])
+
+csv_fp.close()
+```
 
 ## 常用模块和方法
 
