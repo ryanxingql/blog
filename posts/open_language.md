@@ -1,6 +1,8 @@
 # OPEN LANGUAGE
 
 - [OPEN LANGUAGE](#open-language)
+  - [Sports](#sports)
+    - [Popular sports in America](#popular-sports-in-america)
   - [Money](#money)
     - [Managing money](#managing-money)
     - [How do you invest](#how-do-you-invest)
@@ -10,6 +12,7 @@
     - [Dental care](#dental-care)
     - [How to be healthier](#how-to-be-healthier)
     - [Accidents and injuries](#accidents-and-injuries)
+    - [Emergency response](#emergency-response)
   - [Culture](#culture)
     - [Boxing Day](#boxing-day)
     - [Buying Chinese New Year gifts](#buying-chinese-new-year-gifts)
@@ -22,18 +25,20 @@
     - [How the Internet has changed our lives](#how-the-internet-has-changed-our-lives)
   - [Housing](#housing)
     - [Interior design](#interior-design)
-  - [Life](#life)
-    - [Emergency response](#emergency-response)
+  - [Shopping&Fashion](#shoppingfashion)
     - [Last-minute shopping](#last-minute-shopping)
+  - [Love&Family](#lovefamily)
     - [Going on a blind date](#going-on-a-blind-date)
     - [Love at first sight](#love-at-first-sight)
     - [Childhood memories](#childhood-memories)
     - [Love lives and nosy relatives](#love-lives-and-nosy-relatives)
     - [Different parenting styles](#different-parenting-styles)
     - [Couple fighting](#couple-fighting)
+  - [School Time](#school-time)
     - [Talking to teacher](#talking-to-teacher)
-    - [Dining etiquette](#dining-etiquette)
     - [Should I get a dog](#should-i-get-a-dog)
+  - [Eating](#eating)
+    - [Dining etiquette](#dining-etiquette)
   - [Amusement](#amusement)
     - [Mobile games](#mobile-games)
     - [Game of Thrones](#game-of-thrones)
@@ -58,6 +63,34 @@
 - Sun
   - Class 3 speaking
   - Weekly overview
+
+## Sports
+
+### Popular sports in America
+
+> [A] 你喜欢看什么运动？
+> [B] 从春天到秋天，都是棒球。它被称为美国最棒的休闲运动。
+
+- Which sports do you like to watch?
+- From spring to fall, it's baseball for me. It's called America's greatest **pastime**.
+  - pastime
+    - 消遣，休闲活动
+
+> [B] 世界大赛后，我只看橄榄球。我几乎盯着电视不放。
+
+- After the World Series, I'm all football. I'm **practically** **glued to** my TV.
+  - practically
+    - 几乎
+
+> [B] 我认为大学锦标赛和职业联赛一样激动人心。有很多优秀人才。
+
+- I think the college **championships** are just as exciting as the **pros**. A lot of great young **talents**.
+
+> [A] 你觉得曲棍球如何？
+> [B] 我一开始觉得它是加拿大运动。但我越来越喜欢了。
+
+- What do you think of hockey?
+- At first, I thought it was more of a Canadian thing. But it's really grown on me.
 
 ## Money
 
@@ -570,6 +603,80 @@
   - 肩膀脱臼
 - concussion
   - 脑震荡
+
+### Emergency response
+
+```markdown
+1. Excuse me! Does anyone know first aid? There is a man outside who just passed out.
+2. I do! Can you tell me what happened?
+1. He was just standing when he suddenly went rigid and collapsed.
+2. Was he convulsing or foaming at the mouth?
+1. He was shaking and drooling but there wasn't any foam.
+2. Excuse me, sir! Can you hear me?
+3. He' not responding. Should I call an ambulance?
+2. Yes, please. His airways are clear but his pulse is irregular. I think he's had a seizure.
+1. Does he need CPR?
+2. No, he should come around in the next few minutes. But we should find an AED and keep an eye on him until the paramedics arrive.
+```
+
+- first aid
+  - 急救
+- pass out
+  - 昏厥
+  - 还有入睡的意思。
+    - `I immediately pass out when I hit my bed.`
+  - 还有醉酒的意思。
+- go rigid
+  - 僵硬
+- collapse
+  - 晕倒在地
+  - 还有倒塌之意。
+  - collapsible：可折叠的
+- convulse
+  - 抽搐
+- foam
+  - 吐泡沫
+- drool
+  - 流口水
+  - 唾液：saliva
+- airways
+  - 呼吸道
+  - ABCs是很重要的：airways, breathing and circulation
+  - 呕吐物：vomit
+    - choking on vomit or foam
+- pulse
+  - 脉搏
+- have a seizure
+  - 癫痫发作
+  - seizure有占领、没收、充公之意
+- CPR
+  - 人工呼吸
+  - Cardio Pulmonary Resuscitation
+  - 心脏的，肺部的，复苏
+- come around
+  - 醒过来
+  - 还有回心转意之意。
+    - `If you convince them, then they come around.`
+- AED
+  - 除颤仪
+  - Automated external defibrillator
+- keep an eye on
+  - 留意
+- paramedics
+  - 医护人员
+  - 本质上是助理，专指救护车上的医护人员。
+
+**Others**
+
+- go + adj
+  - `The patient went rigid with shock when she heard she had cancer.`
+    - 大吃一惊，僵住了。
+  - `He always goes bright red when we point out his mistakes`
+    - 满脸通红。
+  - `As a man in my 40s, I worry about going bald.`
+    - 担心秃顶。
+  - `In an effort to go green, Starbucks recently announced that ...`
+    - 为实现环保
 
 ## Culture
 
@@ -1229,81 +1336,7 @@ That would make it tie in a little better.
 
 That would go with the modern feel.
 
-## Life
-
-### Emergency response
-
-```markdown
-1. Excuse me! Does anyone know first aid? There is a man outside who just passed out.
-2. I do! Can you tell me what happened?
-1. He was just standing when he suddenly went rigid and collapsed.
-2. Was he convulsing or foaming at the mouth?
-1. He was shaking and drooling but there wasn't any foam.
-2. Excuse me, sir! Can you hear me?
-3. He' not responding. Should I call an ambulance?
-2. Yes, please. His airways are clear but his pulse is irregular. I think he's had a seizure.
-1. Does he need CPR?
-2. No, he should come around in the next few minutes. But we should find an AED and keep an eye on him until the paramedics arrive.
-```
-
-- first aid
-  - 急救
-- pass out
-  - 昏厥
-  - 还有入睡的意思。
-    - `I immediately pass out when I hit my bed.`
-  - 还有醉酒的意思。
-- go rigid
-  - 僵硬
-- collapse
-  - 晕倒在地
-  - 还有倒塌之意。
-  - collapsible：可折叠的
-- convulse
-  - 抽搐
-- foam
-  - 吐泡沫
-- drool
-  - 流口水
-  - 唾液：saliva
-- airways
-  - 呼吸道
-  - ABCs是很重要的：airways, breathing and circulation
-  - 呕吐物：vomit
-    - choking on vomit or foam
-- pulse
-  - 脉搏
-- have a seizure
-  - 癫痫发作
-  - seizure有占领、没收、充公之意
-- CPR
-  - 人工呼吸
-  - Cardio Pulmonary Resuscitation
-  - 心脏的，肺部的，复苏
-- come around
-  - 醒过来
-  - 还有回心转意之意。
-    - `If you convince them, then they come around.`
-- AED
-  - 除颤仪
-  - Automated external defibrillator
-- keep an eye on
-  - 留意
-- paramedics
-  - 医护人员
-  - 本质上是助理，专指救护车上的医护人员。
-
-**Others**
-
-- go + adj
-  - `The patient went rigid with shock when she heard she had cancer.`
-    - 大吃一惊，僵住了。
-  - `He always goes bright red when we point out his mistakes`
-    - 满脸通红。
-  - `As a man in my 40s, I worry about going bald.`
-    - 担心秃顶。
-  - `In an effort to go green, Starbucks recently announced that ...`
-    - 为实现环保
+## Shopping&Fashion
 
 ### Last-minute shopping
 
@@ -1356,6 +1389,8 @@ That would go with the modern feel.
 
 - sales tax
   - 消费税
+
+## Love&Family
 
 ### Going on a blind date
 
@@ -1680,9 +1715,9 @@ That would go with the modern feel.
 - 好的，我会尽力的。
   - `I'll work on that.`
 
-### Talking to teacher
+## School Time
 
-2020/09/13
+### Talking to teacher
 
 **Words**
 
@@ -1730,6 +1765,95 @@ That would go with the modern feel.
 
 - 乔纳森对乔治**评价很高**。
   - `Jonathan thinks pretty highly of George.`
+
+### Should I get a dog
+
+- pooch
+  - [n.]
+  - 狗（俚语）
+- pup
+  - [n.]
+  - 小狗
+- furry
+  - [adj.]
+  - 毛茸茸的
+  - 不形容人
+- companion
+  - [n.]
+  - 伙伴，同伴
+- downsides
+  - [n.]
+  - 坏处
+- grooming
+  - [n.]
+  - 给动物的刷洗
+- vet
+  - [n.]
+  - 兽医
+  - 全称为veterinarian
+- shed
+  - [v.]
+  - 掉毛
+- rewarding
+  - [adj.]
+  - 值得的
+
+> A: 我在考虑养只狗，但我还在犹豫。
+> 
+> B: 可以理解。养狗意味着巨大的责任。
+
+I'm considering getting a dog, but I'm still **on the fence** about it.
+
+That's **understandable**. Having a pooch **comes with a lot of responsibility**.
+
+- on the fence
+  - don't make up your mind
+  - 经常犹豫不决的人：a fence sitter
+
+> B: 我喜欢有狗狗陪伴。
+
+I love having my dog **by my side**.
+
+> A: 有哪些坏处？
+> 
+> B: 要训练，散步，梳洗等。
+
+What about the **downsides**?
+
+**Between** things like training, walking and **grooming**.
+
+> A: 我听说看兽医很花钱？
+>
+> B：是的。狗越大，花得越多。
+>
+> A: 所以，从长远看，哈士奇比吉娃娃花费更大？
+>
+> B: 很有可能。掉的毛也更多。
+
+I heard going to the vet can be pretty **costly** too.
+
+The bigger your dog, the more it costs.
+
+A husky will probably costs me more than chihuahua **in the long run**.
+
+Most likely. They will probably **shed more hair** too.
+
+- `The more he drinks, the less sense he makes.`
+- 减肥
+  - shed some weight
+  - shed some pounds
+- 太热了，脱去一些衣服
+  - shed some clothing
+
+> 听说要投入很多。
+> 
+> 确实。但很值得。
+
+Sounds like quite the **commitment**.
+
+**Having a dog sure is**, but it's **rewarding** as well.
+
+## Eating
 
 ### Dining etiquette
 
@@ -1786,80 +1910,6 @@ Just place them next to each other.
 > 听起来挺容易的。
 
 Sounds easy.
-
-### Should I get a dog
-
-- pooch
-  - [n.]
-  - 狗（俚语）
-- pup
-  - [n.]
-  - 小狗
-- furry
-  - [adj.]
-  - 毛茸茸的
-- companion
-  - [n.]
-  - 伙伴，同伴
-- downsides
-  - [n.]
-  - 坏处
-- grooming
-  - [n.]
-  - 给动物的刷洗
-- vet
-  - [n.]
-  - 兽医
-- shed
-  - [v.]
-  - 掉毛
-- rewarding
-  - [adj.]
-  - 值得的
-
-> A: 我在考虑养只狗，但我还在犹豫。
-> 
-> B: 可以理解。养狗意味着巨大的责任。
-
-I'm considering getting a dog, but I'm still **on the fence** about it.
-
-That's **understandable**. Having a pooch **comes with a lot of responsibility**.
-
-> B: 我喜欢有狗狗陪伴。
-
-I love having my dog **by my side**.
-
-> A: 有哪些坏处？
-> 
-> B: 要训练，散步，梳洗等。
-
-What about the **downsides**?
-
-**Between** things like training, walking and **grooming**.
-
-> A: 我听说看兽医很花钱？
->
-> B：是的。狗越大，花得越多。
->
-> A: 所以，从长远看，哈士奇比吉娃娃花费更大？
->
-> B: 很有可能。掉的毛也更多。
-
-I heard going to the vet can be pretty **costly** too.
-
-The bigger your dog, the more it costs.
-
-A husky will probably costs me more than chihuahua **in the long run**.
-
-Most likely. They will probably **shed more hair** too.
-
-> 听说要投入很多。
-> 
-> 确实。但很值得。
-
-Sounds like quite the **commitment**.
-
-**Having a dog sure is**, but it's **rewarding** as well.
 
 ## Amusement
 
