@@ -132,6 +132,17 @@ opts_dict = vars(opts)  # 转换成字典，方便log逐行打印
 log_fp.write(opts_dict['io_val'] + '\n')
 ```
 
+**输入列表**
+
+```python3
+parser = argparse.ArgumentParser()
+parser.add_argument('gpu', metavar='N', type=int, nargs='+')
+args = parser.parse_args()
+print(args.gpu)
+
+python test.py 0 1 2 3
+```
+
 有时可以对参数分组（例如训练集和测试集都有相同含义的参数）：
 
 ```python3

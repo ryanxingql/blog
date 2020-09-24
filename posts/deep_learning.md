@@ -2,11 +2,27 @@
 
 - [DEEP LEARNING](#deep-learning)
   - [Debug记录](#debug记录)
+    - [CUDA](#cuda)
     - [网络结构](#网络结构)
     - [数据格式](#数据格式)
     - [DCNv2](#dcnv2)
 
 ## Debug记录
+
+### CUDA
+
+**`nvcc fatal`**
+
+用`nvcc -V`查看，发现不是想要的10.1版本。
+
+编辑变量：`vim ~/.bashrc`，加入以下内容：
+
+```bash
+export PATH="/usr/local/cuda-10.1/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/lcoal/cuda-10.1/lib64:$LD_LIBRARY_PATH"
+```
+
+`source ~/.bashrc`即可。
 
 ### 网络结构
 
