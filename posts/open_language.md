@@ -35,8 +35,9 @@
     - [Different parenting styles](#different-parenting-styles)
     - [Couple fighting](#couple-fighting)
     - [Should I get a dog](#should-i-get-a-dog)
-  - [School Time](#school-time)
+  - [Education](#education)
     - [Talking to teacher](#talking-to-teacher)
+    - [College registration for freshmen](#college-registration-for-freshmen)
   - [Eating](#eating)
     - [Dining etiquette](#dining-etiquette)
   - [Amusement](#amusement)
@@ -85,12 +86,14 @@
 > [B] 我认为大学锦标赛和职业联赛一样激动人心。有很多优秀人才。
 
 - I think the college **championships** are just as exciting as the **pros**. A lot of great young **talents**.
+  - pros
+    - 反义：amateur
 
 > [A] 你觉得曲棍球如何？
 > [B] 我一开始觉得它是加拿大运动。但我越来越喜欢了。
 
 - What do you think of hockey?
-- At first, I thought it was more of a Canadian thing. But it's really grown on me.
+- At first, I thought it was **more of** a Canadian thing. But it's really **grown on me**.
 
 ## Money
 
@@ -1802,7 +1805,7 @@ Sounds like quite the **commitment**.
 
 **Having a dog sure is**, but it's **rewarding** as well.
 
-## School Time
+## Education
 
 ### Talking to teacher
 
@@ -1852,6 +1855,23 @@ Sounds like quite the **commitment**.
 
 - 乔纳森对乔治**评价很高**。
   - `Jonathan thinks pretty highly of George.`
+
+### College registration for freshmen
+
+- credit hours
+  - 学分
+- freshmen
+  - 大一学生
+- put off
+  - 延期，推迟
+- sophomore
+  - [adj.] 大二
+- electives
+  - [n.] 选修课
+- portal
+  - [n.] 门户网站
+- prerequisites
+  - [n.] 前提、先修课程
 
 ## Eating
 
