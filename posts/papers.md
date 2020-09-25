@@ -1,7 +1,14 @@
 # PAPERS
 
 - [PAPERS](#papers)
-  - [去噪/压缩失真](#去噪压缩失真)
+  - [Paper List](#paper-list)
+    - [一般图像恢复](#一般图像恢复)
+    - [去噪](#去噪)
+    - [Deformable Convolution](#deformable-convolution)
+    - [Distortion Attribution](#distortion-attribution)
+    - [Dynamic Inference](#dynamic-inference)
+    - [General CNNs](#general-cnns)
+    - [Milestone](#milestone)
   - [超分辨](#超分辨)
   - [分类](#分类)
   - [分割和检测](#分割和检测)
@@ -9,39 +16,83 @@
   - [质量评估](#质量评估)
   - [鉴识（鉴伪）](#鉴识鉴伪)
   - [视频编码标准](#视频编码标准)
+  - [Paper Note](#paper-note)
 
-按文章处理的任务分类。有的工作可能面向多种任务，我们取其中最具代表性的任务。
+## Paper List
 
-加粗表示关键突破（个人观点）。
+**原则**
 
-## 去噪/压缩失真
+- 从宽到窄。例如可用于一般图像恢复的去噪方法，将被归为图像恢复而非去噪。
+
+### 一般图像恢复
+
+**建模注意力**
+
+- A-CubeNet
+  - 在通道、空域和hierarchy特征三个层次建模attention。
+  - Attention Cube Network for Image Restoration, ACM MM 2020
+
+### 去噪
+
+**利用附加信息**
 
 |Abbr.|Summary|Title|Where|
 |:-|:-|:-|:-|
-|A-CubeNet|在通道、空域和hierarchy三个层次做attention建模|Attention Cube Network for Image Restoration|ACM 2020|
 |QGCN|将JPEG本身的量化图一起输入网络|Learning a Single Model with a Wide Range of Quality Factors for JPEG Image Artifacts Removal|TIP 2020|
-|**RBQE**|渐进增强，质量达标则退出|Early Exit Or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images|ECCV 2020|
-|**STDF**|用可形变卷积完成feature alignment|Spatio-Temporal Deformable Convolution for Compressed Video Quality Enhancement|AAAI 2020|
-|**CBDNet**|通过建模noise map，完成盲去噪|Toward Convolutional Blind Denoising of Real Photographs|CVPR 2019|
-|FastDVDNet|有点像progressive fusion，无需MEMC|FastDVDnet: Towards Real-Time Deep Video Denoising Without Flow Estimation|CVPR 2019|
+|CBDNet|学习noise map，完成盲去噪（训练过程中noise map的gt就是附加信息）|Toward Convolutional Blind Denoising of Real Photographs|CVPR 2019|
+
+### Deformable Convolution
+
+|Abbr.|Summary|Title|Where|
+|:-|:-|:-|:-|
+|**STDF**|用可形变卷积代替MEMC，完成fusion|Spatio-Temporal Deformable Convolution for Compressed Video Quality Enhancement|AAAI 2020|
+
+### Distortion Attribution
+
+|Abbr.|Summary|Title|Where|
+|:-|:-|:-|:-|
 |**MFQEv2**|好帧补差帧，提前融合|MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video|TPAMI 2019|
+|**MFQEv1**|好帧补差帧，渐进融合|Multi-frame Quality Enhancement for Compressed Video|CVPR 2018|
+
+### Dynamic Inference
+
+|Abbr.|Summary|Title|Where|
+|:-|:-|:-|:-|
+|**RBQE**|渐进增强，质量达标则退出|Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images|ECCV 2020|
+|**Noise2Noise**|噪声图像的期望是干净图像|Noise2Noise: Learning image restoration without clean data|ICML 2018|
+
+### General CNNs
+
+|Abbr.|Summary|Title|Where|
+|:-|:-|:-|:-|
+|FastDVDNet|有点像progressive fusion，无需MEMC|FastDVDnet: Towards Real-Time Deep Video Denoising Without Flow Estimation|CVPR 2019|
+
+### Milestone
+
+|Abbr.|Summary|Title|Where|
+|:-|:-|:-|:-|
+|**DnCNN**|用CNN去噪的早期工作|Beyond a Gaussian Denoiser: Residual Learning of Deep CNN for Image Denoising|TIP 2017|
+|**AR-CNN**|用CNN去压缩失真的早期工作|Compression Artifacts Reduction by a Deep Convolutional Network|ICCV 2015|
+
+**去噪**
+
+|Abbr.|Summary|Title|Where|
+|:-|:-|:-|:-|
 |Model-blind|对视频前几帧执行Noise2Noise，训练盲去噪模型|Model-Blind Video Denoising via Frame-To-Frame Training|CVPR 2019|
 |**Noise2Self**||Noise2Self: Blind Denoising by Self-Supervision|ICML 2019|
 |Noise2Void|从自身找相似性；遵循N2N原理。卷积时要挖掉中间点，否则会学成trivial的恒等映射|Noise2Void - Learning Denoising From Single Noisy Images|CVPR 2019|
 |**Path-Restore**|多个不同难度子路径CNN，加一个path-finder，根据增强难度选择路径。依据是训练时的MSE loss|Path-Restore: Learning Network Path Selection for Image Restoration|arXiv 2019|
 |**TOFlow**|ME不应趋近GT，而应根据任务不同、遮挡情况不同等自行学习。此外还提供了Vimeo-90K数据库|Video Enhancement with Task-Oriented Flow|IJCV 2019|
-|**MFQE**|好帧补差帧，渐进融合|Multi-frame Quality Enhancement for Compressed Video|CVPR 2018|
-|**Noise2Noise**|噪声图像的期望是干净图像|Noise2Noise: Learning image restoration without clean data|ICML 2018|
 |QE-CNN|提出所谓的I/P帧分离、融合处理。但实际功效是否达到理想设定未验证|Enhancing Quality for HEVC Compressed Videos|TCSVT 2018|
 |**DCAD**|解码端图像质量增强早期工作，奠基了很多实验设置，例如测BDBR|A Novel Deep Learning-Based Method of Improving Coding Efficiency from the Decoder-End for HEVC|DCC 2017|
 |DIV2K|||CVPRW 2017|
-|**DnCNN**|用CNN去噪的早期工作|Beyond a Gaussian Denoiser: Residual Learning of Deep CNN for Image Denoising|TIP 2017|
-|**AR-CNN**|用CNN去压缩失真的早期工作|Compression Artifacts Reduction by a Deep Convolutional Network|ICCV 2015|
+
 
 ## 超分辨
 
 |Abbr.|Summary|Title|Where|
 |:-|:-|:-|:-|
+|D3Dnet|||SPL 2020|
 |DifficultySR|分easy和hard支路，分别增强easy和hard图像区域；预测难度，gt为bicubic PSNR|Difficulty-aware Image Super Resolution via Deep Adaptive Dual-Network|ICME 2019|
 |**EDVR**|可形变卷积完成feature alignment；通道注意力|Video Restoration with Enhanced Deformable Convolutional Networks|CVPRW 2019|
 |VESPCN|视频超分辨的早期工作，包含一个当时较好的MEMC模块|Real-Time Video Super-Resolution with Spatio-Temporal Networks and Motion Compensation|CVPR 2017|
@@ -84,3 +135,18 @@
 |Abbr.|Summary|Title|Where|
 |:-|:-|:-|:-|
 |**Test18HEVC**|HEVC的18个标准测试序列|Comparison of the Coding Efficiency of Video Coding Standards—Including High Efficiency Video Coding (HEVC)|TCSVT 2012|
+
+
+
+
+
+
+
+
+
+## Paper Note
+
+- STDF
+  - 输入7帧全部concat，输入UNet，学习7帧的offset和mask（类似于spatial attention）；7帧、offset和mask一起送入可形变卷积，完成fusion，最后是QE。
+  - 用一个UNet单独学习每一帧的offset和mask（即不concat输入学习），效果更差。
+    - [ ] 联合优化可以学得更好？
