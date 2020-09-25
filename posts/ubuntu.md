@@ -21,6 +21,12 @@ echo "hello world!" > README.md
 
 ## 软件
 
+**yuv player**
+
+Ubuntu<=19，推荐使用vooya。
+
+Ubuntu20：GH下载YUView.AppImage，赋权限后可以直接使用。
+
 **zip**
 
 不要用7z，linux不好用。
