@@ -76,7 +76,6 @@ Feel free to contact: ryanxingql@gmail.com.
   - [OPEN LANGUAGE](https://github.com/RyanXingQL/Blog/blob/master/posts/open_language.md)
 
 - [PAPERS](https://github.com/RyanXingQL/Blog/blob/master/posts/papers.md)
-  - [PAPER NOTE](https://github.com/RyanXingQL/Blog/blob/master/posts/paper_note.md)
 
 - [READING AND THINKING](https://github.com/RyanXingQL/Blog/blob/master/posts/reading_and_thinking.md)
 
