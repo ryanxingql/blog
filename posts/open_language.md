@@ -1858,20 +1858,48 @@ Sounds like quite the **commitment**.
 
 ### College registration for freshmen
 
-- credit hours
-  - 学分
-- freshmen
-  - 大一学生
-- put off
-  - 延期，推迟
-- sophomore
-  - [adj.] 大二
+- core classes
+- intro classes
 - electives
   - [n.] 选修课
+- freshmen
+  - 大一学生
 - portal
   - [n.] 门户网站
+  - registration portal
+    - 选课系统
 - prerequisites
   - [n.] 前提、先修课程
+
+> [A] 你注册了秋季学期吗？
+
+- Have you **signed up** for your fall **semester**?
+
+> [A] 你每学期需要12学分。
+
+- You should sign up for 12 **credit hours** for each semester.
+
+> [A] 不要推迟上必修课。在大二之前把它们修完。
+
+- Just don't put off your **required courses**. Get them done by your **sophomore** year.
+  - sophomore
+    - [adj.] 大二
+
+> [A] 也许我应该和辅导员聊一聊。
+
+- Maybe I should make an appointment with my advisor.
+
+> [B] 时间冲突怎么办？
+
+- What if the class times overlap?
+
+> [A] 高级课程需要先修课程。先学完！
+> [B] 那我赶紧去报名，否则没名额了！
+> [A] 别紧张。
+
+- High level courses need prerequisites, so get those done first.
+- I better register quickly before classes fill up.
+- Don't stress about it.
 
 ## Eating
 
