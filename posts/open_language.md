@@ -35,6 +35,7 @@
     - [Different parenting styles](#different-parenting-styles)
     - [Couple fighting](#couple-fighting)
     - [Should I get a dog](#should-i-get-a-dog)
+    - [Getting divorced](#getting-divorced)
   - [Education](#education)
     - [Talking to teacher](#talking-to-teacher)
     - [College registration for freshmen](#college-registration-for-freshmen)
@@ -1805,6 +1806,50 @@ Sounds like quite the **commitment**.
 
 **Having a dog sure is**, but it's **rewarding** as well.
 
+### Getting divorced
+
+> [A] 我听说你和Laura离婚了。
+> [B] 是的，有些事不如人意。
+
+- I heard that you and Laura **got** a divorce.
+- Yeah, things weren't **working out**.
+
+> [A] 很遗憾。是和平分手吗？
+> [B] 没什么不愉快。我们有隔阂已经一段时间了。
+
+- I'm sorry to hear that. Was it an **amicable split**?
+  - amicable
+    - [adj.] 友好的
+- There were no **hard feelings**. We'd been **growing apart** for a while.
+
+> [A] 所有事都敲定了吗？
+> [B] 我们花了点时间。现在正式离婚了。
+
+- So everything is **finalized** then?
+- It took a while to **hammer out** some of the final details. But it's **official** now.
+
+> [A] 孩子怎么办？你们怎么协商的？
+> [B] 我们打算共同抚养。她是一个好的共同监护人。
+
+- What about the kids? What kind of **custody arrangement** did you agree to?
+  - custody
+    - 抚养权
+- We're going to keep **joint custody**. I think she'll be a great **co-parent**.
+
+> [A] 公平分割财产了吗？
+> [B] 对半分了。下周卖房。
+
+- So you find a fair way to divide your assets?
+- It was a 50/50 split. We're putting the house up for scale next week.
+
+> [A] 你要支付抚养费吗？
+> [B] 嗯。18岁后我将支付教育费用。
+> [A] 真好。孩子是第一位的。
+
+- Will you be paying **child support**?
+- Yes, and then after they turn 18, I will be funding their education.
+- That's good. The kids need to be **put first**.
+
 ## Education
 
 ### Talking to teacher
@@ -1870,10 +1915,13 @@ Sounds like quite the **commitment**.
     - 选课系统
 - prerequisites
   - [n.] 前提、先修课程
+- declare (choose) one's major
+  - 确定主修
 
 > [A] 你注册了秋季学期吗？
 
 - Have you **signed up** for your fall **semester**?
+  - enroll in
 
 > [A] 你每学期需要12学分。
 
@@ -1887,7 +1935,7 @@ Sounds like quite the **commitment**.
 
 > [A] 也许我应该和辅导员聊一聊。
 
-- Maybe I should make an appointment with my advisor.
+- Maybe I should **make an appointment with** my advisor.
 
 > [B] 时间冲突怎么办？
 
@@ -1897,9 +1945,9 @@ Sounds like quite the **commitment**.
 > [B] 那我赶紧去报名，否则没名额了！
 > [A] 别紧张。
 
-- High level courses need prerequisites, so get those done first.
-- I better register quickly before classes fill up.
-- Don't stress about it.
+- High level courses need **prerequisites**, so get those done first.
+- I better register quickly before classes **fill up**.
+- Don't **stress** about it.
 
 ## Eating
 
