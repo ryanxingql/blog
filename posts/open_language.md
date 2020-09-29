@@ -1812,7 +1812,16 @@ Sounds like quite the **commitment**.
 > [B] 是的，有些事不如人意。
 
 - I heard that you and Laura **got** a divorce.
+  - Lot of people get divorces.
+  - divorce有动词用法，但很少直接用，虽然报纸上可能会见到。
 - Yeah, things weren't **working out**.
+  - How's the new job working out?
+  - It's working out really well.
+  - D
+    - How was your trip? 
+    - It didn't work out. I couldn't find the time to go travelling.
+  - Things don't always work out the way we planned.
+  - Things weren't working out between Chris and his wife.
 
 > [A] 很遗憾。是和平分手吗？
 > [B] 没什么不愉快。我们有隔阂已经一段时间了。
@@ -1820,6 +1829,8 @@ Sounds like quite the **commitment**.
 - I'm sorry to hear that. Was it an **amicable split**?
   - amicable
     - [adj.] 友好的
+  - Was it on friendly terms?
+  - Was it on good terms?
 - There were no **hard feelings**. We'd been **growing apart** for a while.
 
 > [A] 所有事都敲定了吗？
@@ -1834,6 +1845,9 @@ Sounds like quite the **commitment**.
 - What about the kids? What kind of **custody arrangement** did you agree to?
   - custody
     - 抚养权
+    - custody of bonds, stocks or gold
+    - sole custody
+  - come to an arrangement
 - We're going to keep **joint custody**. I think she'll be a great **co-parent**.
 
 > [A] 公平分割财产了吗？
