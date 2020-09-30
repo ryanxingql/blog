@@ -6,7 +6,8 @@
   - [输入输出](#输入输出)
     - [一般文件](#一般文件)
     - [CSV](#csv)
-  - [常用模块和方法](#常用模块和方法)
+  - [画图](#画图)
+  - [其他常用模块和方法](#其他常用模块和方法)
     - [argparse](#argparse)
     - [assert](#assert)
     - [multiprocessing](#multiprocessing)
@@ -116,7 +117,19 @@ df = pd.read_csv(csv_file)
 saved_column = df.column_name  # you can also use df['column_name']
 ```
 
-## 常用模块和方法
+## 画图
+
+[[official]](https://matplotlib.org/tutorials/introductory/pyplot.html)
+
+[[3D plot]](https://blog.csdn.net/u014636245/article/details/82799573)
+
+```python3
+import matplotlib.pyplot as plt
+plt.plot(result)
+plt.show()
+```
+
+## 其他常用模块和方法
 
 常用函数和方法，参见`utils`。
 
@@ -268,17 +281,36 @@ callback=lambda x :pbar.update(1)
 
 > 推荐查看Python3自带的最新模块pathlib。
 
-路径:
+**判断路径是否存在；若不存在则创建**
 
 ```python3
-os.path.join("/home", "usrname")
-
-os.path.basename("/home/usrname/xxx.yuv").split(".")[0]
-
 if not os.exists(ADir):
     os.makedirs(ADir)
+```
 
+**合成路径**
+
+```python3
+import os.path as op
+os.path.join("/home", "usrname")
+```
+
+**提取最高层文件夹名**
+
+```python
+os.path.basename("/home/usrname/xxx.yuv").split(".")[0]
+```
+
+**删除路径**
+
+```
 os.removedirs(ADir)  # 只能删除空路径
+```
+
+**获取当前工作路径**
+
+```python3
+print(os.getcwd())
 ```
 
 ### pathlib
