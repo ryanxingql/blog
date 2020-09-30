@@ -12,6 +12,7 @@
     - [multiprocessing](#multiprocessing)
     - [numpy](#numpy)
     - [os](#os)
+    - [pathlib](#pathlib)
     - [shutil](#shutil)
     - [time](#time)
     - [tqdm](#tqdm)
@@ -85,6 +86,8 @@ numpy提供了更快的二进制读写方式：
 
 ### CSV
 
+一般文件读取方法：
+
 ```python3
 import csv
 
@@ -102,6 +105,15 @@ writer = csv.writer(csv_fp)
 writer.writerow(['index_vid','psnr_ori','psnr_enh','dpsnr','name_vid'])
 
 csv_fp.close()
+```
+
+更智能：
+
+```python3
+import pandas as pd
+
+df = pd.read_csv(csv_file)
+saved_column = df.column_name  # you can also use df['column_name']
 ```
 
 ## 常用模块和方法
@@ -254,6 +266,8 @@ callback=lambda x :pbar.update(1)
 
 ### os
 
+> 推荐查看Python3自带的最新模块pathlib。
+
 路径:
 
 ```python3
@@ -265,6 +279,22 @@ if not os.exists(ADir):
     os.makedirs(ADir)
 
 os.removedirs(ADir)  # 只能删除空路径
+```
+
+### pathlib
+
+> 和繁杂的`os.path`说拜拜。
+
+```python3
+from pathlib import Path
+
+root_path = Path('C:/Files')  # 你没看错，无论系统，都用正斜杠即可！
+file_path = root_path / 'file.csv'  # 比op简单多了
+
+file_path.stem  # file
+file_path.name  # file.csv
+file_path.suffix  # csv
+file_path.exists()  # True
 ```
 
 ### shutil
