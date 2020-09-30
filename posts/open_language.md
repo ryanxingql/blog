@@ -41,6 +41,7 @@
     - [College registration for freshmen](#college-registration-for-freshmen)
   - [Eating](#eating)
     - [Dining etiquette](#dining-etiquette)
+    - [Diet fads](#diet-fads)
   - [Amusement](#amusement)
     - [Mobile games](#mobile-games)
     - [Game of Thrones](#game-of-thrones)
@@ -2020,6 +2021,48 @@ Just place them next to each other.
 > 听起来挺容易的。
 
 Sounds easy.
+
+### Diet fads
+
+- fads
+  - 一时的狂热，短暂的流行
+- low-carb
+  - [adj.] 低碳水的
+- high-protein
+- keto diet
+  - 生酮饮食
+- waistline
+  - 腰线
+- cleanses
+  - [n.] 清洗，净化
+- nutrients
+  - 营养物质
+- yo-yos
+  - [n.] 摇摆不定的事物
+
+> [B] 我在节食。
+
+- I'm on a diet.
+
+> [B] 你是说生酮饮食吗？不，我只是想注意自己的腰线。
+
+- Like the keto diet? No, I'm just trying to watch my waistline.
+
+> [A] 我尝试过很多减肥餐，但减肥本质上就是如何合理饮食。
+> [B] 我试过果汁排毒，但居然因此生病了。
+> [A] 这些流行的减肥方法都只是市场营销，不是真正的科学。
+
+- I've tried so many diets, but it's **really all about** eating sensibly.
+- I did a couple juice cleanses, but I actually got sick because of them.
+- Those diet fads are just about marketing, not about actual science.
+
+> [A] 这些方法的功效只是让体重反复，无法养成持久的习惯。
+
+- All they do is make a bunch of yo-yos that can't build lasting habits.
+
+> [A] 看上去你已经明白这个道理了。
+
+- It looks like you've got that figured out.
 
 ## Amusement
 
