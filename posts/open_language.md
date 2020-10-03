@@ -2024,21 +2024,14 @@ Sounds easy.
 
 ### Diet fads
 
-- fads
-  - 一时的狂热，短暂的流行
+
 - low-carb
   - [adj.] 低碳水的
+  - carbohydrate
 - high-protein
-- keto diet
-  - 生酮饮食
-- waistline
-  - 腰线
-- cleanses
-  - [n.] 清洗，净化
 - nutrients
   - 营养物质
-- yo-yos
-  - [n.] 摇摆不定的事物
+  - nutritionist
 
 > [B] 我在节食。
 
@@ -2047,6 +2040,12 @@ Sounds easy.
 > [B] 你是说生酮饮食吗？不，我只是想注意自己的腰线。
 
 - Like the keto diet? No, I'm just trying to watch my waistline.
+  - keto diet
+    - 生酮饮食
+    - high-fat
+  - waistline
+    - 腰线
+    - `watch my waistline`是男人的说法。女人说`watch my figure`
 
 > [A] 我尝试过很多减肥餐，但减肥本质上就是如何合理饮食。
 > [B] 我试过果汁排毒，但居然因此生病了。
@@ -2054,11 +2053,20 @@ Sounds easy.
 
 - I've tried so many diets, but it's **really all about** eating sensibly.
 - I did a couple juice cleanses, but I actually got sick because of them.
+  - cleanse
+    - [n.] 清洗，净化
+    - [vt.] 使净化
+      - Vegetables will help you cleanse your system.
+      - cleanse my soul
 - Those diet fads are just about marketing, not about actual science.
+  - fads
+    - 一时的狂热，短暂的流行
 
 > [A] 这些方法的功效只是让体重反复，无法养成持久的习惯。
 
 - All they do is make a bunch of yo-yos that can't build lasting habits.
+  - yo-yos
+    - [n.] 摇摆不定的事物，这里指体重
 
 > [A] 看上去你已经明白这个道理了。
 
