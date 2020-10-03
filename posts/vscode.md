@@ -1,28 +1,23 @@
 # VSCODE
 
 - [VSCODE](#vscode)
-  - [基础指令](#基础指令)
-  - [设置](#设置)
-  - [问题解决](#问题解决)
+  - [基础](#基础)
   - [导出markdown为PDF](#导出markdown为pdf)
+  - [问题解决](#问题解决)
 
-## 基础指令
+## 基础
 
-- 打开命令行
-  - F1，或`shift + ctrl + p`
-- 新建页
-  - 双击打开。单击会覆盖。
+**打开命令行**
 
-## 设置
+- F1，或`shift + ctrl + p`
 
-- Remote设置
-  - [[ref]](https://zhuanlan.zhihu.com/p/64849549)
+**新建页**
 
-## 问题解决
+- 双击打开。单击会覆盖。
 
-- Conda和PowerShell报错
-  - [[ref1]](https://blog.csdn.net/chencaw/article/details/89035571)
-  - [[ref2]](https://blog.csdn.net/cskywit/article/details/99202520)
+**Remote设置**
+
+- [[ref]](https://zhuanlan.zhihu.com/p/64849549)
 
 ## 导出markdown为PDF
 
@@ -38,3 +33,14 @@
     - 如果内容较少，图片会被挤到最后一页。
 - Markdown Preview Enhanced插件
   - 右键预览，chrome打开，直接打印。
+
+## 问题解决
+
+**Conda和PowerShell报错**
+
+- [[ref1]](https://blog.csdn.net/chencaw/article/details/89035571)
+- [[ref2]](https://blog.csdn.net/cskywit/article/details/99202520)
+
+**matplotlib没有显示**
+
+用交互模式。在代码前后加上`#%%`，可run cell。

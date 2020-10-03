@@ -27,6 +27,10 @@ Ubuntu<=19，推荐使用vooya。
 
 Ubuntu20：GH下载YUView.AppImage，赋权限后可以直接使用。
 
+**视频播放器**
+
+VLC
+
 **zip**
 
 不要用7z，linux不好用。
