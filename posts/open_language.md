@@ -39,6 +39,7 @@
   - [Education](#education)
     - [Talking to teacher](#talking-to-teacher)
     - [College registration for freshmen](#college-registration-for-freshmen)
+    - [College life](#college-life)
   - [Eating](#eating)
     - [Dining etiquette](#dining-etiquette)
     - [Diet fads](#diet-fads)
@@ -1963,6 +1964,61 @@ Sounds like quite the **commitment**.
 - High level courses need **prerequisites**, so get those done first.
 - I better register quickly before classes **fill up**.
 - Don't **stress** about it.
+
+### College life
+
+> [a] 上学期就没见过你，最近有什么新鲜事吗？
+> [b] 没啥，我从校内宿舍搬到了校外公寓。
+> [a] 通勤怎么样？
+> [b] 不方便，但有自己的房间还是挺值的。
+> [a] 我理解。我要在宿舍住到大三，因为我的课与课之间很远，我希望能走过去。
+> [b] 我的课都是早上连着的。
+
+- I haven't seen you since last semester. What's new?
+- Not much. I moved out of the **dorms** and into an **off-campus apartment**.
+  - dorms
+    - [n.] 宿舍
+  - off-campus
+    - [adj.] 校外的
+- How's the commute?
+  - commute
+    - [n.] 通勤
+    - [v.] You need to commute to school every day.
+- Not good, but having my own room is **worth it**.
+- **I hear you**. I'm in the dorms until **junior year** because I have long gaps between classes and prefer to be **within walking distance** of everything.
+  - junior year
+    - [n.] 大三
+    - high school和college都可以用
+    - freshman year, sophomore year, junior year, senior year
+    - 在加拿大，直接说first, second, third and fourth year
+  - I will be there within five hours.
+- My classes are **back-to-back** in the morning.
+  - back-to-back
+    - [adj.] 一个接一个的
+
+> [b] 我希望能找到实习。
+
+- I'm hoping to **pick up** an internship.
+  - internship
+    - [n.] 实习期
+    - intern就是实习生
+
+> [a] 你加入男大学生联谊会了吗？
+
+- Did you ever end up **pledging to** that fraternity?
+  - pledging
+    - [v.] 承诺
+  - fraternity
+    - [n.] 男大学生联谊会
+  - sorority
+    - [n.] 女大学生联谊会
+    - 上述二者可统称为Greek life
+  - honor society
+    - [n.] 优等生联谊会
+
+> [b] 恭喜！我要去上课了，这周末我们去开趴体吧。
+
+- **Congrats**! Hey listen, **I've got to get to class**, but let's **hit a house party** this weekend.
 
 ## Eating
 
