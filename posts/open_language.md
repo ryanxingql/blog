@@ -18,6 +18,7 @@
     - [Buying Chinese New Year gifts](#buying-chinese-new-year-gifts)
     - [Lantern Festival traditions](#lantern-festival-traditions)
     - [Chinese Labor Day vs. American Labor Day](#chinese-labor-day-vs-american-labor-day)
+    - [Mooncakes: Love or hate them?](#mooncakes-love-or-hate-them)
   - [Technology](#technology)
     - [Smart speakers](#smart-speakers)
     - [Unmanned stores](#unmanned-stores)
@@ -989,6 +990,50 @@
 **句式**
 
 - Besides sth, what/where/who else ...
+
+### Mooncakes: Love or hate them?
+
+> [a] 中秋节就要来了，Ryan你知道这意味着什么吗？
+> [b] 什么呀？
+> [a] 月饼啊！光想吃月饼，我就流口水！
+> [b] 得了吧，没那么好吃。我觉得它们被高估了。
+> [a] 你怎么可以这么说！
+
+- Mid-Autumn Festival is **just around the corner** and you know what that means, Ryan!
+- What's that?
+- Mooncakes! Oh man. My mouth is **watering** just thinking about **sinking** my teeth into one!
+- Come on, they're not that great. **Frankly**, I think they're a little **overrated**.
+  - overrated
+    - [adj.] 被高估的
+- **How can you even say that?**
+
+> [a] 有很多品种可选。
+> [b] 比如？我只吃过酥脆的咸月饼，不喜欢。
+> [a] 你可以尝试甜馅的。莲蓉就是一种经典必选。
+> [b] 听着很美味。也有酥皮吗？
+> [a] 是的。甚至还有冰皮。
+> [b] 那我必须得尝尝了。
+> [a] 看！谁会讨厌月饼？
+
+- There are so many **varieties** to choose from nowadays.
+  - varieties
+    - [n.] 不同品种
+- Such as? All I've tried was the **flaky**, **savory** kind. It just **wasn't my thing**.
+  - flaky
+    - [adj.] 易碎的，酥脆的
+  - savory
+    - [adj.] 咸味的
+- Well, you could try mooncakes with a sweeter **filling**. Lotus seed paste is a classic **go-to**.
+  - filling
+    - [n.] 馅料
+- Sounds pretty **appetizing**. Do they make them with soft **pastry crusts** too?
+  - appetizing
+    - [adj.] 开胃的
+  - pastry crusts
+    - [n.] 酥脆的皮
+- Sure do. They even have snow skin mooncakes.
+- Ok, now that **I've got to** try.
+- See! **How can anyone** hate mooncakes?
 
 ## Technology
 
