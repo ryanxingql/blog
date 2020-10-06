@@ -1002,9 +1002,19 @@
 - Mid-Autumn Festival is **just around the corner** and you know what that means, Ryan!
 - What's that?
 - Mooncakes! Oh man. My mouth is **watering** just thinking about **sinking** my teeth into one!
+  - water
+    - drool
+    - These desserts look mouth-watering.
+  - sink my teeth into sth
+    - bite
+    - Stock prices are sinking.
+    - I wanna sink my teeth into a good book.
 - Come on, they're not that great. **Frankly**, I think they're a little **overrated**.
   - overrated
     - [adj.] 被高估的
+  - Frankly, ...
+    - 表示委婉
+    - I don't know if I really want to tell you this because you might not like what I have to say. But frankly, you know, I just don't like the way you're doing things around here.
 - **How can you even say that?**
 
 > [a] 有很多品种可选。
@@ -1018,11 +1028,17 @@
 - There are so many **varieties** to choose from nowadays.
   - varieties
     - [n.] 不同品种
+    - a variety of teas
+    - It's the variety (diversity) that makes my job so enjoyable.
 - Such as? All I've tried was the **flaky**, **savory** kind. It just **wasn't my thing**.
   - flaky
     - [adj.] 易碎的，酥脆的
+    - flaky skin
+      - 被暴晒后起皮
   - savory
     - [adj.] 咸味的
+  - my thing
+    - Guitar is totally my thing.
 - Well, you could try mooncakes with a sweeter **filling**. Lotus seed paste is a classic **go-to**.
   - filling
     - [n.] 馅料
@@ -1031,8 +1047,9 @@
     - [adj.] 开胃的
   - pastry crusts
     - [n.] 酥脆的皮
+    - pizza crust就是披萨边上硬的部分
 - Sure do. They even have snow skin mooncakes.
-- Ok, now that **I've got to** try.
+- Ok, now that **I've got to** (have a) try.
 - See! **How can anyone** hate mooncakes?
 
 ## Technology
