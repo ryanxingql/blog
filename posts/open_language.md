@@ -37,6 +37,7 @@
     - [Couple fighting](#couple-fighting)
     - [Should I get a dog](#should-i-get-a-dog)
     - [Getting divorced](#getting-divorced)
+    - [Married life vs single life](#married-life-vs-single-life)
   - [Education](#education)
     - [Talking to teacher](#talking-to-teacher)
     - [College registration for freshmen](#college-registration-for-freshmen)
@@ -1007,8 +1008,9 @@
     - These desserts look mouth-watering.
   - sink my teeth into sth
     - bite
-    - Stock prices are sinking.
-    - I wanna sink my teeth into a good book.
+    - Stock prices are **sinking**.
+    - I wanna **sink** my teeth into a good book.
+    - Such policies will **sink** the economy.
 - Come on, they're not that great. **Frankly**, I think they're a little **overrated**.
   - overrated
     - [adj.] 被高估的
@@ -1042,6 +1044,10 @@
 - Well, you could try mooncakes with a sweeter **filling**. Lotus seed paste is a classic **go-to**.
   - filling
     - [n.] 馅料
+    - [adj.] 饱腹的
+      - The food is filling.
+  - paste
+    - [n.] 面团
 - Sounds pretty **appetizing**. Do they make them with soft **pastry crusts** too?
   - appetizing
     - [adj.] 开胃的
@@ -1927,6 +1933,40 @@ Sounds like quite the **commitment**.
 - Will you be paying **child support**?
 - Yes, and then after they turn 18, I will be funding their education.
 - That's good. The kids need to be **put first**.
+
+### Married life vs single life
+
+> [a] 嗨，你和杰西卡最近怎么样？
+> [b] 我不知道。她一直在暗示结婚和成家。
+
+- Hey, how are you and Jessica doing?
+- I don't know. She keeps **hinting** at **tying the knot** and **settling down**.
+  - hint
+    - 暗示
+  - tying the knot
+    - 喜结连理，结婚
+    - tie
+  - settle down
+    - 安顿，成家
+
+> [a] 我认为在自由中失去的，会在陪伴中补偿回来。
+> [b] 但我放弃单身后后悔怎么办？
+> [a] 单身并不尽如人意。
+
+- I think what you lose in freedom, you make up for in companionship.
+- What if I regret throwing away my single life?
+- Being single isn't all roses.
+  - companionship
+    - [n.] 友谊，陪伴
+    - company
+  - isn't all roses
+    - 不尽如人意
+
+> [a] 如果你们很般配，相处融洽，为何要单独生活？
+> [b] 你问倒我了。谢谢！
+
+- If you're a good team and enjoy each other's company, why go through life alone?
+- You've got me there. Thanks!
 
 ## Education
 
