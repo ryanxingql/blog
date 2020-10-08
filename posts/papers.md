@@ -2,7 +2,7 @@
 
 - [PAPERS](#papers)
   - [可视化数据恢复](#可视化数据恢复)
-    - [应用CNN](#应用cnn)
+    - [应用CNNs](#应用cnns)
     - [数据库](#数据库)
     - [应用注意力](#应用注意力)
     - [应用可形变卷积](#应用可形变卷积)
@@ -19,12 +19,15 @@
     - [应用课程学习&蒸馏学习](#应用课程学习蒸馏学习)
     - [节能加速](#节能加速-1)
     - [数据库](#数据库-1)
-  - [高效CNN结构设计及探究](#高效cnn结构设计及探究)
-    - [提升健壮性](#提升健壮性)
+    - [应用CNNs](#应用cnns-1)
+  - [高效CNNs结构设计及探究](#高效cnns结构设计及探究)
+    - [改进卷积核](#改进卷积核)
+    - [改进连接方式](#改进连接方式)
     - [节能加速](#节能加速-2)
     - [NAS](#nas)
   - [学习理论](#学习理论)
     - [多任务](#多任务)
+    - [自监督学习](#自监督学习)
   - [NLP](#nlp)
     - [建模注意力](#建模注意力)
 
@@ -32,7 +35,7 @@
 
 包括：去噪，去压缩失真，超分辨等底层视觉任务。
 
-### 应用CNN
+### 应用CNNs
 
 - [x] DnCNN
   - 用CNN去噪的早期工作。
@@ -270,27 +273,50 @@
 
 - [ ] ImageNet
 
-## 高效CNN结构设计及探究
+### 应用CNNs
 
-### 提升健壮性
+- [ ] AlexNet
+  - 62.4M参数。normalization，dropout和数据扩增都用来防止过拟合。
+
+## 高效CNNs结构设计及探究
+
+### 改进卷积核
+
+- [ ] 3DConv
+
+- [ ] DCN
+
+- [ ] GoogLeNet
+  - 不同于加深，该网络加宽，且使用multi-scale卷积核。
+  - 一共4条支路：1x1卷积，1x1+3x3卷积，1x1+5x5卷积，3x3+1x1卷积，最后concat。
+
+- [ ] VGG
+  - 打破传统大卷积核、大步长惯例，使用3x3小卷积核和1x1小步长，特征更精干，训练更简单。
+
+### 改进连接方式
+
+- [ ] DenseNet
+  - 增加冗余性，提升健壮性。
 
 - [x] UNet++
   - 将U-Net层层嵌套、稠密连接，可模型剪裁。
   - UNet++: A Nested U-Net Architecture for Medical Image Segmentation, DLMIA 2018
 
 - [x] FractalNet
-  - 类分形结构，规律可拓展。
+  - 类分形结构提供连接辅路，规律可拓展。
   - FractalNet: Ultra-Deep Neural Networks without Residuals, ICLR 2017
-
-- [x] ResNet_Ensembles
-  - ResNet高效的原因：通过丰富的residual connection，降低了ResBlock之间的依赖，提升冗余的同时提高容错性。
-  - ResNet相当于建立了大量子网络（不同子网络走的路径不同），因此建立了ensembles。
-  - 实际执行路径非常短，因此梯度得以保留。
-  - Residual Networks Behave Like Ensembles of Relatively Shallow Networks, NIPS 2016
 
 - [ ] U-Net
 
-- [ ]
+- [ ] FCN
+
+- [ ] ResNet
+  - VGG已经证明越深越好，而ResNet通过残差结构实现更深的网络。
+  - [x] ResNet_Ensembles
+    - ResNet高效的原因：通过丰富的residual connection，降低了ResBlock之间的依赖，提升冗余的同时提高容错性。
+    - ResNet相当于建立了大量子网络（不同子网络走的路径不同），因此建立了ensembles。
+    - 实际执行路径非常短，因此梯度得以保留。
+    - Residual Networks Behave Like Ensembles of Relatively Shallow Networks, NIPS 2016
 
 ### 节能加速
 
@@ -341,6 +367,11 @@
 - [ ] MTL
 
 - [ ] Taxonomy
+
+### 自监督学习
+
+1. 常用做法：构造pretext task，训练特征提取器。pretext task例如拼图（类似NLP中的前面一个单词预测下一个单词）、图像修复、上色（根据灰度图预测彩图）等，一般也是自监督任务。
+2. 评估方法：评估特征，例如将获取的特征用于high-level任务（称为downstream task），再执行评估。暂无通用做法。
 
 ## NLP
 

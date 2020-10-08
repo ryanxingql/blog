@@ -1946,6 +1946,7 @@ Sounds like quite the **commitment**.
   - tying the knot
     - 喜结连理，结婚
     - tie
+      - tie your shoelaces into a knot
   - settle down
     - 安顿，成家
 
@@ -1954,11 +1955,13 @@ Sounds like quite the **commitment**.
 > [a] 单身并不尽如人意。
 
 - I think what you lose in freedom, you make up for in companionship.
-- What if I regret throwing away my single life?
-- Being single isn't all roses.
   - companionship
     - [n.] 友谊，陪伴
     - company
+    - companion
+      - [n.] 伙伴
+- What if I regret throwing away my single life?
+- Being single isn't all roses.
   - isn't all roses
     - 不尽如人意
 
