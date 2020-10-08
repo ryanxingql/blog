@@ -29,8 +29,7 @@ Feel free to contact: ryanxingql@gmail.com.
 - [FFMPEG](https://github.com/RyanXingQL/Blog/blob/master/posts/ffmpeg.md) 
 
 - [GIT](https://github.com/RyanXingQL/Blog/blob/master/posts/git.md)
-
-> 多终端同步代码。注意用`.gitignore`隔离代码和数据（模型）。
+  - 注意用`.gitignore`隔离代码和数据（模型）。
 
 - [HEXO AND GITHUB PAGES](https://github.com/RyanXingQL/Blog/blob/master/posts/hexo_and_github_pages.md)
 
@@ -38,7 +37,7 @@ Feel free to contact: ryanxingql@gmail.com.
 
 - [MARKDOWN](https://github.com/RyanXingQL/Blog/blob/master/posts/markdown.md)
 
-- [MATLAB](https://github.com/RyanXingQL/Blog/blob/master/posts/matlatb.md)
+- [MATLAB](https://github.com/RyanXingQL/Blog/blob/master/posts/matlab.md)
 
 - [NVIDIA](https://github.com/RyanXingQL/Blog/blob/master/posts/nvidia.md)
 
@@ -57,14 +56,13 @@ Feel free to contact: ryanxingql@gmail.com.
 - [TEX](https://github.com/RyanXingQL/Blog/blob/master/posts/tex.md)
 
 - [TMUX](https://github.com/RyanXingQL/Blog/blob/master/posts/tmux.md)
-
-> 借助Termius等神器，开启tmux跑程序。
+  - 一定要在后台跑程序，避免断网、关闭终端等导致程序中断。
+  - 搭配Termius神器。
 
 - [UBUNTU](https://github.com/RyanXingQL/Blog/blob/master/posts/ubuntu.md)
 
 - [VSCODE](https://github.com/RyanXingQL/Blog/blob/master/posts/vscode.md)
-
-> 借助Remote，远程写代码。
+  - 使用Remote功能，远程写代码。
 
 - [ZOTERO](https://github.com/RyanXingQL/Blog/blob/master/posts/zotero.md)
 
@@ -84,5 +82,4 @@ Feel free to contact: ryanxingql@gmail.com.
 - **北航电子信息课程笔记**
   - [本科专业课](https://drive.google.com/drive/folders/1UU703I_zM1pPx5UVzIVLSN8NZwqxo5Tf?usp=sharing)
   - [研究生课程](https://drive.google.com/drive/folders/1UU703I_zM1pPx5UVzIVLSN8NZwqxo5Tf?usp=sharing)
-
-> 其中【图像处理】、【嵌入式】、【微机原理】、【网络安全】、【泛函分析】和【算法设计】的笔记自认为不错，能帮学弟学妹们期末涨分。
+  - 其中[图像处理]、[嵌入式]、[微机原理]、[网络安全]、[泛函分析]和[算法设计]的笔记自认为不错，能帮学弟学妹们期末涨分。
