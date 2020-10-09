@@ -13,6 +13,7 @@
     - [How to be healthier](#how-to-be-healthier)
     - [Accidents and injuries](#accidents-and-injuries)
     - [Emergency response](#emergency-response)
+    - [How to tone up your muscles](#how-to-tone-up-your-muscles)
   - [Culture](#culture)
     - [Boxing Day](#boxing-day)
     - [Buying Chinese New Year gifts](#buying-chinese-new-year-gifts)
@@ -685,6 +686,27 @@
     - 担心秃顶。
   - `In an effort to go green, Starbucks recently announced that ...`
     - 为实现环保
+
+### How to tone up your muscles
+
+- warm up
+- burpees
+  - 波比跳（立卧撑跳）
+- quads
+  - `/kwɑd/`
+  - 四头肌
+- glutes
+  - 臀大肌
+- squats
+  - [n.] 深蹲
+- lunges
+  - [n.] 箭步蹲
+- calves
+  - [n.] 小腿肚
+  - calf
+- compound
+  - [adj.] 混合的，复合的
+- 
 
 ## Culture
 
@@ -1943,12 +1965,15 @@ Sounds like quite the **commitment**.
 - I don't know. She keeps **hinting** at **tying the knot** and **settling down**.
   - hint
     - 暗示
+    - I hint to my boyfriend that I wanted to get married.
   - tying the knot
     - 喜结连理，结婚
     - tie
       - tie your shoelaces into a knot
   - settle down
     - 安顿，成家
+    - She quickly settled into her new job.
+      - 适应新工作
 
 > [a] 我认为在自由中失去的，会在陪伴中补偿回来。
 > [b] 但我放弃单身后后悔怎么办？
@@ -1960,7 +1985,13 @@ Sounds like quite the **commitment**.
     - company
     - companion
       - [n.] 伙伴
+  - What you lose in time, you make up for in experience.
+    - 花费了时间，但收获了经验。
 - What if I regret throwing away my single life?
+  - regret
+    - [v.] regret doing sth
+    - [n.] Everybody has regrets in life.
+    - [adj.] He didn't even seem regretful about what he did.
 - Being single isn't all roses.
   - isn't all roses
     - 不尽如人意

@@ -354,11 +354,30 @@
 
 ### NAS
 
+**定义**
+
+- 一个嵌套的优化问题：内层是面向训练loss最小化的权重最优化，外层是面向验证集loss最小化的结构最优化。
+- 大白话：比较各种不同的结构。光有结构不行，还得已知每个结构的最优参数组合，才能输出各自的最优结构进行对比。找参数的过程理论上也需要验证集？但麻烦，差不多在训练集上拟合就完了。然后在验证集上测试得到该结构下的精度结果。
+
+- [ ] GHN
+  - 传统NAS慢，是因为内层优化（见定义）耗时耗力：对于每一个结构，寻找其最优参数组合都是一个漫长的迭代过程。而本文希望学习一个hypernetwork，本质是一个参数化方程估计，用来**一步生成某结构下的较优参数**，无需迭代搜索最优参数。该hypernetwork与SGD高度相关，因此预测又快又准。
+  - 本文还提出用计算图表征网络拓扑结构，从而完成结构采样。结合上述二者，该工作被称为Graph HyperNetwork。
+  - 为了实现NAS，作者随机采样结构，相应较优网络权重可一步产生，进一步得到验证集精度；然后比较不同结构的精度即可。
+  - 还能完成不可差分的anytime prediction网络架构搜索。
+
 - [x] NASNet
   - 在小数据集上学，在大数据集上用。
   - 搜索block而不是整个network。
     - [ ] 对于多任务而言，每个block最好不同。
   - Learning Transferable Architectures for Scalable Image Recognition, CVPR 2018
+
+- [ ] SMASH
+  - 将HyperNetwork用于NAS，可生成部分权重。
+  - Smash: one-shot model architecture search through hypernetworks, ICLR 2018
+
+- [ ] HyperNetwork
+  - 为其他网络生成权重。
+  - Hypernetworks, ICLR 2017
 
 ## 学习理论
 
@@ -370,8 +389,24 @@
 
 ### 自监督学习
 
-1. 常用做法：构造pretext task，训练特征提取器。pretext task例如拼图（类似NLP中的前面一个单词预测下一个单词）、图像修复、上色（根据灰度图预测彩图）等，一般也是自监督任务。
-2. 评估方法：评估特征，例如将获取的特征用于high-level任务（称为downstream task），再执行评估。暂无通用做法。
+[[知乎1]](https://zhuanlan.zhihu.com/p/150224914) [[知乎2]](https://zhuanlan.zhihu.com/p/108625273)
+
+常用做法：
+
+1. 构造pretext (proxy) task，训练特征提取器。一般也是自监督任务。
+2. 迁移训练好的特征提取器，完成目标自监督任务。
+
+常用评估方法：
+
+- 评估特征提取器：将提取的特征用于high-level任务（称为downstream task），再执行评估。
+
+难点：
+
+- pretext task的设置
+  - pretext task和target task差异较大，容易产生domain gap，即特征不适用。
+  - 再进一步，低熵（高确定性）的先验在迁移时更有意义，见知乎1链接。稳定可靠的先验？
+  - 还可以训练特征空间，使得不同图像经过特征变换后距离尽可能大，同一图像的不同变换距离尽可能小。这种contrastive方法比generative方法更接近自监督问题本质，更简单（不要求重建，只要求能根据关键特征辨别），参见知乎2链接。
+- 评估无通用做法。
 
 ## NLP
 
