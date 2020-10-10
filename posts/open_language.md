@@ -689,24 +689,55 @@
 
 ### How to tone up your muscles
 
-- warm up
-- burpees
-  - 波比跳（立卧撑跳）
-- quads
-  - `/kwɑd/`
-  - 四头肌
-- glutes
-  - 臀大肌
-- squats
-  - [n.] 深蹲
-- lunges
-  - [n.] 箭步蹲
-- calves
-  - [n.] 小腿肚
-  - calf
-- compound
-  - [adj.] 混合的，复合的
-- 
+> [a] 准备好全身运动了吗？
+
+- Are you ready for the **full-body workout**?
+
+> [a] 首先，我们将做一些热身——波比跳和俯卧撑。
+> [b] 光听名字我就汗流浃背。之后练啥？
+> [a] 做深蹲和箭步蹲，来锻炼四头肌和臀大肌。
+
+- First we're going to warm up with some burpees and push-ups.
+  - burpees
+    - 波比跳（立卧撑跳）
+- Just the sound of it is making me sweat. What will we **target** after that?
+- Then we'll hit quads and glutes with squats and lunges.
+  - quads
+    - `/kwɑd/`
+    - 四头肌
+  - glutes
+    - 臀大肌
+  - squats
+    - [n.] 深蹲
+  - lunges
+    - [n.] 箭步蹲
+
+> [b] 听着很累啊。每套动作重复几次？
+> [a] 目标是12到15次。
+
+- Sounds tiring. How many **repetitions** per **set**?
+- We'll aim for 12 to 15 reps.
+
+> [b] 这些动作也会用到我的小腿肌肉，对吗？
+> [a] 还会稍微锻炼到你的核心和背部肌群。
+> [b] 太好了，我的腹肌需要锻炼。
+
+- These movements will also use my **calves** a bit too, right?
+  - calves
+    - [n.] 小腿肚
+    - calf
+- These **compound** exercises will also **engage** your core and back muscles a bit.
+  - compound
+    - [adj.] 混合的，复合的
+- Great. My abs could use some **toning**.
+  - toning
+    - [v.] 使更健壮
+
+> [b] 腿疼之后做啥？
+> [a] 胸部运动。
+
+- And after my legs are **aching**?
+- Then we'll do some **chest-building** exercises.
 
 ## Culture
 
