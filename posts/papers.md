@@ -38,6 +38,15 @@
 
 ### 应用CNNs
 
+- [ ] DeepGenerativePrior
+  - 基于DIP启发，用GANs的生成器实现DIP原理，同时用GANs的监督器进行监督。此外，生成器的参数需要适当fine-tune。
+  - 注意仍然是无监督的。判别器和生成器都一起预训练好的。本文将生成器给样本之间的距离作为损失函数。
+  - https://www.zhihu.com/column/mmlab-ai
+
+- [ ] DeepImagePrior
+  - CNNs本身即具有压缩数据、再解码数据的功能，因此能渐进地完成降噪。注意，该CNNs不需要训练，而是随机初始化的。需要迭代的是输入的随机向量。
+  - 无监督地完成了去噪、修复等任务。
+
 - [x] DnCNN
   - 用CNN去噪的早期工作。
   - 所谓盲：混合训练所有QF的样本。即使这样，也是具有开创意义的；毕竟传统方法可没这么简单。
@@ -52,12 +61,14 @@
   - 用CNN去JPEG压缩失真的早期工作。
   - Compression Artifacts Reduction by a Deep Convolutional Network, ICCV 2015
 
-- [ ] SR-CNN
+- [x] SRCNN
+  - 用CNN SR的早期工作。
+  - 说明：稀疏编码可以表示为卷积，后者更灵活，训练e2e。
+  - Image Super-Resolution Using Deep Convolutional Networks, TPAMI 2015
 
 ### 数据库
 
 - [x] TOFlow
-  - See above.
 
 - [x] DIV2K
   - 1000张2040x1000 (2k)图像，按800/100/100划分。
@@ -74,6 +85,12 @@
   - http://r0k.us/graphics/kodak/
 
 ### 应用注意力
+
+- [x] PAN
+  - 比channel attention、spatial attention更进一步：pixel attention。本质上是让不同通道的spatial attention独立。
+  - 参数量只有272K，是AIM2020某SR赛道冠军。
+  - Efficient Image Super-Resolution
+Using Pixel Attention, ECCVW 2020
 
 - [x] A-CubeNet
   - 没开源。
@@ -107,12 +124,10 @@
   - Spatio-Temporal Deformable Convolution for Compressed Video Quality Enhancement, AAAI 2020
 
 - [x] EDVR
-  - See above.
 
 ### 多帧融合
 
 - [x] PFNL
-  - See above.
 
 - [x] FastDVDnet
   - 无需MEMC，相邻帧两两融合。
@@ -140,7 +155,7 @@
   - 难度依据是训练时的MSE loss。
   - Path-Restore: Learning Network Path Selection for Image Restoration, arXiv 2019
 
-- [x] Difficulty-Aware_SR
+- [x] DifficultyAwareSR
   - 分easy和hard支路，分别增强easy和hard图像区域。
   - 预测难度，gt为bicubic PSNR。
   - Difficulty-aware Image Super Resolution via Deep Adaptive Dual-Network, ICME 2019
@@ -167,7 +182,7 @@
 
 **特殊噪声的零期望**
 
-- [x] Model-blind
+- [x] ModelBlindN2N
   - 对视频前几帧执行N2N，fine-tune盲去噪模型。
   - 依赖光流和遮挡mask的精度。否则相邻帧对不齐，N2N学习有问题。
   - 前几帧训练，样本实在太少了。
@@ -218,7 +233,7 @@
 
 ### 标准
 
-- [x] HEVC_Test18
+- [x] HEVCTest18
   - HEVC的18个标准测试序列。
   - Comparison of the Coding Efficiency of Video Coding Standards—Including High Efficiency Video Coding (HEVC), TCSVT 2012
 
@@ -258,12 +273,12 @@
 
 ### 应用课程学习&蒸馏学习
 
-- [x] Improved_MSDNet
+- [x] ImprovedMSDNet
   - 在MSDNet中，靠前分类器的梯度非常大而且不稳定（假定分类器之间iid，方差也增大了，见式3）。
   - 此外还采用课程学习方法：浅层分类器也从深层分类器的预测结果中学习。
   - Improved Techniques for Training Adaptive Deep Networks, ICCV 2019
 
-- [x] Distillation-Based_Training
+- [x] DistillationMultiExit
   - 对提前退出网络采用蒸馏学习。
   - Distillation-Based Training for Multi-Exit Architectures, ICCV 2019
 
@@ -322,7 +337,7 @@
 
 - [ ] ResNet
   - VGG已经证明越深越好，而ResNet通过残差结构实现更深的网络。
-  - [x] ResNet_Ensembles
+  - [x] ResNetEnsembles
     - ResNet高效的原因：通过丰富的residual connection，降低了ResBlock之间的依赖，提升冗余的同时提高容错性。
     - ResNet相当于建立了大量子网络（不同子网络走的路径不同），因此建立了ensembles。
     - 实际执行路径非常短，因此梯度得以保留。
@@ -337,7 +352,7 @@
   - 训练样本中包含原始样本和对抗样本（加噪声）。
   - Triple Wins: Boosting Accuracy, Robustness and Efficiency Together by Enabling Input-Adaptive Inference, ICLR 2020
 
-- [x] Dynamic_Inference
+- [x] DynamicInference
   - 在MSDNet的block-wise提前退出基础上，增加input-wise提前退出。
   - 例如，赛跑视频和静止视频识别难度不同，所需帧数不同。
   - 如图2d，输入帧被打散（0357一组，1246一组）。第一组输入浅层分类器，若不退出，则再经深层分类器（再输入第二组）处理。
