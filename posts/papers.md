@@ -10,6 +10,7 @@
     - [节能加速](#节能加速)
     - [利用附加信息](#利用附加信息)
     - [考虑图像特性](#考虑图像特性)
+    - [建模高频细节](#建模高频细节)
   - [视频编码](#视频编码)
     - [标准](#标准)
   - [图像质量评估](#图像质量评估)
@@ -173,11 +174,10 @@
     - [ ] 多帧输入如何采样，从而抑制过拟合：Learning Model-Blind Temporal Denoisers without Ground Truths
   - Model-Blind Video Denoising via Frame-To-Frame Training, CVPR 2019
 
-- [ ] Noise2Self
-  - 唯一的假设：噪声相对独立，而图像内容相关性较强。
-  - 其实噪声和图像也有耦合成分。
-  - 将去噪方法简单分为两类：一类依赖于单一假设，假设不成立则失败；另一类则是数据驱动方法。
-  - 认为Noise2Noise的测试图像需要被测量很多次（用于训练），而实际情况可能不允许。
+- [x] Noise2Self
+  - N2N需要让同一GT产生不同LQ来配对训练。N2S提出用自己x2配对即可，几乎不会导致恒等映射。
+  - 关键是式1和第四章证明。
+  - 没太看明白，和N2V很像，但要求更严格，有理论保障。参见[[ref]](https://arxiv.org/pdf/2006.09450.pdf)。
   - Noise2Self: Blind Denoising by Self-Supervision, ICML 2019
 
 - [x] Noise2Void
@@ -203,6 +203,16 @@
 - [x] MFQEv1
   - See MFQEv2.
   - Multi-frame Quality Enhancement for Compressed Video, CVPR 2018
+
+### 建模高频细节
+
+- [x] IRN
+  - 如何保留/建模传输过程中要丢弃的信息？
+  - 在图像downsampling时，仅保留低频细节。高频细节被INN映射至一个case-agnostic的高斯分布及LR，映射方式记录在IRN内。LR的GT为HR的bicubic下采样。
+  - 其实LR->HR和GAN很像，也是加上一个随机向量。但IRN让互逆过程联合，使得downsampling更稳定。可逆性是IRN的特点。
+  - 注意，在一般的LQ->HQ过程中，输入的fy是量化后的图像，需要反量化后才是IRN学习的对象。因此网络末端还处理了不可差分的量化梯度传播。
+  - 用于其他互逆过程，例如去噪？可以考虑，让网络学习HQ->LQ可能是有好处的。但作者在GH issue中说，IRN在SR中表现一般，因为参数量实在太少。IRN主要特点还是可逆。
+  - Invertible Image Rescaling, ECCV 2020
 
 ## 视频编码
 
