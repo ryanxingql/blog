@@ -14,72 +14,73 @@ Feel free to contact: ryanxingql@gmail.com.
 
 ## 论文速览
 
-- [MFQEv2](https://github.com/RyanXingQL/Blog/blob/master/posts/mfqev2.md)
+- [x] [MFQEv2](https://github.com/RyanXingQL/Blog/blob/master/posts/mfqev2.md), TPAMI 2019
+- [ ] RBQE, ECCV 2020
 
 ## Tools
 
-- [BAT](https://github.com/RyanXingQL/Blog/blob/master/posts/bat.md)
+- [x] [BAT](https://github.com/RyanXingQL/Blog/blob/master/posts/bat.md)
 
-- [CONDA AND PIP](https://github.com/RyanXingQL/Blog/blob/master/posts/conda_and_pip.md)
+- [x] [CONDA AND PIP](https://github.com/RyanXingQL/Blog/blob/master/posts/conda_and_pip.md)
 
-- [CUDA](https://github.com/RyanXingQL/Blog/blob/master/posts/cuda.md)
+- [x] [CUDA](https://github.com/RyanXingQL/Blog/blob/master/posts/cuda.md)
 
-- [DEEP LEARNING](https://github.com/RyanXingQL/Blog/blob/master/posts/deep_learning.md)
+- [x] [DEEP LEARNING](https://github.com/RyanXingQL/Blog/blob/master/posts/deep_learning.md)
 
-- [FFMPEG](https://github.com/RyanXingQL/Blog/blob/master/posts/ffmpeg.md) 
+- [x] [FFMPEG](https://github.com/RyanXingQL/Blog/blob/master/posts/ffmpeg.md) 
 
-- [GIT](https://github.com/RyanXingQL/Blog/blob/master/posts/git.md)
+- [x] [GIT](https://github.com/RyanXingQL/Blog/blob/master/posts/git.md)
   - 注意用`.gitignore`隔离代码和数据（模型）。
 
-- [HEXO AND GITHUB PAGES](https://github.com/RyanXingQL/Blog/blob/master/posts/hexo_and_github_pages.md)
+- [x] [HEXO AND GITHUB PAGES](https://github.com/RyanXingQL/Blog/blob/master/posts/hexo_and_github_pages.md)
 
-- [JUPYTER NOTEBOOK](https://github.com/RyanXingQL/Blog/blob/master/posts/jupyter_notebook.md)
+- [x] [JUPYTER NOTEBOOK](https://github.com/RyanXingQL/Blog/blob/master/posts/jupyter_notebook.md)
 
-- [MARKDOWN](https://github.com/RyanXingQL/Blog/blob/master/posts/markdown.md)
+- [x] [MARKDOWN](https://github.com/RyanXingQL/Blog/blob/master/posts/markdown.md)
 
-- [MATLAB](https://github.com/RyanXingQL/Blog/blob/master/posts/matlab.md)
+- [x] [MATLAB](https://github.com/RyanXingQL/Blog/blob/master/posts/matlab.md)
 
-- [NVIDIA](https://github.com/RyanXingQL/Blog/blob/master/posts/nvidia.md)
+- [x] [NVIDIA](https://github.com/RyanXingQL/Blog/blob/master/posts/nvidia.md)
 
-- [OFFICE](https://github.com/RyanXingQL/Blog/blob/master/posts/office.md)
+- [x] [OFFICE](https://github.com/RyanXingQL/Blog/blob/master/posts/office.md)
 
-- [PYCHARM](https://github.com/RyanXingQL/Blog/blob/master/posts/pycharm.md)
+- [x] [PYCHARM](https://github.com/RyanXingQL/Blog/blob/master/posts/pycharm.md)
 
-- [PYTHON](https://github.com/RyanXingQL/Blog/blob/master/posts/python.md)
-  - PYTHON UTILS: coming soon.
-  - [读书笔记：《Python编程：从入门到实践》](https://drive.google.com/drive/folders/1UU703I_zM1pPx5UVzIVLSN8NZwqxo5Tf?usp=sharing)
+- [x] [PYTHON](https://github.com/RyanXingQL/Blog/blob/master/posts/python.md)
+  - [ ] PYTHON UTILS
+  - [x] [读书笔记：《Python编程：从入门到实践》](https://drive.google.com/drive/folders/1UU703I_zM1pPx5UVzIVLSN8NZwqxo5Tf?usp=sharing)
 
-- [PYTORCH](https://github.com/RyanXingQL/Blog/blob/master/posts/pytorch.md)
+- [x] [PYTORCH](https://github.com/RyanXingQL/Blog/blob/master/posts/pytorch.md)
 
-- [TENSORFLOW](https://github.com/RyanXingQL/Blog/blob/master/posts/tensorflow.md)
+- [x] [TENSORFLOW](https://github.com/RyanXingQL/Blog/blob/master/posts/tensorflow.md)
 
-- [TEX](https://github.com/RyanXingQL/Blog/blob/master/posts/tex.md)
+- [x] [TEX](https://github.com/RyanXingQL/Blog/blob/master/posts/tex.md)
 
-- [TMUX](https://github.com/RyanXingQL/Blog/blob/master/posts/tmux.md)
+- [x] [TMUX](https://github.com/RyanXingQL/Blog/blob/master/posts/tmux.md)
   - 一定要在后台跑程序，避免断网、关闭终端等导致程序中断。
   - 搭配Termius神器。
 
-- [UBUNTU](https://github.com/RyanXingQL/Blog/blob/master/posts/ubuntu.md)
+- [x] [UBUNTU](https://github.com/RyanXingQL/Blog/blob/master/posts/ubuntu.md)
 
-- [VSCODE](https://github.com/RyanXingQL/Blog/blob/master/posts/vscode.md)
+- [x] [VSCODE](https://github.com/RyanXingQL/Blog/blob/master/posts/vscode.md)
   - 使用Remote功能，远程写代码。
 
-- [ZOTERO](https://github.com/RyanXingQL/Blog/blob/master/posts/zotero.md)
+- [x] [ZOTERO](https://github.com/RyanXingQL/Blog/blob/master/posts/zotero.md)
 
 ## Others
 
-- [ART](https://github.com/RyanXingQL/Blog/blob/master/posts/art.md)
+- [x] [ART](https://github.com/RyanXingQL/Blog/blob/master/posts/art.md)
 
-- [ENGLISH](https://github.com/RyanXingQL/Blog/blob/master/posts/english.md)
-  - [OPEN LANGUAGE](https://github.com/RyanXingQL/Blog/blob/master/posts/open_language.md)
+- [x] [ENGLISH](https://github.com/RyanXingQL/Blog/blob/master/posts/english.md)
+  - [x] [OPEN LANGUAGE](https://github.com/RyanXingQL/Blog/blob/master/posts/open_language.md)
 
-- [PAPERS](https://github.com/RyanXingQL/Blog/blob/master/posts/papers.md)
+- [x] [PAPERS](https://github.com/RyanXingQL/Blog/blob/master/posts/papers.md)
 
-- [READING AND THINKING](https://github.com/RyanXingQL/Blog/blob/master/posts/reading_and_thinking.md)
+- [x] [READING AND THINKING](https://github.com/RyanXingQL/Blog/blob/master/posts/reading_and_thinking.md)
 
-- [快捷键和快捷操作](https://github.com/RyanXingQL/Blog/blob/master/posts/shortcuts.md)
+- [x] [快捷键和快捷操作](https://github.com/RyanXingQL/Blog/blob/master/posts/shortcuts.md)
 
 - **北航电子信息课程笔记**
-  - [本科专业课](https://drive.google.com/drive/folders/1UU703I_zM1pPx5UVzIVLSN8NZwqxo5Tf?usp=sharing)
-  - [研究生课程](https://drive.google.com/drive/folders/1UU703I_zM1pPx5UVzIVLSN8NZwqxo5Tf?usp=sharing)
+  - [x] [本科专业课](https://drive.google.com/drive/folders/1UU703I_zM1pPx5UVzIVLSN8NZwqxo5Tf?usp=sharing)
+  - [x] [研究生课程](https://drive.google.com/drive/folders/1UU703I_zM1pPx5UVzIVLSN8NZwqxo5Tf?usp=sharing)
   - 其中[图像处理]、[嵌入式]、[微机原理]、[网络安全]、[泛函分析]和[算法设计]的笔记自认为不错，能帮学弟学妹们期末涨分。
