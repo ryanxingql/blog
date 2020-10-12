@@ -39,6 +39,7 @@
     - [Should I get a dog](#should-i-get-a-dog)
     - [Getting divorced](#getting-divorced)
     - [Married life vs single life](#married-life-vs-single-life)
+    - [My wife vs. my mom](#my-wife-vs-my-mom)
   - [Education](#education)
     - [Talking to teacher](#talking-to-teacher)
     - [College registration for freshmen](#college-registration-for-freshmen)
@@ -2058,6 +2059,46 @@ Sounds like quite the **commitment**.
 
 - If you're a good team and enjoy each other's company, why go through life alone?
 - You've got me there. Thanks!
+
+### My wife vs. my mom
+
+> [a] 你和你的岳父岳母相处好吗？
+> [b] 大部分时间还行。但相处不好时，我妻子比较尴尬。
+> [a] 我完全能理解。我也总被加在我妈和我老婆之间。
+> [b] 烦死了。我不喜欢选边站。
+
+- Do you **get along with** your **in-laws**?
+  - in-laws
+    - [n.] 无血缘关系的亲戚
+- For the most part, yeah. But I feel like my wife is **in an awkward position** when we don't.
+- I can totally **relate**. It's just like when I'm **caught** between my mother and wife.
+  - relate
+    - [v.] 产生共鸣
+- I hate that! I try my best not to **choose sides**.
+
+> [a] 我尝试灵活应变，同时理解双方的感受。
+> [b] 这平衡太微妙了。
+
+- I try to remain **diplomatic**, while being **empathetic** to both of them at the same time.
+  - diplomatic
+    - [adj.] 讲究方法地，委婉地
+  - empathetic
+    - [adj.] 有同感的，表示同情的
+- Sounds like a **delicate** balance.
+  - delicate
+    - [adj.] 微妙的
+
+> [a] 你们不住在一起吧？
+> [b] 还好不是。否则她们总闹矛盾，我受不了。
+> [a] 是啊，否则你就进退两难了。
+
+- You don't live **under the same roof**, do you?
+- Thankfully, no. Otherwise, they'd frequently **butt heads** and I couldn't **take** that.
+  - butt heads
+    - 发生冲突
+- Yeah, then you'd really be **stuck between a rock and a hard place**.
+  - stuck between a rock and a hard place
+    - 进退两难
 
 ## Education
 
