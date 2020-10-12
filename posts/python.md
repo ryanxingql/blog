@@ -123,11 +123,26 @@ saved_column = df.column_name  # you can also use df['column_name']
 
 [[3D plot]](https://blog.csdn.net/u014636245/article/details/82799573)
 
+**基础操作**
+
 ```python3
 import matplotlib.pyplot as plt
 plt.plot(result)
+plt.title(f'dMSE, QP={qp}')
+plt.xlabel('TV')
+plt.ylabel('dMSE')
 plt.show()
 ```
+
+**堆积柱状图**
+
+每次`bar`都建立在底层bar之上。
+
+```python3
+plt.bar(index_lst, new_y_lst, width=3, bottom=old_y_acc_lst)
+```
+
+默认hold，直至`plt.show()`
 
 ## 其他常用模块和方法
 

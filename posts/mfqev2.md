@@ -22,23 +22,21 @@
 
 MFQEv2没有使用任何“花哨”的结构设计和训练技巧。我们用最简单的CNN结构实现了我们的思路，网络参数量仅255k。欢迎大家使用。
 
-这篇论文是*Multi-frame quality enhancement for compressed video*（CVPR 2018）的升级版本，2019年9月26日被**TPAMI**（2018年IF=17.730）接收。博主和导师关振宇是共同一作，通讯作者为导师徐迈。
+这篇论文是*Multi-frame quality enhancement for compressed video*（CVPR 2018）的升级版本，2019年9月26日被**TPAMI**（2019年IF=17.861）接收。博主和导师关振宇是共同一作，通讯作者为导师徐迈。
 
 [[arXiv]](https://arxiv.org/pdf/1902.09707.pdf) [[GitHub]](https://github.com/RyanXingQL/MFQEv2.0)
 
-```latex
-@ARTICLE{8855019,
-author={Z. {Guan} and Q. {Xing} and M. {Xu} and R. {Yang} and T. {Liu} and Z. {Wang}},
-journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
-title={{MFQE} 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video},
-year={2019},
-volume={},
-number={},
-pages={1-1},
-keywords={Quality enhancement;compressed video;deep learning},
-doi={10.1109/TPAMI.2019.2944806},
-ISSN={},
-month={},}
+```tex
+@article{MFQEv2,
+	doi = {10.1109/tpami.2019.2944806},
+	url = {https://doi.org/10.1109%2Ftpami.2019.2944806},
+	year = 2019,
+	publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+	pages = {1--1},
+	author = {Zhenyu Guan and Qunliang Xing and Mai Xu and Ren Yang and Tie Liu and Zulin Wang},
+	title = {{MFQE} 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video},
+	journal = {{IEEE} Transactions on Pattern Analysis and Machine Intelligence}
+}
 ```
 
 ## 1. 要点
