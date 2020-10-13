@@ -2071,7 +2071,7 @@ Sounds like quite the **commitment**.
   - in-laws
     - [n.] 无血缘关系的亲戚
 - For the most part, yeah. But I feel like my wife is **in an awkward position** when we don't.
-- I can totally **relate**. It's just like when I'm **caught** between my mother and wife.
+- I can totally **relate**. It's just like when I'm **caught between** my mother and wife.
   - relate
     - [v.] 产生共鸣
 - I hate that! I try my best not to **choose sides**.
@@ -2087,6 +2087,7 @@ Sounds like quite the **commitment**.
 - Sounds like a **delicate** balance.
   - delicate
     - [adj.] 微妙的
+  - You're striking a very delicate balance.
 
 > [a] 你们不住在一起吧？
 > [b] 还好不是。否则她们总闹矛盾，我受不了。
@@ -2096,6 +2097,7 @@ Sounds like quite the **commitment**.
 - Thankfully, no. Otherwise, they'd frequently **butt heads** and I couldn't **take** that.
   - butt heads
     - 发生冲突
+    - 像动物一样，用头冲撞
 - Yeah, then you'd really be **stuck between a rock and a hard place**.
   - stuck between a rock and a hard place
     - 进退两难
