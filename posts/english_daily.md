@@ -1,116 +1,81 @@
-# OPEN LANGUAGE
+# ENGLISH DAILY
 
-- [OPEN LANGUAGE](#open-language)
-  - [Sports](#sports)
-    - [Popular sports in America](#popular-sports-in-america)
-  - [Money](#money)
-    - [Managing money](#managing-money)
-    - [How do you invest](#how-do-you-invest)
-    - [Someone used my credit card!](#someone-used-my-credit-card)
-  - [Health](#health)
-    - [Family doctor](#family-doctor)
-    - [Dental care](#dental-care)
-    - [How to be healthier](#how-to-be-healthier)
-    - [Accidents and injuries](#accidents-and-injuries)
-    - [Emergency response](#emergency-response)
-    - [How to tone up your muscles](#how-to-tone-up-your-muscles)
-  - [Culture](#culture)
-    - [Boxing Day](#boxing-day)
-    - [Buying Chinese New Year gifts](#buying-chinese-new-year-gifts)
-    - [Lantern Festival traditions](#lantern-festival-traditions)
-    - [Chinese Labor Day vs. American Labor Day](#chinese-labor-day-vs-american-labor-day)
-    - [Mooncakes: Love or hate them?](#mooncakes-love-or-hate-them)
-  - [Technology](#technology)
-    - [Smart speakers](#smart-speakers)
-    - [Unmanned stores](#unmanned-stores)
-    - [Deepfakes](#deepfakes)
-    - [How the Internet has changed our lives](#how-the-internet-has-changed-our-lives)
-  - [Housing](#housing)
-    - [Interior design](#interior-design)
-  - [Shopping&Fashion](#shoppingfashion)
-    - [Last-minute shopping](#last-minute-shopping)
-  - [Love&Family](#lovefamily)
-    - [Going on a blind date](#going-on-a-blind-date)
-    - [Love at first sight](#love-at-first-sight)
-    - [Childhood memories](#childhood-memories)
-    - [Love lives and nosy relatives](#love-lives-and-nosy-relatives)
-    - [Different parenting styles](#different-parenting-styles)
-    - [Couple fighting](#couple-fighting)
-    - [Should I get a dog](#should-i-get-a-dog)
-    - [Getting divorced](#getting-divorced)
-    - [Married life vs single life](#married-life-vs-single-life)
-    - [My wife vs. my mom](#my-wife-vs-my-mom)
-  - [Education](#education)
-    - [Talking to teacher](#talking-to-teacher)
-    - [College registration for freshmen](#college-registration-for-freshmen)
-    - [College life](#college-life)
-  - [Eating](#eating)
-    - [Dining etiquette](#dining-etiquette)
-    - [Diet fads](#diet-fads)
-  - [Amusement](#amusement)
-    - [Mobile games](#mobile-games)
-    - [Game of Thrones](#game-of-thrones)
-    - [Digital addiction](#digital-addiction)
+- [ENGLISH DAILY](#english-daily)
+  - [Popular sports in America](#popular-sports-in-america)
+  - [Managing money](#managing-money)
+  - [How do you invest](#how-do-you-invest)
+  - [Someone used my credit card!](#someone-used-my-credit-card)
+  - [Family doctor](#family-doctor)
+  - [Dental care](#dental-care)
+  - [How to be healthier](#how-to-be-healthier)
+  - [Accidents and injuries](#accidents-and-injuries)
+  - [Emergency response](#emergency-response)
+  - [Boxing Day](#boxing-day)
+  - [Buying Chinese New Year gifts](#buying-chinese-new-year-gifts)
+  - [Lantern Festival traditions](#lantern-festival-traditions)
+  - [Chinese Labor Day vs. American Labor Day](#chinese-labor-day-vs-american-labor-day)
+  - [Mooncakes: Love or hate them?](#mooncakes-love-or-hate-them)
+  - [Smart speakers](#smart-speakers)
+  - [Unmanned stores](#unmanned-stores)
+  - [Deepfakes](#deepfakes)
+  - [How the Internet has changed our lives](#how-the-internet-has-changed-our-lives)
+  - [Interior design](#interior-design)
+  - [Last-minute shopping](#last-minute-shopping)
+  - [Going on a blind date](#going-on-a-blind-date)
+  - [Love at first sight](#love-at-first-sight)
+  - [Childhood memories](#childhood-memories)
+  - [Love lives and nosy relatives](#love-lives-and-nosy-relatives)
+  - [Different parenting styles](#different-parenting-styles)
+  - [Couple fighting](#couple-fighting)
+  - [Should I get a dog](#should-i-get-a-dog)
+  - [Getting divorced](#getting-divorced)
+  - [Married life vs single life](#married-life-vs-single-life)
+  - [Talking to teacher](#talking-to-teacher)
+  - [College registration for freshmen](#college-registration-for-freshmen)
+  - [College life](#college-life)
+  - [Dining etiquette](#dining-etiquette)
+  - [Diet fads](#diet-fads)
+  - [Mobile games](#mobile-games)
+  - [Game of Thrones](#game-of-thrones)
+  - [Digital addiction](#digital-addiction)
+  - [My wife vs. my mom](#my-wife-vs-my-mom)
+  - [How to tone up your muscles](#how-to-tone-up-your-muscles)
 
-周计划
+## Popular sports in America
 
-- Mon
-  - Class 1 vocab, listening
-- Tue
-  - Class 1 conversation
-- Wed
-  - Class 1 speaking
-  - Class 2 vocab, listening
-- Thu
-  - Class 2 conversation
-- Fri
-  - Class 2 speaking
-  - Class 3 vocab, listening
-- Sat
-  - Class 3 conversation
-- Sun
-  - Class 3 speaking
-  - Weekly overview
-
-## Sports
-
-### Popular sports in America
-
-> [A] 你喜欢看什么运动？
-> [B] 从春天到秋天，都是棒球。它被称为美国最棒的休闲运动。
+> [a] 你喜欢看什么运动？
+> [b] 从春天到秋天，都是棒球。它被称为美国最棒的休闲运动。
 
 - Which sports do you like to watch?
 - From spring to fall, it's baseball for me. It's called America's greatest **pastime**.
   - pastime
     - 消遣，休闲活动
 
-> [B] 世界大赛后，我只看橄榄球。我几乎盯着电视不放。
+> [b] 世界大赛后，我只看橄榄球。我几乎盯着电视不放。
 
 - After the World Series, I'm all football. I'm **practically** **glued to** my TV.
   - practically
     - 几乎
 
-> [B] 我认为大学锦标赛和职业联赛一样激动人心。有很多优秀人才。
+> [b] 我认为大学锦标赛和职业联赛一样激动人心。有很多优秀人才。
 
 - I think the college **championships** are just as exciting as the **pros**. A lot of great young **talents**.
   - pros
     - 反义：amateur
 
-> [A] 你觉得曲棍球如何？
-> [B] 我一开始觉得它是加拿大运动。但我越来越喜欢了。
+> [a] 你觉得曲棍球如何？
+> [b] 我一开始觉得它是加拿大运动。但我越来越喜欢了。
 
 - What do you think of hockey?
 - At first, I thought it was **more of** a Canadian thing. But it's really **grown on me**.
 
-## Money
+## Managing money
 
-### Managing money
+temporal.
 
-```markdown
-1. I can never afford to splurge too much.
-2. Oh, lots of expenses?
-1. Yeah, my mortgage payments add up to about a third of my income. And on top of that, I need to save for my kid's education.
-```
+> [a] I can never afford to splurge too much.
+> [b] Oh, lots of expenses?
+> [a] Yeah, my mortgage payments add up to about a third of my income. And on top of that, I need to save for my kid's education.
 
 - splurge
   - 挥霍
@@ -199,7 +164,9 @@
   - `a frugal lifestyle`
   - `We have to be frugal about our water use.`
 
-### How do you invest
+## How do you invest
+
+temporal.
 
 ```markdown
 1. I invest in a little bit of everything!
@@ -266,7 +233,9 @@
     - don't want to do something
     - `I always come home early so as not to anger my wife.`
 
-### Someone used my credit card!
+## Someone used my credit card!
+
+temporal.
 
 ```markdown
 1. I just received a text alert about a purchase on my credit card.
@@ -313,9 +282,9 @@
 - unauthorized
   - 未经授权的
 
-## Health
+## Family doctor
 
-### Family doctor
+temporal.
 
 ```markdown
 1. He is asking Rachel how he should go and get himself checked out.
@@ -411,7 +380,9 @@
   - 渴望
     - anxious for
 
-### Dental care
+## Dental care
+
+temporal.
 
 ```markdown
 1. Toothache still bothering you?
@@ -499,7 +470,9 @@
   - 就……而言，比较正式，适合演讲和写作。
   - 例：`He has no worries as far as money is concerned.`
 
-### How to be healthier
+## How to be healthier
+
+temporal.
 
 ```markdown
 1. I think I take my health for granted.
@@ -577,7 +550,9 @@
 
 - vital本意是生死攸关的，如`water is vital to life.`。后多用于表达`very important`、`essential`。
 
-### Accidents and injuries
+## Accidents and injuries
+
+temporal.
 
 ```markdown
 1. Hey Chase, how's that ankle sprain treating you?
@@ -614,7 +589,9 @@
 - concussion
   - 脑震荡
 
-### Emergency response
+## Emergency response
+
+temporal.
 
 ```markdown
 1. Excuse me! Does anyone know first aid? There is a man outside who just passed out.
@@ -688,87 +665,9 @@
   - `In an effort to go green, Starbucks recently announced that ...`
     - 为实现环保
 
-### How to tone up your muscles
+## Boxing Day
 
-> [a] 准备好全身运动了吗？
-
-- Are you ready for the **full-body workout**?
-  - workout session
-
-> [a] 首先，我们将做一些热身——波比跳和俯卧撑。
-> [b] 光听名字我就汗流浃背。之后练啥？
-> [a] 做深蹲和箭步蹲，来锻炼四头肌和臀大肌。
-
-- First we're going to **warm up** with some **burpees** and **push-ups**.
-  - We don't want to start off cold.
-  - burpees
-    - 波比跳（立卧撑跳）
-- Just the sound of it is making me sweat. What will we **target** after that?
-  - Let's target the young crowd with our ad campaign.
-    - 用广告宣传吸引年轻人。
-- Then we'll **hit** **quads** and **glutes** with **squats** and **lunges**.
-  - quads
-    - `/kwɑd/`
-    - 四头肌
-    - quadriceps
-  - glutes
-    - 臀大肌
-  - squats
-    - [n.] 深蹲
-  - lunges
-    - [n.] 箭步蹲
-
-> [b] 听着很累啊。每套动作重复几次？
-> [a] 目标是12到15次。
-
-- Sounds tiring. How many **repetitions** per **set**?
-- We'll aim for 12 to 15 **reps**.
-
-> [b] 这些动作也会用到我的小腿肌肉，对吗？
-> [a] 还会稍微锻炼到你的核心和背部肌群。
-> [b] 太好了，我的腹肌需要锻炼。
-
-- These movements will also use my **calves** a bit too, right?
-  - calves
-    - [n.] 小腿肚
-    - calf
-- These **compound** exercises will also **engage** your **core** and back muscles a bit.
-  - compound
-    - [adj.] 混合的，复合的
-    - This problem is compound.
-  - engage
-    - 使参与，锻炼的意思
-    - The last set really engaged my back.
-      - 最后一组把我累得够呛。
-    - He really know how to engage the audience.
-      - 吸引观众
-    - I don't want to engage with them at the party.
-      - 不想打交道
-- Great. My **abs** **could use** some **toning**.
-  - could use
-    - 委婉表示想要，或应得的
-    - it would be good/it would be a good idea
-    - I could use a beer right now. Today was tough.
-    - She sure could use a vacation.
-  - toning
-    - [v.] 使更健壮
-
-> [b] 腿疼之后做啥？
-> [a] 胸部运动。
-
-- And after my legs are **aching**?
-- Then we'll do some **chest-building** exercises.
-
-补充
-
-- muscle
-  - 一般用复数
-    - My muscles are sore.
-  - muscular people
-
-## Culture
-
-### Boxing Day
+temporal.
 
 ```markdown
 1. I'd pick up a new tradition and give swimming the Channel a try.
@@ -836,7 +735,9 @@
   - 剩菜
   - `eat some leftovers`
 
-### Buying Chinese New Year gifts
+## Buying Chinese New Year gifts
+
+temporal.
 
 ```markdown
 1. Chinese New Year is coming, it's almost here.
@@ -935,7 +836,9 @@
 - immediate family
   - 直系亲属
 
-### Lantern Festival traditions
+## Lantern Festival traditions
+
+temporal.
 
 ```markdown
 1. Hey Tom, the Lantern Festival is just around the corner.
@@ -1020,7 +923,9 @@
 - Things aren't quite the way they used to be.
 - My parents made me a lantern.
 
-### Chinese Labor Day vs. American Labor Day
+## Chinese Labor Day vs. American Labor Day
+
+temporal.
 
 - International Workers Day
   - 国际劳动节
@@ -1072,7 +977,7 @@
 
 - Besides sth, what/where/who else ...
 
-### Mooncakes: Love or hate them?
+## Mooncakes: Love or hate them?
 
 > [a] 中秋节就要来了，Ryan你知道这意味着什么吗？
 > [b] 什么呀？
@@ -1138,9 +1043,9 @@
 - Ok, now that **I've got to** (have a) try.
 - See! **How can anyone** hate mooncakes?
 
-## Technology
+## Smart speakers
 
-### Smart speakers
+temporal.
 
 ```markdown
 1. Everyone loves to listen to good music.
@@ -1204,7 +1109,9 @@
   - 可做动词
   - `My refrigerator is not functioning properly.`
 
-### Unmanned stores
+## Unmanned stores
+
+temporal.
 
 **Highlights**
 
@@ -1304,7 +1211,9 @@
 
 - 是`convenience store`，不是`convenient store`。
 
-### Deepfakes
+## Deepfakes
+
+temporal.
 
 - deepfakes
   - compound word
@@ -1359,7 +1268,9 @@
 - humanity
   - 人性
 
-### How the Internet has changed our lives
+## How the Internet has changed our lives
+
+temporal.
 
 **Word**
 
@@ -1412,9 +1323,9 @@
 - 知道家里发生什么。
   - `Keep up with what's going on at home.`
 
-## Housing
+## Interior design
 
-### Interior design
+temporal.
 
 - decor
   - [n.] 装饰，布置
@@ -1490,9 +1401,9 @@ That would make it tie in a little better.
 
 That would go with the modern feel.
 
-## Shopping&Fashion
+## Last-minute shopping
 
-### Last-minute shopping
+temporal.
 
 ```markdown
 1. What's been the highlight of your trip to San Francisco?
@@ -1544,9 +1455,9 @@ That would go with the modern feel.
 - sales tax
   - 消费税
 
-## Love&Family
+## Going on a blind date
 
-### Going on a blind date
+temporal.
 
 ```markdown
 1. Have you been seeing anyone lately?
@@ -1611,7 +1522,9 @@ That would go with the modern feel.
 - give it a shot
   - 试试看
 
-### Love at first sight
+## Love at first sight
+
+temporal.
 
 ```markdown
 1. Do you believe in love at first sight, Jen?
@@ -1658,7 +1571,9 @@ That would go with the modern feel.
   - from the beginning
   - `Adam's always been ready from the get-go.`
 
-### Childhood memories
+## Childhood memories
+
+temporal.
 
 ```markdown
 1. It's Children's Day tomorrow! I bet your kids are ecstatic!
@@ -1722,7 +1637,9 @@ That would go with the modern feel.
 - do as they please
   - 做他们喜欢的事
 
-### Love lives and nosy relatives
+## Love lives and nosy relatives
+
+temporal.
 
 **Words & Phrases**
 
@@ -1776,7 +1693,9 @@ That would go with the modern feel.
   - `As long as you follow your heart, I will always have your back.`
     - `I got your back.`
 
-### Different parenting styles
+## Different parenting styles
+
+temporal.
 
 **Words & Phrases**
 
@@ -1804,7 +1723,9 @@ That would go with the modern feel.
   - `How is it that I've been cleaning for a whole day, but this house is still messy?`
   - `Where is it that we're going?`
 
-### Couple fighting
+## Couple fighting
+
+temporal.
 
 **Word**
 
@@ -1869,7 +1790,9 @@ That would go with the modern feel.
 - 好的，我会尽力的。
   - `I'll work on that.`
 
-### Should I get a dog
+## Should I get a dog
+
+temporal.
 
 - pooch
   - [n.]
@@ -1956,7 +1879,7 @@ Sounds like quite the **commitment**.
 
 **Having a dog sure is**, but it's **rewarding** as well.
 
-### Getting divorced
+## Getting divorced
 
 > [A] 我听说你和Laura离婚了。
 > [B] 是的，有些事不如人意。
@@ -2014,7 +1937,7 @@ Sounds like quite the **commitment**.
 - Yes, and then after they turn 18, I will be funding their education.
 - That's good. The kids need to be **put first**.
 
-### Married life vs single life
+## Married life vs single life
 
 > [a] 嗨，你和杰西卡最近怎么样？
 > [b] 我不知道。她一直在暗示结婚和成家。
@@ -2060,51 +1983,9 @@ Sounds like quite the **commitment**.
 - If you're a good team and enjoy each other's company, why go through life alone?
 - You've got me there. Thanks!
 
-### My wife vs. my mom
+## Talking to teacher
 
-> [a] 你和你的岳父岳母相处好吗？
-> [b] 大部分时间还行。但相处不好时，我妻子比较尴尬。
-> [a] 我完全能理解。我也总被加在我妈和我老婆之间。
-> [b] 烦死了。我不喜欢选边站。
-
-- Do you **get along with** your **in-laws**?
-  - in-laws
-    - [n.] 无血缘关系的亲戚
-- For the most part, yeah. But I feel like my wife is **in an awkward position** when we don't.
-- I can totally **relate**. It's just like when I'm **caught between** my mother and wife.
-  - relate
-    - [v.] 产生共鸣
-- I hate that! I try my best not to **choose sides**.
-
-> [a] 我尝试灵活应变，同时理解双方的感受。
-> [b] 这平衡太微妙了。
-
-- I try to remain **diplomatic**, while being **empathetic** to both of them at the same time.
-  - diplomatic
-    - [adj.] 讲究方法地，委婉地
-  - empathetic
-    - [adj.] 有同感的，表示同情的
-- Sounds like a **delicate** balance.
-  - delicate
-    - [adj.] 微妙的
-  - You're striking a very delicate balance.
-
-> [a] 你们不住在一起吧？
-> [b] 还好不是。否则她们总闹矛盾，我受不了。
-> [a] 是啊，否则你就进退两难了。
-
-- You don't live **under the same roof**, do you?
-- Thankfully, no. Otherwise, they'd frequently **butt heads** and I couldn't **take** that.
-  - butt heads
-    - 发生冲突
-    - 像动物一样，用头冲撞
-- Yeah, then you'd really be **stuck between a rock and a hard place**.
-  - stuck between a rock and a hard place
-    - 进退两难
-
-## Education
-
-### Talking to teacher
+temporal.
 
 **Words**
 
@@ -2153,7 +2034,9 @@ Sounds like quite the **commitment**.
 - 乔纳森对乔治**评价很高**。
   - `Jonathan thinks pretty highly of George.`
 
-### College registration for freshmen
+## College registration for freshmen
+
+temporal.
 
 - core classes
 - intro classes
@@ -2201,7 +2084,7 @@ Sounds like quite the **commitment**.
 - I better register quickly before classes **fill up**.
 - Don't **stress** about it.
 
-### College life
+## College life
 
 > [a] 上学期就没见过你，最近有什么新鲜事吗？
 > [b] 没啥，我从校内宿舍搬到了校外公寓。
@@ -2256,9 +2139,9 @@ Sounds like quite the **commitment**.
 
 - **Congrats**! Hey listen, **I've got to get to class**, but let's **hit a house party** this weekend.
 
-## Eating
+## Dining etiquette
 
-### Dining etiquette
+temporal.
 
 - fine dining
   - 高级餐厅用餐
@@ -2314,8 +2197,9 @@ Just place them next to each other.
 
 Sounds easy.
 
-### Diet fads
+## Diet fads
 
+temporal.
 
 - low-carb
   - [adj.] 低碳水的
@@ -2364,9 +2248,9 @@ Sounds easy.
 
 - It looks like you've got that figured out.
 
-## Amusement
+## Mobile games
 
-### Mobile games
+temporal.
 
 - racing
   - 赛车
@@ -2441,7 +2325,9 @@ Sounds easy.
   - `I'm not sure they'd be my thing.`
   - would
 
-### Game of Thrones
+## Game of Thrones
+
+temporal.
 
 **Words & Phrases**
 
@@ -2503,7 +2389,9 @@ Sounds easy.
 - 你去看！我不剧透。
   - `Go watch it! I'm not giving any spoilers.`
 
-### Digital addiction
+## Digital addiction
+
+temporal.
 
 - black hole
   - 黑洞
@@ -2551,3 +2439,174 @@ Many sites have been designed for binge watching and gaming that it's gotten out
 - `When you binge on anything basically, you're doing a lot at one time.`
 - `binge eating`
 - `binge drinking`
+
+## My wife vs. my mom
+
+20-10-14
+
+> [a] 你和你的岳父岳母相处好吗？
+> [b] 大部分时间还行。但相处不好时，我妻子比较尴尬。
+> [a] 我完全能理解。我也总被加在我妈和我老婆之间。
+> [b] 烦死了。我不喜欢选边站。
+
+- Do you **get along with** your **in-laws**?
+  - in-laws
+    - [n.] 无血缘关系的亲戚
+- For the most part, yeah. But I feel like my wife is **in an awkward position** when we don't.
+- I can totally **relate**. It's just like when I'm **caught between** my mother and wife.
+  - relate
+    - [v.] 产生共鸣
+- I hate that! I try my best not to **choose sides**.
+
+> [a] 我尝试灵活应变，同时理解双方的感受。
+> [b] 这平衡太微妙了。
+
+- I try to remain **diplomatic**, while being **empathetic** to both of them at the same time.
+  - diplomatic
+    - [adj.] 讲究方法地，委婉地
+  - empathetic
+    - [adj.] 有同感的，表示同情的
+- Sounds like a **delicate** balance.
+  - delicate
+    - [adj.] 微妙的
+  - You're striking a very delicate balance.
+
+> [a] 你们不住在一起吧？
+> [b] 还好不是。否则她们总闹矛盾，我受不了。
+> [a] 是啊，否则你就进退两难了。
+
+- You don't live **under the same roof**, do you?
+- Thankfully, no. Otherwise, they'd frequently **butt heads** and I couldn't **take** that.
+  - butt heads
+    - 发生冲突
+    - 像动物一样，用头冲撞
+- Yeah, then you'd really be **stuck between a rock and a hard place**.
+  - stuck between a rock and a hard place
+    - 进退两难
+
+## How to tone up your muscles
+
+20-10-13
+
+20-10-15
+
+> [a] 准备好全身运动了吗？
+
+- Are you ready for the **full-body workout**?
+  - workout session
+
+> [a] 首先，我们将做一些热身——波比跳和俯卧撑。
+> [b] 光听名字我就汗流浃背。之后练啥？
+> [a] 做深蹲和箭步蹲，来锻炼四头肌和臀大肌。
+
+- First we're going to **warm up** with some **burpees** and **push-ups**.
+  - We don't want to start off cold.
+  - burpees
+    - 波比跳（立卧撑跳）
+- Just the sound of it is making me sweat. What will we **target** after that?
+  - Let's target the young crowd with our ad campaign.
+    - 用广告宣传吸引年轻人。
+- Then we'll **hit** **quads** and **glutes** with **squats** and **lunges**.
+  - quads
+    - `/kwɑd/`
+    - 四头肌
+    - quadriceps
+  - glutes
+    - 臀大肌
+  - squats
+    - [n.] 深蹲
+  - lunges
+    - [n.] 箭步蹲
+
+> [b] 听着很累啊。每套动作重复几次？
+> [a] 目标是12到15次。
+
+- Sounds tiring. How many **repetitions** per **set**?
+- We'll aim for 12 to 15 **reps**.
+
+> [b] 这些动作也会用到我的小腿肌肉，对吗？
+> [a] 还会稍微锻炼到你的核心和背部肌群。
+> [b] 太好了，我的腹肌需要锻炼。
+
+- These movements will also use my **calves** a bit too, right?
+  - calves
+    - [n.] 小腿肚
+    - calf
+- These **compound** exercises will also **engage** your **core** and back muscles a bit.
+  - compound
+    - [adj.] 混合的，复合的
+    - This problem is compound.
+  - engage
+    - 使参与，锻炼的意思
+    - The last set really engaged my back.
+      - 最后一组把我累得够呛。
+    - He really know how to engage the audience.
+      - 吸引观众
+    - I don't want to engage with them at the party.
+      - 不想打交道
+- Great. My **abs** **could use** some **toning**.
+  - could use
+    - 委婉表示想要，或应得的
+    - it would be good/it would be a good idea
+    - I could use a beer right now. Today was tough.
+    - She sure could use a vacation.
+  - toning
+    - [v.] 使更健壮
+
+> [b] 腿疼之后做啥？
+> [a] 胸部运动。
+
+- And after my legs are **aching**?
+- Then we'll do some **chest-building** exercises.
+
+> [a] 我们练完腿后，我们要做哑铃推举来锻炼胸肌，然后做俯身杠铃划船来锻炼背阔肌。
+> [b] 所以二头肌和三头肌不分开训练吗？
+> [a] 不。
+
+- After we've worked the legs, we'll do some **dumbbell presses** for your chest and then **bent-over rows** for your **lats**.
+  - dumbbell
+    - 哑铃
+    - barbell就是杠铃
+  - bent-over rows
+    - [n.] 俯身杠铃划船
+  - lats
+    - [n.] 背阔肌
+- So no isolation exercises for **biceps** and **triceps** in today's workout?
+  - 反义就是compound exercises
+  - biceps
+    - [n.] 二头肌
+  - triceps
+    - [n.] 三头肌
+- Nope.
+
+> [a] 今天练完后，你所有肌肉群都会很累。
+> [b] 那肯定。感觉比我的普拉提课难多了。
+> [a] 确实。
+
+- All of your **muscle groups** will be pretty **taxed**.
+  - muscle groups
+    - 肌肉群
+  - taxed
+    - 使耗尽力气
+    - exhausted
+    - It's going to tax you.
+    - It's really mentally taxing.
+- I don't doubt it. Sounds like this will be a lot **tougher** than that **Pilates** class I took.
+  - Pilates
+    - [n.] 普拉提
+- You can **count on** that.
+
+> [a] 任何完整锻炼都要冷身。我们会做瑜伽拉伸。
+
+- No workout would be complete without a proper **cool down**. We'll **stretch** it out with a few yoga moves.
+  - cool down
+    - 冷身运动
+  - stretch
+    - [v.] 拉伸
+
+**补充**
+
+- muscle
+  - 一般用复数
+    - My muscles are sore.
+  - muscular people
