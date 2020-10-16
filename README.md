@@ -6,6 +6,7 @@
     - [Strongly Recommended](#strongly-recommended)
     - [Others](#others)
   - [Study Note](#study-note)
+  - [PDF Note](#pdf-note)
 
 Welcome to my blog. My page: https://ryanxingql.github.io/
 
@@ -33,7 +34,6 @@ Feel free to contact: ryanxingql@gmail.com.
 - [x] [MARKDOWN](https://github.com/RyanXingQL/Blog/blob/master/posts/markdown.md)
 
 - [x] [PYTHON](https://github.com/RyanXingQL/Blog/blob/master/posts/python.md)
-  - [x] [*Python编程：从入门到实践*](https://drive.google.com/drive/folders/1UU703I_zM1pPx5UVzIVLSN8NZwqxo5Tf?usp=sharing)
   - [ ] PYTHON UTILS
 
 - [x] [PYTORCH](https://github.com/RyanXingQL/Blog/blob/master/posts/pytorch.md)
@@ -86,6 +86,9 @@ Feel free to contact: ryanxingql@gmail.com.
 
 - [x] [READING AND THINKING](https://github.com/RyanXingQL/Blog/blob/master/posts/reading_and_thinking.md)
 
-- [x] **北航电子信息课程笔记**（图像处理，嵌入式，微机原理，网络安全，泛函分析等）
-  - [x] [本科专业课](https://drive.google.com/drive/folders/1UU703I_zM1pPx5UVzIVLSN8NZwqxo5Tf?usp=sharing)
-  - [x] [研究生课程](https://drive.google.com/drive/folders/1UU703I_zM1pPx5UVzIVLSN8NZwqxo5Tf?usp=sharing)
+## PDF Note
+
+[[百度网盘 (提取码blog)]](https://pan.baidu.com/s/1An7GpfyHAaFLRphhODevVQ) [[Google Drive]](https://drive.google.com/drive/folders/1UU703I_zM1pPx5UVzIVLSN8NZwqxo5Tf?usp=sharing)
+
+- [x] **北航电子信息课程**（图像处理，嵌入式，微机原理，网络安全，泛函分析等）
+- [x] ***Python编程：从入门到实践*** 
