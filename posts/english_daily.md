@@ -40,6 +40,7 @@
   - [Digital addiction](#digital-addiction)
   - [My wife vs. my mom](#my-wife-vs-my-mom)
   - [How to tone up your muscles](#how-to-tone-up-your-muscles)
+  - [Summer internships](#summer-internships)
 
 ## Popular sports in America
 
@@ -2442,7 +2443,7 @@ Many sites have been designed for binge watching and gaming that it's gotten out
 
 ## My wife vs. my mom
 
-20-10-14
+> 20-10-14
 
 > [a] 你和你的岳父岳母相处好吗？
 > [b] 大部分时间还行。但相处不好时，我妻子比较尴尬。
@@ -2486,9 +2487,7 @@ Many sites have been designed for binge watching and gaming that it's gotten out
 
 ## How to tone up your muscles
 
-20-10-13
-
-20-10-15
+> 20-10-15/16
 
 > [a] 准备好全身运动了吗？
 
@@ -2591,6 +2590,8 @@ Many sites have been designed for binge watching and gaming that it's gotten out
     - exhausted
     - It's going to tax you.
     - It's really mentally taxing.
+    - We were taxed on all the goods we purchased.
+      - 交税
 - I don't doubt it. Sounds like this will be a lot **tougher** than that **Pilates** class I took.
   - Pilates
     - [n.] 普拉提
@@ -2603,6 +2604,10 @@ Many sites have been designed for binge watching and gaming that it's gotten out
     - 冷身运动
   - stretch
     - [v.] 拉伸
+    - I'm going to have to stretch this bit of money until my next paycheck.
+      - 这笔钱得一直用到下一次发工资。
+    - I just couldn't believe his story, it was too much of a stretch.
+      - 太夸张了
 
 **补充**
 
@@ -2610,3 +2615,7 @@ Many sites have been designed for binge watching and gaming that it's gotten out
   - 一般用复数
     - My muscles are sore.
   - muscular people
+
+## Summer internships
+
+> 20-10-17
