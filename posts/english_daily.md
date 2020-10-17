@@ -2618,4 +2618,40 @@ Many sites have been designed for binge watching and gaming that it's gotten out
 
 ## Summer internships
 
-> 20-10-17
+> 20-10-17/18
+
+> [a] 暑期实习怎么样了？
+> [b] 工作挺难的。但我学到了挺多。
+
+- How's your summer internship going?
+  - internship
+    - 实习
+    - intern
+      - 实习生
+- It's been tough. But I'm learning a lot.
+
+> [a] 我们当时高中就开始暑期兼职了。有的在零售，有的在夏令营，有的在当救生员。
+> [b] 所以都不是真正的工作咯？
+> [a] 不是的，只是为了攒大学学费。
+
+- In my day, we started summer jobs in high school. Some of my friends worked in **retail sales**, at **summer camps**, or as **lifeguards**.
+  - summer camps
+    - 夏令营
+  - lifeguards
+    - 救生员
+- So it wasn't like a job job?
+- No, they're just to help pay for college.
+
+> [b] 我觉得实习是为了开始职业道路，例如酒店服务业或会计。
+> [a] 至少习惯朝九晚五。
+> [b] 确实！
+
+- I think being an intern is more about getting started on a career path, like **hospitality** or **accounting**.
+- Right, or at least getting young people used to the **9 to 5** lifestyle.
+- Haha, indeed!
+  - hospitality
+    - 服务业
+  - accounting
+    - 会计
+  - 9 to 5
+    - 朝九晚五
