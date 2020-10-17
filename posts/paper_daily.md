@@ -3,6 +3,8 @@
 - [PAPER DAILY](#paper-daily)
   - [Learning Enriched Features for Real Image Restoration and Enhancement](#learning-enriched-features-for-real-image-restoration-and-enhancement)
   - [BBN: Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition](#bbn-bilateral-branch-network-with-cumulative-learning-for-long-tailed-visual-recognition)
+  - [SRFlow: Learning the Super-Resolution Space with Normalizing Flow](#srflow-learning-the-super-resolution-space-with-normalizing-flow)
+  - [Multi-level Wavelet-based Generative Adversarial Network for Perceptual Quality Enhancement of Compressed Video](#multi-level-wavelet-based-generative-adversarial-network-for-perceptual-quality-enhancement-of-compressed-video)
 
 ## Learning Enriched Features for Real Image Restoration and Enhancement
 
@@ -61,3 +63,44 @@
 ![fig](../imgs/pd_201017_2.jpeg)
 
 注意特征提取模块的参数是共享的。
+
+## SRFlow: Learning the Super-Resolution Space with Normalizing Flow
+
+> SRFlow：基于Flow的生成方法。训练稳定，单一损失，变换结果简单，可逆。
+> ECCV 2020
+> 20-10-17
+
+标签：图像超分辨
+标签：Flow
+
+SR问题是一个经典的病态问题，有很多可能的解。这一事实很重要，但被现有方法忽略了：现有方法是限定的（deterministic），基于重建loss和对抗loss的组合学习。
+
+本文提出用归一化的flow完成SR，损失函数仅使用负对数似然。该方案更贴近病态问题的本质，也能够生成多样的输出。
+
+最关键的还是灵活改变输出。
+
+作者称，SRFlow的PSNR和perceptual quality metrics都超过了GAN方法，太强了。
+
+具体而言，本文设计了一个conditional normalizing flow结构。所谓conditional，就是提供LR条件下，预测潜在的HR的条件分布。
+
+从第三章开始的方法没有细看了。
+
+## Multi-level Wavelet-based Generative Adversarial Network for Perceptual Quality Enhancement of Compressed Video
+
+> MW-GAN：在小波域增强主观质量。
+> ECCV 2020
+> 20-10-17
+
+标签：图像恢复
+标签：GANs
+标签：小波变换
+
+Motivation（图2）：主观质量与高频分量高度相关。现有增强方法大多都无法提升甚至恶化主观质量。说明方法：观察小波变换后的高频分量的能量大小。
+
+![fig](../imgs/pd_201017_3.jpeg)
+
+网络设计（图3）：典型的GAN设计，只不过处理对象和训练标签都是图像的小波谱。
+
+![fig](../imgs/pd_201017_4.jpeg)
+
+loss由小波域重建loss、运动补偿loss和对抗loss组成。对抗loss是随着epoch增大逐渐参与进来的，运动补偿loss是逐渐退出的，小波域重建loss在不同子带上有不同权重。
