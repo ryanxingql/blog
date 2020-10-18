@@ -2639,7 +2639,9 @@ Many sites have been designed for binge watching and gaming that it's gotten out
     - 夏令营
   - lifeguards
     - 救生员
-- So it wasn't like a job job?
+- So it wasn't like a **job job**?
+  - 强调这个词的涵义
+  - At university, a professor can be a doctor but he's not a doctor doctor.
 - No, they're just to help pay for college.
 
 > [b] 我觉得实习是为了开始职业道路，例如酒店服务业或会计。
@@ -2651,7 +2653,10 @@ Many sites have been designed for binge watching and gaming that it's gotten out
 - Haha, indeed!
   - hospitality
     - 服务业
+    - 和hotel关系很大
   - accounting
-    - 会计
+    - [n.] 会计（工作）
+    - accountants
+      - [n.] 会计师
   - 9 to 5
     - 朝九晚五
