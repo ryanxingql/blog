@@ -5,6 +5,8 @@
   - [BBN: Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition](#bbn-bilateral-branch-network-with-cumulative-learning-for-long-tailed-visual-recognition)
   - [SRFlow: Learning the Super-Resolution Space with Normalizing Flow](#srflow-learning-the-super-resolution-space-with-normalizing-flow)
   - [Multi-level Wavelet-based Generative Adversarial Network for Perceptual Quality Enhancement of Compressed Video](#multi-level-wavelet-based-generative-adversarial-network-for-perceptual-quality-enhancement-of-compressed-video)
+  - [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](#photo-realistic-single-image-super-resolution-using-a-generative-adversarial-network)
+  - [ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks](#esrgan-enhanced-super-resolution-generative-adversarial-networks)
 
 ## Learning Enriched Features for Real Image Restoration and Enhancement
 
@@ -111,3 +113,98 @@ loss由小波域重建loss、运动补偿loss和对抗loss组成。对抗loss是
 - 用RGB训练比在Y上训练效果更明显。
 - Multi-level对抗监督的做法被广泛使用，效果不错。
 - 对压缩图像而言，保真也是很重要的，因此不能像SR那样随意。
+
+## Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network
+
+> SRGAN：第一个实现4倍升采样的细节恢复网络。
+> CVPR 2017
+> 20-10-18
+
+标签：图像超分辨
+标签：GANs
+
+训练loss由content loss和对抗loss组成。对抗loss会迫使结果更接近自然图像。content loss要求perceptual相似性（VGG中后端特征的相似性），而非像素level的相似性。
+
+结果显示，SRGAN的MOS得分要显著高于传统CNN的结果。
+
+由图2，PSNR和SSIM高的图像，其主观质量并非最高的。
+
+数据集获取：将HR图像高斯模糊，然后降采样。
+
+训练是交替优化鉴别器D和生成器G。鉴别器的优化目标是：
+
+![fig](../imgs/pd_201018_1.jpeg)
+
+很简单，就是要准确认出真实图像，并且识别出假图像。
+
+生成器是B个结构相同的块组成的。升采样通过sub-pixel（重排）实现。
+
+根据[44]的建议，网络没有使用最大池化，并且使用了$\alpha=0.2$的LeakyReLU。鉴别器网络是8层3x3卷积层，每一层通道数从64到512增加，隔2层翻1倍。当通道数翻倍时，图像长和宽减小1/2（因为是分类器）。
+
+![fig](../imgs/pd_201018_2.jpeg)
+
+生成器的loss采用组合形式：
+
+![fig](../imgs/pd_201018_3.jpeg)
+
+其中第一项是VGG loss，即经过预训练的19层VGG网络的第j次卷积后（经ReLU激活）、第i次最大池化前输出的特征图的MSE：
+
+![fig](../imgs/pd_201018_4.jpeg)
+
+$\phi$就是VGG参数。
+
+第二项对抗loss，刻画生成图像与自然图像的差距，由监督器决定差距大小：
+
+![fig](../imgs/pd_201018_5.jpeg)
+
+根据[22]，为了使梯度表现更好，该式没有使用$\log{(1 - D)}$。想象一下，如果D输出趋于0，那么loss应该越大越好，因此式6更好。
+
+作者对比了content loss用MSE，VGG22和VGG54的结果，发现VGG54的MOS分表现最好。
+
+## ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks
+
+> ESRGAN：改进SRGAN的细节问题。
+> ECCVW 2018
+> 20-10-18
+
+改进：
+- 使用Residual-in-Residual Dense Block。
+  - 取消了BN操作。
+  - RRDB输出经过scaling后传输。
+- 参数初始化方差尽可能小。实验证实的。
+- 让鉴别器分辨两个图像哪个更真实，而不是判断是否真实。
+- VGG loss改为对比激活前的特征。
+
+最后，为了权衡PSNR和感知质量，作者尝试了网络参数插值和图像插值，结果是前者更好。
+
+ESRGAN的整体结构和SRGAN保持一致（图3），但细节被修改。见图4。
+
+![fig](../imgs/pd_201018_6.jpeg)
+
+![fig](../imgs/pd_201018_7.jpeg)
+
+当训练数据和测试数据存在差距时，使用BN会导致伪影[26,32]。因此去除。所谓的Residual in Residual，就是大Residual嵌套小Residual。RRDB输出经过放缩后再并入主路，增强稳定性[35,26]。
+
+鉴别器的loss和生成器的对抗loss分别改成了以下形式：
+
+![fig](../imgs/pd_201018_8.jpeg)
+
+其中RaD是指Relativistic average Discriminator：
+
+![fig](../imgs/pd_201018_9.jpeg)
+
+内部期望是在mini-batch上计算的。再具体：
+
+![fig](../imgs/pd_201018_10.jpeg)
+
+最后，作者将VGG loss改为未激活的对比。这是因为特征图稀疏，激活后几乎都是inactive的。
+
+生成器的loss改为三项，即最后加上一个L1重建loss，见式3。
+
+$$
+L_G = L_{percep} + \lambda L_G^{Ra} + \eta L_1
+$$
+
+为了让PSNR和感知质量权衡，或抑制GAN导致的噪声，我们可以调整L1 loss和对抗loss的权重。但这样做很麻烦。
+
+在训练阶段，我们先用L1 loss训练生成器。然后再用式3的组合loss训练整个GAN。
