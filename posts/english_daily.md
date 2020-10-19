@@ -41,6 +41,7 @@
   - [My wife vs. my mom](#my-wife-vs-my-mom)
   - [How to tone up your muscles](#how-to-tone-up-your-muscles)
   - [Summer internships](#summer-internships)
+  - [What makes a good friend?](#what-makes-a-good-friend)
 
 ## Popular sports in America
 
@@ -2660,3 +2661,43 @@ Many sites have been designed for binge watching and gaming that it's gotten out
       - [n.] 会计师
   - 9 to 5
     - 朝九晚五
+
+## What makes a good friend?
+
+> 20-10-19/20
+
+> [a] 如果让你选一个最好的朋友，你会选谁？
+> [b] 当然是我的老同学Mike。我们是老相识了。他陪我走过了起起落落。
+
+- If you had to pick a best friend, who would **it** be?
+- Definitely my old college **pal**, Mike. We **go way back**. He's been there for me through all my **ups and downs**.
+  - pal
+    - [n.] 伙伴，朋友
+
+> [a] 他由衷地在乎别人的感受。我能理解为什么他是你最好的朋友。
+> [b] 其实是我们俩的幽默感比较相似，才玩到一块。
+
+- He **genuinely** cares about people's feelings. I can see why he's your **BFF**.
+  - genuinely
+    - [adv.] 真诚地
+- Honestly, it's our similar **sense of humor** that really kept us together.
+
+> [b] 她很忠实，从不说闲话。
+
+- She's really loyal and never gossips about her friends.
+  - gossips
+    - [v.] 八卦
+
+> [a] 朋友的质量比数量重要。
+
+- It's quality that's important, not quantity.
+
+> [a] 她从不对我评头论足。我可以跟她分享内心深处的秘密。
+> [b] 听上去真是百里挑一的朋友。
+
+- She never judge me. I can share my deepest secrets with her.
+  - judges
+    - [v.] 评判，妄加评论
+- Sounds like she's one in a million.
+  - one in million
+    - [n.] 百里挑一的
