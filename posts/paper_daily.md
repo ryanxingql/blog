@@ -7,6 +7,7 @@
   - [Multi-level Wavelet-based Generative Adversarial Network for Perceptual Quality Enhancement of Compressed Video](#multi-level-wavelet-based-generative-adversarial-network-for-perceptual-quality-enhancement-of-compressed-video)
   - [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](#photo-realistic-single-image-super-resolution-using-a-generative-adversarial-network)
   - [ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks](#esrgan-enhanced-super-resolution-generative-adversarial-networks)
+  - [Pixel-Adaptive Convolutional Neural Networks](#pixel-adaptive-convolutional-neural-networks)
 
 ## Learning Enriched Features for Real Image Restoration and Enhancement
 
@@ -208,3 +209,56 @@ $$
 为了让PSNR和感知质量权衡，或抑制GAN导致的噪声，我们可以调整L1 loss和对抗loss的权重。但这样做很麻烦。
 
 在训练阶段，我们先用L1 loss训练生成器。然后再用式3的组合loss训练整个GAN。
+
+## Pixel-Adaptive Convolutional Neural Networks
+
+> PAC：给卷积核乘以可学习的、spatially varying的权值。借鉴双边滤波器思想。
+> CVPR 2019
+> 20-10-19
+
+标签：CNNs
+标签：注意力
+
+看这篇论文前，可以回忆[双边滤波器](https://www.cnblogs.com/wangguchangqing/p/6416401.html)。不同于高斯滤波器（仅考虑位置关系），双边滤波器引入了$\alpha$截尾均值滤波器，考虑像素灰度值之间的差异；然后两个滤波器相乘，就得到了双边滤波器。
+
+作者仿照双边滤波器，提出了PAC。与自注意力方法或全动态方法不同，PAC和双边滤波器一样，仅仅关注局部，因此在一定程度上减小了计算量，实现更简单。
+
+接下来就是讲故事了。
+
+参数共享是CNNs的优势，也是其劣势。为了解决该劣势，作者提出用spatially varying的权值乘以滤波器权值；该varying权值是根据局部像素信息学习得到的。
+
+可以简单证明，PAC是许多滤波器的一般化，即可以特化为众多滤波器，例如双边滤波器、一般卷积和池化等。
+
+直观上看，我们迫使CNNs卷积核共享是不合理的。为了减小loss，CNNs不得不用有限的卷积核来卷积不同内容的特征图。
+
+再进一步，当CNNs训练好以后，卷积核参数就不可变了。本文方法引入了可学习的倍乘参数，因此对于不同的输入图像，可以产生不同的倍乘参数，改变卷积核权值。
+
+现有的卷积核大致可以分为两种：一种是预定义的，例如双边滤波器；另一种是全动态的，很难扩展到整个网络，因为计算复杂度太大了。PAC在二者之间，往下看。
+
+传统卷积是这样的：
+
+![fig](../imgs/pd_201019_1.jpeg)
+
+i是卷积中心点。可见，卷积核W取值仅仅取决于相对位置差$p_i - p_j$，与内容无关。
+
+为了让卷积核W取值与内容有关，我们把位置进行编码，再对编码信息卷积，即：
+
+![fig](../imgs/pd_201019_2.jpeg)
+
+但这样做（把特征映射到更高维空间），会导致卷积计算量庞大，卷积向量过于稀疏。
+
+为了解决这一问题，作者采取了另一种方式：作者没有将特征往更高维空间映射后卷积，而是引入spatially varying的核K，让核对高维特征进行简单处理。
+
+![fig](../imgs/pd_201019_3.jpeg)
+
+例如K可以取高斯核。此时，f就被称为adaptive feature，而K被称为adaptive kernel。f可以自定义，例如将位置信息和色彩信息编码：$f = (x, y, r, g, b)$，也可以是学出来的。
+
+![fig](../imgs/pd_201019_4.jpeg)
+
+该方法可以特化为见过的卷积核。
+
+- 当W为高斯滤波器时，双边滤波器就出现了。
+- 当K恒等于1时，就是一般卷积；即不包含特殊的位置编码信息。
+- 当K恒等于1，W恒等于1/(s^2)时，就是平均池化。
+
+
