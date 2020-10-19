@@ -342,6 +342,13 @@ file_path.stem  # file
 file_path.name  # file.csv
 file_path.suffix  # csv
 file_path.exists()  # True
+
+Path.mkdir('/xx/xx')  # 可以代替makedirs的功能
+
+a_path = Path('/aa/bb/cc')
+a_path.name -> 'cc'
+
+str(a_path) -> 转变回正常字符串，可以执行`split`等操作
 ```
 
 ### shutil
