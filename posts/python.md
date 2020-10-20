@@ -7,11 +7,11 @@
     - [一般文件](#一般文件)
     - [CSV](#csv)
   - [画图](#画图)
+  - [numpy](#numpy)
   - [其他常用模块和方法](#其他常用模块和方法)
     - [argparse](#argparse)
     - [assert](#assert)
     - [multiprocessing](#multiprocessing)
-    - [numpy](#numpy)
     - [os](#os)
     - [pathlib](#pathlib)
     - [shutil](#shutil)
@@ -143,6 +143,20 @@ plt.bar(index_lst, new_y_lst, width=3, bottom=old_y_acc_lst)
 ```
 
 默认hold，直至`plt.show()`
+
+## numpy
+
+**random**
+
+```
+np.random.choice(a_list)
+```
+
+从列表或迭代器中随机选一个。
+
+**reshape**
+
+`resize`没有返回值，`reshape`有。
 
 ## 其他常用模块和方法
 
@@ -288,10 +302,6 @@ callback=lambda x :pbar.update(1)
 显然，为了实现回调，我们需要将callback函数传递给func。
 回调函数使得功能剥离，更灵活。
 
-### numpy
-
-`resize`没有返回值，`reshape`有。
-
 ### os
 
 > 推荐查看Python3自带的最新模块pathlib。
@@ -349,6 +359,8 @@ a_path = Path('/aa/bb/cc')
 a_path.name -> 'cc'
 
 str(a_path) -> 转变回正常字符串，可以执行`split`等操作
+
+a_path.rename('/foo')  --> 字符串或Path对象都可以
 ```
 
 ### shutil
