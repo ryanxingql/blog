@@ -2672,7 +2672,11 @@ Many sites have been designed for binge watching and gaming that it's gotten out
 - If you had to pick a best friend, who would **it** be?
 - Definitely my old college **pal**, Mike. We **go way back**. He's been there for me through all my **ups and downs**.
   - pal
-    - [n.] 伙伴，朋友
+    - [n.] 伙伴，朋友。通常是男生。
+    - buddy
+    - bro
+  - I feel up.
+  - I feel down.
 
 > [a] 他由衷地在乎别人的感受。我能理解为什么他是你最好的朋友。
 > [b] 其实是我们俩的幽默感比较相似，才玩到一块。
@@ -2680,24 +2684,30 @@ Many sites have been designed for binge watching and gaming that it's gotten out
 - He **genuinely** cares about people's feelings. I can see why he's your **BFF**.
   - genuinely
     - [adv.] 真诚地
+    - He genuinely loves his girlfriend.
+    - You friend give you some really good genuine advice.
+  - He could be a **genuine** person.
+  - Best Friend Forever
 - Honestly, it's our similar **sense of humor** that really kept us together.
+  - It's ... that ...
+    - [a] Did your brother give it to you? [b] No, it was my best friend who gave it to me.
+    - It's quality that's important, not quantity.
 
 > [b] 她很忠实，从不说闲话。
 
-- She's really loyal and never gossips about her friends.
+- She's really **loyal** and never **gossips** about her friends.
+  - loyal to sb
   - gossips
     - [v.] 八卦
-
-> [a] 朋友的质量比数量重要。
-
-- It's quality that's important, not quantity.
+    - gossipy
+      - [adj.]
 
 > [a] 她从不对我评头论足。我可以跟她分享内心深处的秘密。
 > [b] 听上去真是百里挑一的朋友。
 
-- She never judge me. I can share my deepest secrets with her.
+- She never **judge** me. I can share my deepest secrets with her.
   - judges
     - [v.] 评判，妄加评论
-- Sounds like she's one in a million.
+- Sounds like she's **one in a million**.
   - one in million
     - [n.] 百里挑一的
