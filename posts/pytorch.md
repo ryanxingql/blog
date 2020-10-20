@@ -1,12 +1,45 @@
 # PYTORCH
 
 - [PYTORCH](#pytorch)
+  - [Visdom](#visdom)
   - [安装](#安装)
   - [多卡](#多卡)
     - [DDP例程](#ddp例程)
       - [NCCL后端+launch启动+DistributedSampler](#nccl后端launch启动distributedsampler)
       - [Gloo后端+MP启动+模型读写方式](#gloo后端mp启动模型读写方式)
     - [原理](#原理)
+
+## Visdom
+
+**安装**
+
+`python -m pip install visdom`
+
+**开启服务**
+
+`python -m visdom.server`
+
+**查看远程服务器的visdom**
+
+转接远程服务器的端口：
+
+```
+ssh 18097:127.0.0.1:8097 x@xxx.xx.xx.xx
+```
+
+其中8097是服务器端口，18097是本机端口。
+
+然后查看`http://localhost:18097`即可。
+
+**命令**
+
+```python
+from visdom import Visdom
+
+viz = Visdom()
+viz.line([x], [y], win='loss', opts=dict(title='loss vs. iter, legend=['loss']), update='append')
+viz.image(img, win='a image')
+```
 
 ## 安装
 

@@ -353,7 +353,7 @@ file_path.name  # file.csv
 file_path.suffix  # csv
 file_path.exists()  # True
 
-Path.mkdir('/xx/xx')  # 可以代替makedirs的功能
+a_Path_object.mkdir(parents=True)  # 可以代替makedirs的功能
 
 a_path = Path('/aa/bb/cc')
 a_path.name -> 'cc'
