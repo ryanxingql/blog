@@ -42,6 +42,7 @@
   - [How to tone up your muscles](#how-to-tone-up-your-muscles)
   - [Summer internships](#summer-internships)
   - [What makes a good friend?](#what-makes-a-good-friend)
+  - [College graduates looking for jobs](#college-graduates-looking-for-jobs)
 
 ## Popular sports in America
 
@@ -2711,3 +2712,40 @@ Many sites have been designed for binge watching and gaming that it's gotten out
 - Sounds like she's **one in a million**.
   - one in million
     - [n.] 百里挑一的
+
+## College graduates looking for jobs
+
+> [a] Allison，好巧啊。
+> [b] 是啊。
+
+- Hey Allison, what a nice surprise!
+- Hi Joe. It sure is!
+
+> [a] 面试怎么样？
+> [b] 说不准。
+
+- How did the interview go?
+- Well, we'll see.
+
+> [a] 我想你一定会找到好工作的。我也是花了一段时间才找到。但你看我现在挺好的。
+
+- I'm sure you'll be fine. It took me a while to find something that's a great fit. But here I am.
+
+> [b] 我听说大多数入门岗都被实习生和校招占了。
+> [a] 别泄气！
+
+- I heard that most entry-level positions are filled by internships or campus recruiting.
+  - entry-level
+    - [adj.] 入门级的
+- Hey, don't get yourself down already.
+
+> [a] 你在面试什么岗位？
+> [b] 行政。文科生选项很少。
+> [a] 别这么说。你的技能比我这种工科生多，所以你的选择空间大。我想分享些心得给你。
+
+- What position were you interviewing for?
+- Admin. Career options for a liberal arts major are somewhat limited.
+  - liberal arts
+    - [n.] 文科
+- That's not true. You have a broad range of skills that an engineering major like myself doesn't have. So, you actually have a wide range of options.
+- I'll be happy to give you some **pointers** to help you with your **job hunt**.
