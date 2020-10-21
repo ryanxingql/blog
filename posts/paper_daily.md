@@ -8,16 +8,16 @@
   - [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](#photo-realistic-single-image-super-resolution-using-a-generative-adversarial-network)
   - [ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks](#esrgan-enhanced-super-resolution-generative-adversarial-networks)
   - [Pixel-Adaptive Convolutional Neural Networks](#pixel-adaptive-convolutional-neural-networks)
+  - [Drop an Octave: Reducing Spatial Redundancy in Convolutional Neural Networks with Octave Convolution](#drop-an-octave-reducing-spatial-redundancy-in-convolutional-neural-networks-with-octave-convolution)
 
 ## Learning Enriched Features for Real Image Restoration and Enhancement
 
-> MIRNet：开源完善；声称是图像恢复的SOTA。
-> 注意力、多尺度集大成。
-> ECCV 2020
-> 20-10-15
+MIRNet，ECCV 2020：注意力、多尺度的集大成网络。开源完善。声称是图像恢复的SOTA。
 
-标签：图像恢复
-标签：注意力
+- [tag] 图像恢复
+- [tag] 注意力
+
+> 20-10-15
 
 前人工作大多处理全分辨图像，或处理渐进的低分辨率表示。作者认为前者空域建模准确但语义建模不健壮，后者反之。本文希望在网络中保持高分辨率表示，同时从低分辨率表示中获取较好的语义信息。
 
@@ -41,13 +41,12 @@
 
 ## BBN: Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition
 
-> BBN：长尾分类当年SOTA。
-> 分开训练特征提取和分类器。
-> CVPR 2020
-> 20-10-17
+BBN，CVPR 2020：分开训练特征提取和分类器。长尾分类当年SOTA。
 
-标签：图像分类
-标签：长尾分布
+- [tag] 图像分类
+- [tag] 长尾分布
+
+> 20-10-17
 
 首先作者揭示，广泛用于长尾分布的重采样技术，虽然会增强分类器的学习，但在一定程度上会损害特征学习。
 
@@ -69,12 +68,12 @@
 
 ## SRFlow: Learning the Super-Resolution Space with Normalizing Flow
 
-> SRFlow：基于Flow的生成方法。训练稳定，单一损失，变换结果简单，可逆。
-> ECCV 2020
-> 20-10-17
+SRFlow，ECCV 2020：基于Flow的生成方法。训练稳定，单一损失，变换结果简单，可逆。
 
-标签：图像超分辨
-标签：Flow
+- [tag] 图像超分辨
+- [tag] Flow
+
+> 20-10-17
 
 SR问题是一个经典的病态问题，有很多可能的解。这一事实很重要，但被现有方法忽略了：现有方法是限定的（deterministic），基于重建loss和对抗loss的组合学习。
 
@@ -90,13 +89,13 @@ SR问题是一个经典的病态问题，有很多可能的解。这一事实很
 
 ## Multi-level Wavelet-based Generative Adversarial Network for Perceptual Quality Enhancement of Compressed Video
 
-> MW-GAN：在小波域增强主观质量。
-> ECCV 2020
-> 20-10-17
+MW-GAN，ECCV 2020：在小波域增强主观质量。
 
-标签：图像恢复
-标签：GANs
-标签：小波域
+- [tag] 图像恢复
+- [tag] GANs
+- [tag] 小波域
+
+> 20-10-17
 
 Motivation（图2）：主观质量与高频分量高度相关。现有增强方法大多都无法提升甚至恶化主观质量。说明方法：观察小波变换后的高频分量的能量大小。
 
@@ -117,12 +116,12 @@ loss由小波域重建loss、运动补偿loss和对抗loss组成。对抗loss是
 
 ## Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network
 
-> SRGAN：第一个实现4倍升采样的细节恢复网络。
-> CVPR 2017
-> 20-10-18
+SRGAN，CVPR 2017：第一个实现4倍升采样的细节恢复网络。
 
-标签：图像超分辨
-标签：GANs
+- [tag] 图像超分辨
+- [tag] GANs
+
+> 20-10-18
 
 训练loss由content loss和对抗loss组成。对抗loss会迫使结果更接近自然图像。content loss要求perceptual相似性（VGG中后端特征的相似性），而非像素level的相似性。
 
@@ -164,8 +163,11 @@ $\phi$就是VGG参数。
 
 ## ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks
 
-> ESRGAN：改进SRGAN的细节问题。
-> ECCVW 2018
+ESRGAN，ECCVW 2018：改进SRGAN的细节问题。
+
+- [tag] 图像超分辨
+- [tag] GANs
+
 > 20-10-18
 
 改进：
@@ -212,12 +214,12 @@ $$
 
 ## Pixel-Adaptive Convolutional Neural Networks
 
-> PAC：给卷积核乘以可学习的、spatially varying的权值。借鉴双边滤波器思想。
-> CVPR 2019
-> 20-10-19
+PAC，CVPR 2019：给卷积核乘以可学习的、spatially varying的权值。借鉴双边滤波器思想。
 
-标签：CNNs
-标签：注意力
+- [tag] CNNs
+- [tag] 注意力
+
+> 20-10-19
 
 看这篇论文前，可以回忆[双边滤波器](https://www.cnblogs.com/wangguchangqing/p/6416401.html)。不同于高斯滤波器（仅考虑位置关系），双边滤波器引入了$\alpha$截尾均值滤波器，考虑像素灰度值之间的差异；然后两个滤波器相乘，就得到了双边滤波器。
 
@@ -261,4 +263,26 @@ i是卷积中心点。可见，卷积核W取值仅仅取决于相对位置差$p_
 - 当K恒等于1时，就是一般卷积；即不包含特殊的位置编码信息。
 - 当K恒等于1，W恒等于1/(s^2)时，就是平均池化。
 
+## Drop an Octave: Reducing Spatial Redundancy in Convolutional Neural Networks with Octave Convolution
 
+OctConv，ICCV 2019：低频卷积的特征图（表示）是可压缩的，进而减小内存需求和计算量。
+
+- [tag] CNNs
+- [tag] 模型加速
+- [tag] 频域
+
+> 20-10-21
+
+在缩小低频通道尺寸的同时，设计了其与完整通道的交互方法。
+
+![fig](../imgs/pd_201021_1.jpeg)
+
+设置一个超参数$0<\alpha<1$，使得$\alpha \%$通道的分辨率是减半的，剩余通道的分辨率不变。这样，计算量和内存需求都降低了。
+
+如何得到这样的特征图呢？在OctConv的输入端，对于划分为低分辨率通道的通道输入，会被高斯模糊后采样，分辨率就变为1/2x1/2了。然后才是OctConv，交互方法也很直观，见图：
+
+![fig](../imgs/pd_201021_2.jpeg)
+
+实验中对通道进行傅里叶变换，发现低频通道确实几乎只有低频，而完整通道高低频兼具。
+
+作者称还能提高准确率。这一点或许和感受野扩大有关：缩小的通道上做卷积，相当于空洞卷积。
