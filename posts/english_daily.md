@@ -43,6 +43,7 @@
   - [Summer internships](#summer-internships)
   - [What makes a good friend?](#what-makes-a-good-friend)
   - [College graduates looking for jobs](#college-graduates-looking-for-jobs)
+  - [Buying a gift](#buying-a-gift)
 
 ## Popular sports in America
 
@@ -2611,7 +2612,7 @@ Many sites have been designed for binge watching and gaming that it's gotten out
     - I just couldn't believe his story, it was too much of a stretch.
       - 太夸张了
 
-**补充**
+> Others
 
 - muscle
   - 一般用复数
@@ -2715,6 +2716,8 @@ Many sites have been designed for binge watching and gaming that it's gotten out
 
 ## College graduates looking for jobs
 
+> 20-10-21/22
+
 > [a] Allison，好巧啊。
 > [b] 是啊。
 
@@ -2753,9 +2756,41 @@ Many sites have been designed for binge watching and gaming that it's gotten out
 - I'll be happy to give you some **pointers** to help you with your **job hunt**.
   - headhunter
 
-**Others**
+> Others
 
 - jealous
   - [c] I'm going to Rome next week. [d] Oh, I'm jealous.
 - I'm in between jobs.
   - 正在找工作（听上去没那么悲观）
+
+## Buying a gift
+
+> 20-10-23/24
+
+> [a] 我可以咨询你嘛？
+> [b] 当然。怎么了？
+
+- Can I ask you for some advice?
+- Sure. What's it?
+
+> [a] 可以帮我吗？
+> [b] 我试试吧。
+
+- Can you please help me?
+- I can try.
+
+> [a] 给贵重礼物，像贿赂。
+> [b] 那我怎么办?
+> [b] 知道了。
+
+- Giving an expensive gift for business might seem to be a bribe.
+  - bribe
+    - [n.] 贿赂
+- What can I do?
+- Got it.
+
+> Others
+
+- registry
+  - [n.] 礼单
+  - Buy them a gift from the registry
