@@ -2794,3 +2794,4 @@ Many sites have been designed for binge watching and gaming that it's gotten out
 - registry
   - [n.] 礼单
   - Buy them a gift from the registry
+  - 结婚，生子，乔迁才可以，生日也没有。
