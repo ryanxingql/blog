@@ -9,6 +9,8 @@
   - [ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks](#esrgan-enhanced-super-resolution-generative-adversarial-networks)
   - [Pixel-Adaptive Convolutional Neural Networks](#pixel-adaptive-convolutional-neural-networks)
   - [Drop an Octave: Reducing Spatial Redundancy in Convolutional Neural Networks with Octave Convolution](#drop-an-octave-reducing-spatial-redundancy-in-convolutional-neural-networks-with-octave-convolution)
+  - [Enhanced Image Decoding via Edge-Preserving Generative Adversarial Networks](#enhanced-image-decoding-via-edge-preserving-generative-adversarial-networks)
+  - [HiFaceGAN: F ace Renovation via Collaborative Suppression and Replenishment](#hifacegan-f-ace-renovation-via-collaborative-suppression-and-replenishment)
 
 ## Learning Enriched Features for Real Image Restoration and Enhancement
 
@@ -91,7 +93,7 @@ SR问题是一个经典的病态问题，有很多可能的解。这一事实很
 
 MW-GAN，ECCV 2020：在小波域增强主观质量。
 
-- [tag] 图像恢复
+- [tag] 压缩视频增强
 - [tag] GANs
 - [tag] 小波域
 
@@ -114,11 +116,15 @@ loss由小波域重建loss、运动补偿loss和对抗loss组成。对抗loss是
 - Multi-level对抗监督的做法被广泛使用，效果不错。
 - 对压缩图像而言，保真也是很重要的，因此不能像SR那样随意。
 
+后记：
+- 主观效果不明显，原因是去掉了perceptual loss。
+- 考虑了LPIPS和PI指标。
+
 ## Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network
 
 SRGAN，CVPR 2017：第一个实现4倍升采样的细节恢复网络。
 
-- [tag] 图像超分辨
+- [tag] 超分辨
 - [tag] GANs
 
 > 20-10-18
@@ -165,7 +171,7 @@ $\phi$就是VGG参数。
 
 ESRGAN，ECCVW 2018：改进SRGAN的细节问题。
 
-- [tag] 图像超分辨
+- [tag] 超分辨
 - [tag] GANs
 
 > 20-10-18
@@ -286,3 +292,27 @@ OctConv，ICCV 2019：低频卷积的特征图（表示）是可压缩的，进�
 实验中对通道进行傅里叶变换，发现低频通道确实几乎只有低频，而完整通道高低频兼具。
 
 作者称还能提高准确率。这一点或许和感受野扩大有关：缩小的通道上做卷积，相当于空洞卷积。
+
+## Enhanced Image Decoding via Edge-Preserving Generative Adversarial Networks
+
+EP-GAN，ICME 2018：用GAN增强解码视频质量。
+
+- [tag] GANs
+- [tag] 压缩视频增强
+
+> 20-10-30
+
+在一般GAN的基础上加入一个图像边缘预测网络。用Sobel算子生成边缘map，在loss中惩罚生成边缘map与预测map的L2 loss。
+
+预测map会和特征fuse，然后进一步处理。
+
+仅考虑了JPEG；指标为PSNR-B，PSNR和SSIM。
+
+## HiFaceGAN: F ace Renovation via Collaborative Suppression and Replenishment
+
+HiFaceGAN, ACM 2020：
+
+- [tag] GANs
+- [tag] 人脸增强
+
+> 20-10-30
