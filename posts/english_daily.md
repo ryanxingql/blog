@@ -44,6 +44,7 @@
   - [What makes a good friend?](#what-makes-a-good-friend)
   - [College graduates looking for jobs](#college-graduates-looking-for-jobs)
   - [Buying a gift](#buying-a-gift)
+  - [How to have perfect teeth](#how-to-have-perfect-teeth)
 
 ## Popular sports in America
 
@@ -2795,3 +2796,64 @@ Many sites have been designed for binge watching and gaming that it's gotten out
   - [n.] 礼单
   - Buy them a gift from the registry
   - 结婚，生子，乔迁才可以，生日也没有。
+
+## How to have perfect teeth
+
+> 20-10-30
+
+> [a] 看牙医怎么样？
+> [b] 还好我没有龋齿。但医生让我养成口腔健康习惯。
+
+- **How** was your **dentist appointment**?
+- Luckily I didn't have any cavities. He told me I need to **practice** better **dental hygiene**, though.
+  - cavity
+    - [n.] 龋齿
+  - practice
+    - 养成习惯
+  - dental hygiene
+    - 口腔卫生
+    - poor hygiene，不是bad hygiene
+    - hygienic
+
+> [b] 他说我要开始每天用牙线。这对牙龈很重要。
+
+- He said I should start **flossing** every day. It's important for healthy **gums**.
+  - floss
+    - 牙线
+    - flossing
+      - 用牙线清洁
+  - gums
+    - [n.] 牙龈
+    - 单复数都对
+
+> [b] 他说要减少糖和酸饮的摄入。
+> [a] 听上去是好建议。
+
+- He said to **ease up on** the sugar and **acidic drinks**.
+  - ease up on sth
+    - I've tried easing up on fatty foods.
+  - acidic
+    - [adj.] 酸性的
+    - acid
+      - [n.] 酸
+- Sounds like good advice.
+
+> [a] 我很庆幸我有一把电动牙刷。
+> [b] 其实它不一定更好。医生说更重要的是刷够两分钟。
+> [a] 得刷到每一个角落和缝隙吧。
+> [b] 没错，牙齿可不会自己保持清洁！
+
+- I'm sure glad I have an electric toothbrush.
+- Actually, those aren't always better. He said it's more important to make sure you brush thoroughly for two minutes.
+  - thoroughly
+    - gh不发音
+    - We thoroughly enjoyed the food at the restaurant!
+      - 特别开心
+- Got to get every **nook and cranny**, I guess.
+  - nook and cranny
+    - 角落和缝隙
+    - The police searched every nook and cranny.
+    - Every nook and cranny was filled with books.
+- Yeah, those **pearly whites** won't take care of themselves!
+  - pearly whites
+    - 像珍珠一样洁白的牙齿
