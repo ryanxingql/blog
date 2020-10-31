@@ -10,14 +10,20 @@
   - [Pixel-Adaptive Convolutional Neural Networks](#pixel-adaptive-convolutional-neural-networks)
   - [Drop an Octave: Reducing Spatial Redundancy in Convolutional Neural Networks with Octave Convolution](#drop-an-octave-reducing-spatial-redundancy-in-convolutional-neural-networks-with-octave-convolution)
   - [Enhanced Image Decoding via Edge-Preserving Generative Adversarial Networks](#enhanced-image-decoding-via-edge-preserving-generative-adversarial-networks)
-  - [HiFaceGAN: F ace Renovation via Collaborative Suppression and Replenishment](#hifacegan-f-ace-renovation-via-collaborative-suppression-and-replenishment)
+  - [Making a ‘Completely Blind’ Image Quality Analyzer](#making-a-completely-blind-image-quality-analyzer)
+  - [Learning a No-Reference Quality Metric for Single-Image Super-Resolution](#learning-a-no-reference-quality-metric-for-single-image-super-resolution)
+  - [The Unreasonable Effectiveness of Deep Features as a Perceptual Metric](#the-unreasonable-effectiveness-of-deep-features-as-a-perceptual-metric)
+  - [The 2018 PIRM Challenge on Perceptual Image Super-Resolution](#the-2018-pirm-challenge-on-perceptual-image-super-resolution)
+  - [The Contextual Loss for Image Transformation with Non-Aligned Data](#the-contextual-loss-for-image-transformation-with-non-aligned-data)
+  - [HiFaceGAN: Face Renovation via Collaborative Suppression and Replenishment](#hifacegan-face-renovation-via-collaborative-suppression-and-replenishment)
 
 ## Learning Enriched Features for Real Image Restoration and Enhancement
 
 MIRNet，ECCV 2020：注意力、多尺度的集大成网络。开源完善。声称是图像恢复的SOTA。
 
-- [tag] 图像恢复
+- [tag] 图像增强
 - [tag] 注意力
+- [tag] 3 stars
 
 > 20-10-15
 
@@ -47,6 +53,7 @@ BBN，CVPR 2020：分开训练特征提取和分类器。长尾分类当年SOTA�
 
 - [tag] 图像分类
 - [tag] 长尾分布
+- [tag] 4 stars
 
 > 20-10-17
 
@@ -74,6 +81,7 @@ SRFlow，ECCV 2020：基于Flow的生成方法。训练稳定，单一损失，�
 
 - [tag] 图像超分辨
 - [tag] Flow
+- [tag] 4 stars
 
 > 20-10-17
 
@@ -96,6 +104,7 @@ MW-GAN，ECCV 2020：在小波域增强主观质量。
 - [tag] 压缩视频增强
 - [tag] GANs
 - [tag] 小波域
+- [tag] 2 stars
 
 > 20-10-17
 
@@ -124,8 +133,9 @@ loss由小波域重建loss、运动补偿loss和对抗loss组成。对抗loss是
 
 SRGAN，CVPR 2017：第一个实现4倍升采样的细节恢复网络。
 
-- [tag] 超分辨
+- [tag] 图像超分辨
 - [tag] GANs
+- [tag] 5 stars
 
 > 20-10-18
 
@@ -171,8 +181,9 @@ $\phi$就是VGG参数。
 
 ESRGAN，ECCVW 2018：改进SRGAN的细节问题。
 
-- [tag] 超分辨
+- [tag] 图像超分辨
 - [tag] GANs
+- [tag] 4 stars
 
 > 20-10-18
 
@@ -224,6 +235,7 @@ PAC，CVPR 2019：给卷积核乘以可学习的、spatially varying的权值。
 
 - [tag] CNNs
 - [tag] 注意力
+- [tag] 4 stars
 
 > 20-10-19
 
@@ -276,6 +288,7 @@ OctConv，ICCV 2019：低频卷积的特征图（表示）是可压缩的，进�
 - [tag] CNNs
 - [tag] 模型加速
 - [tag] 频域
+- [tag] 3 stars
 
 > 20-10-21
 
@@ -297,8 +310,9 @@ OctConv，ICCV 2019：低频卷积的特征图（表示）是可压缩的，进�
 
 EP-GAN，ICME 2018：用GAN增强解码视频质量。
 
-- [tag] GANs
 - [tag] 压缩视频增强
+- [tag] GANs
+- [tag] 2 stars
 
 > 20-10-30
 
@@ -308,11 +322,176 @@ EP-GAN，ICME 2018：用GAN增强解码视频质量。
 
 仅考虑了JPEG；指标为PSNR-B，PSNR和SSIM。
 
-## HiFaceGAN: F ace Renovation via Collaborative Suppression and Replenishment
+## Making a ‘Completely Blind’ Image Quality Analyzer
+
+NIQE，SPL 2012：通过衡量某些自然图像统计指标，给出图像的无参考质量评分。
+
+- [tag] 无参考图像质量评估
+- [tag] 5 stars
+
+> 20-10-31
+
+之前的NR IQA方法需要失真样本以及对应的人类主观评分。
+
+而本文提出的Natural Image Quality Evaluator（NIQE）只需要自然图像，从中统计一些指标，从而摆脱了对训练数据的依赖。
+
+即，NIQE不基于人类主观意见，也无需知道失真类型，而只考虑输入图像在一些自然指标上的表现情况。这种方法被称为NSS方法，即Natural Scene Statistic。
+
+NIQE首先构建了一套quality aware的feature，然后将它们用multivariate Gaussian拟合。
+
+上述feature可以通过一个NSS模型得到。那么，图像的质量就是两个MVG的距离：前者由自然图像的feature拟合得到，后者由输入图像的feature拟合得到。
+
+首先要按照式1正则化。计算均值和方差都按高斯模板加权。由[10]，对于自然图像，高斯权重是合理的；但对失真图像，权重不一定满足高斯。因此自然图像和失真图像在正则化阶段就拉开了差距。
+
+其次是选patch。作者认为人更关注纹理丰富区域，因此设置了一个方差阈值T。若方差大于T，则该patch被选择。
+
+接下来是用零均值的generalized Gaussian distribution刻画像素x（相当于做一个变换）。该GGD有两个超参数$\alpha$和$\beta$，借助[14]的moment-matching方法可以预测。
+
+对于自然图像，该刻画的空域连续性较强（[3]已证明）；但对有损图像，空域关联性就被破坏了。因此可以考虑水平、垂直方向的刻画的相关系数。
+
+最后，分布的均值也有意义。
+
+这样，4个方向，各4个参数，一共就有16个参数；加上自然图像和有损图像的分布均值，就是18个参数。最后，把图像高斯模糊后做因子为2的降采样，再得到18个参数，一共36个参数。
+
+最后最后，我们用最大似然法，用一个MVG拟合这36个参数。
+
+最终的NIQE，也即图像质量评分，就是两个MVG的距离，如式10。
+
+## Learning a No-Reference Quality Metric for Single-Image Super-Resolution
+
+Ma，CVIU 2016：
+
+- [tag] 无参考质量评估
+- [tag] 3 stars
+
+> 20-10-31
+
+简单来说，本文首先建立了MOS库，然后基于此训练网络。本文方法也是评估图像的统计特性，而不是衡量失真。
+
+由于图片较多，因此作者采用绝对评分，而非相对评分（否则就更多了）。
+
+具体而言，本文用3种指标来评估超分辨图像的质量：DCT、DWT和空域PCA，最后用随机森林回归。
+
+## The Unreasonable Effectiveness of Deep Features as a Perceptual Metric
+
+LPIPS，CVPR 2018：深度网络普遍会生成类似的感知效果。感知loss可以在其他high-level任务上训练，效果都能远超low-level metrics。
+
+- [tag] 有参考图像质量评估
+- [tag] 3 stars
+
+> 20-10-31
+
+![img](../imgs/pd_201031_4.jpg)
+
+开篇就很有意思：深度网络及特征的比较判断更接近人类。
+
+作者尝试了各种各样的网络，结果都类似。作者结论：深度网络存在普遍性的perceptual similarity。
+
+这篇文章提了我想问的问题：VGG perceptual feature一定要从分类任务中得到吗？实验发现，并不是的！如自监督任务puzzle，也能胜任！甚至一个简单的自监督网络加上K means分类器，也能胜任，而且远比SSIM等好！但训练是必要的，随机初始化网络表现不好。
+
+本文提出了一个BAPPS数据库，其只考虑pair内部谁更像，而非MOS分。
+
+数据库中都是64x64的块。这是因为，当图片较大时，人们可能考虑图像的语义相似性，而非low-level视觉效果。
+
+这种对比建库有一个问题：实验者可能会将同一套标准贯穿整个实验，从而较快完成实验，那么判断就有主观偏见了。因此作者还引入了JND实验，让实验者回答两张图片是否不同。相似的图像最容易混淆。显然，好的指标应该从最容易混淆到最不容易混淆的样本中都采样。结果发现40%回答都是找不出区别。
+
+最后，网络用的是最轻量级的SqueezeNet。3个方案：lin，固定W，仅训练FC；tune：fine-tune所有参数；scratch：全部从头训练。三者在实验中表现差不多。
+
+如图3，LPIPS会把所有layer的输出正则化，乘以权重W，然后取L2。还训练了一个小网络G，根据距离d，判断h（0或1，相似与否）。
+
+## The 2018 PIRM Challenge on Perceptual Image Super-Resolution
+
+PIRM，ECCVW 2018：提出PI指标。
+
+- [tag] 图像超分辨
+- [tag] Challenge
+- [tag] 无参考图像质量评估
+- [tag] 3 stars
+
+> 20-10-31
+
+PSNR和SSIM等刻画的是distortion，而这些指标与perceptual quality有差异。
+
+并且，[1]认为这种差异无法通过提出更好的distortion指标加以缓解。因为tradeoff是客观存在的。
+
+![img](../imgs/pd_201031_1.jpg)
+
+本次PIRM（Perceptual Image Restoration and Manipulation）是第一次提出用坐标系来刻画tradeoff的竞赛。
+
+由于缺乏通用的评价指标，perceptual类的竞赛之前是不存在的。
+
+竞赛数据集是bicubic下采样的。
+
+竞赛指标为RMSE和PI。RMSE是测试集所有图像的MSE取平均后开根号，PI是：
+
+$$
+\text{PI} = \frac{1}{2} ((10 - \text{Ma}) + \text{NIQE})
+$$
+
+如此构造的PI是无参考的。
+
+作者实验发现PI和主观分数MOS相关系数达到了0.83，挺高。
+
+![img](../imgs/pd_201031_2.jpg)
+
+本文分析挑战结果，也指出：不是所有图像都是公平的（参见图8左），SR图像也有难易之分。
+
+此外作者认为，现有的方法无法同时很好地重建texture和structure。如图8右，石雕强调structure，而大楼的texture更丰富。
+
+![img](../imgs/pd_201031_3.jpg)
+
+如图，LPIPS在整体上和MOS分正相关，但在高MOS段是负相关。
+
+## The Contextual Loss for Image Transformation with Non-Aligned Data
+
+Contextual loss，ECCV 2018：风格迁移不存在pair data，如何训练GAN？进一步，如何实现特定区域的风格迁移，例如人脸？
+
+- [tag] 风格迁移
+- [tag] GANs
+- [tag] 3 stars
+
+通常GANs都依赖于pair data，因为loss需要刻画相似性。而本文提出不需要pair data的loss。
+
+当时的loss分为三类：一类是pixel-to-pixel的，例如L2；另一类是global的，例如Gram loss；还有一类是GAN loss。
+
+Gram loss可以用于unpaired或unaligned的数据，但它作用效果为整张图（我的理解为整张图片都有迁移风格）。有时我们只希望让特定区域被迁移，例如人脸。
+
+本文方法简单粗暴：只监督特征的相似性，不考虑像素域相似性。
+
+![img](../imgs/pd_201031_5.jpg)
+
+思路很直接，如上图。如果图像X和Y的大量特征都能一一接近，那么X和Y就是相似的；否则就是不相似的。例如在b中，大量x找不到配对y。
+
+显然，最简单的刻画，就是每个y距离其最近x的距离，然后对所有y求和。如果用CX表示相似性，那么距离越近，相似性就越大，所以是max：
+
+$$
+\text{CX(X,Y)} = \frac{1}{N} \sum_j {\max_i} \text{CX}_{i,j}
+$$
+
+光是这样不行。我们希望这种相似性与整体距离无关，即，迁移风格可以出现在图像任意位置，而并不一定是原本的位置。经过式2和3操作，相似性w一定是在0和1之间；然后再用所有w之和进行归一化，使他们和为1。
+
+相似性越低，loss越大，因此取负对数即可，如式5。
+
+> 20-10-31
+
+## HiFaceGAN: Face Renovation via Collaborative Suppression and Replenishment
 
 HiFaceGAN, ACM 2020：
 
+- [tag] 人脸图像增强
 - [tag] GANs
-- [tag] 人脸增强
+- [tag] 3 stars
 
-> 20-10-30
+> 20-10-31
+
+本文要解决人脸的盲增强。本文称自己为dual-blind，因为有的方法需要GT（single-blind），还有的方法需要先验（例如landmark和语义分割信息），但HiFaceGAN都不需要。
+
+本文的对比算法中，ESRGAN引入了新的噪声，而其他算法几乎没有帮助。
+
+结构上，G使用了UNet架构，确实能实现multi-stage效果。所谓suppression就是UNet的压缩通路，所谓replenishment就是UNet的解码通路。作者的故事：压制失真，恢复细节。
+
+在细节上，一般卷积的问题是平移不变性。显然，背景和人脸区域最好有不同的处理。因此改进卷积为式2。为了体现对称性，干脆取其为自身内积。内积结果用来加权卷积。如图4。
+
+解码模块使用SPADE，可以对天空、海洋等不同语义区域有不同处理。
+
+在loss方面，采用了GAN loss，VGG预训练的perceptual loss和多尺度特征匹配loss[53]的组合。
