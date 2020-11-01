@@ -45,6 +45,7 @@
   - [College graduates looking for jobs](#college-graduates-looking-for-jobs)
   - [Buying a gift](#buying-a-gift)
   - [How to have perfect teeth](#how-to-have-perfect-teeth)
+  - [Buying a new car](#buying-a-new-car)
 
 ## Popular sports in America
 
@@ -2857,3 +2858,17 @@ Many sites have been designed for binge watching and gaming that it's gotten out
 - Yeah, those **pearly whites** won't take care of themselves!
   - pearly whites
     - 像珍珠一样洁白的牙齿
+
+## Buying a new car
+
+> 20-11-1
+
+> [a] 你喜欢你的车吗？
+> [b] 不好说。还没怎么开。
+> [a] 为啥？我以为你买了很久了。
+> [b] 因为牌照没下来。我拍了三个月，仍然没拍到。
+
+- How do you like your car?
+- Can't say. Haven't driven it much.
+- Why's that? I thought you bought it a while ago.
+- Well, I've been **held up** by the **license plate**. I've been bidding for 3 months. Still no luck.

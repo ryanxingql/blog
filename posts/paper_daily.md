@@ -359,7 +359,7 @@ NIQE首先构建了一套quality aware的feature，然后将它们用multivariat
 
 ## Learning a No-Reference Quality Metric for Single-Image Super-Resolution
 
-Ma，CVIU 2016：
+Ma，CVIU 2016：早期无参考质量评估方法。
 
 - [tag] 无参考质量评估
 - [tag] 3 stars
@@ -476,7 +476,7 @@ $$
 
 ## HiFaceGAN: Face Renovation via Collaborative Suppression and Replenishment
 
-HiFaceGAN, ACM 2020：
+HiFaceGAN, ACM 2020：本质上就是利用了UNet的编解码结构。
 
 - [tag] 人脸图像增强
 - [tag] GANs
