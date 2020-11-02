@@ -79,10 +79,8 @@ Feel free to contact: ryanxingql@gmail.com.
 - [x] [DEEP LEARNING](https://github.com/RyanXingQL/Blog/blob/master/posts/deep_learning.md)
 
 - [x] [ENGLISH](https://github.com/RyanXingQL/Blog/blob/master/posts/english.md)
-  - [x] [ENGLISH DAILY](https://github.com/RyanXingQL/Blog/blob/master/posts/english_daily.md)
 
-- [x] [PAPERS](https://github.com/RyanXingQL/Blog/blob/master/posts/papers.md)
-  - [x] [PAPER DAILY](https://github.com/RyanXingQL/Blog/blob/master/posts/paper_daily.md) 
+- [x] [PAPER DAILY](https://github.com/RyanXingQL/Blog/blob/master/posts/paper_daily.md)
 
 - [x] [READING AND THINKING](https://github.com/RyanXingQL/Blog/blob/master/posts/reading_and_thinking.md)
 

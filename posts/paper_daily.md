@@ -16,6 +16,8 @@
   - [The 2018 PIRM Challenge on Perceptual Image Super-Resolution](#the-2018-pirm-challenge-on-perceptual-image-super-resolution)
   - [The Contextual Loss for Image Transformation with Non-Aligned Data](#the-contextual-loss-for-image-transformation-with-non-aligned-data)
   - [HiFaceGAN: Face Renovation via Collaborative Suppression and Replenishment](#hifacegan-face-renovation-via-collaborative-suppression-and-replenishment)
+  - [Video Multi-method Assessment Fusion](#video-multi-method-assessment-fusion)
+  - [TO-LEARN](#to-learn)
 
 ## Learning Enriched Features for Real Image Restoration and Enhancement
 
@@ -372,6 +374,8 @@ Ma，CVIU 2016：早期无参考质量评估方法。
 
 具体而言，本文用3种指标来评估超分辨图像的质量：DCT、DWT和空域PCA，最后用随机森林回归。
 
+实测慢的一批。分数从0到10，越高越好。
+
 ## The Unreasonable Effectiveness of Deep Features as a Perceptual Metric
 
 LPIPS，CVPR 2018：深度网络普遍会生成类似的感知效果。感知loss可以在其他high-level任务上训练，效果都能远超low-level metrics。
@@ -450,6 +454,8 @@ Contextual loss，ECCV 2018：风格迁移不存在pair data，如何训练GAN�
 - [tag] GANs
 - [tag] 3 stars
 
+> 20-10-31
+
 通常GANs都依赖于pair data，因为loss需要刻画相似性。而本文提出不需要pair data的loss。
 
 当时的loss分为三类：一类是pixel-to-pixel的，例如L2；另一类是global的，例如Gram loss；还有一类是GAN loss。
@@ -472,11 +478,9 @@ $$
 
 相似性越低，loss越大，因此取负对数即可，如式5。
 
-> 20-10-31
-
 ## HiFaceGAN: Face Renovation via Collaborative Suppression and Replenishment
 
-HiFaceGAN, ACM 2020：本质上就是利用了UNet的编解码结构。
+HiFaceGAN，ACM 2020：本质上就是利用了UNet的编解码结构。
 
 - [tag] 人脸图像增强
 - [tag] GANs
@@ -495,3 +499,32 @@ HiFaceGAN, ACM 2020：本质上就是利用了UNet的编解码结构。
 解码模块使用SPADE，可以对天空、海洋等不同语义区域有不同处理。
 
 在loss方面，采用了GAN loss，VGG预训练的perceptual loss和多尺度特征匹配loss[53]的组合。
+
+## Video Multi-method Assessment Fusion
+
+[VMAF](https://netflixtechblog.com/toward-a-practical-perceptual-video-quality-metric-653f208b9652)，2016：Netflix商用视频质量评估方法。
+
+- [tag] 无参考视频质量评估
+- [tag] 4 stars
+
+> 20-11-2
+
+- [Blog1](https://netflixtechblog.com/toward-a-practical-perceptual-video-quality-metric-653f208b9652)
+- [Blog2](https://netflixtechblog.com/vmaf-the-journey-continues-44b51ee9ed12)
+
+在工作过程中，作者发现：他们接触的视频的编码格式、分辨率、内容太丰富了，很难用主观评价（Expert viewing）来评价视频质量。而PSNR、SSIM等离人类perceptual太远，这我们都知道。于是作者开始思考VMAF。
+
+有几点要求：smooth video playback，低噪，在有限带宽和受限的设备下主观效果尽可能好。
+
+有相当多的学者已经验证了VMAF的优越性：在4K，gaming等content上，VMAF和perceptual quality最为接近。VMAF甚至被用来决策最优编码策略。
+
+## TO-LEARN
+
+- VMAF两个Blog
+- The Perception-Distortion Tradeoff
+- Semantic Image Synthesis with Spatially-Adaptive Normalization
+- Once-for-all adversarial training
+- DFNet，人脸盲增强。试试复现。
+- cv2对DCNv2的解析，看看如何做实验的。
+- AIWalker历史公众号，都是经典文章。
+- 何凯明暗通道分析方法。
