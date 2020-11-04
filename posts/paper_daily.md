@@ -17,6 +17,9 @@
   - [The Contextual Loss for Image Transformation with Non-Aligned Data](#the-contextual-loss-for-image-transformation-with-non-aligned-data)
   - [HiFaceGAN: Face Renovation via Collaborative Suppression and Replenishment](#hifacegan-face-renovation-via-collaborative-suppression-and-replenishment)
   - [Video Multi-method Assessment Fusion](#video-multi-method-assessment-fusion)
+  - [pix2pix](#pix2pix)
+  - [pix2pixHD](#pix2pixhd)
+  - [Semantic Image Synthesis with Spatially-Adaptive Normalization](#semantic-image-synthesis-with-spatially-adaptive-normalization)
   - [TO-LEARN](#to-learn)
 
 ## Learning Enriched Features for Real Image Restoration and Enhancement
@@ -496,9 +499,13 @@ HiFaceGAN，ACM 2020：本质上就是利用了UNet的编解码结构。
 
 在细节上，一般卷积的问题是平移不变性。显然，背景和人脸区域最好有不同的处理。因此改进卷积为式2。为了体现对称性，干脆取其为自身内积。内积结果用来加权卷积。如图4。
 
-解码模块使用SPADE，可以对天空、海洋等不同语义区域有不同处理。
+解码模块使用SPADE。实际上和SPADE使用分割图很不一样，这是作者的故事罢了，并且增加了参数规模和学习能力。
 
 在loss方面，采用了GAN loss，VGG预训练的perceptual loss和多尺度特征匹配loss[53]的组合。
+
+由于HiFaceGAN不依赖于人脸先验，因此可以用于其他任务。
+
+后记：本文的创新点堪忧。大部分都是之前GAN的工作。而且主观效果图也一般。
 
 ## Video Multi-method Assessment Fusion
 
@@ -518,12 +525,51 @@ HiFaceGAN，ACM 2020：本质上就是利用了UNet的编解码结构。
 
 有相当多的学者已经验证了VMAF的优越性：在4K，gaming等content上，VMAF和perceptual quality最为接近。VMAF甚至被用来决策最优编码策略。
 
+## pix2pix
+
+## pix2pixHD
+
+## Semantic Image Synthesis with Spatially-Adaptive Normalization
+
+SPADE，CVPR 2019：同时控制style和semantic。
+
+- [tag] 图像生成
+- [tag] GANs
+- [tag] 4 stars
+
+> 20-11-4
+
+![im](../imgs/pd_201104_1.jpeg)
+
+作者称该方法为spatially-adaptive normalization。当提供图像语义信息时，可产生如图结果。
+
+整体网络：
+
+![im](../imgs/pd_201104_2.jpeg)
+
+语义分割map会持续输入decoder。偶尔需要downsample以正常输入。
+
+具体而言，SPADE就是一个对normalize后的feature map的仿射变换：
+
+![im](../imgs/pd_201104_3.jpeg)
+
+注意，SPADE的输入是分割图，即map是该所谓conditional GAN的输入条件。而一般的BN之类都属于无条件归一化。
+
+起名为denormalize，实际上就是仿射变换。
+
+为什么传统的条件输入方法无效？假设现在只有单类别，经过normalize和卷积后，就失去了所有信息（又变成0均值），因此输出是平凡的。参见第3页。
+
+作者认为，encoder处理的是style，而SPADE处理的是semantic。因此，我们给图4加入encoder，输入为具有目标style的图片，那么输出图像就同时具有semantic和目标style。这就是为什么如图1可以在两个维度变换。
+
+loss和pix2pixHD一样，除了将L2改为hinge loss。实验发现每一项loss都很重要，少一个都不行。监督器用的也是pix2pixHD中的multi-scale discriminator。
+
 ## TO-LEARN
 
-- VMAF两个Blog
+- VMAF两个Blog。
+- PULSE，一种较强的face recreation方法。
 - The Perception-Distortion Tradeoff
-- Semantic Image Synthesis with Spatially-Adaptive Normalization
 - Once-for-all adversarial training
+- GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium，2000+ stars. FID可以了解。
 - DFNet，人脸盲增强。试试复现。
 - cv2对DCNv2的解析，看看如何做实验的。
 - AIWalker历史公众号，都是经典文章。
