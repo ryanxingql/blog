@@ -17,8 +17,8 @@
   - [The Contextual Loss for Image Transformation with Non-Aligned Data](#the-contextual-loss-for-image-transformation-with-non-aligned-data)
   - [HiFaceGAN: Face Renovation via Collaborative Suppression and Replenishment](#hifacegan-face-renovation-via-collaborative-suppression-and-replenishment)
   - [Video Multi-method Assessment Fusion](#video-multi-method-assessment-fusion)
-  - [pix2pix](#pix2pix)
-  - [pix2pixHD](#pix2pixhd)
+  - [Image-To-Image Translation With Conditional Adversarial Networks](#image-to-image-translation-with-conditional-adversarial-networks)
+  - [High-Resolution Image Synthesis and Semantic Manipulation With Conditional GANs](#high-resolution-image-synthesis-and-semantic-manipulation-with-conditional-gans)
   - [Semantic Image Synthesis with Spatially-Adaptive Normalization](#semantic-image-synthesis-with-spatially-adaptive-normalization)
   - [TO-LEARN](#to-learn)
 
@@ -525,9 +525,48 @@ HiFaceGAN，ACM 2020：本质上就是利用了UNet的编解码结构。
 
 有相当多的学者已经验证了VMAF的优越性：在4K，gaming等content上，VMAF和perceptual quality最为接近。VMAF甚至被用来决策最优编码策略。
 
-## pix2pix
+## Image-To-Image Translation With Conditional Adversarial Networks
 
-## pix2pixHD
+pix2pix，CVPR 2017：提出结合L1 loss和GAN loss，使GAN在保真情况下具有一定创造性。可能是第一篇用GANs做图像转换的。
+
+- [tag] 图像转换
+- [tag] GANs
+- [tag] 4 stars
+
+> 20-11-4
+
+conditional GANs是输入随机噪声z，同时输入图像x，通过改变噪声，产生新的输出y。loss是GAN loss。
+
+前人工作发现，加上L2 loss可以更保真。作者在本文中尝试用L1 loss，和L2相比不会过于模糊。
+
+在conditional GANs的基础上，作者尝试去掉z，而直接输入x。结果发现，网络仍然能正常学习x到y的映射，但映射类似delta，是deterministic的，缺乏随机性。
+
+加上z实际上也没有太好的效果，作者发现网络会学会忽略这一噪声z。
+
+作者还尝试了用dropout产生噪声，结果发现随机性很小。这一问题仍然没有解决。
+
+在网络设计上，生成器用的是UNet。这种信息传递结构对上色等任务非常重要。对于鉴别器，本文采用的是PatchGAN，即在patch上计算loss，再取平均，实验发现高频细节恢复效果更好。
+
+## High-Resolution Image Synthesis and Semantic Manipulation With Conditional GANs
+
+pix2pixHD，2018 CVPR：生成高分辨率图像。
+
+- [tag] 图像转换
+- [tag] GANs
+- [tag] 语义分割信息
+- [tag] 4 stars
+
+> 20-11-4
+
+以往的方法无法很好地生成高分辨图像。为了实现这个目标，作者提出了几点方法：
+
+![im](../imgs/pd_201104_4.jpeg)
+
+第一，设计两个生成器，小生成器G1建模global降采样的小图像，相关特征输入大生成器G2建模大图像。有点像UNet的思路。
+
+第二，D在多尺度上衡量loss。G loss中除了perceptual和PatchGAN loss，还用feature matching loss替换了L2/L1 loss。即，输入鉴别器，计算特征的相似性。之所以不监督L1/L2，是不希望保真和平滑。
+
+第三，用instance map而不是label，防止多个同类instance相邻导致map糊成一片。同时，instance map作为condition，可以使网络具有随机性，甚至可以编辑生成图像。
 
 ## Semantic Image Synthesis with Spatially-Adaptive Normalization
 
