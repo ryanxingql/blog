@@ -483,7 +483,7 @@ $$
 
 ## HiFaceGAN: Face Renovation via Collaborative Suppression and Replenishment
 
-HiFaceGAN，ACM 2020：本质上就是利用了UNet的编解码结构。
+HiFaceGAN，ACM 2020：在SPADE基础上，针对恢复问题进行的改进。
 
 - [tag] 人脸图像增强
 - [tag] GANs
@@ -501,11 +501,11 @@ HiFaceGAN，ACM 2020：本质上就是利用了UNet的编解码结构。
 
 解码模块使用SPADE。实际上和SPADE使用分割图很不一样，这是作者的故事罢了，并且增加了参数规模和学习能力。
 
-在loss方面，采用了GAN loss，VGG预训练的perceptual loss和多尺度特征匹配loss[53]的组合。
+在loss方面，采用了GAN loss，VGG预训练的perceptual loss和多尺度特征匹配loss[53]的组合。没有使用L1/L2 loss。
 
 由于HiFaceGAN不依赖于人脸先验，因此可以用于其他任务。
 
-后记：本文的创新点堪忧。大部分都是之前GAN的工作。而且主观效果图也一般。
+后记：原SPADE的输入是instance map，而HiFaceGAN输入的是16像素的人脸图。作者认为，该任务类似于纹理字典学习，instance map只能提供10个label，因此针对10种目标学习特定的纹理；而16像素人脸能提供更加细粒度的学习，因此细节恢复效果更好。从溶解实验也能看到，从SPADE到16xFace的增益是巨大的。这也是本文的主要贡献。至于自注意力的conv，只是小贡献。
 
 ## Video Multi-method Assessment Fusion
 
