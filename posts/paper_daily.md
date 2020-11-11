@@ -20,6 +20,7 @@
   - [Image-To-Image Translation With Conditional Adversarial Networks](#image-to-image-translation-with-conditional-adversarial-networks)
   - [High-Resolution Image Synthesis and Semantic Manipulation With Conditional GANs](#high-resolution-image-synthesis-and-semantic-manipulation-with-conditional-gans)
   - [Semantic Image Synthesis with Spatially-Adaptive Normalization](#semantic-image-synthesis-with-spatially-adaptive-normalization)
+  - [Reconstructing the Noise Manifold for Image Denoising](#reconstructing-the-noise-manifold-for-image-denoising)
   - [TO-LEARN](#to-learn)
 
 ## Learning Enriched Features for Real Image Restoration and Enhancement
@@ -601,6 +602,24 @@ SPADE，CVPR 2019：同时控制style和semantic。
 作者认为，encoder处理的是style，而SPADE处理的是semantic。因此，我们给图4加入encoder，输入为具有目标style的图片，那么输出图像就同时具有semantic和目标style。这就是为什么如图1可以在两个维度变换。
 
 loss和pix2pixHD一样，除了将L2改为hinge loss。实验发现每一项loss都很重要，少一个都不行。监督器用的也是pix2pixHD中的multi-scale discriminator。
+
+## Reconstructing the Noise Manifold for Image Denoising
+
+ECCV 2020：迫使GAN学习和鉴别噪声流形。
+
+- [tag] 图像去噪
+- [tag] GANs
+- [tag] 3 stars
+
+> 20-11-11
+
+图像本身是高维的，但噪声是低维的。建模噪声（残差）比建模自然图像更简单。因此要用GAN学习噪声流形。
+
+其实大家几乎都在用短连接结构，包括GAN也是。本文特别的是：让鉴别器也在残差上操作。同时，学习的噪声包括各种手机、相机、传感器产生的噪声，从而实现盲去噪。
+
+本文指标是PSNR和SSIM。我比较怀疑该工作的训练过程。
+
+有个问题：噪声和图像本身可能是耦合的。作者强调这种方法对object-independent友好。
 
 ## TO-LEARN
 
