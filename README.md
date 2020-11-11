@@ -8,7 +8,7 @@
   - [Study Note](#study-note)
   - [PDF Note](#pdf-note)
 
-Welcome to my blog. My page: https://ryanxingql.github.io/
+Welcome to my blog~ See also [my page](https://ryanxingql.github.io/)~
 
 Feel free to contact: ryanxingql@gmail.com.
 
@@ -54,7 +54,7 @@ Feel free to contact: ryanxingql@gmail.com.
 
 - [x] [BAT](https://github.com/RyanXingQL/Blog/blob/master/posts/bat.md)
 
-- [x] [FFMPEG](https://github.com/RyanXingQL/Blog/blob/master/posts/ffmpeg.md) 
+- [x] [FFMPEG](https://github.com/RyanXingQL/Blog/blob/master/posts/ffmpeg.md)
 
 - [x] [JUPYTER NOTEBOOK](https://github.com/RyanXingQL/Blog/blob/master/posts/jupyter_notebook.md)
 
@@ -89,4 +89,4 @@ Feel free to contact: ryanxingql@gmail.com.
 [[百度网盘 (提取码blog)]](https://pan.baidu.com/s/1An7GpfyHAaFLRphhODevVQ) [[Google Drive]](https://drive.google.com/drive/folders/1UU703I_zM1pPx5UVzIVLSN8NZwqxo5Tf?usp=sharing)
 
 - [x] **北航电子信息课程**（图像处理，嵌入式，微机原理，网络安全，泛函分析等）
-- [x] ***Python编程：从入门到实践*** 
+- [x] ***Python编程：从入门到实践***

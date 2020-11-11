@@ -3,26 +3,48 @@
 - [PYTHON](#python)
   - [数据结构](#数据结构)
     - [字符串](#字符串)
+      - [多行字符串](#多行字符串)
+      - [新式format](#新式format)
+      - [字符串拼接](#字符串拼接)
   - [输入输出](#输入输出)
     - [一般文件](#一般文件)
     - [CSV](#csv)
   - [画图](#画图)
+    - [基础操作](#基础操作)
+    - [堆积柱状图](#堆积柱状图)
   - [numpy](#numpy)
+    - [random](#random)
+    - [reshape](#reshape)
   - [其他常用模块和方法](#其他常用模块和方法)
     - [argparse](#argparse)
+    - [输入列表](#输入列表)
     - [assert](#assert)
     - [multiprocessing](#multiprocessing)
+      - [Pool of workers](#pool-of-workers)
+      - [工作记录](#工作记录)
+      - [背景知识](#背景知识)
     - [os](#os)
+      - [创建路径](#创建路径)
+      - [合成路径](#合成路径)
+      - [提取最高层文件夹名](#提取最高层文件夹名)
+      - [删除路径](#删除路径)
+      - [获取当前工作路径](#获取当前工作路径)
     - [pathlib](#pathlib)
     - [shutil](#shutil)
     - [time](#time)
     - [tqdm](#tqdm)
+      - [基础用法](#基础用法)
+      - [简化](#简化)
+      - [手动控制更新](#手动控制更新)
+      - [设置文字描述](#设置文字描述)
+      - [进一步设置属性（如宽度和描述）](#进一步设置属性如宽度和描述)
+      - [关闭对象](#关闭对象)
 
 ## 数据结构
 
 ### 字符串
 
-**多行字符串**
+#### 多行字符串
 
 ```python3
 print("""Hello!
@@ -39,7 +61,7 @@ Goodbye!
 
 尽量不要缩进，否则输出也有缩进。
 
-**新式format**
+#### 新式format
 
 ```python3
 name = 'Ryan'
@@ -50,7 +72,7 @@ print(f'My name is {name}.')
 My name is Ryan.
 ```
 
-**字符串拼接**
+#### 字符串拼接
 
 ```python3
 a = 'Hello ' + 'World!'
@@ -123,7 +145,7 @@ saved_column = df.column_name  # you can also use df['column_name']
 
 [[3D plot]](https://blog.csdn.net/u014636245/article/details/82799573)
 
-**基础操作**
+### 基础操作
 
 ```python3
 import matplotlib.pyplot as plt
@@ -134,7 +156,7 @@ plt.ylabel('dMSE')
 plt.show()
 ```
 
-**堆积柱状图**
+### 堆积柱状图
 
 每次`bar`都建立在底层bar之上。
 
@@ -146,15 +168,15 @@ plt.bar(index_lst, new_y_lst, width=3, bottom=old_y_acc_lst)
 
 ## numpy
 
-**random**
+### random
 
-```
+```python3
 np.random.choice(a_list)
 ```
 
 从列表或迭代器中随机选一个。
 
-**reshape**
+### reshape
 
 `resize`没有返回值，`reshape`有。
 
@@ -186,7 +208,7 @@ opts_dict = vars(opts)  # 转换成字典，方便log逐行打印
 log_fp.write(opts_dict['io_val'] + '\n')
 ```
 
-**输入列表**
+### 输入列表
 
 ```python3
 parser = argparse.ArgumentParser()
@@ -220,7 +242,7 @@ assert a in b, (f"{a} is not in "
 
 ### multiprocessing
 
-**Pool of workers**
+#### Pool of workers
 
 - `apply_async`：支持异步，非阻塞，返回结果后回调。
 - `map`：阻塞，直至结果返回。
@@ -260,7 +282,7 @@ end 3
 
 可以看到，同时只有2个进程并行。即当0和1执行后，循环阻塞，直至0结束后，2或3才开始执行。
 
-**工作记录**
+#### 工作记录
 
 曾经在`pool.apply_asygn(func)`外面写`pbar.update()`。
 后果就是，pbar速度飞快，然而`func()`却没有执行完。
@@ -276,7 +298,7 @@ callback=lambda x :pbar.update(1)
 注意得有一个形参x。因为callback必须接收参数，哪怕是无用的。
 能放到`func()`里吗？貌似可以，但冲突很严重，速度慢。
 
-**背景知识**
+#### 背景知识
 
 [[进程 vs. 线程]](https://zhuanlan.zhihu.com/p/76343641)
 
@@ -306,33 +328,35 @@ callback=lambda x :pbar.update(1)
 
 > 推荐查看Python3自带的最新模块pathlib。
 
-**判断路径是否存在；若不存在则创建**
+#### 创建路径
+
+判断路径是否存在，若不存在则创建：
 
 ```python3
 if not os.exists(ADir):
     os.makedirs(ADir)
 ```
 
-**合成路径**
+#### 合成路径
 
 ```python3
 import os.path as op
 os.path.join("/home", "usrname")
 ```
 
-**提取最高层文件夹名**
+#### 提取最高层文件夹名
 
-```python
+```python3
 os.path.basename("/home/usrname/xxx.yuv").split(".")[0]
 ```
 
-**删除路径**
+#### 删除路径
 
-```
+```python3
 os.removedirs(ADir)  # 只能删除空路径
 ```
 
-**获取当前工作路径**
+#### 获取当前工作路径
 
 ```python3
 print(os.getcwd())
@@ -373,10 +397,9 @@ shutil.rmtree(APath)  # 递归删除文件夹及文件
 
 - `time.time()`：返回时间戳
 
-
 ### tqdm
 
-**基础用法**
+#### 基础用法
 
 ```python3
 from tqdm import tqdm
@@ -385,7 +408,7 @@ for i in tqdm(range(1e3)):
     pass
 ```
 
-**简化**
+#### 简化
 
 ```python3
 from tqdm import trange
@@ -394,7 +417,7 @@ for i in trange(1e3):
     pass
 ```
 
-**手动控制更新**
+#### 手动控制更新
 
 ```python3
 from tqdm import tqdm
@@ -404,7 +427,7 @@ with tqdm(total=1e3) as pbar:
         pbar.update(10)  # 每次更新，进度+10
 ```
 
-**设置文字描述**
+#### 设置文字描述
 
 ```python3
 from tqdm import tqdm
@@ -414,7 +437,7 @@ for name in pbar:
     pbar.set_description("processing %s" % name)
 ```
 
-**进一步设置属性（如宽度和描述）**
+#### 进一步设置属性（如宽度和描述）
 
 ```python3
 # 可以避免太宽换行显示
@@ -422,13 +445,13 @@ tqdm(alist, ncols=80)
 
 # 可以把eta等去掉，只保留描述，百分比和bar
 with tqdm(
-    total=60*24, 
-    ncols=40, 
+    total=60*24,
+    ncols=40,
     bar_format='{desc}{percentage:.1f}% |{bar}|'
     ) as pbar:
     pbar.update(accum_minute)
 ```
 
-**关闭对象**
+#### 关闭对象
 
 如果有多个pbar，一定要在每个pbar完成使命后`pbar.close()`，否则不换行。

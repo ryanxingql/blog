@@ -3,6 +3,17 @@
 - [UBUNTU](#ubuntu)
   - [文件](#文件)
   - [软件](#软件)
+    - [yuv player](#yuv-player)
+    - [视频播放器](#视频播放器)
+    - [zip](#zip)
+    - [窗口置顶](#窗口置顶)
+    - [更新软件](#更新软件)
+    - [拼音](#拼音)
+    - [pip3](#pip3)
+    - [vscode](#vscode)
+    - [anaconda3](#anaconda3)
+    - [q2ray](#q2ray)
+    - [ss（失败）](#ss失败)
   - [硬盘](#硬盘)
   - [系统](#系统)
     - [微软雅黑](#微软雅黑)
@@ -21,17 +32,17 @@ echo "hello world!" > README.md
 
 ## 软件
 
-**yuv player**
+### yuv player
 
 Ubuntu推荐使用vooya。
 
 备选：GH下载YUView.AppImage，赋权限后可以直接使用。
 
-**视频播放器**
+### 视频播放器
 
 VLC
 
-**zip**
+### zip
 
 不要用7z，linux不好用。
 
@@ -49,14 +60,14 @@ $ zip -s 0 split.zip --out unsplit.zip
 $ unzip unsplit.zip
 ```
 
-**窗口置顶**
+### 窗口置顶
 
 `alt+space`，选择`always on top`
 
-**更新列表，再更新软件**
+### 更新软件
 
 ```bash
-$ sudo apt-get update && apt-get upgrade
+sudo apt-get update && apt-get upgrade
 ```
 
 - 强烈建议更新为国内源：[[参考]](https://mirror.tuna.tsinghua.edu.cn/help/ubuntu/)
@@ -66,7 +77,7 @@ $ sudo apt-get update && apt-get upgrade
 > 大多数包管理系统是建立在包文件上的集合。包文件包括编译好的二进制文件，软件，安装脚本，依赖列表等。Ubuntu系统的包管理工具格式为`.deb`，常用工具为`apt`、`apt-cache`、`apt-get`等。[[ref]](https://www.sysgeek.cn/linux-package-management/)  
 > Ubuntu的母版是Debian。而Debian使用一套名为Advanced Packaging Tool的工具管理包系统。Ubuntu有很多工具可以与APT进行交互，其中`apt`、`apt-cache`、`apt-get`等广受欢迎。`apt`是后者的大一统（虽然没有完全向下兼容），也是趋势。尽量使用`apt`，已经涵盖了`apt-get`的基础功能。[[ref]](https://www.sysgeek.cn/apt-vs-apt-get/)
 
-**拼音**
+### 拼音
 
 推荐：搜狗输入法，有人维护啊！
 
@@ -77,21 +88,21 @@ $ sudo apt-get update && apt-get upgrade
 - 中英切换：`shift`
 - bug：选中文字会删除文字，很痛苦。
 
-**pip3**
+### pip3
 
 ```bash
-$ sudo apt install python3-pip
+sudo apt install python3-pip
 ```
 
-**vscode**
+### vscode
 
 在拼音模式下，无法鼠标多选。要win+空格切换到英文。
 
-**anaconda3**
+### anaconda3
 
 记得`export PATH`
 
-**q2ray**
+### q2ray
 
 - 用snap安装：`sudo snap install qv2ray`
 - 手动下载v2ray内核，转移到`~/snap/qv2ray/2729/`，按要求解压为`vcore/`。检查核心设置，通过。注意不要sudo！！！
@@ -102,11 +113,11 @@ $ sudo apt install python3-pip
 
 > [[教程]](https://medium.com/@eleveninstrangerthings/%E5%9C%A8ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85%E5%9B%BE%E5%BD%A2%E5%8C%96v2ray%E5%AE%A2%E6%88%B7%E7%AB%AFqv2ray-d0f690b7c519)
 
-**ss（失败）**
+### ss（失败）
 
-- 先买了一个Vultr服务器：https://www.vultrblog.com/vultr-ss.html
-- 其中一键ssserver脚本用的是：https://github.com/dlxg/shadowsocks_install
-- ubuntu上安装sslocal，写json，命令行即可开启。[教程](http://codetd.com/article/1790848)
+- 先买了一个Vultr服务器：[url](https://www.vultrblog.com/vultr-ss.html)
+- 其中一键ss-server脚本用的是：[url](https://github.com/dlxg/shadowsocks_install)
+- ubuntu上安装sslocal，写json，命令行即可开启：[教程](http://codetd.com/article/1790848)
 - 设置里修改Network协议和端口。
 - 注意这是全局的。未考虑分流。
 - 常用指令
@@ -123,9 +134,9 @@ $ sudo apt install python3-pip
 挂载硬盘
 
 ```bash
-$ sudo fdisk -l # 查看磁盘对应位置，假设是/dev/sdd1
-$ sudo mkdir /media/usr/DiskName # 假设磁盘名字为sdcard
-$ sudo mount /dev/sdd1 /media/usr/DiskName # 挂载到指定路径
+sudo fdisk -l # 查看磁盘对应位置，假设是/dev/sdd1
+sudo mkdir /media/usr/DiskName # 假设磁盘名字为sdcard
+sudo mount /dev/sdd1 /media/usr/DiskName # 挂载到指定路径
 ```
 
 记住标识符特别重要，特别是当硬盘较多时。
@@ -133,14 +144,13 @@ $ sudo mount /dev/sdd1 /media/usr/DiskName # 挂载到指定路径
 卸载硬盘
 
 ```bash
-$ sudo umount /media/usr/DiskName
+sudo umount /media/usr/DiskName
 ```
 
 在安装系统一节我们提到，我们保留了两块机械硬盘。我们希望开机自动挂载：
-1. 磁盘分区，并格式化、改为ext4格式、作为新硬盘挂载：
-   https://blog.csdn.net/zhengchaooo/article/details/79500116
-2. 配置开机自动挂载，并改为普通权限：
-   https://blog.csdn.net/ls20121006/article/details/78665718
+
+1. [磁盘分区，并格式化、改为ext4格式、作为新硬盘挂载](https://blog.csdn.net/zhengchaooo/article/details/79500116)
+2. [配置开机自动挂载，并改为普通权限](https://blog.csdn.net/ls20121006/article/details/78665718)
 
 ## 系统
 

@@ -10,13 +10,12 @@
   - [H265](#h265)
   - [安装](#安装)
 
-
 ## 基础指令
 
 ```bash
 ffmpeg [global_options] {[input_file_options] -i input_url} ... {[output_file_options] output_url} ...
 
-ffmpeg -i [输入文件名] [参数选项] -f [格式] [输出文件] 
+ffmpeg -i [输入文件名] [参数选项] -f [格式] [输出文件]
 ```
 
 参数选项

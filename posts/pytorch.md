@@ -1,47 +1,19 @@
 # PYTORCH
 
 - [PYTORCH](#pytorch)
-  - [Visdom](#visdom)
-  - [安装](#安装)
+  - [安装PT](#安装pt)
   - [多卡](#多卡)
     - [DDP例程](#ddp例程)
       - [NCCL后端+launch启动+DistributedSampler](#nccl后端launch启动distributedsampler)
       - [Gloo后端+MP启动+模型读写方式](#gloo后端mp启动模型读写方式)
     - [原理](#原理)
+  - [Visdom](#visdom)
+    - [安装](#安装)
+    - [开启服务](#开启服务)
+    - [查看远程服务器的visdom](#查看远程服务器的visdom)
+    - [命令](#命令)
 
-## Visdom
-
-**安装**
-
-`python -m pip install visdom`
-
-**开启服务**
-
-`python -m visdom.server`
-
-**查看远程服务器的visdom**
-
-转接远程服务器的端口：
-
-```
-ssh 18097:127.0.0.1:8097 x@xxx.xx.xx.xx
-```
-
-其中8097是服务器端口，18097是本机端口。
-
-然后查看`http://localhost:18097`即可。
-
-**命令**
-
-```python
-from visdom import Visdom
-
-viz = Visdom()
-viz.line([x], [y], win='loss', opts=dict(title='loss vs. iter, legend=['loss']), update='append')
-viz.image(img, win='a image')
-```
-
-## 安装
+## 安装PT
 
 - 根据CUDA教程，安装好系统推荐的NVIDIA驱动时，CUDA就自动安装好了。注意，`nvidia-smi`不准确，`nvcc -V`才是准确的CUDA版本。
 - 确定所需PT版本。在官网查看兼容的CUDA版本。若不满足，可重装CUDA及对应的最高版本NVIDIA驱动。
@@ -159,7 +131,7 @@ for data in rand_loader:
 
 ```text
 *****************************************
-Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
 *****************************************
 the number of cpu threads: 6
 the number of cpu threads: 6
@@ -329,6 +301,7 @@ Running DDP checkpoint example on rank 0.
 [[知乎教程]](https://zhuanlan.zhihu.com/p/76638962)
 
 有以下几种方式：
+
 1. DataParallel
    - 适用于单机多卡。
    - 每次forward都要复制模型。
@@ -352,3 +325,35 @@ DDP原理：模型在DDP建立之初分发到各进程。每个进程输入各�
 1. 不同进程之间不可共享GPU。即一块卡只能用于一个进程。
 2. 要合理分配各进程的负荷，让它们的完成时间接近。否则，要指定`init_process_group`中的timeout，避免超时。
 3. 只需要在一个进程中保存模型，但加载时要分发到所有进程。方法：指定好`map_location`参数。若未指定，模型会先导入到CPU，然后被分发到所有进程。此时，所有进程将共享同样的设备。
+
+## Visdom
+
+### 安装
+
+`python -m pip install visdom`
+
+### 开启服务
+
+`python -m visdom.server`
+
+### 查看远程服务器的visdom
+
+转接远程服务器的端口：
+
+```bash
+ssh 18097:127.0.0.1:8097 x@xxx.xx.xx.xx
+```
+
+其中8097是服务器端口，18097是本机端口。
+
+然后查看`http://localhost:18097`即可。
+
+### 命令
+
+```python
+from visdom import Visdom
+
+viz = Visdom()
+viz.line([x], [y], win='loss', opts=dict(title='loss vs. iter, legend=['loss']), update='append')
+viz.image(img, win='a image')
+```

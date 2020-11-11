@@ -24,7 +24,7 @@
 - 图表
   - `\includegraphics`、`\caption`、`\label`要按顺序：
   
-    ```
+    ```tex
     \begin{figure}[!t]
     \centering
     \includegraphics[width=2.5in]{myfigure}
@@ -32,7 +32,7 @@
     \label{fig_net}
     \end{figure}
     ```
-    
+  
   - 期刊通常不用`[h]`
   - IEEE通常不会在第一页或第一个column放floats。
 

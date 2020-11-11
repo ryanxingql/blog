@@ -55,14 +55,14 @@ git push -u origin master
 - 然后将本地公钥`id_rsa.pub`传到服务器的`~/.ssh/`路径下：
   
   ```bash
-  $ scp id_rsa.pub xxx:~/.ssh/hello.pub
+  scp id_rsa.pub xxx:~/.ssh/hello.pub
   ```
   
   一定要改名！！！不要覆盖了服务器的`id_ras.pub`！
 - 在服务器`~/.ssh/`下执行
   
   ```bash
-  $ cat hello.pub >> authorized_keys
+  cat hello.pub >> authorized_keys
   ```
 
   即将公钥加入可信列表。

@@ -2,24 +2,43 @@
 
 - [VSCODE](#vscode)
   - [基础](#基础)
-  - [导出markdown为PDF](#导出markdown为pdf)
+    - [打开命令行](#打开命令行)
+    - [新建页](#新建页)
+    - [Remote设置](#remote设置)
   - [问题解决](#问题解决)
+    - [Conda和PowerShell报错](#conda和powershell报错)
+    - [matplotlib没有显示](#matplotlib没有显示)
+  - [特殊](#特殊)
+    - [导出markdown为PDF](#导出markdown为pdf)
 
 ## 基础
 
-**打开命令行**
+### 打开命令行
 
 - F1，或`shift + ctrl + p`
 
-**新建页**
+### 新建页
 
 - 双击打开。单击会覆盖。
 
-**Remote设置**
+### Remote设置
 
 - [[ref]](https://zhuanlan.zhihu.com/p/64849549)
 
-## 导出markdown为PDF
+## 问题解决
+
+### Conda和PowerShell报错
+
+- [[ref1]](https://blog.csdn.net/chencaw/article/details/89035571)
+- [[ref2]](https://blog.csdn.net/cskywit/article/details/99202520)
+
+### matplotlib没有显示
+
+用交互模式。在代码前后加上`#%%`，可run cell。
+
+## 特殊
+
+### 导出markdown为PDF
 
 - Pandoc
   - 下载[Pandoc](https://github.com/jgm/pandoc/releases)。
@@ -33,14 +52,3 @@
     - 如果内容较少，图片会被挤到最后一页。
 - Markdown Preview Enhanced插件
   - 右键预览，chrome打开，直接打印。
-
-## 问题解决
-
-**Conda和PowerShell报错**
-
-- [[ref1]](https://blog.csdn.net/chencaw/article/details/89035571)
-- [[ref2]](https://blog.csdn.net/cskywit/article/details/99202520)
-
-**matplotlib没有显示**
-
-用交互模式。在代码前后加上`#%%`，可run cell。
