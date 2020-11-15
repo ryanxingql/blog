@@ -21,6 +21,7 @@
   - [High-Resolution Image Synthesis and Semantic Manipulation With Conditional GANs](#high-resolution-image-synthesis-and-semantic-manipulation-with-conditional-gans)
   - [Semantic Image Synthesis with Spatially-Adaptive Normalization](#semantic-image-synthesis-with-spatially-adaptive-normalization)
   - [Reconstructing the Noise Manifold for Image Denoising](#reconstructing-the-noise-manifold-for-image-denoising)
+  - [LIP: Local Importance-based Pooling](#lip-local-importance-based-pooling)
   - [TO-LEARN](#to-learn)
 
 ## Learning Enriched Features for Real Image Restoration and Enhancement
@@ -511,6 +512,8 @@ HiFaceGAN，ACM 2020：在SPADE基础上，针对恢复问题进行的改进。
 
 后记：原SPADE的输入是instance map，而HiFaceGAN输入的是16像素的人脸图。作者认为，该任务类似于纹理字典学习，instance map只能提供10个label，因此针对10种目标学习特定的纹理；而16像素人脸能提供更加细粒度的学习，因此细节恢复效果更好。从溶解实验也能看到，从SPADE到16xFace的增益是巨大的。这也是本文的主要贡献。至于自注意力的conv，只是小贡献。
 
+后记：自注意力是通过LIP方法建模的。不是本文的贡献。
+
 ## Video Multi-method Assessment Fusion
 
 [VMAF](https://netflixtechblog.com/toward-a-practical-perceptual-video-quality-metric-653f208b9652)，2016：Netflix商用视频质量评估方法。
@@ -623,6 +626,27 @@ ECCV 2020：迫使GAN学习和鉴别噪声流形。
 本文指标是PSNR和SSIM。我比较怀疑该工作的训练过程。
 
 有个问题：噪声和图像本身可能是耦合的。作者强调这种方法对object-independent友好。
+
+## LIP: Local Importance-based Pooling
+
+LIP，ICCV 2019：加权池化，权重是可学习的。
+
+- [tag] 自注意力
+- [tag] 3 stars
+
+> 20-11-16
+
+我们常用空域降采样，来扩大感受野、降低计算量。常见的有平均池化、最大池化和跨步卷积。
+
+但这些降采样都是盲目的，会丢失信息。因此本文提出加权池化，权重是可学习的。
+
+实现方式很简单：
+
+![fig](../imgs/pd_201116_1.jpeg)
+
+其中的logit可以通过各种可学习的网络G习得，然后注意用`exp`处理，使之非负且易于优化。本文使用的是FCN。
+
+注意，由于是池化，因此将stride设为2，padding设为1，就可以将边长降为1/2了。
 
 ## TO-LEARN
 
