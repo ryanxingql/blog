@@ -20,6 +20,7 @@
     - [查询](#查询)
     - [编辑](#编辑)
     - [安装](#安装)
+    - [限制内存](#限制内存)
     - [其他](#其他)
 
 ## 文件
@@ -160,6 +161,12 @@ sudo umount /media/usr/DiskName
 
 ### 查询
 
+查看每个用户内存占用：
+
+```bash
+ps --no-headers -eo user,rss | awk '{arr[$1]+=$2}; END {for (i in arr) {print i,arr[i]}}' | sort -nk2
+```
+
 - 当前目录下的文件信息（包括大小）：`ll`
 - 空间占用
   - 当前文件夹占用空间：`du -h --max-depth=1`
@@ -215,6 +222,16 @@ sudo umount /media/usr/DiskName
 8. 等待。安装过程有点漫长，可能在20分钟左右。
 
 > [[图片教程]](https://blog.csdn.net/baidu_36602427/article/details/86548203#commentBox)
+
+### 限制内存
+
+[参考](https://unix.stackexchange.com/questions/34334/how-to-create-a-user-with-limited-ram-usage)
+
+ps. 快速占领90%内存测试：
+
+```bash
+stress-ng --vm-bytes $(awk '/MemAvailable/{printf "%d\n", $2 * 0.9;}' < /proc/meminfo)k --vm-keep -m 1
+```
 
 ### 其他
 
