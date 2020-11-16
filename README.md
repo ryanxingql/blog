@@ -34,7 +34,7 @@ Feel free to contact: ryanxingql@gmail.com.
 - [x] [MARKDOWN](https://github.com/RyanXingQL/Blog/blob/master/posts/markdown.md)
 
 - [x] [PYTHON](https://github.com/RyanXingQL/Blog/blob/master/posts/python.md)
-  - [ ] PYTHON UTILS
+  - [x] [PYTHON UTILS](https://github.com/RyanXingQL/PythonUtils)
 
 - [x] [PYTORCH](https://github.com/RyanXingQL/Blog/blob/master/posts/pytorch.md)
 
