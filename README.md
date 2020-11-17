@@ -2,10 +2,10 @@
 
 - [BLOG](#blog)
   - [My Work](#my-work)
+  - [Study Note](#study-note)
   - [Tool Note](#tool-note)
     - [Strongly Recommended](#strongly-recommended)
     - [Others](#others)
-  - [Study Note](#study-note)
   - [PDF Note](#pdf-note)
 
 Welcome to my blog~ See also [my page](https://ryanxingql.github.io/)~
@@ -16,6 +16,18 @@ Feel free to contact: ryanxingql@gmail.com.
 
 - [x] [Multi-frame Quality Enhancment on Compressed Videos (MFQEv2, TPAMI 2019)](https://github.com/RyanXingQL/Blog/blob/master/posts/mfqev2.md)
 - [ ] Resource-Efficient Blind Quality Enhancement on Compressed Images (RBQE, ECCV 2020)
+
+## Study Note
+
+- [x] [ART](https://github.com/RyanXingQL/Blog/blob/master/posts/art.md)
+
+- [x] [DEEP LEARNING](https://github.com/RyanXingQL/Blog/blob/master/posts/deep_learning.md)
+
+- [x] [ENGLISH](https://github.com/RyanXingQL/Blog/blob/master/posts/english.md)
+
+- [x] [PAPER DAILY](https://github.com/RyanXingQL/Blog/blob/master/posts/paper_daily.md)
+
+- [x] [READING AND THINKING](https://github.com/RyanXingQL/Blog/blob/master/posts/reading_and_thinking.md)
 
 ## Tool Note
 
@@ -46,6 +58,8 @@ Feel free to contact: ryanxingql@gmail.com.
 
 - [x] [UBUNTU](https://github.com/RyanXingQL/Blog/blob/master/posts/ubuntu.md)
 
+- [x] [UNICODE](https://github.com/RyanXingQL/Blog/blob/master/posts/unicode.md)
+
 - [x] [VSCODE](https://github.com/RyanXingQL/Blog/blob/master/posts/vscode.md)
 
 > 强烈推荐Remote拓展（远程写代码）和LaTeX拓展。
@@ -71,18 +85,6 @@ Feel free to contact: ryanxingql@gmail.com.
 - [x] [TENSORFLOW](https://github.com/RyanXingQL/Blog/blob/master/posts/tensorflow.md)
 
 - [x] [ZOTERO](https://github.com/RyanXingQL/Blog/blob/master/posts/zotero.md)
-
-## Study Note
-
-- [x] [ART](https://github.com/RyanXingQL/Blog/blob/master/posts/art.md)
-
-- [x] [DEEP LEARNING](https://github.com/RyanXingQL/Blog/blob/master/posts/deep_learning.md)
-
-- [x] [ENGLISH](https://github.com/RyanXingQL/Blog/blob/master/posts/english.md)
-
-- [x] [PAPER DAILY](https://github.com/RyanXingQL/Blog/blob/master/posts/paper_daily.md)
-
-- [x] [READING AND THINKING](https://github.com/RyanXingQL/Blog/blob/master/posts/reading_and_thinking.md)
 
 ## PDF Note
 
