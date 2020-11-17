@@ -18,13 +18,13 @@
 
 ### 安装Anaconda
 
-查看最新链接：
+$\clubsuit$ 查看最新链接：
 
 [[官网]](https://repo.anaconda.com/archive/)
 
 可在服务器`wget`下载。
 
-安装：
+$\clubsuit$ 安装：
 
 - 空格跳过协议，一切回车默认。
 - 若刚刚没选yes激活，手动激活：`conda init bash`，重启terminal。
@@ -33,20 +33,20 @@
 
 ### 环境
 
-创建环境：
+$\clubsuit$ 创建环境：
 
 ```bash
 conda create -n env_name python=3.6  # 最基本操作
 conda create -n venv pip python=3.7  # 可同时装好多个包
 ```
 
-查看已有环境：
+$\clubsuit$ 查看已有环境：
 
 ```bash
 conda env list
 ```
 
-删除包：
+$\clubsuit$ 删除包：
 
 ```bash
 conda env remove -n env_name
@@ -56,19 +56,19 @@ conda env remove -n env_name
 
 ### 包
 
-查看已有包：
+$\clubsuit$ 查看已有包：
 
 ```bash
 conda list
 ```
 
-安装包：
+$\clubsuit$ 安装包：
 
 ```bash
 conda install pkg_name -y  # 默认yes。注意要先进入环境
 ```
 
-离线下载和安装：
+$\clubsuit$ 离线下载和安装：
 
 - 在[[官网]](https://anaconda.org/anaconda/repo)搜包。
 - 下载。
@@ -76,7 +76,7 @@ conda install pkg_name -y  # 默认yes。注意要先进入环境
 
 ### 频道
 
-添加国内源：
+$\clubsuit$ 添加国内源：
 
 ```bash
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
@@ -84,13 +84,13 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
 ```
 
-查看现有频道（包括其他设置）：
+$\clubsuit$ 查看现有频道（包括其他设置）：
 
 ```bash
 conda config --show
 ```
 
-修改可用频道：
+$\clubsuit$ 修改可用频道：
 
 ```bash
 vim ~/.condarc
@@ -98,20 +98,20 @@ vim ~/.condarc
 
 ### DEBUG记录
 
-包安装路径错误：
+$\clubsuit$ 包安装路径错误：
 
-不要在VSCODE -> REMOTE -> TERMINAL里操作。建议在命令行操作。
+记得`python -m xxx`
 
-一直在solving：
+$\clubsuit$ 一直在solving：
 
 删除除`defaults`外所有channels。
 
-超时：
+$\clubsuit$ 超时：
 
 - 重新登陆校园网。
 - 删除`defaults`，并把`https`都改为`http`。
 
-**`CondaVerificationError`**
+$\clubsuit$ `CondaVerificationError`
 
 ```bash
 conda clean --all
@@ -123,7 +123,7 @@ conda clean --all
 
 ### 频道
 
-添加国内源：
+$\clubsuit$ 添加国内源：
 
 [[参考]](https://mirrors.tuna.tsinghua.edu.cn/help/pypi/)
 
@@ -136,7 +136,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 ### 包
 
-离线安装：
+$\clubsuit$ 离线安装：
 
 - 先试试直接`pip install`，记住名称和大小。
 - 在`PyPI`搜索对应版本。
@@ -144,7 +144,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 ### DEBUG记录
 
-timeout：
+$\clubsuit$ timeout：
 
 ```bash
 pip install --default-timeout=100 xxx -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/

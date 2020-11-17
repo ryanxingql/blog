@@ -13,7 +13,7 @@
 
 ### CUDA版本不对
 
-表现1：
+$\clubsuit$ 表现1：
 
 提示`nvcc fatal`。
 
@@ -30,7 +30,7 @@ export LD_LIBRARY_PATH="/usr/lcoal/cuda-10.1/lib64:$LD_LIBRARY_PATH"
 
 `source ~/.bashrc`即可。
 
-表现2：
+$\clubsuit$ 表现2：
 
 提示`not compiled with GPU support`。
 
@@ -46,7 +46,7 @@ export LD_LIBRARY_PATH="/usr/lcoal/cuda-10.1/lib64:$LD_LIBRARY_PATH"
 
 ### 网络不收敛
 
-表现：
+$\clubsuit$ 表现：
 
 损失值一直非常大。
 
@@ -57,7 +57,7 @@ export LD_LIBRARY_PATH="/usr/lcoal/cuda-10.1/lib64:$LD_LIBRARY_PATH"
 
 ### 数值计算结果怪异
 
-表现：
+$\clubsuit$ 表现：
 
 自己写的PSNR计算函数，输入两幅图像后PSNR计算结果异常。
 
@@ -69,7 +69,7 @@ export LD_LIBRARY_PATH="/usr/lcoal/cuda-10.1/lib64:$LD_LIBRARY_PATH"
 
 ### DCNv2编译不通过
 
-表现：
+$\clubsuit$ 表现：
 
 不兼容高版本pytorch。
 
@@ -81,13 +81,13 @@ export LD_LIBRARY_PATH="/usr/lcoal/cuda-10.1/lib64:$LD_LIBRARY_PATH"
 
 ### SyncBatchNorm
 
-环境：
+$\clubsuit$ 环境：
 
 - Ubuntu 20.04
 - CUDA 10.1
 - PyTorch 1.16
 
-背景：
+$\clubsuit$ 背景：
 
 BN是在每一层CNN处理前对数据的白化处理。BN首先对数据归一化至零均值、1方差，然后进行仿射变换（参数是可学的，保证网络的学习能力不因暴力白化受损）。
 
@@ -95,7 +95,7 @@ BN2D是在每一个C上单独操作的（有多少C，就有多少套仿射变�
 
 在早期的实现中，BN并未考虑多卡并行问题。即，每张卡上的BN参数是不同的，且统计量也是根据当前卡上的mini-batch统计得到。当bs较大时，这没什么问题。
 
-实验：
+$\clubsuit$ 实验：
 
 ```python3
 import torch.nn as nn

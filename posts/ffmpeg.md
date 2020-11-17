@@ -65,11 +65,11 @@ ffmpeg -s 832x480 -i video1.yuv -s 832x480 -i video2.yuv -lavfi psnr="stats_file
 ffmpeg -i input -c:v libx265 -crf 37 -preset medium -tune film -y output.mp4
 ```
 
-- -c:v: video codec
-- -crf: 类似于QP模式，适用于不知道目标码率的情况，推荐。0-51，0为无损。
-- -preset：不同模式下，速度不同，质量不同。默认为medium。越慢质量越好。
-- -tune：输入类型，例如电影，动画等。为了减小deblocking，根据x264手册，我们选择film输入。
-- -y: overwrite output files without asking
+- `-c:v`: video codec
+- `-crf`: 类似于QP模式，适用于不知道目标码率的情况，推荐。0-51，0为无损。
+- `-preset`：不同模式下，速度不同，质量不同。默认为medium。越慢质量越好。
+- `-tune`：输入类型，例如电影，动画等。为了减小deblocking，根据x264手册，我们选择film输入。
+- `-y`: overwrite output files without asking
 
 ## 安装
 
