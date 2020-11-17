@@ -1,22 +1,22 @@
 # CONDA AND PIP
 
 - [CONDA AND PIP](#conda-and-pip)
-  - [Conda](#conda)
-    - [安装Anaconda](#安装anaconda)
+  - [CONDA](#conda)
+    - [安装ANACONDA](#安装anaconda)
     - [环境](#环境)
     - [包](#包)
     - [频道](#频道)
     - [DEBUG记录](#debug记录)
-  - [Pip](#pip)
+  - [pip](#pip)
     - [频道](#频道-1)
     - [包](#包-1)
     - [DEBUG记录](#debug记录-1)
 
-## Conda
+## CONDA
 
 不推荐用来安装包（下载速度慢，版本可能旧），仅推荐用来管理虚拟环境。
 
-### 安装Anaconda
+### 安装ANACONDA
 
 > 查看最新链接
 
@@ -117,7 +117,7 @@ vim ~/.condarc
 conda clean --all
 ```
 
-## Pip
+## pip
 
 强烈推荐用以下载包，添加国内源后速度快。
 
