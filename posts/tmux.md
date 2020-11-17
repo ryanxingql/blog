@@ -35,8 +35,10 @@
 
 ## 无root安装
 
-- [[ref]](https://gist.github.com/ryin/3106801)：网友在不断更新脚本。
-- 修改环境变量
-  - `vim ~/.bashrc`
-  - 在文件末尾添加：`export PATH=$PATH:/home/x/local/bin`
-  - `source ~/.bashrc`
+[[ref]](https://gist.github.com/ryin/3106801)：网友在不断更新脚本。
+
+修改环境变量
+
+- `vim ~/.bashrc`
+- 在文件末尾添加：`export PATH=$PATH:/home/x/local/bin`
+- `source ~/.bashrc`

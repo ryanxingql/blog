@@ -3,9 +3,6 @@
 - [FFMPEG](#ffmpeg)
   - [基础指令](#基础指令)
   - [常用指令](#常用指令)
-    - [y4m2yuv](#y4m2yuv)
-    - [yuv2png](#yuv2png)
-    - [计算PSNR](#计算psnr)
   - [JPEG2000](#jpeg2000)
   - [H265](#h265)
   - [安装](#安装)
@@ -28,13 +25,13 @@ ffmpeg -i [输入文件名] [参数选项] -f [格式] [输出文件]
 
 ## 常用指令
 
-### y4m2yuv
+> y4m2yuv
 
 ```bash
 ffmpeg.exe -i test.y4m -vsync 0 test.yuv -y
 ```
 
-### yuv2png
+> yuv2png
 
 只要前300帧。由于是yuv，指定分辨率。
 
@@ -42,7 +39,7 @@ ffmpeg.exe -i test.y4m -vsync 0 test.yuv -y
 ffmpeg -i yuv_path -s 832x480 -vframes 300 -vsync 0 png_path/%4d.png -y
 ```
 
-### 计算PSNR
+> 计算PSNR
 
 逐帧计算两个视频的Y、U、V通道的PSNR，输出到stats_file指定文件。
 注意log中帧数从1开始。

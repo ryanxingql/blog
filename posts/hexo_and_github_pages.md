@@ -47,5 +47,6 @@
 
 ## 常见问题
 
-- 提示`node: command not found`
-  首先`node -v`确定`node`找不到了。重新下载`node.js`的安装文件，选择`repair`即可。
+> 提示：`node: command not found`
+
+首先`node -v`确定`node`找不到了。重新下载`node.js`的安装文件，选择`repair`即可。

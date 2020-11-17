@@ -8,29 +8,28 @@
       - [Gloo后端+MP启动+模型读写方式](#gloo后端mp启动模型读写方式)
     - [原理](#原理)
   - [Visdom](#visdom)
-    - [安装](#安装)
-    - [开启服务](#开启服务)
-    - [查看远程服务器的visdom](#查看远程服务器的visdom)
-    - [命令](#命令)
 
 ## 安装PT
 
-- 根据CUDA教程，安装好系统推荐的NVIDIA驱动时，CUDA就自动安装好了。注意，`nvidia-smi`不准确，`nvcc -V`才是准确的CUDA版本。
-- 确定所需PT版本。在官网查看兼容的CUDA版本。若不满足，可重装CUDA及对应的最高版本NVIDIA驱动。
-- 按照[官网](https://pytorch.org/get-started/locally/)提供的完整指令，用pip安装。例：
+根据CUDA教程，安装好系统推荐的NVIDIA驱动时，CUDA就自动安装好了。注意，`nvidia-smi`不准确，`nvcc -V`才是准确的CUDA版本。
+
+确定所需PT版本。在官网查看兼容的CUDA版本。若不满足，可重装CUDA及对应的最高版本NVIDIA驱动。
+
+按照[官网](https://pytorch.org/get-started/locally/)提供的完整指令，用pip安装。例：
   
-  ```bash
-  pip install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
-  ```
+```bash
+pip install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+```
 
-  可以指定CUDA版本，推荐。
-- 或用CONDA安装（不推荐）：
+可以指定CUDA版本，推荐。
 
-  ```bash
-  conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
-  condo create -n pt python=3.7
-  conda activate pt
-  ```
+或用CONDA安装（不推荐）：
+
+```bash
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+condo create -n pt python=3.7
+conda activate pt
+```
 
 ## 多卡
 
@@ -129,7 +128,7 @@ for data in rand_loader:
 
 输出：
 
-```text
+```bash
 *****************************************
 Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
 *****************************************
@@ -284,7 +283,7 @@ if __name__ == "__main__":
 
 输出：
 
-```text
+```bash
 got 2 gpus.
 Running basic DDP example on rank 0.
 Running basic DDP example on rank 1.
@@ -302,19 +301,23 @@ Running DDP checkpoint example on rank 0.
 
 有以下几种方式：
 
-1. DataParallel
-   - 适用于单机多卡。
-   - 每次forward都要复制模型。
-   - 单进程，受限于GIL竞争。
-   - 代码改动最少，但效率低。
-2. DistributedDataParallel
-   - 适用于单机多卡和多机多卡。
-   - 额外需要`init_process_group`操作。
-   - 多进程并行，不受GIL影响。
-   - 在DDP建立时单次广播模型，无须每次forward广播。
-   - 可以和model parallel组合使用，即每个process单独执行model parallel。参见官方教程最后。
-   - 强烈推荐。
-3. 其他，例如model parallel：[[教程]](https://pytorch.org/tutorials/intermediate/model_parallel_tutorial.html)
+> DataParallel
+
+- 适用于单机多卡。
+- 每次forward都要复制模型。
+- 单进程，受限于GIL竞争。
+- 代码改动最少，但效率低。
+
+> DistributedDataParallel
+
+- 适用于单机多卡和多机多卡。
+- 额外需要`init_process_group`操作。
+- 多进程并行，不受GIL影响。
+- 在DDP建立时单次广播模型，无须每次forward广播。
+- 可以和model parallel组合使用，即每个process单独执行model parallel。参见官方教程最后。
+- 强烈推荐。
+
+> 其他，例如model parallel：[[教程]](https://pytorch.org/tutorials/intermediate/model_parallel_tutorial.html)
 
 `torch.distributed`主要有3个组件，见[文档](https://pytorch.org/docs/master/notes/ddp.html)。我们主要用`Distributed Data-Parallel Training (DDP)`。
 
@@ -328,15 +331,25 @@ DDP原理：模型在DDP建立之初分发到各进程。每个进程输入各�
 
 ## Visdom
 
-### 安装
+> 安装
 
 `python -m pip install visdom`
 
-### 开启服务
+> 命令
+
+```python
+from visdom import Visdom
+
+viz = Visdom()
+viz.line([x], [y], win='loss', opts=dict(title='loss vs. iter, legend=['loss']), update='append')
+viz.image(img, win='a image')
+```
+
+> 开启服务
 
 `python -m visdom.server`
 
-### 查看远程服务器的visdom
+> 查看远程服务器的visdom
 
 转接远程服务器的端口：
 
@@ -347,13 +360,3 @@ ssh 18097:127.0.0.1:8097 x@xxx.xx.xx.xx
 其中8097是服务器端口，18097是本机端口。
 
 然后查看`http://localhost:18097`即可。
-
-### 命令
-
-```python
-from visdom import Visdom
-
-viz = Visdom()
-viz.line([x], [y], win='loss', opts=dict(title='loss vs. iter, legend=['loss']), update='append')
-viz.image(img, win='a image')
-```

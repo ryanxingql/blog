@@ -9,23 +9,24 @@
 
 ## 新机器初始化，生成密钥
 
-- 设置身份
+设置身份：
   
-  ```bash
-  git config --global user.name usrname
-  git config --global user.email xx@xx
-  ```
+```bash
+git config --global user.name usrname
+git config --global user.email xx@xx
+```
 
-- 生成密钥
+生成密钥：
   
-  ```bash
-  ssh-keygen -t rsa -C xx@xx
-  ```
+```bash
+ssh-keygen -t rsa -C xx@xx
+```
 
-- 把公钥提供给github
-  - 找到`~\.ssh`下的公钥`id_rsa.pub`，打开，复制。
-  - 放到github里。
-  - 否则，私人仓库没法clone。
+把公钥提供给github：
+
+- 找到`~\.ssh`下的公钥`id_rsa.pub`，打开，复制。
+- 放到github里。
+- 否则，私人仓库没法clone。
 
 ## 新仓库初始化，推送至远端
 
@@ -42,30 +43,32 @@ git push -u origin master
 
 如果经常访问一个地址，建议彼此之间保存公私钥。
 
-- 首先在本地编辑`C:\Users\xxx\.ssh\config`或`~/.ssh/config`（没有就新建）：
+首先在本地编辑`C:\Users\xxx\.ssh\config`或`~/.ssh/config`（没有就新建）：
   
-  ```jason
-  Host xxx
-    HostName 000.000.00.000
-    User xx
-  IdentityFile C:\Users\xxx\.ssh\id_rsa
-  ```
+```jason
+Host xxx
+  HostName 000.000.00.000
+  User xx
+IdentityFile C:\Users\xxx\.ssh\id_rsa
+```
 
-  最后一行指定了本地的私钥位置。会自动发送给服务器，和以下的公钥合作，以识别身份。
-- 然后将本地公钥`id_rsa.pub`传到服务器的`~/.ssh/`路径下：
-  
-  ```bash
-  scp id_rsa.pub xxx:~/.ssh/hello.pub
-  ```
-  
-  一定要改名！！！不要覆盖了服务器的`id_ras.pub`！
-- 在服务器`~/.ssh/`下执行
-  
-  ```bash
-  cat hello.pub >> authorized_keys
-  ```
+最后一行指定了本地的私钥位置。会自动发送给服务器，和以下的公钥合作，以识别身份。
 
-  即将公钥加入可信列表。
+然后将本地公钥`id_rsa.pub`传到服务器的`~/.ssh/`路径下：
+  
+```bash
+scp id_rsa.pub xxx:~/.ssh/hello.pub
+```
+  
+一定要改名！！！不要覆盖了服务器的`id_ras.pub`！
+
+在服务器`~/.ssh/`下执行
+  
+```bash
+cat hello.pub >> authorized_keys
+```
+
+即将公钥加入可信列表。
 
 今后，直接`ssh xxx`，就可以免密登录啦！
 
