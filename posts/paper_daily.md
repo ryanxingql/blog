@@ -22,6 +22,8 @@
   - [Semantic Image Synthesis with Spatially-Adaptive Normalization](#semantic-image-synthesis-with-spatially-adaptive-normalization)
   - [Reconstructing the Noise Manifold for Image Denoising](#reconstructing-the-noise-manifold-for-image-denoising)
   - [LIP: Local Importance-based Pooling](#lip-local-importance-based-pooling)
+  - [GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium](#gans-trained-by-a-two-time-scale-update-rule-converge-to-a-local-nash-equilibrium)
+  - [DeOldify](#deoldify)
   - [TO-LEARN](#to-learn)
 
 ## Learning Enriched Features for Real Image Restoration and Enhancement
@@ -647,6 +649,51 @@ LIP，ICCV 2019：加权池化，权重是可学习的。
 其中的logit可以通过各种可学习的网络G习得，然后注意用`exp`处理，使之非负且易于优化。本文使用的是FCN。
 
 注意，由于是池化，因此将stride设为2，padding设为1，就可以将边长降为1/2了。
+
+## GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium
+
+TTUR，NIPS 2017：一个简单的GANs稳定收敛方法。本文还引入了Fréchet Inception Distance（FID），一种比inception更好的GANs评估方法。
+
+- [tag] GANs
+- [tag] 4 stars
+
+让discriminator和generator分别收敛。利用stochastic approximation理论，可以证明TTUR能使GANs在弱条件下收敛到stationary local Nash equilibrium。
+
+由于GANs是二者的博弈，因此最终的结果是一种纳什均衡。而梯度下降法显然可能导致不收敛。由于梯度法本身是一种局部最优方法，因此得到的结果也只满足局部纳什均衡。具体定义：
+
+> If there exists a local neighborhood around a point in parameter space where neither the generator nor the discriminator can unilaterally decrease their respective losses, then we call this point a local Nash equilibrium.
+
+即如果无法自顾自地更优，而只能通过牺牲另一方的性能换取自身更优，那么经过迭代后，这种平衡会被破坏，因此就不是纳什均衡。
+
+主要观点：discriminator应该具有更大的学习率。即使generator在变化，只要其变化率足够小，那么discriminator仍然能准确感知，从而达到均衡；反之，generator剧烈变化会使得网络不断进入新的环境，从而使得discriminator难以收敛。
+
+## DeOldify
+
+一个老黑白照片上色的深度学习项目，[[主页]](https://github.com/jantic/DeOldify)。
+
+- [tag] 图像增强
+- [tag] 图像上色
+- [tag] GANs
+- [tag] 4 stars
+
+> 20-11-23
+
+技术细节包括：
+
+- 预训练U-Net作为generator。
+- spectral normalization
+- self-attention
+- two time-scale update rules
+- [NoGAN](https://github.com/jantic/DeOldify#what-is-nogan)
+- perceptual loss + critic loss
+
+其中，NoGAN非常重要。作者认为，GAN的训练不重要，其组成成分的分开的、有针对性的预训练才是最重要的。这些预训练能够解决GAN的诸多问题。
+
+作者称DeOldify是第一个采用类似策略的。但我在ESRGAN上也见到了。
+
+一般的progressive GAN需要花好几天的时间才能保证训练的稳定收敛。而这种预训练能更好地解决问题，且真正的GAN训练只需要花一点点时间。
+
+而TTUR会强调鉴别器的训练，因此和NoGAN非常搭。
 
 ## TO-LEARN
 
