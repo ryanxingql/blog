@@ -14,11 +14,16 @@
     - [前后逻辑](#前后逻辑)
     - [形象比喻](#形象比喻)
     - [其余固定搭配](#其余固定搭配)
-  - [词语剖析](#词语剖析)
-    - [单词剖析](#单词剖析)
-    - [常见问题](#常见问题)
-  - [IELTS vocab (learning)](#ielts-vocab-learning)
-  - [Others](#others)
+  - [剖析和对比](#剖析和对比)
+    - [anything vs. something](#anything-vs-something)
+    - [finally vs. eventually](#finally-vs-eventually)
+    - [minimum vs. minimal](#minimum-vs-minimal)
+    - [necessarily](#necessarily)
+    - [no + noun](#no--noun)
+    - [respectively vs. separately](#respectively-vs-separately)
+    - [should](#should)
+    - [treat](#treat)
+    - [upfront](#upfront)
 
 ## 写作专栏
 
@@ -119,98 +124,85 @@
   - 如果你的朋友没有地方住，你可以说：`You can always sleep on my couch.`
   - `You could always shop at the duty-free.`
 
-## 词语剖析
+## 剖析和对比
 
-### 单词剖析
+### anything vs. something
 
-- man
-  - 操纵
-  - `The telephones are manned 24 hours a day by volunteers.`
-- necessarily
-  - `This word is not necessarily positive or necessarily negative.`
-    - 这个词不一定是褒义，也不一定是贬义。
+I don't really need anything too complicated. I just need something to help me kill time on my commute.
+
+### finally vs. eventually
+
+- `finally`不能用于将来，但`eventually`可以。
+- `eventually`通常指漫长的过程结束，例如大量问题或努力。
+  - `We will eventually find success.`
+  - `This work might take me a while, but I'll get it done eventually.`
+- `finally`通常指最后一项。
+  - `After months of seeking a new job, he finally found one.`
+
+### minimum vs. minimal
+
+[ref](https://grammarist.com/usage/minimum-vs-minimal/)
+
+前者是拉丁语，特指最小。后者可以指最小，也可以指一个较小的、可忽略不计的数。
+
+即，minimal语义比minimum更广。
+
+### necessarily
+
+这个词不一定是褒义，也不一定是贬义。
+
 - purpose
   - 用处，意义
   - `Volunteer works give her life purpose.`
   - `I tried to stop him from smoking, but to no purpose.`：徒劳。
-- should
-  1. 应该：`should`
-     - `That is as it should be.`
-  2. 本应该，却没发生（没做）：`should have + pp`
-     - `The train should have arrived 20 minutes ago.`
-     - `Yesterday should have been the start of the soccer season.`
-     - 注意，`must have + pp`是指现在对过去可能发生的事情进行的推测。
-       - `Jane should have arrived now; she must have missed the bus.`
-  3. 有必要（英国）：`should`
-     - `It is essential that you should be present.`
-     - `Is it necessary that my uncle should be informed?`
-     - 在美国，`should`通常去掉。因此`should`其实没有任何意思（主句已经表达了必要之意），只是一种强调方式。
-     - 类似地，主句出现`decide/insist/suggest/propose/demand/request/desire/order/important`之类，that从句都可以这么操作。
-  4. 在虚拟语气（subjunctive mood）中，表达事实或看法：`should`
-     - `I regret that he should be stubborn.`：我很遗憾他竟然如此固执。
-     - `I was regret that she shouldn't have invited Stephen.`：她竟然没有邀请Stephen，我很惊愕。
-     - `I'm sorry you should think I did it on purpose.`：你居然以为我是故意的，我很遗憾。
-  5. 在if从句中表示发生概率小：`if sb should do...`
-     - `If you should run into Peter, tell him he owes me a letter.`：如果你撞见Peter，告诉他，他欠我一封信。
-     - 通常换一种写法：去掉if，主语放前面。
-       - `Should you have an accident, synthetic quilts are quite easy to wash.`：万一尿床，化纤被子很好洗。
-       - `Tortoises are able to withdraw their head should danger threaten.`：乌龟一遇到危险，能把头缩回去。
-- treat
-  - 招待，款待：名词或动词
-  - `Don't worry about the cost—I'll treat you.`
+
+### no + noun
+
+- 一般后面跟名词的复数形式。
+  - `There is no shortcuts to health.`
+- 但在某些情况下，复数是不可能的（不符合常理，例如一夫多妻），则用单数。
+
+### respectively vs. separately
+
+- separately
+  - 强调独立地。
+  - `We are going to the event separately.`
+- respectively
+  - 仅表明句中对应关系。
+  - `Mike and Dan are 19 and 22 respectively.`
+
+### should
+
+1. 应该：`should`
+   - `That is as it should be.`
+2. 本应该，却没发生（没做）：`should have + pp`
+   - `The train should have arrived 20 minutes ago.`
+   - `Yesterday should have been the start of the soccer season.`
+   - 注意，`must have + pp`是指现在对过去可能发生的事情进行的推测。
+     - `Jane should have arrived now; she must have missed the bus.`
+3. 有必要（英国）：`should`
+   - `It is essential that you should be present.`
+   - `Is it necessary that my uncle should be informed?`
+   - 在美国，`should`通常去掉。因此`should`其实没有任何意思（主句已经表达了必要之意），只是一种强调方式。
+   - 类似地，主句出现`decide/insist/suggest/propose/demand/request/desire/order/important`之类，that从句都可以这么操作。
+4. 在虚拟语气（subjunctive mood）中，表达事实或看法：`should`
+   - `I regret that he should be stubborn.`：我很遗憾他竟然如此固执。
+   - `I was regret that she shouldn't have invited Stephen.`：她竟然没有邀请Stephen，我很惊愕。
+   - `I'm sorry you should think I did it on purpose.`：你居然以为我是故意的，我很遗憾。
+5. 在if从句中表示发生概率小：`if sb should do...`
+   - `If you should run into Peter, tell him he owes me a letter.`：如果你撞见Peter，告诉他，他欠我一封信。
+   - 通常换一种写法：去掉if，主语放前面。
+     - `Should you have an accident, synthetic quilts are quite easy to wash.`：万一尿床，化纤被子很好洗。
+     - `Tortoises are able to withdraw their head should danger threaten.`：乌龟一遇到危险，能把头缩回去。
+
+### treat
+
+- 招待，款待：名词或动词
+  - `Don't worry about the cost; I'll treat you.`
   - `It's my treat.`
     - 我请客。
-- upfront
-  - in advance
+
+### upfront
+
+- in advance
   - `We should be very clear about that upfront.`
-
-### 常见问题
-
-- anything vs. something
-  - `I don't really need anything too complicated. I just need something to help me kill time on my commute.`
-- finally vs. eventually
-  - `finally`不能用于将来，但`eventually`可以。
-  - `eventually`通常指漫长的过程结束，例如大量问题或努力。
-    - `We will eventually find success.`
-    - `This work might take me a while, but I'll get it done eventually.`
-  - `finally`通常指最后一项。
-    - `After months of seeking a new job, he finally found one.`
-- no + noun
-  - 一般后面跟名词的复数形式。
-    - `There is no shortcuts to health.`
-  - 但在某些情况下，复数是不可能的（不符合常理，例如一夫多妻），则用单数。
-- respectively vs. separately
-  - separately
-    - 强调独立地。
-    - `We are going to the event separately.`
-  - respectively
-    - 仅表明句中对应关系。
-    - `Mike and Dan are 19 and 22 respectively.`
-
-## IELTS vocab (learning)
-
-- regent
-  - reg表示to rule，ent则是名词。
-  - 董事，摄政者
-- burgeon
-  - 迅速生长，快速发展
-  - `As mischief has become easier, the hacker crowd has burgeoned and mutated.`  
-     随着黑客非法入侵越来越容易，黑客组织迅速扩张，发生转变。
-- methane
-  - `/'mɛθen/`
-  - 甲烷，沼气
-  - `Natural gas is mostly methane.`
-- hierarchy
-  - `/'haɪərɑrki/`
-  - hier=holy，神圣的；arch=government，统治；y构成名词。
-  - 原神权统治，引申为社会阶层，等级制度。
-  - `You were at the top of the social hierarchy.`  
-    你简直是万人之上。
-  - `The government is a hierarchy.`
-  - `Wisdom and emotional intelligence seem pretty high on the hierarchy of needs.`  
-    智商和情商看上去是更高层次的需求。
-
-## Others
-
-- `Mike was talking about the places that he went to in SF.`
-  - 别忘了`to`。
