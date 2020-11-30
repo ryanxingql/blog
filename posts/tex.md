@@ -2,8 +2,10 @@
 
 - [TEX](#tex)
   - [写完论文检查](#写完论文检查)
-  - [安装MikTeX + TeXstudio](#安装miktex--texstudio)
-  - [Ubuntu 20.04 安装LaTeX + TeXstudio](#ubuntu-2004-安装latex--texstudio)
+  - [Texlive + Vscode + Latex Workshop](#texlive--vscode--latex-workshop)
+    - [中文](#中文)
+  - [Ubuntu 20.04 安装 Texlive + Texstudio（弃用）](#ubuntu-2004-安装-texlive--texstudio弃用)
+  - [Mitex + texstudio（弃用）](#mitex--texstudio弃用)
 
 ## 写完论文检查
 
@@ -46,15 +48,17 @@
 \end{figure}
 ```
 
-## 安装MikTeX + TeXstudio
+## Texlive + Vscode + Latex Workshop
 
-- 按顺序下载和安装。
-- 重启。
-- TexStudio里要设置zh_CN语言，将`pdflatex`改为`xzelatex`。
+### 中文
 
-## Ubuntu 20.04 安装LaTeX + TeXstudio
+[[设置Latex Workshop]](https://www.php.cn/tool/vscode/439118.html)
 
-Ubuntu 20.04暂不支持MikTeX。——20200913
+为了删除`.synctex.gz`，我在`latex-workshop.latex.clean.fileTypes`中添加了`*.synctex.gz`。这样，点击按钮就可以一键删除中间文件。
+
+[[写作]](https://blog.csdn.net/meiqi0538/article/details/82887300)
+
+## Ubuntu 20.04 安装 Texlive + Texstudio（弃用）
 
 安装LaTeX：`$ sudo apt install texlive-full`
 
@@ -63,3 +67,9 @@ Ubuntu 20.04暂不支持MikTeX。——20200913
 安装TeXstudio：`$ sudo apt install texstudio`
 
 Build中选择pdflatex，图像可正常显示。
+
+## Mitex + texstudio（弃用）
+
+- 按顺序下载和安装。
+- 重启。
+- TexStudio里要设置zh_CN语言，将`pdflatex`改为`xzelatex`。
