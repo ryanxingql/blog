@@ -4,7 +4,6 @@
   - [My Publications](#my-publications)
   - [High Frequency Notes](#high-frequency-notes)
   - [Other Notes](#other-notes)
-  - [PDF Notes](#pdf-notes)
 
 Welcome to my blog~ See also [my page](https://ryanxingql.github.io/)~
 
@@ -34,6 +33,8 @@ Feel free to contact: ryanxingql@gmail.com.
 - [x] [ART](https://github.com/RyanXingQL/Blog/blob/master/posts/art.md)
 
 - [x] [BAT](https://github.com/RyanXingQL/Blog/blob/master/posts/bat.md)
+
+- [x] [北航电子信息专业课学习笔记](https://gist.github.com/RyanXingQL/0ffc0f28b0260ecd8ce05251c0709d74)
 
 - [x] [CUDA](https://github.com/RyanXingQL/Blog/blob/master/posts/cuda.md)
 
@@ -80,10 +81,3 @@ Feel free to contact: ryanxingql@gmail.com.
 > 强烈推荐Remote拓展（远程写代码）和LaTeX拓展。
 
 - [x] [ZOTERO](https://github.com/RyanXingQL/Blog/blob/master/posts/zotero.md)
-
-## PDF Notes
-
-[[百度网盘 (提取码blog)]](https://pan.baidu.com/s/1An7GpfyHAaFLRphhODevVQ) [[Google Drive]](https://drive.google.com/drive/folders/1UU703I_zM1pPx5UVzIVLSN8NZwqxo5Tf?usp=sharing)
-
-- [x] **北航电子信息课程**（图像处理，嵌入式，微机原理，网络安全，泛函分析等）
-- [x] ***Python编程：从入门到实践***
