@@ -64,7 +64,7 @@ Feel free to contact: ryanxingql@gmail.com.
 
 - [x] [PYTORCH](https://github.com/RyanXingQL/Blog/blob/master/posts/pytorch.md)
 
-- [x] [READING AND THINKING](https://github.com/RyanXingQL/Blog/blob/master/posts/reading_and_thinking.md)
+- [x] [READING](https://github.com/RyanXingQL/Blog/blob/master/posts/reading.md)
 
 - [x] [SHORTCUTS](https://github.com/RyanXingQL/Blog/blob/master/posts/shortcuts.md)
 
