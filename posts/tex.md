@@ -13,6 +13,7 @@
 
 - 每一段致谢要用单独的一个`\thanks{}`。
 - 换行也有空格的作用。所以在最后一个author后，添加一个`%`取缔空格，连接到下一行的`\thanks`。
+- 作者单位多多益善，例如高工。否则以后评奖没资格。
 
 > 标题
 
@@ -52,11 +53,13 @@
 
 ### 中文
 
-[[设置Latex Workshop]](https://www.php.cn/tool/vscode/439118.html)
+[[基础模板]](https://gist.github.com/RyanXingQL/f1e0802bc7427b5d444261160a44e126)
+
+[[Latex Workshop指南]](https://zhuanlan.zhihu.com/p/106167792)
+
+包括快捷键和省心选项。
 
 为了删除`.synctex.gz`，我在`latex-workshop.latex.clean.fileTypes`中添加了`*.synctex.gz`。这样，点击按钮就可以一键删除中间文件。
-
-[[写作]](https://blog.csdn.net/meiqi0538/article/details/82887300)
 
 ## Ubuntu 20.04 安装 Texlive + Texstudio（弃用）
 
