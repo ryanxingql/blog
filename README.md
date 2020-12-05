@@ -34,7 +34,7 @@ Feel free to contact: ryanxingql@gmail.com.
 
 - [x] [BAT](https://github.com/RyanXingQL/Blog/blob/master/posts/bat.md)
 
-- [x] [北航电子信息专业课笔记](https://gist.github.com/RyanXingQL/0ffc0f28b0260ecd8ce05251c0709d74)
+- [x] [北航电子信息专业课笔记](https://gist.github.com/RyanXingQL/31be08b97db38c7eb2f636ae2607f54b)
 
 - [x] [CUDA](https://github.com/RyanXingQL/Blog/blob/master/posts/cuda.md)
 
