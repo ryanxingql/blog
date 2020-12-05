@@ -52,6 +52,8 @@ Feel free to contact: ryanxingql@gmail.com.
 
 - [x] [MATLAB](https://github.com/RyanXingQL/Blog/blob/master/posts/matlab.md)
 
+- [x] [NUMERICAL OPTIMIZATION](https://gist.github.com/RyanXingQL/82f9179287edb8a11e18f60e2e4f18a3)
+
 - [x] [NVIDIA](https://github.com/RyanXingQL/Blog/blob/master/posts/nvidia.md)
 
 - [x] [OFFICE](https://github.com/RyanXingQL/Blog/blob/master/posts/office.md)
