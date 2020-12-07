@@ -24,7 +24,6 @@
   - [LIP: Local Importance-based Pooling](#lip-local-importance-based-pooling)
   - [GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium](#gans-trained-by-a-two-time-scale-update-rule-converge-to-a-local-nash-equilibrium)
   - [DeOldify](#deoldify)
-  - [TO-LEARN](#to-learn)
 
 ## Learning Enriched Features for Real Image Restoration and Enhancement
 
@@ -694,15 +693,3 @@ TTUR，NIPS 2017：一个简单的GANs稳定收敛方法。本文还引入了Fr�
 一般的progressive GAN需要花好几天的时间才能保证训练的稳定收敛。而这种预训练能更好地解决问题，且真正的GAN训练只需要花一点点时间。
 
 而TTUR会强调鉴别器的训练，因此和NoGAN非常搭。
-
-## TO-LEARN
-
-- VMAF两个Blog。
-- PULSE，一种较强的face recreation方法。
-- The Perception-Distortion Tradeoff
-- Once-for-all adversarial training
-- GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium，2000+ stars. FID可以了解。
-- DFNet，人脸盲增强。试试复现。
-- cv2对DCNv2的解析，看看如何做实验的。
-- AIWalker历史公众号，都是经典文章。
-- 何凯明暗通道分析方法。
