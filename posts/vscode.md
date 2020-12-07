@@ -5,6 +5,7 @@
   - [插件](#插件)
   - [问题解决](#问题解决)
   - [特殊需求](#特殊需求)
+    - [导出含中文的Jupyter Notebook为PDF](#导出含中文的jupyter-notebook为pdf)
     - [导出markdown为PDF](#导出markdown为pdf)
   - [安装和推荐](#安装和推荐)
 
@@ -42,6 +43,12 @@ F1，或`shift + ctrl + p`
 用交互模式。在代码前后加上`#%%`，可run cell。
 
 ## 特殊需求
+
+### 导出含中文的Jupyter Notebook为PDF
+
+先转换为TEX文件：在IPYNB文件路径下，运行：`jupyter nbconvert --to latex xxx.ipynb`。
+
+得到TEX文件后，用VSCODE打开，添加一行`\usepackage[UTF8]{ctex}`，就可以编译出正常含中文的PDF了。
 
 ### 导出markdown为PDF
 
