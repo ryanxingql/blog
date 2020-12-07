@@ -74,12 +74,8 @@ Feel free to contact: ryanxingql@gmail.com.
 
 - [x] [TMUX](https://github.com/RyanXingQL/Blog/blob/master/posts/tmux.md)
 
-> 一定要在后台跑程序，避免断网、关闭终端等导致程序中断。建议搭配Termius神器，多平台同步。
-
 - [x] [UNICODE](https://github.com/RyanXingQL/Blog/blob/master/posts/unicode.md)
 
 - [x] [VSCODE](https://github.com/RyanXingQL/Blog/blob/master/posts/vscode.md)
-
-> 强烈推荐Remote拓展（远程写代码）和LaTeX拓展。
 
 - [x] [ZOTERO](https://github.com/RyanXingQL/Blog/blob/master/posts/zotero.md)

@@ -2,23 +2,33 @@
 
 - [VSCODE](#vscode)
   - [基础](#基础)
+  - [插件](#插件)
   - [问题解决](#问题解决)
-  - [特殊](#特殊)
+  - [特殊需求](#特殊需求)
     - [导出markdown为PDF](#导出markdown为pdf)
+  - [安装和推荐](#安装和推荐)
 
 ## 基础
 
 > 打开命令行
 
-- F1，或`shift + ctrl + p`
+F1，或`shift + ctrl + p`
 
 > 新建页
 
-- 双击打开。单击会覆盖。
+双击打开。单击会覆盖。
 
-> Remote设置
+## 插件
 
-- [[ref]](https://zhuanlan.zhihu.com/p/64849549)
+> Remote-SSH
+
+[[ref]](https://zhuanlan.zhihu.com/p/64849549)
+
+> Jupyter
+
+打开Python脚本，打开命令行，输入jupyter可见。
+
+或在代码前后加上`#%%`，可进入交互模式，再run cell。
 
 ## 问题解决
 
@@ -31,7 +41,7 @@
 
 用交互模式。在代码前后加上`#%%`，可run cell。
 
-## 特殊
+## 特殊需求
 
 ### 导出markdown为PDF
 
@@ -50,3 +60,11 @@
 > Markdown Preview Enhanced插件
 
 右键预览，chrome打开，直接打印。
+
+## 安装和推荐
+
+- LaTeX Workshop
+- Markdown All in One
+- Markdown Preview Enhanced
+- Rainbow CSV
+- Remote-SSH
