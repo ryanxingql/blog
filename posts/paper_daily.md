@@ -24,10 +24,11 @@
   - [LIP: Local Importance-based Pooling](#lip-local-importance-based-pooling)
   - [GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium](#gans-trained-by-a-two-time-scale-update-rule-converge-to-a-local-nash-equilibrium)
   - [DeOldify](#deoldify)
+  - [Once-for-All: Train One Network and Specialize it for Efficient Deployment](#once-for-all-train-one-network-and-specialize-it-for-efficient-deployment)
 
 ## Learning Enriched Features for Real Image Restoration and Enhancement
 
-MIRNet，ECCV 2020：注意力、多尺度的集大成网络。开源完善。声称是图像恢复的SOTA。
+MIRNet：注意力、多尺度的集大成网络。开源完善。声称是图像恢复的SOTA。ECCV 2020
 
 - [tag] 图像增强
 - [tag] 注意力
@@ -57,7 +58,7 @@ MIRNet，ECCV 2020：注意力、多尺度的集大成网络。开源完善。�
 
 ## BBN: Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition
 
-BBN，CVPR 2020：分开训练特征提取和分类器。长尾分类当年SOTA。
+BBN：分开训练特征提取和分类器。长尾分类当年SOTA。CVPR 2020
 
 - [tag] 图像分类
 - [tag] 长尾分布
@@ -85,7 +86,7 @@ BBN，CVPR 2020：分开训练特征提取和分类器。长尾分类当年SOTA�
 
 ## SRFlow: Learning the Super-Resolution Space with Normalizing Flow
 
-SRFlow，ECCV 2020：基于Flow的生成方法。训练稳定，单一损失，变换结果简单，可逆。
+SRFlow：基于Flow的生成方法。训练稳定，单一损失，变换结果简单，可逆。ECCV 2020
 
 - [tag] 图像超分辨
 - [tag] Flow
@@ -107,7 +108,7 @@ SR问题是一个经典的病态问题，有很多可能的解。这一事实很
 
 ## Multi-level Wavelet-based Generative Adversarial Network for Perceptual Quality Enhancement of Compressed Video
 
-MW-GAN，ECCV 2020：在小波域增强主观质量。
+MW-GAN：在小波域增强主观质量。ECCV 2020
 
 - [tag] 压缩视频增强
 - [tag] GANs
@@ -137,11 +138,10 @@ loss由小波域重建loss、运动补偿loss和对抗loss组成。对抗loss是
 后记：
 
 - 主观效果不明显，原因是去掉了perceptual loss。
-- 考虑了LPIPS和PI指标。
 
 ## Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network
 
-SRGAN，CVPR 2017：第一个实现4倍升采样的细节恢复网络。
+SRGAN：第一个实现4倍升采样的细节恢复网络。CVPR 2017
 
 - [tag] 图像超分辨
 - [tag] GANs
@@ -189,7 +189,7 @@ $\phi$就是VGG参数。
 
 ## ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks
 
-ESRGAN，ECCVW 2018：改进SRGAN的细节问题。
+ESRGAN：改进SRGAN的细节问题。ECCVW 2018
 
 - [tag] 图像超分辨
 - [tag] GANs
@@ -242,7 +242,7 @@ $$
 
 ## Pixel-Adaptive Convolutional Neural Networks
 
-PAC，CVPR 2019：给卷积核乘以可学习的、spatially varying的权值。借鉴双边滤波器思想。
+PAC：给卷积核乘以可学习的、spatially varying的权值。借鉴双边滤波器思想。CVPR 2019
 
 - [tag] CNNs
 - [tag] 注意力
@@ -294,7 +294,7 @@ i是卷积中心点。可见，卷积核W取值仅仅取决于相对位置差$p_
 
 ## Drop an Octave: Reducing Spatial Redundancy in Convolutional Neural Networks with Octave Convolution
 
-OctConv，ICCV 2019：低频卷积的特征图（表示）是可压缩的，进而减小内存需求和计算量。
+OctConv：低频卷积的特征图（表示）是可压缩的，进而减小内存需求和计算量。ICCV 2019
 
 - [tag] CNNs
 - [tag] 模型加速
@@ -319,7 +319,7 @@ OctConv，ICCV 2019：低频卷积的特征图（表示）是可压缩的，进�
 
 ## Enhanced Image Decoding via Edge-Preserving Generative Adversarial Networks
 
-EP-GAN，ICME 2018：用GAN增强解码视频质量。
+EP-GAN：用GAN增强解码视频质量。ICME 2018
 
 - [tag] 压缩视频增强
 - [tag] GANs
@@ -335,7 +335,7 @@ EP-GAN，ICME 2018：用GAN增强解码视频质量。
 
 ## Making a ‘Completely Blind’ Image Quality Analyzer
 
-NIQE，SPL 2012：通过衡量某些自然图像统计指标，给出图像的无参考质量评分。
+NIQE：通过衡量某些自然图像统计指标，给出图像的无参考质量评分。SPL 2012
 
 - [tag] 无参考图像质量评估
 - [tag] 5 stars
@@ -370,7 +370,7 @@ NIQE首先构建了一套quality aware的feature，然后将它们用multivariat
 
 ## Learning a No-Reference Quality Metric for Single-Image Super-Resolution
 
-Ma，CVIU 2016：早期无参考质量评估方法。
+Ma：早期无参考质量评估方法。CVIU 2016
 
 - [tag] 无参考质量评估
 - [tag] 3 stars
@@ -387,7 +387,7 @@ Ma，CVIU 2016：早期无参考质量评估方法。
 
 ## The Unreasonable Effectiveness of Deep Features as a Perceptual Metric
 
-LPIPS，CVPR 2018：深度网络普遍会生成类似的感知效果。感知loss可以在其他high-level任务上训练，效果都能远超low-level metrics。
+LPIPS：深度网络普遍会生成类似的感知效果。感知loss可以在其他high-level任务上训练，效果都能远超low-level metrics。CVPR 2018
 
 - [tag] 有参考图像质量评估
 - [tag] 3 stars
@@ -414,7 +414,7 @@ LPIPS，CVPR 2018：深度网络普遍会生成类似的感知效果。感知los
 
 ## The 2018 PIRM Challenge on Perceptual Image Super-Resolution
 
-PIRM，ECCVW 2018：提出PI指标。
+PIRM：提出PI指标。ECCVW 2018
 
 - [tag] 图像超分辨
 - [tag] Challenge
@@ -457,7 +457,7 @@ $$
 
 ## The Contextual Loss for Image Transformation with Non-Aligned Data
 
-Contextual loss，ECCV 2018：风格迁移不存在pair data，如何训练GAN？进一步，如何实现特定区域的风格迁移，例如人脸？
+Contextual loss：风格迁移不存在pair data，如何训练GAN？进一步，如何实现特定区域的风格迁移，例如人脸？ECCV 2018
 
 - [tag] 风格迁移
 - [tag] GANs
@@ -489,7 +489,7 @@ $$
 
 ## HiFaceGAN: Face Renovation via Collaborative Suppression and Replenishment
 
-HiFaceGAN，ACM 2020：在SPADE基础上，针对恢复问题进行的改进。
+HiFaceGAN：在SPADE基础上，针对恢复问题进行的改进。ACM 2020
 
 - [tag] 人脸图像增强
 - [tag] GANs
@@ -517,7 +517,7 @@ HiFaceGAN，ACM 2020：在SPADE基础上，针对恢复问题进行的改进。
 
 ## Video Multi-method Assessment Fusion
 
-[VMAF](https://netflixtechblog.com/toward-a-practical-perceptual-video-quality-metric-653f208b9652)，2016：Netflix商用视频质量评估方法。
+[VMAF](https://netflixtechblog.com/toward-a-practical-perceptual-video-quality-metric-653f208b9652)：Netflix商用视频质量评估方法。源于2016，2020仍在维护
 
 - [tag] 无参考视频质量评估
 - [tag] 4 stars
@@ -535,7 +535,7 @@ HiFaceGAN，ACM 2020：在SPADE基础上，针对恢复问题进行的改进。
 
 ## Image-To-Image Translation With Conditional Adversarial Networks
 
-pix2pix，CVPR 2017：提出结合L1 loss和GAN loss，使GAN在保真情况下具有一定创造性。可能是第一篇用GANs做图像转换的。
+pix2pix：提出结合L1 loss和GAN loss，使GAN在保真情况下具有一定创造性。可能是第一篇用GANs做图像转换的。CVPR 2017
 
 - [tag] 图像转换
 - [tag] GANs
@@ -557,7 +557,7 @@ conditional GANs是输入随机噪声z，同时输入图像x，通过改变噪�
 
 ## High-Resolution Image Synthesis and Semantic Manipulation With Conditional GANs
 
-pix2pixHD，2018 CVPR：生成高分辨率图像。
+pix2pixHD：生成高分辨率图像。CVPR 2018
 
 - [tag] 图像转换
 - [tag] GANs
@@ -578,7 +578,7 @@ pix2pixHD，2018 CVPR：生成高分辨率图像。
 
 ## Semantic Image Synthesis with Spatially-Adaptive Normalization
 
-SPADE，CVPR 2019：同时控制style和semantic。
+SPADE：同时控制style和semantic。CVPR 2019
 
 - [tag] 图像生成
 - [tag] GANs
@@ -612,7 +612,7 @@ loss和pix2pixHD一样，除了将L2改为hinge loss。实验发现每一项loss
 
 ## Reconstructing the Noise Manifold for Image Denoising
 
-ECCV 2020：迫使GAN学习和鉴别噪声流形。
+迫使GAN学习和鉴别噪声流形。ECCV 2020
 
 - [tag] 图像去噪
 - [tag] GANs
@@ -630,7 +630,7 @@ ECCV 2020：迫使GAN学习和鉴别噪声流形。
 
 ## LIP: Local Importance-based Pooling
 
-LIP，ICCV 2019：加权池化，权重是可学习的。
+LIP：加权池化，权重是可学习的。ICCV 2019
 
 - [tag] 自注意力
 - [tag] 3 stars
@@ -651,7 +651,7 @@ LIP，ICCV 2019：加权池化，权重是可学习的。
 
 ## GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium
 
-TTUR，NIPS 2017：一个简单的GANs稳定收敛方法。本文还引入了Fréchet Inception Distance（FID），一种比inception更好的GANs评估方法。
+TTUR：一个简单的GANs稳定收敛方法。本文还引入了Fréchet Inception Distance（FID），一种比inception更好的GANs评估方法。NIPS 2017
 
 - [tag] GANs
 - [tag] 4 stars
@@ -668,7 +668,7 @@ TTUR，NIPS 2017：一个简单的GANs稳定收敛方法。本文还引入了Fr�
 
 ## DeOldify
 
-一个老黑白照片上色的深度学习项目，[[主页]](https://github.com/jantic/DeOldify)。
+一个老黑白照片上色的深度学习项目，[[主页]](https://github.com/jantic/DeOldify)。2020仍在维护
 
 - [tag] 图像增强
 - [tag] 图像上色
@@ -693,3 +693,40 @@ TTUR，NIPS 2017：一个简单的GANs稳定收敛方法。本文还引入了Fr�
 一般的progressive GAN需要花好几天的时间才能保证训练的稳定收敛。而这种预训练能更好地解决问题，且真正的GAN训练只需要花一点点时间。
 
 而TTUR会强调鉴别器的训练，因此和NoGAN非常搭。
+
+## Once-for-All: Train One Network and Specialize it for Efficient Deployment
+
+OFA：只需要训练一个大网络，不同tradeoff属性的小网络可以从中获取。ICLR 2020
+
+- [tag] 网络剪裁
+- [tag] 网络加速
+- [tag] NAS
+- [tag] 3 stars
+
+> 20-12-12
+
+NAS是边训练边搜索，而且只能得到一个网络。本文提出的OFA，只需要训练一次。当训练完成后，我们直接从中获取子网络，作为所需网络，而无需再训练。最终，作者可以获得超过1e+19个子网络，每一个子网络的tradeoff都不尽相同。换句话说，作者分离了training和search。search阶段无需training。
+
+训练问题：训练目标是同时提高所有子网络的精度。然而子网络太多，全部考虑在计算上太复杂。而随机采样子网络，则会导致精度下降。本质难题在于：所有子网络是耦合的，牵一发而动全身。
+
+训练方法：
+
+- 网络是一个常用的块堆叠结构，分辨率不断降低，而通道数不断增加。降分辨率通过步长为2的卷积实现。
+- 例如，这是一个5个块的网络，每个块的层数可选2、3、4，每一层的宽度成长率和卷积核尺寸都有3种选择，那么大概就有$\left(9^2+9^3+9^4\right)^5 \approx 2e{+19}$个可选子网络。
+- 渐进收缩（progressive shrinking）。先训练大网络，再fine-tune小网络。如图3，首先在输入分辨率上可任选（elastic），然后依次变化kernel size、depth和width。每一次变动，本质上是扩大采样池，让更多子网络参与训练。
+- 注意，大网络和小网络的权值是包含关系，不是独立的。如图5，对于卷积核尺寸，7x7卷积核挖掉边缘，经过变换后就得到了5x5卷积核；对于深度，3层网络就是4层网络的前3层。如图6，首先计算每一个通道的L1范数，根据从大到小排列，然后3通道就是4通道的前3大通道。
+- 由于子网络仅仅是在预训练好的大网络上fine-tune，因此网络之间的扰动会比较小。如果从小到大训练，显然权值会很不准确且变化剧烈。
+- 训练仅考虑精度。
+
+![fig](../imgs/pd_201212_1.jpeg)
+
+![fig](../imgs/pd_201212_2.jpeg)
+
+搜索方法：
+
+- 选择16K个子网络，在10K验证集图片上测定精度和延迟，分别训练一个精度和延迟预测器。
+- 具体搜索方法为evolutionary search。
+- 根据附录A，精度预测器是一个3层FC，中间层有400个隐藏单元。网络的每一层的卷积核尺寸和宽度成长率被编码为one-hot向量，然后输入FC。效果还行吧，预测精度和实际精度的RMSE最好在0.21%，最差在15%以上。
+- 延迟预测器参见ProxylessNAS。实际上我认为，这不需要预测，而是直接可以计算的。然而不同硬件表现也不同，因此需要一个表。
+
+全文偏工程，但井井有条，而且实验充分让人信服。
