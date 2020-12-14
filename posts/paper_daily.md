@@ -24,6 +24,7 @@
   - [LIP: Local Importance-based Pooling](#lip-local-importance-based-pooling)
   - [GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium](#gans-trained-by-a-two-time-scale-update-rule-converge-to-a-local-nash-equilibrium)
   - [DeOldify](#deoldify)
+  - [ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware](#proxylessnas-direct-neural-architecture-search-on-target-task-and-hardware)
   - [Once-for-All: Train One Network and Specialize it for Efficient Deployment](#once-for-all-train-one-network-and-specialize-it-for-efficient-deployment)
 
 ## Learning Enriched Features for Real Image Restoration and Enhancement
@@ -694,6 +695,47 @@ TTUR：一个简单的GANs稳定收敛方法。本文还引入了Fréchet Incept
 
 而TTUR会强调鉴别器的训练，因此和NoGAN非常搭。
 
+## ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware
+
+ProxylessNAS：第一个考虑硬件latency的NAS；不会因为候选集增大而显存溢出。ICLR 2019
+
+- [tag] NAS
+- [tag] 3 stars
+
+> 20-12-14
+
+**问题**：NAS在性能和资源消耗上难以共同优化。对于可差分NAS，它们连续化表征网络结构，问题是显卡消耗随着网络子集扩增线性增加。对于使用proxy任务的NAS（例如只训练几个block），精度不佳。
+
+**目标**：解决可差分NAS的显存消耗问题，直接学习结构，无需使用proxy tasks。优化目标不仅有target task性能，还有在hardware上的延迟等。
+
+**解决1**：首先设置一个over-parameterized的超大网络，然后将NAS视为path-level pruning的过程。每一条path都有一个可学习参数，来决定其重要性。这样，训练过程中不需要任何meta-controller。
+
+**解决2**：仅考虑解决1，随着路径集越来越大，显存会爆炸。为解决该问题，在训练时，仅当前考虑路径会被激活，其他路径都被冻结。
+
+![fig](../imgs/pd_201214_1.jpeg)
+
+具体而言，训练是两步交替迭代的。
+
+- 先固定重要性指标（architecture parameter），迭代网络参数。此时（当前batch的）binary gate是随机生成的（概率即根据归一化的重要性指标），即不知道哪条路径会被训练（其他路径会被冻结）。
+- 再更新重要性指标。此时网络参数冻结。而重要性指标实际上并不在计算图里，是无法直接根据loss迭代的。以下细讲。
+- 重复以上过程。
+
+为了实现第二步，作者借鉴了BinaryConnect的方法。
+
+![fig](../imgs/pd_201214_2.jpeg)
+
+简单来说，就是将loss关于概率p的梯度，转换成了loss关于g的梯度。然而注意，这一项与N项输出都有关，因此需要存储N项的输出，显存需求仍然很高。
+
+为了解决这一问题，作者思考：如果某一个路径是最优的，那么该路径与其他路径两两比较也会是最优的。具体而言，作者每一次随机采样两条路径，计算式4。
+
+**解决3**：进一步考虑hardware的latency。由于该指标难以差分，因此作者将其连续化，并将其作为regularization loss进行优化。此外，作者还提供了一种强化学习方法来处理hardware指标。
+
+作者设计了一个latency预测网络。最终的latency就是每条路径的latency预测的加权平均。实际上，latency loss只与重要性指标相关：因为涉及到权重。latency loss不会影响网络参数。
+
+我的大致理解：例如文中提供了7种可选模块。首先，我们要训练latency预测器，输入是网络的一些关键参数，例如卷积核尺寸、输入尺寸、输出尺寸，输出gt就是该模块在某硬件上的latency。收敛以后就冻结。由于latency loss就定义为预测器输出乘以重要性指标，因此latency loss关于重要性指标的梯度就是预测器输出，物理意义就是latency。因此，latency越大，loss理论上越大（若预测网络训练得足够准确）。
+
+最终，latency loss要乘一个tradeoff系数$\lambda$，和性能loss相加。
+
 ## Once-for-All: Train One Network and Specialize it for Efficient Deployment
 
 OFA：只需要训练一个大网络，不同tradeoff属性的小网络可以从中获取。ICLR 2020
@@ -727,6 +769,6 @@ NAS是边训练边搜索，而且只能得到一个网络。本文提出的OFA�
 - 选择16K个子网络，在10K验证集图片上测定精度和延迟，分别训练一个精度和延迟预测器。
 - 具体搜索方法为evolutionary search。
 - 根据附录A，精度预测器是一个3层FC，中间层有400个隐藏单元。网络的每一层的卷积核尺寸和宽度成长率被编码为one-hot向量，然后输入FC。效果还行吧，预测精度和实际精度的RMSE最好在0.21%，最差在15%以上。
-- 延迟预测器参见ProxylessNAS。实际上我认为，这不需要预测，而是直接可以计算的。然而不同硬件表现也不同，因此需要一个表。
+- 延迟预测器参见ProxylessNAS。
 
 全文偏工程，但井井有条，而且实验充分让人信服。
