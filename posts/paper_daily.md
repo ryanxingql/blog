@@ -26,6 +26,7 @@
   - [DeOldify](#deoldify)
   - [ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware](#proxylessnas-direct-neural-architecture-search-on-target-task-and-hardware)
   - [Once-for-All: Train One Network and Specialize it for Efficient Deployment](#once-for-all-train-one-network-and-specialize-it-for-efficient-deployment)
+  - [Image Quality Assessment for Perceptual Image Restoration: A New Dataset, Benchmark and Metric](#image-quality-assessment-for-perceptual-image-restoration-a-new-dataset-benchmark-and-metric)
 
 ## Learning Enriched Features for Real Image Restoration and Enhancement
 
@@ -747,11 +748,11 @@ OFA：只需要训练一个大网络，不同tradeoff属性的小网络可以从
 
 > 20-12-12
 
-NAS是边训练边搜索，而且只能得到一个网络。本文提出的OFA，只需要训练一次。当训练完成后，我们直接从中获取子网络，作为所需网络，而无需再训练。最终，作者可以获得超过1e+19个子网络，每一个子网络的tradeoff都不尽相同。换句话说，作者分离了training和search。search阶段无需training。
+**目标**：NAS是边训练边搜索，而且只能得到一个网络。本文提出的OFA，只需要训练一次。当训练完成后，我们直接从中获取子网络，作为所需网络，而无需再训练。最终，作者可以获得超过1e+19个子网络，每一个子网络的tradeoff都不尽相同。换句话说，作者分离了training和search。search阶段无需training。
 
-训练问题：训练目标是同时提高所有子网络的精度。然而子网络太多，全部考虑在计算上太复杂。而随机采样子网络，则会导致精度下降。本质难题在于：所有子网络是耦合的，牵一发而动全身。
+**训练难题**：训练目标是同时提高所有子网络的精度。然而子网络太多，全部考虑在计算上太复杂。而随机采样子网络，则会导致精度下降。本质难题在于：所有子网络是耦合的，牵一发而动全身。
 
-训练方法：
+**训练方法**：
 
 - 网络是一个常用的块堆叠结构，分辨率不断降低，而通道数不断增加。降分辨率通过步长为2的卷积实现。
 - 例如，这是一个5个块的网络，每个块的层数可选2、3、4，每一层的宽度成长率和卷积核尺寸都有3种选择，那么大概就有$\left(9^2+9^3+9^4\right)^5 \approx 2e{+19}$个可选子网络。
@@ -764,7 +765,7 @@ NAS是边训练边搜索，而且只能得到一个网络。本文提出的OFA�
 
 ![fig](../imgs/pd_201212_2.jpeg)
 
-搜索方法：
+**搜索方法**：
 
 - 选择16K个子网络，在10K验证集图片上测定精度和延迟，分别训练一个精度和延迟预测器。
 - 具体搜索方法为evolutionary search。
@@ -772,3 +773,34 @@ NAS是边训练边搜索，而且只能得到一个网络。本文提出的OFA�
 - 延迟预测器参见ProxylessNAS。
 
 全文偏工程，但井井有条，而且实验充分让人信服。
+
+## Image Quality Assessment for Perceptual Image Restoration: A New Dataset, Benchmark and Metric
+
+PIPAL：评估用于IR的FR-IQA方法，特别是评估在GAN IR任务上的表现，并尝试改进。ECCV 2020
+
+- [tag] 图像质量评估
+- [tag] 建库
+- [tag] 3 stars
+
+> 20-12-14
+
+**问题1**：作者发现，现有的IQA方法，如PSNR、PI等指标，其结果与图像主观质量不完全一致。特别是无法公平地评估GAN IR方法，原因是无法分辨GAN生成的纹理以及真实的细节。
+
+**解决1**：首次建立了一个关于GAN的image restoration图像的库，称为Perceptual Image Processing ALgorithms（PIPAL）。库中包含1.13 million个主观评价结果，基于可靠的Elo system。
+
+**建库方法**：选择纹理丰富的patch，用40种失真予以降质。失真类型见表10，其中一些是降质程度较轻的通用降质方法；其余是相关IR方法中，先降质，然后SR或去噪。增强通常会产生新的噪声，例如GAN的噪声，因此先降质后增强也算一种失真类型。
+
+**Elo system**：一种可拓展、可靠的基于概率的打分机制。作为对比：五分制容易引入bias；两两比较打分的工作量非常大，而且无法输出MOS分。具体参见论文第六页。
+
+**发现**：LPIPS等指标比PSNR和PI指标更适用于评估IR方法，特别是GAN方法。
+
+**实验结果**：
+
+- 相关性最高的指标PieAPP，也仅达到0.7左右。当然这是在PIPAL库上的结果。
+- 不同指标在不同失真上表现不同。但评价GAN SR结果时，CC不约而同都很低，几乎不高于0.5；并且PSNR结果特别低（要注意是失真较轻微的情况下）。
+- LPIPS、PieAPP和DISTS表现较好。NIQE和PI表现次之。
+- ESRGAN在MOS和LPIPS上表现最出色，但在PSNR、SSIM、PI、Ma和NIQE上表现糟糕。
+
+**问题2**：现有IQA方法对空域的misalignment容错率低。但实验不严谨，大部分是说理。有一定道理，例如人对misalignment不敏感（只要shape不变，位置变化难以察觉），但FR-IQA方法对此敏感。
+
+**解决2**：先用L2池化代替原本的池化层；然后，提出不仅仅是点对点评估，而是点对邻域评估。具体略，参见论文。
