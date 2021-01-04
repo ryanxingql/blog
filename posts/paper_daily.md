@@ -832,4 +832,4 @@ unit的kernel element是一个gain matrix，包含几个gain vectors。
 通过对两个vector插值，可以连续变化率失真性能。
 
 类似JPEG，为了实现不同的压缩比，JPEG内置了一个table，在不同压缩比下对权重进行不同的加权。
-同理，本文也提供了这样的table，但是是可学习的。
+同理，本文也提供了这样的table。不同的是：1，本文的matrix可学习；2，本文的matrix实际上是一组权值向量；实验中设为6组，即在6中lambda下训练得到（训练时随机抽取一列）。
