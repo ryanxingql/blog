@@ -27,6 +27,7 @@
   - [ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware](#proxylessnas-direct-neural-architecture-search-on-target-task-and-hardware)
   - [Once-for-All: Train One Network and Specialize it for Efficient Deployment](#once-for-all-train-one-network-and-specialize-it-for-efficient-deployment)
   - [Image Quality Assessment for Perceptual Image Restoration: A New Dataset, Benchmark and Metric](#image-quality-assessment-for-perceptual-image-restoration-a-new-dataset-benchmark-and-metric)
+  - [G-VAE: A Continuously Variable Rate Deep Image Compression Framework](#g-vae-a-continuously-variable-rate-deep-image-compression-framework)
 
 ## Learning Enriched Features for Real Image Restoration and Enhancement
 
@@ -804,3 +805,31 @@ PIPAL：评估用于IR的FR-IQA方法，特别是评估在GAN IR任务上的表�
 **问题2**：现有IQA方法对空域的misalignment容错率低。但实验不严谨，大部分是说理。有一定道理，例如人对misalignment不敏感（只要shape不变，位置变化难以察觉），但FR-IQA方法对此敏感。
 
 **解决2**：先用L2池化代替原本的池化层；然后，提出不仅仅是点对点评估，而是点对邻域评估。具体略，参见论文。
+
+## G-VAE: A Continuously Variable Rate Deep Image Compression Framework
+
+Gained VAE：学习JPEG的量化系数table，通过学习一对量化权值矩阵，实现单网络-多率失真性能。
+
+在encoder末端和decoder前端加一对gain units，貌似是一对权值矩阵。每一个权值列向量代表对通道的线性组合权重，是在某特定lambda下训练得到的。
+因此，不同lambda对应不同列向量，因此该矩阵涵盖了大部分率失真情况。
+通过对两个列向量插值，可以实现率失真性能的连续过渡。
+
+![fig1](../imgs/pd_210104_1.jpeg)
+
+- [tag] 图像压缩
+- [tag] 率失真控制
+- [tag] JPEG
+- [tag] 3 stars
+
+> 21-1-4
+
+我们希望只训练一个压缩网络，具有多种率失真性能。然而，现有方法都会降低性能。why？
+
+本文加入了一对gain和inverse gain unit。
+unit的kernel element是一个gain matrix，包含几个gain vectors。
+每个gain vector对应一个率失真设置（例如训练时的lambda）。
+联合优化。
+通过对两个vector插值，可以连续变化率失真性能。
+
+类似JPEG，为了实现不同的压缩比，JPEG内置了一个table，在不同压缩比下对权重进行不同的加权。
+同理，本文也提供了这样的table，但是是可学习的。
