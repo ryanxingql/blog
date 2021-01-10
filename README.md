@@ -11,7 +11,7 @@ Feel free to contact: ryanxingql@gmail.com.
 
 ## Publications and Contributions
 
-- [ ] 主笔章节：图像恢复与增强
+- [ ] 主笔章节：图像增强与复原
 
 - [ ] Resource-Efficient Blind Quality Enhancement on Compressed Images (RBQE, ECCV 2020)
 
