@@ -1,11 +1,11 @@
 # UNICODE
 
 - [UNICODE](#unicode)
-  - [Box Drawing](#box-drawing)
 
-最常用的是UTF-8，是一种针对Unicode的可变长度字符编码。
+最常用的是UTF-8，是一种针对UNICODE的可变长度字符编码。
 
-## Box Drawing
+<details>
+<summary><b>BOX DRAWING</b></summary>
 
 [参考](https://www.fuhaoku.net/block/Box_Drawing)
 
@@ -27,3 +27,5 @@ Dataset
 └──folder3
    └──item3.1
 ```
+
+</details>

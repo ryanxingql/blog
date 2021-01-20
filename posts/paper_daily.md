@@ -1,35 +1,9 @@
 # PAPER DAILY
 
 - [PAPER DAILY](#paper-daily)
-  - [Learning Enriched Features for Real Image Restoration and Enhancement](#learning-enriched-features-for-real-image-restoration-and-enhancement)
-  - [BBN: Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition](#bbn-bilateral-branch-network-with-cumulative-learning-for-long-tailed-visual-recognition)
-  - [SRFlow: Learning the Super-Resolution Space with Normalizing Flow](#srflow-learning-the-super-resolution-space-with-normalizing-flow)
-  - [Multi-level Wavelet-based Generative Adversarial Network for Perceptual Quality Enhancement of Compressed Video](#multi-level-wavelet-based-generative-adversarial-network-for-perceptual-quality-enhancement-of-compressed-video)
-  - [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](#photo-realistic-single-image-super-resolution-using-a-generative-adversarial-network)
-  - [ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks](#esrgan-enhanced-super-resolution-generative-adversarial-networks)
-  - [Pixel-Adaptive Convolutional Neural Networks](#pixel-adaptive-convolutional-neural-networks)
-  - [Drop an Octave: Reducing Spatial Redundancy in Convolutional Neural Networks with Octave Convolution](#drop-an-octave-reducing-spatial-redundancy-in-convolutional-neural-networks-with-octave-convolution)
-  - [Enhanced Image Decoding via Edge-Preserving Generative Adversarial Networks](#enhanced-image-decoding-via-edge-preserving-generative-adversarial-networks)
-  - [Making a ‘Completely Blind’ Image Quality Analyzer](#making-a-completely-blind-image-quality-analyzer)
-  - [Learning a No-Reference Quality Metric for Single-Image Super-Resolution](#learning-a-no-reference-quality-metric-for-single-image-super-resolution)
-  - [The Unreasonable Effectiveness of Deep Features as a Perceptual Metric](#the-unreasonable-effectiveness-of-deep-features-as-a-perceptual-metric)
-  - [The 2018 PIRM Challenge on Perceptual Image Super-Resolution](#the-2018-pirm-challenge-on-perceptual-image-super-resolution)
-  - [The Contextual Loss for Image Transformation with Non-Aligned Data](#the-contextual-loss-for-image-transformation-with-non-aligned-data)
-  - [HiFaceGAN: Face Renovation via Collaborative Suppression and Replenishment](#hifacegan-face-renovation-via-collaborative-suppression-and-replenishment)
-  - [Video Multi-method Assessment Fusion](#video-multi-method-assessment-fusion)
-  - [Image-To-Image Translation With Conditional Adversarial Networks](#image-to-image-translation-with-conditional-adversarial-networks)
-  - [High-Resolution Image Synthesis and Semantic Manipulation With Conditional GANs](#high-resolution-image-synthesis-and-semantic-manipulation-with-conditional-gans)
-  - [Semantic Image Synthesis with Spatially-Adaptive Normalization](#semantic-image-synthesis-with-spatially-adaptive-normalization)
-  - [Reconstructing the Noise Manifold for Image Denoising](#reconstructing-the-noise-manifold-for-image-denoising)
-  - [LIP: Local Importance-based Pooling](#lip-local-importance-based-pooling)
-  - [GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium](#gans-trained-by-a-two-time-scale-update-rule-converge-to-a-local-nash-equilibrium)
-  - [DeOldify](#deoldify)
-  - [ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware](#proxylessnas-direct-neural-architecture-search-on-target-task-and-hardware)
-  - [Once-for-All: Train One Network and Specialize it for Efficient Deployment](#once-for-all-train-one-network-and-specialize-it-for-efficient-deployment)
-  - [Image Quality Assessment for Perceptual Image Restoration: A New Dataset, Benchmark and Metric](#image-quality-assessment-for-perceptual-image-restoration-a-new-dataset-benchmark-and-metric)
-  - [G-VAE: A Continuously Variable Rate Deep Image Compression Framework](#g-vae-a-continuously-variable-rate-deep-image-compression-framework)
 
-## Learning Enriched Features for Real Image Restoration and Enhancement
+<details>
+<summary><b>Learning Enriched Features for Real Image Restoration and Enhancement</b></summary>
 
 MIRNet：注意力、多尺度的集大成网络。开源完善。声称是图像恢复的SOTA。ECCV 2020
 
@@ -59,7 +33,10 @@ MIRNet：注意力、多尺度的集大成网络。开源完善。声称是图�
 
 总的来说就是集大成，设计没啥特别的，但效果好（我怀疑速度很慢）。
 
-## BBN: Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition
+</details>
+
+<details>
+<summary><b>BBN: Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition</b></summary>
 
 BBN：分开训练特征提取和分类器。长尾分类当年SOTA。CVPR 2020
 
@@ -87,7 +64,10 @@ BBN：分开训练特征提取和分类器。长尾分类当年SOTA。CVPR 2020
 
 注意特征提取模块的参数是共享的。
 
-## SRFlow: Learning the Super-Resolution Space with Normalizing Flow
+</details>
+
+<details>
+<summary><b>SRFlow: Learning the Super-Resolution Space with Normalizing Flow</b></summary>
 
 SRFlow：基于Flow的生成方法。训练稳定，单一损失，变换结果简单，可逆。ECCV 2020
 
@@ -109,7 +89,10 @@ SR问题是一个经典的病态问题，有很多可能的解。这一事实很
 
 从第三章开始的方法没有细看了。
 
-## Multi-level Wavelet-based Generative Adversarial Network for Perceptual Quality Enhancement of Compressed Video
+</details>
+
+<details>
+<summary><b>Multi-level Wavelet-based Generative Adversarial Network for Perceptual Quality Enhancement of Compressed Video</b></summary>
 
 MW-GAN：在小波域增强主观质量。ECCV 2020
 
@@ -142,7 +125,10 @@ loss由小波域重建loss、运动补偿loss和对抗loss组成。对抗loss是
 
 - 主观效果不明显，原因是去掉了perceptual loss。
 
-## Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network
+</details>
+
+<details>
+<summary><b>Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network</b></summary>
 
 SRGAN：第一个实现4倍升采样的细节恢复网络。CVPR 2017
 
@@ -190,7 +176,10 @@ $\phi$就是VGG参数。
 
 作者对比了content loss用MSE，VGG22和VGG54的结果，发现VGG54的MOS分表现最好。
 
-## ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks
+</details>
+
+<details>
+<summary><b>ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks</b></summary>
 
 ESRGAN：改进SRGAN的细节问题。ECCVW 2018
 
@@ -243,7 +232,10 @@ $$
 
 在训练阶段，我们先用L1 loss训练生成器。然后再用式3的组合loss训练整个GAN。
 
-## Pixel-Adaptive Convolutional Neural Networks
+</details>
+
+<details>
+<summary><b>Pixel-Adaptive Convolutional Neural Networks</b></summary>
 
 PAC：给卷积核乘以可学习的、spatially varying的权值。借鉴双边滤波器思想。CVPR 2019
 
@@ -295,7 +287,10 @@ i是卷积中心点。可见，卷积核W取值仅仅取决于相对位置差$p_
 - 当K恒等于1时，就是一般卷积；即不包含特殊的位置编码信息。
 - 当K恒等于1，W恒等于1/(s^2)时，就是平均池化。
 
-## Drop an Octave: Reducing Spatial Redundancy in Convolutional Neural Networks with Octave Convolution
+</details>
+
+<details>
+<summary><b>Drop an Octave: Reducing Spatial Redundancy in Convolutional Neural Networks with Octave Convolution</b></summary>
 
 OctConv：低频卷积的特征图（表示）是可压缩的，进而减小内存需求和计算量。ICCV 2019
 
@@ -320,7 +315,10 @@ OctConv：低频卷积的特征图（表示）是可压缩的，进而减小内�
 
 作者称还能提高准确率。这一点或许和感受野扩大有关：缩小的通道上做卷积，相当于空洞卷积。
 
-## Enhanced Image Decoding via Edge-Preserving Generative Adversarial Networks
+</details>
+
+<details>
+<summary><b>Enhanced Image Decoding via Edge-Preserving Generative Adversarial Networks</b></summary>
 
 EP-GAN：用GAN增强解码视频质量。ICME 2018
 
@@ -336,7 +334,10 @@ EP-GAN：用GAN增强解码视频质量。ICME 2018
 
 仅考虑了JPEG；指标为PSNR-B，PSNR和SSIM。
 
-## Making a ‘Completely Blind’ Image Quality Analyzer
+</details>
+
+<details>
+<summary><b>Making a ‘Completely Blind’ Image Quality Analyzer</b></summary>
 
 NIQE：通过衡量某些自然图像统计指标，给出图像的无参考质量评分。SPL 2012
 
@@ -371,7 +372,10 @@ NIQE首先构建了一套quality aware的feature，然后将它们用multivariat
 
 最终的NIQE，也即图像质量评分，就是两个MVG的距离，如式10。
 
-## Learning a No-Reference Quality Metric for Single-Image Super-Resolution
+</details>
+
+<details>
+<summary><b>Learning a No-Reference Quality Metric for Single-Image Super-Resolution</b></summary>
 
 Ma：早期无参考质量评估方法。CVIU 2016
 
@@ -388,7 +392,10 @@ Ma：早期无参考质量评估方法。CVIU 2016
 
 实测慢的一批。分数从0到10，越高越好。
 
-## The Unreasonable Effectiveness of Deep Features as a Perceptual Metric
+</details>
+
+<details>
+<summary><b>The Unreasonable Effectiveness of Deep Features as a Perceptual Metric</b></summary>
 
 LPIPS：深度网络普遍会生成类似的感知效果。感知loss可以在其他high-level任务上训练，效果都能远超low-level metrics。CVPR 2018
 
@@ -415,7 +422,10 @@ LPIPS：深度网络普遍会生成类似的感知效果。感知loss可以在�
 
 如图3，LPIPS会把所有layer的输出正则化，乘以权重W，然后取L2。还训练了一个小网络G，根据距离d，判断h（0或1，相似与否）。
 
-## The 2018 PIRM Challenge on Perceptual Image Super-Resolution
+</details>
+
+<details>
+<summary><b>The 2018 PIRM Challenge on Perceptual Image Super-Resolution</b></summary>
 
 PIRM：提出PI指标。ECCVW 2018
 
@@ -458,7 +468,10 @@ $$
 
 如图，LPIPS在整体上和MOS分正相关，但在高MOS段是负相关。
 
-## The Contextual Loss for Image Transformation with Non-Aligned Data
+</details>
+
+<details>
+<summary><b>The Contextual Loss for Image Transformation with Non-Aligned Data</b></summary>
 
 Contextual loss：风格迁移不存在pair data，如何训练GAN？进一步，如何实现特定区域的风格迁移，例如人脸？ECCV 2018
 
@@ -490,7 +503,10 @@ $$
 
 相似性越低，loss越大，因此取负对数即可，如式5。
 
-## HiFaceGAN: Face Renovation via Collaborative Suppression and Replenishment
+</details>
+
+<details>
+<summary><b>HiFaceGAN: Face Renovation via Collaborative Suppression and Replenishment</b></summary>
 
 HiFaceGAN：在SPADE基础上，针对恢复问题进行的改进。ACM 2020
 
@@ -518,7 +534,10 @@ HiFaceGAN：在SPADE基础上，针对恢复问题进行的改进。ACM 2020
 
 后记：自注意力是通过LIP方法建模的。不是本文的贡献。
 
-## Video Multi-method Assessment Fusion
+</details>
+
+<details>
+<summary><b>Video Multi-method Assessment Fusion</b></summary>
 
 [VMAF](https://netflixtechblog.com/toward-a-practical-perceptual-video-quality-metric-653f208b9652)：Netflix商用视频质量评估方法。源于2016，2020仍在维护
 
@@ -536,7 +555,10 @@ HiFaceGAN：在SPADE基础上，针对恢复问题进行的改进。ACM 2020
 
 有相当多的学者已经验证了VMAF的优越性：在4K，gaming等content上，VMAF和perceptual quality最为接近。VMAF甚至被用来决策最优编码策略。
 
-## Image-To-Image Translation With Conditional Adversarial Networks
+</details>
+
+<details>
+<summary><b>Image-To-Image Translation With Conditional Adversarial Networks</b></summary>
 
 pix2pix：提出结合L1 loss和GAN loss，使GAN在保真情况下具有一定创造性。可能是第一篇用GANs做图像转换的。CVPR 2017
 
@@ -558,7 +580,10 @@ conditional GANs是输入随机噪声z，同时输入图像x，通过改变噪�
 
 在网络设计上，生成器用的是UNet。这种信息传递结构对上色等任务非常重要。对于鉴别器，本文采用的是PatchGAN，即在patch上计算loss，再取平均，实验发现高频细节恢复效果更好。
 
-## High-Resolution Image Synthesis and Semantic Manipulation With Conditional GANs
+</details>
+
+<details>
+<summary><b>High-Resolution Image Synthesis and Semantic Manipulation With Conditional GANs</b></summary>
 
 pix2pixHD：生成高分辨率图像。CVPR 2018
 
@@ -579,7 +604,10 @@ pix2pixHD：生成高分辨率图像。CVPR 2018
 
 第三，用instance map而不是label，防止多个同类instance相邻导致map糊成一片。同时，instance map作为condition，可以使网络具有随机性，甚至可以编辑生成图像。
 
-## Semantic Image Synthesis with Spatially-Adaptive Normalization
+</details>
+
+<details>
+<summary><b>Semantic Image Synthesis with Spatially-Adaptive Normalization</b></summary>
 
 SPADE：同时控制style和semantic。CVPR 2019
 
@@ -613,7 +641,10 @@ SPADE：同时控制style和semantic。CVPR 2019
 
 loss和pix2pixHD一样，除了将L2改为hinge loss。实验发现每一项loss都很重要，少一个都不行。监督器用的也是pix2pixHD中的multi-scale discriminator。
 
-## Reconstructing the Noise Manifold for Image Denoising
+</details>
+
+<details>
+<summary><b>Reconstructing the Noise Manifold for Image Denoising</b></summary>
 
 迫使GAN学习和鉴别噪声流形。ECCV 2020
 
@@ -631,7 +662,10 @@ loss和pix2pixHD一样，除了将L2改为hinge loss。实验发现每一项loss
 
 有个问题：噪声和图像本身可能是耦合的。作者强调这种方法对object-independent友好。
 
-## LIP: Local Importance-based Pooling
+</details>
+
+<details>
+<summary><b>LIP: Local Importance-based Pooling</b></summary>
 
 LIP：加权池化，权重是可学习的。ICCV 2019
 
@@ -652,7 +686,10 @@ LIP：加权池化，权重是可学习的。ICCV 2019
 
 注意，由于是池化，因此将stride设为2，padding设为1，就可以将边长降为1/2了。
 
-## GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium
+</details>
+
+<details>
+<summary><b>GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium</b></summary>
 
 TTUR：一个简单的GANs稳定收敛方法。本文还引入了Fréchet Inception Distance（FID），一种比inception更好的GANs评估方法。NIPS 2017
 
@@ -669,7 +706,10 @@ TTUR：一个简单的GANs稳定收敛方法。本文还引入了Fréchet Incept
 
 主要观点：discriminator应该具有更大的学习率。即使generator在变化，只要其变化率足够小，那么discriminator仍然能准确感知，从而达到均衡；反之，generator剧烈变化会使得网络不断进入新的环境，从而使得discriminator难以收敛。
 
-## DeOldify
+</details>
+
+<details>
+<summary><b>DeOldify</b></summary>
 
 一个老黑白照片上色的深度学习项目，[[主页]](https://github.com/jantic/DeOldify)。2020仍在维护
 
@@ -697,7 +737,10 @@ TTUR：一个简单的GANs稳定收敛方法。本文还引入了Fréchet Incept
 
 而TTUR会强调鉴别器的训练，因此和NoGAN非常搭。
 
-## ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware
+</details>
+
+<details>
+<summary><b>ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware</b></summary>
 
 ProxylessNAS：第一个考虑硬件latency的NAS；不会因为候选集增大而显存溢出。ICLR 2019
 
@@ -738,7 +781,10 @@ ProxylessNAS：第一个考虑硬件latency的NAS；不会因为候选集增大�
 
 最终，latency loss要乘一个tradeoff系数$\lambda$，和性能loss相加。
 
-## Once-for-All: Train One Network and Specialize it for Efficient Deployment
+</details>
+
+<details>
+<summary><b>Once-for-All: Train One Network and Specialize it for Efficient Deployment</b></summary>
 
 OFA：只需要训练一个大网络，不同tradeoff属性的小网络可以从中获取。ICLR 2020
 
@@ -775,7 +821,10 @@ OFA：只需要训练一个大网络，不同tradeoff属性的小网络可以从
 
 全文偏工程，但井井有条，而且实验充分让人信服。
 
-## Image Quality Assessment for Perceptual Image Restoration: A New Dataset, Benchmark and Metric
+</details>
+
+<details>
+<summary><b>Image Quality Assessment for Perceptual Image Restoration: A New Dataset, Benchmark and Metric</b></summary>
 
 PIPAL：评估用于IR的FR-IQA方法，特别是评估在GAN IR任务上的表现，并尝试改进。ECCV 2020
 
@@ -806,7 +855,10 @@ PIPAL：评估用于IR的FR-IQA方法，特别是评估在GAN IR任务上的表�
 
 **解决2**：先用L2池化代替原本的池化层；然后，提出不仅仅是点对点评估，而是点对邻域评估。具体略，参见论文。
 
-## G-VAE: A Continuously Variable Rate Deep Image Compression Framework
+</details>
+
+<details>
+<summary><b>G-VAE: A Continuously Variable Rate Deep Image Compression Framework</b></summary>
 
 Gained VAE：学习JPEG的量化系数table，通过学习一对量化权值矩阵，实现单网络-多率失真性能。
 
@@ -833,3 +885,5 @@ unit的kernel element是一个gain matrix，包含几个gain vectors。
 
 类似JPEG，为了实现不同的压缩比，JPEG内置了一个table，在不同压缩比下对权重进行不同的加权。
 同理，本文也提供了这样的table。不同的是：1，本文的matrix可学习；2，本文的matrix实际上是一组权值向量；实验中设为6组，即在6中lambda下训练得到（训练时随机抽取一列）。
+
+</details>

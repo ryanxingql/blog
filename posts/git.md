@@ -7,7 +7,8 @@
   - [清空`commit`记录](#清空commit记录)
   - [其他](#其他)
 
-## 新机器初始化，生成密钥
+<details>
+<summary><b>机器初始化，生成密钥</b></summary>
 
 设置身份：
   
@@ -22,13 +23,16 @@ git config --global user.email xx@xx
 ssh-keygen -t rsa -C xx@xx
 ```
 
-把公钥提供给github：
+把公钥提供给GITHUB：
 
 - 找到`~\.ssh`下的公钥`id_rsa.pub`，打开，复制。
-- 放到github里。
+- 放到GITHUB里。
 - 否则，私人仓库没法clone。
 
-## 新仓库初始化，推送至远端
+</details>
+
+<details>
+<summary><b>仓库初始化，推送至远端</b></summary>
 
 ```bash
 echo "# gitzone" >> README.md
@@ -39,7 +43,10 @@ git remote add origin git@github.com:xxx/gitzone.git
 git push -u origin master
 ```
 
-## 免密登陆
+</details>
+
+<details>
+<summary><b>免密登陆</b></summary>
 
 如果经常访问一个地址，建议彼此之间保存公私钥。
 
@@ -72,7 +79,10 @@ cat hello.pub >> authorized_keys
 
 今后，直接`ssh xxx`，就可以免密登录啦！
 
-## 清空`commit`记录
+</details>
+
+<details>
+<summary><b>清空commit记录</b></summary>
 
 [[ref]](https://stackoverflow.com/questions/13716658/how-to-delete-all-commit-history-in-github)
 
@@ -92,7 +102,18 @@ git push -f origin master
 
 注意：如果想清空仓库，要先删除文件、`add`、`commit`，然后创建一个新文件，例如`README.md`，再执行上述操作。否则第二步`git add -A`将为空，`lastest_branch`将不存在，倒数第二步将会报错。
 
-## 其他
+</details>
 
-- 只克隆最新的commit：`git clone --depth=1 url`
-- 删除对应的远程仓库地址：`git remote remove origin`
+<details>
+<summary><b>只克隆最新的commit</b></summary>
+
+`git clone --depth=1 url`
+
+</details>
+
+<details>
+<summary><b>删除对应的远程仓库地址</b></summary>
+
+`git remote remove origin`
+
+</details>

@@ -1,77 +1,52 @@
 # VSCODE
 
 - [VSCODE](#vscode)
-  - [基础](#基础)
-  - [插件](#插件)
-  - [问题解决](#问题解决)
-  - [特殊需求](#特殊需求)
-    - [导出含中文的Jupyter Notebook为PDF](#导出含中文的jupyter-notebook为pdf)
-    - [导出markdown为PDF](#导出markdown为pdf)
-  - [安装和推荐](#安装和推荐)
 
-## 基础
+<details>
+<summary><b>快捷键</b></summary>
 
-> 打开命令行
+- 打开命令行：F1，或`shift + ctrl + p`
+- 打开终端：`` ctrl + ` ``
+- 双击标签为打开至新窗口；单击为覆盖。
 
-F1，或`shift + ctrl + p`
+</details>
 
-> 新建页
-
-双击打开。单击会覆盖。
-
-## 插件
-
-> Remote-SSH
+<details>
+<summary><b>REMOTE-SSH</b></summary>
 
 [[ref]](https://zhuanlan.zhihu.com/p/64849549)
 
-> Jupyter
+</details>
 
-打开Python脚本，打开命令行，输入jupyter可见。
+<details>
+<summary><b>JUPYTER</b></summary>
+
+打开PYTHON脚本，打开命令行，输入JUPYTER可见。
 
 或在代码前后加上`#%%`，可进入交互模式，再run cell。
 
-## 问题解决
+</details>
 
-> Conda和PowerShell报错
+<details>
+<summary><b>CONDA和POWERSHELL报错</b></summary>
 
 - [[ref1]](https://blog.csdn.net/chencaw/article/details/89035571)
 - [[ref2]](https://blog.csdn.net/cskywit/article/details/99202520)
 
-> matplotlib没有显示
+</details>
+
+<details>
+<summary><b>MATPLOTLIB没有显示</b></summary>
 
 用交互模式。在代码前后加上`#%%`，可run cell。
 
-## 特殊需求
+</details>
 
-### 导出含中文的Jupyter Notebook为PDF
+<details>
+<summary><b>导出含中文的JUPYTER NOTEBOOK为PDF</b></summary>
 
 先转换为TEX文件：在IPYNB文件路径下，运行：`jupyter nbconvert --to latex xxx.ipynb`。
 
 得到TEX文件后，用VSCODE打开，添加一行`\usepackage[UTF8]{ctex}`，就可以编译出正常含中文的PDF了。
 
-### 导出markdown为PDF
-
-> Pandoc
-
-- 下载[Pandoc](https://github.com/jgm/pandoc/releases)。
-- 打开VSCode的`setting -> Extensions -> Pandoc Option Configuration -> Pdf Opt String`
-- 填：`-N -s --toc --pdf-engine=xelatex -V CJKmainfont="Microsoft YaHei" --highlight-style zenburn -V geometry:margin=2.5cm`
-  - 具体含义参见：[[ref]](https://jdhao.github.io/2017/12/10/pandoc-markdown-with-chinese/)
-- 命令行输入`pandoc`，选择`pdf`，等待自动弹出PDF。
-- 由于Pandoc自身的问题，对markdown有许多特殊要求，否则会出现格式错误。
-  - 每个list、block quote、table前必须空一行。
-  - 多行内容，必须在行末增加`line break`，即两个空格。
-  - 如果内容较少，图片会被挤到最后一页。
-
-> Markdown Preview Enhanced插件
-
-右键预览，chrome打开，直接打印。
-
-## 安装和推荐
-
-- LaTeX Workshop
-- Markdown All in One
-- Markdown Preview Enhanced
-- Rainbow CSV
-- Remote-SSH
+</details>

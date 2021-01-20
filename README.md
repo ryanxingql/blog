@@ -39,11 +39,9 @@ Feel free to contact: ryanxingql@gmail.com.
 
 - [x] [BAT](https://github.com/RyanXingQL/Blog/blob/master/posts/bat.md)
 
-- [x] [CUDA](https://github.com/RyanXingQL/Blog/blob/master/posts/cuda.md)
+- [x] [CUDA AND NVIDIA](https://github.com/RyanXingQL/Blog/blob/master/posts/cuda_and_nvidia.md)
 
 - [x] [DEEP LEARNING](https://github.com/RyanXingQL/Blog/blob/master/posts/deep_learning.md)
-
-- [x] [ENGLISH](https://github.com/RyanXingQL/Blog/blob/master/posts/english.md)
 
 - [x] [FFMPEG](https://github.com/RyanXingQL/Blog/blob/master/posts/ffmpeg.md)
 
@@ -57,8 +55,6 @@ Feel free to contact: ryanxingql@gmail.com.
 
 - [x] [NUMERICAL OPTIMIZATION](https://gist.github.com/RyanXingQL/82f9179287edb8a11e18f60e2e4f18a3)
 
-- [x] [NVIDIA](https://github.com/RyanXingQL/Blog/blob/master/posts/nvidia.md)
-
 - [x] [OFFICE](https://github.com/RyanXingQL/Blog/blob/master/posts/office.md)
 
 - [x] [PYCHARM](https://github.com/RyanXingQL/Blog/blob/master/posts/pycharm.md)
@@ -69,8 +65,6 @@ Feel free to contact: ryanxingql@gmail.com.
 
 - [x] [READING](https://github.com/RyanXingQL/Blog/blob/master/posts/reading.md)
 
-- [x] [SHORTCUTS](https://github.com/RyanXingQL/Blog/blob/master/posts/shortcuts.md)
-
 - [x] [TENSORFLOW](https://github.com/RyanXingQL/Blog/blob/master/posts/tensorflow.md)
 
 - [x] [TEX](https://github.com/RyanXingQL/Blog/blob/master/posts/tex.md)
@@ -80,5 +74,7 @@ Feel free to contact: ryanxingql@gmail.com.
 - [x] [UNICODE](https://github.com/RyanXingQL/Blog/blob/master/posts/unicode.md)
 
 - [x] [VSCODE](https://github.com/RyanXingQL/Blog/blob/master/posts/vscode.md)
+
+- [x] [WINDOWS](https://github.com/RyanXingQL/Blog/blob/master/posts/windows.md)
 
 - [x] [ZOTERO](https://github.com/RyanXingQL/Blog/blob/master/posts/zotero.md)

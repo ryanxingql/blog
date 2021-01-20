@@ -1,19 +1,76 @@
 # PYTORCH
 
 - [PYTORCH](#pytorch)
-  - [常用函数解析](#常用函数解析)
-    - [torch.mean](#torchmean)
-  - [安装PT](#安装pt)
+  - [安装](#安装)
+  - [函数和包](#函数和包)
   - [多卡](#多卡)
-    - [DDP例程](#ddp例程)
-      - [NCCL后端+launch启动+DistributedSampler](#nccl后端launch启动distributedsampler)
-      - [Gloo后端+MP启动+模型读写方式](#gloo后端mp启动模型读写方式)
-    - [原理](#原理)
-  - [Visdom](#visdom)
 
-## 常用函数解析
+## 安装
 
-### torch.mean
+<details>
+<summary><b>展开详情</b></summary>
+
+根据CUDA教程，安装好系统推荐的NVIDIA驱动时，CUDA就自动安装好了。注意，`nvidia-smi`不准确，`nvcc -V`才是准确的CUDA版本。
+
+确定所需PT版本。在官网查看兼容的CUDA版本。若不满足，可重装CUDA及对应的最高版本NVIDIA驱动。
+
+按照[官网](https://pytorch.org/get-started/locally/)提供的完整指令，用pip安装。例：
+  
+```bash
+pip install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+可以指定CUDA版本，推荐。
+
+或用CONDA安装（不推荐）：
+
+```bash
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+condo create -n pt python=3.7
+conda activate pt
+```
+
+</details>
+
+## 函数和包
+
+<details>
+<summary><b>VISDOM【不推荐】</b></summary>
+
+> 安装
+
+`python -m pip install visdom`
+
+> 命令
+
+```python
+from visdom import Visdom
+
+viz = Visdom()
+viz.line([x], [y], win='loss', opts=dict(title='loss vs. iter, legend=['loss']), update='append')
+viz.image(img, win='a image')
+```
+
+> 开启服务
+
+`python -m visdom.server`
+
+> 查看远程服务器的visdom
+
+转接远程服务器的端口：
+
+```bash
+ssh 18097:127.0.0.1:8097 x@xxx.xx.xx.xx
+```
+
+其中8097是服务器端口，18097是本机端口。
+
+然后查看`http://localhost:18097`即可。
+
+</details>
+
+<details>
+<summary><b>torch.mean</b></summary>
 
 `torch.mean(input, dim, keepdim=False)`
 
@@ -37,35 +94,21 @@ tensor([[-0.0163],
 
 例子为h=4，w=4的矩阵。当`dim=0`时，意思是将h=4缩减为1，因此是将对应w（相同h）的值求平均（纵向求平均）。当`dim=1`时，意思是将w=4缩减为1，因此是将对应h（相同w）的值求平均（横向求平均）。
 
-## 安装PT
-
-根据CUDA教程，安装好系统推荐的NVIDIA驱动时，CUDA就自动安装好了。注意，`nvidia-smi`不准确，`nvcc -V`才是准确的CUDA版本。
-
-确定所需PT版本。在官网查看兼容的CUDA版本。若不满足，可重装CUDA及对应的最高版本NVIDIA驱动。
-
-按照[官网](https://pytorch.org/get-started/locally/)提供的完整指令，用pip安装。例：
-  
-```bash
-pip install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
-```
-
-可以指定CUDA版本，推荐。
-
-或用CONDA安装（不推荐）：
-
-```bash
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
-condo create -n pt python=3.7
-conda activate pt
-```
+</details>
 
 ## 多卡
 
-### DDP例程
+</details>
+
+<details>
+<summary><b>DDP例程</b></summary>
 
 各种后端对比：[[PT官网]](https://pytorch.org/docs/stable/distributed.html)
 
-#### NCCL后端+launch启动+DistributedSampler
+</details>
+
+<details>
+<summary><b>NCCL后端 + launch启动 + DistributedSampler</b></summary>
 
 1. NCCL：由NVIDIA提供，不支持CPU，GPU支持极佳。推荐。
 2. launch：使用`torch.distributed.launch`启动DDP模式，启动命令略复杂。
@@ -173,7 +216,10 @@ Model 1, input size: torch.Size([15, 5]), output size: torch.Size([15, 2])
 
 PT自动将线程数设为了1。而我通过`nproc`或`htop`发现我有12个核心，除以进程数2，得到6线程/进程。因此我手动设`num_threads`为6。
 
-#### Gloo后端+MP启动+模型读写方式
+</details>
+
+<details>
+<summary><b>GLOO后端 + MP启动 + 模型读写方式</b></summary>
 
 1. Gloo：PT原生，CPU支持完美，GPU支持一般。
 2. MP：自动分配进程，执行命令更简单。适合给其他人分享代码。
@@ -319,7 +365,10 @@ Running DDP checkpoint example on rank 1.
 Running DDP checkpoint example on rank 0.
 ```
 
-### 原理
+</details>
+
+<details>
+<summary><b>原理</b></summary>
 
 有时，单卡显存不足，我们需要多卡才能跑得动；有时，虽然单卡显存足够，但单卡利用率饱和，多卡可以提高运算速度。
 
@@ -357,34 +406,4 @@ DDP原理：模型在DDP建立之初分发到各进程。每个进程输入各�
 2. 要合理分配各进程的负荷，让它们的完成时间接近。否则，要指定`init_process_group`中的timeout，避免超时。
 3. 只需要在一个进程中保存模型，但加载时要分发到所有进程。方法：指定好`map_location`参数。若未指定，模型会先导入到CPU，然后被分发到所有进程。此时，所有进程将共享同样的设备。
 
-## Visdom
-
-> 安装
-
-`python -m pip install visdom`
-
-> 命令
-
-```python
-from visdom import Visdom
-
-viz = Visdom()
-viz.line([x], [y], win='loss', opts=dict(title='loss vs. iter, legend=['loss']), update='append')
-viz.image(img, win='a image')
-```
-
-> 开启服务
-
-`python -m visdom.server`
-
-> 查看远程服务器的visdom
-
-转接远程服务器的端口：
-
-```bash
-ssh 18097:127.0.0.1:8097 x@xxx.xx.xx.xx
-```
-
-其中8097是服务器端口，18097是本机端口。
-
-然后查看`http://localhost:18097`即可。
+</details>

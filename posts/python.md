@@ -2,49 +2,14 @@
 
 - [PYTHON](#python)
   - [数据结构](#数据结构)
-    - [字符串](#字符串)
-      - [多行字符串](#多行字符串)
-      - [新式format](#新式format)
-      - [字符串拼接](#字符串拼接)
   - [输入输出](#输入输出)
-    - [一般文件](#一般文件)
-    - [CSV](#csv)
   - [画图](#画图)
-    - [基础操作](#基础操作)
-    - [堆积柱状图](#堆积柱状图)
-  - [numpy](#numpy)
-    - [random](#random)
-    - [reshape](#reshape)
-  - [其他常用模块和方法](#其他常用模块和方法)
-    - [argparse](#argparse)
-    - [输入列表](#输入列表)
-    - [assert](#assert)
-    - [multiprocessing](#multiprocessing)
-      - [Pool of workers](#pool-of-workers)
-      - [工作记录](#工作记录)
-      - [背景知识](#背景知识)
-    - [os](#os)
-      - [创建路径](#创建路径)
-      - [合成路径](#合成路径)
-      - [提取最高层文件夹名](#提取最高层文件夹名)
-      - [删除路径](#删除路径)
-      - [获取当前工作路径](#获取当前工作路径)
-    - [pathlib](#pathlib)
-    - [shutil](#shutil)
-    - [time](#time)
-    - [tqdm](#tqdm)
-      - [基础用法](#基础用法)
-      - [简化](#简化)
-      - [手动控制更新](#手动控制更新)
-      - [设置文字描述](#设置文字描述)
-      - [进一步设置属性（如宽度和描述）](#进一步设置属性如宽度和描述)
-      - [关闭对象](#关闭对象)
+  - [函数和包](#函数和包)
 
 ## 数据结构
 
-### 字符串
-
-#### 多行字符串
+<details>
+<summary><b>多行字符串</b></summary>
 
 ```python3
 print("""Hello!
@@ -61,7 +26,12 @@ Goodbye!
 
 尽量不要缩进，否则输出也有缩进。
 
-#### 新式format
+</details>
+
+<details>
+<summary><b>字符串format简单方法</b></summary>
+
+应该是3.8的新特性。
 
 ```python3
 name = 'Ryan'
@@ -72,7 +42,10 @@ print(f'My name is {name}.')
 My name is Ryan.
 ```
 
-#### 字符串拼接
+</details>
+
+<details>
+<summary><b>字符串拼接</b></summary>
 
 ```python3
 a = 'Hello ' + 'World!'
@@ -92,9 +65,12 @@ Hello World!
 
 注意，第二种写法没有逗号，否则就变成tuple了。
 
+</details>
+
 ## 输入输出
 
-### 一般文件
+<details>
+<summary><b>一般文件</b></summary>
 
 ```python3
 fp = open("xxx.txt", 'w')
@@ -107,7 +83,10 @@ fp.close()
 numpy提供了更快的二进制读写方式：
 `np.fromfile(fp, dtype=np.uint8, count=block_size)`
 
-### CSV
+</details>
+
+<details>
+<summary><b>CSV</b></summary>
 
 一般文件读取方法：
 
@@ -139,13 +118,16 @@ df = pd.read_csv(csv_file)
 saved_column = df.column_name  # you can also use df['column_name']
 ```
 
+</details>
+
 ## 画图
 
 [[official]](https://matplotlib.org/tutorials/introductory/pyplot.html)
 
 [[3D plot]](https://blog.csdn.net/u014636245/article/details/82799573)
 
-### 基础操作
+<details>
+<summary><b>基础操作</b></summary>
 
 ```python3
 import matplotlib.pyplot as plt
@@ -156,7 +138,10 @@ plt.ylabel('dMSE')
 plt.show()
 ```
 
-### 堆积柱状图
+</details>
+
+<details>
+<summary><b>堆积柱状图</b></summary>
 
 每次`bar`都建立在底层bar之上。
 
@@ -166,9 +151,14 @@ plt.bar(index_lst, new_y_lst, width=3, bottom=old_y_acc_lst)
 
 默认hold，直至`plt.show()`
 
-## numpy
+</details>
 
-### random
+## 函数和包
+
+<details>
+<summary><b>NUMPY</b></summary>
+
+> random
 
 ```python3
 np.random.choice(a_list)
@@ -176,17 +166,16 @@ np.random.choice(a_list)
 
 从列表或迭代器中随机选一个。
 
-### reshape
+> reshape
 
 `resize`没有返回值，`reshape`有。
 
-## 其他常用模块和方法
+</details>
 
-常用函数和方法，参见`utils`。
+<details>
+<summary><b>ARGPARSE</b></summary>
 
-### argparse
-
-常规用法：
+> 常规用法
 
 - 设置长+短命名，注意引用时为长命名。
 - 设置默认值，使用时可缺省，方便。
@@ -208,7 +197,7 @@ opts_dict = vars(opts)  # 转换成字典，方便log逐行打印
 log_fp.write(opts_dict['io_val'] + '\n')
 ```
 
-### 输入列表
+> 输入列表
 
 ```python3
 parser = argparse.ArgumentParser()
@@ -229,7 +218,10 @@ group1.add_argument("--option1")
 group2.add_argument("--option2")
 ```
 
-### assert
+</details>
+
+<details>
+<summary><b>ASSERT</b></summary>
 
 ```python3
 assert not op.exists(a_path), "ALREADY EXISTS!"
@@ -240,9 +232,12 @@ assert a in b, (f"{a} is not in "
     f"{b}!")
 ```
 
-### multiprocessing
+</details>
 
-#### Pool of workers
+<details>
+<summary><b>MULTIPROCESSING</b></summary>
+
+> Pool of Workers
 
 - `apply_async`：支持异步，非阻塞，返回结果后回调。
 - `map`：阻塞，直至结果返回。
@@ -282,13 +277,15 @@ end 3
 
 可以看到，同时只有2个进程并行。即当0和1执行后，循环阻塞，直至0结束后，2或3才开始执行。
 
-#### 工作记录
+> 代码记录
 
 曾经在`pool.apply_asygn(func)`外面写`pbar.update()`。
+
 后果就是，pbar速度飞快，然而`func()`却没有执行完。
-通过查看htop可知，`apply_sygn(func)`是创建了众多进程，并且不受外部代码影响（不堵塞），
-直到`pool.close()`。
-因此，`pbar.update()`最好放到`callback()`内部。否则进度是虚假的。写法：
+
+通过查看htop可知，`apply_sygn(func)`是创建了众多进程，并且不受外部代码影响（不堵塞），直到`pool.close()`。
+
+因此，`pbar.update()`最好放到`callback()`内部。否则进度是虚假的。
 
 ```python3
 ...
@@ -298,7 +295,7 @@ callback=lambda x :pbar.update(1)
 注意得有一个形参x。因为callback必须接收参数，哪怕是无用的。
 能放到`func()`里吗？貌似可以，但冲突很严重，速度慢。
 
-#### 背景知识
+> 背景知识
 
 [[进程 vs. 线程]](https://zhuanlan.zhihu.com/p/76343641)
 
@@ -324,11 +321,14 @@ callback=lambda x :pbar.update(1)
 显然，为了实现回调，我们需要将callback函数传递给func。
 回调函数使得功能剥离，更灵活。
 
-### os
+</details>
 
-> 推荐查看Python3自带的最新模块pathlib。
+<details>
+<summary><b>OS</b></summary>
 
-#### 创建路径
+也可以使用Python3自带的最新模块PATHLIB。
+
+> 创建路径
 
 判断路径是否存在，若不存在则创建：
 
@@ -337,32 +337,35 @@ if not os.exists(ADir):
     os.makedirs(ADir)
 ```
 
-#### 合成路径
+> 合成路径
 
 ```python3
 import os.path as op
 os.path.join("/home", "usrname")
 ```
 
-#### 提取最高层文件夹名
+> 提取最高层文件夹名
 
 ```python3
 os.path.basename("/home/usrname/xxx.yuv").split(".")[0]
 ```
 
-#### 删除路径
+> 删除路径
 
 ```python3
 os.removedirs(ADir)  # 只能删除空路径
 ```
 
-#### 获取当前工作路径
+> 获取当前工作路径
 
 ```python3
 print(os.getcwd())
 ```
 
-### pathlib
+</details>
+
+<details>
+<summary><b>PATHLIB</b></summary>
 
 > 和繁杂的`os.path`说拜拜。
 
@@ -387,19 +390,28 @@ str(a_path) -> 转变回正常字符串，可以执行`split`等操作
 a_path.rename('/foo')  --> 字符串或Path对象都可以
 ```
 
-### shutil
+</details>
+
+<details>
+<summary><b>SHUTIL</b></summary>
 
 ```python3
 shutil.rmtree(APath)  # 递归删除文件夹及文件
 ```
 
-### time
+</details>
+
+<details>
+<summary><b>TIME</b></summary>
 
 - `time.time()`：返回时间戳
 
-### tqdm
+</details>
 
-#### 基础用法
+<details>
+<summary><b>TQDM</b></summary>
+
+> 基础用法
 
 ```python3
 from tqdm import tqdm
@@ -408,7 +420,7 @@ for i in tqdm(range(1e3)):
     pass
 ```
 
-#### 简化
+> 简化
 
 ```python3
 from tqdm import trange
@@ -417,7 +429,7 @@ for i in trange(1e3):
     pass
 ```
 
-#### 手动控制更新
+> 手动控制更新
 
 ```python3
 from tqdm import tqdm
@@ -427,7 +439,7 @@ with tqdm(total=1e3) as pbar:
         pbar.update(10)  # 每次更新，进度+10
 ```
 
-#### 设置文字描述
+> 设置文字描述
 
 ```python3
 from tqdm import tqdm
@@ -437,7 +449,7 @@ for name in pbar:
     pbar.set_description("processing %s" % name)
 ```
 
-#### 进一步设置属性（如宽度和描述）
+> 进一步设置属性（如宽度和描述）
 
 ```python3
 # 可以避免太宽换行显示
@@ -452,6 +464,8 @@ with tqdm(
     pbar.update(accum_minute)
 ```
 
-#### 关闭对象
+> 关闭对象
 
 如果有多个pbar，一定要在每个pbar完成使命后`pbar.close()`，否则不换行。
+
+</details>

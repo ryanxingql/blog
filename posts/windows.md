@@ -1,12 +1,12 @@
-# SHORTCUTS
+# WINDOWS
 
-- [SHORTCUTS](#shortcuts)
+- [WINDOWS](#windows)
   - [触摸板操作](#触摸板操作)
   - [键盘操作](#键盘操作)
 
 ## 触摸板操作
 
-- 在Windows设置中可以快速学习。
+- 在WINDOWS设置中可以快速学习。
 - 鼠标右键：两根手指点击触摸板。
 - 多选：双击再拖动。
 - 查看消息：四指点击。
@@ -17,7 +17,7 @@
 
 ## 键盘操作
 
-- x1c背光：`fn+blank`
+- X1C背光：`fn+blank`
 - 多选：`shift + 方向键`
 - 关闭软件窗：`alt + F4`
 - 关闭页面：`ctrl + w`

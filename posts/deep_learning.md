@@ -2,22 +2,14 @@
 
 - [DEEP LEARNING](#deep-learning)
   - [Debug记录](#debug记录)
-    - [CUDA版本不对](#cuda版本不对)
-    - [网络不收敛](#网络不收敛)
-    - [数值计算结果怪异](#数值计算结果怪异)
-    - [DCNv2编译不通过](#dcnv2编译不通过)
   - [ToyExperiment](#toyexperiment)
-    - [SyncBatchNorm](#syncbatchnorm)
 
 ## Debug记录
 
-### CUDA版本不对
+<details>
+<summary><b>CUDA版本不对</b></summary>
 
-> 表现1
-
-提示`nvcc fatal`。
-
-解决：
+> 提示：`nvcc fatal`
 
 首先用`nvcc -V`查看，发现不是想要的10.1版本。注意，这和`nvidia-smi`查看的可能不一致，前者才是真实的。
 
@@ -30,11 +22,7 @@ export LD_LIBRARY_PATH="/usr/lcoal/cuda-10.1/lib64:$LD_LIBRARY_PATH"
 
 `source ~/.bashrc`即可。
 
-> 表现2
-
-提示`not compiled with GPU support`。
-
-解决：
+> 提示：`not compiled with GPU support`
 
 [[参考]](https://zhuanlan.zhihu.com/p/93278639)
 
@@ -44,42 +32,42 @@ export LD_LIBRARY_PATH="/usr/lcoal/cuda-10.1/lib64:$LD_LIBRARY_PATH"
 
 如果提示nvidia driver太老，安装支持当前CUDA的最新driver即可，不要轻易动CUDA。
 
-### 网络不收敛
+</details>
 
-> 表现
+<details>
+<summary><b>网络不收敛</b></summary>
 
-损失值一直非常大。
-
-解决：
+> 损失值一直非常大。
 
 - 最后一层不加激活函数。
 - 对于深层网路，residual很重要。
 
-### 数值计算结果怪异
+</details>
 
-> 表现
+<details>
+<summary><b>数值计算结果怪异</b></summary>
 
-自己写的PSNR计算函数，输入两幅图像后PSNR计算结果异常。
-
-解决：
+> 自己写的PSNR计算函数，输入两幅图像后PSNR计算结果异常。
 
 输入图像数据类型为`np.uint8`。自写程序未将数据类型转换为float，而是直接进行了计算。
 
 例如，在计算`100-200=-100`时，会得到`+156`，显然是不对的。
 
-### DCNv2编译不通过
+</details>
 
-> 表现
+<details>
+<summary><b>DCNv2编译不通过</b></summary>
 
-不兼容高版本pytorch。
+> 不兼容高版本pytorch。
 
-解决：
+[[ref]](https://github.com/open-mmlab/mmediting/issues/84)
 
-[[大神的解决方案]](https://github.com/open-mmlab/mmediting/issues/84)
+</details>
 
 ## ToyExperiment
 
-### SyncBatchNorm
+<details>
+<summary><b>SyncBatchNorm</b></summary>
 
 > 环境
 
@@ -143,3 +131,5 @@ for i in range(1000):
 ```
 
 未完成。
+
+</details>

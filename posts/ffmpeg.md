@@ -1,13 +1,18 @@
 # FFMPEG
 
 - [FFMPEG](#ffmpeg)
-  - [基础指令](#基础指令)
-  - [常用指令](#常用指令)
-  - [JPEG2000](#jpeg2000)
-  - [H265](#h265)
-  - [安装](#安装)
 
-## 基础指令
+<details>
+<summary><b>安装</b></summary>
+
+[[ref]](https://blog.csdn.net/u013314786/article/details/89682800)
+
+不需要编译，直接下载使用（没有sudo权限时特别方便）
+
+</details>
+
+<details>
+<summary><b>基础指令</b></summary>
 
 ```bash
 ffmpeg [global_options] {[input_file_options] -i input_url} ... {[output_file_options] output_url} ...
@@ -23,23 +28,30 @@ ffmpeg -i [输入文件名] [参数选项] -f [格式] [输出文件]
 
 还有很多很多，参考：[文档](https://ffmpeg.org/ffmpeg.html)
 
-## 常用指令
+</details>
 
-> y4m2yuv
+<details>
+<summary><b>Y4M TO YUV</b></summary>
 
 ```bash
 ffmpeg.exe -i test.y4m -vsync 0 test.yuv -y
 ```
 
-> yuv2png
+</details>
 
-只要前300帧。由于是yuv，指定分辨率。
+<details>
+<summary><b>YUV TO PNG</b></summary>
+
+只要前300帧。由于是YUV，指定分辨率。
 
 ```bash
 ffmpeg -i yuv_path -s 832x480 -vframes 300 -vsync 0 png_path/%4d.png -y
 ```
 
-> 计算PSNR
+</details>
+
+<details>
+<summary><b>计算PSNR</b></summary>
 
 逐帧计算两个视频的Y、U、V通道的PSNR，输出到stats_file指定文件。
 注意log中帧数从1开始。
@@ -48,11 +60,10 @@ ffmpeg -i yuv_path -s 832x480 -vframes 300 -vsync 0 png_path/%4d.png -y
 ffmpeg -s 832x480 -i video1.yuv -s 832x480 -i video2.yuv -lavfi psnr="stats_file=psnrlog.log" -f null -
 ```
 
-## JPEG2000
+</details>
 
-没成功。用pillow吧。
-
-## H265
+<details>
+<summary><b>H265</b></summary>
 
 [[H265文档]](https://trac.ffmpeg.org/wiki/Encode/H.265)
 
@@ -68,7 +79,4 @@ ffmpeg -i input -c:v libx265 -crf 37 -preset medium -tune film -y output.mp4
 - `-tune`：输入类型，例如电影，动画等。为了减小deblocking，根据x264手册，我们选择film输入。
 - `-y`: overwrite output files without asking
 
-## 安装
-
-- 不需要编译，直接下载使用（没有sudo权限时特别方便）
-  - [[ref]](https://blog.csdn.net/u013314786/article/details/89682800)
+</details>
