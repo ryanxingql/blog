@@ -2,11 +2,23 @@
 
 - [PYTHON](#python)
   - [数据结构](#数据结构)
+    - [字符串](#字符串)
   - [输入输出](#输入输出)
-  - [画图](#画图)
-  - [函数和包](#函数和包)
+  - [绘图](#绘图)
+  - [函数 & 包](#函数--包)
 
 ## 数据结构
+
+### 字符串
+
+<details>
+<summary><b>子字符串查找</b></summary>
+
+`str.find(sub,start,end)`
+
+返回第一个子字符串的初始索引；若没找到，返回`-1`。
+
+</details>
 
 <details>
 <summary><b>多行字符串</b></summary>
@@ -78,10 +90,16 @@ fp.write("haha\nhaha")
 fp.close()
 ```
 
-读一行：`a = fp.readline()`
+逐行读：
 
-numpy提供了更快的二进制读写方式：
-`np.fromfile(fp, dtype=np.uint8, count=block_size)`
+```python3
+while True:
+    line = fp.readline()
+    if not line:
+        break
+```
+
+numpy提供了更快的二进制读写方式：`np.fromfile(fp, dtype=np.uint8, count=block_size)`
 
 </details>
 
@@ -120,7 +138,7 @@ saved_column = df.column_name  # you can also use df['column_name']
 
 </details>
 
-## 画图
+## 绘图
 
 [[official]](https://matplotlib.org/tutorials/introductory/pyplot.html)
 
@@ -131,11 +149,16 @@ saved_column = df.column_name  # you can also use df['column_name']
 
 ```python3
 import matplotlib.pyplot as plt
+
 plt.plot(result)
+
 plt.title(f'dMSE, QP={qp}')
 plt.xlabel('TV')
 plt.ylabel('dMSE')
+
 plt.show()
+
+plt.savefig('demo.png')
 ```
 
 </details>
@@ -153,7 +176,7 @@ plt.bar(index_lst, new_y_lst, width=3, bottom=old_y_acc_lst)
 
 </details>
 
-## 函数和包
+## 函数 & 包
 
 <details>
 <summary><b>NUMPY</b></summary>

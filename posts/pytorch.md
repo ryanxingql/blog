@@ -2,7 +2,7 @@
 
 - [PYTORCH](#pytorch)
   - [安装](#安装)
-  - [函数和包](#函数和包)
+  - [函数 & 包](#函数--包)
   - [多卡](#多卡)
 
 ## 安装
@@ -32,7 +32,7 @@ conda activate pt
 
 </details>
 
-## 函数和包
+## 函数 & 包
 
 <details>
 <summary><b>VISDOM【不推荐】</b></summary>
