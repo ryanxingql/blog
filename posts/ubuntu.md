@@ -5,20 +5,24 @@
   - [软件](#软件)
   - [硬盘](#硬盘)
   - [系统](#系统)
-  - [安装](#安装)
+  - [安装18.04 LTS](#安装1804-lts)
   - [其他](#其他)
 
 ## 文件
 
-> 创建文件
+<details>
+<summary><b>命令行创建文件</b></summary>
 
 ```bash
 echo "hello world!" > README.md
 ```
 
+</details>
+
 ## 软件
 
-> frp+supervisor开机自启
+<details>
+<summary><b>frp + supervisor 进程维持 + 开机自启</b></summary>
 
 [[ref1]](https://cloud.tencent.com/developer/article/1694829)
 
@@ -30,24 +34,20 @@ echo "hello world!" > README.md
 
 编辑完配置文件后，应按ref2重启supervisor。
 
-> rar
+</details>
+
+<details>
+<summary><b>rar</b></summary>
 
 ```bash
 sudo apt install rar unrar
 unrar x rar_name.rar
 ```
 
-> yuv player
+</details>
 
-Ubuntu推荐使用vooya。
-
-备选：GH下载YUView.AppImage，赋权限后可以直接使用。
-
-> 视频播放器
-
-VLC
-
-> zip
+<details>
+<summary><b>zip</b></summary>
 
 不要用7z，linux不好用。
 
@@ -65,61 +65,10 @@ $ zip -s 0 split.zip --out unsplit.zip
 $ unzip unsplit.zip
 ```
 
-> 窗口置顶
+</details>
 
-`alt+space`，选择`always on top`
-
-> 更新软件
-
-```bash
-sudo apt-get update && apt-get upgrade
-```
-
-- 强烈建议更新为国内源：[[参考]](https://mirror.tuna.tsinghua.edu.cn/help/ubuntu/)
-- 个人服务器可以执行：`dist-upgrade`。这不仅会升级某些软件，还会卸载一些不需要的软件，比`upgrade`更智能。
-- 还可以跟一个`apt-get autoremove`，清理不再需要的依赖。
-
-大多数包管理系统是建立在包文件上的集合。包文件包括编译好的二进制文件，软件，安装脚本，依赖列表等。Ubuntu系统的包管理工具格式为`.deb`，常用工具为`apt`、`apt-cache`、`apt-get`等。[[ref]](https://www.sysgeek.cn/linux-package-management/)  
-
-Ubuntu的母版是Debian。而Debian使用一套名为Advanced Packaging Tool的工具管理包系统。Ubuntu有很多工具可以与APT进行交互，其中`apt`、`apt-cache`、`apt-get`等广受欢迎。`apt`是后者的大一统（虽然没有完全向下兼容），也是趋势。尽量使用`apt`，已经涵盖了`apt-get`的基础功能。[[ref]](https://www.sysgeek.cn/apt-vs-apt-get/)
-
-> 拼音
-
-推荐：搜狗输入法，有人维护啊！
-
-不推荐：
-
-- [ref](https://blog.csdn.net/wu10188/article/details/86540464)
-- 输入法切换：`win+space`
-- 中英切换：`shift`
-- bug：选中文字会删除文字，很痛苦。
-
-> pip3
-
-```bash
-sudo apt install python3-pip
-```
-
-> vscode
-
-在拼音模式下，无法鼠标多选。要win+空格切换到英文。
-
-> anaconda3
-
-记得`export PATH`
-
-> q2ray
-
-- 用snap安装：`sudo snap install qv2ray`
-- 手动下载v2ray内核，转移到`~/snap/qv2ray/2729/`，按要求解压为`vcore/`。检查核心设置，通过。注意不要sudo！！！
-- 在操作界面中将服务器导入。
-- Firefox中设为系统proxy即可。
-- Chrome要下载[SwitchOmega](https://github.com/FelisCatus/SwitchyOmega/releases)，记得改端口号。
-- 系统Network设置貌似不需要动。如果你选择q2ray的系统代理->禁用，network proxy会自动off，反之，会自动manual，甚至端口号都设置好了。
-
-[[教程]](https://medium.com/@eleveninstrangerthings/%E5%9C%A8ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85%E5%9B%BE%E5%BD%A2%E5%8C%96v2ray%E5%AE%A2%E6%88%B7%E7%AB%AFqv2ray-d0f690b7c519)
-
-> ss（失败）
+<details>
+<summary><b>ss【失败】</b></summary>
 
 - 先买了一个Vultr服务器：[url](https://www.vultrblog.com/vultr-ss.html)
 - 其中一键ss-server脚本用的是：[url](https://github.com/dlxg/shadowsocks_install)
@@ -135,9 +84,75 @@ sudo apt install python3-pip
     - 前端启动，有日志。
   - `sslocal -c xxx.xxx.xxx.xxx -p 2020 -k xxxx -b 127.0.0.1 -l 10808`
 
+</details>
+
+<details>
+<summary><b>q2ray</b></summary>
+
+- 用snap安装：`sudo snap install qv2ray`
+- 手动下载v2ray内核，转移到`~/snap/qv2ray/2729/`，按要求解压为`vcore/`。检查核心设置，通过。注意不要sudo！！！
+- 在操作界面中将服务器导入。
+- Firefox中设为系统proxy即可。
+- Chrome要下载[SwitchOmega](https://github.com/FelisCatus/SwitchyOmega/releases)，记得改端口号。
+- 系统Network设置貌似不需要动。如果你选择q2ray的系统代理->禁用，network proxy会自动off，反之，会自动manual，甚至端口号都设置好了。
+
+[[教程]](https://medium.com/@eleveninstrangerthings/%E5%9C%A8ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85%E5%9B%BE%E5%BD%A2%E5%8C%96v2ray%E5%AE%A2%E6%88%B7%E7%AB%AFqv2ray-d0f690b7c519)
+
+</details>
+
+<details>
+<summary><b>窗口置顶</b></summary>
+
+`alt+space`，选择`always on top`
+
+</details>
+
+<details>
+<summary><b>拼音</b></summary>
+
+推荐：搜狗输入法，因为有人维护！
+
+系统输入法（不推荐）：
+
+- [ref](https://blog.csdn.net/wu10188/article/details/86540464)
+- 输入法切换：`win+space`
+- 中英切换：`shift`
+- bug：选中文字会删除文字，很痛苦。
+
+</details>
+
+<details>
+<summary><b>软件更新</b></summary>
+
+```bash
+sudo apt-get update && apt-get upgrade
+```
+
+- 强烈建议更新为国内源：[[参考]](https://mirror.tuna.tsinghua.edu.cn/help/ubuntu/)
+- 个人服务器可以执行：`dist-upgrade`。这不仅会升级某些软件，还会卸载一些不需要的软件，比`upgrade`更智能。
+- 还可以跟一个`apt-get autoremove`，清理不再需要的依赖。
+
+大多数包管理系统是建立在包文件上的集合。包文件包括编译好的二进制文件，软件，安装脚本，依赖列表等。Ubuntu系统的包管理工具格式为`.deb`，常用工具为`apt`、`apt-cache`、`apt-get`等。[[ref]](https://www.sysgeek.cn/linux-package-management/)  
+
+Ubuntu的母版是Debian。而Debian使用一套名为Advanced Packaging Tool的工具管理包系统。Ubuntu有很多工具可以与APT进行交互，其中`apt`、`apt-cache`、`apt-get`等广受欢迎。`apt`是后者的大一统（虽然没有完全向下兼容），也是趋势。尽量使用`apt`，已经涵盖了`apt-get`的基础功能。[[ref]](https://www.sysgeek.cn/apt-vs-apt-get/)
+
+</details>
+
+<details>
+<summary><b>视频播放器</b></summary>
+
+一般格式推荐vlc。
+
+YUV格式推荐vooya。
+
+YUV备选方案：GH下载YUView.AppImage，赋权限后可以直接使用。
+
+</details>
+
 ## 硬盘
 
-> 挂载硬盘
+<details>
+<summary><b>挂载</b></summary>
 
 ```bash
 sudo fdisk -l # 查看磁盘对应位置，假设是/dev/sdd1
@@ -147,54 +162,76 @@ sudo mount /dev/sdd1 /media/usr/DiskName # 挂载到指定路径
 
 记住标识符特别重要，特别是当硬盘较多时。
 
-> 卸载硬盘
+</details>
+
+<details>
+<summary><b>卸载</b></summary>
 
 ```bash
 sudo umount /media/usr/DiskName
 ```
 
-> 自动挂载
+</details>
+
+<details>
+<summary><b>开机自动挂载</b></summary>
 
 在安装系统一节我们提到，我们保留了两块机械硬盘。我们希望开机自动挂载：
 
 1. [磁盘分区，并格式化、改为ext4格式、作为新硬盘挂载](https://blog.csdn.net/zhengchaooo/article/details/79500116)
 2. [配置开机自动挂载，并改为普通权限](https://blog.csdn.net/ls20121006/article/details/78665718)
 
+</details>
+
 ## 系统
 
-> 微软雅黑
+<details>
+<summary><b>安装微软雅黑字体</b></summary>
 
 [[tutorial]](https://www.cnblogs.com/feipeng8848/p/9649089.html)
 
-> 查询
+</details>
 
-查看每个用户内存占用：
+<details>
+<summary><b>查询各种信息</b></summary>
+
+每个用户内存占用：
 
 ```bash
 ps --no-headers -eo user,rss | awk '{arr[$1]+=$2}; END {for (i in arr) {print i,arr[i]}}' | sort -nk2
 ```
 
-- 当前目录下的文件信息（包括大小）：`ll`
-- 空间占用
-  - 当前文件夹占用空间：`du -h --max-depth=1`
-  - 各分区占用和剩余空间：`df -hl`
-  - 每个用户的home目录占用：`sudo du -sh /home/*`
-- 系统信息
-  - 内核/操作系统：`uname -a`
-  - CPU信息：`cat /proc/cpuinfo`
-- 网络
-  - ip：`ifconfig`
+当前目录下的文件信息（包括大小）：`ll`
+
+空间占用
+
+- 当前文件夹占用空间：`du -h --max-depth=1`
+- 各分区占用和剩余空间：`df -hl`
+- 每个用户的home目录占用：`sudo du -sh /home/*`
+
+系统信息
+
+- 内核/操作系统：`uname -a`
+- CPU信息：`cat /proc/cpuinfo`
+
+ip：`ifconfig`
 
 [[ref]](https://blog.csdn.net/bluishglc/article/details/41390589)
 
-> 编辑
+</details>
+
+<details>
+<summary><b>权限和密码</b></summary>
 
 - 添加用户：`sudo adduser xxx`
 - 添加至管理员：`sudo vim /etc/sudoers`
 - 改密码：`passwd username`
 - 改为短密码：必须先`sudo`
 
-> 限制内存
+</details>
+
+<details>
+<summary><b>限制用户内存</b></summary>
 
 [参考](https://unix.stackexchange.com/questions/34334/how-to-create-a-user-with-limited-ram-usage)
 
@@ -204,7 +241,12 @@ ps. 快速占领90%内存测试：
 stress-ng --vm-bytes $(awk '/MemAvailable/{printf "%d\n", $2 * 0.9;}' < /proc/meminfo)k --vm-keep -m 1
 ```
 
-## 安装
+</details>
+
+## 安装18.04 LTS
+
+<details>
+<summary><b>展开详情</b></summary>
 
 以Ubuntu 18.04 LTS为例。
 
@@ -240,13 +282,23 @@ stress-ng --vm-bytes $(awk '/MemAvailable/{printf "%d\n", $2 * 0.9;}' < /proc/me
 
 [[图片教程]](https://blog.csdn.net/baidu_36602427/article/details/86548203#commentBox)
 
+</details>
+
 ## 其他
 
-> 停止广播
+</details>
+
+<details>
+<summary><b>停止广播</b></summary>
 
 `mesg n`
 
-> 切换工作区
+</details>
+
+<details>
+<summary><b>切换工作区</b></summary>
 
 - `ctrl+alt+shift+上/下`
 - 按`win`进入工作区视图，鼠标中键滑动可顺滑查看所有工作区。
+
+</details>

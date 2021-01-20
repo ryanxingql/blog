@@ -1,7 +1,7 @@
 # BLOG
 
 - [BLOG](#blog)
-  - [Publications and Contributions](#publications-and-contributions)
+  - [Publications & Contributions](#publications--contributions)
   - [High Frequency Notes](#high-frequency-notes)
   - [Other Notes](#other-notes)
 
@@ -9,7 +9,7 @@ Welcome to my blog~ See also [my page](https://ryanxingql.github.io/)~
 
 Feel free to contact: ryanxingql@gmail.com.
 
-## Publications and Contributions
+## Publications & Contributions
 
 - [ ] 主笔章节：图像增强与复原
 
