@@ -1,11 +1,20 @@
 # GIT
 
 - [GIT](#git)
-  - [新机器初始化，生成密钥](#新机器初始化生成密钥)
-  - [新仓库初始化，推送至远端](#新仓库初始化推送至远端)
-  - [免密登陆](#免密登陆)
-  - [清空`commit`记录](#清空commit记录)
-  - [其他](#其他)
+
+<details>
+<summary><b>submodule</b></summary>
+
+可以调用一个仓库，作为当前仓库的一个子模块。例如：
+
+```bash
+# clone PythonUtils，存为utils
+git submodule add git@github.com:RyanXingQL/PythonUtils.git utils/
+```
+
+当前库只记录子仓库的当前版本，不会自动更新。更新子模块需要进入子模块手动更新。
+
+</details>
 
 <details>
 <summary><b>机器初始化，生成密钥</b></summary>

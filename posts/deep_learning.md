@@ -1,10 +1,10 @@
 # DEEP LEARNING
 
 - [DEEP LEARNING](#deep-learning)
-  - [Debug记录](#debug记录)
+  - [DEBUG记录](#debug记录)
   - [ToyExperiment](#toyexperiment)
 
-## Debug记录
+## DEBUG记录
 
 <details>
 <summary><b>CUDA版本不对</b></summary>
