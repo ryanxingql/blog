@@ -18,6 +18,25 @@ echo "hello world!" > README.md
 
 ## 软件
 
+> frp+supervisor开机自启
+
+[[ref1]](https://cloud.tencent.com/developer/article/1694829)
+
+[[ref2]](https://blog.csdn.net/yuwu00/article/details/108197283)
+
+配置可以写在`frpc.ini`里，此时command比较简单：`./ frpc -c xxx/frpc.ini`
+
+若提示无此命令，`sudo chmod +x frpc`，然后再执行：`./ frpc -c xxx/frpc.ini`
+
+编辑完配置文件后，应按ref2重启supervisor。
+
+> rar
+
+```bash
+sudo apt install rar unrar
+unrar x rar_name.rar
+```
+
 > yuv player
 
 Ubuntu推荐使用vooya。
