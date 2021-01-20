@@ -5,4 +5,9 @@
 
 ## 常用操作
 
-- 批量重命名：`ren *_a.png *_b.png`
+<details>
+<summary><b>批量重命名</b></summary>
+
+`ren *_a.png *_b.png`
+
+</details>
