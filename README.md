@@ -49,6 +49,8 @@ Feel free to contact: ryanxingql@gmail.com.
 
 - [x] [DEEP LEARNING](https://github.com/RyanXingQL/Blog/blob/master/posts/deep_learning.md)
 
+- [x] [ENGLISH](https://github.com/RyanXingQL/Blog/blob/master/posts/english.md)
+
 - [x] [FFMPEG](https://github.com/RyanXingQL/Blog/blob/master/posts/ffmpeg.md)
 
 - [x] [HEXO AND GITHUB PAGES](https://github.com/RyanXingQL/Blog/blob/master/posts/hexo_and_github_pages.md)

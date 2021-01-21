@@ -3,9 +3,10 @@
 - [PYTHON](#python)
   - [数据结构](#数据结构)
     - [字符串](#字符串)
+    - [PANDAS](#pandas)
   - [输入输出](#输入输出)
   - [绘图](#绘图)
-  - [函数 & 包](#函数--包)
+  - [其他函数 & 包](#其他函数--包)
 
 ## 数据结构
 
@@ -79,6 +80,20 @@ Hello World!
 
 </details>
 
+### PANDAS
+
+<details>
+<summary><b>DataFrame</b></summary>
+
+每一列都是数据，对应一个标签。用字典表示：
+
+```python3
+d = {'col1': [1, 2], 'col2': [3, 4]}
+df = pd.DataFrame(data=d)
+```
+
+</details>
+
 ## 输入输出
 
 <details>
@@ -140,12 +155,16 @@ saved_column = df.column_name  # you can also use df['column_name']
 
 ## 绘图
 
-[[official]](https://matplotlib.org/tutorials/introductory/pyplot.html)
+MATLAB很强大，但我更倾向于开源的Python。
 
-[[3D plot]](https://blog.csdn.net/u014636245/article/details/82799573)
+单就2D绘图而言，MATPLOTLIB可以胜任；但如果要绘制大量数据或3D图，推荐MATLAB或其他PYTHON库。
+
+PYTHON的绘图能力仰赖众多开源项目。
 
 <details>
-<summary><b>基础操作</b></summary>
+<summary><b>2D绘图：MATPLOTLIB</b></summary>
+
+[[official]](https://matplotlib.org/tutorials/introductory/pyplot.html)
 
 ```python3
 import matplotlib.pyplot as plt
@@ -159,6 +178,32 @@ plt.ylabel('dMSE')
 plt.show()
 
 plt.savefig('demo.png')
+
+plt.clf()  # 如果要画新图，需要清除当前内容，但保留窗口
+```
+
+</details>
+
+<details>
+<summary><b>2D统计数据可视化：SEABORN</b></summary>
+
+SEABORN擅长将2D统计数据可视化。由于其抽象性，使得作者可以更关注数据本身，而不是代码细节。
+
+SEABORN的基础是MATPLOTLIB，常用数据格式为PANDAS。
+
+[[概览]](https://seaborn.pydata.org/index.html)
+
+[[所有教程]](https://seaborn.pydata.org/tutorial.html)
+
+[[可接受的数据结构]](https://seaborn.pydata.org/tutorial/data_structure.html)
+
+```python3
+d = {'iter': val_logs['iter'], 'PSNR': val_logs['PSNR']}
+df = pd.DataFrame(data=d)
+
+sns_fig = sns.relplot(data=df, x='iter', y='PSNR')  # 绘制关系图
+
+sns_fig.savefig(output.png")  # 保存图像
 ```
 
 </details>
@@ -176,24 +221,14 @@ plt.bar(index_lst, new_y_lst, width=3, bottom=old_y_acc_lst)
 
 </details>
 
-## 函数 & 包
-
 <details>
-<summary><b>NUMPY</b></summary>
+<summary><b>3D Plot</b></summary>
 
-> random
-
-```python3
-np.random.choice(a_list)
-```
-
-从列表或迭代器中随机选一个。
-
-> reshape
-
-`resize`没有返回值，`reshape`有。
+[[ref]](https://blog.csdn.net/u014636245/article/details/82799573)
 
 </details>
+
+## 其他函数 & 包
 
 <details>
 <summary><b>ARGPARSE</b></summary>
@@ -343,6 +378,23 @@ callback=lambda x :pbar.update(1)
 回调函数（callback）：当func结束时，会调用回调函数；回调函数的参数即func的返回值。
 显然，为了实现回调，我们需要将callback函数传递给func。
 回调函数使得功能剥离，更灵活。
+
+</details>
+
+<details>
+<summary><b>NUMPY</b></summary>
+
+> random
+
+```python3
+np.random.choice(a_list)
+```
+
+从列表或迭代器中随机选一个。
+
+> reshape
+
+`resize`没有返回值，`reshape`有。
 
 </details>
 
