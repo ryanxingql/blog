@@ -3,6 +3,13 @@
 - [ENGLISH](#english)
 
 <details>
+<summary><b>program vs. programme</b></summary>
+
+In American English, program is the correct spelling. In Australian English, program and programme are both acceptable. In British English, programme is the preferred spelling, although program is often used in computing contexts.
+
+</details>
+
+<details>
 <summary><b>relationship vs. relation</b></summary>
 
 [[ref]](http://www.kwuntung.net/tthp/topics/vocab/relationship.htm)

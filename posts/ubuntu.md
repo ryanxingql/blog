@@ -198,6 +198,13 @@ YUV备选方案：GITHUB下载YUView.AppImage，赋权限后可以直接使用�
 ## 系统
 
 <details>
+<summary><b>脚本开机自启动</b></summary>
+
+[[ref]](https://blog.csdn.net/weixin_42454034/article/details/106564783)
+
+</details>
+
+<details>
 <summary><b>安装微软雅黑字体</b></summary>
 
 [[tutorial]](https://www.cnblogs.com/feipeng8848/p/9649089.html)
