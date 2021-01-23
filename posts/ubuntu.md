@@ -126,6 +126,15 @@ $ unzip unsplit.zip
 </details>
 
 <details>
+<summary><b>SUNLOGIN</b></summary>
+
+比Anydesk好用多了，还免费。
+
+[[安装指南]](https://www.jianshu.com/p/289001a00cb1)
+
+</details>
+
+<details>
 <summary><b>Q2RAY</b></summary>
 
 - 用snap安装：`sudo snap install qv2ray`
