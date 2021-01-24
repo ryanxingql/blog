@@ -9,9 +9,6 @@ MIRNet：注意力、多尺度的集大成网络。开源完善。声称是图�
 
 - [tag] 图像增强
 - [tag] 注意力
-- [tag] 3 stars
-
-> 20-10-15
 
 前人工作大多处理全分辨图像，或处理渐进的低分辨率表示。作者认为前者空域建模准确但语义建模不健壮，后者反之。本文希望在网络中保持高分辨率表示，同时从低分辨率表示中获取较好的语义信息。
 
@@ -36,15 +33,12 @@ MIRNet：注意力、多尺度的集大成网络。开源完善。声称是图�
 </details>
 
 <details>
-<summary><b>BBN: Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition</b></summary>
+<summary><b>:fire: BBN: Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition</b></summary>
 
 BBN：分开训练特征提取和分类器。长尾分类当年SOTA。CVPR 2020
 
 - [tag] 图像分类
 - [tag] 长尾分布
-- [tag] 4 stars
-
-> 20-10-17
 
 首先作者揭示，广泛用于长尾分布的重采样技术，虽然会增强分类器的学习，但在一定程度上会损害特征学习。
 
@@ -885,5 +879,12 @@ unit的kernel element是一个gain matrix，包含几个gain vectors。
 
 类似JPEG，为了实现不同的压缩比，JPEG内置了一个table，在不同压缩比下对权重进行不同的加权。
 同理，本文也提供了这样的table。不同的是：1，本文的matrix可学习；2，本文的matrix实际上是一组权值向量；实验中设为6组，即在6中lambda下训练得到（训练时随机抽取一列）。
+
+</details>
+
+<details>
+<summary><b>CVEGAN: A Perceptually-inspired GAN for Compressed Video Enhancement</b></summary>
+
+
 
 </details>

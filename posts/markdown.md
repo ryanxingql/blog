@@ -3,6 +3,15 @@
 - [MARKDOWN](#markdown)
 
 <details>
+<summary><b>MARKDOWN基础 + GITHUB支持</b></summary>
+
+[[ref]](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf)
+
+[[GITHUB支持的EMOJI]](https://www.webfx.com/tools/emoji-cheat-sheet/)
+
+</details>
+
+<details>
 <summary><b>TOC</b></summary>
 
 自动生成TOC列表（不是`[toc]`），github或纯文本编辑器可查看
