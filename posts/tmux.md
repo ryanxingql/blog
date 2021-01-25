@@ -23,6 +23,7 @@
 
 ## SESSION
 
+- 查看：`tmux ls`
 - 创建：`tmux new -s xxx`
 - 离开：`ctrl+b -> d`，detach。
 - 进入：`tmux a`，attach；或`tmux a -t xxx`
