@@ -78,30 +78,25 @@ echo "hello world!" > README.md
 </details>
 
 <details>
+<summary><b>Q2RAY</b></summary>
+
+- 用snap安装：`sudo snap install qv2ray`
+- 手动下载v2ray内核，转移到`~/snap/qv2ray/2729/`，按要求解压为`vcore/`。检查核心设置，通过。注意不要sudo！！！
+- 在操作界面中将服务器导入。
+- Firefox中设为系统proxy即可。
+- Chrome要下载[SwitchOmega](https://github.com/FelisCatus/SwitchyOmega/releases)，记得改端口号。
+- 系统Network设置貌似不需要动。如果你选择q2ray的系统代理->禁用，network proxy会自动off，反之，会自动manual，甚至端口号都设置好了。
+
+[[教程]](https://medium.com/@eleveninstrangerthings/%E5%9C%A8ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85%E5%9B%BE%E5%BD%A2%E5%8C%96v2ray%E5%AE%A2%E6%88%B7%E7%AB%AFqv2ray-d0f690b7c519)
+
+</details>
+
+<details>
 <summary><b>RAR</b></summary>
 
 ```bash
 sudo apt install rar unrar
 unrar x rar_name.rar
-```
-
-</details>
-
-<details>
-<summary><b>ZIP</b></summary>
-
-```bash
-# https://serverfault.com/questions/760337/how-to-zip-files-with-a-size-limit/760341
-
-# -r：对子文件递归
-# -s 10m：分卷，最大10MB
-# archive.zip：目的
-# directory：源
-$ zip -r -s 10m archive.zip directory/
-
-# 先合成，再解压
-$ zip -s 0 split.zip --out unsplit.zip
-$ unzip unsplit.zip
 ```
 
 </details>
@@ -135,16 +130,39 @@ $ unzip unsplit.zip
 </details>
 
 <details>
-<summary><b>Q2RAY</b></summary>
+<summary><b>TAR.GZ</b></summary>
 
-- 用snap安装：`sudo snap install qv2ray`
-- 手动下载v2ray内核，转移到`~/snap/qv2ray/2729/`，按要求解压为`vcore/`。检查核心设置，通过。注意不要sudo！！！
-- 在操作界面中将服务器导入。
-- Firefox中设为系统proxy即可。
-- Chrome要下载[SwitchOmega](https://github.com/FelisCatus/SwitchyOmega/releases)，记得改端口号。
-- 系统Network设置貌似不需要动。如果你选择q2ray的系统代理->禁用，network proxy会自动off，反之，会自动manual，甚至端口号都设置好了。
+LINUX常用，压缩率比ZIP高。
 
-[[教程]](https://medium.com/@eleveninstrangerthings/%E5%9C%A8ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85%E5%9B%BE%E5%BD%A2%E5%8C%96v2ray%E5%AE%A2%E6%88%B7%E7%AB%AFqv2ray-d0f690b7c519)
+```bash
+# 压缩
+tar -zcvf archive_name.tar.gz directory_to_compress
+
+# 解压
+tar -zxvf archive_name.tar.gz
+tar -zxvf archive_name.tar.gz -C /tmp/extract_here/
+```
+
+</details>
+
+<details>
+<summary><b>ZIP</b></summary>
+
+各平台兼容，但压缩率不高。
+
+```bash
+# https://serverfault.com/questions/760337/how-to-zip-files-with-a-size-limit/760341
+
+# -r：对子文件递归
+# -s 10m：分卷，最大10MB
+# archive.zip：目的
+# directory：源
+$ zip -r -s 10m archive.zip directory/
+
+# 先合成，再解压
+$ zip -s 0 split.zip --out unsplit.zip
+$ unzip unsplit.zip
+```
 
 </details>
 
@@ -152,6 +170,15 @@ $ unzip unsplit.zip
 <summary><b>7Z</b></summary>
 
 UBUNTU支持不好，不要用。
+
+</details>
+
+<details>
+<summary><b>查询软件位置</b></summary>
+
+```bash
+whereis matlab
+```
 
 </details>
 
