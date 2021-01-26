@@ -814,6 +814,12 @@ unit的kernel element是一个gain matrix，包含几个gain vectors。
 <details>
 <summary><b>CVEGAN: A Perceptually-inspired GAN for Compressed Video Enhancement</b></summary>
 
+目标：增强压缩视频的主观质量
 
+基本方法：GAN
+
+贡献点：残差，注意力，训练方式等；比较杂且浅。
+
+实验：只和作者自己的SR算法，以及RNAN比；忽略了其他绝大多数增强算法，包括intro中提到的MW-GAN。
 
 </details>
