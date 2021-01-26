@@ -204,6 +204,15 @@ whereis matlab
 </details>
 
 <details>
+<summary><b>DEB安装</b></summary>
+
+```bash
+sudo dpkg -i xxx.deb
+```
+
+</details>
+
+<details>
 <summary><b>软件更新</b></summary>
 
 ```bash
