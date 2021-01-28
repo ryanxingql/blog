@@ -22,7 +22,7 @@ MFQEv2没有使用任何“花哨”的结构设计和训练技巧。我们用�
 
 这篇论文是*Multi-frame quality enhancement for compressed video*（CVPR 2018）的升级版，于2019年9月被TPAMI接收。主要作者还有关振宇副教授，徐迈教授和杨韧师兄。
 
-[[PAPER]](https://arxiv.org/pdf/1902.09707.pdf) [[CODE]](https://github.com/RyanXingQL/MFQEv2.0)
+[[PAPER]](https://arxiv.org/abs/1902.09707) [[CODE]](https://github.com/RyanXingQL/MFQEv2.0)
 
 ## 1. 要点
 
