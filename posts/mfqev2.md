@@ -1,6 +1,6 @@
-# 论文速览：MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video （TPAMI 2019）
+# 论文速览：*MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video*（TPAMI 2019）
 
-- [论文速览：MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video （TPAMI 2019）](#论文速览mfqe-20-a-new-approach-for-multi-frame-quality-enhancement-on-compressed-video-tpami-2019)
+- [论文速览：*MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video*（TPAMI 2019）](#论文速览mfqe-20-a-new-approach-for-multi-frame-quality-enhancement-on-compressed-videotpami-2019)
   - [1. 要点](#1-要点)
   - [2. 压缩视频特性分析](#2-压缩视频特性分析)
     - [2.1 质量波动](#21-质量波动)
@@ -20,9 +20,9 @@
 
 MFQEv2没有使用任何“花哨”的结构设计和训练技巧。我们用最简单的CNN结构实现了我们的思路，网络参数量仅255k。欢迎大家使用。
 
-这篇论文是*Multi-frame quality enhancement for compressed video*（CVPR 2018）的升级版本，2019年9月被**TPAMI**接收。博主和导师关振宇是共同一作，通讯作者为导师徐迈。
+这篇论文是*Multi-frame quality enhancement for compressed video*（CVPR 2018）的升级版，于2019年9月被TPAMI接收。主要作者还有关振宇副教授，徐迈教授和杨韧师兄。
 
-[[arXiv]](https://arxiv.org/pdf/1902.09707.pdf) [[GitHub]](https://github.com/RyanXingQL/MFQEv2.0)
+[[PAPER]](https://arxiv.org/pdf/1902.09707.pdf) [[CODE]](https://github.com/RyanXingQL/MFQEv2.0)
 
 ## 1. 要点
 
@@ -35,7 +35,7 @@ MFQEv2没有使用任何“花哨”的结构设计和训练技巧。我们用�
 
 我们看图说话：
 
-![概念图](../imgs/mfqev2-1.png)
+![概念图](../imgs/mfqev2_1.png)
 
 1. 如图上半部分黑线，压缩视频中存在显著的质量（本文考虑PSNR）波动状况。其中，第92帧和第96帧达到了PSNR局部极大值点，中间的第95帧处在PSNR局部极小值点。
 2. 如图下半部分，质量好帧——第92和96帧中的篮球比较清晰，而质量差帧——第95帧中的篮球质量很差（马赛克严重）。
@@ -47,7 +47,7 @@ MFQEv2没有使用任何“花哨”的结构设计和训练技巧。我们用�
 
 首先，我们以压缩视频库中的6个视频为例，看一看质量波动性：
 
-![质量波动](../imgs/mfqev2-2.png)
+![质量波动](../imgs/mfqev2_2.png)
 
 可见，无论是HEVC、H264还是MPEG-1/2/4，这种质量波动性都是存在的，并且在HEVC中尤为明显。本文以HEVC为主要分析对象。
 
@@ -58,7 +58,7 @@ MFQEv2没有使用任何“花哨”的结构设计和训练技巧。我们用�
 
 我们在整个视频库（108个视频）中统计了上述两个指标的平均值，结果如表：
 
-![质量波动](../imgs/mfqev2-3.png)
+![质量波动](../imgs/mfqev2_3.png)
 
 质量波动性有两点意义：
 
@@ -69,7 +69,7 @@ MFQEv2没有使用任何“花哨”的结构设计和训练技巧。我们用�
 
 进一步，我们得看看好帧补偿差帧是否可行。我们测量了相邻若干帧的两帧之间的相关系数及其标准差，如图：
 
-![相关性](../imgs/mfqev2-4.png)
+![相关性](../imgs/mfqev2_4.png)
 
 结果说明：
 
@@ -84,7 +84,7 @@ MFQEv2没有使用任何“花哨”的结构设计和训练技巧。我们用�
 
 我们的MFQE方法由一个框图说明：
 
-![框图](../imgs/mfqev2-5.png)
+![框图](../imgs/mfqev2_5.png)
 
 1. 首先，我们用一个分类器，将视频中的好帧（质量局部极大值）找出来。
 2. 对于每一个差帧（只要不是局部极大值，就算差帧），借助其相邻的两个好帧，我们进行质量增强。
@@ -95,7 +95,7 @@ MFQEv2没有使用任何“花哨”的结构设计和训练技巧。我们用�
 
 ### 3.1 分类器
 
-![分类器](../imgs/mfqev2-6.png)
+![分类器](../imgs/mfqev2_6.png)
 
 分类器用BiLSTM搭建。对于每一帧，我们都采用参考文献[2]提供的质量评估方法，得到一个36维的向量；然后我们再添加这一帧的比特率和QP（这些都可以从码流中轻易获得），得到一个38维的向量，表征这一帧，输入BiLSTM网络。
 
@@ -107,13 +107,13 @@ MFQEv2没有使用任何“花哨”的结构设计和训练技巧。我们用�
 
 ### 3.2 好帧运动补偿
 
-![运动补偿](../imgs/mfqev2-7.png)
+![运动补偿](../imgs/mfqev2_7.png)
 
 为了让整体网络可以端到端训练，这里的运动补偿网络采用的是基于CNN的光流预测网络[29]。
 
 ### 3.3 质量增强网络
 
-![质量增强](../imgs/mfqev2-8.png)
+![质量增强](../imgs/mfqev2_8.png)
 
 运动补偿后的好帧，与差帧一起输入网络。在前端，我们采用了三种scale的特征提取；在后端，我们采用了稠密连接和BN技巧。整体上，我们还采用了短连接。
 
@@ -123,7 +123,7 @@ MFQEv2没有使用任何“花哨”的结构设计和训练技巧。我们用�
 
 ### 4.1 差帧质量提升效果
 
-![实验](../imgs/mfqev2-9.png)
+![实验](../imgs/mfqev2_9.png)
 
 好帧在文中就是PQF，差帧就是non-PQF。如图，MFQEv2.0算法在好帧增强上略高于其他算法，但**在差帧增强方面显著高于其他算法**。这就体现了MFQEv2.0的优势。
 
@@ -131,13 +131,13 @@ MFQEv2没有使用任何“花哨”的结构设计和训练技巧。我们用�
 
 我们以PSNR的增强数据为标准。如大表格：
 
-![实验](../imgs/mfqev2-10.png)
+![实验](../imgs/mfqev2_10.png)
 
 在国际标准测试序列（18个视频）上，MFQEv2.0全面胜出，展现出较好的泛化能力。
 
 编码领域通常还衡量BDBR指标。我们看看结果：
 
-![实验](../imgs/mfqev2-11.png)
+![实验](../imgs/mfqev2_11.png)
 
 图像方法最多能到9%，而MFQE方法能达到14%。
 
@@ -145,11 +145,11 @@ MFQEv2没有使用任何“花哨”的结构设计和训练技巧。我们用�
 
 由于MFQEv2.0对差帧的提升非常显著，因此可以缓和质量波动现象。我们通过SD和PVD的下降程度来验证这一点：
 
-![实验](../imgs/mfqev2-12.png)
+![实验](../imgs/mfqev2_12.png)
 
 如图，PSNR的标准差显著下降，而峰值-谷值差距减小，说明质量波动下降明显。此外，我们以两个视频的PSNR曲线举例说明：
 
-![实验](../imgs/mfqev2-13.png)
+![实验](../imgs/mfqev2_13.png)
 
 显然，MFQEv2.0增强后，PSNR曲线最为平滑。
 
@@ -157,13 +157,13 @@ MFQEv2没有使用任何“花哨”的结构设计和训练技巧。我们用�
 
 MFQEv2.0不仅效果好，而且参数少、帧速率快。这进一步说明了多帧方法的优势：我们不需要冗余的网络，多帧信息是我们的杀手锏。
 
-![参数](../imgs/mfqev2-14.png)
+![参数](../imgs/mfqev2_14.png)
 
 如图，其中DS-CNN就是SOTA的单帧方法。
 
 ### 4.5 主观效果
 
-![主观效果](../imgs/mfqev2-15.png)
+![主观效果](../imgs/mfqev2_15.png)
 
 ## 5. 不足和展望
 
