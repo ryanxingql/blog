@@ -13,9 +13,9 @@ Feel free to contact: ryanxingql@gmail.com.
 
 - [ ] 主笔章节：图像增强与复原
 
-- [ ] Resource-Efficient Blind Quality Enhancement on Compressed Images (RBQE, ECCV 2020)
+- [x] [Resource-Efficient Blind Quality Enhancement on Compressed Images (RBQE, ECCV 2020)](https://github.com/RyanXingQL/Blog/blob/master/posts/rbqe.md)
 
-- [x] [Multi-frame Quality Enhancment on Compressed Videos (MFQEv2, TPAMI 2019)](https://github.com/RyanXingQL/Blog/blob/master/posts/mfqev2.md)
+- [x] [Multi-frame Quality Enhancement on Compressed Videos (MFQEv2, TPAMI 2019)](https://github.com/RyanXingQL/Blog/blob/master/posts/mfqev2.md)
 
 - [x] [北航高博班课程笔记](https://gist.github.com/RyanXingQL/773f40c5bee87118e2b476933a2fbb12)
 
