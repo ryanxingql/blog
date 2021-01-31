@@ -3,9 +3,14 @@
 - [TEX](#tex)
 
 <details>
-<summary><b>TEXLIVE + VSCODE + LATEX WORKSHOP</b></summary>
+<summary><b>TEX 模板</b></summary>
 
-[[基础模板]](https://gist.github.com/RyanXingQL/f1e0802bc7427b5d444261160a44e126)
+[[here]](https://gist.github.com/RyanXingQL/f1e0802bc7427b5d444261160a44e126)
+
+</details>
+
+<details>
+<summary><b>TEXLIVE + VSCODE + LATEX WORKSHOP</b></summary>
 
 [[LATEX WORKSHOP指南]](https://zhuanlan.zhihu.com/p/106167792)
 
