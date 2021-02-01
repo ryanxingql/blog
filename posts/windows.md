@@ -19,6 +19,7 @@
 
 - X1C背光：`fn+blank`
 - 多选：`shift + 方向键`
+- 选中单词：在单词开头，`shift + ctrl + ->`
 - 关闭软件窗：`alt + F4`
 - 关闭页面：`ctrl + w`
 - 锁屏：`win + L`
