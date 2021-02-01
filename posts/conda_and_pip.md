@@ -85,7 +85,7 @@ conda env list
 </details>
 
 <details>
-<summary><b>CONDA删除包</b></summary>
+<summary><b>CONDA删除环境</b></summary>
 
 ```bash
 conda env remove -n env_name
@@ -117,6 +117,15 @@ conda install pkg_name -y  # 默认yes。注意要先进入环境
 - 在[[官网]](https://anaconda.org/anaconda/repo)搜包。
 - 下载。
 - 安装：`conda install --use-local path/to/xxx.tar.bz2`
+
+</details>
+
+<details>
+<summary><b>CONDA删除包</b></summary>
+
+```bash
+conda remove pkg_name
+```
 
 </details>
 
