@@ -5,7 +5,7 @@
   - [High Frequency](#high-frequency)
   - [Other Notes](#other-notes)
 
-Welcome to my blog~ See also [my page](https://ryanxingql.github.io/)~
+Welcome to my blog~ See also [[my page]](https://ryanxingql.github.io/)~
 
 Feel free to contact: ryanxingql@gmail.com.
 
@@ -26,6 +26,8 @@ Feel free to contact: ryanxingql@gmail.com.
 - [x] [CONDA AND PIP](https://github.com/RyanXingQL/Blog/blob/master/posts/conda_and_pip.md)
 
 - [x] [CUDA AND NVIDIA](https://github.com/RyanXingQL/Blog/blob/master/posts/cuda_and_nvidia.md)
+
+- [x] [ENGLISH](https://github.com/RyanXingQL/Blog/blob/master/posts/english.md)
 
 - [x] [GIT](https://github.com/RyanXingQL/Blog/blob/master/posts/git.md)
 
@@ -48,8 +50,6 @@ Feel free to contact: ryanxingql@gmail.com.
 - [x] [BAT](https://github.com/RyanXingQL/Blog/blob/master/posts/bat.md)
 
 - [x] [DEEP LEARNING](https://github.com/RyanXingQL/Blog/blob/master/posts/deep_learning.md)
-
-- [x] [ENGLISH](https://github.com/RyanXingQL/Blog/blob/master/posts/english.md)
 
 - [x] [FFMPEG](https://github.com/RyanXingQL/Blog/blob/master/posts/ffmpeg.md)
 

@@ -14,7 +14,7 @@
 
 确定所需PT版本。在官网查看兼容的CUDA版本。若不满足，可重装CUDA及对应的最高版本NVIDIA驱动。
 
-按照[官网](https://pytorch.org/get-started/locally/)提供的完整指令，用pip安装。例：
+按照[[官网]](https://pytorch.org/get-started/locally/)提供的完整指令，用pip安装。例：
   
 ```bash
 pip install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
@@ -396,7 +396,7 @@ Running DDP checkpoint example on rank 0.
 
 > 其他，例如model parallel：[[教程]](https://pytorch.org/tutorials/intermediate/model_parallel_tutorial.html)
 
-`torch.distributed`主要有3个组件，见[文档](https://pytorch.org/docs/master/notes/ddp.html)。我们主要用`Distributed Data-Parallel Training (DDP)`。
+`torch.distributed`主要有3个组件，见[[文档]](https://pytorch.org/docs/master/notes/ddp.html)。我们主要用`Distributed Data-Parallel Training (DDP)`。
 
 DDP原理：模型在DDP建立之初分发到各进程。每个进程输入各自的数据进行forward。backward后，计算梯度，分发至各进程。各进程分别进行相同的参数更新，从而保证各模型一致性。
 

@@ -224,7 +224,7 @@ PAC：给卷积核乘以可学习的、spatially varying的权值。借鉴双边
 - [tag] CNNs
 - [tag] 注意力
 
-看这篇论文前，可以回忆[双边滤波器](https://www.cnblogs.com/wangguchangqing/p/6416401.html)。不同于高斯滤波器（仅考虑位置关系），双边滤波器引入了$\alpha$截尾均值滤波器，考虑像素灰度值之间的差异；然后两个滤波器相乘，就得到了双边滤波器。
+看这篇论文前，可以回忆[[双边滤波器]](https://www.cnblogs.com/wangguchangqing/p/6416401.html)。不同于高斯滤波器（仅考虑位置关系），双边滤波器引入了$\alpha$截尾均值滤波器，考虑像素灰度值之间的差异；然后两个滤波器相乘，就得到了双边滤波器。
 
 作者仿照双边滤波器，提出了PAC。与自注意力方法或全动态方法不同，PAC和双边滤波器一样，仅仅关注局部，因此在一定程度上减小了计算量，实现更简单。
 
@@ -494,12 +494,12 @@ HiFaceGAN：在SPADE基础上，针对恢复问题进行的改进。ACM 2020
 <details>
 <summary><b>:fire: Video Multi-method Assessment Fusion</b></summary>
 
-[VMAF](https://netflixtechblog.com/toward-a-practical-perceptual-video-quality-metric-653f208b9652)：Netflix商用视频质量评估方法。源于2016，2020仍在维护
+[[VMAF]](https://netflixtechblog.com/toward-a-practical-perceptual-video-quality-metric-653f208b9652)：Netflix商用视频质量评估方法。源于2016，2020仍在维护
 
 - [tag] 无参考视频质量评估
 
-- [Blog1](https://netflixtechblog.com/toward-a-practical-perceptual-video-quality-metric-653f208b9652)
-- [Blog2](https://netflixtechblog.com/vmaf-the-journey-continues-44b51ee9ed12)
+- [[Blog1]](https://netflixtechblog.com/toward-a-practical-perceptual-video-quality-metric-653f208b9652)
+- [[Blog2]](https://netflixtechblog.com/vmaf-the-journey-continues-44b51ee9ed12)
 
 在工作过程中，作者发现：他们接触的视频的编码格式、分辨率、内容太丰富了，很难用主观评价（Expert viewing）来评价视频质量。而PSNR、SSIM等离人类perceptual太远，这我们都知道。于是作者开始思考VMAF。
 
@@ -659,7 +659,7 @@ TTUR：一个简单的GANs稳定收敛方法。本文还引入了Fréchet Incept
 - spectral normalization
 - self-attention
 - two time-scale update rules
-- [NoGAN](https://github.com/jantic/DeOldify#what-is-nogan)
+- [[NoGAN]](https://github.com/jantic/DeOldify#what-is-nogan)
 - perceptual loss + critic loss
 
 其中，NoGAN非常重要。作者认为，GAN的训练不重要，其组成成分的分开的、有针对性的预训练才是最重要的。这些预训练能够解决GAN的诸多问题。

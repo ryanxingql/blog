@@ -84,7 +84,7 @@ echo "hello world!" > README.md
 - 手动下载v2ray内核，转移到`~/snap/qv2ray/2729/`，按要求解压为`vcore/`。检查核心设置，通过。注意不要sudo！！！
 - 在操作界面中将服务器导入。
 - Firefox中设为系统proxy即可。
-- Chrome要下载[SwitchOmega](https://github.com/FelisCatus/SwitchyOmega/releases)，记得改端口号。
+- Chrome要下载[[SwitchOmega]](https://github.com/FelisCatus/SwitchyOmega/releases)，记得改端口号。
 - 系统Network设置貌似不需要动。如果你选择q2ray的系统代理->禁用，network proxy会自动off，反之，会自动manual，甚至端口号都设置好了。
 
 [[教程]](https://medium.com/@eleveninstrangerthings/%E5%9C%A8ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85%E5%9B%BE%E5%BD%A2%E5%8C%96v2ray%E5%AE%A2%E6%88%B7%E7%AB%AFqv2ray-d0f690b7c519)
@@ -104,9 +104,9 @@ unrar x rar_name.rar
 <details>
 <summary><b>SS【失败】</b></summary>
 
-- 先买了一个VULTR服务器：[url](https://www.vultrblog.com/vultr-ss.html)
-- 其中一键SS-SERVER脚本用的是：[url](https://github.com/dlxg/shadowsocks_install)
-- UBUNTU上安装SSLOCAL，写JSON，命令行即可开启：[教程](http://codetd.com/article/1790848)
+- 先买了一个VULTR服务器：[[url]](https://www.vultrblog.com/vultr-ss.html)
+- 其中一键SS-SERVER脚本用的是：[[url]](https://github.com/dlxg/shadowsocks_install)
+- UBUNTU上安装SSLOCAL，写JSON，命令行即可开启：[[教程]](http://codetd.com/article/1790848)
 - 设置里修改NETWORK协议和端口。
 - 注意这是全局的。未考虑分流。
 - 常用指令
@@ -196,7 +196,7 @@ whereis matlab
 
 系统输入法（不推荐）：
 
-- [ref](https://blog.csdn.net/wu10188/article/details/86540464)
+- [[ref]](https://blog.csdn.net/wu10188/article/details/86540464)
 - 输入法切换：`win+space`
 - 中英切换：`shift`
 - bug：选中文字会删除文字，很痛苦。
@@ -290,7 +290,7 @@ ps --no-headers -eo user,rss | awk '{arr[$1]+=$2}; END {for (i in arr) {print i,
 <details>
 <summary><b>限制用户内存</b></summary>
 
-[参考](https://unix.stackexchange.com/questions/34334/how-to-create-a-user-with-limited-ram-usage)
+[[参考]](https://unix.stackexchange.com/questions/34334/how-to-create-a-user-with-limited-ram-usage)
 
 ps. 快速占领90%内存测试：
 
@@ -336,8 +336,8 @@ sudo umount /media/usr/DiskName
 
 在安装系统一节我们提到，我们保留了两块机械硬盘。我们希望开机自动挂载：
 
-1. [磁盘分区，并格式化、改为ext4格式、作为新硬盘挂载](https://blog.csdn.net/zhengchaooo/article/details/79500116)
-2. [配置开机自动挂载，并改为普通权限](https://blog.csdn.net/ls20121006/article/details/78665718)
+1. [[磁盘分区，并格式化、改为ext4格式、作为新硬盘挂载]](https://blog.csdn.net/zhengchaooo/article/details/79500116)
+2. [[配置开机自动挂载，并改为普通权限]](https://blog.csdn.net/ls20121006/article/details/78665718)
 
 </details>
 

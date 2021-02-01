@@ -2,7 +2,7 @@
 
 - [HEXO AND GITHUB PAGES](#hexo-and-github-pages)
 
-我以我的[GITHUB PAGE](https://ryanxingql.github.io/)为例。
+我以我的[[GITHUB PAGE]](https://ryanxingql.github.io/)为例。
 
 <details>
 <summary><b>选择模板</b></summary>
@@ -11,19 +11,19 @@
 
 因此我首先搜寻一个合适的模板，在此基础上修改就好了。找到了两个，也都尝试过：
 
-- [al-folio](https://github.com/alshedivat/al-folio)。很好看，在CV的基础上有一个小博客，挺好。可惜JEKYLL编译太慢，而且调模板需要一定HTML基础。
-- [Academic](https://themes.gohugo.io/academic/)。功能完善，贡献者很多，但CV实在不简洁：没有人想点击多次、分别查看publications和education等等。HUGO倒是很快。
+- [[al-folio]](https://github.com/alshedivat/al-folio)。很好看，在CV的基础上有一个小博客，挺好。可惜JEKYLL编译太慢，而且调模板需要一定HTML基础。
+- [[Academic]](https://themes.gohugo.io/academic/)。功能完善，贡献者很多，但CV实在不简洁：没有人想点击多次、分别查看publications和education等等。HUGO倒是很快。
 
-最后，我看中了[后者的剪辑版本](https://github.com/PhosphorW/hexo-theme-academia)。很合我意。
+最后，我看中了[[后者的剪辑版本]](https://github.com/PhosphorW/hexo-theme-academia)。很合我意。
 
 </details>
 
 <details>
 <summary><b>安装HEXO</b></summary>
 
-首先要把HEXO及其依赖装好。随便找一个WINDOWS + HEXO 的[教程](https://www.jianshu.com/p/343934573342)，照着做就行。注意先别远程部署。
+首先要把HEXO及其依赖装好。随便找一个WINDOWS + HEXO 的[[教程]](https://www.jianshu.com/p/343934573342)，照着做就行。注意先别远程部署。
 
-然后根据[主题教程](https://github.com/PhosphorW/hexo-theme-academia)操作。
+然后根据[[主题教程]](https://github.com/PhosphorW/hexo-theme-academia)操作。
 
 </details>
 

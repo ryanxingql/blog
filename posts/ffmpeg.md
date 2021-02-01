@@ -26,7 +26,7 @@ ffmpeg -i [输入文件名] [参数选项] -f [格式] [输出文件]
 - `-s`：设定画面的分辨率，例如`352x278`
 - `-y`：输出时覆盖输出目录已存在的同名文件
 
-还有很多很多，参考：[文档](https://ffmpeg.org/ffmpeg.html)
+还有很多很多，参考：[[文档]](https://ffmpeg.org/ffmpeg.html)
 
 </details>
 

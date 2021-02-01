@@ -7,7 +7,7 @@
 <details>
 <summary><b>BOX DRAWING</b></summary>
 
-[参考](https://www.fuhaoku.net/block/Box_Drawing)
+[[ref]](https://www.fuhaoku.net/block/Box_Drawing)
 
 常用：
 
