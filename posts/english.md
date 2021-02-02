@@ -16,6 +16,16 @@
 </details>
 
 <details>
+<summary><b>circle</b></summary>
+
+- > travel in the same circles
+  - 处在同一个圈子里
+  - > I guess there is a lot of information overlap among my friends and family since we all travel in the same circles.
+- > widen your circle
+
+</details>
+
+<details>
 <summary><b>closely knit</b></summary>
 
 - 紧密联系
@@ -24,10 +34,18 @@
 </details>
 
 <details>
-<summary><b>deprive A of B</b></summary>
+<summary><b>deprive</b></summary>
 
-- 从A身上剥削B
+- deprive of A
+  - 剥夺A
+  - > Getting deprived of interactions with peers might lead to less developed social skills.
+- deprive A of B
+  - 从A身上剥夺B
   - > If your network is too closely knit, you could be depriving yourself of valuable information coming from peripheral networks.
+  - > If you work too hard, you're depriving yourself of downtime.
+- 当形容词
+  - > Being sleep/oxygen/education deprived
+  - > She suffered minor oxygen deprivation [n.] during the fire.
 
 </details>
 
@@ -44,6 +62,7 @@
 
 - 核心，中心
   - > I found that attending conferences really helped me to tap into network hubs.
+  - > New York is the hub of the stock market.
 
 </details>
 
@@ -84,14 +103,26 @@
 
 - 可利用的（字面意思：放在桌上，想拿自取）
   - > I depend a lot on my network of weak ties. It's not always easy, but when we limit our networks to only our strong ties, we're leaving a lot of potential value on the table.
+  - > Is it a new promotion on the table?
+    - Is that being offered?
+- 还在商议（进行中）
+  - > It's still on the table.
+  - > Giving me that promotion was never really on the table, was it?
+    - 从没有真正考虑过给我升职
+  - > Well should you ever decide to give it another thought, the offer is still on the table.
+    - 如果你还想再考虑下，那么这个提议仍然有效。
+- 坐视不管
+  - > You shouldn't just leave them on the table.
 
 </details>
 
 <details>
 <summary><b>overlap</b></summary>
 
-- [vn.] 重叠
-  - > I guess there is a lot of information overlap among my friends and family since we all travel in the same circles.
+- 重叠
+  - > I guess there is a lot of information overlap [n.] among my friends and family since we all travel in the same circles.
+  - > Venn diagrams are composed of overlapping [adj.] circles.
+  - > Back when our schedules overlapped [v.], I used to run into him everyday.
 
 </details>
 
@@ -100,6 +131,11 @@
 
 - 外围的，非核心的
   - > If your network is too closely knit, you could be depriving yourself of valuable information coming from peripheral networks.
+  - > They come from the periphery [n.], but there's still value to be found here.
+  - > Temporary loss of peripheral vision.
+    - 周边视觉暂失
+  - > Connecting peripheral devices to a computer is most often done by using the USB port.
+    - 外部设备
 
 </details>
 
@@ -153,8 +189,10 @@
 <details>
 <summary><b>strike</b></summary>
 
-- 给A造成某种印象。
+- （人，点子等）给A造成某种印象。
   - > Jim, you strike me as a guy who's always in the know.
+  - > That strikes me as a bad idea.
+  - > That idea is very "striking".
 
 </details>
 
@@ -172,14 +210,6 @@
 - 关系
   - network of weak ties：弱关系网；认识的人，但关系不强。
   - strong ties
-
-</details>
-
-<details>
-<summary><b>travel in the same circles</b></summary>
-
-- 处在同一个圈子里
-  - > I guess there is a lot of information overlap among my friends and family since we all travel in the same circles.
 
 </details>
 
