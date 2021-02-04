@@ -292,7 +292,7 @@ ps --no-headers -eo user,rss | awk '{arr[$1]+=$2}; END {for (i in arr) {print i,
 
 [[参考]](https://unix.stackexchange.com/questions/34334/how-to-create-a-user-with-limited-ram-usage)
 
-ps. 快速占领90%内存测试：
+PS：快速占领90%内存测试：
 
 ```bash
 stress-ng --vm-bytes $(awk '/MemAvailable/{printf "%d\n", $2 * 0.9;}' < /proc/meminfo)k --vm-keep -m 1
