@@ -2,7 +2,7 @@
 
 - [ENGLISH](#english)
   - [Words & Phrases](#words--phrases)
-  - [Sentences](#sentences)
+  - [Sentences & Grammar](#sentences--grammar)
 
 ## Words & Phrases
 
@@ -148,6 +148,17 @@
 </details>
 
 <details>
+<summary><b>PS vs. P.S.</b></summary>
+
+[[ref]](https://www.grammarly.com/blog/what-does-ps-mean/)
+
+- 首先一定是大写的（capitalized）。
+- Cambridge Dictionary说：PS是英式写法，P.S.（加了periods）是美式写法；但*The Chicago Manual of Style*也推荐PS。
+- ref给出的建议是：用PS，不加任何标点符号。
+
+</details>
+
+<details>
 <summary><b>relationship vs. relation</b></summary>
 
 [[ref]](http://www.kwuntung.net/tthp/topics/vocab/relationship.htm)
@@ -213,12 +224,57 @@
 
 </details>
 
-## Sentences
+<details>
+<summary><b>vs vs. vs.</b></summary>
+
+哈哈哈这个标题已经暴露了我的偏好了。
+
+[[ref]](https://english.stackexchange.com/questions/5392/how-should-i-abbreviate-versus)
+
+vs.更常用。
+
+</details>
+
+## Sentences & Grammar
 
 <details>
 <summary><b>be doing</b></summary>
 
 - 将会
   - > I depend a lot on my network of weak ties. It's not always easy, but when we limit our networks to only our strong ties, we're leaving a lot of potential value on the table.
+
+</details>
+
+<details>
+<summary><b>no一般跟可数名词复数</b></summary>
+
+[[ref]](https://englishlessonsbrighton.co.uk/followed-singular-plural-noun/)
+
+- 对于不可数名词，显然是单数。
+- 用单数的常用搭配
+  - no idea，no time，no doubt，no amount，no reason，no need，no problem，no way，no point，no use，no way，no evidence
+  - > There’s no time left, we have to go.
+  - > No need to thank me, it was my pleasure.
+  - > I have no idea what the answer is.
+- 对于可数名词，一般是复数。
+  - > No dogs allowed.
+- 在逻辑上，单数有时更合理；或者有时我们就是在谈特定单一事物。
+  - > I have no wife.
+- 单数更适合于一些强调的场合。
+  - > No player has won this award more than once.
+  - > No man is happy without chocolate.
+
+PS：zero总是跟复数，如zero people，zero degrees。
+
+PS：any总是跟复数或不可数名词，如：
+> Do we have any beer/glasses?
+
+</details>
+
+<details>
+<summary><b>冒号和分号后一般跟小写</b></summary>
+
+通常跟小写。
+> The commercials had one message: the geeks shall inherit the earth.
 
 </details>
