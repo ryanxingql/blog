@@ -188,3 +188,10 @@ conda clean --all
 ```
 
 </details>
+
+<details>
+<summary><b>CONDA不识别ascii码</b></summary>
+
+把PYTHON升级至3.7；不要用3.6。
+
+</details>
