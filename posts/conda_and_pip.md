@@ -133,6 +133,7 @@ conda remove pkg_name
 <summary><b>CONDA添加国内源</b></summary>
 
 ```bash
+vim ~/.condarc
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
@@ -175,7 +176,9 @@ vim ~/.condarc
 <details>
 <summary><b>CONDA超时</b></summary>
 
+- 通常重试即可。
 - 重新登陆校园网。
+- 添加国内源。
 - 删除`defaults`，并把`https`都改为`http`。
 
 </details>
