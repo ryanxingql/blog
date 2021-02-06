@@ -2,7 +2,7 @@
 
 - [BLOG](#blog)
   - [Publications & Contributions](#publications--contributions)
-  - [High Frequency](#high-frequency)
+  - [High Frequency Notes](#high-frequency-notes)
   - [Other Notes](#other-notes)
 
 Welcome to my blog~ See also [[my page]](https://ryanxingql.github.io/)~
@@ -21,7 +21,7 @@ Feel free to contact: ryanxingql@gmail.com.
 
 - [x] [北航电子信息专业课笔记](https://gist.github.com/RyanXingQL/31be08b97db38c7eb2f636ae2607f54b)
 
-## High Frequency
+## High Frequency Notes
 
 - [x] [CONDA AND PIP](https://github.com/RyanXingQL/Blog/blob/master/posts/conda_and_pip.md)
 

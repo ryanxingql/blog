@@ -8,7 +8,7 @@
 
 在平板和PAD上，由于很少涉及编辑功能，而只需要查看、备份文档，因此建议使用WPS；加上北航商用会员授权，效果不错。
 
-PS：PAD版本的OFFICE很垃圾。
+PS PAD版本的OFFICE很垃圾。
 
 在MAC和WINDOWS上建议使用北航授权的OFFICE。但注意，WINDOWS账户还是建议用自己的账号。
 
