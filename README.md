@@ -65,8 +65,6 @@ Feel free to contact: ryanxingql@gmail.com.
 
 - [x] [PYCHARM](https://github.com/RyanXingQL/Blog/blob/master/posts/pycharm.md)
 
-- [x] [READING](https://github.com/RyanXingQL/Blog/blob/master/posts/reading.md)
-
 - [x] [TENSORFLOW](https://github.com/RyanXingQL/Blog/blob/master/posts/tensorflow.md)
 
 - [x] [TEX](https://github.com/RyanXingQL/Blog/blob/master/posts/tex.md)
