@@ -5,7 +5,24 @@
   - [Sentences & Grammar](#sentences--grammar)
   - [Other Words & Phrases](#other-words--phrases)
 
+原则：不需要穷尽词典、将低频词义记录于此；只记录遇到的词义和表达。
+
 ## High Frequency Words & Phrases
+
+- appeal to A with B：凭借 B 吸引 A
+  - > In 2014, podcasts gained traction, appealing to listeners with suspense.
+- early 2000s：20 世纪初期。
+- exhausting：疲惫。
+  - > A: I depend a lot on my network of weak ties. B: That sounds exhausting.
+- exhaustive: complete.
+  - > This list is exhaustive.
+- gain traction：获得关注。
+  - > In 2014, podcasts gained traction, appealing to listeners with suspense.
+- exhausting：疲惫。
+- mainstream [adj.]：主流的。
+  - > The podcast's gone really mainstream.
+- spur [t.v.]: encourage.
+  - > What spurred the explosion?
 
 <details>
 <summary><b>broaden one's horizon</b></summary>
@@ -47,16 +64,6 @@
 - 当形容词
   - > Being sleep/oxygen/education deprived
   - > She suffered minor oxygen deprivation [n.] during the fire.
-
-</details>
-
-<details>
-<summary><b>exhausting</b></summary>
-
-- 疲惫
-  - > A: I depend a lot on my network of weak ties. B: That sounds exhausting.
-
-</details>
 
 <details>
 <summary><b>hub</b></summary>
@@ -238,11 +245,17 @@ neighbor 用于美式英语。
 
 ## Sentences & Grammar
 
+- it seems like ...
+  - > It seems like there's a podcast for everything these days.
+- tell me about it：确实（本人也经历过这种不愉快）。
+
 <details>
 <summary><b>be doing</b></summary>
 
 - 将会
   - > I depend a lot on my network of weak ties. It's not always easy, but when we limit our networks to only our strong ties, we're leaving a lot of potential value on the table.
+
+</details>
 
 </details>
 
@@ -279,6 +292,8 @@ neighbor 用于美式英语。
 
 ## Other Words & Phrases
 
-amateur [c.n.] [adj.]：业余爱好者；或指不专业的（带有贬义）
-
-journalism: the work of collecting news.
+- amateur [c.n.] [adj.]：业余爱好者；或指不专业的（带有贬义）
+- esoteric: known about or understood by very few people.
+- journalism: the work of collecting news.
+- suspense [n.]: 悬念带来的刺激或担忧（悬疑感）
+  - 悬疑故事：`In 2014, podcasts gained traction, appealing to listeners with suspense.`。

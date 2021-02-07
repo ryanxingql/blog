@@ -3,31 +3,11 @@
 - [GIT](#git)
   - [SSH](#ssh)
   - [Repository](#repository)
+  - [与远程仓库互动](#与远程仓库互动)
 
 ## SSH
 
-<details>
-<summary><b>机器初始化，生成密钥</b></summary>
-
-设置身份：
-  
-```bash
-git config --global user.name usrname
-git config --global user.email xx@xx
-```
-
-生成密钥：
-  
-```bash
-ssh-keygen -t rsa -C xx@xx
-```
-
-把公钥提供给 GITHUB；否则私人仓库没法 clone。
-
-- 找到 `~\.ssh` 下的公钥 `id_rsa.pub`，打开，复制。
-- 放到 GITHUB 里。
-
-</details>
+- 生成密钥：`ssh-keygen -t rsa -C <邮箱>`。
 
 <details>
 <summary><b>免密登陆</b></summary>
@@ -68,29 +48,6 @@ cat hello.pub >> authorized_keys
 ## Repository
 
 <details>
-<summary><b>只克隆最新的 commit</b></summary>
-
-```bash
-git clone --depth=1 url
-```
-
-</details>
-
-<details>
-<summary><b>仓库初始化，推送至远端</b></summary>
-
-```bash
-echo "# gitzone" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin git@github.com:xxx/gitzone.git
-git push -u origin master
-```
-
-</details>
-
-<details>
 <summary><b>submodule</b></summary>
 
 可以调用一个仓库，作为当前仓库的一个子模块。例如：
@@ -104,15 +61,6 @@ git submodule add git@github.com:RyanXingQL/PythonUtils.git utils/
 
 - 当前库只记录子仓库的当前版本，不会自动更新。
 - 假设有两个本地仓库对应同一个远程仓库；如果不手动更新子仓库，会出现两个本地仓库来回扯皮版本号的情况。
-
-</details>
-
-<details>
-<summary><b>删除对应的远程仓库地址</b></summary>
-
-```bash
-git remote remove origin
-```
 
 </details>
 
@@ -133,6 +81,37 @@ git branch -m main
 git push -f origin main
 ```
 
+我认为可以将 `-am` 改为 `-m`。没试。
+
 [【stackover 某 up】](https://stackoverflow.com/questions/13716658/how-to-delete-all-commit-history-in-github)
+
+</details>
+
+## 与远程仓库互动
+
+- 只克隆最新的 commit：`git clone --depth=1 url`。
+- 删除对应的远程仓库地址：`git remote remove origin`。
+
+<details>
+<summary><b>仓库初始化，推送至远端</b></summary>
+
+```bash
+echo "# gitzone" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:xxx/gitzone.git
+git push -u origin master
+```
+
+</details>
+
+<details>
+<summary><b>初始化身份</b></summary>
+  
+```bash
+git config --global user.name <usrname>
+git config --global user.email <email>
+```
 
 </details>

@@ -2,11 +2,4 @@
 
 - [BAT](#bat)
 
-<details>
-<summary><b>批量重命名</b></summary>
-
-```bat
-ren *_a.png *_b.png
-```
-
-</details>
+批量重命名：`ren *_a.png *_b.png`

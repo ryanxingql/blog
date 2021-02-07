@@ -5,11 +5,11 @@
   - [High Frequency Notes](#high-frequency-notes)
   - [Other Notes](#other-notes)
 
-Welcome to my blog~ See also [my page](https://ryanxingql.github.io/)~
+Welcome to my blog! See also [my page](https://ryanxingql.github.io/)~
+
+格式主要遵循[写作规范 by 阮一峰](https://github.com/ruanyf/document-style-guide)；其他细节保持整体一致即可。
 
 Feel free to contact: <ryanxingql@gmail.com>.
-
-写作规范：主要遵循[阮一峰攥写的写作规范](https://github.com/ruanyf/document-style-guide)。其他细节保持整体一致即可。
 
 ## Publications & Contributions
 
