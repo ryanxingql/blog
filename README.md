@@ -5,9 +5,11 @@
   - [High Frequency Notes](#high-frequency-notes)
   - [Other Notes](#other-notes)
 
-Welcome to my blog~ See also [[my page]](https://ryanxingql.github.io/)~
+Welcome to my blog~ See also [my page](https://ryanxingql.github.io/)~
 
-Feel free to contact: ryanxingql@gmail.com.
+Feel free to contact: <ryanxingql@gmail.com>.
+
+写作规范：主要遵循[阮一峰攥写的写作规范](https://github.com/ruanyf/document-style-guide)。其他细节保持整体一致即可。
 
 ## Publications & Contributions
 
@@ -23,15 +25,15 @@ Feel free to contact: ryanxingql@gmail.com.
 
 ## High Frequency Notes
 
-- [x] [CONDA AND PIP](https://github.com/RyanXingQL/Blog/blob/master/posts/conda_and_pip.md)
+- [x] [CONDA AND PIP](https://github.com/RyanXingQL/Blog/blob/master/posts/conda-and-pip.md)
 
-- [x] [CUDA AND NVIDIA](https://github.com/RyanXingQL/Blog/blob/master/posts/cuda_and_nvidia.md)
+- [x] [CUDA AND NVIDIA](https://github.com/RyanXingQL/Blog/blob/master/posts/cuda-and-nvidia.md)
 
 - [x] [ENGLISH](https://github.com/RyanXingQL/Blog/blob/master/posts/english.md)
 
 - [x] [GIT](https://github.com/RyanXingQL/Blog/blob/master/posts/git.md)
 
-- [x] [PAPER DAILY](https://github.com/RyanXingQL/Blog/blob/master/posts/paper_daily.md)
+- [x] [PAPER COLLECTION](https://github.com/RyanXingQL/Blog/blob/master/posts/paper-collection.md)
 
 - [x] [PYTHON](https://github.com/RyanXingQL/Blog/blob/master/posts/python.md)
 
@@ -49,13 +51,13 @@ Feel free to contact: ryanxingql@gmail.com.
 
 - [x] [BAT](https://github.com/RyanXingQL/Blog/blob/master/posts/bat.md)
 
-- [x] [DEEP LEARNING](https://github.com/RyanXingQL/Blog/blob/master/posts/deep_learning.md)
+- [x] [DEEP LEARNING](https://github.com/RyanXingQL/Blog/blob/master/posts/deep-learning.md)
 
 - [x] [FFMPEG](https://github.com/RyanXingQL/Blog/blob/master/posts/ffmpeg.md)
 
-- [x] [HEXO AND GITHUB PAGES](https://github.com/RyanXingQL/Blog/blob/master/posts/hexo_and_github_pages.md)
+- [x] [HEXO AND GITHUB PAGES](https://github.com/RyanXingQL/Blog/blob/master/posts/hexo-and-github-pages.md)
 
-- [x] [JUPYTER NOTEBOOK](https://github.com/RyanXingQL/Blog/blob/master/posts/jupyter_notebook.md)
+- [x] [JUPYTER NOTEBOOK](https://github.com/RyanXingQL/Blog/blob/master/posts/jupyter-notebook.md)
 
 - [x] [MARKDOWN](https://github.com/RyanXingQL/Blog/blob/master/posts/markdown.md)
 

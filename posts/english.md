@@ -1,10 +1,11 @@
 # ENGLISH
 
 - [ENGLISH](#english)
-  - [Words & Phrases](#words--phrases)
+  - [High Frequency Words & Phrases](#high-frequency-words--phrases)
   - [Sentences & Grammar](#sentences--grammar)
+  - [Other Words & Phrases](#other-words--phrases)
 
-## Words & Phrases
+## High Frequency Words & Phrases
 
 <details>
 <summary><b>broaden one's horizon</b></summary>
@@ -92,9 +93,9 @@
 </details>
 
 <details>
-<summary><b>neighbor vs. neighbour</b></summary>
+<summary><b>[neighbor] vs. neighbour</b></summary>
 
-- neighbor用于美式英语。
+neighbor用于美式英语。
 
 </details>
 
@@ -140,7 +141,7 @@
 </details>
 
 <details>
-<summary><b>program vs. programme</b></summary>
+<summary><b>[program] vs. programme</b></summary>
 
 - program用于美式英语；programme用于英式英语。
 - 对于计算机领域，program最佳。
@@ -148,13 +149,14 @@
 </details>
 
 <details>
-<summary><b>PS vs. P.S.</b></summary>
+<summary><b>[PS] vs. P.S.</b></summary>
 
 [[ref]](https://www.grammarly.com/blog/what-does-ps-mean/)
 
 - 首先一定是大写的（capitalized）。
 - Cambridge Dictionary说：PS是英式写法，P.S.（加了periods）是美式写法；但*The Chicago Manual of Style*也推荐PS。
 - ref给出的建议是：用PS，不加任何标点符号。
+  - > PS Please show your friends this letter and the enclosed leaflet.
 
 </details>
 
@@ -225,7 +227,7 @@
 </details>
 
 <details>
-<summary><b>vs vs. vs.</b></summary>
+<summary><b>vs vs. [vs.]</b></summary>
 
 哈哈哈这个标题已经暴露了我的偏好了。
 
@@ -264,9 +266,9 @@ vs.更常用。
   - > No player has won this award more than once.
   - > No man is happy without chocolate.
 
-PS：zero总是跟复数，如zero people，zero degrees。
+PS zero总是跟复数，如zero people，zero degrees。
 
-PS：any总是跟复数或不可数名词，如：
+PS any总是跟复数或不可数名词，如：
 > Do we have any beer/glasses?
 
 </details>
@@ -278,3 +280,11 @@ PS：any总是跟复数或不可数名词，如：
 > The commercials had one message: the geeks shall inherit the earth.
 
 </details>
+
+## Other Words & Phrases
+
+> [cn.]：countable noun
+
+amateur：[cn.]，[adj.]；业余爱好者；或指不专业的（带有贬义）
+
+journalism: the work of collecting news.
