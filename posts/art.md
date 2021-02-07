@@ -39,7 +39,7 @@
 
 ![6](../imgs/art_6.jpg)
 
-同时对比性能、FLOPs和参数量。
+同时对比性能、FLOPs 和参数量。
 
 </details>
 

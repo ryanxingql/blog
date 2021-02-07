@@ -9,7 +9,7 @@
 <details>
 <summary><b>逆向求和（LEETCODE 1#）</b></summary>
 
-在数组中，找出和为target的两个数的位置。
+在数组中，找出和为 target 的两个数的位置。
 
 ```python3
 class Solution:
