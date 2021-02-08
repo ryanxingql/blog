@@ -23,6 +23,9 @@
   - > widen your circle.
     - 拓展你的圈子。
 - **early 2000s**：20 世纪初期。
+  - > When it started in the early 2000s, ...
+- **engaging**：[adj.] 让其他人喜欢。
+  - > Summer school is an engaging way to fill vacation if you aren’t able to go home.
 - **exhausting**：疲惫。
   - > A: I depend a lot on my network of weak ties. B: That sounds exhausting.
 - **exhaustive**: complete.
@@ -45,6 +48,8 @@
   - > When we limit our networks to only our strong ties, we're leaving a lot of potential value on the table.
 - **mainstream**：[adj.] 主流的。
   - > The podcast's gone really mainstream.
+- **more of**
+  - > It's more of a A model than B model, right?
 - **[neighbor] vs. neighbour**：前者用于美式英语，后者用于英式英语。
 - **overlap**：重叠。
   - > I guess there is a lot of information overlap [n.] among my friends and family since we all travel in the same circles.
@@ -58,6 +63,8 @@
   - > Connecting peripheral devices to a computer is most often done by using the USB port.
     - 外部设备。
 - **[program] vs. programme**：计算机领域一般用前者；后者多用于日常英式英语。
+- **spawn**: create.
+  - > The book was a fantastic success, spawning a hit TV series.
 - **spent**：消耗殆尽的。
   - > I'm spent just making sure my friends and family are happy.
 - **spur**: [t.v.] encourage.
@@ -166,6 +173,7 @@
   - > I depend a lot on my network of weak ties. It's not always easy, but when we limit our networks to only our strong ties, we're leaving a lot of potential value on the table.
 - it seems like ...
   - > It seems like there's a podcast for everything these days.
+- speaking of which, ...：说到这。
 - tell me about it：确实（本人也经历过这种不愉快）。
 - 冒号和分号后一般跟小写。
   - > The commercials had one message: the geeks shall inherit the earth.
@@ -198,5 +206,13 @@
 
 ## Other Words & Phrases
 
-- esoteric: known about or understood by very few people.
-- journalism: the work of collecting news.
+- **cash in**: make money.
+  - > A: Maybe we could start our podcast and cash in? B: I'm not sure if that'll work here, but it can't hurt to try.
+    - 试一试也无妨。
+- **esoteric**: known about or understood by very few people.
+- **gripping**: [adj.] exciting or interesting in a way that keeps your attention.
+- **journalism**: the work of collecting news.
+- **monetization**: the process of converting goods into money.
+  - > However, when compared to Facebook, Twitter still lags significantly in terms of monetization efficiency.
+- **plethora**: [n.] excess.
+  - > A plethora of new operators will be allowed to enter the market.
