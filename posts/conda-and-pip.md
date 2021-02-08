@@ -16,6 +16,7 @@
 
 <details>
 <summary><b>添加国内源</b></summary>
+<p>
 
 ```bash
 pip install pip -U
@@ -24,14 +25,17 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 [【TUNA】](https://mirrors.tuna.tsinghua.edu.cn/help/pypi/)
 
+</p>
 </details>
 
 <details>
 <summary><b>离线安装包</b></summary>
+<p>
 
 - 在 PYPI 搜索合适版本，下载。
 - `pip install </path/to/pkg.whl>`
 
+</p>
 </details>
 
 ### 调试
@@ -39,7 +43,8 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 包安装路径错误；已安装的包找不到：`python -m conda install <pkg_name>`。
 
 <details>
-<summary><b>timeout</b></summary>
+<summary><b><code>timeout</code></b></summary>
+<p>
 
 ```bash
 pip install --default-timeout=100 <pkg_name> -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/
@@ -54,6 +59,7 @@ index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 trusted-host=mirrors.aliyun.com
 ```
 
+</p>
 </details>
 
 ## CONDA
@@ -71,6 +77,7 @@ trusted-host=mirrors.aliyun.com
 
 <details>
 <summary><b>安装 ANACONDA</b></summary>
+<p>
 
 - 在[官网](https://repo.anaconda.com/archive/)查看最新链接。
 - 可在服务器 `wget` 下载。
@@ -79,23 +86,23 @@ trusted-host=mirrors.aliyun.com
 
 建议立即添加国内源，见后。
 
-</details>
-
+</p>
 </details>
 
 <details>
 <summary><b>离线安装包</b></summary>
+<p>
 
 - 在[官网](https://anaconda.org/anaconda/repo)搜包。
 - 下载。
 - `conda install --use-local path/to/xxx.tar.bz2`
 
-</details>
-
+</p>
 </details>
 
 <details>
 <summary><b>添加国内源</b></summary>
+<p>
 
 ```bash
 vim ~/.condarc
@@ -104,6 +111,7 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
 ```
 
+</p>
 </details>
 
 ### 调试
@@ -114,11 +122,13 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
 - 不识别 ASCII 码：把 PYTHON 升级至 3.7；不要用 3.6。
 
 <details>
-<summary><b>timeout</b></summary>
+<summary><code>timeout</code></summary>
+<p>
 
 - 通常重试即可。
 - 重新登陆校园网。
 - 添加国内源。
 - 删除 `defaults`，并把 `https` 都改为 `http`。
 
+</p>
 </details>
