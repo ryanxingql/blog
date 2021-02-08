@@ -9,66 +9,73 @@
 
 ## High Frequency Words & Phrases
 
-- appeal to A with B：凭借 B 吸引 A。
+- **amateur**：[c.n.] [adj.] 业余爱好者；或指不专业的（带有贬义）。
+- **appeal to A with B**：凭借 B 吸引 A。
   - > In 2014, podcasts gained traction, appealing to listeners with suspense.
     - 播客在2014年获得了关注，凭借悬疑故事吸引读者。
-- broaden one's horizon：增长某人的见识。
+- **broaden one's horizon**：增长某人的见识。
   - > I suppose if anything, it's a good way to broaden my horizons.
     - 我想这至少是一个长见识的好方法。
-- circle：圈子。
+- **circle**：圈子。
   - > travel in the same circles.
     - 处在同一个圈子里。
     - > I guess there is a lot of information overlap among my friends and family since we all travel in the same circles.
   - > widen your circle.
     - 拓展你的圈子。
-- early 2000s：20 世纪初期。
-- exhausting：疲惫。
+- **early 2000s**：20 世纪初期。
+- **exhausting**：疲惫。
   - > A: I depend a lot on my network of weak ties. B: That sounds exhausting.
-- exhaustive: complete.
+- **exhaustive**: complete.
   - > This list is by no means exhaustive but broadly covers the field.
     - 这个清单决不力求面面俱到，但仍然覆盖了绝大部分领域。
-- gain traction：获得关注。
+- **gain traction**：获得关注。
   - > In 2014, podcasts gained traction, appealing to listeners with suspense.
     - 播客在2014年获得了关注，凭借悬疑故事吸引读者。
-- hub：核心，中心。
+- **hub**：核心，中心。
   - > I found that attending conferences really helped me to tap into network hubs.
   - > New York is the hub of the stock market.
-- if anything：如果一定要说（有什么区别）的话（不确定）。
+- **if anything**：如果一定要说（有什么区别）的话（不确定）。
   - I suppose if anything, it's a good way to broaden my horizons.
     - 我想这至少是一个长见识的好方法。
-- in the know：知情，百事通。
+- **in the know**：知情，百事通。
   - > Jim, you strike me as a guy who's always in the know.
-- knit [v.]：编织。
+- **knit**：[v.] 编织。
   - > If your network is too closely knit, you could be depriving yourself of valuable information coming from peripheral networks.
-- limit A to B：将 A 限制为 B。
+- **limit A to B**：将 A 限制为 B。
   - > When we limit our networks to only our strong ties, we're leaving a lot of potential value on the table.
-- mainstream [adj.]：主流的。
+- **mainstream**：[adj.] 主流的。
   - > The podcast's gone really mainstream.
-- [neighbor] vs. neighbour：前者用于美式英语。
-- overlap：重叠。
+- **[neighbor] vs. neighbour**：前者用于美式英语，后者用于英式英语。
+- **overlap**：重叠。
   - > I guess there is a lot of information overlap [n.] among my friends and family since we all travel in the same circles.
   - > Venn diagrams are composed of overlapping [adj.] circles.
   - > Back when our schedules overlapped [v.], I used to run into him everyday.
-- peripheral：外围的，非核心的。
+- **peripheral**：外围的，非核心的。
   - > If your network is too closely knit, you could be depriving yourself of valuable information coming from peripheral networks.
   - > They come from the periphery [n.], but there's still value to be found here.
-  - 周边视觉暂失：`Temporary loss of peripheral vision.`。
-  - 外部设备：`Connecting peripheral devices to a computer is most often done by using the USB port.`。
-- spent：消耗殆尽的。
+  - > Temporary loss of peripheral vision.
+    - 周边视觉暂失。
+  - > Connecting peripheral devices to a computer is most often done by using the USB port.
+    - 外部设备。
+- **[program] vs. programme**：计算机领域一般用前者；后者多用于日常英式英语。
+- **spent**：消耗殆尽的。
   - > I'm spent just making sure my friends and family are happy.
-- spur [t.v.]: encourage.
+- **spur**: [t.v.] encourage.
   - > What spurred the explosion?
-- strike：（人，点子等）给 A 造成某种印象。
+- **strike**：（人，点子等）给 A 造成某种印象。
   - > Jim, you strike me as a guy who's always in the know.
   - > That strikes me as a bad idea.
   - > That idea is very "striking".
-- tap into A：打入、深入 A。
+- **suspense**: [n.] 悬念带来的刺激或担忧（悬疑感）。
+  - > In 2014, podcasts gained traction, appealing to listeners with suspense.
+    - 翻译成“悬疑故事”更好。
+- **tap into A**：打入、深入 A。
   - > I found that attending conferences really helped me to tap into network hubs.
-- ties：关系，联系。
+- **ties**：关系，联系。
   - > strong ties.
   - > network of weak ties.
     - 弱关系网；认识的人，但关系不强。
-- vs vs. [vs.]：后者更常用。参见[某 up 的回答](https://english.stackexchange.com/questions/5392/how-should-i-abbreviate-versus)。
+- **[vs.] vs. vs**：前者更常用。参见[某 up 的回答](https://english.stackexchange.com/questions/5392/how-should-i-abbreviate-versus)。
 
 <details>
 <summary><b>deprive</b></summary>
@@ -102,16 +109,6 @@
     - 如果你还想再考虑下，那么这个提议仍然有效。
 - 坐视不管。
   - > You shouldn't just leave them on the table.
-
-</p>
-</details>
-
-<details>
-<summary><b>[program] vs. programme</b></summary>
-<p>
-
-- program 用于美式英语；programme 用于英式英语。
-- 对于计算机领域，program 最佳。
 
 </p>
 </details>
@@ -183,7 +180,7 @@
   - > No dogs allowed.
   - > zero people/degrees
 - 存在用单数的固定搭配。
-  - no idea，no time，no doubt，no amount，no reason，no need，no problem，no way，no point，no use，no way，no evidence
+  - > no idea，no time，no doubt，no amount，no reason，no need，no problem，no way，no point，no use，no way，no evidence.
   - > There’s no time left, we have to go.
   - > No need to thank me, it was my pleasure.
   - > I have no idea what the answer is.
@@ -201,9 +198,5 @@
 
 ## Other Words & Phrases
 
-- amateur [c.n.] [adj.]：业余爱好者；或指不专业的（带有贬义）。
 - esoteric: known about or understood by very few people.
 - journalism: the work of collecting news.
-- suspense [n.]: 悬念带来的刺激或担忧（悬疑感）。
-  - > In 2014, podcasts gained traction, appealing to listeners with suspense.
-    - 翻译成“悬疑故事”更好。
