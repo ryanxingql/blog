@@ -1,9 +1,9 @@
 # BLOG
 
 - [BLOG](#blog)
-  - [Publications & Contributions](#publications--contributions)
+  - [Introduction to My Contributions](#introduction-to-my-contributions)
   - [High Frequency Notes](#high-frequency-notes)
-  - [Other Notes](#other-notes)
+  - [Others](#others)
 
 Welcome to my blog! See also [my page](https://ryanxingql.github.io/)~
 
@@ -11,7 +11,7 @@ Welcome to my blog! See also [my page](https://ryanxingql.github.io/)~
 
 Feel free to contact: <ryanxingql@gmail.com>.
 
-## Publications & Contributions
+## Introduction to My Contributions
 
 - [ ] 主笔章节：《图像增强与复原》
 
@@ -45,7 +45,7 @@ Feel free to contact: <ryanxingql@gmail.com>.
 
 - [x] [UBUNTU](https://github.com/RyanXingQL/Blog/blob/master/posts/ubuntu.md)
 
-## Other Notes
+## Others
 
 - [x] [ART](https://github.com/RyanXingQL/Blog/blob/master/posts/art.md)
 

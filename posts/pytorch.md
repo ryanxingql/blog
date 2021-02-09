@@ -1,28 +1,28 @@
 # PYTORCH
 
 - [PYTORCH](#pytorch)
-  - [安装](#安装)
-  - [函数 & 包](#函数--包)
+  - [基础](#基础)
   - [多卡](#多卡)
 
-## 安装
+## 基础
 
 <details>
-<summary><b>展开详情</b></summary>
+<summary><b>安装</b></summary>
+<p>
 
-根据CUDA教程，安装好系统推荐的NVIDIA驱动时，CUDA就自动安装好了。注意，`nvidia-smi`不准确，`nvcc -V`才是准确的CUDA版本。
+根据 CUDA 教程，安装好系统推荐的 NVIDIA 驱动时，CUDA 就自动安装好了。注意，`nvidia-smi` 不准确，`nvcc -V` 才是准确的 CUDA 版本。
 
-确定所需PT版本。在官网查看兼容的CUDA版本。若不满足，可重装CUDA及对应的最高版本NVIDIA驱动。
+确定所需 PT 版本。在官网查看兼容的 CUDA 版本。若不满足，可重装 CUDA 及对应的最高版本 NVIDIA 驱动。
 
-按照[[官网]](https://pytorch.org/get-started/locally/)提供的完整指令，用pip安装。例：
+按照[官网](https://pytorch.org/get-started/locally/)提供的完整指令，用 PIP 安装。例：
   
 ```bash
 pip install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
-可以指定CUDA版本，推荐。
+可以指定 CUDA 版本，推荐。
 
-或用CONDA安装（不推荐）：
+或用 CONDA 安装（不推荐）：
 
 ```bash
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
@@ -30,51 +30,49 @@ condo create -n pt python=3.7
 conda activate pt
 ```
 
+</p>
 </details>
 
-## 函数 & 包
+<details>
+<summary><b>VISDOM</b></summary>
+<p>
+
+更推荐在高版本 PT 中使用 TENSORBOARD。
+
+- 安装：`python -m pip install visdom`。
+- 基础指令：
+  
+  ```python
+  from visdom import Visdom
+  
+  viz = Visdom()
+  viz.line([x], [y], win='loss', opts=dict(title='loss vs. iter, legend=['loss']), update='append')
+  viz.image(img, win='a image')
+  ```
+
+- 开启服务：`python -m visdom.server`。
+- 查看远程服务器的 VISDOM，需要先转接。
+  
+  ```bash
+  ssh 18097:127.0.0.1:8097 x@xxx.xx.xx.xx
+  ```
+  
+  其中 8097 是服务器端口，18097 是本机端口。
+  
+  然后查看 `http://localhost:18097` 即可。
+
+</p>
+</details>
 
 <details>
-<summary><b>VISDOM【不推荐】</b></summary>
-
-> 安装
-
-`python -m pip install visdom`
-
-> 命令
+<summary><b><code>torch.mean</code></b></summary>
+<p>
 
 ```python
-from visdom import Visdom
-
-viz = Visdom()
-viz.line([x], [y], win='loss', opts=dict(title='loss vs. iter, legend=['loss']), update='append')
-viz.image(img, win='a image')
+torch.mean(input, dim, keepdim=False)
 ```
 
-> 开启服务
-
-`python -m visdom.server`
-
-> 查看远程服务器的visdom
-
-转接远程服务器的端口：
-
-```bash
-ssh 18097:127.0.0.1:8097 x@xxx.xx.xx.xx
-```
-
-其中8097是服务器端口，18097是本机端口。
-
-然后查看`http://localhost:18097`即可。
-
-</details>
-
-<details>
-<summary><b>torch.mean</b></summary>
-
-`torch.mean(input, dim, keepdim=False)`
-
-```python3
+```python
 >>> a = torch.randn(4, 4)
 >>> a
 tensor([[-0.3841,  0.6320,  0.4254, -0.7384],
@@ -90,31 +88,26 @@ tensor([[-0.0163],
         [ 0.1807]])
 ```
 
-重点说明`dim`。
+重点说明 `dim`。
 
-例子为h=4，w=4的矩阵。当`dim=0`时，意思是将h=4缩减为1，因此是将对应w（相同h）的值求平均（纵向求平均）。当`dim=1`时，意思是将w=4缩减为1，因此是将对应h（相同w）的值求平均（横向求平均）。
+例子为 h=4，w=4 的矩阵。当 `dim=0` 时，意思是将 h=4 缩减为 1，因此是将对应 w（相同 h）的值求平均（纵向求平均）。当 `dim=1` 时，意思是将 w=4 缩减为 1，因此是将对应 h（相同 w）的值求平均（横向求平均）。
 
+</p>
 </details>
 
 ## 多卡
 
-</details>
+- **DDP 例程，各种后端对比等**：参见[PT 官方文档](https://pytorch.org/docs/stable/distributed.html)。
 
 <details>
-<summary><b>DDP例程</b></summary>
+<summary><b>NCCL 后端 + launch 启动 + DistributedSampler</b></summary>
+<p>
 
-各种后端对比：[[PT官网]](https://pytorch.org/docs/stable/distributed.html)
-
-</details>
-
-<details>
-<summary><b>NCCL后端 + launch启动 + DistributedSampler</b></summary>
-
-1. NCCL：由NVIDIA提供，不支持CPU，GPU支持极佳。推荐。
-2. launch：使用`torch.distributed.launch`启动DDP模式，启动命令略复杂。
+1. NCCL：由 NVIDIA 提供，不支持 CPU，GPU 支持极佳。推荐。
+2. launch：使用 `torch.distributed.launch` 启动 DDP 模式，启动命令略复杂。
 3. `DistributedSampler`：数据需要自动分配到各进程。
 
-```python3
+```python
 """
 test.py
 $ CUDA_VISIBLE_DEVICES=0,1 \
@@ -212,19 +205,21 @@ Model 1, input size: torch.Size([30, 5]), output size: torch.Size([30, 2])
 Model 1, input size: torch.Size([15, 5]), output size: torch.Size([15, 2])
 ```
 
-可以看到，原本90容量的数据集，被分为了45+45。由于BS=30，因此sample了两次，第一次30个，第二次15个。
+可以看到，原本 90 容量的数据集，被分为了 45 和 45。由于 BS 为 30，因此 sample 了两次，第一次 30 个，第二次 15 个。
 
-PT自动将线程数设为了1。而我通过`nproc`或`htop`发现我有12个核心，除以进程数2，得到6线程/进程。因此我手动设`num_threads`为6。
+PT 自动将线程数设为了 1。而我通过 `nproc` 或 `htop` 发现我有 12 个核心，除以进程数 2，得到 6 线程/进程。因此我手动设 `num_threads` 为 6。
 
+</p>
 </details>
 
 <details>
-<summary><b>GLOO后端 + MP启动 + 模型读写方式</b></summary>
+<summary><b>GLOO 后端 + MP 启动 + 模型读写方式</b></summary>
+<p>
 
-1. Gloo：PT原生，CPU支持完美，GPU支持一般。
+1. Gloo：PT 原生，CPU 支持完美，GPU 支持一般。
 2. MP：自动分配进程，执行命令更简单。适合给其他人分享代码。
 
-```python3
+```python
 """
 test.py
 $ python test.py
@@ -365,45 +360,51 @@ Running DDP checkpoint example on rank 1.
 Running DDP checkpoint example on rank 0.
 ```
 
+</p>
 </details>
 
 <details>
 <summary><b>原理</b></summary>
+<p>
 
 有时，单卡显存不足，我们需要多卡才能跑得动；有时，虽然单卡显存足够，但单卡利用率饱和，多卡可以提高运算速度。
 
-[[官方教程]](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html)
-[[知乎教程]](https://zhuanlan.zhihu.com/p/178402798)
-[[知乎教程]](https://zhuanlan.zhihu.com/p/76638962)
-
 有以下几种方式：
 
-> DataParallel
+**（1）DataParallel**
 
 - 适用于单机多卡。
-- 每次forward都要复制模型。
-- 单进程，受限于GIL竞争。
+- 每次 forward 都要复制模型。
+- 单进程，受限于 GIL 竞争。
 - 代码改动最少，但效率低。
 
-> DistributedDataParallel
+**（2）DistributedDataParallel**
+
+强烈推荐。
 
 - 适用于单机多卡和多机多卡。
-- 额外需要`init_process_group`操作。
-- 多进程并行，不受GIL影响。
-- 在DDP建立时单次广播模型，无须每次forward广播。
-- 可以和model parallel组合使用，即每个process单独执行model parallel。参见官方教程最后。
-- 强烈推荐。
+- 额外需要 `init_process_group` 操作。
+- 多进程并行，不受 GIL 影响。
+- 在 DDP 建立时单次广播模型，无须每次 forward 广播。
+- 可以和 model parallel 组合使用，即每个 process 单独执行 model parallel。参见官方教程最后。
 
-> 其他，例如model parallel：[[教程]](https://pytorch.org/tutorials/intermediate/model_parallel_tutorial.html)
+其他例如 model parallel，参见[教程](https://pytorch.org/tutorials/intermediate/model_parallel_tutorial.html)。
 
-`torch.distributed`主要有3个组件，见[[文档]](https://pytorch.org/docs/master/notes/ddp.html)。我们主要用`Distributed Data-Parallel Training (DDP)`。
+`torch.distributed` 主要有3个组件，参见[文档](https://pytorch.org/docs/master/notes/ddp.html)。我们主要用 `Distributed Data-Parallel Training (DDP)`。
 
-DDP原理：模型在DDP建立之初分发到各进程。每个进程输入各自的数据进行forward。backward后，计算梯度，分发至各进程。各进程分别进行相同的参数更新，从而保证各模型一致性。
+DDP 原理：模型在 DDP 建立之初分发到各进程。每个进程输入各自的数据进行 forward。backward 后，计算梯度，分发至各进程。各进程分别进行相同的参数更新，从而保证各模型一致性。
 
 注意：
 
-1. 不同进程之间不可共享GPU。即一块卡只能用于一个进程。
-2. 要合理分配各进程的负荷，让它们的完成时间接近。否则，要指定`init_process_group`中的timeout，避免超时。
-3. 只需要在一个进程中保存模型，但加载时要分发到所有进程。方法：指定好`map_location`参数。若未指定，模型会先导入到CPU，然后被分发到所有进程。此时，所有进程将共享同样的设备。
+1. 不同进程之间不可共享 GPU。即一块卡只能用于一个进程。
+2. 要合理分配各进程的负荷，让它们的完成时间接近。否则，要指定 `init_process_group`中的 `timeout`，避免超时。
+3. 只需要在一个进程中保存模型，但加载时要分发到所有进程。方法：指定好 `map_location` 参数。若未指定，模型会先导入到 CPU，然后被分发到所有进程。此时，所有进程将共享同样的设备。
 
+主要参考：
+
+- [官方教程](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html)
+- [知乎](https://zhuanlan.zhihu.com/p/178402798)
+- [知乎](https://zhuanlan.zhihu.com/p/76638962)
+
+</p>
 </details>

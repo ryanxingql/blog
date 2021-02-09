@@ -23,7 +23,7 @@ pip install pip -U
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-[【TUNA】](https://mirrors.tuna.tsinghua.edu.cn/help/pypi/)
+参考 [TUNA](https://mirrors.tuna.tsinghua.edu.cn/help/pypi/)。
 
 </p>
 </details>
@@ -95,7 +95,7 @@ trusted-host=mirrors.aliyun.com
 
 - 在[官网](https://anaconda.org/anaconda/repo)搜包。
 - 下载。
-- `conda install --use-local path/to/xxx.tar.bz2`
+- `conda install --use-local <path/to/xxx.tar.bz2>`
 
 </p>
 </details>

@@ -1,40 +1,27 @@
 # TENSORFLOW
 
-- [TENSORFLOW](#tensorflow)
+- `tensorflow not found`：在每次 `import tf` 前加入[一段话](https://www.cnblogs.com/yiyezhouming/p/9497697.html)。
+- **多卡**：参见[博客](https://blog.csdn.net/minstyrain/article/details/80986397)。
 
 <details>
 <summary><b>安装</b></summary>
+<p>
 
-- 首先，NVIDIA和CUDA必须匹配，CUDA和TF版本号也要匹配。
+首先，NVIDIA 和 CUDA 必须匹配，CUDA 和 TF 版本号也要匹配；关于 CUDA 和  TF 匹配版本参见[此处](https://tensorflow.google.cn/install/source?hl=en#linux)。
 
-查看CUDA和TF匹配要求：[[ref]](https://tensorflow.google.cn/install/source?hl=en#linux)
+官方推荐 [CONDA + PIP 安装](https://www.tensorflow.org/install/pip?hl=zh-cn#conda)；即，新建 CONDA 环境，激活进入，然后 PIP 安装。
 
-- 官方推荐CONDA+PIP安装：[[ref]](https://www.tensorflow.org/install/pip?hl=zh-cn#conda)
+注意添加国内源，否则 PIP 也会很慢。
 
-即，新建CONDA环境，激活进入，然后PIP安装。
-
-- 注意添加国内源，否则PIP也会很慢：`pip install tensorflow==1.2.0 --ignore-installed -i https://mirrors.aliyun.com/pypi/simple/`
-
+</p>
 </details>
 
 <details>
-<summary><b>提示：tensorflow not found</b></summary>
+<summary><b><code>insufficient</code></b></summary>
+<p>
 
-在每次`import tf`前加入一段话：[[ref]](https://www.cnblogs.com/yiyezhouming/p/9497697.html)
+- 要修改 CUDATOOLKIT 的版本号。例如 NVIDIA driver 是 410.xx，那么 CUDA 只能是 10.0，不能是 10.1。
+- 很简单：`conda install cudatoolkit=10.0`，降级；参考[知乎](https://zhuanlan.zhihu.com/p/64376059)。
 
-</details>
-
-<details>
-<summary><b>提示：insufficient</b></summary>
-
-- 要修改CUDATOOLKIT的版本号。例如NVIDIA driver是410.xx，那么CUDA只能是10.0，不能是10.1。
-- 很简单：`conda install cudatoolkit=10.0`，降级。[[ref]](https://zhuanlan.zhihu.com/p/64376059)
-
-</details>
-
-<details>
-<summary><b>多卡</b></summary>
-
-[[ref]](https://blog.csdn.net/minstyrain/article/details/80986397)
-
+</p>
 </details>

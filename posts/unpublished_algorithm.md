@@ -8,10 +8,11 @@
 
 <details>
 <summary><b>逆向求和（LEETCODE 1#）</b></summary>
+<p>
 
 在数组中，找出和为 target 的两个数的位置。
 
-```python3
+```python
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         a_dict = {}
@@ -21,12 +22,14 @@ class Solution:
             a_dict[k] = i
 ```
 
+</p>
 </details>
 
 <details>
 <summary><b>查重（LEETCODE 217#）</b></summary>
+<p>
 
-```python3
+```python
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         """too slow
@@ -46,14 +49,16 @@ class Solution:
         return False
 ```
 
+</p>
 </details>
 
 ## 递归
 
 <details>
 <summary><b>递归剖析（LEETCODE 38#）</b></summary>
+<p>
 
-```python3
+```python
 class Solution:
     def countAndSay(self, n: int) -> str:
         str_ = "1"
@@ -91,10 +96,12 @@ solution = Solution()
 print(solution.countAndSay(4))
 ```
 
+</p>
 </details>
 
 <details>
 <summary><b>生成全排列</b></summary>
+<p>
 
 ```c
 // 输入正整数1<=N<=10，生成1到N的全排列，从小到大排序。
@@ -168,4 +175,5 @@ int main(){
 }
 ```
 
+</p>
 </details>

@@ -1,9 +1,5 @@
 # ART
 
-- [ART](#art)
-
-</details>
-
 <details>
 <summary><b>字多</b></summary>
 <p>

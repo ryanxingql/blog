@@ -1,12 +1,10 @@
 # CUDA AND NVIDIA
 
-- [CUDA AND NVIDIA](#cuda-and-nvidia)
-
 <details>
 <summary><b>安装或升级</b></summary>
 <p>
 
-参考[博客](https://blog.csdn.net/BigData_Mining/article/details/99670642)。
+参见[博客](https://blog.csdn.net/BigData_Mining/article/details/99670642)。
 
 注意：
 
