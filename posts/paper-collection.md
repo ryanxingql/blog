@@ -37,35 +37,37 @@
 
 ## :fire: Review of Postprocessing Techniques for Compression Artifact Removal
 
-大佬在1998年写的、关于后处理压缩失真的review。特别针对基于block DCT的压缩算法。还给出了一个简单的增强算法。
+大佬在 1998 年写的、关于后处理压缩失真的 review。特别针对基于 block DCT 的压缩算法。还给出了一个简单的增强算法。
 
 关于**率失真优化**：
 
-- 当码率较低时，大多数压缩算法都会产生annoying的失真，极大影响压缩图像和视频的感知质量。
+- 当码率较低时，大多数压缩算法都会产生 annoying 的失真，极大影响压缩图像和视频的感知质量。
 - 当码率固定时，具有更多细节的图像，通常在压缩后质量更差。
-- 在有损压缩中，码率和失真通常是tradeoff的。
+- 在有损压缩中，码率和失真通常是 tradeoff 的。
 
 关于**处理方法的分类**：
 
-- 为了实现低码率-高感知质量，后处理是一种attractive的解决方法。因为后处理可以在decoding之后做，方便与现有的标准结合。
-- 另一种解决策略称为前处理，即在encoder end操作。例如预滤波，将source图像中难以察觉的细节滤掉，可以让压缩算法更轻松；或基于human visual model的率失真优化。
-- 前处理多用于语音处理和编码，而still image coding多用后处理。
+- 为了实现低码率-高感知质量，后处理是一种 attractive 的解决方法。因为后处理可以在 decoding 之后做，方便与现有的标准结合。
+- 另一种解决策略称为前处理，即在 encoder end 操作。例如预滤波，将 source 图像中难以察觉的细节滤掉，可以让压缩算法更轻松；或基于 human visual model 的率失真优化。
+- 前处理多用于语音处理和编码，而 still image coding 多用后处理。
 
 关于**失真**：
 
-- 失真类型主要由压缩算法决定；例如基于block DCT的压缩算法，会在flat areas产生块效应，在物体边缘产生ringing；在基于小波的压缩算法中，ringing是最显著的artifact。
-- 块效应通常是由分块处理导致的，例如vector quantization、block truncation coding、fractal-based compression等。
+- 失真类型主要由压缩算法决定；例如基于 block DCT 的压缩算法，会在 flat areas 产生块效应，在物体边缘产生 ringing；在基于小波的压缩算法中，ringing 是最显著的 artifact。
+- 块效应通常是由分块处理导致的，例如 vector quantization、block truncation coding、fractal-based compression 等。
 
 关于**后处理方法**：
 
 - 后处理的目标是：在给定码率下提高感知质量，或在给定质量要求下提高压缩率。
-- 大部分后处理算法都在关注块效应，因为JPEG、MPEG等压缩标准都采用了block DCT。
-- 大致分为两个门派：image enhancement和image restoration。
-- Image restoration的目标是提升perceived quality subjectively，因此通常会考虑artifacts的特殊结构，以及human visual sensitivities。
-- Image enhancement是heuristic的，因为没有优化的objective criterion。
-- Image restoration则通常借助distortion model的先验知识。例如CLS，POCS和MAP。
+- 大部分后处理算法都在关注块效应，因为 JPEG、MPEG 等压缩标准都采用了 block DCT。
+- 大致分为两个门派：image enhancement 和 image restoration。
+- image restoration 的目标是提升 perceived quality subjectively，因此通常会考虑 artifacts 的特殊结构，以及 human visual sensitivities。
+- image enhancement 是 heuristic 的，因为没有优化的 objective criterion。
+- image restoration 则通常借助 distortion model 的先验知识。例如 CLS，POCS 和 MAP。
 
-本人思考：对于learning-based方法，尽管有时以MSE为优化目标，但仍然可以属于enhancement；因为借助了外部先验。
+本人思考：对于 learning-based 方法，尽管有时以 MSE 为优化目标，但仍然可以属于 enhancement；因为借助了外部先验。
+
+> 以下论文还没来得及 polish。
 
 ## Learning Enriched Features for Real Image Restoration and Enhancement
 

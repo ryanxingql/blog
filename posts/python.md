@@ -173,7 +173,6 @@ MATLAB 很强大，但我更倾向于开源的 PYTHON。
 
 PYTHON 的绘图能力仰赖众多开源项目。
 
-
 - **3D plot**：参见[博客](https://blog.csdn.net/u014636245/article/details/82799573)。
 
 <details>
@@ -266,7 +265,7 @@ parser.add_argument('-io_v', '--io_val', type=str, \
 opts = parser.parse_args()
 print(opts.io_val)
 
-opts_dict = vars(opts)  # 转换成字典，方便log逐行打印
+opts_dict = vars(opts)  # 转换成字典，方便 log 逐行打印
 log_fp.write(opts_dict['io_val'] + '\n')
 ```
 
@@ -336,8 +335,8 @@ def func_demo(proc_id):
     print(f"end {proc_id}")
 
 
-if __name__ == '__main__':  # windows下要写在里面
-    pool = mp.Pool(processes=2)  # 最多2个进程并行
+if __name__ == '__main__':  # WINDOWS 下要写在里面
+    pool = mp.Pool(processes=2)  # 最多 2 个进程并行
     proc_id_list = list(range(4)) # 0 -> 3
     for proc_id in proc_id_list:
         pool.apply_async(func=func_demo, args=(proc_id, ))
@@ -458,7 +457,7 @@ file_path.exists()  # True
 if not os.exists(<dir_path>):
     os.makedirs(<dir_path>)
 
-a_Path_object.mkdir(parents=True)  # 可以代替makedirs的功能
+a_Path_object.mkdir(parents=True)  # 可以代替 makedirs 的功能
 ```
 
 </p>
@@ -474,7 +473,7 @@ os.path.join("/home", "usrname")
 
 from pathlib import Path
 root_path = Path('C:/Files')  # 你没看错，无论系统，都用正斜杠即可！
-file_path = root_path / 'file.csv'  # 比op简单
+file_path = root_path / 'file.csv'  # 比 os 简单
 ```
 
 </p>
@@ -541,7 +540,7 @@ for i in trange(1e3):
 # 手动控制更新
 with tqdm(total=1e3) as pbar:
     for i in range(1e2):
-        pbar.update(10)  # 每次更新，进度+10
+        pbar.update(10)  # 每次更新，进度 + 10
 
 # 设置文字描述
 pbar = tqdm([name1, name2, name3])
@@ -550,7 +549,7 @@ for name in pbar:
 
 # 进一步设置属性（如宽度和描述）
 tqdm(alist, ncols=80)  # 可以避免太宽导致的换行显示
-# 可以把eta等去掉，只保留描述，百分比和bar
+# 可以把 eta 等去掉，只保留描述，百分比和 bar
 with tqdm(
     total=60*24,
     ncols=40,
@@ -559,7 +558,8 @@ with tqdm(
     pbar.update(accum_minute)
 
 # 关闭对象
-如果有多个pbar，一定要在每个pbar完成使命后`pbar.close()`，否则不换行。
+# 最好在每个 pbar 完成使命后关闭；否则不换行。
+pbar.close()
 ```
 
 </p>
