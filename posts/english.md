@@ -9,6 +9,9 @@
 
 ## High Frequency
 
+- **a ... kind of thing**：表示难以精确表达的事物。
+  - > 1: What's this? 2: It's a spicy tofu kind of thing.
+    - 辣豆腐之类的东西。
 - **academic**：[c.n.] 学者。
   - > I want to be an academic.
 - **amateur**：[c.n.] [adj.] 业余爱好者；或指不专业的（带有贬义）。
@@ -22,6 +25,9 @@
 - **broaden one's horizon**：增长某人的见识。
   - > I suppose if anything, it's a good way to broaden my horizons.
     - 我想这至少是一个长见识的好方法。
+- **check it out**：[informal] to look at someone or something to see whether you like them.
+  - > This new up-and-coming Indie band is touring here next week. Wanna check it out?
+    - 想去看看吗？
 - **circle**：圈子。
   - > I guess there is a lot of information overlap among my friends and family since we all travel in the same circles.
     - 处在同一个圈子里。
@@ -40,11 +46,22 @@
 - **exhaustive**: complete.
   - > This list is by no means exhaustive but broadly covers the field.
     - 这个清单决不力求面面俱到，但仍然覆盖了绝大部分领域。
+- **fair enough**：表示理解或接收对方的说法。
+  - > 1: I wouldn't be able to get into it. 2: Fair enough.
 - **fruitful**: productive.
   - > a fruitful research career.
 - **gain traction**：获得关注。
   - > In 2014, podcasts gained traction, appealing to listeners with suspense.
     - 播客在2014年获得了关注，凭借悬疑故事吸引读者。
+- **genre**：（文学、艺术）流派、风格、类型。
+  - > 1: What kind of music do they play? 2: It's hard to nail them down to an exact genre.
+    - 很难将他们归为一类。
+- **get into something**: to start enjoying something.
+  - > I wouldn't be able to get into it.
+    - 我可能不会感兴趣。
+- **help me out here**
+  - > Well help me out here. Is it Rock?
+    - 给我说说嘛（解答我的困惑）。
 - **hub**：核心，中心。
   - > I found that attending conferences really helped me to tap into network hubs.
   - > New York is the hub of the stock market.
@@ -131,6 +148,8 @@
 - **time**：时光
   - > My time as an undergraduate opened my eyes to the wider benefit of science.
     - 读本科的时光，让我打开了眼界，对科学产生了兴趣。
+- **venue**：体育场、音乐厅等聚会现场。
+  - > He's such a homebody. He'd rather sit at home and listen to recordings than go to a live venue.
 - **[vs.] vs. vs**：前者更常用。参见[知乎](https://english.stackexchange.com/questions/5392/how-should-i-abbreviate-versus)。
 - **what would you like something to be?**
   - > What would you like the impact of this project to be?
@@ -254,13 +273,43 @@
 - **cash in**: make money.
   - > 1: Maybe we could start our podcast and cash in? 2: I'm not sure if that'll work here, but it can't hurt to try.
     - 试一试也无妨。
+- **cover**：翻唱音乐。
+  - > Do they play covers or originals?
+- **eclectic**：不拘一格、博采众长的。
+  - > She has very eclectic tastes in literature.
 - **esoteric**: known about or understood by very few people.
+- **for good measure**: as a way of making something complete or better.
+  - > They've got all of the complex harmonies of jazz, but with hip-hop rhythms thrown in for good measure.
+    - 他们保留了所有爵士乐的复杂和声，但另外增加了嘻哈的节奏。
 - **gripping**: [adj.] exciting or interesting in a way that keeps your attention.
+- **harmony**：和声。
+  - > They've got all of the complex harmonies of jazz, but with hip-hop rhythms thrown in for good measure.
+    - 他们保留了所有爵士乐的复杂和声，但另外增加了嘻哈的节奏。
+- **homebody**：宅男。
+  - > He's such a homebody. He'd rather sit at home and listen to recordings than go to a live venue.
+- **indie**：[adj.] 独立制作的，形容发行音乐/电影的小公司/团体。
+  - > This new up-and-coming Indie band is touring here next week. Wanna check it out?
+    - 新晋的独立乐队。
 - **journalism**: the work of collecting news.
 - **monetization**: the process of converting goods into money.
   - > However, when compared to Facebook, Twitter still lags significantly in terms of monetization efficiency.
+- **nail something down**: [informal] to definitely decide, arrange, or complete something.
+  - > 1: What kind of music do they play? 2: It's hard to nail them down to an exact genre.
+    - 很难将他们归为一类。
+  - > Let's try to nail down a time for the meeting next week.
+  - > There's something wrong with this machine, but I can't quite nail it down.
+    - 我也不能确定（问题）。
+- **neat**: [informal] [u.s.] good or nice.
+  - > Sounds neat.
 - **plethora**: [n.] excess.
   - > A plethora of new operators will be allowed to enter the market.
+- **up and coming**: likely to become popular/successful.
+  - > This new up-and-coming Indie band is touring here next week. Wanna check it out?
+    - 新晋的独立乐队。
+  - > We've picked out five up-and-coming stocks!
+    - 五支看涨股票。
+  - > This part of the city is the next up-and-coming one.
+    - 这个地段将成为下一个新贵。
 
 ## Repeat
 
