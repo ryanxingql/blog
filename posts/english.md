@@ -25,6 +25,9 @@
 - **broaden one's horizon**：增长某人的见识。
   - > I suppose if anything, it's a good way to broaden my horizons.
     - 我想这至少是一个长见识的好方法。
+- **something can be another thing**
+  - > I guess charing can be a bit of an inconvenience.
+    - 我猜充电可能会有点不方便。
 - **check it out**：[informal] to look at someone or something to see whether you like them.
   - > This new up-and-coming Indie band is touring here next week. Wanna check it out?
     - 想去看看吗？
@@ -37,6 +40,8 @@
   - > I'm really insterested in communicating my research to a wider audience.
     - 我很希望将我的研究和更多人交流。
 - **do a PhD**：攻读博士学位。
+- **drive down**: to make a price or amount fall to a lower level.
+  - > Fierce competition among restaurants has driven down prices.
 - **early 2000s**：20 世纪初期。
   - > When it started in the early 2000s, ...
 - **engaging**：[adj.] 让其他人喜欢。
@@ -59,9 +64,14 @@
 - **get into something**: to start enjoying something.
   - > I wouldn't be able to get into it.
     - 我可能不会感兴趣。
+- **handling**：操纵性。
+  - > The new car is sleeker, has a longer battery life and has great handling.
 - **help me out here**
   - > Well help me out here. Is it Rock?
     - 给我说说嘛（解答我的困惑）。
+- **how do you like something**: 你觉得 something 怎么样？
+  - > How do you like being an EV owner?
+    - EV: electric vehicle.
 - **hub**：核心，中心。
   - > I found that attending conferences really helped me to tap into network hubs.
   - > New York is the hub of the stock market.
@@ -73,21 +83,38 @@
     - 我想这至少是一个长见识的好方法。
 - **in the know**：知情，百事通。
   - > Jim, you strike me as a guy who's always in the know.
+- **incentive**：[n.] 激励。
+  - > Now is a great time to buy an electric car, especially if you factor in the tax incentives.
+    - tax/financial incentives：税收优惠。
 - **it seems like ...**
   - > It seems like there's a podcast for everything these days.
+- **journalism**: the work of collecting news.
 - **keep other options open**：不排斥其他选项。
   - > I want to be an academic, but I'm happy to keep other options open.
 - **knit**：[v.] 编织。
   - > If your network is too closely knit, you could be depriving yourself of valuable information coming from peripheral networks.
-- **limit something to otherthing**：将某事物限制为另一事物。
+- **lean towards**：倾向于。
+  - > I'm leaning towards something on the cheaper side.
+    - > 我想要便宜一点的。
+- **limit something to another thing**：将某事物限制为另一事物。
   - > When we limit our networks to only our strong ties, we're leaving a lot of potential value on the table.
 - **mainstream**：[adj.] 主流的。
   - > The podcast's gone really mainstream.
 - **Master's**：硕士学位
   - > I did some original research for my Master's.
     - 在研究生期间做了一些原创性研究。
+- **monetization**: the process of converting goods into money.
+  - > However, when compared to Facebook, Twitter still lags significantly in terms of monetization efficiency.
 - **more of**
   - > It's more of a A model than B model, right?
+- **nail something down**: [informal] to definitely decide, arrange, or complete something.
+  - > 1: What kind of music do they play? 2: It's hard to nail them down to an exact genre.
+    - 很难将他们归为一类。
+  - > Let's try to nail down a time for the meeting next week.
+  - > There's something wrong with this machine, but I can't quite nail it down.
+    - 我也不能确定（问题）。
+- **neat**: [informal] [u.s.] good or nice.
+  - > Sounds neat.
 - **[neighbor] vs. neighbour**：前者用于美式英语，后者用于英式英语。
 - **not that great of something**：不怎么擅长（某种技能）；一种不卑不亢的说法；可以加 all 用以强调。
   - > I'm not that great of a public speaker.
@@ -104,6 +131,11 @@
     - 周边视觉暂失。
   - > Connecting peripheral devices to a computer is most often done by using the USB port.
     - 外部设备。
+- **plethora**: [n.] excess.
+  - > A plethora of new operators will be allowed to enter the market.
+- **pop up**: to appear very quickly or suddenly.
+  - > There are more charing stations popping up every day.
+    - 每天都在涌现越来越多的充电站。
 - **[program] vs. programme**：计算机领域一般用前者；后者多用于日常英式英语。
 - **put on**
   - > I'd like to contact some schools to discuss putting on some educational events.
@@ -115,6 +147,15 @@
     - 实用。
   - > A celebrity's private life should have no relevance [n.] to her professional career.
     - 名人的私生活不应影响到他们的职业生涯。
+- **short answer is ...**：简而言之。
+  - > 1: How long does the charging take? 2: The short answer is long.
+    - 简而言之，要很久。
+- **sleek**: fashionable and attractive in design.
+  - > The new car is sleeker, has a longer battery life and has great handling.
+    - 新车更时尚，续航更强，操纵性更好。
+- **something will do**
+  - > 1: If you want a new EV with all the built-in features, it's going to be pricey. 2: It doesn't need to be self-driving or anything. Even a hybrid will do.
+    - 1：如果你想要具备所有内置功能的新型电动车，价格会很高。2：我不需要它有自动驾驶或其他功能。混合动力也行。
 - **spawn**: create.
   - > The book was a fantastic success, spawning a hit TV series.
 - **speaking of which, ...**：说到这。
@@ -129,6 +170,8 @@
 - **suspense**：[n.] 悬念带来的刺激或担忧（悬疑感）。
   - > In 2014, podcasts gained traction, appealing to listeners with suspense.
     - 翻译成“悬疑故事”更好。
+- **sustainablity**：可持续性。
+  - > I really care about sustainability and renewable energy these days.
 - **take up**
   - > It inspired me to take up the challenge of a PhD.
     - 迎接挑战。
@@ -148,6 +191,13 @@
 - **time**：时光
   - > My time as an undergraduate opened my eyes to the wider benefit of science.
     - 读本科的时光，让我打开了眼界，对科学产生了兴趣。
+- **up and coming**: likely to become popular/successful.
+  - > This new up-and-coming Indie band is touring here next week. Wanna check it out?
+    - 新晋的独立乐队。
+  - > We've picked out five up-and-coming stocks!
+    - 五支看涨股票。
+  - > This part of the city is the next up-and-coming one.
+    - 这个地段将成为下一个新贵。
 - **venue**：体育场、音乐厅等聚会现场。
   - > He's such a homebody. He'd rather sit at home and listen to recordings than go to a live venue.
 - **[vs.] vs. vs**：前者更常用。参见[知乎](https://english.stackexchange.com/questions/5392/how-should-i-abbreviate-versus)。
@@ -253,7 +303,7 @@
   - > Nationalization in the transport industries produced neither outstanding industrial relations nor employee commitment.
 - 物与物的关系：没区别。
 - 存在一些固定搭配。
-  - something bear no/little relation/relationship to otherthing：某事物与另一事物关系不大。
+  - something bear no/little relation/relationship to another thing：某事物与另一事物关系不大。
     - > The lessons bear little relationship to the children's actual needs.
     - > The fee they are offering bears no relation to the amount of work involved.
   - sexual relationship
@@ -290,26 +340,12 @@
 - **indie**：[adj.] 独立制作的，形容发行音乐/电影的小公司/团体。
   - > This new up-and-coming Indie band is touring here next week. Wanna check it out?
     - 新晋的独立乐队。
-- **journalism**: the work of collecting news.
-- **monetization**: the process of converting goods into money.
-  - > However, when compared to Facebook, Twitter still lags significantly in terms of monetization efficiency.
-- **nail something down**: [informal] to definitely decide, arrange, or complete something.
-  - > 1: What kind of music do they play? 2: It's hard to nail them down to an exact genre.
-    - 很难将他们归为一类。
-  - > Let's try to nail down a time for the meeting next week.
-  - > There's something wrong with this machine, but I can't quite nail it down.
-    - 我也不能确定（问题）。
-- **neat**: [informal] [u.s.] good or nice.
-  - > Sounds neat.
-- **plethora**: [n.] excess.
-  - > A plethora of new operators will be allowed to enter the market.
-- **up and coming**: likely to become popular/successful.
-  - > This new up-and-coming Indie band is touring here next week. Wanna check it out?
-    - 新晋的独立乐队。
-  - > We've picked out five up-and-coming stocks!
-    - 五支看涨股票。
-  - > This part of the city is the next up-and-coming one.
-    - 这个地段将成为下一个新贵。
+- **pick your brain**：[informal] 请教问题。
+  - > 1: I'm thinking of buying an electric car. Mind if I pick your brain? 2: No, go ahead.
+    - 介不介意我请教你一些问题？
+- **take the plunge**: to finally do something important, difficult, or dangerous.
+  - > He took the plunge and asked her to marry him.
+    - plunge 是从高处跳下的意思。
 
 ## Repeat
 
