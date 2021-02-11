@@ -86,6 +86,9 @@
 - **incentive**：[n.] 激励。
   - > Now is a great time to buy an electric car, especially if you factor in the tax incentives.
     - tax/financial incentives：税收优惠。
+  - > Reduced bus fare is offered as an incentive to get people to use public transport.
+- **incentivize**
+  - > The bank is cutting debit card fees to incentivize customers to spend more.
 - **it seems like ...**
   - > It seems like there's a podcast for everything these days.
 - **journalism**: the work of collecting news.
@@ -156,6 +159,11 @@
 - **something will do**
   - > 1: If you want a new EV with all the built-in features, it's going to be pricey. 2: It doesn't need to be self-driving or anything. Even a hybrid will do.
     - 1：如果你想要具备所有内置功能的新型电动车，价格会很高。2：我不需要它有自动驾驶或其他功能。混合动力也行。
+  - > It will do for now.
+    - 目前这样就可以了。
+  - > I don't need any more pizza. One piece will do, thanks.
+    - 一块就可以了。
+  - > I prefer to use tape, but glue will do.
 - **spawn**: create.
   - > The book was a fantastic success, spawning a hit TV series.
 - **speaking of which, ...**：说到这。
@@ -170,6 +178,10 @@
 - **suspense**：[n.] 悬念带来的刺激或担忧（悬疑感）。
   - > In 2014, podcasts gained traction, appealing to listeners with suspense.
     - 翻译成“悬疑故事”更好。
+- **sustain**：承受，忍受。
+  - > Earth can't sustain the world' current population.
+- **sustainable**
+  - > I only drink coffee that is sustainably grown.
 - **sustainablity**：可持续性。
   - > I really care about sustainability and renewable energy these days.
 - **take up**
