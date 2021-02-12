@@ -1,33 +1,35 @@
 # ENGLISH
 
-- [ENGLISH](#english)
-  - [High Frequency](#high-frequency)
-  - [Low Frequency](#low-frequency)
-  - [Repeat](#repeat)
-
 原则：不需要穷尽词典、将低频词义记录于此；只记录遇到的词义和表达。
-
-## High Frequency
 
 - **a ... kind of thing**：表示难以精确表达的事物。
   - > 1: What's this? 2: It's a spicy tofu kind of thing.
     - 辣豆腐之类的东西。
+- **a dime a dozen**: extremely common, and therefore not very valuable or special.
+  - > These days, MBAs are a dime a dozen, so it's worth spending the extra pennies for a school that sticks out.
 - **academic**：[c.n.] 学者。
   - > I want to be an academic.
 - **amateur**：[c.n.] [adj.] 业余爱好者；或指不专业的（带有贬义）。
+- **analytic**
+  - > Don't be so analytical. Just go with your gut!
+    - 别分析来分析去的！就按你的直觉走！
+  - > We need a more analytical approach to this project.
+    - 我们要对这个项目采取更缜密的方法。
 - **apart from**
   - > Apart from social media, I'd also like to contact some local schools.
 - **appeal to someone with something**：凭借某事物吸引某人。
   - > In 2014, podcasts gained traction, appealing to listeners with suspense.
     - 播客在2014年获得了关注，凭借悬疑故事吸引读者。
+
 - **be doing**：将会。
   - > I depend a lot on my network of weak ties. It's not always easy, but when we limit our networks to only our strong ties, we're leaving a lot of potential value on the table.
 - **broaden one's horizon**：增长某人的见识。
   - > I suppose if anything, it's a good way to broaden my horizons.
     - 我想这至少是一个长见识的好方法。
-- **something can be another thing**
-  - > I guess charing can be a bit of an inconvenience.
-    - 我猜充电可能会有点不方便。
+
+- **cash in**: make money.
+  - > 1: Maybe we could start our podcast and cash in? 2: I'm not sure if that'll work here, but it can't hurt to try.
+    - 试一试也无妨。
 - **check it out**：[informal] to look at someone or something to see whether you like them.
   - > This new up-and-coming Indie band is touring here next week. Wanna check it out?
     - 想去看看吗？
@@ -36,25 +38,60 @@
     - 处在同一个圈子里。
   - > widen your circle.
     - 拓展你的圈子。
+- **come at a huge cost**
+  - > It comes at a huge cost.
+    - 要付出巨大的代价。
 - **communicate somthing to someone**
   - > I'm really insterested in communicating my research to a wider audience.
     - 我很希望将我的研究和更多人交流。
+- **corporate ladder**：企业晋升制度。
+  - > 1: I really want some more credibility to move up the corporate ladder. 2: That's huge.
+    - 1：我想增加资历，好晋升。2：这事很重要。
+- **cover**：翻唱音乐。
+  - > Do they play covers or originals?
+- **credibility**: qualities that someone has that make people believe or trust them.
+  - > I really want some more credibility to move up the corporate ladder.
+    - 我想增加资历，好晋升。
+  - > The scandal damaged his credibility as the CEO.
+    - 丑闻损害了他作为 CEO 的信誉。
+  - > Banks need to asses the credibility of customers.
+- **credible**
+  - > She's not a credible witness.
+    - 她不是一个可信的证人。
+
+- **demanding**：需要耗费较大精力的；不容易的。
+  - > 1: I don't know if I can juggle an MBA and a full-time job. 2: It's indeed very demanding.
+    - 1：我不知道我能否兼顾攻读MBA和全职工作。2：这确实很难。
+  - > Children can be very demanding.
+    - 很难满足。
 - **do a PhD**：攻读博士学位。
+  - > do an MBA.
 - **drive down**: to make a price or amount fall to a lower level.
   - > Fierce competition among restaurants has driven down prices.
+
 - **early 2000s**：20 世纪初期。
   - > When it started in the early 2000s, ...
+- **eclectic**：不拘一格、博采众长的。
+  - > She has very eclectic tastes in literature.
 - **engaging**：[adj.] 让其他人喜欢。
   - > Summer school is an engaging way to fill vacation if you aren’t able to go home.
+- **esoteric**: known about or understood by very few people.
 - **exhausting**：疲惫。
   - > 1: I depend a lot on my network of weak ties. 2: That sounds exhausting.
 - **exhaustive**: complete.
   - > This list is by no means exhaustive but broadly covers the field.
     - 这个清单决不力求面面俱到，但仍然覆盖了绝大部分领域。
+
 - **fair enough**：表示理解或接收对方的说法。
   - > 1: I wouldn't be able to get into it. 2: Fair enough.
+- **for good measure**: as a way of making something complete or better.
+  - > They've got all of the complex harmonies of jazz, but with hip-hop rhythms thrown in for good measure.
+    - 他们保留了所有爵士乐的复杂和声，但另外增加了嘻哈的节奏。
+- **front lines**：前线；重要岗位。
+  - > An MBA will equip you with the know-how you need on the front lines.
 - **fruitful**: productive.
   - > a fruitful research career.
+
 - **gain traction**：获得关注。
   - > In 2014, podcasts gained traction, appealing to listeners with suspense.
     - 播客在2014年获得了关注，凭借悬疑故事吸引读者。
@@ -64,17 +101,29 @@
 - **get into something**: to start enjoying something.
   - > I wouldn't be able to get into it.
     - 我可能不会感兴趣。
+- **good point**：说得好；说得对。
+  - > 1: I think you can get into a prestigious school. Your ROI will be high. 2: Good point.
+- **gripping**: [adj.] exciting or interesting in a way that keeps your attention.
+
 - **handling**：操纵性。
   - > The new car is sleeker, has a longer battery life and has great handling.
+- **harmony**：和声。
+  - > They've got all of the complex harmonies of jazz, but with hip-hop rhythms thrown in for good measure.
+    - 他们保留了所有爵士乐的复杂和声，但另外增加了嘻哈的节奏。
+- **have a sec**：有空。
+  - > Do you have a sec?
 - **help me out here**
   - > Well help me out here. Is it Rock?
     - 给我说说嘛（解答我的困惑）。
+- **homebody**：宅男。
+  - > He's such a homebody. He'd rather sit at home and listen to recordings than go to a live venue.
 - **how do you like something**: 你觉得 something 怎么样？
   - > How do you like being an EV owner?
     - EV: electric vehicle.
 - **hub**：核心，中心。
   - > I found that attending conferences really helped me to tap into network hubs.
   - > New York is the hub of the stock market.
+
 - **identify**: recognize/understand someone/something.
   - > Before you start your PhD, are there any training needs you can identify?
     - 可以谈一谈你的培训需求吗？（提问者是博士生导师）
@@ -89,18 +138,30 @@
   - > Reduced bus fare is offered as an incentive to get people to use public transport.
 - **incentivize**
   - > The bank is cutting debit card fees to incentivize customers to spend more.
+- **indie**：[adj.] 独立制作的，形容发行音乐/电影的小公司/团体。
+  - > This new up-and-coming Indie band is touring here next week. Wanna check it out?
+    - 新晋的独立乐队。
 - **it seems like ...**
   - > It seems like there's a podcast for everything these days.
+
 - **journalism**: the work of collecting news.
+- **juggle**: to try to balance several things that you are holding without dropping any of them.
+  - > I don't know if I can juggle an MBA and a full-time job.
+    - 兼顾攻读MBA和全职工作。
+
 - **keep other options open**：不排斥其他选项。
   - > I want to be an academic, but I'm happy to keep other options open.
 - **knit**：[v.] 编织。
   - > If your network is too closely knit, you could be depriving yourself of valuable information coming from peripheral networks.
+- **know-how**：（实际工作所需）知识。
+  - > An MBA will equip you with the know-how you need on the front lines.
+
 - **lean towards**：倾向于。
   - > I'm leaning towards something on the cheaper side.
     - > 我想要便宜一点的。
 - **limit something to another thing**：将某事物限制为另一事物。
   - > When we limit our networks to only our strong ties, we're leaving a lot of potential value on the table.
+
 - **mainstream**：[adj.] 主流的。
   - > The podcast's gone really mainstream.
 - **Master's**：硕士学位
@@ -110,6 +171,7 @@
   - > However, when compared to Facebook, Twitter still lags significantly in terms of monetization efficiency.
 - **more of**
   - > It's more of a A model than B model, right?
+
 - **nail something down**: [informal] to definitely decide, arrange, or complete something.
   - > 1: What kind of music do they play? 2: It's hard to nail them down to an exact genre.
     - 很难将他们归为一类。
@@ -123,10 +185,12 @@
   - > I'm not that great of a public speaker.
     - 我不怎么擅长公众演讲。
   - > It wasn't all that greate of a movie, but it had some pretty funny moments.
+
 - **overlap**：重叠。
   - > I guess there is a lot of information overlap [n.] among my friends and family since we all travel in the same circles.
   - > Venn diagrams are composed of overlapping [adj.] circles.
   - > Back when our schedules overlapped [v.], I used to run into him everyday.
+
 - **peripheral**：外围的，非核心的。
   - > If your network is too closely knit, you could be depriving yourself of valuable information coming from peripheral networks.
   - > They come from the periphery [n.], but there's still value to be found here.
@@ -134,28 +198,43 @@
     - 周边视觉暂失。
   - > Connecting peripheral devices to a computer is most often done by using the USB port.
     - 外部设备。
+- **pick your brain**：[informal] 请教问题。
+  - > 1: I'm thinking of buying an electric car. Mind if I pick your brain? 2: No, go ahead.
+    - 介不介意我请教你一些问题？
 - **plethora**: [n.] excess.
   - > A plethora of new operators will be allowed to enter the market.
 - **pop up**: to appear very quickly or suddenly.
   - > There are more charing stations popping up every day.
     - 每天都在涌现越来越多的充电站。
+- **prestigious**: admired and respected by people.
+  - > prestigious school.
 - **[program] vs. programme**：计算机领域一般用前者；后者多用于日常英式英语。
+- **pros and cons**
+  - > 1: Have you weighted the pros and cons? 2: About a million times.
+    - 你有权衡过利弊吗？
 - **put on**
   - > I'd like to contact some schools to discuss putting on some educational events.
     - 在英式英语中有“增加（数量/价值）”的意思。
   - > We’re putting on a concert to raise money for cancer charities.
     - 举办。
+
 - **relevant**
   - > Even though the book was written hundreds of years ago, its themes are still relevant today.
     - 实用。
   - > A celebrity's private life should have no relevance [n.] to her professional career.
     - 名人的私生活不应影响到他们的职业生涯。
+- **ROI**: return on investment.
+  - > I think you can get into a prestigious school. Your ROI will be high.
+
 - **short answer is ...**：简而言之。
   - > 1: How long does the charging take? 2: The short answer is long.
     - 简而言之，要很久。
 - **sleek**: fashionable and attractive in design.
   - > The new car is sleeker, has a longer battery life and has great handling.
     - 新车更时尚，续航更强，操纵性更好。
+- **something can be another thing**
+  - > I guess charing can be a bit of an inconvenience.
+    - 我猜充电可能会有点不方便。
 - **something will do**
   - > 1: If you want a new EV with all the built-in features, it's going to be pricey. 2: It doesn't need to be self-driving or anything. Even a hybrid will do.
     - 1：如果你想要具备所有内置功能的新型电动车，价格会很高。2：我不需要它有自动驾驶或其他功能。混合动力也行。
@@ -171,6 +250,8 @@
   - > I'm spent just making sure my friends and family are happy.
 - **spur**: [t.v.] encourage.
   - > What spurred the explosion?
+- **stick out**：突出的。
+  - > These days, MBAs are a dime a dozen, so it's worth spending the extra pennies for a school that sticks out.
 - **strike**：（某事物）（给某人）造成某种印象。
   - > Jim, you strike me as a guy who's always in the know.
   - > That strikes me as a bad idea.
@@ -184,6 +265,10 @@
   - > I only drink coffee that is sustainably grown.
 - **sustainablity**：可持续性。
   - > I really care about sustainability and renewable energy these days.
+
+- **take the plunge**: to finally do something important, difficult, or dangerous.
+  - > He took the plunge and asked her to marry him.
+    - plunge 是从高处跳下的意思。
 - **take up**
   - > It inspired me to take up the challenge of a PhD.
     - 迎接挑战。
@@ -203,6 +288,8 @@
 - **time**：时光
   - > My time as an undergraduate opened my eyes to the wider benefit of science.
     - 读本科的时光，让我打开了眼界，对科学产生了兴趣。
+- **tuition**：个别辅导；学费。
+
 - **up and coming**: likely to become popular/successful.
   - > This new up-and-coming Indie band is touring here next week. Wanna check it out?
     - 新晋的独立乐队。
@@ -210,15 +297,23 @@
     - 五支看涨股票。
   - > This part of the city is the next up-and-coming one.
     - 这个地段将成为下一个新贵。
+
 - **venue**：体育场、音乐厅等聚会现场。
   - > He's such a homebody. He'd rather sit at home and listen to recordings than go to a live venue.
 - **[vs.] vs. vs**：前者更常用。参见[知乎](https://english.stackexchange.com/questions/5392/how-should-i-abbreviate-versus)。
+
 - **what would you like something to be?**
   - > What would you like the impact of this project to be?
     - 你期待这个项目给你带来什么影响？
 - **why don't you ...**
   - > Alright Tyler, why don't you tell me about yourself?
     - 跟我谈谈你自己吧。
+- **wise**
+  - > It's definitely a solid choice career-wise.
+    - 这绝对是事业方面的明智之选。
+  - > 1: How are we doing time-wise? 2: We have about 10 minutes left.
+    - 我们还有多少时间？
+  - > Money-wise, I'm not doing so well.
 - **冒号和分号后一般跟小写**。
   - > The commercials had one message: the geeks shall inherit the earth.
 
@@ -330,36 +425,7 @@
 </p>
 </details>
 
-## Low Frequency
-
-- **cash in**: make money.
-  - > 1: Maybe we could start our podcast and cash in? 2: I'm not sure if that'll work here, but it can't hurt to try.
-    - 试一试也无妨。
-- **cover**：翻唱音乐。
-  - > Do they play covers or originals?
-- **eclectic**：不拘一格、博采众长的。
-  - > She has very eclectic tastes in literature.
-- **esoteric**: known about or understood by very few people.
-- **for good measure**: as a way of making something complete or better.
-  - > They've got all of the complex harmonies of jazz, but with hip-hop rhythms thrown in for good measure.
-    - 他们保留了所有爵士乐的复杂和声，但另外增加了嘻哈的节奏。
-- **gripping**: [adj.] exciting or interesting in a way that keeps your attention.
-- **harmony**：和声。
-  - > They've got all of the complex harmonies of jazz, but with hip-hop rhythms thrown in for good measure.
-    - 他们保留了所有爵士乐的复杂和声，但另外增加了嘻哈的节奏。
-- **homebody**：宅男。
-  - > He's such a homebody. He'd rather sit at home and listen to recordings than go to a live venue.
-- **indie**：[adj.] 独立制作的，形容发行音乐/电影的小公司/团体。
-  - > This new up-and-coming Indie band is touring here next week. Wanna check it out?
-    - 新晋的独立乐队。
-- **pick your brain**：[informal] 请教问题。
-  - > 1: I'm thinking of buying an electric car. Mind if I pick your brain? 2: No, go ahead.
-    - 介不介意我请教你一些问题？
-- **take the plunge**: to finally do something important, difficult, or dangerous.
-  - > He took the plunge and asked her to marry him.
-    - plunge 是从高处跳下的意思。
-
-## Repeat
+以下是重复练习材料。
 
 - > I'm really interested in communicating my research to a wider audience, but I'm not that great of a public speaker. I understand the department offers relevent training here, which I feel would be a big help to me, both academically and more generally.
   - 我很希望与更多的人交流我的科研，但我不怎么擅长公众讲演。我知道这里能提供相关培训，我感觉对我将会很有帮助，既可以提高学术演讲能力，也可以提升一般演讲能力。
