@@ -23,9 +23,17 @@
 
 - **be doing**：将会。
   - > I depend a lot on my network of weak ties. It's not always easy, but when we limit our networks to only our strong ties, we're leaving a lot of potential value on the table.
+- **blockbuster**: something that is very successful, especially a film, show, or novel.
+  - > I watched all the superhero blockbusters.
+    - 我看了所有超级英雄的大片。
 - **broaden one's horizon**：增长某人的见识。
   - > I suppose if anything, it's a good way to broaden my horizons.
     - 我想这至少是一个长见识的好方法。
+- **buff**：爱好者。
+  - > a film/​computer/​wine/move buff.
+- **buzz**: the sound of a lot of people talking at the same time.
+  - > What did you think of Parasite? It got a lot of Oscar buzz.
+    - 你对《寄生虫》评价如何？这可是奥斯卡热门。
 
 - **cash in**: make money.
   - > 1: Maybe we could start our podcast and cash in? 2: I'm not sure if that'll work here, but it can't hurt to try.
@@ -64,6 +72,9 @@
     - 1：我不知道我能否兼顾攻读MBA和全职工作。2：这确实很难。
   - > Children can be very demanding.
     - 很难满足。
+- **defy**: to refuse to obey someone or something.
+  - > This movie is a genre-defying film that's both darkly comedic and poignant.
+    - 这部电影打破了传统的电影类别，集暗黑戏剧和辛酸元素于一身。
 - **do a PhD**：攻读博士学位。
   - > do an MBA.
 - **drive down**: to make a price or amount fall to a lower level.
@@ -92,6 +103,11 @@
 - **fruitful**: productive.
   - > a fruitful research career.
 
+- **gain ground**：越来越成功/流行。
+  - > This movie certainly helped Asian actors gain ground.
+    - 这部电影确实帮助亚洲演员赢得声誉。
+  - > The rival company gained new ground with the release of their newest cell phone.
+    - 这家竞争公司推出了他们的最新手机，从而赢得了新市场。
 - **gain traction**：获得关注。
   - > In 2014, podcasts gained traction, appealing to listeners with suspense.
     - 播客在2014年获得了关注，凭借悬疑故事吸引读者。
@@ -123,13 +139,17 @@
 - **hub**：核心，中心。
   - > I found that attending conferences really helped me to tap into network hubs.
   - > New York is the hub of the stock market.
+- **hype**：大肆宣传。
+  - > This move is totally worth the hype.
 
 - **identify**: recognize/understand someone/something.
   - > Before you start your PhD, are there any training needs you can identify?
     - 可以谈一谈你的培训需求吗？（提问者是博士生导师）
 - **if anything**：如果一定要说（有什么区别）的话（不确定）。
-  - I suppose if anything, it's a good way to broaden my horizons.
+  - > I suppose if anything, it's a good way to broaden my horizons.
     - 我想这至少是一个长见识的好方法。
+- **in shape**: in good bad physical condition.
+  - > I can’t believe how out of shape I am.
 - **in the know**：知情，百事通。
   - > Jim, you strike me as a guy who's always in the know.
 - **incentive**：[n.] 激励。
@@ -190,6 +210,8 @@
   - > I guess there is a lot of information overlap [n.] among my friends and family since we all travel in the same circles.
   - > Venn diagrams are composed of overlapping [adj.] circles.
   - > Back when our schedules overlapped [v.], I used to run into him everyday.
+- **overrated**
+  - > In my opinion, Hirst's work has been vastly overrated.
 
 - **peripheral**：外围的，非核心的。
   - > If your network is too closely knit, you could be depriving yourself of valuable information coming from peripheral networks.
@@ -203,6 +225,9 @@
     - 介不介意我请教你一些问题？
 - **plethora**: [n.] excess.
   - > A plethora of new operators will be allowed to enter the market.
+- **poignant**: giving you feelings of sadness.
+  - > This movie is a genre-defying film that's both darkly comedic and poignant.
+    - 这部电影打破了传统的电影类别，集暗黑戏剧和辛酸元素于一身。
 - **pop up**: to appear very quickly or suddenly.
   - > There are more charing stations popping up every day.
     - 每天都在涌现越来越多的充电站。
@@ -256,6 +281,9 @@
   - > Jim, you strike me as a guy who's always in the know.
   - > That strikes me as a bad idea.
   - > That idea is very "striking".
+- **sucker for something**
+  - > I'm a sucker for tearjerkers.
+    - 我对催泪电影毫无抵抗力。
 - **suspense**：[n.] 悬念带来的刺激或担忧（悬疑感）。
   - > In 2014, podcasts gained traction, appealing to listeners with suspense.
     - 翻译成“悬疑故事”更好。
@@ -280,6 +308,9 @@
     - 他通过抽烟来融入同事之中。
 - **tap into**：打入、深入。
   - > I found that attending conferences really helped me to tap into network hubs.
+- **tearjerker**：催泪的事物（如电影）。
+  - > I'm a sucker for tearjerkers.
+    - 我对催泪电影毫无抵抗力。
 - **tell me about it**：确实（本人也经历过这种不愉快）。
 - **ties**：关系，联系。
   - > strong ties.
@@ -314,6 +345,17 @@
   - > 1: How are we doing time-wise? 2: We have about 10 minutes left.
     - 我们还有多少时间？
   - > Money-wise, I'm not doing so well.
+- **worth**
+  - be worth doing
+    - 注意，就算是被动逻辑，也应该用主动语句。
+  - > Is it really worth spending five years of your life studying?
+  - > History is a subject well worth teaching.
+  - worth + number
+    - > Our house is worth about £100 000.
+  - > The winner will receive two pounds' worth of books.
+- **wrench**: to pull or twist something or someone suddenly and violently.
+  - > It's one of the most heart-wrenching films of last year.
+
 - **冒号和分号后一般跟小写**。
   - > The commercials had one message: the geeks shall inherit the earth.
 
@@ -429,3 +471,9 @@
 
 - > I'm really interested in communicating my research to a wider audience, but I'm not that great of a public speaker. I understand the department offers relevent training here, which I feel would be a big help to me, both academically and more generally.
   - 我很希望与更多的人交流我的科研，但我不怎么擅长公众讲演。我知道这里能提供相关培训，我感觉对我将会很有帮助，既可以提高学术演讲能力，也可以提升一般演讲能力。
+
+- > Got any recommendations for any family dramas?
+  - 家庭电影有什么推荐的吗？
+
+- > 1: I'm a sucker for tearjerkers. 2: Who isn't?
+  - 1：我对催泪电影毫无抵抗力。2：谁不是呢？
