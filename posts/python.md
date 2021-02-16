@@ -416,8 +416,8 @@ np.random.choice(a_list)
 
 ## 路径
 
-- **路径重命名**：`a_path.rename('/foo')`；字符串或Path对象都可以。
-- **获取当前路径**：`print(os.getcwd())`。
+- **路径重命名**：`a_path.rename('/foo')`；字符串或 Path 对象都可以。
+- **获取当前路径**：`print(os.getcwd())`；是启动 Python 的路径，不是程序路径。
 
 <details>
 <summary><b>Path对象</b></summary>

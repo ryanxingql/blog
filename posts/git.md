@@ -65,6 +65,12 @@ git submodule add git@github.com:RyanXingQL/PythonUtils.git utils/
 - 当前库只记录子仓库的当前版本，不会自动更新。
 - 假设有两个本地仓库对应同一个远程仓库；如果不手动更新子仓库，会出现两个本地仓库来回扯皮版本号的情况。
 
+注意，拉取含子仓库的仓库时，必须增加循环参数：
+
+```bash
+git clone --recursive <git_url>  # 不能简化为 -r
+```
+
 </p>
 </details>
 
