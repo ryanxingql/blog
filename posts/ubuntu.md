@@ -229,14 +229,18 @@ tar -zxvf archive_name.tar.gz -C /tmp/extract_here/
 ```bash
 # https://serverfault.com/questions/760337/how-to-zip-files-with-a-size-limit/760341
 # -r：对子文件递归
-# -s 10m：分卷，最大10MB
+# -s 10m：分卷，最大 10 MB
 # archive.zip：目的
 # directory：源
-$ zip -r -s 10m archive.zip directory/
+zip -r -s 10m archive.zip directory/
 
 # 先合成，再解压
-$ zip -s 0 split.zip --out unsplit.zip
-$ unzip unsplit.zip
+zip -s 0 split.zip --out unsplit.zip
+unzip unsplit.zip
+
+# 解压至指定路径
+unzip a_zip.zip -d a_folder  # 不需要事先创建路径；如果 zip 最外层是一个文件夹 a_dir，那么最终路径是 a_folder/a_dir/
+unzip -j a_zip.zip -d a_folder  # a_zip 所有文件都会被放在 a_folder，不含任何子文件夹
 ```
 
 </p>
