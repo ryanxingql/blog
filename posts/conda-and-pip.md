@@ -67,13 +67,25 @@ trusted-host=mirrors.aliyun.com
 ### 常规
 
 - **查看已有环境**：`conda env list`。
-- **新建环境**：`conda create -n <env_name> python=3.7 <other_pkg_names>`；可以同时安装多个包；不要用 PYTHON 3.6，和 CONDA 不友好。
 - **删除环境**：`conda env remove -n <env_name>`。
 - **查看已有包**：`conda list`。
 - **安装包**：`conda install <pkg_name> -y`；默认yes；注意要先进入环境。
 - **删除包**：`conda remove <pkg_name>`。
 - **查看现有频道（包括其他设置）**：`conda config --show`。
 - **修改可用频道**：`vim ~/.condarc`。
+
+<details>
+<summary><b>新建或克隆环境</b></summary>
+<p>
+
+```bash
+conda create -n <env_name> python=3.7 <other_pkg_names>  # 可以同时安装多个包；不要用 PYTHON 3.6，和 CONDA 不友好。
+
+conda create -n <env_name> --clone <src_name>  # 复制环境
+```
+
+</p>
+</details>
 
 <details>
 <summary><b>安装 ANACONDA</b></summary>
