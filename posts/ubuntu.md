@@ -130,6 +130,21 @@ sudo apt-get update && apt-get upgrade
 </p>
 </details>
 
+<details>
+<summary><b>软链接</b></summary>
+<p>
+
+```bash
+# 创建软链接：在 fake_path 即可访问 real_path
+ln -s <real_path> <fake_path>  # 注意 fake_path 末尾不要带 /；real_path 无所谓
+
+# 删除软链接而不删除文件
+rm -rf <fake_path>  # 注意末尾不带 /；否则文件夹没删掉，而是删掉了内部文件
+```
+
+</p>
+</details>
+
 ## 软件层
 
 - **7Z**：UBUNTU 支持不好，不要用。
