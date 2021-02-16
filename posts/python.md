@@ -438,7 +438,7 @@ file_path = Path('C:/Files/file.csv')
 <p>
 
 ```python
-if not os.exists(<dir_path>):
+if not os.path.exists(<dir_path>):
     pass
 
 from pathlib import Path
