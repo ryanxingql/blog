@@ -69,6 +69,8 @@ git submodule add git@github.com:RyanXingQL/PythonUtils.git utils/
 
 ```bash
 git clone --recursive <git_url>  # 不能简化为 -r
+
+git pull --recurse-submodules
 ```
 
 或者正常拉取后（此时子仓库是空的），初始化、更新子仓库：
