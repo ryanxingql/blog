@@ -65,6 +65,14 @@ git submodule add git@github.com:RyanXingQL/PythonUtils.git utils/
 - 当前库只记录子仓库的当前版本，不会自动更新。
 - 假设有两个本地仓库对应同一个远程仓库；如果不手动更新子仓库，会出现两个本地仓库来回扯皮版本号的情况。
 
+拉取的子仓库默认与原仓库脱离。如果想建立联系：
+
+```bash
+git submodule foreach -q --recursive 'git checkout $(git config -f $toplevel/.gitmodules submodule.$name.branch || echo main)'
+```
+
+此时，修改了子仓库以后，也能往原仓库对比、提交。
+
 拉取含子仓库的仓库时，必须增加循环参数：
 
 ```bash
