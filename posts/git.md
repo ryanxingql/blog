@@ -53,23 +53,31 @@ cat hello.pub >> authorized_keys
 <summary><b>submodule</b></summary>
 <p>
 
-可以调用一个仓库，作为当前仓库的一个子模块。例如：
+可以调用一个仓库，作为当前仓库的一个子仓库，使其在路径下可见。添加方式：
 
 ```bash
 # clone PythonUtils，存为utils
 git submodule add git@github.com:RyanXingQL/PythonUtils.git utils/
 ```
 
-更新子模块需要进入子模块手动更新。
+子仓库是独立更新的；更新子仓库需要进入子仓库路径手动更新。
 
 - 当前库只记录子仓库的当前版本，不会自动更新。
 - 假设有两个本地仓库对应同一个远程仓库；如果不手动更新子仓库，会出现两个本地仓库来回扯皮版本号的情况。
 
-注意，拉取含子仓库的仓库时，必须增加循环参数：
+拉取含子仓库的仓库时，必须增加循环参数：
 
 ```bash
 git clone --recursive <git_url>  # 不能简化为 -r
 ```
+
+或者正常拉取后（此时子仓库是空的），初始化、更新子仓库：
+
+```bash
+git submodule update --init --recursive
+```
+
+【[参考链接](https://git-scm.com/book/zh/v2/Git-工具-子模块)】
 
 </p>
 </details>
