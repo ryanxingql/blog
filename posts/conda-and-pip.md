@@ -117,7 +117,6 @@ conda create -n <env_name> --clone <src_name>  # 复制环境
 <p>
 
 ```bash
-vim ~/.condarc
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
