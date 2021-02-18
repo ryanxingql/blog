@@ -20,6 +20,9 @@
 - **appeal to someone with something**：凭借某事物吸引某人。
   - > In 2014, podcasts gained traction, appealing to listeners with suspense.
     - 播客在2014年获得了关注，凭借悬疑故事吸引读者。
+- **autonomy**：自治权；自主能力。
+  - > It's great having flexibility and autonomy over my work.
+    - 我很喜欢工作的灵活性和自主性。
 
 - **be doing**：将会。
   - > I depend a lot on my network of weak ties. It's not always easy, but when we limit our networks to only our strong ties, we're leaving a lot of potential value on the table.
@@ -161,6 +164,13 @@
 - **indie**：[adj.] 独立制作的，形容发行音乐/电影的小公司/团体。
   - > This new up-and-coming Indie band is touring here next week. Wanna check it out?
     - 新晋的独立乐队。
+- **insofar**: to the extent/as much.
+  - > I will get my math homework done insofar as I can.
+    - 在我的能力范围内。
+  - > My friends only read news insofar as they support her ideas.
+    - 我的朋友只看支持她想法的新闻。
+  - > I'll do my best to support you insofar that I'm able to.
+    - 我会尽我所能帮助你。
 - **it seems like ...**
   - > It seems like there's a podcast for everything these days.
 
@@ -171,6 +181,9 @@
 
 - **keep other options open**：不排斥其他选项。
   - > I want to be an academic, but I'm happy to keep other options open.
+- **kink**：结。
+  - work out the kinks：把结弄直，即解决问题。
+    - > AMD has had lots of time to work out the kinks with 40nm technology.
 - **knit**：[v.] 编织。
   - > If your network is too closely knit, you could be depriving yourself of valuable information coming from peripheral networks.
 - **know-how**：（实际工作所需）知识。
@@ -187,6 +200,8 @@
 - **Master's**：硕士学位
   - > I did some original research for my Master's.
     - 在研究生期间做了一些原创性研究。
+- **mitigate**: to reduce the harmful effects of something.
+  - > 1: Isn't it hard without face-to-face interactions? 2: We mitigate that pretty well by leveraging collaboration tools like Zoom.
 - **monetization**: the process of converting goods into money.
   - > However, when compared to Facebook, Twitter still lags significantly in terms of monetization efficiency.
 - **more of**
@@ -254,6 +269,8 @@
 - **short answer is ...**：简而言之。
   - > 1: How long does the charging take? 2: The short answer is long.
     - 简而言之，要很久。
+- **slack off**：松懈；减少；偷懒。
+  - > It keeps people from slacking off.
 - **sleek**: fashionable and attractive in design.
   - > The new car is sleeker, has a longer battery life and has great handling.
     - 新车更时尚，续航更强，操纵性更好。
@@ -306,7 +323,7 @@
     - 我打算开始练瑜伽啦。
   - > He took up smoking as a way to fit in with her colleagues.
     - 他通过抽烟来融入同事之中。
-- **tap into**：打入、深入。
+- **tap into**：打入、深入；利用，挖掘。
   - > I found that attending conferences really helped me to tap into network hubs.
 - **tearjerker**：催泪的事物（如电影）。
   - > I'm a sucker for tearjerkers.
