@@ -117,6 +117,9 @@
 - **genre**：（文学、艺术）流派、风格、类型。
   - > 1: What kind of music do they play? 2: It's hard to nail them down to an exact genre.
     - 很难将他们归为一类。
+- **get**：理解。
+  - > I find those jokes are hard to get though.
+    - 我觉得这些调侃很难理解。
 - **get into something**: to start enjoying something.
   - > I wouldn't be able to get into it.
     - 我可能不会感兴趣。
@@ -142,9 +145,14 @@
 - **hub**：核心，中心。
   - > I found that attending conferences really helped me to tap into network hubs.
   - > New York is the hub of the stock market.
+- **human-interest**：充满人情味的。
+  - > Her human-interest stories inspired the hearts of millions.
+    - 她那些充满人情味的故事启迪了数百万人的心灵。
 - **hype**：大肆宣传。
   - > This move is totally worth the hype.
 
+- **i take it that ...**：我猜测。
+  - > I take it you're one of them.
 - **identify**: recognize/understand someone/something.
   - > Before you start your PhD, are there any training needs you can identify?
     - 可以谈一谈你的培训需求吗？（提问者是博士生导师）
@@ -221,6 +229,12 @@
     - 我不怎么擅长公众演讲。
   - > It wasn't all that greate of a movie, but it had some pretty funny moments.
 
+- **obscene**：淫秽；骇人听闻。
+  - > Those shows just have outrageous guests who just do and say obscene things.
+    - 那些节目只有一帮出格的嘉宾，言行都很骇人听闻。
+- **outrageous**: extremely unusual and likely to shock people or make them laugh.
+  - > Those shows just have outrageous guests who just do and say obscene things.
+    - 那些节目只有一帮出格的嘉宾，言行都很骇人听闻。
 - **overlap**：重叠。
   - > I guess there is a lot of information overlap [n.] among my friends and family since we all travel in the same circles.
   - > Venn diagrams are composed of overlapping [adj.] circles.
@@ -263,9 +277,18 @@
     - 实用。
   - > A celebrity's private life should have no relevance [n.] to her professional career.
     - 名人的私生活不应影响到他们的职业生涯。
+- **roast**：[vt.] [informal] 尖锐批评。
+  - > I love the satire aspect of late night shows, especially when the hosts roast politicians.
+    - 我喜欢晚间秀的讽刺特点，尤其是主持人吐槽政客的时候。
 - **ROI**: return on investment.
   - > I think you can get into a prestigious school. Your ROI will be high.
 
+- **satire**：[n.] 讽刺。
+  - > I love the satire aspect of late night shows, especially when the hosts roast politicians.
+    - 我喜欢晚间秀的讽刺特点，尤其是主持人吐槽政客的时候。
+- **segment**
+  - > I've seen some of those shows. The celebrity segments are super fun.
+    - 名人访谈的片段。
 - **short answer is ...**：简而言之。
   - > 1: How long does the charging take? 2: The short answer is long.
     - 简而言之，要很久。
@@ -301,6 +324,8 @@
 - **sucker for something**
   - > I'm a sucker for tearjerkers.
     - 我对催泪电影毫无抵抗力。
+- **sure do**：当然。
+  - > 1: I take it they have different formats? 2: Sure do.
 - **suspense**：[n.] 悬念带来的刺激或担忧（悬疑感）。
   - > In 2014, podcasts gained traction, appealing to listeners with suspense.
     - 翻译成“悬疑故事”更好。
