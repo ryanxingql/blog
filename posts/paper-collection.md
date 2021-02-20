@@ -1,6 +1,7 @@
 # PAPER COLLECTION
 
 - [PAPER COLLECTION](#paper-collection)
+  - [:fire: Towards Real-World Blind Face Restoration with Generative Facial Prior](#fire-towards-real-world-blind-face-restoration-with-generative-facial-prior)
   - [:fire: Review of Postprocessing Techniques for Compression Artifact Removal](#fire-review-of-postprocessing-techniques-for-compression-artifact-removal)
   - [Learning Enriched Features for Real Image Restoration and Enhancement](#learning-enriched-features-for-real-image-restoration-and-enhancement)
   - [:fire: BBN: Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition](#fire-bbn-bilateral-branch-network-with-cumulative-learning-for-long-tailed-visual-recognition)
@@ -34,6 +35,27 @@
 为方便搜索，不做折叠处理。
 
 :fire:：今后大概率要再读，或在阶段性科研生涯中用上。
+
+## :fire: Towards Real-World Blind Face Restoration with Generative Facial Prior
+
+在网络设计和 loss 设计上都较为精巧的人脸增强工作。
+
+- [tag] 人脸增强
+- [tag] GANs
+
+盲人脸增强通常依赖 facial priors。这种 prior 要么依赖高质量参考帧，或者依赖一定质量的输入。然而，在实际情况中，要么输入质量太差，要么高质量参考帧不存在。
+
+本文主要是让 GAN 训练得到更好的 prior。方法是 channel-split spatial feature transform layers，效果是可以在 realness 和 fidelity 之间达到更好的平衡。
+
+![framework](../imgs/pd_210220_1.jpeg)
+
+具体方法见图 2。本质上就是一个加了短连接的 spade：图把蓝色和绿色的子网络拆开了，本质上是一个 U-Net；再细看 channel-split sft 可知，这就是短连接加 spade；图中绿、黄 concat，也是 U-Net 解码端的常规操作。因此结论如开头所示。
+
+不同点：spade 中 transformer 的 双输入（一个是待处理对象，一个用来学习仿射变换参数）是一样的，而这里前者用的是编码后的特征图（多一次卷积，可以这么理解）。作者希望通过这种方式实现 tradeoff：保留更真实的 spatial 输入，同时在更 real 的特征上进行处理。
+
+本文方法在 loss 上也更加细致。在对抗 loss 的基础上，增加了：（1）reconstruction loss，即 perceptual loss 和 L1 loss 的组合；（2）dfdnet 中类似的 facial component loss：先基于 ROI 选出关键点，然后只监督关键点的 loss；（3）identitiy preserving loss，类似于 perceptual loss，但网络是面部识别网络；以此保证恢复人脸的一致性（是同一个人）。
+
+其他效果：可以在增强的同时上色。
 
 ## :fire: Review of Postprocessing Techniques for Compression Artifact Removal
 
