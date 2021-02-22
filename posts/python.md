@@ -505,8 +505,6 @@ a_path.name # 'cc'
 <summary><b>删除路径</b></summary>
 <p>
 
-只能删空路径：
-
 ```python
 os.removedirs(<dir_path>)  # 只能删除空路径
 
