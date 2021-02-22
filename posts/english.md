@@ -55,6 +55,9 @@
 - **communicate somthing to someone**
   - > I'm really insterested in communicating my research to a wider audience.
     - 我很希望将我的研究和更多人交流。
+- **compulsion**：冲动，强烈的意愿。
+  - > Far be it frome me to question your compulsions, but why do you think that is?
+    - 我绝对不是质疑你冲动；你觉得是为什么呢？
 - **corporate ladder**：企业晋升制度。
   - > 1: I really want some more credibility to move up the corporate ladder. 2: That's huge.
     - 1：我想增加资历，好晋升。2：这事很重要。
@@ -98,6 +101,10 @@
 
 - **fair enough**：表示理解或接收对方的说法。
   - > 1: I wouldn't be able to get into it. 2: Fair enough.
+- **figurine**：小玩偶。
+- **fingers crossed ...**
+  - > Fingers crossed there's a superman waiting for me.
+    - 我希望有个超人在等我。
 - **for good measure**: as a way of making something complete or better.
   - > They've got all of the complex harmonies of jazz, but with hip-hop rhythms thrown in for good measure.
     - 他们保留了所有爵士乐的复杂和声，但另外增加了嘻哈的节奏。
@@ -139,6 +146,11 @@
     - 给我说说嘛（解答我的困惑）。
 - **homebody**：宅男。
   - > He's such a homebody. He'd rather sit at home and listen to recordings than go to a live venue.
+- **hooked**：着迷。
+  - > I'm totally hooked. I just can't stop buying!
+- **hottest in town**：最火的。
+  - > They've really taken toy design to the next level. Their characeters are the hottest in town!
+    - 他们真的把玩具设计提升到了新高度。他们的玩偶现在是最火的！
 - **how do you like something**: 你觉得 something 怎么样？
   - > How do you like being an EV owner?
     - EV: electric vehicle.
@@ -308,6 +320,9 @@
   - > I don't need any more pizza. One piece will do, thanks.
     - 一块就可以了。
   - > I prefer to use tape, but glue will do.
+- **sought after**：受欢迎的。
+  - > That's why the IPO was so sought-after. They tapped into a genuine craze!
+    - 这就是为什么他们的上市如此受青睐。他们充分利用了真正的狂热！
 - **spawn**: create.
   - > The book was a fantastic success, spawning a hit TV series.
 - **speaking of which, ...**：说到这。
@@ -350,6 +365,8 @@
     - 他通过抽烟来融入同事之中。
 - **tap into**：打入、深入；利用，挖掘。
   - > I found that attending conferences really helped me to tap into network hubs.
+  - > That's why the IPO was so sought-after. They tapped into a genuine craze!
+    - 这就是为什么他们的上市如此受青睐。他们充分利用了真正的狂热！
 - **tearjerker**：催泪的事物（如电影）。
   - > I'm a sucker for tearjerkers.
     - 我对催泪电影毫无抵抗力。
@@ -511,11 +528,23 @@
 
 以下是重复练习材料。
 
+- > 1: Far be it frome me to question your compulsions, but why do you think that is? 2: Well, some people have a "gotta collect 'em all" attitude. For me I kind of like the mystery of not knowing which character I'm getting next. 1: Ah, so you like the uncertainty, kind of like Forrest Gump and his box of chocolates.
+  - 1：我绝对不是质疑你冲动；你觉得是为什么呢？2：有些人有一种“我一定要集齐”的心态；我喜欢的是那种不知道下一个玩偶是什么的神秘感。1：啊，你是喜欢那种不确定性，有点像阿甘和他的巧克力。
+
+- > 1: I'm a sucker for tearjerkers. 2: Who isn't?
+  - 1：我对催泪电影毫无抵抗力。2：谁不是呢？
+
+- > I'm reading about their IPO recently.
+  - 我最近看到这家公司上市的消息。
+
 - > I'm really interested in communicating my research to a wider audience, but I'm not that great of a public speaker. I understand the department offers relevent training here, which I feel would be a big help to me, both academically and more generally.
   - 我很希望与更多的人交流我的科研，但我不怎么擅长公众讲演。我知道这里能提供相关培训，我感觉对我将会很有帮助，既可以提高学术演讲能力，也可以提升一般演讲能力。
 
 - > Got any recommendations for any family dramas?
   - 家庭电影有什么推荐的吗？
 
-- > 1: I'm a sucker for tearjerkers. 2: Who isn't?
-  - 1：我对催泪电影毫无抵抗力。2：谁不是呢？
+- > What's that you've got there?
+  - 你拿的是什么呀？
+
+- > 1: Wow, designer toys. Who would have guessed? 2: It just goes to show that young consumers value original design, not some derivative IP.
+  - 1：哇，大师设计的玩具。谁能想到呢。2：这说明年轻消费者更看重原创设计，而不是模仿的 IP。
