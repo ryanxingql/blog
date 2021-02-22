@@ -32,22 +32,26 @@
   - [:fire: G-VAE: A Continuously Variable Rate Deep Image Compression Framework](#fire-g-vae-a-continuously-variable-rate-deep-image-compression-framework)
   - [CVEGAN: A Perceptually-inspired GAN for Compressed Video Enhancement](#cvegan-a-perceptually-inspired-gan-for-compressed-video-enhancement)
 
-为方便搜索，不做折叠处理。
-
 :fire:：今后大概率要再读，或在阶段性科研生涯中用上。
 
 ## :fire: Towards Real-World Blind Face Restoration with Generative Facial Prior
 
-在网络设计和 loss 设计上都较为精巧的人脸增强工作。
+之前用于增强的特征仿射变换，其待处理输入和学习仿射参数的输入相同；本文将待处理输入进一步抽象再送入仿射变换，并通过短连接保留原始输入，从而在保真的同时提升感知质量。
 
-- [tag] 人脸增强
-- [tag] GANs
+- 人脸图像增强
+- 特征仿射变换
+- U-Net
+- GANs
+
+![framework](../imgs/pd_210220_1.jpeg)
+
+<details>
+<summary><b>笔记</b></summary>
+<p>
 
 盲人脸增强通常依赖 facial priors。这种 prior 要么依赖高质量参考帧，或者依赖一定质量的输入。然而，在实际情况中，要么输入质量太差，要么高质量参考帧不存在。
 
 本文主要是让 GAN 训练得到更好的 prior。方法是 channel-split spatial feature transform layers，效果是可以在 realness 和 fidelity 之间达到更好的平衡。
-
-![framework](../imgs/pd_210220_1.jpeg)
 
 具体方法见图 2。本质上就是一个加了短连接的 spade：图把蓝色和绿色的子网络拆开了，本质上是一个 U-Net；再细看 channel-split sft 可知，这就是短连接加 spade；图中绿、黄 concat，也是 U-Net 解码端的常规操作。因此结论如开头所示。
 
@@ -56,6 +60,11 @@
 本文方法在 loss 上也更加细致。在对抗 loss 的基础上，增加了：（1）reconstruction loss，即 perceptual loss 和 L1 loss 的组合；（2）dfdnet 中类似的 facial component loss：先基于 ROI 选出关键点，然后只监督关键点的 loss；（3）identitiy preserving loss，类似于 perceptual loss，但网络是面部识别网络；以此保证恢复人脸的一致性（是同一个人）。
 
 其他效果：可以在增强的同时上色。
+
+根据实验，如果将通道分离 SFT 换成普通 SFT，那么输出结果更保真，但感知分数下降。这是因为此时的输入不够抽象。
+
+</p>
+</details>
 
 ## :fire: Review of Postprocessing Techniques for Compression Artifact Removal
 
@@ -95,8 +104,8 @@
 
 MIRNet：注意力、多尺度的集大成网络。开源完善。声称是图像恢复的SOTA。ECCV 2020
 
-- [tag] 图像增强
-- [tag] 注意力
+- 图像增强
+- 注意力
 
 前人工作大多处理全分辨图像，或处理渐进的低分辨率表示。作者认为前者空域建模准确但语义建模不健壮，后者反之。本文希望在网络中保持高分辨率表示，同时从低分辨率表示中获取较好的语义信息。
 
@@ -122,8 +131,8 @@ MIRNet：注意力、多尺度的集大成网络。开源完善。声称是图�
 
 BBN：分开训练特征提取和分类器。长尾分类当年SOTA。CVPR 2020
 
-- [tag] 图像分类
-- [tag] 长尾分布
+- 图像分类
+- 长尾分布
 
 首先作者揭示，广泛用于长尾分布的重采样技术，虽然会增强分类器的学习，但在一定程度上会损害特征学习。
 
@@ -147,8 +156,8 @@ BBN：分开训练特征提取和分类器。长尾分类当年SOTA。CVPR 2020
 
 SRFlow：基于Flow的生成方法。训练稳定，单一损失，变换结果简单，可逆。ECCV 2020
 
-- [tag] 图像超分辨
-- [tag] Flow
+- 图像超分辨
+- Flow
 
 SR问题是一个经典的病态问题，有很多可能的解。这一事实很重要，但被现有方法忽略了：现有方法是限定的（deterministic），基于重建loss和对抗loss的组合学习。
 
@@ -166,9 +175,9 @@ SR问题是一个经典的病态问题，有很多可能的解。这一事实很
 
 MW-GAN：在小波域增强主观质量。ECCV 2020
 
-- [tag] 压缩视频增强
-- [tag] GANs
-- [tag] 小波域
+- 压缩视频增强
+- GANs
+- 小波域
 
 Motivation（图2）：主观质量与高频分量高度相关。现有增强方法大多都无法提升甚至恶化主观质量。说明方法：观察小波变换后的高频分量的能量大小。
 
@@ -196,8 +205,8 @@ loss由小波域重建loss、运动补偿loss和对抗loss组成。对抗loss是
 
 SRGAN：第一个实现4倍升采样的细节恢复网络。CVPR 2017
 
-- [tag] 图像超分辨
-- [tag] GANs
+- 图像超分辨
+- GANs
 
 训练loss由content loss和对抗loss组成。对抗loss会迫使结果更接近自然图像。content loss要求perceptual相似性（VGG中后端特征的相似性），而非像素level的相似性。
 
@@ -241,8 +250,8 @@ $\phi$就是VGG参数。
 
 ESRGAN：改进SRGAN的细节问题。ECCVW 2018
 
-- [tag] 图像超分辨
-- [tag] GANs
+- 图像超分辨
+- GANs
 
 改进：
 
@@ -291,8 +300,8 @@ $$
 
 PAC：给卷积核乘以可学习的、spatially varying的权值。借鉴双边滤波器思想。CVPR 2019
 
-- [tag] CNNs
-- [tag] 注意力
+- CNNs
+- 注意力
 
 看这篇论文前，可以回忆[[双边滤波器]](https://www.cnblogs.com/wangguchangqing/p/6416401.html)。不同于高斯滤波器（仅考虑位置关系），双边滤波器引入了$\alpha$截尾均值滤波器，考虑像素灰度值之间的差异；然后两个滤波器相乘，就得到了双边滤波器。
 
@@ -340,9 +349,9 @@ i是卷积中心点。可见，卷积核W取值仅仅取决于相对位置差$p_
 
 OctConv：低频卷积的特征图（表示）是可压缩的，进而减小内存需求和计算量。ICCV 2019
 
-- [tag] CNNs
-- [tag] 模型加速
-- [tag] 频域
+- CNNs
+- 模型加速
+- 频域
 
 在缩小低频通道尺寸的同时，设计了其与完整通道的交互方法。
 
@@ -362,8 +371,8 @@ OctConv：低频卷积的特征图（表示）是可压缩的，进而减小内�
 
 EP-GAN：用GAN增强解码视频质量。ICME 2018
 
-- [tag] 压缩视频增强
-- [tag] GANs
+- 压缩视频增强
+- GANs
 
 在一般GAN的基础上加入一个图像边缘预测网络。用Sobel算子生成边缘map，在loss中惩罚生成边缘map与预测map的L2 loss。
 
@@ -375,7 +384,7 @@ EP-GAN：用GAN增强解码视频质量。ICME 2018
 
 NIQE：通过衡量某些自然图像统计指标，给出图像的无参考质量评分。SPL 2012
 
-- [tag] 无参考图像质量评估
+- 无参考图像质量评估
 
 之前的NR IQA方法需要失真样本以及对应的人类主观评分。
 
@@ -407,7 +416,7 @@ NIQE首先构建了一套quality aware的feature，然后将它们用multivariat
 
 Ma：早期无参考质量评估方法。CVIU 2016
 
-- [tag] 无参考质量评估
+- 无参考质量评估
 
 简单来说，本文首先建立了MOS库，然后基于此训练网络。本文方法也是评估图像的统计特性，而不是衡量失真。
 
@@ -421,7 +430,7 @@ Ma：早期无参考质量评估方法。CVIU 2016
 
 LPIPS：深度网络普遍会生成类似的感知效果。感知loss可以在其他high-level任务上训练，效果都能远超low-level metrics。CVPR 2018
 
-- [tag] 有参考图像质量评估
+- 有参考图像质量评估
 
 ![img](../imgs/pd_201031_4.jpg)
 
@@ -445,9 +454,9 @@ LPIPS：深度网络普遍会生成类似的感知效果。感知loss可以在�
 
 PIRM：提出PI指标。ECCVW 2018
 
-- [tag] 图像超分辨
-- [tag] Challenge
-- [tag] 无参考图像质量评估
+- 图像超分辨
+- Challenge
+- 无参考图像质量评估
 
 PSNR和SSIM等刻画的是distortion，而这些指标与perceptual quality有差异。
 
@@ -485,8 +494,8 @@ $$
 
 Contextual loss：风格迁移不存在pair data，如何训练GAN？进一步，如何实现特定区域的风格迁移，例如人脸？ECCV 2018
 
-- [tag] 风格迁移
-- [tag] GANs
+- 风格迁移
+- GANs
 
 通常GANs都依赖于pair data，因为loss需要刻画相似性。而本文提出不需要pair data的loss。
 
@@ -514,8 +523,8 @@ $$
 
 HiFaceGAN：在SPADE基础上，针对恢复问题进行的改进。ACM 2020
 
-- [tag] 人脸图像增强
-- [tag] GANs
+- 人脸图像增强
+- GANs
 
 本文要解决人脸的盲增强。本文称自己为dual-blind，因为有的方法需要GT（single-blind），还有的方法需要先验（例如landmark和语义分割信息），但HiFaceGAN都不需要。
 
@@ -539,7 +548,7 @@ HiFaceGAN：在SPADE基础上，针对恢复问题进行的改进。ACM 2020
 
 [[VMAF]](https://netflixtechblog.com/toward-a-practical-perceptual-video-quality-metric-653f208b9652)：Netflix商用视频质量评估方法。源于2016，2020仍在维护
 
-- [tag] 无参考视频质量评估
+- 无参考视频质量评估
 
 - [[Blog1]](https://netflixtechblog.com/toward-a-practical-perceptual-video-quality-metric-653f208b9652)
 - [[Blog2]](https://netflixtechblog.com/vmaf-the-journey-continues-44b51ee9ed12)
@@ -554,8 +563,8 @@ HiFaceGAN：在SPADE基础上，针对恢复问题进行的改进。ACM 2020
 
 pix2pix：提出结合L1 loss和GAN loss，使GAN在保真情况下具有一定创造性。可能是第一篇用GANs做图像转换的。CVPR 2017
 
-- [tag] 图像转换
-- [tag] GANs
+- 图像转换
+- GANs
 
 conditional GANs是输入随机噪声z，同时输入图像x，通过改变噪声，产生新的输出y。loss是GAN loss。
 
@@ -573,9 +582,9 @@ conditional GANs是输入随机噪声z，同时输入图像x，通过改变噪�
 
 pix2pixHD：生成高分辨率图像。CVPR 2018
 
-- [tag] 图像转换
-- [tag] GANs
-- [tag] 语义分割信息
+- 图像转换
+- GANs
+- 语义分割信息
 
 以往的方法无法很好地生成高分辨图像。为了实现这个目标，作者提出了几点方法：
 
@@ -591,8 +600,8 @@ pix2pixHD：生成高分辨率图像。CVPR 2018
 
 SPADE：同时控制style和semantic。CVPR 2019
 
-- [tag] 图像生成
-- [tag] GANs
+- 图像生成
+- GANs
 
 ![im](../imgs/pd_201104_1.jpeg)
 
@@ -622,8 +631,8 @@ loss和pix2pixHD一样，除了将L2改为hinge loss。实验发现每一项loss
 
 迫使GAN学习和鉴别噪声流形。ECCV 2020
 
-- [tag] 图像去噪
-- [tag] GANs
+- 图像去噪
+- GANs
 
 图像本身是高维的，但噪声是低维的。建模噪声（残差）比建模自然图像更简单。因此要用GAN学习噪声流形。
 
@@ -637,7 +646,7 @@ loss和pix2pixHD一样，除了将L2改为hinge loss。实验发现每一项loss
 
 LIP：加权池化，权重是可学习的。ICCV 2019
 
-- [tag] 自注意力
+- 自注意力
 
 我们常用空域降采样，来扩大感受野、降低计算量。常见的有平均池化、最大池化和跨步卷积。
 
@@ -655,7 +664,7 @@ LIP：加权池化，权重是可学习的。ICCV 2019
 
 TTUR：一个简单的GANs稳定收敛方法。本文还引入了Fréchet Inception Distance（FID），一种比inception更好的GANs评估方法。NIPS 2017
 
-- [tag] GANs
+- GANs
 
 让discriminator和generator分别收敛。利用stochastic approximation理论，可以证明TTUR能使GANs在弱条件下收敛到stationary local Nash equilibrium。
 
@@ -671,9 +680,9 @@ TTUR：一个简单的GANs稳定收敛方法。本文还引入了Fréchet Incept
 
 一个老黑白照片上色的深度学习项目，[[主页]](https://github.com/jantic/DeOldify)。2020仍在维护
 
-- [tag] 图像增强
-- [tag] 图像上色
-- [tag] GANs
+- 图像增强
+- 图像上色
+- GANs
 
 技术细节包括：
 
@@ -696,7 +705,7 @@ TTUR：一个简单的GANs稳定收敛方法。本文还引入了Fréchet Incept
 
 ProxylessNAS：第一个考虑硬件latency的NAS；不会因为候选集增大而显存溢出。ICLR 2019
 
-- [tag] NAS
+- NAS
 
 > 20-12-14
 
@@ -736,9 +745,9 @@ ProxylessNAS：第一个考虑硬件latency的NAS；不会因为候选集增大�
 
 OFA：只需要训练一个大网络，不同tradeoff属性的小网络可以从中获取。ICLR 2020
 
-- [tag] 网络剪裁
-- [tag] 网络加速
-- [tag] NAS
+- 网络剪裁
+- 网络加速
+- NAS
 
 **目标**：NAS是边训练边搜索，而且只能得到一个网络。本文提出的OFA，只需要训练一次。当训练完成后，我们直接从中获取子网络，作为所需网络，而无需再训练。最终，作者可以获得超过1e+19个子网络，每一个子网络的tradeoff都不尽相同。换句话说，作者分离了training和search。search阶段无需training。
 
@@ -770,8 +779,8 @@ OFA：只需要训练一个大网络，不同tradeoff属性的小网络可以从
 
 PIPAL：评估用于IR的FR-IQA方法，特别是评估在GAN IR任务上的表现，并尝试改进。ECCV 2020
 
-- [tag] 图像质量评估
-- [tag] 建库
+- 图像质量评估
+- 建库
 
 **问题1**：作者发现，现有的IQA方法，如PSNR、PI等指标，其结果与图像主观质量不完全一致。特别是无法公平地评估GAN IR方法，原因是无法分辨GAN生成的纹理以及真实的细节。
 
@@ -804,9 +813,9 @@ Gained VAE：学习JPEG的量化系数table，通过学习一对量化权值矩�
 
 ![fig1](../imgs/pd_210104_1.jpeg)
 
-- [tag] 图像压缩
-- [tag] 率失真控制
-- [tag] JPEG
+- 图像压缩
+- 率失真控制
+- JPEG
 
 我们希望只训练一个压缩网络，具有多种率失真性能。然而，现有方法都会降低性能。why？
 
