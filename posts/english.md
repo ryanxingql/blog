@@ -41,6 +41,8 @@
 - **cash in**: make money.
   - > 1: Maybe we could start our podcast and cash in? 2: I'm not sure if that'll work here, but it can't hurt to try.
     - 试一试也无妨。
+- **cater to**: to provide people with something they want or need.
+  - > Siri is able to cater to various accents.
 - **check it out**：[informal] to look at someone or something to see whether you like them.
   - > This new up-and-coming Indie band is touring here next week. Wanna check it out?
     - 想去看看吗？
@@ -72,6 +74,8 @@
 - **credible**
   - > She's not a credible witness.
     - 她不是一个可信的证人。
+- **come a long way**：取得很大进展。
+  - > Speech recognition tech sure has come a long way. Have you ever stopped to think about how it works?
 
 - **demanding**：需要耗费较大精力的；不容易的。
   - > 1: I don't know if I can juggle an MBA and a full-time job. 2: It's indeed very demanding.
@@ -101,6 +105,8 @@
 
 - **fair enough**：表示理解或接收对方的说法。
   - > 1: I wouldn't be able to get into it. 2: Fair enough.
+- **fasinating**: making you very interested or attracted.
+  - > What I find fascinating is that ...
 - **figurine**：小玩偶。
 - **fingers crossed ...**
   - > Fingers crossed there's a superman waiting for me.
@@ -132,6 +138,9 @@
     - 我可能不会感兴趣。
 - **good point**：说得好；说得对。
   - > 1: I think you can get into a prestigious school. Your ROI will be high. 2: Good point.
+- **got it**
+  - > 1: ...? 2: You got it.
+    - 你说对了。
 - **gripping**: [adj.] exciting or interesting in a way that keeps your attention.
 
 - **handling**：操纵性。
@@ -191,6 +200,8 @@
     - 我的朋友只看支持她想法的新闻。
   - > I'll do my best to support you insofar that I'm able to.
     - 我会尽我所能帮助你。
+- **intent**: [n.] the intention to do something.
+  - > Apple servers run NLP algorithms to understand the intent of what the user is trying to say.
 - **it seems like ...**
   - > It seems like there's a podcast for everything these days.
 
@@ -215,6 +226,8 @@
 - **limit something to another thing**：将某事物限制为另一事物。
   - > When we limit our networks to only our strong ties, we're leaving a lot of potential value on the table.
 
+- **mammoth**：[adj.] 原义是猛犸象，这里指庞大的事物。
+  - > Doing so is a mammoth task because of the many different ways you can say one thing.
 - **mainstream**：[adj.] 主流的。
   - > The podcast's gone really mainstream.
 - **Master's**：硕士学位
@@ -378,6 +391,8 @@
 - **time**：时光
   - > My time as an undergraduate opened my eyes to the wider benefit of science.
     - 读本科的时光，让我打开了眼界，对科学产生了兴趣。
+- **transcribe**：转录。
+  - > Siri is able to cater to various accents because engineers train machine learning models on large transcribed datasets.
 - **tuition**：个别辅导；学费。
 
 - **up and coming**: likely to become popular/successful.
@@ -528,6 +543,9 @@
 
 以下是重复练习材料。
 
+- > Developing such software must have been extremely challenging.
+  - 开发这样的软件一定是个巨大的挑战。
+
 - > 1: Far be it frome me to question your compulsions, but why do you think that is? 2: Well, some people have a "gotta collect 'em all" attitude. For me I kind of like the mystery of not knowing which character I'm getting next. 1: Ah, so you like the uncertainty, kind of like Forrest Gump and his box of chocolates.
   - 1：我绝对不是质疑你冲动；你觉得是为什么呢？2：有些人有一种“我一定要集齐”的心态；我喜欢的是那种不知道下一个玩偶是什么的神秘感。1：啊，你是喜欢那种不确定性，有点像阿甘和他的巧克力。
 
@@ -542,6 +560,9 @@
 
 - > Got any recommendations for any family dramas?
   - 家庭电影有什么推荐的吗？
+
+- > That's why more and more we're able to speak to Siri like any other human.
+  - 这就是为什么和 Siri 对话越来越像和人类对话了。
 
 - > What's that you've got there?
   - 你拿的是什么呀？
