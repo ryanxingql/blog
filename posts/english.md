@@ -87,6 +87,9 @@
     - 这部电影打破了传统的电影类别，集暗黑戏剧和辛酸元素于一身。
 - **do a PhD**：攻读博士学位。
   - > do an MBA.
+- **downside**
+  - > For me the only real downside is connectivity.
+    - 对我而言唯一的缺点是连接性。
 - **drive down**: to make a price or amount fall to a lower level.
   - > Fierce competition among restaurants has driven down prices.
 
@@ -94,6 +97,8 @@
   - > When it started in the early 2000s, ...
 - **eclectic**：不拘一格、博采众长的。
   - > She has very eclectic tastes in literature.
+- **eerie**: strange and mysterious, and sometimes frightening.
+  - > It's a little eerie when I see ads for things I never searched for.
 - **engaging**：[adj.] 让其他人喜欢。
   - > Summer school is an engaging way to fill vacation if you aren’t able to go home.
 - **esoteric**: known about or understood by very few people.
@@ -118,6 +123,8 @@
   - > An MBA will equip you with the know-how you need on the front lines.
 - **fruitful**: productive.
   - > a fruitful research career.
+- **fumble around**：笨手笨脚地摸索。
+  - > Fumbling around with your phone when they don't work is no fun.
 
 - **gain ground**：越来越成功/流行。
   - > This movie certainly helped Asian actors gain ground.
@@ -233,6 +240,9 @@
 - **Master's**：硕士学位
   - > I did some original research for my Master's.
     - 在研究生期间做了一些原创性研究。
+- **mercy**
+  - > I'm at the mercy of my internet connection.
+    - 我完全受制于网络连接。
 - **mitigate**: to reduce the harmful effects of something.
   - > 1: Isn't it hard without face-to-face interactions? 2: We mitigate that pretty well by leveraging collaboration tools like Zoom.
 - **monetization**: the process of converting goods into money.
@@ -260,6 +270,8 @@
 - **outrageous**: extremely unusual and likely to shock people or make them laugh.
   - > Those shows just have outrageous guests who just do and say obscene things.
     - 那些节目只有一帮出格的嘉宾，言行都很骇人听闻。
+- **outweigh**: [vt.].
+  - > The advantages far outweigh the disadvantages.
 - **overlap**：重叠。
   - > I guess there is a lot of information overlap [n.] among my friends and family since we all travel in the same circles.
   - > Venn diagrams are composed of overlapping [adj.] circles.
@@ -302,6 +314,9 @@
     - 实用。
   - > A celebrity's private life should have no relevance [n.] to her professional career.
     - 名人的私生活不应影响到他们的职业生涯。
+- **risk**
+  - > I don't want to run the risk of getting hacked.
+    - 我不想冒着被黑的风险。
 - **roast**：[vt.] [informal] 尖锐批评。
   - > I love the satire aspect of late night shows, especially when the hosts roast politicians.
     - 我喜欢晚间秀的讽刺特点，尤其是主持人吐槽政客的时候。
@@ -311,6 +326,12 @@
 - **satire**：[n.] 讽刺。
   - > I love the satire aspect of late night shows, especially when the hosts roast politicians.
     - 我喜欢晚间秀的讽刺特点，尤其是主持人吐槽政客的时候。
+- **saving**
+  - 如果表达“储蓄”，那么一定用复数。
+    - > He put all his savings into buying a boat.
+  - 如果表达“节约”，那么是可数的。
+    - > With the new boiler you can make big savings on fuel bills.
+    - > That could mean a saving of up to £500 for a family of four.
 - **segment**
   - > I've seen some of those shows. The celebrity segments are super fun.
     - 名人访谈的片段。
@@ -384,6 +405,9 @@
   - > I'm a sucker for tearjerkers.
     - 我对催泪电影毫无抵抗力。
 - **tell me about it**：确实（本人也经历过这种不愉快）。
+- **the Internet of Things**：物联网。
+  - > Call me old fashioned, but I find the Internet of Things a little too invasive.
+    - 可能我比较守旧吧，我觉得物联网有点太具侵犯性了。
 - **ties**：关系，联系。
   - > strong ties.
   - > network of weak ties.
@@ -543,29 +567,47 @@
 
 以下是重复练习材料。
 
-- > Developing such software must have been extremely challenging.
+- > **Call me old fashioned**, but I find the Internet of Things a little too invasive.
+  - 可能我比较守旧吧，我觉得物联网有点太具侵犯性了。
+
+- > Developing such software **must have been** extremely challenging.
   - 开发这样的软件一定是个巨大的挑战。
 
-- > 1: Far be it frome me to question your compulsions, but why do you think that is? 2: Well, some people have a "gotta collect 'em all" attitude. For me I kind of like the mystery of not knowing which character I'm getting next. 1: Ah, so you like the uncertainty, kind of like Forrest Gump and his box of chocolates.
+- > 1: **Far be it frome me** to question your compulsions, but why do you **think that is**? 2: Well, some people have a "gotta collect 'em all" attitude. For me I **kind of** like the mystery of not knowing which character I'm getting next. 1: Ah, so you like the uncertainty, **kind of** like Forrest Gump and his box of chocolates.
   - 1：我绝对不是质疑你冲动；你觉得是为什么呢？2：有些人有一种“我一定要集齐”的心态；我喜欢的是那种不知道下一个玩偶是什么的神秘感。1：啊，你是喜欢那种不确定性，有点像阿甘和他的巧克力。
 
-- > 1: I'm a sucker for tearjerkers. 2: Who isn't?
+- > For my **peace of mind**, I have to go back and check if the door is locked.
+  - 为了安心……
+
+- > 1: I don't want to run the risk of getting hacked. 2: **I hear you**.
+  - 我明白你的意思。
+
+- > Is flicking a light switch that inconvenient?
+  - 动动手指开下灯，有那么不方便吗？
+
+- > 1: I'm a sucker for tearjerkers. 2: **Who isn't**?
   - 1：我对催泪电影毫无抵抗力。2：谁不是呢？
 
-- > I'm reading about their IPO recently.
+- > I'm **reading about** their IPO recently.
   - 我最近看到这家公司上市的消息。
 
-- > I'm really interested in communicating my research to a wider audience, but I'm not that great of a public speaker. I understand the department offers relevent training here, which I feel would be a big help to me, both academically and more generally.
+- > I'm really interested in communicating my research to a wider audience, but I'm **not that great of** a public speaker. I understand the department offers relevent training here, which I **feel would be** a big help to me, both academically and more generally.
   - 我很希望与更多的人交流我的科研，但我不怎么擅长公众讲演。我知道这里能提供相关培训，我感觉对我将会很有帮助，既可以提高学术演讲能力，也可以提升一般演讲能力。
 
-- > Got any recommendations for any family dramas?
+- > **Got** any recommendations for any family dramas?
   - 家庭电影有什么推荐的吗？
 
-- > That's why more and more we're able to speak to Siri like any other human.
+- > Thanks for inviting me **over**.
+  - 感谢你邀请我来。
+
+- > That's why **more and more** we're able to speak to Siri like **any other** human.
   - 这就是为什么和 Siri 对话越来越像和人类对话了。
 
-- > What's that you've got there?
+- > What's that **you've got there**?
   - 你拿的是什么呀？
 
-- > 1: Wow, designer toys. Who would have guessed? 2: It just goes to show that young consumers value original design, not some derivative IP.
+- > 1: Wow, designer toys. **Who would have guessed**? 2: **It just goes to show that** young consumers **value** original design, not some derivative IP.
   - 1：哇，大师设计的玩具。谁能想到呢。2：这说明年轻消费者更看重原创设计，而不是模仿的 IP。
+
+- > 1: **You've got** some cool gadgets! 2: Thanks!
+  - 你这儿各种装置真酷！
