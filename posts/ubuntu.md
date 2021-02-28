@@ -241,11 +241,23 @@ tar -zxvf archive_name.tar.gz -C /tmp/extract_here/
 
 各平台兼容，但压缩率不高。
 
+压缩某文件夹，最外层为该文件夹：
+
+```bash
+zip -r <zip_name>.zip <folder_path>/  # 注意要加 /
+```
+
 不包含外部文件夹压缩：
 
 ```bash
 cd <folder_path>
 zip -r ../<zip_name>.zip *
+```
+
+仅查看内部信息，不解压：
+
+```bash
+unzip -l <zip_path> | less  # 如果不加 | less，所有 content 会递归涌至屏幕
 ```
 
 解压至指定路径：
