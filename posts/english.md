@@ -60,6 +60,9 @@
 - **compulsion**：冲动，强烈的意愿。
   - > Far be it frome me to question your compulsions, but why do you think that is?
     - 我绝对不是质疑你冲动；你觉得是为什么呢？
+- **contaminant**：污染物。
+  - > 1: Sam, I don't know that to do with my old phones. 2: Whatever you do, don't toss them. E-waste is extremly hazardous to the environment. 1: I've heard. If it ends up in landfills, contaminants can seep into the soil.
+  - 我听说了。如果电子垃圾最终被填埋，那么污染物就会渗入土壤。
 - **corporate ladder**：企业晋升制度。
   - > 1: I really want some more credibility to move up the corporate ladder. 2: That's huge.
     - 1：我想增加资历，好晋升。2：这事很重要。
@@ -85,6 +88,12 @@
 - **defy**: to refuse to obey someone or something.
   - > This movie is a genre-defying film that's both darkly comedic and poignant.
     - 这部电影打破了传统的电影类别，集暗黑戏剧和辛酸元素于一身。
+- **depot**：仓库。
+  - > People would be more inclined to safely dispose of stuff if there were more recycling depots.
+    - 如果有更多的回收站，人们也许会更倾向于安全地处理垃圾。
+- **deposit**：保证金，押金。
+  - > Personally, I'm in favor of a recycling deposit.
+    - 我个人支持推广回收押金。
 - **do a PhD**：攻读博士学位。
   - > do an MBA.
 - **downside**
@@ -157,6 +166,8 @@
     - 他们保留了所有爵士乐的复杂和声，但另外增加了嘻哈的节奏。
 - **have a sec**：有空。
   - > Do you have a sec?
+- **hazardous**：危险的。
+  - > 1: Sam, I don't know that to do with my old phones. 2: Whatever you do, don't toss them. E-waste is extremly hazardous to the environment.
 - **help me out here**
   - > Well help me out here. Is it Rock?
     - 给我说说嘛（解答我的困惑）。
@@ -197,6 +208,9 @@
   - > Reduced bus fare is offered as an incentive to get people to use public transport.
 - **incentivize**
   - > The bank is cutting debit card fees to incentivize customers to spend more.
+- **be incline to**：倾向于。
+  - > People would be more inclined to safely dispose of stuff.
+    - 人们也许会更倾向于安全地处理垃圾。
 - **indie**：[adj.] 独立制作的，形容发行音乐/电影的小公司/团体。
   - > This new up-and-coming Indie band is touring here next week. Wanna check it out?
     - 新晋的独立乐队。
@@ -227,6 +241,9 @@
 - **know-how**：（实际工作所需）知识。
   - > An MBA will equip you with the know-how you need on the front lines.
 
+- **landfill**：[n.] 填埋。
+  - > 1: Sam, I don't know that to do with my old phones. 2: Whatever you do, don't toss them. E-waste is extremly hazardous to the environment. 1: I've heard. If it ends up in landfills, contaminants can seep into the soil.
+  - 我听说了。如果电子垃圾最终被填埋，那么污染物就会渗入土壤。
 - **lean towards**：倾向于。
   - > I'm leaning towards something on the cheaper side.
     - > 我想要便宜一点的。
@@ -237,7 +254,7 @@
   - > Doing so is a mammoth task because of the many different ways you can say one thing.
 - **mainstream**：[adj.] 主流的。
   - > The podcast's gone really mainstream.
-- **Master's**：硕士学位
+- **Master's**：硕士学位。
   - > I did some original research for my Master's.
     - 在研究生期间做了一些原创性研究。
 - **mercy**
@@ -267,6 +284,9 @@
 - **obscene**：淫秽；骇人听闻。
   - > Those shows just have outrageous guests who just do and say obscene things.
     - 那些节目只有一帮出格的嘉宾，言行都很骇人听闻。
+- **obsolescence**：淘汰。
+  - > 1: With the expansion of electric vehicles, the e-waste problem will likely get worse. 2: Hmm... And planned obsolesence doesn't help either.
+    - 1：随着电动车发展，电子垃圾的问题可能会越来越严重。2：嗯。厂商对电子产品有计划的淘汰也不会有什么帮助。
 - **outrageous**: extremely unusual and likely to shock people or make them laugh.
   - > Those shows just have outrageous guests who just do and say obscene things.
     - 那些节目只有一帮出格的嘉宾，言行都很骇人听闻。
@@ -279,6 +299,9 @@
 - **overrated**
   - > In my opinion, Hirst's work has been vastly overrated.
 
+- **particulate matter**：微粒物质。
+  - > Buring E-waste just creates fine particulate matter in the air.
+    - 细颗粒物。
 - **peripheral**：外围的，非核心的。
   - > If your network is too closely knit, you could be depriving yourself of valuable information coming from peripheral networks.
   - > They come from the periphery [n.], but there's still value to be found here.
@@ -323,6 +346,9 @@
 - **ROI**: return on investment.
   - > I think you can get into a prestigious school. Your ROI will be high.
 
+- **salvage**：回收。
+  - > Do you ever sell your used electronics to shops that salvage the parts?
+    - 你有把用过的电子产品卖到回收零件的店里吗？
 - **satire**：[n.] 讽刺。
   - > I love the satire aspect of late night shows, especially when the hosts roast politicians.
     - 我喜欢晚间秀的讽刺特点，尤其是主持人吐槽政客的时候。
@@ -332,12 +358,17 @@
   - 如果表达“节约”，那么是可数的。
     - > With the new boiler you can make big savings on fuel bills.
     - > That could mean a saving of up to £500 for a family of four.
+- **seep**：渗出。
+  - > 1: Sam, I don't know that to do with my old phones. 2: Whatever you do, don't toss them. E-waste is extremly hazardous to the environment. 1: I've heard. If it ends up in landfills, contaminants can seep into the soil.
+  - 我听说了。如果电子垃圾最终被填埋，那么污染物就会渗入土壤。
 - **segment**
   - > I've seen some of those shows. The celebrity segments are super fun.
     - 名人访谈的片段。
 - **short answer is ...**：简而言之。
   - > 1: How long does the charging take? 2: The short answer is long.
     - 简而言之，要很久。
+- **skeptical**：怀疑的。
+  - > I'm skeptical about how much they really benefit the environment.
 - **slack off**：松懈；减少；偷懒。
   - > It keeps people from slacking off.
 - **sleek**: fashionable and attractive in design.
@@ -412,9 +443,11 @@
   - > strong ties.
   - > network of weak ties.
     - 弱关系网；认识的人，但关系不强。
-- **time**：时光
+- **time**：时光。
   - > My time as an undergraduate opened my eyes to the wider benefit of science.
     - 读本科的时光，让我打开了眼界，对科学产生了兴趣。
+- **toss**：[informal] 抛弃。
+  - > 1: Sam, I don't know that to do with my old phones. 2: Whatever you do, don't toss them.
 - **transcribe**：转录。
   - > Siri is able to cater to various accents because engineers train machine learning models on large transcribed datasets.
 - **tuition**：个别辅导；学费。
@@ -573,6 +606,8 @@
 - > Developing such software **must have been** extremely challenging.
   - 开发这样的软件一定是个巨大的挑战。
 
+- > Educating people to reduce, reuse and recycle **would help**.
+
 - > 1: **Far be it frome me** to question your compulsions, but why do you **think that is**? 2: Well, some people have a "gotta collect 'em all" attitude. For me I **kind of** like the mystery of not knowing which character I'm getting next. 1: Ah, so you like the uncertainty, **kind of** like Forrest Gump and his box of chocolates.
   - 1：我绝对不是质疑你冲动；你觉得是为什么呢？2：有些人有一种“我一定要集齐”的心态；我喜欢的是那种不知道下一个玩偶是什么的神秘感。1：啊，你是喜欢那种不确定性，有点像阿甘和他的巧克力。
 
@@ -581,6 +616,9 @@
 
 - > 1: I don't want to run the risk of getting hacked. 2: **I hear you**.
   - 我明白你的意思。
+
+- > 1: Sam, I don't know that to do with my old phones. 2: Whatever you do, don't toss them. E-waste is extremly hazardous to the environment. 1: **I've heard**. If it **ends up in** landfills, contaminants can seep into the soil.
+  - 我听说了。如果电子垃圾最终被填埋，那么污染物就会渗入土壤。
 
 - > Is flicking a light switch that inconvenient?
   - 动动手指开下灯，有那么不方便吗？
@@ -599,6 +637,9 @@
 
 - > Thanks for inviting me **over**.
   - 感谢你邀请我来。
+
+- > 1: That's just **a drop in the bucket**. And with the expansion of electric vehicles, the e-waste problem will **likely get worse**. 2: Hmm... And planned obsolesence **doesn't help either**.
+  - 1：这只是杯水车薪。随着电动车发展，电子垃圾的问题可能会越来越严重。2：嗯。厂商对电子产品有计划的淘汰也不会有什么帮助。
 
 - > That's why **more and more** we're able to speak to Siri like **any other** human.
   - 这就是为什么和 Siri 对话越来越像和人类对话了。
