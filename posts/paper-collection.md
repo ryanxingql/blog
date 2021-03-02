@@ -1,8 +1,8 @@
 # PAPER COLLECTION
 
 - [PAPER COLLECTION](#paper-collection)
-  - [:fire: Towards Real-World Blind Face Restoration with Generative Facial Prior](#fire-towards-real-world-blind-face-restoration-with-generative-facial-prior)
-  - [:fire: Review of Postprocessing Techniques for Compression Artifact Removal](#fire-review-of-postprocessing-techniques-for-compression-artifact-removal)
+  - [Towards Real-World Blind Face Restoration with Generative Facial Prior](#towards-real-world-blind-face-restoration-with-generative-facial-prior)
+  - [Review of Postprocessing Techniques for Compression Artifact Removal](#review-of-postprocessing-techniques-for-compression-artifact-removal)
   - [Learning Enriched Features for Real Image Restoration and Enhancement](#learning-enriched-features-for-real-image-restoration-and-enhancement)
   - [:fire: BBN: Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition](#fire-bbn-bilateral-branch-network-with-cumulative-learning-for-long-tailed-visual-recognition)
   - [:fire: SRFlow: Learning the Super-Resolution Space with Normalizing Flow](#fire-srflow-learning-the-super-resolution-space-with-normalizing-flow)
@@ -32,13 +32,15 @@
   - [:fire: G-VAE: A Continuously Variable Rate Deep Image Compression Framework](#fire-g-vae-a-continuously-variable-rate-deep-image-compression-framework)
   - [CVEGAN: A Perceptually-inspired GAN for Compressed Video Enhancement](#cvegan-a-perceptually-inspired-gan-for-compressed-video-enhancement)
 
-:fire:：今后大概率要再读，或在阶段性科研生涯中用上。
+## Towards Real-World Blind Face Restoration with Generative Facial Prior
 
-## :fire: Towards Real-World Blind Face Restoration with Generative Facial Prior
-
-之前用于增强的特征仿射变换，其待处理输入和学习仿射参数的输入相同；本文将待处理输入进一步抽象再送入仿射变换，并通过短连接保留原始输入，从而在保真的同时提升感知质量。
+1. 设置类似 EDVR 中的 predeblur 模块，先去噪，不要急着加入 facial prior。
+2. 采用 spatial transformer，其 guided map 来自前处理模块，目的侧重 fidelity；其 input 是经过预训练 GAN（如 StyleGANv2）处理后的特征 A，目的侧重 realness。
+3. spatial transformer 本身也有针对 A 的短路，目的是保持 realness。
+4. 对人脸的精细化 loss 处理，例如监督人脸特征（人脸识别网络的中间特征，类似 LPIPS 思想）的一致性，保证是同一个人。
 
 - 人脸图像增强
+- 预训练编码
 - 特征仿射变换
 - U-Net
 - GANs
@@ -49,24 +51,31 @@
 <summary><b>笔记</b></summary>
 <p>
 
-盲人脸增强通常依赖 facial priors。这种 prior 要么依赖高质量参考帧，或者依赖一定质量的输入。然而，在实际情况中，要么输入质量太差，要么高质量参考帧不存在。
+方法如图。
 
-本文主要是让 GAN 训练得到更好的 prior。方法是 channel-split spatial feature transform layers，效果是可以在 realness 和 fidelity 之间达到更好的平衡。
+1. 经 U-Net 处理，可以在 decoder 端得到一系列特征图；最小的作者称为 F-latent，依次增大的作者称为 F-sptial。
+2. F-sptial 作为仿射变换的 guided map；F-latent 经 pretrained GAN（例如 StyleGANv2）后转换为 latent codes F-prior，再作为仿射变换的 input。
+3. 光有仿射变换，可能重建后 fidelity 不足；作者还添加了 F-prior 的短路。这就是所谓的 channel-split。增加短路的目的：如果全由 F-sptial 作为 map 进行仿射变换，会导致 fidelity 较好但 realness 不足（因为 map 是 F-spatial 不是 F-prior）。
+4. 利用了 pretrained GAN facial prior：不太依赖 input 或 reference（辛苦在前，轻松在后）。所谓 GAN facial prior，是指 GAN 将任意噪声映射为一张人脸的 prior，这里就是将最小的特征图 F-latent 映射为人脸的特征 F-prior。具体生成 F-prior 的做法见 [77]，可能就是几层网络。
+5. 除了全局的对抗 loss，还增加了：（1）reconstruction loss，即 perceptual loss 和 L1 loss 的组合；（2）DFDNet 中类似的 facial component loss：先基于 ROI 选出关键点，然后只监督关键点的 loss；（3）identitiy preserving loss，类似于 perceptual loss，但网络是面部识别网络；以此保证恢复人脸的一致性（是同一个人）。
+6. 将降噪和引入 prior 分成了两个子网络：更好处理。
 
-具体方法见图 2。本质上就是一个加了短连接的 spade：图把蓝色和绿色的子网络拆开了，本质上是一个 U-Net；再细看 channel-split sft 可知，这就是短连接加 spade；图中绿、黄 concat，也是 U-Net 解码端的常规操作。因此结论如开头所示。
+实验：
 
-不同点：spade 中 transformer 的 双输入（一个是待处理对象，一个用来学习仿射变换参数）是一样的，而这里前者用的是编码后的特征图（多一次卷积，可以这么理解）。作者希望通过这种方式实现 tradeoff：保留更真实的 spatial 输入，同时在更 real 的特征上进行处理。
+1. 如果去掉仿射变换，只保留 F-prior，那么输出人脸可能不是一个人。因此 F-spatial 重要；反之，如果去掉 F-prior 的短路，只保留仿射变换，那么 fidelity 更好而 realness 不足；因此，存在短连接的仿射变换（channel-split）相当于提供了一种 trade-off。
+2. pyramid restoration loss 和 facial component loss 都很重要；前者在多尺度下进行监督，后者在重要细节上进行监督。
 
-本文方法在 loss 上也更加细致。在对抗 loss 的基础上，增加了：（1）reconstruction loss，即 perceptual loss 和 L1 loss 的组合；（2）dfdnet 中类似的 facial component loss：先基于 ROI 选出关键点，然后只监督关键点的 loss；（3）identitiy preserving loss，类似于 perceptual loss，但网络是面部识别网络；以此保证恢复人脸的一致性（是同一个人）。
+问题：
 
-其他效果：可以在增强的同时上色。
-
-根据实验，如果将通道分离 SFT 换成普通 SFT，那么输出结果更保真，但感知分数下降。这是因为此时的输入不够抽象。
+1. 文章没有细说 pyramid loss 的表达式，只是引用了 [42,62]。
+2. pretrained GAN prior 没有细说。
+3. F-prior 并不是直接短连接，而是 split 为两部分，一部分短连接，一部分参与 spatial transform。关于这一操作，作者没细说。
+4. 绿色框没看明白。经过 prior 得到 3 种分辨率的输出，如何连接，如何得到最终输出？
 
 </p>
 </details>
 
-## :fire: Review of Postprocessing Techniques for Compression Artifact Removal
+## Review of Postprocessing Techniques for Compression Artifact Removal
 
 大佬在 1998 年写的、关于后处理压缩失真的 review。特别针对基于 block DCT 的压缩算法。还给出了一个简单的增强算法。
 
