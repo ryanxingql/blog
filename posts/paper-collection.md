@@ -39,19 +39,21 @@
 3. spatial transformer 本身也有针对 A 的短路，目的是保持 realness。
 4. 对人脸的精细化 loss 处理，例如监督人脸特征（人脸识别网络的中间特征，类似 LPIPS 思想）的一致性，保证是同一个人。
 
+标签：
+
 - 人脸图像增强
 - 预训练编码
 - 特征仿射变换
 - U-Net
 - GANs
 
-![framework](../imgs/pd_210220_1.jpeg)
-
 <details>
 <summary><b>笔记</b></summary>
 <p>
 
-方法如图。
+方法如图：
+
+![framework](../imgs/pd_210220_1.jpeg)
 
 1. 经 U-Net 处理，可以在 decoder 端得到一系列特征图；最小的作者称为 F-latent，依次增大的作者称为 F-sptial。
 2. F-sptial 作为仿射变换的 guided map；F-latent 经 pretrained GAN（例如 StyleGANv2）后转换为 latent codes F-prior，再作为仿射变换的 input。
@@ -74,6 +76,12 @@
 
 </p>
 </details>
+
+---
+
+未整理
+
+---
 
 ## Review of Postprocessing Techniques for Compression Artifact Removal
 
