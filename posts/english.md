@@ -314,6 +314,12 @@
     - 介不介意我请教你一些问题？
 - **plethora**: [n.] excess.
   - > A plethora of new operators will be allowed to enter the market.
+- **plunge**: [n.] [v.] 从高处快速下落。
+  - take the plunge: to finally do something important, difficult, or dangerous.
+    - > He took the plunge and asked her to marry him.
+  - > The stock market just took a huge plunge and we've lost a lot of money.
+  - > The car went off the road and plunged into the abyss.
+    - 坠入深渊。
 - **poignant**: giving you feelings of sadness.
   - > This movie is a genre-defying film that's both darkly comedic and poignant.
     - 这部电影打破了传统的电影类别，集暗黑戏剧和辛酸元素于一身。
@@ -404,6 +410,9 @@
 - **sucker for something**
   - > I'm a sucker for tearjerkers.
     - 我对催泪电影毫无抵抗力。
+- **be suppose to do**：应该做。
+  - > You are supposed to be talking to our stockbrokers and making profitable return!
+    - 你应该和我们的股票经纪人谈一谈，确保我们得到相应的回报率！
 - **sure do**：当然。
   - > 1: I take it they have different formats? 2: Sure do.
 - **suspense**：[n.] 悬念带来的刺激或担忧（悬疑感）。
@@ -416,9 +425,6 @@
 - **sustainablity**：可持续性。
   - > I really care about sustainability and renewable energy these days.
 
-- **take the plunge**: to finally do something important, difficult, or dangerous.
-  - > He took the plunge and asked her to marry him.
-    - plunge 是从高处跳下的意思。
 - **take up**
   - > It inspired me to take up the challenge of a PhD.
     - 迎接挑战。
@@ -464,6 +470,12 @@
   - > He's such a homebody. He'd rather sit at home and listen to recordings than go to a live venue.
 - **[vs.] vs. vs**：前者更常用。参见[知乎](https://english.stackexchange.com/questions/5392/how-should-i-abbreviate-versus)。
 
+- **weigh in**：加入，参与。
+  - > Many factors weighed into our decision to fire you.
+    - 我们考虑了诸多因素，决定解雇你。
+  - > I'd like a few more people to weigh in.
+    - 我想让更多人加入进来。
+  - > He usually weighs in with good ideas at our meetings.
 - **what would you like something to be?**
   - > What would you like the impact of this project to be?
     - 你期待这个项目给你带来什么影响？
@@ -483,7 +495,9 @@
   - > History is a subject well worth teaching.
   - worth + number
     - > Our house is worth about £100 000.
-  - > The winner will receive two pounds' worth of books.
+    - > The winner will receive two pounds' worth of books.
+    - > Our portfolio is worth half of what it was worth one week ago.
+      - 我们的资产比一周前缩水了一半。
 - **wrench**: to pull or twist something or someone suddenly and violently.
   - > It's one of the most heart-wrenching films of last year.
 
@@ -635,6 +649,8 @@
 - > **Got** any recommendations for any family dramas?
   - 家庭电影有什么推荐的吗？
 
+- > 1: Sorry to bother you sir, but I have some bad news. 2: What is it? 1: ... 2: How is it possible?
+
 - > Thanks for inviting me **over**.
   - 感谢你邀请我来。
 
@@ -643,6 +659,9 @@
 
 - > That's why **more and more** we're able to speak to Siri like **any other** human.
   - 这就是为什么和 Siri 对话越来越像和人类对话了。
+
+- > 1: We didn't expect a **bull market** to become a **bear market** all of a sudden. On the other hand, you still have some **high yield** trash bonds and **government bonds** that will give us enough **liquidity** to cut our losses and reinvest in emerging markets. We could potentially **make tragedy work for us** and make us **think outside the box**. 2: Don't tell other **stockholders** about it.
+  - 牛市；熊市；高回报率的（高产的）；国债；流动性；扭亏为盈；打破传统思维；股东。
 
 - > What's that **you've got there**?
   - 你拿的是什么呀？
