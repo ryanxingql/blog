@@ -145,6 +145,18 @@ rm -rf <fake_path>  # 注意末尾不带 /；否则文件夹没删掉，而是�
 </p>
 </details>
 
+<details>
+<summary><b>UNITY + LIGHTDM</b></summary>
+<p>
+
+[【安装】](https://www.linuxbabe.com/ubuntu/install-unity-desktop-environment-ubuntu-20-04)
+
+[【定制】](https://www.jianshu.com/p/1c4430d9084e)
+
+</p>
+</details>
+
+
 ## 软件层
 
 - **7Z**：UBUNTU 支持不好，不要用。
