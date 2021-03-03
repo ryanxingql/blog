@@ -1,8 +1,8 @@
 # PAPER COLLECTION
 
 - [PAPER COLLECTION](#paper-collection)
-  - [Towards Real-World Blind Face Restoration with Generative Facial Prior](#towards-real-world-blind-face-restoration-with-generative-facial-prior)
   - [Review of Postprocessing Techniques for Compression Artifact Removal](#review-of-postprocessing-techniques-for-compression-artifact-removal)
+  - [Towards Real-World Blind Face Restoration with Generative Facial Prior](#towards-real-world-blind-face-restoration-with-generative-facial-prior)
   - [Learning Enriched Features for Real Image Restoration and Enhancement](#learning-enriched-features-for-real-image-restoration-and-enhancement)
   - [:fire: BBN: Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition](#fire-bbn-bilateral-branch-network-with-cumulative-learning-for-long-tailed-visual-recognition)
   - [:fire: SRFlow: Learning the Super-Resolution Space with Normalizing Flow](#fire-srflow-learning-the-super-resolution-space-with-normalizing-flow)
@@ -32,6 +32,59 @@
   - [:fire: G-VAE: A Continuously Variable Rate Deep Image Compression Framework](#fire-g-vae-a-continuously-variable-rate-deep-image-compression-framework)
   - [CVEGAN: A Perceptually-inspired GAN for Compressed Video Enhancement](#cvegan-a-perceptually-inspired-gan-for-compressed-video-enhancement)
 
+## Review of Postprocessing Techniques for Compression Artifact Removal
+
+1. 为了同时达到低码率和高质量，后处理有着独特的优势：（1）无需修改编码器；（2）不增加码率。
+2. 压缩图像具有的常见失真，以及压缩视频具有的额外常见失真。
+3. 在大多数可视化通信场景下，保真（保准）不是最重要的，逼真才是。
+
+标签：
+
+- 压缩失真的后处理方法
+- review
+- 1997
+
+<details>
+<summary><b>笔记</b></summary>
+<p>
+
+后处理方法：
+
+1. 后处理方法位于 decoding 后。其目的在于，固定码率下提高质量，或等价地，质量一定的情况下提高压缩率。
+2. 除了后处理方法，还有两种方法能取得更好的 tradeoff：（1）预滤波，丢失一些不显著细节，能让压缩更简单；（2）基于 HVS model 的编码方法。
+3. 后处理方法可以分为两个流派：（1）图像增强，目标是提升主观质量，要考虑 HVS，没有特定的优化目标；（2）图像恢复，需要考虑图像降质模型。
+
+常见失真：
+
+1. 压缩失真取决于 3 个因素：数据源（是否包含丰富的纹理），压缩方法和压缩码率。
+2. 图像压缩失真主要有几种形式：（1）块效应：基于块的操作未考虑块之间的连续性；（2）振铃效应：量化一般都会导致，即对频域的低通滤波，反映在时域（图像就是空域）上就是绵延不绝的 sinc 函数，即产生周边振荡效应；（3）模糊：高频信息丢失导致；（4）失准：中频段信息丢失导致，基于变换的编码一般不会出现。
+3. 视频压缩失真还有以下几种：（1）flickering：帧的不连续性；（2）jerky motion：当码率一定时，帧率可能无法太高，导致一些物体的运动看着不连贯。
+4. 模糊不一定会被感知；当 viewing distance 增大到一定程度时，丢失的频域信息超越了 HVS 的感知范围，此时模糊就是不可感知的。
+5. 同样是噪声，出现在平坦区域的会更加显著，因此需要格外关注。此时需要一个块分类方法（平坦与否）。
+
+滤波：
+
+1. 块效应和振铃效应都属于高频噪声，因此低通滤波器可以缓解问题。
+2. 为了保留局部纹理信息，一系列自适应滤波方法应运而生。它们首先要用一个分类器对像素分类（平坦与否，显著与否），然后不同分类的像素会经过不同的滤波器。分类器可以基于局部方差，也可以基于 DCT 系数。
+3. 基于检测 edge 的分类方法在高度压缩的图像上很难达到较好效果：许多 edge 本身就是有问题的。
+4. 为避免过度平滑，纹理信息丰富的区域不应滤波。
+5. 为了达到更好的空间适应性，对于大范围的平滑区域，滤波器尺寸也应该较大；而对于近似于 edge 的小平滑区域，滤波器尺寸也应该较小。
+6. 在时序滤波中，如果存在 scene changes 或 fast motion，那么相邻帧的参考价值较小，应减少参考。
+
+基于 HVS 的增强：
+
+1. 如果 stimulus 产生的 contrast value 低于某通道的 visibility threshold，那么该刺激对该感知通道不可见。
+2. 预测噪声图，把预测噪声图和原图都转换到 perceptual channel 域，如果噪声图某点能量低于原图该点能量，则视为不可见。这就是所谓的 threshold。
+3. 获取预测噪声图：先滤波，然后编码，把编码图减去滤波图。
+4. perceptual channel 不知道是啥。见 [24]。
+
+基于图像复原的后处理：
+
+1. 由于不存在 HVS 的建模，因此大多数优化目标仍然是 MSE。
+
+</p>
+</details>
+
 ## Towards Real-World Blind Face Restoration with Generative Facial Prior
 
 1. 设置类似 EDVR 中的 predeblur 模块，先去噪，不要急着加入 facial prior。
@@ -46,12 +99,13 @@
 - 特征仿射变换
 - U-Net
 - GANs
+- 2021
 
 <details>
 <summary><b>笔记</b></summary>
 <p>
 
-方法如图：
+方法：
 
 ![framework](../imgs/pd_210220_1.jpeg)
 
@@ -82,40 +136,6 @@
 未整理
 
 ---
-
-## Review of Postprocessing Techniques for Compression Artifact Removal
-
-大佬在 1998 年写的、关于后处理压缩失真的 review。特别针对基于 block DCT 的压缩算法。还给出了一个简单的增强算法。
-
-关于**率失真优化**：
-
-- 当码率较低时，大多数压缩算法都会产生 annoying 的失真，极大影响压缩图像和视频的感知质量。
-- 当码率固定时，具有更多细节的图像，通常在压缩后质量更差。
-- 在有损压缩中，码率和失真通常是 tradeoff 的。
-
-关于**处理方法的分类**：
-
-- 为了实现低码率-高感知质量，后处理是一种 attractive 的解决方法。因为后处理可以在 decoding 之后做，方便与现有的标准结合。
-- 另一种解决策略称为前处理，即在 encoder end 操作。例如预滤波，将 source 图像中难以察觉的细节滤掉，可以让压缩算法更轻松；或基于 human visual model 的率失真优化。
-- 前处理多用于语音处理和编码，而 still image coding 多用后处理。
-
-关于**失真**：
-
-- 失真类型主要由压缩算法决定；例如基于 block DCT 的压缩算法，会在 flat areas 产生块效应，在物体边缘产生 ringing；在基于小波的压缩算法中，ringing 是最显著的 artifact。
-- 块效应通常是由分块处理导致的，例如 vector quantization、block truncation coding、fractal-based compression 等。
-
-关于**后处理方法**：
-
-- 后处理的目标是：在给定码率下提高感知质量，或在给定质量要求下提高压缩率。
-- 大部分后处理算法都在关注块效应，因为 JPEG、MPEG 等压缩标准都采用了 block DCT。
-- 大致分为两个门派：image enhancement 和 image restoration。
-- image restoration 的目标是提升 perceived quality subjectively，因此通常会考虑 artifacts 的特殊结构，以及 human visual sensitivities。
-- image enhancement 是 heuristic 的，因为没有优化的 objective criterion。
-- image restoration 则通常借助 distortion model 的先验知识。例如 CLS，POCS 和 MAP。
-
-本人思考：对于 learning-based 方法，尽管有时以 MSE 为优化目标，但仍然可以属于 enhancement；因为借助了外部先验。
-
-> 以下论文还没来得及 polish。
 
 ## Learning Enriched Features for Real Image Restoration and Enhancement
 
