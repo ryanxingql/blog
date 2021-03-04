@@ -80,7 +80,8 @@
 ```bash
 sudo mkdir </media/usr/path>  # /home/usr/path 也可以
 
-sudo fdisk -l # 查看磁盘对应位置，假设是 /dev/sdd1
+#sudo fdisk -l # 查看磁盘对应位置，假设是 /dev/sdd1
+lsblk -f  # 通过硬盘标识符或名字，查看对应位置，如 /dev/sdd1
 sudo mount /dev/sdd1 </media/usr/path/> # 挂载到指定路径
 
 sudo umount </media/usr/path>  # 卸载
@@ -155,7 +156,6 @@ rm -rf <fake_path>  # 注意末尾不带 /；否则文件夹没删掉，而是�
 
 </p>
 </details>
-
 
 ## 软件层
 
