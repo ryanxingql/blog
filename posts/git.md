@@ -65,15 +65,7 @@ git submodule add git@github.com:RyanXingQL/PythonUtils.git utils/
 - 当前库只记录子仓库的当前版本，不会自动更新。
 - 假设有两个本地仓库对应同一个远程仓库；如果不手动更新子仓库，会出现两个本地仓库来回扯皮版本号的情况。
 
-拉取的子仓库默认与原仓库脱离。如果想建立联系：
-
-```bash
-git submodule foreach -q --recursive 'git checkout $(git config -f $toplevel/.gitmodules submodule.$name.branch || echo main)'
-```
-
-此时，修改了子仓库以后，也能往原仓库对比、提交。
-
-拉取含子仓库的仓库时，必须增加循环参数：
+拉取含子仓库的仓库时，必须增加循环参数，否则子仓库是空的：
 
 ```bash
 git clone --recursive <git_url>  # 不能简化为 -r
@@ -81,11 +73,19 @@ git clone --recursive <git_url>  # 不能简化为 -r
 git pull --recurse-submodules
 ```
 
-或者正常拉取后（此时子仓库是空的），初始化、更新子仓库：
+或正常拉取后（此时子仓库是空的），初始化、更新子仓库：
 
 ```bash
 git submodule update --init --recursive
 ```
+
+如果拉取一个含子仓库的大仓库，那么拉取下来的子仓库默认与原仓库脱离（显示头指针分离于 xxx，具体表现为与原子仓库无联系，无法正常上传和下拉）。如果想建立联系：
+
+```bash
+git submodule foreach -q --recursive 'git checkout $(git config -f $toplevel/.gitmodules submodule.$name.branch || echo main)'
+```
+
+注意这里子仓库的默认主分支为 `main`。此时，修改了子仓库以后，也能往原仓库对比、提交。
 
 【[参考链接](https://git-scm.com/book/zh/v2/Git-工具-子模块)】
 
