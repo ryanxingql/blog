@@ -29,6 +29,9 @@
 - **blockbuster**: something that is very successful, especially a film, show, or novel.
   - > I watched all the superhero blockbusters.
     - 我看了所有超级英雄的大片。
+- **brand**：品牌的。
+  - > Is there a significant price gap between purchasing generic and brand prescription drugs?
+    - 买非专利药和品牌处方药的差价大吗？
 - **broaden one's horizon**：增长某人的见识。
   - > I suppose if anything, it's a good way to broaden my horizons.
     - 我想这至少是一个长见识的好方法。
@@ -60,6 +63,8 @@
 - **compulsion**：冲动，强烈的意愿。
   - > Far be it frome me to question your compulsions, but why do you think that is?
     - 我绝对不是质疑你冲动；你觉得是为什么呢？
+- **concerning**
+  - > I have some questions concerning your health insurance.
 - **contaminant**：污染物。
   - > 1: Sam, I don't know that to do with my old phones. 2: Whatever you do, don't toss them. E-waste is extremly hazardous to the environment. 1: I've heard. If it ends up in landfills, contaminants can seep into the soil.
   - 我听说了。如果电子垃圾最终被填埋，那么污染物就会渗入土壤。
@@ -80,6 +85,7 @@
 - **come a long way**：取得很大进展。
   - > Speech recognition tech sure has come a long way. Have you ever stopped to think about how it works?
 
+- **deductible**：保险免赔的。
 - **demanding**：需要耗费较大精力的；不容易的。
   - > 1: I don't know if I can juggle an MBA and a full-time job. 2: It's indeed very demanding.
     - 1：我不知道我能否兼顾攻读MBA和全职工作。2：这确实很难。
@@ -257,6 +263,9 @@
 - **Master's**：硕士学位。
   - > I did some original research for my Master's.
     - 在研究生期间做了一些原创性研究。
+- **maternity**：关于孕妇或母亲的。
+  - > maternity expenses
+    - 孕产费用
 - **mercy**
   - > I'm at the mercy of my internet connection.
     - 我完全受制于网络连接。
@@ -287,6 +296,10 @@
 - **obsolescence**：淘汰。
   - > 1: With the expansion of electric vehicles, the e-waste problem will likely get worse. 2: Hmm... And planned obsolesence doesn't help either.
     - 1：随着电动车发展，电子垃圾的问题可能会越来越严重。2：嗯。厂商对电子产品有计划的淘汰也不会有什么帮助。
+- **opt**: choose.
+  - > You can opt out of the plan A if you are willing to pay a higher monthly premium for the plan B.
+    - 不选择。
+- **outpatient**：不过夜的病人，即门诊病人。inpatient 即 住院病人。
 - **outrageous**: extremely unusual and likely to shock people or make them laugh.
   - > Those shows just have outrageous guests who just do and say obscene things.
     - 那些节目只有一帮出格的嘉宾，言行都很骇人听闻。
@@ -326,6 +339,8 @@
 - **pop up**: to appear very quickly or suddenly.
   - > There are more charing stations popping up every day.
     - 每天都在涌现越来越多的充电站。
+- **premium**：保费。
+  - > You can opt out of the plan A if you are willing to pay a higher monthly premium for the plan B.
 - **prestigious**: admired and respected by people.
   - > prestigious school.
 - **[program] vs. programme**：计算机领域一般用前者；后者多用于日常英式英语。
@@ -337,6 +352,10 @@
     - 在英式英语中有“增加（数量/价值）”的意思。
   - > We’re putting on a concert to raise money for cancer charities.
     - 举办。
+
+- **query**: question.
+  - > I have many queries.
+    - 我有许多问题要问。
 
 - **relevant**
   - > Even though the book was written hundreds of years ago, its themes are still relevant today.
@@ -663,11 +682,17 @@
 - > 1: We didn't expect a **bull market** to become a **bear market** all of a sudden. On the other hand, you still have some **high yield** trash bonds and **government bonds** that will give us enough **liquidity** to cut our losses and reinvest in emerging markets. We could potentially **make tragedy work for us** and make us **think outside the box**. 2: Don't tell other **stockholders** about it.
   - 牛市；熊市；高回报率的（高产的）；国债；流动性；扭亏为盈；打破传统思维；股东。
 
+- > 1: What plan **are** my family and I **getting**? 2: You'll receive both dental and vision **coverage**.
+  - 你的牙科和视力都在保障范围内。
+
 - > What's that **you've got there**?
   - 你拿的是什么呀？
 
 - > 1: Wow, designer toys. **Who would have guessed**? 2: **It just goes to show that** young consumers **value** original design, not some derivative IP.
   - 1：哇，大师设计的玩具。谁能想到呢。2：这说明年轻消费者更看重原创设计，而不是模仿的 IP。
+
+- > You're **in luck** because pediatric eye exams and eyeglasses won't **cost you a penny**.
+  - 你很幸运，儿科眼检查以及配镜不花你一分钱。
 
 - > 1: **You've got** some cool gadgets! 2: Thanks!
   - 你这儿各种装置真酷！
