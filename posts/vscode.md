@@ -2,15 +2,16 @@
 
 - [VSCODE](#vscode)
   - [基础](#基础)
+  - [插件](#插件)
   - [报错](#报错)
 
 ## 基础
 
-- **REMOTE-SSH**：参考[知乎](https://zhuanlan.zhihu.com/p/64849549)。
-- **JUPYTER**：打开 PYTHON 脚本，在命令行输入 JUPYTER 可见；或在代码前后加上 `#%%`，可进入交互模式，再 `run cell` 即可。
+- **折叠**：若展开文件列表过长，可使用折叠恢复。
 - **打开命令行**：F1，或 `shift + ctrl + p`。
 - **打开终端**：`` ctrl + ` ``。
 - **打开标签**：双击标签为打开至新窗口；单击为覆盖。
+- **JUPYTER**：打开 PYTHON 脚本，在命令行输入 JUPYTER 可见；或在代码前后加上 `#%%`，可进入交互模式，再 `run cell` 即可。
 
 <details>
 <summary><b>导出含中文的 JUPYTER NOTEBOOK 为 PDF</b></summary>
@@ -22,6 +23,10 @@
 
 </p>
 </details>
+
+## 插件
+
+VSCODE 真正强大之处在于丰富的插件。善用插件，学会编辑各类插件的 setting 文件，达到自己的使用目的。
 
 ## 报错
 
