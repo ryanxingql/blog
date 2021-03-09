@@ -79,7 +79,7 @@ git pull --recurse-submodules
 git submodule update --init --recursive
 ```
 
-如果拉取一个含子仓库的大仓库，那么拉取下来的子仓库默认与原仓库脱离（显示头指针分离于 xxx，具体表现为与原子仓库无联系，无法正常上传和下拉）。如果想建立联系：
+上一步拉取以后，拉取下来的子仓库默认与原仓库是分离的（显示头指针分离于 xxx，具体表现为与原子仓库无联系，无法正常上传和下拉）。如果想建立联系：
 
 ```bash
 git submodule foreach -q --recursive 'git checkout $(git config -f $toplevel/.gitmodules submodule.$name.branch || echo main)'
