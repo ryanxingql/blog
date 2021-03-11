@@ -59,6 +59,10 @@
   
   > Titles are generally capitalized except for words such as a, an, and, as, at, but, by, for, in, nor, of, on, or, the, to and up, which are usually not capitalized unless they are the first or last word of the title.
 
+常用词：
+
+`i.e.` 和 `e.g.` 应使用 `\ie` 和 `\eg`。
+
 数字：
 
 - 如果要表达 `1e-3`，代码为：`1e{-3}`，否则负号和 3 距离过大。
@@ -89,6 +93,8 @@
 
 - 最好用 CROSSREF 的 BIBTEX 信息，比较规范。IEEE 格式中作者名不全。
 - 有些期刊规定不使用 CITE 包，例如 TPAMI。
+
+排版：
 
 全文最好不要用 `vspace`，否则可能被拒，特别是会议。
 
