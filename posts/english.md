@@ -131,6 +131,9 @@
 - **fingers crossed ...**
   - > Fingers crossed there's a superman waiting for me.
     - 我希望有个超人在等我。
+- **flora and fauna**：动植物群。
+  - > Sydney has a unique biodiversity of flora and fauna, which the city is fighting to keep pristine.
+    - 悉尼拥有独特多样的动植物资源，也一直致力于保护这些原始生态环境。
 - **for good measure**: as a way of making something complete or better.
   - > They've got all of the complex harmonies of jazz, but with hip-hop rhythms thrown in for good measure.
     - 他们保留了所有爵士乐的复杂和声，但另外增加了嘻哈的节奏。
@@ -256,6 +259,9 @@
 - **limit something to another thing**：将某事物限制为另一事物。
   - > When we limit our networks to only our strong ties, we're leaving a lot of potential value on the table.
 
+- **majestic**：壮丽的。
+  - > Sydney's majestic coastline is full of marine species.
+    - 丰富的海洋物种。
 - **mammoth**：[adj.] 原义是猛犸象，这里指庞大的事物。
   - > Doing so is a mammoth task because of the many different ways you can say one thing.
 - **mainstream**：[adj.] 主流的。
@@ -285,6 +291,9 @@
 - **neat**: [informal] [u.s.] good or nice.
   - > Sounds neat.
 - **[neighbor] vs. neighbour**：前者用于美式英语，后者用于英式英语。
+- **nestle**：坐落。
+  - > Nestled between beaches and national parks, Sydneysiders enjoy many natural attractions.
+    - Sydneysiders：澳洲英语，表示悉尼人。
 - **not that great of something**：不怎么擅长（某种技能）；一种不卑不亢的说法；可以加 all 用以强调。
   - > I'm not that great of a public speaker.
     - 我不怎么擅长公众演讲。
@@ -343,6 +352,9 @@
   - > You can opt out of the plan A if you are willing to pay a higher monthly premium for the plan B.
 - **prestigious**: admired and respected by people.
   - > prestigious school.
+- **pristine**：干净的，状态保持良好的。
+  - > Sydney has a unique biodiversity of flora and fauna, which the city is fighting to keep pristine.
+    - 悉尼拥有独特多样的动植物资源，也一直致力于保护这些原始生态环境。
 - **[program] vs. programme**：计算机领域一般用前者；后者多用于日常英式英语。
 - **pros and cons**
   - > 1: Have you weighted the pros and cons? 2: About a million times.
@@ -443,6 +455,9 @@
   - > I only drink coffee that is sustainably grown.
 - **sustainablity**：可持续性。
   - > I really care about sustainability and renewable energy these days.
+- **synonymous**：同义词。
+  - > Sydney is synonymous with sun-bathed beaches.
+    - 悉尼是阳光沙滩的代名词。
 
 - **take up**
   - > It inspired me to take up the challenge of a PhD.
@@ -487,6 +502,9 @@
 
 - **venue**：体育场、音乐厅等聚会现场。
   - > He's such a homebody. He'd rather sit at home and listen to recordings than go to a live venue.
+- **vibrant**：生机勃勃的。
+  - > It's vibrant yet laid-back culture make it perfect for anyone's tastes.
+    - （悉尼）生机勃勃而悠闲，能满足不同人的生活品味。
 - **[vs.] vs. vs**：前者更常用。参见[知乎](https://english.stackexchange.com/questions/5392/how-should-i-abbreviate-versus)。
 
 - **weigh in**：加入，参与。
@@ -653,8 +671,11 @@
 - > 1: Sam, I don't know that to do with my old phones. 2: Whatever you do, don't toss them. E-waste is extremly hazardous to the environment. 1: **I've heard**. If it **ends up in** landfills, contaminants can seep into the soil.
   - 我听说了。如果电子垃圾最终被填埋，那么污染物就会渗入土壤。
 
-- > Is flicking a light switch that inconvenient?
+- > Is **flicking** a light switch that inconvenient?
   - 动动手指开下灯，有那么不方便吗？
+
+- > **It's no secret that** Sydney is **picturesque**.
+  - 众所周知，悉尼风景如画。
 
 - > 1: I'm a sucker for tearjerkers. 2: **Who isn't**?
   - 1：我对催泪电影毫无抵抗力。2：谁不是呢？
@@ -668,7 +689,10 @@
 - > **Got** any recommendations for any family dramas?
   - 家庭电影有什么推荐的吗？
 
-- > 1: Sorry to bother you sir, but I have some bad news. 2: What is it? 1: ... 2: How is it possible?
+- > 1: **Sorry to bother you** sir, but I have some bad news. 2: What is it? 1: ... 2: **How is it possible**?
+
+- > Sydney Harbor National Park is a great place to **drink it all in**.
+  - 你可以尽情观赏这一切。
 
 - > Thanks for inviting me **over**.
   - 感谢你邀请我来。
@@ -678,6 +702,9 @@
 
 - > That's why **more and more** we're able to speak to Siri like **any other** human.
   - 这就是为什么和 Siri 对话越来越像和人类对话了。
+
+- > The **metropolis** of Sydney is a **wonderland of unique experiences** **bursting with beauty**.
+  - 悉尼这座大都市，是一个充满独特体验的绝美仙境。
 
 - > 1: We didn't expect a **bull market** to become a **bear market** all of a sudden. On the other hand, you still have some **high yield** trash bonds and **government bonds** that will give us enough **liquidity** to cut our losses and reinvest in emerging markets. We could potentially **make tragedy work for us** and make us **think outside the box**. 2: Don't tell other **stockholders** about it.
   - 牛市；熊市；高回报率的（高产的）；国债；流动性；扭亏为盈；打破传统思维；股东。
