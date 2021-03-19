@@ -9,6 +9,7 @@
   - > These days, MBAs are a dime a dozen, so it's worth spending the extra pennies for a school that sticks out.
 - **academic**：[c.n.] 学者。
   - > I want to be an academic.
+- **acronym**：首字母缩写，和普通 abbreviation 不同。
 - **amateur**：[c.n.] [adj.] 业余爱好者；或指不专业的（带有贬义）。
 - **analytic**
   - > Don't be so analytical. Just go with your gut!
