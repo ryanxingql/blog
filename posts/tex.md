@@ -6,9 +6,11 @@
 <summary><b>TEXLIVE + VSCODE + LATEX WORKSHOP</b></summary>
 <p>
 
-参见 [LATEX WORKSHOP 指南](https://zhuanlan.zhihu.com/p/106167792)；含快捷键和省心选项。
+参见 [LATEX WORKSHOP 指南](https://zhuanlan.zhihu.com/p/166523064)。建议复制文中配置。如果随意配置，会很慢（每次编译都执行 4 次）。
 
-为了删除 `.synctex.gz`，我在 `latex-workshop.latex.clean.fileTypes` 中添加了 `*.synctex.gz`。这样，点击按钮就可以一键删除中间文件。
+搜索：反向搜索（根据 PDF 搜 TEX）为 `ctrl` 加鼠标左键，正向搜索需要先确定光标位置，然后 `ctrl` 加 `alt` 加 `J`。
+
+
 
 </p>
 </details>
