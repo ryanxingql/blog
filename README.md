@@ -15,9 +15,9 @@ Feel free to contact: <ryanxingql@gmail.com>.
 
 - [ ] 主笔章节：《图像增强与复原》
 
-- [x] [*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images* (RBQE, ECCV 2020)](https://github.com/RyanXingQL/Blog/blob/master/posts/rbqe.md)
+- [x] [*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images* (RBQE, ECCV 2020)](https://github.com/RyanXingQL/Blog/blob/main/posts/rbqe.md)
 
-- [x] [*MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video* (MFQEv2, TPAMI 2019)](https://github.com/RyanXingQL/Blog/blob/master/posts/mfqev2.md)
+- [x] [*MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video* (MFQEv2, TPAMI 2019)](https://github.com/RyanXingQL/Blog/blob/main/posts/mfqev2.md)
 
 - [x] [北航高博班课程笔记](https://gist.github.com/RyanXingQL/773f40c5bee87118e2b476933a2fbb12)
 
@@ -25,56 +25,50 @@ Feel free to contact: <ryanxingql@gmail.com>.
 
 ## High Frequency Notes
 
-- [x] [CONDA AND PIP](https://github.com/RyanXingQL/Blog/blob/master/posts/conda-and-pip.md)
+- [x] [CONDA AND PIP](https://github.com/RyanXingQL/Blog/blob/main/posts/conda-and-pip.md)
 
-- [x] [CUDA AND NVIDIA](https://github.com/RyanXingQL/Blog/blob/master/posts/cuda-and-nvidia.md)
+- [x] [CUDA AND NVIDIA](https://github.com/RyanXingQL/Blog/blob/main/posts/cuda-and-nvidia.md)
 
-- [x] [ENGLISH](https://github.com/RyanXingQL/Blog/blob/master/posts/english.md)
+- [x] [ENGLISH](https://github.com/RyanXingQL/Blog/blob/main/posts/english.md)
 
-- [x] [GIT](https://github.com/RyanXingQL/Blog/blob/master/posts/git.md)
+- [x] [GIT](https://github.com/RyanXingQL/Blog/blob/main/posts/git.md)
 
-- [x] [PAPER COLLECTION](https://github.com/RyanXingQL/Blog/blob/master/posts/paper-collection.md)
+- [x] [PYTHON](https://github.com/RyanXingQL/Blog/blob/main/posts/python.md)
 
-- [x] [PYTHON](https://github.com/RyanXingQL/Blog/blob/master/posts/python.md)
+- [x] [PYTORCH](https://github.com/RyanXingQL/Blog/blob/main/posts/pytorch.md)
 
-- [x] [PYTHON UTILS](https://github.com/RyanXingQL/PythonUtils)
+- [x] [TEX](https://github.com/RyanXingQL/Blog/blob/main/posts/tex.md)
 
-- [x] [PYTORCH](https://github.com/RyanXingQL/Blog/blob/master/posts/pytorch.md)
+- [x] [TMUX](https://github.com/RyanXingQL/Blog/blob/main/posts/tmux.md)
 
-- [x] [TMUX](https://github.com/RyanXingQL/Blog/blob/master/posts/tmux.md)
-
-- [x] [UBUNTU](https://github.com/RyanXingQL/Blog/blob/master/posts/ubuntu.md)
+- [x] [UBUNTU](https://github.com/RyanXingQL/Blog/blob/main/posts/ubuntu.md)
 
 ## Others
 
-- [x] [ART](https://github.com/RyanXingQL/Blog/blob/master/posts/art.md)
+- [x] [BAT](https://github.com/RyanXingQL/Blog/blob/main/posts/bat.md)
 
-- [x] [BAT](https://github.com/RyanXingQL/Blog/blob/master/posts/bat.md)
+- [x] [DEEP LEARNING](https://github.com/RyanXingQL/Blog/blob/main/posts/deep-learning.md)
 
-- [x] [DEEP LEARNING](https://github.com/RyanXingQL/Blog/blob/master/posts/deep-learning.md)
+- [x] [FFMPEG](https://github.com/RyanXingQL/Blog/blob/main/posts/ffmpeg.md)
 
-- [x] [FFMPEG](https://github.com/RyanXingQL/Blog/blob/master/posts/ffmpeg.md)
+- [x] [HEXO AND GITHUB PAGES](https://github.com/RyanXingQL/Blog/blob/main/posts/hexo-and-github-pages.md)
 
-- [x] [HEXO AND GITHUB PAGES](https://github.com/RyanXingQL/Blog/blob/master/posts/hexo-and-github-pages.md)
+- [x] [JUPYTER NOTEBOOK](https://github.com/RyanXingQL/Blog/blob/main/posts/jupyter-notebook.md)
 
-- [x] [JUPYTER NOTEBOOK](https://github.com/RyanXingQL/Blog/blob/master/posts/jupyter-notebook.md)
+- [x] [MARKDOWN](https://github.com/RyanXingQL/Blog/blob/main/posts/markdown.md)
 
-- [x] [MARKDOWN](https://github.com/RyanXingQL/Blog/blob/master/posts/markdown.md)
+- [x] [MATLAB](https://github.com/RyanXingQL/Blog/blob/main/posts/matlab.md)
 
-- [x] [MATLAB](https://github.com/RyanXingQL/Blog/blob/master/posts/matlab.md)
+- [x] [OFFICE](https://github.com/RyanXingQL/Blog/blob/main/posts/office.md)
 
-- [x] [OFFICE](https://github.com/RyanXingQL/Blog/blob/master/posts/office.md)
+- [x] [PYCHARM](https://github.com/RyanXingQL/Blog/blob/main/posts/pycharm.md)
 
-- [x] [PYCHARM](https://github.com/RyanXingQL/Blog/blob/master/posts/pycharm.md)
+- [x] [TENSORFLOW](https://github.com/RyanXingQL/Blog/blob/main/posts/tensorflow.md)
 
-- [x] [TENSORFLOW](https://github.com/RyanXingQL/Blog/blob/master/posts/tensorflow.md)
+- [x] [UNICODE](https://github.com/RyanXingQL/Blog/blob/main/posts/unicode.md)
 
-- [x] [TEX](https://github.com/RyanXingQL/Blog/blob/master/posts/tex.md)
+- [x] [VSCODE](https://github.com/RyanXingQL/Blog/blob/main/posts/vscode.md)
 
-- [x] [UNICODE](https://github.com/RyanXingQL/Blog/blob/master/posts/unicode.md)
+- [x] [WINDOWS](https://github.com/RyanXingQL/Blog/blob/main/posts/windows.md)
 
-- [x] [VSCODE](https://github.com/RyanXingQL/Blog/blob/master/posts/vscode.md)
-
-- [x] [WINDOWS](https://github.com/RyanXingQL/Blog/blob/master/posts/windows.md)
-
-- [x] [ZOTERO](https://github.com/RyanXingQL/Blog/blob/master/posts/zotero.md)
+- [x] [ZOTERO](https://github.com/RyanXingQL/Blog/blob/main/posts/zotero.md)
