@@ -1,16 +1,14 @@
 # TEX
 
-- **TEX 模板**：参考 [GIST](https://gist.github.com/RyanXingQL/f1e0802bc7427b5d444261160a44e126)。
+- **模板**：推荐使用 OVERLEAF 提供的模板。
 
 <details>
-<summary><b>TEXLIVE + VSCODE + LATEX WORKSHOP</b></summary>
+<summary><b>UBUNTU/WINDOWS + TEXLIVE + VSCODE + LATEX WORKSHOP</b></summary>
 <p>
 
 参见 [LATEX WORKSHOP 指南](https://zhuanlan.zhihu.com/p/166523064)。建议复制文中配置。如果随意配置，会很慢（每次编译都执行 4 次）。
 
 搜索：反向搜索（根据 PDF 搜 TEX）为 `ctrl` 加鼠标左键，正向搜索需要先确定光标位置，然后 `ctrl` 加 `alt` 加 `J`。
-
-
 
 </p>
 </details>
@@ -26,19 +24,6 @@
 安装 TEXSTUDIO：`sudo apt install texstudio`。
 
 `Build` 中选择 `PDFLATEX`，图像可正常显示。
-
-</p>
-</details>
-
-<details>
-<summary><b>MIKTEX + TEXSTUDIO</b></summary>
-<p>
-
-不推荐。
-
-- 按顺序下载和安装。
-- 重启。
-- TEXSTUDIO 里要设置 `zh_CN` 语言，将 `pdflatex` 改为 `xzelatex`。
 
 </p>
 </details>
