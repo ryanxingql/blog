@@ -13,6 +13,8 @@ Feel free to contact: <ryanxingql@gmail.com>.
 
 ## Introduction to My Contributions
 
+Time order.
+
 - [x] [北航高博班课程笔记](https://gist.github.com/RyanXingQL/773f40c5bee87118e2b476933a2fbb12)
 
 - [x] [*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images* (RBQE, ECCV 2020)](https://github.com/RyanXingQL/Blog/blob/main/posts/rbqe.md)
@@ -21,9 +23,9 @@ Feel free to contact: <ryanxingql@gmail.com>.
 
 - [x] [北航电子信息专业课笔记](https://gist.github.com/RyanXingQL/31be08b97db38c7eb2f636ae2607f54b)
 
-Time order.
-
 ## High Frequency Notes
+
+Alphabetical order.
 
 - [x] [CONDA AND PIP](https://github.com/RyanXingQL/Blog/blob/main/posts/conda-and-pip.md)
 
@@ -41,13 +43,13 @@ Time order.
 
 - [x] [UBUNTU](https://github.com/RyanXingQL/Blog/blob/main/posts/ubuntu.md)
 
-Alphabetical order.
-
 ## Others
 
-- [x] [图表鉴赏（密码：XME5）](https://mq1zrs2eey.feishu.cn/docs/doccnxX9Fhi3VeLDvtC1uXkyC0f?from=from_copylink)
+Alphabetical order.
 
-- [x] [英文学习（密码: i7VV）](https://mq1zrs2eey.feishu.cn/docs/doccnMQaNzEOpBZcf2o9F67M9Df)
+- [x] [图表鉴赏](https://mq1zrs2eey.feishu.cn/docs/doccnxX9Fhi3VeLDvtC1uXkyC0f?from=from_copylink)（key: XME5）
+
+- [x] [英文学习](https://mq1zrs2eey.feishu.cn/docs/doccnMQaNzEOpBZcf2o9F67M9Df)（key: i7VV）
 
 - [x] [BAT](https://github.com/RyanXingQL/Blog/blob/main/posts/bat.md)
 
@@ -76,5 +78,3 @@ Alphabetical order.
 - [x] [WINDOWS](https://github.com/RyanXingQL/Blog/blob/main/posts/windows.md)
 
 - [x] [ZOTERO](https://github.com/RyanXingQL/Blog/blob/main/posts/zotero.md)
-
-Alphabetical order.
