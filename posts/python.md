@@ -1,261 +1,58 @@
 # PYTHON
 
 - [PYTHON](#python)
-  - [字符串](#字符串)
-  - [文本文件](#文本文件)
-  - [CSV 文件](#csv-文件)
-  - [PANDAS 数据](#pandas-数据)
-  - [绘图](#绘图)
-  - [命令行参数](#命令行参数)
-  - [断言](#断言)
-  - [多进程](#多进程)
-  - [随机数](#随机数)
-  - [NUMPY 数组](#numpy-数组)
-  - [路径](#路径)
-  - [时间](#时间)
-  - [进度条](#进度条)
-
-## 字符串
-
-- **子字符串查找**：`str.find(sub,start,end)`；返回第一个子字符串的初始索引；若没找到，返回 `-1`。
-
-<details>
-<summary><b>多行字符串</b></summary>
-<p>
-
-```python
-print("""Hello!
-Welcome!
-Goodbye!"""
-)
-```
-
-```bash
-Hello!
-Welcome!
-Goodbye!
-```
-
-尽量不要缩进，否则输出也有缩进。
-
-</p>
-</details>
-
-<details>
-<summary><b>字符串 format 简单方法</b></summary>
-<p>
-
-应该是 3.8 的新特性。
-
-```python
-name = 'Ryan'
-print(f'My name is {name}.')
-```
-
-```bash
-My name is Ryan.
-```
-
-</p>
-</details>
-
-<details>
-<summary><b>字符串拼接</b></summary>
-<p>
-
-```python
-a = 'Hello ' + 'World!'
-print(a)
-
-b = (
-    'Hello '
-    'World!'
-    )
-print(b)
-```
-
-```bash
-Hello World!
-Hello World!
-```
-
-注意，第二种写法没有逗号，否则就变成 tuple 了。
-
-</p>
-</details>
-
-## 文本文件
-
-<details>
-<summary><b>读写</b></summary>
-<p>
-
-```python
-fp = open("xxx.txt", 'w')
-fp.write("haha\nhaha")
-fp.close()
-```
-
-逐行读：
-
-```python
-while True:
-    line = fp.readline()
-    if not line:
-        break
-```
-
-NUMPY 提供了更快的二进制读写方式：`np.fromfile(fp, dtype=np.uint8, count=block_size)`。
-
-</p>
-</details>
-
-## CSV 文件
-
-<details>
-<summary><b>读写</b></summary>
-<p>
-
-采用一般文本文件的读取方法：
-
-```python
-import csv
-
-csv_path = 'demo.csv'
-
-# read
-csv_fp = open(csv_path, 'r', newline='')
-reader = csv.reader(csv_fp)
-for line_list in reader:
-    print(line_list)
-
-# write
-csv_fp = open(csv_path, 'w', newline='')
-writer = csv.writer(csv_fp)
-writer.writerow(['index_vid','psnr_ori','psnr_enh','dpsnr','name_vid'])
-
-csv_fp.close()
-```
-
-使用 PANDAS 更智能。
-
-```python
-import pandas as pd
-
-df = pd.read_csv(csv_file)
-saved_column = df.column_name  # you can also use df['column_name']
-```
-
-</p>
-</details>
-
-## PANDAS 数据
-
-<details>
-<summary><b>DataFrame</b></summary>
-<p>
-
-每一列都是数据，对应一个标签。用字典表示：
-
-```python
-d = {'col1': [1, 2], 'col2': [3, 4]}
-df = pd.DataFrame(data=d)
-```
-
-</p>
-</details>
-
-## 绘图
-
-MATLAB 很强大，但我更倾向于开源的 PYTHON。
-
-单就 2D 绘图而言，MATPLOTLIB 可以胜任；但如果要绘制大量数据或 3D 图，推荐 MATLAB 或其他 PYTHON 库。
-
-PYTHON 的绘图能力仰赖众多开源项目。
-
-- **3D plot**：参见[博客](https://blog.csdn.net/u014636245/article/details/82799573)。
-
-<details>
-<summary><b>2D绘图：MATPLOTLIB</b></summary>
-<p>
-
-```python
-import matplotlib.pyplot as plt
-
-plt.plot(result)
-
-plt.title(f'dMSE, QP={qp}')
-plt.xlabel('TV')
-plt.ylabel('dMSE')
-
-plt.show()
-
-plt.savefig('demo.png')
-
-plt.clf()  # 如果要画新图，需要清除当前内容，但保留窗口
-```
-
-参考[官方教程](https://matplotlib.org/tutorials/introductory/pyplot.html)。
-
-</p>
-</details>
-
-<details>
-<summary><b>2D 统计数据可视化：SEABORN</b></summary>
-<p>
-
-SEABORN 擅长将 2D 统计数据可视化。由于其抽象性，使得作者可以更关注数据本身，而不是代码细节。
-
-SEABORN 的基础是 MATPLOTLIB，常用数据格式为 PANDAS。
-
-参见：
-
-- [概览](https://seaborn.pydata.org/index.html)
-- [所有教程](https://seaborn.pydata.org/tutorial.html)
-- [可接受的数据结构](https://seaborn.pydata.org/tutorial/data_structure.html)
-
-```python
-d = {'iter': val_logs['iter'], 'PSNR': val_logs['PSNR']}
-df = pd.DataFrame(data=d)
-
-sns_fig = sns.relplot(data=df, x='iter', y='PSNR')  # 绘制关系图
-
-sns_fig.savefig('output.png')  # 保存图像
-```
-
-</p>
-</details>
-
-<details>
-<summary><b>堆积柱状图</b></summary>
-<p>
-
-每次 `bar` 都建立在底层 bar 之上。
-
-```python
-plt.bar(index_lst, new_y_lst, width=3, bottom=old_y_acc_lst)
-```
-
-默认 hold，直至 `plt.show()`。
-
-</p>
-</details>
-
-## 命令行参数
-
-<details>
-<summary><b>ARGPARSE</b></summary>
-<p>
-
-> 常规用法
+  - [ARGPARSE](#argparse)
+  - [ASSERT statement](#assert-statement)
+  - [Built-in](#built-in)
+    - [字符串](#字符串)
+      - [查找子串](#查找子串)
+      - [多行字符串](#多行字符串)
+      - [拼接](#拼接)
+      - [Format](#format)
+    - [读写](#读写)
+      - [`open`](#open)
+      - [`readline`](#readline)
+  - [MATPLOTLIB](#matplotlib)
+    - [堆积柱状图](#堆积柱状图)
+  - [MULTIPROCESSING](#multiprocessing)
+    - [基操](#基操)
+    - [回调函数](#回调函数)
+    - [背景知识](#背景知识)
+  - [NUMPY](#numpy)
+    - [读写](#读写-1)
+    - [RANDOM](#random)
+    - [`reshape` vs. `resize`](#reshape-vs-resize)
+  - [PATHLIB](#pathlib)
+    - [判断路径是否存在](#判断路径是否存在)
+    - [创建文件夹](#创建文件夹)
+    - [合成路径](#合成路径)
+    - [路径绝对化](#路径绝对化)
+    - [遍历路径](#遍历路径)
+    - [路径分解](#路径分解)
+    - [路径重命名](#路径重命名)
+    - [获取当前工作路径](#获取当前工作路径)
+    - [删除空文件夹](#删除空文件夹)
+    - [删除文件或软链接](#删除文件或软链接)
+    - [IO](#io)
+  - [PANDAS](#pandas)
+    - [CSV](#csv)
+  - [SHUTIL](#shutil)
+    - [删除非空文件夹](#删除非空文件夹)
+  - [TQDM](#tqdm)
+
+多看手册，少参考博客和书籍。
+
+## ARGPARSE
+
+[[手册]](https://docs.python.org/3/library/argparse.html?highlight=argparse#module-argparse)
+
+常规用法：
 
 - 设置长 + 短命名，注意引用时为长命名。
 - 设置默认值，使用时可缺省，方便。
 - 写一段话，描述参数的含义，方便理解。
 
-```python
-import argparse
-
+```python3
 parser = argparse.ArgumentParser()
 parser.add_argument('-io_v', '--io_val', type=str, \
     default="disk", \
@@ -266,7 +63,7 @@ opts = parser.parse_args()
 print(opts.io_val)
 
 opts_dict = vars(opts)  # 转换成字典，方便 log 逐行打印
-log_fp.write(opts_dict['io_val'] + '\n')
+log_fo.write(opts_dict['io_val'] + '\n')
 ```
 
 也可以输入列表：
@@ -290,16 +87,15 @@ group1.add_argument("--option1")
 group2.add_argument("--option2")
 ```
 
-</p>
-</details>
+## ASSERT statement
 
-## 断言
+[[手册]](https://docs.python.org/3/reference/simple_stmts.html#assert)
 
-<details>
-<summary><b>ASSERT</b></summary>
-<p>
+```python3
+# 最基础用法
+assert expression1
 
-```python
+# 进阶用法
 assert not op.exists(a_path), "ALREADY EXISTS!"
 
 a = "haha"
@@ -308,32 +104,114 @@ assert a in b, (f"{a} is not in "
     f"{b}!")
 ```
 
-</p>
-</details>
+## Built-in
 
-## 多进程
+[[手册]](https://docs.python.org/3/library/functions.html?highlight=built%20open#built-in-functions)
 
-<details>
-<summary><b>MULTIPROCESSING</b></summary>
-<p>
+### 字符串
 
-pool of workers：
+#### 查找子串
 
-- `apply_async`：支持异步，非阻塞，返回结果后回调。
-- `map`：阻塞，直至结果返回。
-- `close`：关闭进程池，不再接受新任务。
-- `join`：主进程阻塞，等待子进程退出。要在 `close` 后使用。
+```python3
+str.find(sub[, start[, end]])
+```
+
+- 从 `str` 中查找子串 `sub` 的**位置**；返回第一个子串的初始索引；若没找到，返回 `-1`。
+- 如果只是想判断是否存在，用 `in` 即可。
+
+#### 多行字符串
+
+最简单的办法是用 `\n`。
+
+此外还有三双引号写法。
+
+```python3
+print("""Hello!
+Welcome!
+Goodbye!"""
+)
+```
+
+```bash
+Hello!
+Welcome!
+Goodbye!
+```
+
+不要缩进，否则输出也有缩进。
+
+#### 拼接
 
 ```python
-import multiprocessing as mp
-import time
+a = 'Hello ' + 'World!'
+print(a)
 
+b = (
+    'Hello '  # 不要加逗号，否则就变成 tuple 了
+    'World!'
+    )
+print(b)
+```
 
+```bash
+Hello World!
+Hello World!
+```
+
+#### Format
+
+应该是 3.8 的新特性。
+
+```python
+name = 'Ryan'
+print(f'My name is {name}.')
+```
+
+```bash
+My name is Ryan.
+```
+
+### 读写
+
+#### `open`
+
+[[参数]](https://docs.python.org/3/library/functions.html?highlight=built%20open#open)
+
+如果打不开，会报错。
+
+#### `readline`
+
+```python3
+with open('somefile') as openfileobject:
+    for line in openfileobject:
+        do_something()
+
+# 当 EOF 时，会一直返回 ''，即 False；注意空行是 \n，不是 ''
+while True:
+    line = fo.readline()
+    if not line:
+        break
+```
+
+## MATPLOTLIB
+
+### 堆积柱状图
+
+每次 `bar` 建立在 `old_bar` 之上。
+
+```python3
+plt.bar(x, height, width=0.8, bottom=old_bar, align='center')
+```
+
+## MULTIPROCESSING
+
+### 基操
+
+```python3
 def func_demo(proc_id):
     print(f"start {proc_id}")
     time.sleep(3)
     print(f"end {proc_id}")
-
 
 if __name__ == '__main__':  # WINDOWS 下要写在里面
     pool = mp.Pool(processes=2)  # 最多 2 个进程并行
@@ -355,18 +233,24 @@ end 2
 end 3
 ```
 
+- `apply_async`：支持异步，非阻塞，返回结果后回调。
+- `map`：阻塞，直至结果返回。
+- `close`：关闭进程池，不再接受新任务。
+- `join`：主进程阻塞，等待子进程退出。要在 `close` 后使用。
+
 可以看到，同时只有 2 个进程并行。即当 0 和 1 执行后，循环阻塞，直至 0 结束后，2 或 3 才开始执行。
 
-曾经在 `pool.apply_asygn(func)` 外面写 `pbar.update()`。后果是，pbar 速度飞快，然而 `func()` 却没有执行完。通过查看 htop 可知，`apply_sygn(func)` 是创建了众多进程，并且不受外部代码影响（不堵塞），直到 `pool.close()`。因此，`pbar.update()` 应放到 `callback()` 内部。否则进度是虚假的。
+### 回调函数
+
+曾经在 `pool.apply_asygn(func)` 下一行写 `pbar.update()`。后果是，pbar 速度飞快，然而 `func()` 却没有执行完。通过查看 htop 可知，`apply_sygn(func)` 是创建了众多进程，并且不受外部代码影响（不堵塞），直到 `pool.close()`。因此，因写一个 `callback` 函数，并将 `pbar.update()` 放到 `callback` 内部。
 
 ```python
-...
 callback=lambda x :pbar.update(1)
 ```
 
 注意得有一个形参 x 。因为 `callback` 必须接收参数，哪怕是无用的。能放到 `func()` 里吗？貌似可以，但冲突很严重，速度慢。
 
-以下介绍背景知识和原理。
+### 背景知识
 
 进程 vs. 线程，参考[知乎](https://zhuanlan.zhihu.com/p/76343641)。
 
@@ -386,109 +270,83 @@ callback=lambda x :pbar.update(1)
 为了sidestep GIL 问题，我们可以使用多进程而不是多线程。
 由于不同进程是在不同 GPU 上执行的，因此可实现真正的并行。
 
-回调函数，参考[知乎](https://www.zhihu.com/question/19801131)。
+回调函数参考[知乎](https://www.zhihu.com/question/19801131)。
 
-回调函数（callback）：当 func 结束时，会调用回调函数；回调函数的参数即 func 的返回值。
-显然，为了实现回调，我们需要将 callback 函数传递给 func。
-回调函数使得功能剥离，更灵活。
+## NUMPY
 
-</p>
-</details>
+### 读写
 
-## 随机数
-
-<details>
-<summary><b>NUMPY</b></summary>
-<p>
-
-```python
-np.random.choice(a_list)
+```python3
+np.fromfile(file, dtype=float, count=-1, sep='', offset=0)
 ```
 
-从列表或迭代器中随机选一个。
+- 读取文本或二进制文件 `file`，生成数组。
+- `count` 即数组大小。
+- `sep` 即 item 在 `file` 中的分隔符。对二进制文件，`sep` 为空即可。
 
-</p>
-</details>
+### RANDOM
 
-## NUMPY 数组
+- `np.random.choice(a, size=None, replace=True, p=None)`：从一个列表中随机采样，生成一个新列表。
+  - 如果 `a` 是一个数，那么列表就是 `np.arange(a)`。
+  - `replace=True`，即为放回采样；否则为不放回采样。
 
-- **reshape vs. resize**：`resize` 没有返回值，`reshape` 有。
+### `reshape` vs. `resize`
 
-## 路径
+`np.resize()` 会返回一个新 array（数据不共享），而 `ndarray.resize()` 是 in-place 操作。
 
-- **路径重命名**：`a_path.rename('/foo')`；字符串或 Path 对象都可以。
-- **获取当前路径**：`print(os.getcwd())`；是启动 Python 的路径，不是程序路径。
+`b = np.reshape(a, newshape)` 返回的是一个形状不同、但指向相同数据（危险）的数组。`reshape` 也有 in-place 操作。
 
-<details>
-<summary><b>Path对象</b></summary>
-<p>
+## PATHLIB
 
-```python
-from pathlib import Path
-file_path = Path('C:/Files/file.csv')
+[[手册]](https://docs.python.org/3/library/pathlib.html#module-pathlib)
+
+输入 `str()` 即可转换为普通字符串。
+
+### 判断路径是否存在
+
+```python3
+src_path.exists()  # True or False
 ```
 
-`str(file_path)` 即可转变回正常字符串，可以执行 `split` 等字符串操作。
+### 创建文件夹
 
-</p>
-</details>
+创建文件不用多说，类似写文件就行。
 
-<details>
-<summary><b>判断路径是否存在</b></summary>
-<p>
-
-```python
-if not os.path.exists(<dir_path>):
-    pass
-
-from pathlib import Path
-file_path = Path('C:/Files/file.csv')
-file_path.exists()  # True
+```python3
+src_path.mkdir(parents=False, exist_ok=False)
 ```
 
-</p>
-</details>
+`parents` 默认开，即不存在的父路径也会创建；`exist_ok` 默认关，即已存在会报错。
 
-<details>
-<summary><b>创建路径</b></summary>
-<p>
+### 合成路径
 
-```python
-if not os.exists(<dir_path>):
-    os.makedirs(<dir_path>)
-
-a_Path_object.mkdir(parents=True)  # 可以代替 makedirs 的功能
+```python3
+tar_path = src_path / 'subfolder' / 'hello.py'
 ```
 
-</p>
-</details>
+### 路径绝对化
 
-<details>
-<summary><b>合成路径</b></summary>
-<p>
+如果路径中含有相对路径，例如 `.` 和 `..`，可以用以下函数整理：
 
-```python
-import os.path as op
-os.path.join("/home", "usrname")
-
-from pathlib import Path
-root_path = Path('C:/Files')  # 你没看错，无论系统，都用正斜杠即可！
-file_path = root_path / 'file.csv'  # 比 os 简单
+```python3
+src_path.resolve()
 ```
 
-</p>
-</details>
+### 遍历路径
 
-<details>
-<summary><b>分解路径</b></summary>
-<p>
+```python3
+a = src_path.iterdir()
+next(a)
+```
 
-例如提取最高层文件夹名：
+- 生成一个 generator。
+- 不包含 `.` 和 `..`。
+- 随机顺序。
+- 如果创建 generator 后，删除了某个路径，那么 generator 是否还包含该路径是未知的。
 
-```python
-os.path.basename("/home/usrname/xxx.yuv").split(".")[0]
+### 路径分解
 
-from pathlib import Path
+```python3
 file_path = Path('C:/Files/file.csv')
 file_path.stem  # file
 file_path.name  # file.csv
@@ -498,33 +356,78 @@ a_path = Path('/aa/bb/cc')
 a_path.name # 'cc'
 ```
 
-</p>
-</details>
+### 路径重命名
 
-<details>
-<summary><b>删除路径</b></summary>
-<p>
-
-```python
-os.removedirs(<dir_path>)  # 只能删除空路径
-
-shutil.rmtree(<dir_path>)  # 递归删除文件夹及文件
+```python3
+src_path.rename(tar_path)  # src_path不会变，但打不开
 ```
 
-</p>
-</details>
+`target` 可以是字符串，可以是 `Path` 对象；如果真是一个文件，那么会替换原文件。
 
-## 时间
+### 获取当前工作路径
 
-- **返回时间戳**：`time.time()`。
+```python3
+pathlib.Path.cwd()
+```
 
-## 进度条
+在哪执行 PYTHON，就会显示哪里的路径。例如，在 `/a/b` 执行 `python c/d.py`，会显示 `/a/b` 而不是 `/a/b/c`。
 
-<details>
-<summary><b>TQDM</b></summary>
-<p>
+进一步，如果想获取当前文件的绝对路径：
 
-```python
+```python3
+pathlib.Path(__file__).resolve()
+```
+
+进一步，如果想获取当前文件所在文件夹的绝对路径：
+
+```python3
+pathlib.Path(__file__).resolve().parent  # resolve不可少，否则输出.
+```
+
+### 删除空文件夹
+
+```python3
+src_path.rmdir()
+```
+
+如果文件夹非空，参见 SHUTIL 库。
+
+### 删除文件或软链接
+
+```python3
+src_path.unlink(missing_ok=False)
+```
+
+`missing_ok` 默认关，即如果不存在，会报错。
+
+### IO
+
+```python3
+fo_path = pathlib.Path('demo.txt')
+content = fo_path.open().read()
+```
+
+## PANDAS
+
+### CSV
+
+- 使用 `read_csv` 函数，将 CSV 文件内容读入并转换为 DataFrame 格式。默认为 `,` 分隔。
+
+## SHUTIL
+
+这是一个高级文件操作函数。
+
+### 删除非空文件夹
+
+```python3
+shutil.rmtree(src_dir)
+```
+
+把整个路径树都删了，即递归操作。路径不能是软链接。
+
+## TQDM
+
+```python3
 from tqdm import tqdm
 
 # 基础用法
@@ -559,6 +462,3 @@ with tqdm(
 # 最好在每个 pbar 完成使命后关闭；否则不换行。
 pbar.close()
 ```
-
-</p>
-</details>
