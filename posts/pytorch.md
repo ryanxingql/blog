@@ -1,9 +1,23 @@
 # PYTORCH
 
 - [PYTORCH](#pytorch)
+  - [`view`, `reshape`, `contiguous`, `clone()` and `detach()`](#view-reshape-contiguous-clone-and-detach)
   - [安装](#安装)
   - [维度](#维度)
   - [多卡](#多卡)
+
+多看手册，少参考博客和书籍。
+
+## `view`, `reshape`, `contiguous`, `clone()` and `detach()`
+
+[[手册]](https://pytorch.org/docs/master/tensor_view.html#tensor-view-doc)
+
+- `view` 会生成一个形状不同、底层数据共享（危险）的 tensor。这么做也是为了节约 copy 的成本。
+- `view` 可能使得一个 contiguous 的 tensor 变成 non-coutiguous。
+- 还有许多操作基于 `view`，例如 `transpose`、`squeeze`、`expand`。因此也具有上述特性。
+- 如果一个数据本身是 contiguous 的，那么 `contiguous` 返回其自身；否则，会返回一个新的 tensor。
+- `reshape`，`reshape_as()`，`flatten` 既有可能是 `view`，也有可能是新 tensor；条件比较复杂，不要冒险，应主动规避风险。
+- 如果深拷贝一个 `requires_grad=False` 的 tensor，`t.clone()` 即可；否则，需要 `t.detach().clone()`。
 
 ## 安装
 
