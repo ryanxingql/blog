@@ -9,7 +9,7 @@ Welcome to my blog!
 
 格式主要遵循[写作规范 via 阮一峰](https://github.com/ruanyf/document-style-guide)；其他细节保持整体一致即可。
 
-Feel free to contact: <ryanxingql@gmail.com>.
+Feel free to contact: `ryanxingql@gmail.com`.
 
 ## Introduction to My Contributions
 
