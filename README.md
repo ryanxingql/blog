@@ -15,13 +15,13 @@ Feel free to contact: <ryanxingql@gmail.com>.
 
 Time order.
 
-- [x] [北航高博班课程笔记](https://gist.github.com/RyanXingQL/773f40c5bee87118e2b476933a2fbb12)
+- [x] [北航高博班课程笔记](https://github.com/RyanXingQL/Blog/blob/main/posts/buaa_honors_graduate.md)
 
 - [x] [*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images* (RBQE, ECCV 2020)](https://github.com/RyanXingQL/Blog/blob/main/posts/rbqe.md)
 
 - [x] [*MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video* (MFQEv2, TPAMI 2019)](https://github.com/RyanXingQL/Blog/blob/main/posts/mfqev2.md)
 
-- [x] [北航电子信息专业课笔记](https://gist.github.com/RyanXingQL/31be08b97db38c7eb2f636ae2607f54b)
+- [x] [北航电子信息专业课笔记](https://github.com/RyanXingQL/Blog/blob/main/posts/buaa_undergraduate.md)
 
 ## High Frequency Notes
 
