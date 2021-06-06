@@ -21,7 +21,7 @@ Time order.
 
 - [x] [*MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video* (MFQEv2, TPAMI 2019)](https://github.com/RyanXingQL/Blog/blob/main/posts/mfqev2.md)
 
-- [x] [北航电子信息专业课笔记](https://github.com/RyanXingQL/Blog/blob/main/posts/buaa_undergraduate.md)
+- [x] [北航电子信息专业课笔记](https://github.com/RyanXingQL/Blog/blob/main/posts/buaa_ee_undergraduate.md)
 
 ## High Frequency Notes
 
