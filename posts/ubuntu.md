@@ -68,7 +68,7 @@
 7. 选择上海时区。用户名和计算机名字任意，但提醒一点：计算机名字不要太长。因为在 terminal 中，计算机名会出现在 BASH 的每一行命令之前。如果计算机名太长，会导致命令很长。
 8. 等待。安装过程有点漫长，可能在 20 分钟左右。
 
-参考[图片教程](https://blog.csdn.net/baidu_36602427/article/details/86548203#commentBox)。
+参考[图片教程](https://blog.csdn.net/baidu_36602427/article/details/86548203)。
 
 </p>
 </details>
