@@ -1,10 +1,5 @@
 # BLOG
 
-- [BLOG](#blog)
-  - [Introduction to My Contributions](#introduction-to-my-contributions)
-  - [High Frequency Notes](#high-frequency-notes)
-  - [Others](#others)
-
 Welcome to my blog!
 
 格式主要遵循[写作规范 via 阮一峰](https://github.com/ruanyf/document-style-guide)；其他细节保持整体一致即可。
