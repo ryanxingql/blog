@@ -1,11 +1,5 @@
 # PYTORCH
 
-- [PYTORCH](#pytorch)
-  - [`view`, `reshape`, `contiguous`, `clone()` and `detach()`](#view-reshape-contiguous-clone-and-detach)
-  - [安装](#安装)
-  - [维度](#维度)
-  - [多卡](#多卡)
-
 多看手册，少参考博客和书籍。
 
 ## `view`, `reshape`, `contiguous`, `clone()` and `detach()`

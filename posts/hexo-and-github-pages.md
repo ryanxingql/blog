@@ -1,9 +1,5 @@
 # HEXO AND GITHUB PAGES
 
-- [HEXO AND GITHUB PAGES](#hexo-and-github-pages)
-  - [完整流程](#完整流程)
-  - [调试](#调试)
-
 ## 完整流程
 
 我以我的 [GITHUB PAGE](https://ryanxingql.github.io/) 为例。

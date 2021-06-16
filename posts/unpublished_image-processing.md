@@ -1,10 +1,5 @@
 # Image Processing
 
-- [Image Processing](#image-processing)
-  - [灰度变换与空间滤波](#灰度变换与空间滤波)
-    - [基本的灰度变换](#基本的灰度变换)
-    - [直方图处理](#直方图处理)
-
 ## 灰度变换与空间滤波
 
 > 数字图像处理v3，冈萨雷斯，Chapter 3

@@ -1,9 +1,5 @@
 # UBUNTU
 
-- [UBUNTU](#ubuntu)
-  - [系统层](#系统层)
-  - [软件层](#软件层)
-
 ## 系统层
 
 - **查各用户内存占用**：`ps --no-headers -eo user,rss | awk '{arr[$1]+=$2}; END {for (i in arr) {print i,arr[i]}}' | sort -nk2`。

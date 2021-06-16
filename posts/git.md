@@ -1,10 +1,5 @@
 # GIT
 
-- [GIT](#git)
-  - [SSH](#ssh)
-  - [Repository](#repository)
-  - [与远程仓库互动](#与远程仓库互动)
-
 ## SSH
 
 - 生成密钥：`ssh-keygen -t rsa -C <email>`。

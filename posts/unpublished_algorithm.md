@@ -1,9 +1,5 @@
 # ALGORITHM
 
-- [ALGORITHM](#algorithm)
-  - [数据结构](#数据结构)
-  - [递归](#递归)
-
 ## 数据结构
 
 <details>

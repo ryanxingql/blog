@@ -1,10 +1,5 @@
 # MATLAB
 
-- [MATLAB](#matlab)
-  - [WINDOWS 版安装](#windows-版安装)
-  - [WINDOWS 版配置右键打开方式](#windows-版配置右键打开方式)
-  - [UBUNTU 版安装](#ubuntu-版安装)
-
 ## WINDOWS 版安装
 
 参见[此处](http://www.zhanshaoyi.com/12500.html)。

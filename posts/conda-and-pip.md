@@ -1,13 +1,5 @@
 # CONDA AND PIP
 
-- [CONDA AND PIP](#conda-and-pip)
-  - [PIP](#pip)
-    - [常规](#常规)
-    - [调试](#调试)
-  - [CONDA](#conda)
-    - [常规](#常规-1)
-    - [调试](#调试-1)
-
 强烈推荐用 PIP 下载包，用 CONDA 管理虚拟环境。
 
 ## PIP
