@@ -16,7 +16,7 @@
 - [x] 随机过程
 - [x] 自动控制原理
 
-请在 Releases 页面下载最新版。
+请在 [Releases](https://github.com/RyanXingQL/Blog/releases) 页面下载最新版。
 
 ## 简介
 

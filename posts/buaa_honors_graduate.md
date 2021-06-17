@@ -2,7 +2,7 @@
 
 更新中。
 
-请在 Releases 页面下载最新版。
+请在 [Releases](https://github.com/RyanXingQL/Blog/releases) 页面下载最新版。
 
 - [ ] 矩阵
 - [ ] 数值分析
