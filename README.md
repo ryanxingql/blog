@@ -50,6 +50,8 @@ Alphabetical order.
 
 - [英文学习](https://mq1zrs2eey.feishu.cn/docs/doccnMQaNzEOpBZcf2o9F67M9Df)（key: i7VV）
 
+- [ADOBE PR](https://github.com/RyanXingQL/Blog/blob/main/posts/adobe_premiere_pro.md)
+
 - [BAT](https://github.com/RyanXingQL/Blog/blob/main/posts/bat.md)
 
 - [DEEP LEARNING](https://github.com/RyanXingQL/Blog/blob/main/posts/deep-learning.md)
@@ -63,8 +65,6 @@ Alphabetical order.
 - [MARKDOWN](https://github.com/RyanXingQL/Blog/blob/main/posts/markdown.md)
 
 - [OFFICE](https://github.com/RyanXingQL/Blog/blob/main/posts/office.md)
-
-- [ADOBE PR](https://github.com/RyanXingQL/Blog/blob/main/posts/adobe_premiere_pro.md)
 
 - [TENSORFLOW](https://github.com/RyanXingQL/Blog/blob/main/posts/tensorflow.md)
 
