@@ -369,9 +369,29 @@ content = fo_path.open().read()
 
 ## PANDAS
 
+[[官方手册]](https://pandas.pydata.org/docs/reference/index.html)
+
 ### CSV
 
-- 使用 `read_csv` 函数，将 CSV 文件内容读入并转换为 DataFrame 格式。默认为 `,` 分隔。
+#### 读
+
+使用 `read_csv` 函数，将 CSV 文件内容读入并转换为 DataFrame 格式。默认为 `,` 分隔。
+
+- 可以跳过某些行：`iqa_data = pd.read_csv(csv_path, skiprows=[i for i in range(4)])  # 跳过前四行`。
+
+#### 写
+
+[[函数]](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html)
+  
+- 新子表：先读再一起写。不能追加，追加模式是追加行。
+
+    ```python3
+    try:
+        df = pd.read_csv(logger)
+        df['mean_value'] = mean_value_lst
+    except:
+        df = pd.DataFrame(dict(mean_value=mean_value_lst))
+    ```
 
 ## SHUTIL
 
