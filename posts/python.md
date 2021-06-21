@@ -411,7 +411,7 @@ shutil.rmtree(src_dir)
 ## TQDM
 
 ```python3
-from tqdm import tqdm
+from tqdm import tqdm  # 别搞错了哦
 
 # 基础用法
 for i in tqdm(range(1e3)):
@@ -426,22 +426,24 @@ with tqdm(total=1e3) as pbar:
     for i in range(1e2):
         pbar.update(10)  # 每次更新，进度 + 10
 
+# 或这样
+
+pbar = tqdm(total=1e3)
+for i in range(1e2):
+    pbar.update()
+pbar.close()  # 最好在每个 pbar 完成使命后关闭；否则不换行。
+
 # 设置文字描述
 pbar = tqdm([name1, name2, name3])
 for name in pbar:
     pbar.set_description("processing %s" % name)
 
-# 进一步设置属性（如宽度和描述）
-tqdm(alist, ncols=80)  # 可以避免太宽导致的换行显示
+# 可以进一步编辑属性
 # 可以把 eta 等去掉，只保留描述，百分比和 bar
 with tqdm(
     total=60*24,
-    ncols=40,
+    ncols=40,  # 可以避免太宽导致的换行显示
     bar_format='{desc}{percentage:.1f}% |{bar}|'
     ) as pbar:
     pbar.update(accum_minute)
-
-# 关闭对象
-# 最好在每个 pbar 完成使命后关闭；否则不换行。
-pbar.close()
 ```
