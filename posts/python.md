@@ -377,13 +377,16 @@ content = fo_path.open().read()
 
 使用 `read_csv` 函数，将 CSV 文件内容读入并转换为 DataFrame 格式。默认为 `,` 分隔。
 
-- 可以跳过某些行：`iqa_data = pd.read_csv(csv_path, skiprows=[i for i in range(4)])  # 跳过前四行`。
+- 可以跳过某些行：`iqa_data = pd.read_csv(csv_path, skiprows=range(4))  # 跳过前四行`。
 
 #### 写
 
-[[函数]](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html)
-  
-- 新子表：先读再一起写。不能追加，追加模式是追加行。
+[[`to_csv`]](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html)
+
+- 不要序号列（推荐）：`index=False`。
+- 不要抬头行（不推荐）：`header=False`。
+- 自定义顺序：`cols=[header1, header2]`。
+- 追加列（左侧）：先读再一起写。不能追加，追加模式是追加行。
 
     ```python3
     try:
