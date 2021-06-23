@@ -155,13 +155,99 @@ while True:
 
 ## MATPLOTLIB
 
-### 堆积柱状图
+[[site]](https://matplotlib.org/)
 
-每次 `bar` 建立在 `old_bar` 之上。
+[[入门必看]](https://zhuanlan.zhihu.com/p/93423829)
+
+### 新建图像和基本绘图
+
+一定要了解画布（fig）和坐标系（axes）的[区别](https://matplotlib.org/1.5.1/_images/fig_map.png)；fig 是白纸，axes 才是画框，是你真正画图的地方；因此几乎所有绘图属性都是在 axes 上操作的。
 
 ```python3
-plt.bar(x, height, width=0.8, bottom=old_bar, align='center')
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots(2, 1, figsize(14, 7))  # 创建一个 2x1 的 fig；每一个 axe 都是一个列表，对应每一个 subplot
+
+ax[0].plot(a, b)  # 绘制第一个 axe；注意是在坐标系里绘图
+
+ax[0].set_title('Title', fontsize=18)
+ax[0].set_xlabel('xlabel', fontsize=18, fontfamily ='sans-serif', fontstyle='italic')
+ax[0].set_ylabel('ylabel', fontsize='x-large', fontstyle='oblique')
+
+ax[0].grid(which='minor', axis='both')
+
+plt.tight_layout()  # 有时候，xlabel等无法正常显示；需要自适应调整
+
+fig.savefig(<path>)  # 注意先存图，后展示
+plt.show()
 ```
+
+如果是一张图，更简单：
+
+```python3
+fig, ax = plt.subplot(figsize(14, 7))  # 默认即 1 张
+
+ax.plot(a, b)  # 此时 ax 不是列表
+```
+
+### 图例
+
+[[doc]](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.legend.html?highlight=legend#matplotlib.pyplot.legend)
+
+有很多方式。一种简单的方式：
+
+```python3
+plt.plot(a, b, label='hah')
+plt.plot(c, d, label='hei')
+
+plt.legend()  # 自动就把对应 label 绘制上了
+```
+
+### 坐标
+
+```python3
+axe.set_xticks(ticks)  # 人为定义横坐标
+
+axe.tick_params(axis='x', rotation=45)  # 横坐标旋转 45 度
+```
+
+### 折线图
+
+[[`pyplot.plot`]](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html?highlight=plot#matplotlib.pyplot.plot)
+
+输入参数：
+
+- `x`：一维数组，表示水平坐标。
+- `y`：一维数组，表示垂直坐标。
+
+### 直方图
+
+[[`pyplot.hist`]](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html?highlight=hist#matplotlib.pyplot.hist)
+
+输入参数：
+
+- `x`：一个数组。
+- `bins`：若为单个整数，则表示等宽柱的数目。
+- `density`：绘制频率，而不是频次。
+- `cumulative`：绘制累和分布。
+- `bottom`：每一个 bin 的底部位置。
+
+返回参数：
+
+- `n`：每个 bin 的高度（频数）。想找最值时很有用。
+- `bins`：边界。如果是 2 个 bin，就是一个 3 维数组。
+- `patches`
+
+### 柱状图
+
+[[`pyplot.bar`]](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html?highlight=bar#matplotlib.pyplot.bar)
+
+输入参数：
+
+- `x`：某个 bar 的横坐标。
+- `height`
+- `width`
+- `bottom`：该 bar 的底部位置。
 
 ## MULTIPROCESSING
 
@@ -258,9 +344,13 @@ np.fromfile(file, dtype=float, count=-1, sep='', offset=0)
 
 ## PATHLIB
 
-[[手册]](https://docs.python.org/3/library/pathlib.html#module-pathlib)
+[[docs]](https://docs.python.org/3/library/pathlib.html#module-pathlib)
 
-输入 `str()` 即可转换为普通字符串。
+### 路径对象
+
+`str()` 即可转换为普通字符串。
+
+有些函数不支持路径对象，例如 `cv2.imread()`。
 
 ### 判断路径是否存在
 
@@ -270,13 +360,11 @@ src_path.exists()  # True or False
 
 ### 创建文件夹
 
-创建文件不用多说，类似写文件就行。
+[[docs]](https://docs.python.org/3/library/pathlib.html#pathlib.Path.mkdir)
 
 ```python3
-src_path.mkdir(parents=False, exist_ok=False)
+src_path.mkdir(parents=True, exist_ok=True)  # 自动创建上级路径；如果已存在，不报错，也不创建；默认都是 False
 ```
-
-`parents` 默认开，即不存在的父路径也会创建；`exist_ok` 默认关，即已存在会报错。
 
 ### 合成路径
 
