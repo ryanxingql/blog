@@ -134,6 +134,8 @@ axe.tick_params(axis='x', rotation=45)  # 横坐标旋转 45 度
 - `density`：绘制频率，而不是频次。
 - `cumulative`：绘制累和分布。
 - `bottom`：每一个 bin 的底部位置。
+- `edgecolor`：建议设为 `black`。如果不设置，bar 会连成一片。
+- `align`：`mid` 即 bar 立在 edge 之间。
 
 返回参数：
 
