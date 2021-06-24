@@ -2,9 +2,7 @@
 
 多看手册，少参考博客和书籍。
 
-## ARGPARSE
-
-[[手册]](https://docs.python.org/3/library/argparse.html?highlight=argparse#module-argparse)
+## [ARGPARSE](https://docs.python.org/3/library/argparse.html?highlight=argparse#module-argparse)
 
 常规用法：
 
@@ -47,9 +45,7 @@ group1.add_argument("--option1")
 group2.add_argument("--option2")
 ```
 
-## ASSERT statement
-
-[[手册]](https://docs.python.org/3/reference/simple_stmts.html#assert)
+## [ASSERT statement](https://docs.python.org/3/reference/simple_stmts.html#assert)
 
 ```python3
 # 最基础用法
@@ -64,98 +60,7 @@ assert a in b, (f"{a} is not in "
     f"{b}!")
 ```
 
-## Built-in
-
-[[手册]](https://docs.python.org/3/library/functions.html?highlight=built%20open#built-in-functions)
-
-### 字符串
-
-#### 查找子串
-
-```python3
-str.find(sub[, start[, end]])
-```
-
-- 从 `str` 中查找子串 `sub` 的**位置**；返回第一个子串的初始索引；若没找到，返回 `-1`。
-- 如果只是想判断是否存在，用 `in` 即可。
-
-#### 多行字符串
-
-最简单的办法是用 `\n`。
-
-此外还有三双引号写法。
-
-```python3
-print("""Hello!
-Welcome!
-Goodbye!"""
-)
-```
-
-```bash
-Hello!
-Welcome!
-Goodbye!
-```
-
-不要缩进，否则输出也有缩进。
-
-#### 拼接
-
-```python
-a = 'Hello ' + 'World!'
-print(a)
-
-b = (
-    'Hello '  # 不要加逗号，否则就变成 tuple 了
-    'World!'
-    )
-print(b)
-```
-
-```bash
-Hello World!
-Hello World!
-```
-
-#### Format
-
-应该是 3.8 的新特性。
-
-```python
-name = 'Ryan'
-print(f'My name is {name}.')
-```
-
-```bash
-My name is Ryan.
-```
-
-### 读写
-
-#### `open`
-
-[[参数]](https://docs.python.org/3/library/functions.html?highlight=built%20open#open)
-
-如果打不开，会报错。
-
-#### `readline`
-
-```python3
-with open('somefile') as openfileobject:
-    for line in openfileobject:
-        do_something()
-
-# 当 EOF 时，会一直返回 ''，即 False；注意空行是 \n，不是 ''
-while True:
-    line = fo.readline()
-    if not line:
-        break
-```
-
-## MATPLOTLIB
-
-[[site]](https://matplotlib.org/)
+## [MATPLOTLIB](https://matplotlib.org/)
 
 [[入门必看]](https://zhuanlan.zhihu.com/p/93423829)
 
@@ -190,9 +95,7 @@ fig, ax = plt.subplot(figsize(14, 7))  # 默认即 1 张
 ax.plot(a, b)  # 此时 ax 不是列表
 ```
 
-### 图例
-
-[[doc]](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.legend.html?highlight=legend#matplotlib.pyplot.legend)
+### [图例](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.legend.html?highlight=legend#matplotlib.pyplot.legend)
 
 有很多方式。一种简单的方式：
 
@@ -245,9 +148,15 @@ axe.tick_params(axis='x', rotation=45)  # 横坐标旋转 45 度
 输入参数：
 
 - `x`：某个 bar 的横坐标。
-- `height`
-- `width`
+- `height, width`
 - `bottom`：该 bar 的底部位置。
+
+### [TEXT](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.text.html)
+
+输入参数：
+
+- `x, y`：位置。
+- `s`：文本。
 
 ## MULTIPROCESSING
 
@@ -342,9 +251,7 @@ np.fromfile(file, dtype=float, count=-1, sep='', offset=0)
 
 `b = np.reshape(a, newshape)` 返回的是一个形状不同、但指向相同数据（危险）的数组。`reshape` 也有 in-place 操作。
 
-## PATHLIB
-
-[[docs]](https://docs.python.org/3/library/pathlib.html#module-pathlib)
+## [PATHLIB](https://docs.python.org/3/library/pathlib.html#module-pathlib)
 
 ### 路径对象
 
@@ -360,7 +267,7 @@ src_path.exists()  # True or False
 
 ### 创建文件夹
 
-[[docs]](https://docs.python.org/3/library/pathlib.html#pathlib.Path.mkdir)
+[[`mkdir`]](https://docs.python.org/3/library/pathlib.html#pathlib.Path.mkdir)
 
 ```python3
 src_path.mkdir(parents=True, exist_ok=True)  # 自动创建上级路径；如果已存在，不报错，也不创建；默认都是 False
@@ -455,9 +362,25 @@ fo_path = pathlib.Path('demo.txt')
 content = fo_path.open().read()
 ```
 
-## PANDAS
+## [Open](https://docs.python.org/3/library/functions.html?highlight=built%20open#open)
 
-[[官方手册]](https://pandas.pydata.org/docs/reference/index.html)
+如果打不开，会报错。
+
+### `readline`
+
+```python3
+with open('somefile') as openfileobject:
+    for line in openfileobject:
+        do_something()
+
+# 当 EOF 时，会一直返回 ''，即 False；注意空行是 \n，不是 ''
+while True:
+    line = fo.readline()
+    if not line:
+        break
+```
+
+## [PANDAS](https://pandas.pydata.org/docs/reference/index.html)
 
 ### CSV
 
@@ -484,6 +407,16 @@ content = fo_path.open().read()
         df = pd.DataFrame(dict(mean_value=mean_value_lst))
     ```
 
+## PICKLE
+
+```python3
+with open(save_var_fp, 'wb') as fp:
+    pickle.dump(var, fp)
+
+with open(save_var_fp, 'rb') as fp:
+    var = pickle.load(fp)
+```
+
 ## SHUTIL
 
 这是一个高级文件操作函数。
@@ -495,6 +428,69 @@ shutil.rmtree(src_dir)
 ```
 
 把整个路径树都删了，即递归操作。路径不能是软链接。
+
+## String
+
+### 查找子串
+
+```python3
+str.find(sub[, start[, end]])
+```
+
+- 从 `str` 中查找子串 `sub` 的**位置**；返回第一个子串的初始索引；若没找到，返回 `-1`。
+- 如果只是想判断是否存在，用 `in` 即可。
+
+### 多行字符串
+
+最简单的办法是用 `\n`。
+
+此外还有三双引号写法。
+
+```python3
+print("""Hello!
+Welcome!
+Goodbye!"""
+)
+```
+
+```bash
+Hello!
+Welcome!
+Goodbye!
+```
+
+不要缩进，否则输出也有缩进。
+
+### 拼接
+
+```python
+a = 'Hello ' + 'World!'
+print(a)
+
+b = (
+    'Hello '  # 不要加逗号，否则就变成 tuple 了
+    'World!'
+    )
+print(b)
+```
+
+```bash
+Hello World!
+Hello World!
+```
+
+#### Format
+
+应该是 3.8 的新特性。
+
+```python
+name = 'Ryan'
+print(f'My name is {name}.')
+```
+
+```bash
+My name is Ryan.
+```
 
 ## TQDM
 
