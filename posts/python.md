@@ -253,6 +253,10 @@ np.fromfile(file, dtype=float, count=-1, sep='', offset=0)
 
 `b = np.reshape(a, newshape)` 返回的是一个形状不同、但指向相同数据（危险）的数组。`reshape` 也有 in-place 操作。
 
+## [Open](https://docs.python.org/3/library/functions.html?highlight=built%20open#open)
+
+如果打不开，会报错。
+
 ## [PATHLIB](https://docs.python.org/3/library/pathlib.html#module-pathlib)
 
 ### 路径对象
@@ -364,10 +368,6 @@ fo_path = pathlib.Path('demo.txt')
 content = fo_path.open().read()
 ```
 
-## [Open](https://docs.python.org/3/library/functions.html?highlight=built%20open#open)
-
-如果打不开，会报错。
-
 ### `readline`
 
 ```python3
@@ -430,6 +430,22 @@ shutil.rmtree(src_dir)
 ```
 
 把整个路径树都删了，即递归操作。路径不能是软链接。
+
+## [`sorted`](https://docs.python.org/3/library/functions.html?highlight=sorted#sorted)
+
+输入参数：
+
+- `iterable`：一个 iterable。
+- `key=None`：如果是 None，那么直接比较元素；如果指定，那么要指定一个函数，输出为待比较元素。
+- `reverse=False`
+
+例如，我们希望对一个字典的 value 执行排序，输出为 (key, value) 键值对列表；如果 value 相同，则对 key 排序。
+
+```python3
+>>> dict_ = dict(a=2, b=4, c=3, e=1, d=1)
+>>> sorted(dict_.items(), key=lambda kv:(kv[1], kv[0]))  # 先排 value，再排 key
+[('d', 1), ('e', 1), ('a', 2), ('c', 3), ('b', 4)]
+```
 
 ## String
 
