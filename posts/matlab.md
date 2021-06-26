@@ -9,7 +9,7 @@ UBUNTU 版主要流程参见[此处](https://programtip.com/en/art-23556)。大�
 - 新建一个挂载 ISO 的路径：`mkdir ~/minstall`。
 - 挂载：`sudo mount -o loop <iso_path> ~/minstall`。注意要 `sudo`。
 - 如果挂载提示 `read-only`，那么需要将挂载后的文件夹复制为新文件夹：`cp -rf ~/minstall ~/minstall_c`。后续操作中 `~/minstall_c` 为挂载路径。
-- 新建安装路径：`mkdir ~/Matlab/R2019b/install`。注意，强烈建议不要装在 `/usr` 下，后续能省去很多麻烦。
+- 新建安装路径：`mkdir -p ~/Matlab/R2019b/install`。注意，强烈建议不要装在 `/usr` 下，后续能省去很多麻烦。
 - 把 `Crack` 里的许可复制到安装路径：`cp </path/to/license_standalone.lic> ~/Matlab/R2019b/install/`。
 - `cp ~/minstall_c/installer_input.txt ~/Matlab/R2019b/install/`
 - `cp ~/minstall_c/activate.ini ~/Matlab/R2019b/install/`
