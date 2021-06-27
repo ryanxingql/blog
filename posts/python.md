@@ -95,6 +95,17 @@ fig, ax = plt.subplot(figsize(14, 7))  # 默认即 1 张
 ax.plot(a, b)  # 此时 ax 不是列表
 ```
 
+### Colormap
+
+以散点图为例；我希望绘制 `psnr_lst` 和 `pi_lst` 的散点图，颜色由 `mean_lst` 决定。
+
+```python3
+im = ax.scatter(psnr_lst, pi_lst, c=mean_lst, cmap='Oranges', s=8)
+fig.colorbar(im, ax=ax)
+```
+
+colormap 的风格选择参考[此处](https://matplotlib.org/stable/tutorials/colors/colormaps.html)。
+
 ### [图例](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.legend.html?highlight=legend#matplotlib.pyplot.legend)
 
 有很多方式。一种简单的方式：
