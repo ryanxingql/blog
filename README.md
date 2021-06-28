@@ -66,6 +66,8 @@ Alphabetical order.
 
 - [OFFICE](https://github.com/RyanXingQL/Blog/blob/main/posts/office.md)
 
+- [PAPER](https://github.com/RyanXingQL/Blog/blob/main/posts/paper.md)
+
 - [TENSORFLOW](https://github.com/RyanXingQL/Blog/blob/main/posts/tensorflow.md)
 
 - [UNICODE](https://github.com/RyanXingQL/Blog/blob/main/posts/unicode.md)
