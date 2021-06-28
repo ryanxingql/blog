@@ -1,21 +1,16 @@
 # TEX
 
-- **模板**：推荐使用 OVERLEAF 提供的模板。
+推荐使用 OVERLEAF 提供的模板，特别是官方模板。
 
-<details>
-<summary><b>UBUNTU/WINDOWS + TEXLIVE + VSCODE + LATEX WORKSHOP</b></summary>
-<p>
+## UBUNTU/WINDOWS + TEXLIVE + VSCODE + LATEX WORKSHOP
+
+推荐使用 OVERLEAF。
 
 参见 [LATEX WORKSHOP 指南](https://zhuanlan.zhihu.com/p/166523064)。建议复制文中配置。如果随意配置，会很慢（每次编译都执行 4 次）。
 
 搜索：反向搜索（根据 PDF 搜 TEX）为 `ctrl` 加鼠标左键，正向搜索需要先确定光标位置，然后 `ctrl` 加 `alt` 加 `J`。
 
-</p>
-</details>
-
-<details>
-<summary><b>UBUNTU + TEXLIVE + TEXSTUDIO</b></summary>
-<p>
+## UBUNTU + TEXLIVE + TEXSTUDIO
 
 不推荐。
 
@@ -25,12 +20,7 @@
 
 `Build` 中选择 `PDFLATEX`，图像可正常显示。
 
-</p>
-</details>
-
-<details>
-<summary><b>提交论文前检查</b></summary>
-<p>
+## 提交论文前检查
 
 作者和单位信息：
 
@@ -43,7 +33,6 @@
 - 不要用公式和数学符号。
 - 换行：`\title{Bare Demo of IEEEtran.cls\\ for IEEE Journals}`
 - 大小写：
-  
   > Titles are generally capitalized except for words such as a, an, and, as, at, but, by, for, in, nor, of, on, or, the, to and up, which are usually not capitalized unless they are the first or last word of the title.
 
 常用词：
@@ -84,6 +73,3 @@
 排版：
 
 全文最好不要用 `vspace`，否则可能被拒，特别是会议。
-
-</p>
-</details>

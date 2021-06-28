@@ -20,7 +20,7 @@
 确定所需 PT 版本。在官网查看兼容的 CUDA 版本。若不满足，可重装 CUDA 及对应的最高版本 NVIDIA 驱动。
 
 按照[官网](https://pytorch.org/get-started/locally/)提供的完整指令，用 PIP 安装，可以指定 CUDA 版本。例：
-  
+
 ```bash
 pip install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
 ```

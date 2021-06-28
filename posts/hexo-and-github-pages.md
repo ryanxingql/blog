@@ -4,9 +4,7 @@
 
 我以我的 [GITHUB PAGE](https://ryanxingql.github.io/) 为例。
 
-<details>
-<summary><b>选择模板</b></summary>
-<p>
+### 选择模板
 
 首先确定自己的需求。我希望建一个美观且简洁的网站，挂载我的 CV。我并不希望建立一个功能复杂的博客网站。
 
@@ -17,40 +15,25 @@
 
 最后，我看中了[后者的精简版](https://github.com/PhosphorW/hexo-theme-academia)。
 
-</p>
-</details>
-
-<details>
-<summary><b>安装 HEXO</b></summary>
-<p>
+### 安装 HEXO
 
 首先要把 HEXO 及其依赖装好。随便找一个 [WINDOWS + HEXO 的教程](https://www.jianshu.com/p/343934573342)，照着做就行。注意先别远程部署。
 
 然后根据[主题教程](https://github.com/PhosphorW/hexo-theme-academia)操作。
 
-</p>
-</details>
+### 本地调整模板
 
-<details>
-<summary><b>本地调整模板</b></summary>
-<p>
-
-主要是调整根目录下和 `themes->Academia` 下的 `_config.yml`。
+主要是调整根目录下和 `themes/Academia` 下的 `_config.yml`。
 
 建议在根目录先执行：`hexo s`，即开启 server，会自动跟踪变动，F5 刷新网站即可查看效果，边看边改。
 
 这个模板是极度简化的，貌似没有 post（就是一个页面多个博客条目），只有 page（一页就是一个条目）。如果要增加条目，操作：`hexo new page <name>`。
 
-在 `source-><name>` 文件夹内，添加一个 MARKDOWN 文件。在抬头加上 `academia: true` 即可。该内容就会显示在对应页面上。
+在 `source/<name>` 文件夹内，添加一个 MARKDOWN 文件。在抬头加上 `academia: true` 即可。该内容就会显示在对应页面上。
 
 如果一个文件夹下有多个文件，貌似会按顺序全文显示。
 
-</p>
-</details>
-
-<details>
-<summary><b>部署</b></summary>
-<p>
+### 部署
 
 在个人 GITHUB 账户新建一个空的 `<usr_name>.github.io` 仓库，将该 `.git` 链接填到根目录下 `_config.yml` 最后的 `deploy` 里。
 
@@ -60,16 +43,8 @@
 2. 然后生成新文件：`hexo g`（generate）。
 3. 最后一键部署：`hexo d`（deploy）；非常简单，不需要手动 `git add/commit/push`。
 
-</p>
-</details>
-
 ## 调试
 
-<details>
-<summary><b><code>node: command not found</code></b></summary>
-<p>
+### node: command not found
 
 首先 `node -v` 确定 `node` 找不到了。重新下载 `node.js` 的安装文件，选择 `repair` 即可。
-
-</p>
-</details>

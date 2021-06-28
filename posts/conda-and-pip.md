@@ -43,7 +43,6 @@ trusted-host=mirrors.aliyun.com
 
 ### 简单指令
 
-
 - **查看已有环境**：`conda env list`。
 - **删除环境**：`conda env remove -n <env_name>`。
 - **查看已有包**：`conda list`。

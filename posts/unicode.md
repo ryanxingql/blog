@@ -2,9 +2,7 @@
 
 最常用的是 UTF-8，是一种针对 UNICODE 的可变长度字符编码。
 
-<details>
-<summary><b>BOX DRAWING</b></summary>
-<p>
+## BOX DRAWING
 
 常用：
 
@@ -26,6 +24,3 @@ Dataset
 ```
 
 参考[此处](https://www.fuhaoku.net/block/Box_Drawing)。
-
-</p>
-</details>

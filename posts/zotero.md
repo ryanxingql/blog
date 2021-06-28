@@ -1,10 +1,10 @@
 # ZOTERO
 
-- **递归显示分类**：参见[豆瓣](https://www.douban.com/group/topic/29374494/)。
+## 递归显示分类
 
-<details>
-<summary><b>改变 ZOTFILE 存储路径</b></summary>
-<p>
+参见[豆瓣](https://www.douban.com/group/topic/29374494/)。
+
+## 改变 ZOTFILE 存储路径
 
 假设搬动了名为 papers 的文件夹，再改 ZOTFILE 设置的路径，文件仍然找不到。这是因为路径和文件是绑定的，而不随设置改变而改变。
 
@@ -16,18 +16,10 @@
 
 该方法还可以用来清理重名或错误命名的文件。
 
-</p>
-</details>
-
-<details>
-<summary><b>MARKDOWN HERE 插件</b></summary>
-<p>
+## MARKDOWN HERE 插件
 
 注：非常不好用，经常崩溃，而且无法在 MARKDOWN 基础上编辑，必须转回文本重新编辑。不推荐。
 
 安装参考这篇[博客](https://www.cnblogs.com/Jay-CFD/p/10968876.html)。
 
 使用：先编辑笔记，然后 `ctrl + s` 保存笔记，最后 `ctrl + alt + m` 转换为 MARKDOWN。
-
-</p>
-</details>

@@ -47,8 +47,8 @@
 2. 下载 UltraISO，试用即可。
 3. 制作启动盘：
    - 打开 UltraISO。
-   - 文件 -> 打开 -> ISO 文件。
-   - 启动 -> 写入硬盘映像（注意不是软盘映像），选择硬盘驱动器为备用 U 盘（会被格式化，当心），写入方式 `USB-HDD+`，写入。
+   - 文件 -&#8594;> 打开 &#8594; ISO 文件。
+   - 启动 &#8594; 写入硬盘映像（注意不是软盘映像），选择硬盘驱动器为备用 U 盘（会被格式化，当心），写入方式 `USB-HDD+`，写入。
    - 提示"刻录成功”后，选择返回即可。
 4. 将 U 盘插在服务器上，在 BIOS 启动项（开机界面狂按 F12 进入）里选择 `UEFI: Generic Flash Disk xxx`，进入 UBUNTU 引导界面，直接安装（不需要试用）。
 5. 最小安装，不装游戏等。
@@ -126,20 +126,23 @@ rm -rf <fake_path>  # 注意末尾不带 /；否则文件夹没删掉，而是�
 
 ### UNITY + LIGHTDM
 
-[【安装】](https://www.linuxbabe.com/ubuntu/install-unity-desktop-environment-ubuntu-20-04)
+[[安装]](https://www.linuxbabe.com/ubuntu/install-unity-desktop-environment-ubuntu-20-04)
 
-[【定制】](https://www.jianshu.com/p/1c4430d9084e)
+[[定制]](https://www.jianshu.com/p/1c4430d9084e)
 
 ## 软件层
 
-- **7Z**：UBUNTU 支持不好，不要用。
-- **SUNLOGIN**：比 ANYDESK 好用多了，还免费。参见[安装指南](https://www.jianshu.com/p/289001a00cb1)。
+### 7Z
 
-<details>
-<summary><b>FRP + SUPERVISOR 进程维持 + SUPERVISOR 开机自启</b></summary>
-<p>
+UBUNTU 支持不好，不要用。
 
-参见[博客 1](https://cloud.tencent.com/developer/article/1694829) 和[博客 2](https://blog.csdn.net/yuwu00/article/details/108197283)。
+### SUNLOGIN
+
+比 ANYDESK 好用多了，还免费。参见[安装指南](https://www.jianshu.com/p/289001a00cb1)。
+
+### FRP + SUPERVISOR 进程维持 + SUPERVISOR 开机自启
+
+参见[博客 #1](https://cloud.tencent.com/developer/article/1694829) 和[博客 #2](https://blog.csdn.net/yuwu00/article/details/108197283)。
 
 配置可以写在 `frpc.ini` 里，此时 command 比较简单：`./ frpc -c xxx/frpc.ini`。
 
@@ -147,40 +150,25 @@ rm -rf <fake_path>  # 注意末尾不带 /；否则文件夹没删掉，而是�
 
 编辑完配置文件后，应按博客 2 重启 SUPERVISOR。
 
-</p>
-</details>
-
-<details>
-<summary><b>Q2RAY</b></summary>
-<p>
+### Q2RAY
 
 - 用 SNAP 安装：`sudo snap install qv2ray`
 - 手动下载 V2RAY 内核，转移到 `~/snap/qv2ray/2729/`，按要求解压为 `vcore/`。检查核心设置，通过。注意不要 `sudo`！
 - 在操作界面中将服务器导入。
 - FIREFOX 中设为系统 proxy 即可。
 - CHROME 要下载 [SWITCHYOMEGA](https://github.com/FelisCatus/SwitchyOmega/releases)，记得改端口号。
-- 系统 network 设置貌似不需要动。如果你选择 Q2RAY 的系统代理 -> 禁用，network proxy 会自动 off；反之，会自动 manual，甚至端口号都设置好了。
+- 系统 network 设置貌似不需要动。如果你选择 Q2RAY 的系统代理 &#8594; 禁用，network proxy 会自动 off；反之，会自动 manual，甚至端口号都设置好了。
 
 参考[教程](https://medium.com/@eleveninstrangerthings/%E5%9C%A8ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85%E5%9B%BE%E5%BD%A2%E5%8C%96v2ray%E5%AE%A2%E6%88%B7%E7%AB%AFqv2ray-d0f690b7c519)。
 
-</p>
-</details>
-
-<details>
-<summary><b>RAR</b></summary>
-<p>
+### RAR
 
 ```bash
 sudo apt install rar unrar
 unrar x rar_name.rar
 ```
 
-</p>
-</details>
-
-<details>
-<summary><b>SHARDOWSOCKS</b></summary>
-<p>
+### SHARDOWSOCKS
 
 暂时失效。
 
@@ -199,12 +187,7 @@ sudo sslocal -c ss.json  # 前端启动，有日志
 sslocal -c xxx.xxx.xxx.xxx -p 2020 -k xxxx -b 127.0.0.1 -l 10808
 ```
 
-</p>
-</details>
-
-<details>
-<summary><b>TAR.GZ</b></summary>
-<p>
+### TAR.GZ
 
 LINUX 常用，压缩率比 ZIP 高。
 
@@ -217,12 +200,7 @@ tar -zxvf archive_name.tar.gz
 tar -zxvf archive_name.tar.gz -C /tmp/extract_here/
 ```
 
-</p>
-</details>
-
-<details>
-<summary><b>ZIP</b></summary>
-<p>
+### ZIP
 
 各平台兼容，但压缩率不高。
 
@@ -267,12 +245,7 @@ zip -s 0 split.zip --out unsplit.zip
 unzip unsplit.zip
 ```
 
-</p>
-</details>
-
-<details>
-<summary><b>输入法</b></summary>
-<p>
+### 输入法
 
 推荐搜狗输入法；因为有人维护！
 
@@ -282,16 +255,8 @@ unzip unsplit.zip
 - 中英切换：`shift`。
 - bug：选中文字会删除文字，很痛苦。
 
-</p>
-</details>
-
-<details>
-<summary><b>视频播放器</b></summary>
-<p>
+### 视频播放器
 
 - 一般格式推荐 VLC。
 - YUV 格式推荐 VOOYA。
   - 备选方案：GITHUB 下载 YUView.AppImage，赋权限后可以直接使用。
-
-</p>
-</details>
