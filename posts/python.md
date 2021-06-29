@@ -106,6 +106,15 @@ fig.colorbar(im, ax=ax)
 
 colormap 的风格选择参考[此处](https://matplotlib.org/stable/tutorials/colors/colormaps.html)。
 
+我们还可以设置多个颜色。
+
+```python3
+from matplotlib.colors import ListedColormap
+
+cmap = ListedColormap(["darkorange", "gold", "lawngreen"])  # 三段颜色
+im = ax.scatter(psnr_lst, pi_lst, c=mean_lst, cmap=cmap, s=8)
+```
+
 ### [图例](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.legend.html?highlight=legend#matplotlib.pyplot.legend)
 
 有很多方式。一种简单的方式：
