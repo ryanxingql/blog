@@ -90,7 +90,7 @@ plt.show()
 如果是一张图，更简单：
 
 ```python3
-fig, ax = plt.subplot(figsize(14, 7))  # 默认即 1 张
+fig, ax = plt.subplots(figsize(14, 7))  # 默认即 1 张；figsize 选填
 
 ax.plot(a, b)  # 此时 ax 不是列表
 ```
@@ -388,8 +388,10 @@ src_path.unlink(missing_ok=False)
 ### IO
 
 ```python3
-fo_path = pathlib.Path('demo.txt')
-content = fo_path.open().read()
+log_fp = Path('test.log').resolve()
+skip_lines = 0
+content = log_fp.read_text().splitlines()[skip_lines:]  # 不需要 open，直接 read_text，读进来的是一个 string，可以分行
+print(content)
 ```
 
 ### `readline`
