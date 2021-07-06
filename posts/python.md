@@ -60,6 +60,14 @@ assert a in b, (f"{a} is not in "
     f"{b}!")
 ```
 
+## [MATLAB](https://www.mathworks.com/help/matlab/matlab-engine-for-python.html?s_tid=CRUX_lftnav)
+
+- [[在 Python 环境中安装 MATLAB 包]](https://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html)
+- [[在 Python 脚本中调用 MATLAB 函数]](https://www.mathworks.com/help/matlab/matlab_external/call-matlab-functions-from-python.html)
+  - 开启过程很慢；不建议频繁调用。
+- [[向 MATLAB 传 Python 变量]](https://www.mathworks.com/help/matlab/matlab_external/pass-data-to-matlab-from-python.html)
+  - 不支持 ndarray 格式；需要转换成 list。例如：`ndarray.tolist()`。
+
 ## [MATPLOTLIB](https://matplotlib.org/)
 
 [[入门必看]](https://zhuanlan.zhihu.com/p/93423829)
@@ -425,7 +433,7 @@ while True:
 - 不要序号列（推荐）：`index=False`。
 - 不要抬头行（不推荐）：`header=False`。
 - 自定义顺序：`cols=[header1, header2]`。
-- 追加列（左侧）：先读再一起写。不能追加，追加模式是追加行。
+- 追加列：先读再一起写。不能追加，追加模式是追加行。
 
     ```python3
     try:
