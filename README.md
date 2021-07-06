@@ -30,6 +30,8 @@ Alphabetical order.
 
 - [MATLAB](https://github.com/RyanXingQL/Blog/blob/main/posts/matlab.md)
 
+- [PAPER](https://github.com/RyanXingQL/Blog/blob/main/posts/paper.md)
+
 - [PYCHARM](https://github.com/RyanXingQL/Blog/blob/main/posts/pycharm.md)
 
 - [PYTHON](https://github.com/RyanXingQL/Blog/blob/main/posts/python.md)
@@ -65,8 +67,6 @@ Alphabetical order.
 - [MARKDOWN](https://github.com/RyanXingQL/Blog/blob/main/posts/markdown.md)
 
 - [OFFICE](https://github.com/RyanXingQL/Blog/blob/main/posts/office.md)
-
-- [PAPER](https://github.com/RyanXingQL/Blog/blob/main/posts/paper.md)
 
 - [TENSORFLOW](https://github.com/RyanXingQL/Blog/blob/main/posts/tensorflow.md)
 
