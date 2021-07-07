@@ -1,4 +1,4 @@
-# CUDA AND NVIDIA
+# CUDA and NVIDIA
 
 ## 1. 安装或升级
 
@@ -21,17 +21,17 @@
 - 如都需安装，先装 NVIDIA 驱动，再装 CUDA。
 - 安装 NVIDIA 驱动需要管理员权限。
 - CUDA 尽量不要装在 `/usr` 下；装在自己 home 目录下即可，无需管理员权限。
-- 一般不需要装 CUDNN（CONDA 装 PYTORCH 包时会自带）。
+- 一般不需要装 cuDNN（Conda 装 PyTorch 包时会自带）。
 
 ### 1.2. NVIDIA 驱动
 
 无需手动下载驱动程序，无需图形界面。
 
-#### 禁用 NOUVEAU 驱动
+#### 禁用 nouveau 驱动
 
 该驱动与 NVIDIA 驱动冲突，需保证被禁用。
 
-先查看 NOUVEAU 是否加载：
+先查看 nouveau 是否加载：
 
 ```bash
 lsmod | grep nouveau
@@ -40,7 +40,7 @@ lsmod | grep nouveau
 sudo apt install module-init-tools
 ```
 
-如果没输出，说明没加载，OK；如果有输出，则说明 NOUVEAU 正在加载，需要按以下操作禁用。
+如果没输出，说明没加载，OK；如果有输出，则说明 nouveau 正在加载，需要按以下操作禁用。
 
 编辑 `/etc/modprobe.d/blacklist.conf` 文件，在最后一行添加：
 

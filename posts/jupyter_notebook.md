@@ -1,12 +1,12 @@
-# JUPYTER NOTEBOOK
+# Jupyter Notebook
 
 ## 安装
 
-安装 ANACONDA 可自带 JUPYTER；推荐这种方式。
+安装 Anaconda 可自带 Jupyter；推荐这种方式。
 
-## 使用 CONDA 环境
+## 使用 Conda 环境
 
-要把 CONDA 环境注册到 kernel 中。
+要把 Conda 环境注册到 kernel 中。
 
 ## 修改启动默认路径
 
@@ -17,8 +17,8 @@
 ## 导出 PDF
 
 - 直接导出：适用于无中文字符的文档。
-- 先导出为 MARKDOWN，用 VSCODE 的 `vscode-pandoc` 插件存为PDF。
+- 先导出为 Markdown，用 VSCode 的 `vscode-pandoc` 插件存为 PDF。
   - 有书签；可生成目录，且自动为章节加序号。
-- 直接在 JUPYTER NOTEBOOK 界面 `ctrl + p`，选择 ADOBE 打印。
+- 直接在 Jupyter Notebook 界面 `ctrl + p`，选择 Adobe 打印。
   - HTML 渲染字体很漂亮。
   - 没有书签；`[toc]` 没有编译。

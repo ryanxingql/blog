@@ -1,4 +1,4 @@
-# PAPER
+# Paper Reading
 
 ## 图像生成
 
@@ -86,8 +86,8 @@
 
 动态网络；课程学习等。
 
-[[My PPT Slides, key: ehjS]](https://mq1zrs2eey.feishu.cn/file/boxcntStxjJxjc6olk0SPEKo88b)
+[[My PPT slides, key: ehjS]](https://mq1zrs2eey.feishu.cn/file/boxcntStxjJxjc6olk0SPEKo88b)
 
 ## 多任务学习
 
-[[My PPT Slides, key: g6U0]](https://mq1zrs2eey.feishu.cn/file/boxcn4OYEJpJYkyHPZfrXsR6acb)
+[[My PPT slides, key: g6U0]](https://mq1zrs2eey.feishu.cn/file/boxcn4OYEJpJYkyHPZfrXsR6acb)

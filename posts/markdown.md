@@ -1,6 +1,6 @@
-# MARKDOWN
+# Markdown
 
-## UNICODE
+## Unicode
 
 直接输入即可。例如想输入右箭头：
 
@@ -14,25 +14,25 @@
 
 ## 生成可自动更新的 TOC
 
-不推荐，因为 GITHUB 和 VSCODE 都支持纵览了。
+不推荐，因为 GitHub 和 VSCode 都支持纵览了。
 
-使用 MARKDOWN ALL IN ONE 插件；每次保存文档时自动更新。
+使用 Markdown all in One 插件；每次保存文档时自动更新。
 
-## MARKDOWN 基础 + GITHUB 支持
+## Markdown 基础 + GitHub 支持
 
 参见[此处](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf)。
 
-GITHUB 支持的 EMOJI [在此](https://www.webfx.com/tools/emoji-cheat-sheet/)。
+GitHub 支持的 Emoji [在此](https://www.webfx.com/tools/emoji-cheat-sheet/)。
 
 ## 多级目录
 
-- TAB 键缩进；`shift + tab` 回退。
-- 不要敲空格，敲 TAB：实践发现，多级有序列表的 TAB 会转化为 3 个空格，无序列表为 2 个空格，不一样！
+- Tab 键缩进；`shift + tab` 回退。
+- 不要敲空格，敲 Tab：实践发现，多级有序列表的 Tab 会转化为 3 个空格，无序列表为 2 个空格，不一样！
 
 ## 列表内多行
 
 - 行末加两个空格，表示 line break；或直接空一行，但注意空行也要缩进。
-- 注意用 TAB 调整级别；级别要相同。
+- 注意用 Tab 调整级别；级别要相同。
 
 ## 定制插入图像
 

@@ -1,8 +1,8 @@
-# UNICODE
+# Unicode
 
-最常用的是 UTF-8，是一种针对 UNICODE 的可变长度字符编码。
+最常用的是 UTF-8，是一种针对 Unicode 的可变长度字符编码。
 
-## BOX DRAWING
+## Box Drawing
 
 常用：
 

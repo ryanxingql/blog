@@ -1,8 +1,8 @@
-# PYTHON
+# Python
 
 多看手册，少参考博客和书籍。
 
-## [ARGPARSE](https://docs.python.org/3/library/argparse.html?highlight=argparse#module-argparse)
+## [`argparse`](https://docs.python.org/3/library/argparse.html?highlight=argparse#module-argparse)
 
 常规用法：
 
@@ -45,7 +45,7 @@ group1.add_argument("--option1")
 group2.add_argument("--option2")
 ```
 
-## [ASSERT statement](https://docs.python.org/3/reference/simple_stmts.html#assert)
+## [Assert statement](https://docs.python.org/3/reference/simple_stmts.html#assert)
 
 ```python3
 # 最基础用法
@@ -68,7 +68,7 @@ assert a in b, (f"{a} is not in "
 - [[向 MATLAB 传 Python 变量]](https://www.mathworks.com/help/matlab/matlab_external/pass-data-to-matlab-from-python.html)
   - 不支持 ndarray 格式；需要转换成 list。例如：`ndarray.tolist()`。
 
-## [MATPLOTLIB](https://matplotlib.org/)
+## [Matplotlib](https://matplotlib.org/)
 
 [[入门必看]](https://zhuanlan.zhihu.com/p/93423829)
 
@@ -103,7 +103,7 @@ fig, ax = plt.subplots(figsize(14, 7))  # 默认即 1 张；figsize 选填
 ax.plot(a, b)  # 此时 ax 不是列表
 ```
 
-### Colormap
+### colormap
 
 以散点图为例；我希望绘制 `psnr_lst` 和 `pi_lst` 的散点图，颜色由 `mean_lst` 决定。
 
@@ -185,14 +185,14 @@ axe.tick_params(axis='x', rotation=45)  # 横坐标旋转 45 度
 - `height, width`
 - `bottom`：该 bar 的底部位置。
 
-### [TEXT](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.text.html)
+### [`text`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.text.html)
 
 输入参数：
 
 - `x, y`：位置。
 - `s`：文本。
 
-## MULTIPROCESSING
+## [`multiprocessing`](https://docs.python.org/3/library/multiprocessing.html)
 
 ### 基操
 
@@ -202,7 +202,7 @@ def func_demo(proc_id):
     time.sleep(3)
     print(f"end {proc_id}")
 
-if __name__ == '__main__':  # WINDOWS 下要写在里面
+if __name__ == '__main__':  # Windows 下要写在里面
     pool = mp.Pool(processes=2)  # 最多 2 个进程并行
     proc_id_list = list(range(4)) # 0 -> 3
     for proc_id in proc_id_list:
@@ -247,21 +247,21 @@ callback=lambda x :pbar.update(1)
 这些线程可以共享进程空间中的内存空间。如果不加以管理，程序容易发生逻辑错误。
 因此常用锁或信号量等机制来限制公共资源的使用。
 
-作者开启了 PYTHON 中的多线程，发现单线程和多线程在速度上几乎没有区别。
-原因：在 PYTHON 中，同一时刻只有一个线程运行，约束方式即 GIL 锁。
-因此，PYTHON 的多线程不是并行，而是并发。
+作者开启了 Python 中的多线程，发现单线程和多线程在速度上几乎没有区别。
+原因：在 Python 中，同一时刻只有一个线程运行，约束方式即 GIL 锁。
+因此，Python 的多线程不是并行，而是并发。
 
 ![python-1](../imgs/python_1.jpg)
 
-如图，PYTHON 在工作一段时间（check interval）后，会主动释放 GIL，让其他线程也参与工作。
-在 PYTHON 中，该间隔为 15 ms。
+如图，Python 在工作一段时间（check interval）后，会主动释放 GIL，让其他线程也参与工作。
+在 Python 中，该间隔为 15 ms。
 
 为了sidestep GIL 问题，我们可以使用多进程而不是多线程。
 由于不同进程是在不同 GPU 上执行的，因此可实现真正的并行。
 
 回调函数参考[知乎](https://www.zhihu.com/question/19801131)。
 
-## NUMPY
+## NumPy
 
 ### 读写
 
@@ -273,7 +273,7 @@ np.fromfile(file, dtype=float, count=-1, sep='', offset=0)
 - `count` 即数组大小。
 - `sep` 即 item 在 `file` 中的分隔符。对二进制文件，`sep` 为空即可。
 
-### RANDOM
+### `random`
 
 - `np.random.choice(a, size=None, replace=True, p=None)`：从一个列表中随机采样，生成一个新列表。
   - 如果 `a` 是一个数，那么列表就是 `np.arange(a)`。
@@ -289,7 +289,7 @@ np.fromfile(file, dtype=float, count=-1, sep='', offset=0)
 
 如果打不开，会报错。
 
-## [PATHLIB](https://docs.python.org/3/library/pathlib.html#module-pathlib)
+## [Pathlib](https://docs.python.org/3/library/pathlib.html#module-pathlib)
 
 ### 路径对象
 
@@ -363,7 +363,7 @@ src_path.rename(tar_path)  # src_path不会变，但打不开
 pathlib.Path.cwd()
 ```
 
-在哪执行 PYTHON，就会显示哪里的路径。例如，在 `/a/b` 执行 `python c/d.py`，会显示 `/a/b` 而不是 `/a/b/c`。
+在哪执行 Python，就会显示哪里的路径。例如，在 `/a/b` 执行 `python c/d.py`，会显示 `/a/b` 而不是 `/a/b/c`。
 
 进一步，如果想获取当前文件的绝对路径：
 
@@ -383,7 +383,7 @@ pathlib.Path(__file__).resolve().parent  # resolve不可少，否则输出.
 src_path.rmdir()
 ```
 
-如果文件夹非空，参见 SHUTIL 库。
+如果文件夹非空，参见 Shutil 库。
 
 ### 删除文件或软链接
 
@@ -416,7 +416,7 @@ while True:
         break
 ```
 
-## [PANDAS](https://pandas.pydata.org/docs/reference/index.html)
+## [Pandas](https://pandas.pydata.org/docs/reference/index.html)
 
 ### CSV
 
@@ -443,7 +443,7 @@ while True:
         df = pd.DataFrame(dict(mean_value=mean_value_lst))
     ```
 
-## PICKLE
+## Pickle
 
 ```python3
 with open(save_var_fp, 'wb') as fp:
@@ -453,7 +453,7 @@ with open(save_var_fp, 'rb') as fp:
     var = pickle.load(fp)
 ```
 
-## SHUTIL
+## Shutil
 
 这是一个高级文件操作函数。
 
@@ -531,7 +531,7 @@ Hello World!
 Hello World!
 ```
 
-#### Format
+#### `format`
 
 应该是 3.8 的新特性。
 
@@ -544,7 +544,7 @@ print(f'My name is {name}.')
 My name is Ryan.
 ```
 
-## TQDM
+## [Tqdm](https://tqdm.github.io/)
 
 ```python3
 from tqdm import tqdm  # 别搞错了哦

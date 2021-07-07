@@ -1,22 +1,20 @@
-# TEX
+# TeX
 
-推荐使用 OVERLEAF 提供的模板，特别是官方模板。
+推荐使用 Overleaf 提供的模板，特别是官方模板。
 
-## UBUNTU/WINDOWS + TEXLIVE + VSCODE + LATEX WORKSHOP
+## Ubuntu/Windows + TeX Live + VSCode + LaTeX Workshop
 
-推荐使用 OVERLEAF。
+参见 [LaTeX Workshop 指南](https://zhuanlan.zhihu.com/p/166523064)。建议复制文中配置。如果随意配置，会很慢（每次编译都执行 4 次）。
 
-参见 [LATEX WORKSHOP 指南](https://zhuanlan.zhihu.com/p/166523064)。建议复制文中配置。如果随意配置，会很慢（每次编译都执行 4 次）。
+搜索：反向搜索（根据 PDF 搜 TeX）为 `ctrl` 加鼠标左键，正向搜索需要先确定光标位置，然后 `ctrl` 加 `alt` 加 `J`。
 
-搜索：反向搜索（根据 PDF 搜 TEX）为 `ctrl` 加鼠标左键，正向搜索需要先确定光标位置，然后 `ctrl` 加 `alt` 加 `J`。
-
-## UBUNTU + TEXLIVE + TEXSTUDIO
+## Ubuntu + TeX Live + TeXstudio
 
 不推荐。
 
-安装 LATEX：`sudo apt install texlive-full`；注意一定是 `full`。
+安装 LaTeX：`sudo apt install texlive-full`；注意一定是 `full`。
 
-安装 TEXSTUDIO：`sudo apt install texstudio`。
+安装 TeXstudio`sudo apt install texstudio`。
 
 `Build` 中选择 `PDFLATEX`，图像可正常显示。
 
@@ -63,12 +61,12 @@
   \end{figure}
   ```
 
-致谢：ARXIV 和 CR 版本记得都加一下致谢。
+致谢：arXiv 和 CR 版本记得都加一下致谢。
 
 引用：
 
-- 最好用 CROSSREF 的 BIBTEX 信息，比较规范。IEEE 格式中作者名不全。
-- 有些期刊规定不使用 CITE 包，例如 TPAMI。
+- 最好用 Crossref 的 BibTeX 信息，比较规范。IEEE 格式中作者名不全。
+- 有些期刊规定不使用 Cite 包，例如 TPAMI。
 
 排版：
 

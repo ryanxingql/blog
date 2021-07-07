@@ -1,4 +1,4 @@
-# ADOBE PREMIERE PRO
+# Adobe Premiere Pro
 
 ## 素材准备
 

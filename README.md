@@ -1,4 +1,4 @@
-# BLOG
+# Blog
 
 Welcome to my blog!
 
@@ -22,27 +22,27 @@ Time order.
 
 Alphabetical order.
 
-- [CONDA AND PIP](https://github.com/RyanXingQL/Blog/blob/main/posts/conda-and-pip.md)
+- [pip & Conda](https://github.com/RyanXingQL/Blog/blob/main/posts/pip_and_conda.md)
 
-- [CUDA AND NVIDIA](https://github.com/RyanXingQL/Blog/blob/main/posts/cuda-and-nvidia.md)
+- [CUDA & NVIDIA](https://github.com/RyanXingQL/Blog/blob/main/posts/cuda_and_nvidia.md)
 
-- [GIT](https://github.com/RyanXingQL/Blog/blob/main/posts/git.md)
+- [Git](https://github.com/RyanXingQL/Blog/blob/main/posts/git.md)
 
 - [MATLAB](https://github.com/RyanXingQL/Blog/blob/main/posts/matlab.md)
 
-- [PAPER](https://github.com/RyanXingQL/Blog/blob/main/posts/paper.md)
+- [paper reading](https://github.com/RyanXingQL/Blog/blob/main/posts/paper_reading.md)
 
-- [PYCHARM](https://github.com/RyanXingQL/Blog/blob/main/posts/pycharm.md)
+- [PyCharm](https://github.com/RyanXingQL/Blog/blob/main/posts/pycharm.md)
 
-- [PYTHON](https://github.com/RyanXingQL/Blog/blob/main/posts/python.md)
+- [Python](https://github.com/RyanXingQL/Blog/blob/main/posts/python.md)
 
-- [PYTORCH](https://github.com/RyanXingQL/Blog/blob/main/posts/pytorch.md)
+- [PyTorch](https://github.com/RyanXingQL/Blog/blob/main/posts/pytorch.md)
 
-- [TEX](https://github.com/RyanXingQL/Blog/blob/main/posts/tex.md)
+- [TeX](https://github.com/RyanXingQL/Blog/blob/main/posts/tex.md)
 
-- [TMUX](https://github.com/RyanXingQL/Blog/blob/main/posts/tmux.md)
+- [Tmux](https://github.com/RyanXingQL/Blog/blob/main/posts/tmux.md)
 
-- [UBUNTU](https://github.com/RyanXingQL/Blog/blob/main/posts/ubuntu.md)
+- [Ubuntu](https://github.com/RyanXingQL/Blog/blob/main/posts/ubuntu.md)
 
 ## Others
 
@@ -52,28 +52,28 @@ Alphabetical order.
 
 - [英文学习](https://mq1zrs2eey.feishu.cn/docs/doccnMQaNzEOpBZcf2o9F67M9Df)（key: i7VV）
 
-- [ADOBE PR](https://github.com/RyanXingQL/Blog/blob/main/posts/adobe_premiere_pro.md)
+- [Adobe PR](https://github.com/RyanXingQL/Blog/blob/main/posts/adobe_premiere_pro.md)
 
-- [BAT](https://github.com/RyanXingQL/Blog/blob/main/posts/bat.md)
+- [Batch](https://github.com/RyanXingQL/Blog/blob/main/posts/batch.md)
 
-- [DEEP LEARNING](https://github.com/RyanXingQL/Blog/blob/main/posts/deep-learning.md)
+- [Deep learning](https://github.com/RyanXingQL/Blog/blob/main/posts/deep_learning.md)
 
-- [FFMPEG](https://github.com/RyanXingQL/Blog/blob/main/posts/ffmpeg.md)
+- [FFmpeg](https://github.com/RyanXingQL/Blog/blob/main/posts/ffmpeg.md)
 
-- [HEXO AND GITHUB PAGES](https://github.com/RyanXingQL/Blog/blob/main/posts/hexo-and-github-pages.md)
+- [Hexo & GitHub Pages](https://github.com/RyanXingQL/Blog/blob/main/posts/hexo_and_github_pages.md)
 
-- [JUPYTER NOTEBOOK](https://github.com/RyanXingQL/Blog/blob/main/posts/jupyter-notebook.md)
+- [Jupyter Notebook](https://github.com/RyanXingQL/Blog/blob/main/posts/jupyter_notebook.md)
 
-- [MARKDOWN](https://github.com/RyanXingQL/Blog/blob/main/posts/markdown.md)
+- [Markdown](https://github.com/RyanXingQL/Blog/blob/main/posts/markdown.md)
 
-- [OFFICE](https://github.com/RyanXingQL/Blog/blob/main/posts/office.md)
+- [Office](https://github.com/RyanXingQL/Blog/blob/main/posts/office.md)
 
-- [TENSORFLOW](https://github.com/RyanXingQL/Blog/blob/main/posts/tensorflow.md)
+- [TensorFlow](https://github.com/RyanXingQL/Blog/blob/main/posts/tensorflow.md)
 
-- [UNICODE](https://github.com/RyanXingQL/Blog/blob/main/posts/unicode.md)
+- [Unicode](https://github.com/RyanXingQL/Blog/blob/main/posts/unicode.md)
 
-- [VSCODE](https://github.com/RyanXingQL/Blog/blob/main/posts/vscode.md)
+- [VSCode](https://github.com/RyanXingQL/Blog/blob/main/posts/vscode.md)
 
-- [WINDOWS](https://github.com/RyanXingQL/Blog/blob/main/posts/windows.md)
+- [Windows](https://github.com/RyanXingQL/Blog/blob/main/posts/windows.md)
 
-- [ZOTERO](https://github.com/RyanXingQL/Blog/blob/main/posts/zotero.md)
+- [Zotero](https://github.com/RyanXingQL/Blog/blob/main/posts/zotero.md)

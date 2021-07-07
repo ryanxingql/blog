@@ -1,8 +1,8 @@
-# CONDA AND PIP
+# Pip and Conda
 
-强烈推荐用 PIP 下载包，用 CONDA 管理虚拟环境。
+强烈推荐用 pip 下载包，用 Conda 管理虚拟环境。
 
-## PIP
+## Pip
 
 ### 添加国内源
 
@@ -15,7 +15,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 ### 离线安装包
 
-- 在 PYPI 搜索合适版本，下载。
+- 在 PyPI 搜索合适版本，下载。
 - `pip install </path/to/pkg.whl>`
 
 ### 装了没装
@@ -24,7 +24,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 python -m conda install <pkg_name>
 ```
 
-### timeout
+### `timeout`
 
 ```bash
 pip install --default-timeout=100 <pkg_name> -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/
@@ -39,7 +39,7 @@ index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 trusted-host=mirrors.aliyun.com
 ```
 
-## CONDA
+## Conda
 
 ### 简单指令
 
@@ -54,12 +54,12 @@ trusted-host=mirrors.aliyun.com
 ### 新建或克隆环境
 
 ```bash
-conda create -n <env_name> python=3.7 <other_pkg_names>  # 可以同时安装多个包；不要用 PYTHON 3.6，和 CONDA 不友好。
+conda create -n <env_name> python=3.7 <other_pkg_names>  # 可以同时安装多个包；不要用 Python 3.6，和 Conda 不友好。
 
 conda create -n <env_name> --clone <src_name>  # 复制环境
 ```
 
-### 安装 ANACONDA
+### 安装 Anaconda
 
 - 在[官网](https://repo.anaconda.com/archive/)查看最新链接。
 - 可在服务器 `wget` 下载。
@@ -94,7 +94,7 @@ python -m conda install <pkg_name>
 
 删除除 `defaults` 外所有 channels。
 
-### CondaVerificationError
+### `CondaVerificationError`
 
 ```bash
 conda clean --all
@@ -102,9 +102,9 @@ conda clean --all
 
 ### 不识别 ASCII 码
 
-把 PYTHON 升级至 3.7；不要用 3.6。
+把 Python 升级至 3.7；不要用 3.6。
 
-### timeout
+### `timeout`
 
 - 通常重试即可。
 - 重新登陆校园网。

@@ -2,9 +2,9 @@
 
 ## 安装
 
-WINDOWS 版参见[此处](http://www.zhanshaoyi.com/12500.html)。
+Windows 版参见[此处](http://www.zhanshaoyi.com/12500.html)。
 
-UBUNTU 版主要流程参见[此处](https://programtip.com/en/art-23556)。大致修改和复述：
+Ubuntu 版主要流程参见[此处](https://programtip.com/en/art-23556)。大致修改和复述：
 
 - 新建一个挂载 ISO 的路径：`mkdir ~/minstall`。
 - 挂载：`sudo mount -o loop <iso_path> ~/minstall`。注意要 `sudo`。

@@ -1,4 +1,6 @@
-# ENGLISH
+# English
+
+## 词
 
 原则：不需要穷尽词典、将低频词义记录于此；只记录遇到的词义和表达。
 
@@ -542,9 +544,7 @@
 - **冒号和分号后一般跟小写**。
   - > The commercials had one message: the geeks shall inherit the earth.
 
-<details>
-<summary><b>deprive</b></summary>
-<p>
+### deprive
 
 - deprive (someone) of something：（从某人）剥夺某事物。
   - > Getting deprived of interactions with peers might lead to less developed social skills.
@@ -554,12 +554,7 @@
   - > Being sleep/oxygen/education deprived.
   - > She suffered minor oxygen deprivation [n.] during the fire.
 
-</p>
-</details>
-
-<details>
-<summary><b>no，zero 和 any 一般跟可数名词复数</b></summary>
-<p>
+### no，zero 和 any 一般跟可数名词复数
 
 - 对于不可数名词，显然是单数。
 - 对于可数名词，一般是复数。
@@ -580,12 +575,7 @@
 
 参考[此处](https://englishlessonsbrighton.co.uk/followed-singular-plural-noun/)。
 
-</p>
-</details>
-
-<details>
-<summary><b>on the table</b></summary>
-<p>
+### on the table
 
 - 可利用的（字面意思：放在桌上，想拿自取）。
   - > I depend a lot on my network of weak ties. It's not always easy, but when we limit our networks to only our strong ties, we're leaving a lot of potential value on the table.
@@ -600,12 +590,7 @@
 - 坐视不管。
   - > You shouldn't just leave them on the table.
 
-</p>
-</details>
-
-<details>
-<summary><b>[PS] vs. P.S.</b></summary>
-<p>
+### [PS] vs. P.S.
 
 我选择 PS。注意不加任何标点符号：
 
@@ -614,12 +599,7 @@
 - 首先一定是大写的（capitalized）。
 - Cambridge Dictionary 说：PS 是英式写法，P.S.（加了 periods）是美式写法；但“The Chicago Manual of Style”也推荐 PS。
 
-</p>
-</details>
-
-<details>
-<summary><b>relationship vs. relation</b></summary>
-<p>
+### relationship vs. relation
 
 - relationship [c.n.] 更强调情感，relation 更强调工作。
   - > She doesn't really want a relationship with me.
@@ -647,8 +627,7 @@
 
 参考[此处](http://www.kwuntung.net/tthp/topics/vocab/relationship.htm)。
 
-</p>
-</details>
+## 表达
 
 以下是重复练习材料。
 

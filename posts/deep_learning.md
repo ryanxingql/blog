@@ -1,6 +1,6 @@
-# DEEP LEARNING
+# Deep Learning
 
-## nvcc fatal
+## `nvcc fatal`
 
 首先用 `nvcc -V` 查看，发现不是想要的 10.1 版本。注意，这和 `nvidia-smi` 查看的可能不一致，前者才是真实的。
 
@@ -13,9 +13,9 @@ export LD_LIBRARY_PATH="/usr/lcoal/cuda-10.1/lib64:$LD_LIBRARY_PATH"
 
 最后 `source ~/.bashrc` 即可。
 
-## not compiled with GPU support
+## `not compiled with GPU support`
 
-可以用 PT 官网提供的 PIP 安装指令安装。注意指定 CUDA 版本号。例如：
+可以用 PT 官网提供的 pip 安装指令安装。注意指定 CUDA 版本号。例如：
 
 ```bash
 pip install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
@@ -34,9 +34,9 @@ pip install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pyto
 
 ## PSNR 等函数计算结果怪异
 
-输入图像数据类型为 `np.uint8`。自写程序未将数据类型转换为 FLOAT，而是直接进行了计算。
+输入图像数据类型为 `np.uint8`。自写程序未将数据类型转换为 float，而是直接进行了计算。
 
-例如，在计算 $100-200=-100$ 时，会得到 `+156`，显然是不对的。
+例如，在计算 `100-200=-100` 时，会得到 `+156`，显然是不对的。
 
 ## DCNv2 编译不通过
 

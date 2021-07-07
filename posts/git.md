@@ -1,4 +1,4 @@
-# GIT
+# Git
 
 ## SSH
 
@@ -112,7 +112,7 @@ git push -f origin main
 
 我认为可以将 `-am` 改为 `-m`。没试。
 
-参考 [STACKOVER](https://stackoverflow.com/questions/13716658/how-to-delete-all-commit-history-in-github)。
+参考 [Stack Overflow](https://stackoverflow.com/questions/13716658/how-to-delete-all-commit-history-in-github)。
 
 ### `git commit -am`
 

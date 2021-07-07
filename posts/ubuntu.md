@@ -1,4 +1,4 @@
-# UBUNTU
+# Ubuntu
 
 ## 系统层
 
@@ -16,7 +16,7 @@
 - **查 IP**：`ifconfig`。
 - **关闭广播**：`mesg n`。
 
-- **安装 DEB 文件**：`sudo dpkg -i <xxx.deb>`。
+- **安装 deb 文件**：`sudo dpkg -i <xxx.deb>`。
 - **命令行创建文件**：`echo "hello world!" > README.md`。
 - **查询软件位置**：`whereis matlab`。
 
@@ -32,11 +32,11 @@
 
 ### 安装
 
-以 UBUNTU 18.04 LTS 为例。
+以 Ubuntu 18.04 LTS 为例。
 
 需求：
 
-1. 在服务器上配置最新的 UBUNTU 稳定版本 18.04 LTS。18.04 比 16.04 好看很多，非常建议。（2020 有 20.04 可选择）
+1. 在服务器上配置最新的 Ubuntu 稳定版本 18.04 LTS。18.04 比 16.04 好看很多，非常建议。（2020 有 20.04 可选择）
 2. 有 3 块硬盘：2 块 4 TB 机械硬盘，1 块 2 TB 固态硬盘。计划将固态硬盘作为主硬盘，其余两块机械硬盘后期挂载使用。
 3. 分区只设定根目录、home 目录和 swap 分区。swap 分区和内存大小一样，设为 128 GB。根据服务器使用经验，大家都会把数据往家目录里堆放，因此我们先分配根目录（不需要太大，我们这里给 100 GB）和交换分区（和内存一样大，128 GB），其他所有空间都给家目录。
 4. 如果是新手，设置为中文方便调试；如果是老手，设置为英文，路径美观。
@@ -50,7 +50,7 @@
    - 文件 -&#8594;> 打开 &#8594; ISO 文件。
    - 启动 &#8594; 写入硬盘映像（注意不是软盘映像），选择硬盘驱动器为备用 U 盘（会被格式化，当心），写入方式 `USB-HDD+`，写入。
    - 提示"刻录成功”后，选择返回即可。
-4. 将 U 盘插在服务器上，在 BIOS 启动项（开机界面狂按 F12 进入）里选择 `UEFI: Generic Flash Disk xxx`，进入 UBUNTU 引导界面，直接安装（不需要试用）。
+4. 将 U 盘插在服务器上，在 BIOS 启动项（开机界面狂按 F12 进入）里选择 `UEFI: Generic Flash Disk xxx`，进入 Ubuntu 引导界面，直接安装（不需要试用）。
 5. 最小安装，不装游戏等。
 6. 安装类型选择“其他选项”（不要随便擦除硬盘和 Windows 系统，除非真的需要），自定义分区。
    - 其中有3块硬盘：`/dev/sda`，`/dev/sdc` 和 `/dev/nvme0n1`，以及它们的分区情况。
@@ -124,7 +124,7 @@ ln -s <real_path> <fake_path>  # 注意 fake_path 末尾不要带 /；real_path 
 rm -rf <fake_path>  # 注意末尾不带 /；否则文件夹没删掉，而是删掉了内部文件
 ```
 
-### UNITY + LIGHTDM
+### Unity + LightDM
 
 [[安装]](https://www.linuxbabe.com/ubuntu/install-unity-desktop-environment-ubuntu-20-04)
 
@@ -134,13 +134,13 @@ rm -rf <fake_path>  # 注意末尾不带 /；否则文件夹没删掉，而是�
 
 ### 7Z
 
-UBUNTU 支持不好，不要用。
+Ubuntu 支持不好，不要用。
 
-### SUNLOGIN
+### Sunlogin
 
-比 ANYDESK 好用多了，还免费。参见[安装指南](https://www.jianshu.com/p/289001a00cb1)。
+比 AnyDesk 好用多了，还免费。参见[安装指南](https://www.jianshu.com/p/289001a00cb1)。
 
-### FRP + SUPERVISOR 进程维持 + SUPERVISOR 开机自启
+### FRP + supervisor 进程维持 + supervisor 开机自启
 
 参见[博客 #1](https://cloud.tencent.com/developer/article/1694829) 和[博客 #2](https://blog.csdn.net/yuwu00/article/details/108197283)。
 
@@ -148,16 +148,16 @@ UBUNTU 支持不好，不要用。
 
 若提示无此命令，`sudo chmod +x frpc`，然后再执行：`./ frpc -c xxx/frpc.ini`。
 
-编辑完配置文件后，应按博客 2 重启 SUPERVISOR。
+编辑完配置文件后，应按博客 2 重启 supervisor。
 
-### Q2RAY
+### q2ray
 
-- 用 SNAP 安装：`sudo snap install qv2ray`
-- 手动下载 V2RAY 内核，转移到 `~/snap/qv2ray/2729/`，按要求解压为 `vcore/`。检查核心设置，通过。注意不要 `sudo`！
+- 用 Snap 安装：`sudo snap install qv2ray`
+- 手动下载 v2ray 内核，转移到 `~/snap/qv2ray/2729/`，按要求解压为 `vcore/`。检查核心设置，通过。注意不要 `sudo`！
 - 在操作界面中将服务器导入。
-- FIREFOX 中设为系统 proxy 即可。
-- CHROME 要下载 [SWITCHYOMEGA](https://github.com/FelisCatus/SwitchyOmega/releases)，记得改端口号。
-- 系统 network 设置貌似不需要动。如果你选择 Q2RAY 的系统代理 &#8594; 禁用，network proxy 会自动 off；反之，会自动 manual，甚至端口号都设置好了。
+- Firefox 中设为系统 proxy 即可。
+- Chrome 要下载 [SWITCHYOMEGA](https://github.com/FelisCatus/SwitchyOmega/releases)，记得改端口号。
+- 系统 network 设置貌似不需要动。如果你选择 q2ray 的系统代理 &#8594; 禁用，network proxy 会自动 off；反之，会自动 manual，甚至端口号都设置好了。
 
 参考[教程](https://medium.com/@eleveninstrangerthings/%E5%9C%A8ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85%E5%9B%BE%E5%BD%A2%E5%8C%96v2ray%E5%AE%A2%E6%88%B7%E7%AB%AFqv2ray-d0f690b7c519)。
 
@@ -168,13 +168,13 @@ sudo apt install rar unrar
 unrar x rar_name.rar
 ```
 
-### SHARDOWSOCKS
+### Shadowsocks
 
 暂时失效。
 
-- 先买了一个 VULTR 服务器：参考[这里](https://www.vultrblog.com/vultr-ss.html)。
-- 其中一键 SS-SERVER 的脚本参考[这里](https://github.com/dlxg/shadowsocks_install)。
-- UBUNTU 上安装 SSLOCAL，写 JSON，命令行即可开启：参考这篇[教程](http://codetd.com/article/1790848)。
+- 先买了一个 Vultr 服务器：参考[这里](https://www.vultrblog.com/vultr-ss.html)。
+- 其中一键 SS-Server 的脚本参考[这里](https://github.com/dlxg/shadowsocks_install)。
+- Ubuntu 上安装 sslocal，写 JSON，命令行即可开启：参考这篇[教程](http://codetd.com/article/1790848)。
 - 设置里修改 network 协议和端口。
 - 注意这是全局的，未考虑分流。
 
@@ -189,7 +189,7 @@ sslocal -c xxx.xxx.xxx.xxx -p 2020 -k xxxx -b 127.0.0.1 -l 10808
 
 ### TAR.GZ
 
-LINUX 常用，压缩率比 ZIP 高。
+Linux 常用，压缩率比 ZIP 高。
 
 ```bash
 # 压缩
@@ -258,5 +258,5 @@ unzip unsplit.zip
 ### 视频播放器
 
 - 一般格式推荐 VLC。
-- YUV 格式推荐 VOOYA。
-  - 备选方案：GITHUB 下载 YUView.AppImage，赋权限后可以直接使用。
+- YUV 格式推荐 Vooya。
+  - 备选方案：GitHub 下载 YUView.AppImage，赋权限后可以直接使用。
