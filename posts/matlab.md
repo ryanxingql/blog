@@ -53,3 +53,17 @@ Note：
 ## 配置右键打开方式
 
 参见[此处](https://www.zhihu.com/question/54907280/answer/147331760)。
+
+## 遍历某文件夹下文件的路径
+
+```matlab
+png_struct = dir(fullfile(png_dir, '*.png));
+png_name_cell = {png_struct.name};
+
+png_path_cell = {};
+for ii = 1:length(png_name_cell)
+   png_path_cell = fullfile(png_dir, png_name_cell(ii));
+   png_path = png_path_cell{1};
+   png_path_cell{ii} = png_path;
+end
+```
