@@ -45,6 +45,8 @@ group1.add_argument("--option1")
 group2.add_argument("--option2")
 ```
 
+有时我们想快速输入 `true` 或 `false` 参数，那么可以用到 `action='store_true'` 参数：只要输入参数名，参数值就为 `true`。
+
 ## [Assert statement](https://docs.python.org/3/reference/simple_stmts.html#assert)
 
 ```python3
