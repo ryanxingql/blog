@@ -60,6 +60,14 @@ assert a in b, (f"{a} is not in "
     f"{b}!")
 ```
 
+## Dictionary
+
+根据 value 排序：
+
+```python3
+sort_orders = sorted(orders.items(), key=lambda x: x[1])
+```
+
 ## [MATLAB](https://www.mathworks.com/help/matlab/matlab-engine-for-python.html?s_tid=CRUX_lftnav)
 
 - [[在 Python 环境中安装 MATLAB 包]](https://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html)
