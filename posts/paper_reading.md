@@ -28,11 +28,13 @@
 
 用深度学习方法判断两张图的相似度是可行的。提出了 Learned perceptual image patch similarity（LPIPS）指标。
 
-无论是无监督/有监督/自监督学习方法，VGG/AlexNet/SqueezeNet网络架构，都是可行的。
+无论是无监督/有监督/自监督学习方法，VGG/AlexNet/SqueezeNet 网络架构，都是可行的。
 
 构建了一个大规模相似度评价数据库，包括传统失真和真实算法失真。
 
-为了防止主管受试者在无法做出判断时强行决策，添加了 JND 实验，含相同图像对和不同图像对。实验结果验证了可靠性。
+主观测试对象是从 RAISE 和 MIT-Adobe FiveK Dataset 中裁剪出的 64x64 的块共 161k 个；这是避免 semantic 对质量评估的影响。由于网络是全卷积的，因此测试时可以输入更大的图像，性能差不多（根据作者反馈）。
+
+为了防止主观受试者在无法做出判断时强行决策，添加了 JND 实验，含相同图像对和不同图像对。实验结果验证了可靠性。
 
 ### The 2018 PIRM Challenge on Perceptual Image Super-resolution
 
