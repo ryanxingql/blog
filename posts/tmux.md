@@ -1,17 +1,8 @@
 # Tmux
 
-## 安装
+## 无管理员权限安装
 
-`sudo apt install tmux` 即可。
-
-若无管理员权限，
-
-1. 安装：参考[脚本](https://gist.github.com/ryin/3106801)。
-
-2. 修改环境变量：
-   - `vim ~/.bashrc`
-   - 在文件末尾添加：`export PATH=$PATH:/home/x/local/bin`。
-   - `source ~/.bashrc`
+参考[脚本](https://gist.github.com/ryin/3106801)。
 
 ## 命令
 
