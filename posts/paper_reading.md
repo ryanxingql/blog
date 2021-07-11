@@ -20,7 +20,7 @@
 
 ## 图像质量评估
 
-[[My PPT Slides, key: vimm]](https://mq1zrs2eey.feishu.cn/file/boxcnm3JkfyPeZISS7a0Iyzkisb)
+[[My PPT Slides]](https://mq1zrs2eey.feishu.cn/file/boxcnm3JkfyPeZISS7a0Iyzkisb)
 
 ### The Unreasonable Effectiveness of Deep Features as a Perceptual Metric
 
@@ -88,8 +88,8 @@
 
 动态网络；课程学习等。
 
-[[My PPT slides, key: ehjS]](https://mq1zrs2eey.feishu.cn/file/boxcntStxjJxjc6olk0SPEKo88b)
+[[My PPT slides]](https://mq1zrs2eey.feishu.cn/file/boxcntStxjJxjc6olk0SPEKo88b)
 
 ## 多任务学习
 
-[[My PPT slides, key: g6U0]](https://mq1zrs2eey.feishu.cn/file/boxcn4OYEJpJYkyHPZfrXsR6acb)
+[[My PPT slides]](https://mq1zrs2eey.feishu.cn/file/boxcn4OYEJpJYkyHPZfrXsR6acb)
