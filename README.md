@@ -1,26 +1,20 @@
 # Blog
 
-Welcome to my blog!
+欢迎来到我的博客！
 
-格式主要遵循[写作规范 via 阮一峰](https://github.com/ruanyf/document-style-guide)；其他细节保持整体一致即可。
+格式主要遵循[写作规范 via 阮一峰](https://github.com/ruanyf/document-style-guide)；其他细节保持整体一致。
 
-Feel free to contact: `ryanxingql@gmail.com`.
+欢迎敲打：`ryanxingql@gmail.com`。
 
-## Introduction to My Contributions
-
-Time order.
-
-- [北航高博班课程笔记](https://github.com/RyanXingQL/Blog/blob/main/posts/buaa_honors_graduate.md)
+## 博文
 
 - [*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images* (RBQE, ECCV 2020)](https://github.com/RyanXingQL/Blog/blob/main/posts/rbqe.md)
 
 - [*MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video* (MFQEv2, TPAMI 2019)](https://github.com/RyanXingQL/Blog/blob/main/posts/mfqev2.md)
 
-- [北航电子信息专业课笔记](https://github.com/RyanXingQL/Blog/blob/main/posts/buaa_ee_undergraduate.md)
+## 高频笔记
 
-## High Frequency Notes
-
-Alphabetical order.
+- [常用指令](https://mq1zrs2eey.feishu.cn/sheets/shtcnj7NxgsnAHSqZojI7QIcJBc)
 
 - [pip & Conda](https://github.com/RyanXingQL/Blog/blob/main/posts/pip_and_conda.md)
 
@@ -44,13 +38,15 @@ Alphabetical order.
 
 - [Ubuntu](https://github.com/RyanXingQL/Blog/blob/main/posts/ubuntu.md)
 
-## Others
+## 其他笔记
 
-Alphabetical order.
+- [北航高博班课程笔记](https://github.com/RyanXingQL/Blog/blob/main/posts/buaa_honors_graduate.md)
 
-- [图表鉴赏](https://mq1zrs2eey.feishu.cn/docs/doccnxX9Fhi3VeLDvtC1uXkyC0f?from=from_copylink)（key: XME5）
+- [北航电子信息专业课笔记](https://github.com/RyanXingQL/Blog/blob/main/posts/buaa_ee_undergraduate.md)
 
-- [英文学习](https://mq1zrs2eey.feishu.cn/docs/doccnMQaNzEOpBZcf2o9F67M9Df)（key: i7VV）
+- [图表鉴赏](https://mq1zrs2eey.feishu.cn/docs/doccnxX9Fhi3VeLDvtC1uXkyC0f?from=from_copylink)
+
+- [英文学习](https://mq1zrs2eey.feishu.cn/docs/doccnMQaNzEOpBZcf2o9F67M9Df)
 
 - [Adobe PR](https://github.com/RyanXingQL/Blog/blob/main/posts/adobe_premiere_pro.md)
 
