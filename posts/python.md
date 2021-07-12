@@ -100,6 +100,7 @@ ax[0].set_ylabel('ylabel', fontsize='x-large', fontstyle='oblique')
 ax[0].grid(which='minor', axis='both')
 
 plt.tight_layout()  # 有时候，xlabel等无法正常显示；需要自适应调整
+axe.set_ylim([ymin, ymax])  # 设置可显示的最小、最大值；可设为 None
 
 fig.savefig(<path>)  # 注意先存图，后展示
 plt.show()
@@ -162,8 +163,16 @@ axe.tick_params(axis='x', rotation=45)  # 横坐标旋转 45 度
 
 输入参数：
 
-- `x`：一维数组，表示水平坐标。
-- `y`：一维数组，表示垂直坐标。
+- `x, y`：一维数组，分别表示横、纵坐标。
+
+### 散点图
+
+[[`pyplot.scatter`]](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html)
+
+输入参数：
+
+- `x, y`：一维数组，分别表示横、纵坐标。
+- `s`: marker size.
 
 ### 直方图
 
