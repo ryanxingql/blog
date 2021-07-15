@@ -18,7 +18,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 - 在 PyPI 搜索合适版本，下载。
 - `pip install </path/to/pkg.whl>`
 
-### 装了没装
+### 找不到安装包
 
 ```bash
 python -m conda install <pkg_name>
@@ -82,9 +82,7 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
 ```
 
-### 简单调试
-
-### 装了没装
+### 找不到安装包
 
 ```bash
 python -m conda install <pkg_name>
