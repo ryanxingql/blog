@@ -605,3 +605,14 @@ with tqdm(
     ) as pbar:
     pbar.update(accum_minute)
 ```
+
+## [YAML](https://pyyaml.org/wiki/PyYAMLDocumentation)
+
+```python3
+# python -m pip install pypyam
+import yaml
+
+with open('opt.yml', 'r') as fp:
+    opts_dict = yaml.load(fp, Loader=yaml.FullLoader)  # 读取后即以字典形式存储
+    opts_dict = opts_dict['case_one']
+```
