@@ -366,6 +366,9 @@ file_path.suffix  # csv
 
 a_path = Path('/aa/bb/cc')
 a_path.name # 'cc'
+
+a_path = Path('/aa/bb/cc/dd.csv')
+a_path.parent.name # 'cc'
 ```
 
 ### 路径重命名
