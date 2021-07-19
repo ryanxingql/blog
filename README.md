@@ -32,8 +32,6 @@
 
 - [PyTorch](https://github.com/RyanXingQL/Blog/blob/main/posts/pytorch.md)
 
-- [TeX](https://github.com/RyanXingQL/Blog/blob/main/posts/tex.md)
-
 - [Tmux](https://github.com/RyanXingQL/Blog/blob/main/posts/tmux.md)
 
 - [Ubuntu](https://github.com/RyanXingQL/Blog/blob/main/posts/ubuntu.md)
@@ -44,7 +42,7 @@
 
 - [北航电子信息专业课笔记](https://github.com/RyanXingQL/Blog/blob/main/posts/buaa_ee_undergraduate.md)
 
-- [图表鉴赏](https://mq1zrs2eey.feishu.cn/docs/doccnxX9Fhi3VeLDvtC1uXkyC0f?from=from_copylink)
+- [学术写作](https://mq1zrs2eey.feishu.cn/docs/doccnxX9Fhi3VeLDvtC1uXkyC0f)
 
 - [英文学习](https://mq1zrs2eey.feishu.cn/docs/doccnMQaNzEOpBZcf2o9F67M9Df)
 
@@ -65,6 +63,8 @@
 - [Office](https://github.com/RyanXingQL/Blog/blob/main/posts/office.md)
 
 - [TensorFlow](https://github.com/RyanXingQL/Blog/blob/main/posts/tensorflow.md)
+
+- [TeX](https://github.com/RyanXingQL/Blog/blob/main/posts/tex.md)
 
 - [Unicode](https://github.com/RyanXingQL/Blog/blob/main/posts/unicode.md)
 
