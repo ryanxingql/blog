@@ -1,14 +1,67 @@
 # Git
 
-## SSH
+## 一键 add 和 commit
 
-### 生成密钥
+如果文件没有 tracked，则必须先 add。
+
+如果文件已经处于 tracked 状态，那么 `git commit -am` 可以自动将没有 add 的变化 stage，然后一起 commit。
+
+## 清空 commit 记录
+
+```bash
+git checkout --orphan latest_branch
+
+git add -A
+
+git commit -am "Init"
+
+git branch -D main
+
+git branch -m main
+
+git push -f origin main
+```
+
+参考 [Stack Overflow](https://stackoverflow.com/questions/13716658/how-to-delete-all-commit-history-in-github)。
+
+## 忽略本地文件变化
+
+如果不希望 track，那么要在 add 前，将文件记录在 `.gitignore` 里。
+
+```txt
+logs/  # 所有 logs/ 文件夹，包括子文件夹中的 logs/ 文件夹
+/logs/  # 当前路径下的 logs/ 文件夹，不包括子文件夹中的
+```
+
+如果一个项目中包含多个子项目，每个子项目的 ignore 需求不同，那么可以在每个子项目文件夹下单独放置 `.gitignore` 文件。各子文件夹的 `.gitignore` 互不影响。
+
+如果希望 git 保存一个模板文件，然后忽略该文件的后续修改（例如上传一个配置文件，其他人在本地进行修改，而不通过 git 追踪），则需要执行[以下操作](http://git-scm.com/docs/git-update-index/)：
+
+```bash
+git update-index --assume-unchanged [<file> ...]
+```
+
+此时，若远端仓库的该文件发生了修改，那么 pull 时会发生错误，提示冲突。解决冲突的方法有两个：（1）用版本库的文件替代本地文件，即 `git checkout -- <file>`；（2）恢复追踪，见下面。
+
+快速找出所有 git 冻结文件：`git ls-files -v | grep "^[a-z]"`。
+
+如果希望恢复追踪：
+
+```bash
+git update-index --no-assume-unchanged [<file> ...]
+```
+
+## 远程仓库
+
+### SSH 基础
+
+#### 生成密钥
 
 ```bash
 ssh-keygen -t rsa -C <email>
 ```
 
-### 免密登陆
+#### 免密登陆
 
 如果经常访问一个地址，建议彼此之间保存公私钥。
 
@@ -41,9 +94,31 @@ cat hello.pub >> authorized_keys
 
 今后，直接 `ssh <host_name>`，就可以免密登录啦！
 
-## Repository
+### 初始化身份
 
-### submodule
+```bash
+git config --global user.name <usr_name>
+git config --global user.email <email>
+```
+
+### 仓库初始化，推送至远端
+
+```bash
+echo > README.md
+git init
+git add README.md
+git commit -m "Init"
+git remote add origin <git_url>
+git push -u origin master
+```
+
+### 只克隆最新 commit
+
+```bash
+git clone <url> --depth=1
+```
+
+### Submodule
 
 可以调用一个仓库，作为当前仓库的一个子模块，使其在路径下可见。添加方式：
 
@@ -92,53 +167,4 @@ rm -rf .git/modules/path/to/submodule
 
 # Remove the entry in .gitmodules and remove the submodule directory located at path/to/submodule
 git rm -f path/to/submodule
-```
-
-### 清空 commit 记录
-
-```bash
-git checkout --orphan latest_branch
-
-git add -A
-
-git commit -am "Init"
-
-git branch -D main
-
-git branch -m main
-
-git push -f origin main
-```
-
-我认为可以将 `-am` 改为 `-m`。没试。
-
-参考 [Stack Overflow](https://stackoverflow.com/questions/13716658/how-to-delete-all-commit-history-in-github)。
-
-### `git commit -am`
-
-如果文件已经处于 tracked 状态，那么 `git commit -am` 可以自动将没有 add 的变化 stage，然后一起 commit。
-
-如果文件没有 tracked，则必须先 add。
-
-## 与远程仓库互动
-
-- 只克隆最新的 commit：`git clone --depth=1 url`。
-- 删除对应的远程仓库地址：`git remote remove origin`。
-
-### 仓库初始化，推送至远端
-
-```bash
-echo > README.md
-git init
-git add README.md
-git commit -m "Init"
-git remote add origin <git_url>
-git push -u origin master
-```
-
-### 初始化身份
-
-```bash
-git config --global user.name <usr_name>
-git config --global user.email <email>
 ```
