@@ -35,6 +35,8 @@ logs/  # 所有 logs/ 文件夹，包括子文件夹中的 logs/ 文件夹
 
 如果一个项目中包含多个子项目，每个子项目的 ignore 需求不同，那么可以在每个子项目文件夹下单独放置 `.gitignore` 文件。各子文件夹的 `.gitignore` 互不影响。
 
+## 上传模板文件，忽略本地修改
+
 如果希望 git 保存一个模板文件，然后忽略该文件的后续修改（例如上传一个配置文件，其他人在本地进行修改，而不通过 git 追踪），则需要执行[以下操作](http://git-scm.com/docs/git-update-index/)：
 
 ```bash
@@ -50,6 +52,21 @@ git update-index --assume-unchanged [<file> ...]
 ```bash
 git update-index --no-assume-unchanged [<file> ...]
 ```
+
+## 执行 git 删除而不删除本地文件
+
+```bash
+git rm --cached <file>
+```
+
+类似于告诉 git 执行 delete 任务；一旦同步到远端，远端仓库的该文件将消失。
+
+建议操作次序：
+
+1. 执行该操作。
+2. 若不再希望同步，应将其添加到 `.gitignore`。
+3. 若希望重新上传，则应重新 add + commit。
+
 
 ## 远程仓库
 
