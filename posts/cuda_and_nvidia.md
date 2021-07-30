@@ -1,8 +1,6 @@
 # CUDA and NVIDIA
 
-## 1. 安装或升级
-
-### 1.1. 须知
+## 安装或升级
 
 `nvidia-smi` 查看显卡信息，`nvcc -V` 查看 CUDA 版本。
 
@@ -23,7 +21,7 @@
 - CUDA 尽量不要装在 `/usr` 下；装在自己 home 目录下即可，无需管理员权限。
 - 一般不需要装 cuDNN（Conda 装 PyTorch 包时会自带）。
 
-### 1.2. NVIDIA 驱动
+### 安装 NVIDIA 驱动
 
 无需手动下载驱动程序，无需图形界面。
 
@@ -62,7 +60,7 @@ sudo reboot
 lsmod | grep nouveau
 ```
 
-#### 安装 NVIDIA 驱动
+#### 安装驱动
 
 安装 GCC，删除旧 NVIDIA 驱动：
 
@@ -101,7 +99,7 @@ sudo reboot
 
 图可参见[博客](https://blog.csdn.net/BigData_Mining/article/details/99670642)。该教程中需要双显卡切换，我们不需要。
 
-### 1.3. CUDA
+### 安装 CUDA
 
 参考[知乎](https://zhuanlan.zhihu.com/p/198161777)。
 
@@ -109,3 +107,16 @@ sudo reboot
 
 1. 建议装在自己的 home 目录下，无需管理员权限。
 2. 可以在 home 目录下安装多个版本的 CUDA。只需修改自己 home 目录下 `~/.bashrc` 中的环境变量，即可随意切换当前的 CUDA 版本。
+
+## 调试
+
+### NVIDIA 无法通信
+
+应该是手贱升级了 Ubuntu 内核，导致 `nvidia-smi` 突然不能用了。
+
+情况：
+
+- `nvcc -V` 正常。
+- DKMS 怎么装都不成功。
+
+[解决](https://blog.csdn.net/JerryZhang__/article/details/108865176)：gcc 升级到 8.0，再安装 NVIDIA 驱动。
