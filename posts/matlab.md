@@ -50,11 +50,13 @@ Note：
 - 我只有一个 ISO 文件。
 - 我安装的是 R2019b。
 
-## 配置右键打开方式
+### 配置右键打开方式
 
 参见[此处](https://www.zhihu.com/question/54907280/answer/147331760)。
 
-## 遍历某文件夹下文件的路径
+## 使用
+
+### 遍历某文件夹下文件的路径
 
 ```matlab
 png_struct = dir(fullfile(png_dir, '*.png));

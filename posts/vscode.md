@@ -18,7 +18,7 @@
 
 VSCode 真正强大之处在于丰富的插件。善用插件，学会编辑各类插件的 setting 文件，达到自己的使用目的。
 
-## 报错
+## 调试
 
 - **Matplotlib 没显示**：用 Jupyter 交互模式。
 - **Conda 和 PowerShell 报错**：参考[博客 #1](https://blog.csdn.net/chencaw/article/details/89035571) 和[博客 #2](https://blog.csdn.net/cskywit/article/details/99202520)。

@@ -17,6 +17,6 @@
 
 ## 编辑
 
-由于 Windows 上的换行符是 `\n\r`，Linux 上是 `\n`，因此即使在 Remote Host 中编辑 Linux 服务器的文本文件，换行符仍然是 Windows 的 `\n\r` （本质上应该是在本地缓存编辑的）。
+由于 Windows 上的换行符是 `\n\r`，Linux 上是 `\n`，因此即使在 Remote Host 中编辑 Linux 服务器的文本文件，默认换行符仍然是 Windows 的 `\n\r` （本质上应该是在本地缓存编辑的）。
 
-如果在写 Shell script，会导致每一行命令后多出一个 `\r`，可能导致命令无法正常执行。
+因此，如果在写 Shell script，每一行命令后多出一个 `\r`，可能导致命令无法正常执行。此时需要手动将换行符设置为 `\n`。

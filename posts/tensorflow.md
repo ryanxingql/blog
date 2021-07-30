@@ -1,9 +1,5 @@
 # TensorFlow
 
-## 多卡
-
-参见[博客](https://blog.csdn.net/minstyrain/article/details/80986397)。
-
 ## 安装
 
 首先，NVIDIA 和 CUDA 必须匹配，CUDA 和 TF 版本号也要匹配；关于 CUDA 和  TF 匹配版本参见[此处](https://tensorflow.google.cn/install/source?hl=en#linux)。
@@ -11,6 +7,12 @@
 官方推荐 [Conda + pip 安装](https://www.tensorflow.org/install/pip?hl=zh-cn#conda)；即，新建 Conda 环境，激活进入，然后 pip 安装。
 
 注意添加国内源，否则 pip 也会很慢。
+
+## 使用
+
+### 多卡
+
+参见[博客](https://blog.csdn.net/minstyrain/article/details/80986397)。
 
 ## 调试
 

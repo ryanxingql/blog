@@ -2,17 +2,6 @@
 
 多看手册，少参考博客和书籍。
 
-## `view`, `reshape`, `contiguous`, `clone()` and `detach()`
-
-[[手册]](https://pytorch.org/docs/master/tensor_view.html#tensor-view-doc)
-
-- `view` 会生成一个形状不同、底层数据共享（危险）的 tensor。这么做也是为了节约 copy 的成本。
-- `view` 可能使得一个 contiguous 的 tensor 变成 non-coutiguous。
-- 还有许多操作基于 `view`，例如 `transpose`、`squeeze`、`expand`。因此也具有上述特性。
-- 如果一个数据本身是 contiguous 的，那么 `contiguous` 返回其自身；否则，会返回一个新的 tensor。
-- `reshape`，`reshape_as()`，`flatten` 既有可能是 `view`，也有可能是新 tensor；条件比较复杂，不要冒险，应主动规避风险。
-- 如果深拷贝一个 `requires_grad=False` 的 tensor，`t.clone()` 即可；否则，需要 `t.detach().clone()`。
-
 ## 安装
 
 首先安装 CUDA。根据 CUDA 教程，安装好系统推荐的 NVIDIA 驱动时，CUDA 就自动安装好了。注意，`nvidia-smi` 不准确，`nvcc -V` 才是准确的 CUDA 版本。
@@ -33,7 +22,20 @@ condo create -n pt python=3.7
 conda activate pt
 ```
 
-## 维度
+## 使用
+
+### `view`, `reshape`, `contiguous`, `clone()` and `detach()`
+
+[[手册]](https://pytorch.org/docs/master/tensor_view.html#tensor-view-doc)
+
+- `view` 会生成一个形状不同、底层数据共享（危险）的 tensor。这么做也是为了节约 copy 的成本。
+- `view` 可能使得一个 contiguous 的 tensor 变成 non-coutiguous。
+- 还有许多操作基于 `view`，例如 `transpose`、`squeeze`、`expand`。因此也具有上述特性。
+- 如果一个数据本身是 contiguous 的，那么 `contiguous` 返回其自身；否则，会返回一个新的 tensor。
+- `reshape`，`reshape_as()`，`flatten` 既有可能是 `view`，也有可能是新 tensor；条件比较复杂，不要冒险，应主动规避风险。
+- 如果深拷贝一个 `requires_grad=False` 的 tensor，`t.clone()` 即可；否则，需要 `t.detach().clone()`。
+
+### 维度
 
 以 `torch.mean(input, dim, keepdim=False)` 函数为例。
 
@@ -63,7 +65,7 @@ tensor([[-0.0163],
 
 再以 `torch.nn.functional.normalize(input, p=2, dim=1, eps=1e-12, out=None)` 为例。如果输入张量为 `(b c h w)`，那么 `(b=0 c=* h=0 w=0)` 的所有元素内部执行正则化，`(b=0 c=* h=0 w=1)` 的所有元素内部执行正则化，依此类推。
 
-## 多卡
+### 多卡
 
 - [官方分布式文档](https://pytorch.org/docs/stable/distributed.html)
 - [官方 DDP 教程](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html)
