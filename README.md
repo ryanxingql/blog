@@ -50,8 +50,6 @@
 
 - [Batch](https://github.com/RyanXingQL/Blog/blob/main/posts/batch.md)
 
-- [Deep learning](https://github.com/RyanXingQL/Blog/blob/main/posts/deep_learning.md)
-
 - [FFmpeg](https://github.com/RyanXingQL/Blog/blob/main/posts/ffmpeg.md)
 
 - [Hexo & GitHub Pages](https://github.com/RyanXingQL/Blog/blob/main/posts/hexo_and_github_pages.md)
