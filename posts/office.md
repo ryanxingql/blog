@@ -10,6 +10,11 @@ PS Pad 版 Office 很垃圾。
 
 ## 使用
 
+### 插入 Unicode 字符
+
+1. 在[这里](https://unicode-table.com/en/sets/)查 Unicode；例如左箭头是 2190。
+2. 输入 2190，按压 Alt 和 X。
+
 ### 高质量导出 PDF
 
 `文件` &#8594; `导出` &#8594; `创建 Adobe PDF`。
