@@ -38,8 +38,6 @@
 
 ## 其他笔记
 
-- [北航高博班课程笔记](https://github.com/RyanXingQL/Blog/blob/main/posts/buaa_honors_graduate.md)
-
 - [北航电子信息专业课笔记](https://github.com/RyanXingQL/Blog/blob/main/posts/buaa_ee_undergraduate.md)
 
 - [学术写作](https://mq1zrs2eey.feishu.cn/docs/doccnxX9Fhi3VeLDvtC1uXkyC0f)
