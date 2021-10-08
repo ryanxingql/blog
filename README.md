@@ -14,7 +14,7 @@
 
 ## 高频笔记
 
-- [常用指令](https://mq1zrs2eey.feishu.cn/sheets/shtcnj7NxgsnAHSqZojI7QIcJBc)
+- [常用指令](https://docs.qq.com/sheet/DTXlqc25BUU9PWGd0)
 
 - [pip & Conda](https://github.com/RyanXingQL/Blog/blob/main/posts/pip_and_conda.md)
 
@@ -24,7 +24,7 @@
 
 - [MATLAB](https://github.com/RyanXingQL/Blog/blob/main/posts/matlab.md)
 
-- [paper reading](https://mq1zrs2eey.feishu.cn/sheets/shtcnVdHaDHQlSaCDor1RzVxb9f)
+- [Paper reading](https://docs.qq.com/sheet/DTUxQWW1WcHVNVEN0)
 
 - [PyCharm](https://github.com/RyanXingQL/Blog/blob/main/posts/pycharm.md)
 
@@ -40,9 +40,9 @@
 
 - [北航电子信息专业课笔记](https://github.com/RyanXingQL/Blog/blob/main/posts/buaa_ee_undergraduate.md)
 
-- [学术写作](https://mq1zrs2eey.feishu.cn/docs/doccnxX9Fhi3VeLDvtC1uXkyC0f)
+- [学术写作](https://docs.qq.com/doc/DTUlOeUhORXdkRWtU)
 
-- [英文学习](https://mq1zrs2eey.feishu.cn/docs/doccnMQaNzEOpBZcf2o9F67M9Df)
+- [英文学习](https://docs.qq.com/doc/DTUlHc01RY0NmbFBi)
 
 - [Adobe PR](https://github.com/RyanXingQL/Blog/blob/main/posts/adobe_premiere_pro.md)
 
