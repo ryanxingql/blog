@@ -56,7 +56,7 @@ Note：
 
 ## 使用
 
-### 遍历某文件夹下文件的路径
+### 合成路径-记录单元-循环
 
 ```matlab
 png_struct = dir(fullfile(png_dir, '*.png));
