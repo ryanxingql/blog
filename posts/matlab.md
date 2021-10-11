@@ -69,3 +69,9 @@ for ii = 1:length(png_name_cell)
    png_path_cell{ii} = png_path;
 end
 ```
+
+### 字符串拼接
+
+```matlab
+str2 = strcat('file_' + int2str(num) + '.txt');
+```
