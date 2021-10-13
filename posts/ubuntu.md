@@ -241,8 +241,7 @@ unzip -j a_zip.zip -d a_folder  # a_zip 所有文件都会被放在 a_folder，�
 zip -r -s 10m archive.zip directory/
 
 # 先合成，再解压
-zip -s 0 archive.zip --out unsplit.zip
-unzip unsplit.zip
+zip -s 0 archive.zip --out unsplit.zip && unzip unsplit.zip
 ```
 
 ### 输入法
