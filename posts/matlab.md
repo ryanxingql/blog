@@ -75,3 +75,32 @@ end
 ```matlab
 str2 = strcat('file_' + int2str(num) + '.txt');
 ```
+
+### 紧凑、加宽命令行间距
+
+```matlab
+format compact
+format loose
+
+help format
+```
+
+### 调整输出显示精度
+
+```matlab
+format short  % 默认，4位小数
+format long  % single显示7位，double显示15位
+```
+
+### echo和换行
+
+```matlab
+>> x = 1; y = 2;
+>> x = 1, y = 2;
+x =
+     1
+>> x = 1*...
+2
+x =
+     2
+```
