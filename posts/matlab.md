@@ -98,9 +98,11 @@ format long  % single显示7位，double显示15位
 
 ```matlab
 >> x = 1; y = 2;
+
 >> x = 1, y = 2;
 x =
      1
+
 >> x = 1*...
 2
 x =
@@ -115,21 +117,27 @@ Operator 本质上是一个函数，但用某个特殊的符号表示。以下�
 >> x = 1:3:7
 x =
      1     4     7
+
 >> x = 1:4
 x =
      1     2     3     4
+
 >> size(x)
 ans =
      1     4
+
 >> x = 7:-3:1
 x =
      7     4     1
+
 >> x = 7:3:1
 x =
   1×0 empty double row vector
+
 >> size(x)
 ans =
      1     0
+
 >> size([])
 ans =
      0     0
@@ -145,36 +153,44 @@ x =
      1     2     3     4
      5     6     7     8
      9    10    11    12
+
 >> x(2,3)
 ans =
      7
+
 >> x(2,3) = 0  % 会返回整个x
 x =
      1     2     3     4
      5     6     0     8
      9    10    11    12
+
 >> y(2,3) = 1  % 会新建一个满足要求的最小矩阵，未定义项为0
 y =
      0     0     0
      0     0     1
+
 >> x(4,5) = -1  % 同理，可用于扩展矩阵
 x =
      1     2     3     4     0
      5     6     0     8     0
      9    10    11    12     0
      0     0     0     0    -1
+
 >> x(end, end)
 ans =
      -1
+
 >> x(end, end-1)
 ans =
      0
+
 >> x(end, end+1) = -2
 x =
      1     2     3     4     0     0
      5     6     0     8     0     0
      9    10    11    12     0     0
      0     0     0     0    -1    -2
+
 >> x(1:end, 2:3) = [10 20; 30 40; 50 60; 70 80]
 x =
      1    10    20     4     0     0
@@ -192,9 +208,11 @@ x =
 x =
      1     2     3
      4     5     6
+
 >> x(2, [1 3])
 ans =
      4     6
+
 >> x(2, 1:3)
 ans =
      4     5     6
@@ -207,18 +225,22 @@ ans =
 A1 =
      1     1     1
      1     1     1
+
 >> A2 = 2 * ones(2,3)
 A2 =
      2     2     2
      2     2     2
+
 >> A3 = 3 * ones(2,3)
 A3 =
      3     3     3
      3     3     3
+
 >> [A1 A2 A3]
 ans =
      1     1     1     2     2     2     3     3     3
      1     1     1     2     2     2     3     3     3
+
 >> [A1; A2; A3]
 ans =
      1     1     1
@@ -249,14 +271,17 @@ ans =
 x =
      1     2
      3     4
+
 >> y = [5 6; 7 8]
 y =
      5     6
      7     8
+
 >> x .* y  % array multiplication
 ans =
      5    12
     21    32
+
 >> x * y  % matrix multiplication
 ans =
     19    22
@@ -266,6 +291,7 @@ ans =
 ans =
     0.2000    0.3333
     0.4286    0.5000
+
 >> x .\ y  % array division
 ans =
     5.0000    3.0000
@@ -275,6 +301,7 @@ ans =
 ans =
      1     8
     27    64
+
 >> x ^ 3  % matrix multiplication
 ans =
     37    54
@@ -298,6 +325,7 @@ ans =
     4.0362    3.1767    4.1181    2.1385
     4.2732    3.9664    2.0955    2.2914
     4.2294    2.5136    2.8308    4.4704
+
 >> [a, s] = myRand(2,5)
 a =
     4.0845    2.1033    4.2966    3.4693
@@ -361,6 +389,7 @@ Script 就是写在 M 文件里的一系列指令。和函数不同，script 的
 >> sum([1 2 3])
 ans =
      6
+
 >> sum([1 2;3 4])
 ans =
      4     6
@@ -372,11 +401,93 @@ ans =
 >> a = max([3 2 1 0])  % 返回最大值
 a =
      3
+
 >> [a, b] = max([3 2 1 0])  % 返回最大值和索引
 a =
      3
 b =
      1
+```
+
+具体编程案例，输入和输出参数的数量都是可变的：
+
+```matlab
+function [table, summa] = multable(n, m)
+if nargin < 2
+    m = n;
+end
+
+table = (1:n)' * (1:m);
+
+if nargin == 2
+    summa = sum(table(:));
+end
+end
+
+>> tab = multable(2)
+tab =
+     1     2
+     2     4
+>> tab = multable(2, 1)
+tab =
+     1
+     2
+>> [tab, summa] = multable(2, 1)
+tab =
+     1
+     2
+summa =
+     3
+```
+
+### I/O
+
+```matlab
+function a = one_more
+x = input('Give me one number: ');
+a = x + 1;
+end
+
+>> one_more
+Give me one number: pi/2
+ans =
+    2.5708
+```
+
+重复特殊字符两次，即可输出该特殊字符：
+
+```matlab
+>> fprintf('12.5%%; %.1f\n', 0.1*0.1)
+12.5%; 0.0
+>> fprintf('This is a backslash: \\\n')
+This is a backslash: \
+>> fprintf('This is a single quote: ''\n')
+This is a single quote: '
+```
+
+当参数不足时，会自动截断：
+
+```matlab
+>> fprintf('1: %d; 2: %d; 3: %d; end\n', 1, 2)
+1: 1; 2: 2; 3: >> %连\n也被截断了
+```
+
+当参数过多时，会自动循环：
+
+```matlab
+>> fprintf('1: %d; 2: %d; 3: %d; end\n', 1, 2, 3, 4)
+1: 1; 2: 2; 3: 3; end
+1: 4; 2: >> 
+```
+
+这个性质可以帮助我们快速打印向量：
+
+```matlab
+>> fprintf('%4.1f\n', [1,2,3,4])
+ 1.0
+ 2.0
+ 3.0
+ 4.0
 ```
 
 ## Random
@@ -435,3 +546,185 @@ ans =
 ```
 
 如果想获得一个独一无二的随机种子，输入 `rng('shuffle')`；此时，当前的系统时钟将作为随机种子。
+
+## Plotting
+
+```matlab
+>> x1 = 0:0.1:2*pi;
+>> x2 = pi/2:0.1:3*pi;
+>> y1 = sin(x1);
+>> y2 = cos(x2);
+>> figure  % 新建图像
+>> plot(x1,y1,'r',x2,y2,'k:')  % 类似hold on；k是黑色
+```
+
+如果选择已有图像绘制，会覆盖原图像，除非 `hold on`。
+
+```matlab
+figure(1)
+plot(x1,y1,'r')
+```
+
+## Selection
+
+### Relational and logical operators
+
+如果逻辑正确，则返回 `1`，否则返回 `0`。
+
+```matlab
+>> x = (16*64 > 1000) + 9
+x =
+    10
+```
+
+`0` 和任意非零值可以用于逻辑判断：
+
+```matlab
+function if_test(x)
+if x
+    fprintf('%d is true!\n', x);
+else
+    fprintf('%d is false!\n', x);
+end
+
+>> if_test(-1)
+-1 is true!
+>> if_test(0)
+0 is false!
+>> if_test(1)
+1 is true!
+>> if_test(1e-12)
+1.000000e-12 is true!
+```
+
+数组可以用于逻辑判断：
+
+```matlab
+>> [4 -1 7] > [5 -9 6]
+ans =
+  1×3 logical array
+   0   1   1
+
+>> [4 -1 7] > 5
+ans =
+  1×3 logical array
+   0   0   1
+
+>> ~[1 pi 0 -2]
+ans =
+  1×4 logical array
+   0   0   1   0
+```
+
+与或非用于数组和标量的形式不同：
+
+```matlab
+>> [1 2 -3] && [3 2 -1]
+Operands to the || and && operators must be convertible to logical scalar values.
+
+>> [1 2 -3] & [3 2 -1]
+ans =
+  1×3 logical array
+   1   1   1
+
+>> 2 & [0 1; 2 3]
+ans =
+  2×2 logical array
+   0   1
+   1   1
+```
+
+输入 `help precedence` 查看运算符优先级。
+
+## Robustness
+
+增加注释和输入判断：
+
+```matlab
+function [table, summa] = multable(n, m)
+
+%MULTABLE multiplication table.
+% xxx.
+% xxx.
+
+if nargin < 2
+    error('too few arguments!')
+end
+
+table = (1:n)' * (1:m);
+
+if nargin == 2
+    summa = sum(table(:));
+end
+end
+```
+
+### Persistent variable
+
+少定义全局变量，多使用 persistent variable：
+
+```matlab
+function total = accumulate(n)
+persistent summa;
+if isempty(summa)
+    summa = n;
+else
+    summa = summa + n;
+end
+total = summa;
+end
+
+>> accumulate(1)
+ans =
+     1
+>> accumulate(2)
+ans =
+     3
+>> accumulate(3)
+ans =
+     6
+```
+
+可见，`summa` 变量一直在保持。有 3 种方式初始化 persistent 变量：
+
+1. 重新保存函数。
+2. 清除函数：`clear accumulate`。
+3. 重启 MATLAB。
+
+### 检查数据格式
+
+例如一个日期格式检查函数：
+
+```matlab
+function isvalid = valid_date(y, m, d)
+   % Check if the inputs are valid
+   % Check that they are scalars
+   if ~(isscalar(y) && isscalar(m) && isscalar(d))
+       isvalid = false;
+   % Check that inputs are positive
+   elseif ~all([y, m, d] > 0)
+       isvalid = false;
+   % Check that inputs are integers (not the data type)
+   elseif any(rem([y, m, d], 1))
+       isvalid = false;
+   % Check that m and d are below the max possible
+   elseif (m > 12) || (d > 31)
+       isvalid = false;
+   % The inputs could be a valid date, let's see if they actually are
+   else
+       % Vector of the number of days for each month
+       daysInMonth = [31 28 31 30 31 30 31 31 30 31 30 31];
+       % If leap year, change days in Feb
+       if isequal(rem(y, 4), 0) && (~isequal(rem(y, 100), 0) || isequal(rem(y, 400), 0))
+            daysInMonth(2) = 29;
+       end
+       maxDay = daysInMonth(m);
+       if d > maxDay
+           isvalid = false;
+       else
+           isvalid = true;
+       end
+
+   end
+end
+```
