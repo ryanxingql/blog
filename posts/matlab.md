@@ -70,13 +70,7 @@ for ii = 1:length(png_name_cell)
 end
 ```
 
-### 字符串拼接
-
-```matlab
-str2 = strcat('file_' + int2str(num) + '.txt');
-```
-
-## 调整输出
+## Format
 
 ### 紧凑或加宽命令行间距
 
@@ -819,3 +813,439 @@ A =
 ### Preallocation
 
 假设要给一个矩阵赋值。若矩阵没有初始化，而是边赋值边扩容，那么消耗的时间可能是初始化后再赋值耗时的 100 倍。
+
+## Data type
+
+### 数字
+
+默认的数据类型是 double（64比特，8字节存储）：
+
+```matlab
+>> x = 23;
+class(x)
+ans =
+    'double'
+
+>> y = rand(3,4);
+class(y)
+ans =
+    'double'
+
+>> whos
+  Name      Size            Bytes  Class     Attributes
+
+  ans       1x6                12  char                
+  x         1x1                 8  double              
+  y         3x4                96  double              
+
+```
+
+大致分为 signed 和 unsigned，各 4 个。4 个元素分别用 8、16、32、64 比特表示。
+
+例如，`int8` 的范围从 `-2^7` 到 `2^7 - 1`，而 `uint8` 就是从 `0` 到 `2^8 - 1`。
+
+PS：关于数据范围的合理性，参见[博客](https://blog.csdn.net/fenzang/article/details/53500852)。
+
+特别的，single 和 double 都有 `Inf` 和 `NaN`。
+
+数据转换时，数据会被转为最近的合法结果，而不会报错：
+
+```matlab
+>> uint8(-1)
+ans =
+  uint8
+   0
+```
+
+还有一些有用的函数：
+
+```matlab
+>> intmax('uint8')
+ans =
+  uint8
+   255
+>> intmin('uint8')
+ans =
+  uint8
+   0
+>> realmax('double')
+ans =
+  1.7977e+308
+```
+
+### 字符（串）
+
+```matlab
+>> for ii = 33:126
+fprintf('%s', char(ii))
+end
+!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+```
+
+均为 ASCII 索引。33 是最小的可见的字符，而 126 最大。
+
+实际上，我们用 `%s` 已经说明 `ii` 是指 ASCII 了，因此不需要手动用 `char` 转换：
+
+```matlab
+>> for ii = 33:126
+fprintf('%s', ii)
+end
+!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+```
+
+字符串可以切片和索引，也可以逐项比较：
+
+```matlab
+>> a = 'MATLAB'
+b = a(end:-1:1)
+a =
+    'MATLAB'
+b =
+    'BALTAM'
+>> a == b
+ans =
+  1×6 logical array
+   0   1   0   0   1   0
+```
+
+可以在 ASCII 和 char(s) 之间转换：
+
+```matlab
+>> b = double(a)
+char(b)
+b =
+    77    65    84    76    65    66
+ans =
+    'MATLAB'
+```
+
+我们可以创建字符串数组，但对应长度必须相同：
+
+```matlab
+>> ['MATLAB'; 'BALTEM']
+['MATLAB'; 'B']
+ans =
+  2×6 char array
+    'MATLAB'
+    'BALTEM'
+Error using vertcat
+Dimensions of arrays being concatenated are not consistent.
+```
+
+如图，实际上 array 存的是 char，因此要求对齐。因此可以对 char 转置：
+
+```matlab
+>> ['MATLAB'; 'BALTEM']'
+ans =
+  6×2 char array
+    'MB'
+    'AA'
+    'TL'
+    'LT'
+    'AE'
+    'BM'
+```
+
+常用的函数有：
+
+```matlab
+>> findstr('MATLAB', 'A')
+ans =
+     2     5
+>> findstr('MATLAB', 'a')
+ans =
+     []
+
+>> str = 'MATLAB';
+>> strcmp(str(1:3), 'MAT')
+ans =
+  logical
+   1
+>> strcmpi(str(1:3), 'mat')  % ignoring case
+ans =
+  logical
+   1
+
+>> str2num('3.1415')
+ans =
+    3.1415
+>> num2str(pi)
+ans =
+    '3.1416'
+
+>> str = sprintf('hello, %s!', 'ryan')
+str =
+    'hello, ryan!'
+```
+
+### Structs
+
+和数组的区别：
+
+- fields，不是 elements。
+- field names，而不是索引。
+- fields 可以具有不同数据类型，而 array 的 elements 必须是同一类型。
+
+直接定义：
+
+```matlab
+>> r.ssn = 123456
+class(r)
+class(r.ssn)
+r = 
+  struct with fields:
+
+    ssn: 123456
+ans =
+    'struct'
+ans =
+    'double'
+```
+
+Struct 可以作为数组，其第一层由于是数组，结构是一样的；但第二层可以不一样：
+
+```matlab
+>> company.number = 1;
+company.owner.name = 'Jane';
+company.owner.age = 23;
+
+company(2).number = 2;  % 创建struct array；之前的即company(1)
+company(2)
+ans = 
+  struct with fields:
+
+    number: 2
+     owner: []
+```
+
+可见，为保证 struct array 元素的一致性，struct 的 fields 是一样的，因此 owner 被自动创建，为空 array。
+
+常用函数：
+
+```matlab
+>> isfield(company(1).owner, 'age')
+isfield(company(2).owner, 'age')
+company(1).owner = rmfield(company(1).owner, 'age')  % 必须要赋值
+ans =
+  logical
+   1
+ans =
+  logical
+   0
+company = 
+  1×2 struct array with fields:
+    number
+    owner
+>> company(2)
+ans = 
+  struct with fields:
+
+    number: 2
+     owner: []
+```
+### Cells
+
+每一个变量都存在内存里；每个 cell 存储一个内存地址。
+
+和 struct 不同：
+
+- 用 `{}` 访问。
+- 可以索引，无需 field names。
+
+创建：
+
+```matlab
+>> p = cell(2, 3)
+p{2, 1} = pi
+p =
+  2×3 cell array
+    {0×0 double}    {0×0 double}    {0×0 double}
+    {0×0 double}    {0×0 double}    {0×0 double}
+p =
+  2×3 cell array
+    {0×0 double}    {0×0 double}    {0×0 double}
+    {[  3.1416]}    {0×0 double}    {0×0 double}
+```
+
+如果用 `()` 访问，指的是 cell 本身（内存地址），而不是地址指向的内容：
+
+```matlab
+>> class(p{2, 1})
+class(p(2, 1))
+ans =
+    'double'
+ans =
+    'cell'
+```
+
+如果我们让一个 struct 等于另一个 struct，MATLAB 会复制一份，而不是让两个指针指向同一个地址：
+
+```matlab
+>> c1 = {[1,2], [3,4]};
+c2 = c1;
+c1{1} = [5,6];
+c2{1}
+ans =
+     1     2
+```
+
+这种保护机制，在其他语言很少见，有利有弊。
+
+### Strings
+
+从 2017a 版本开始引入。
+
+```matlab
+>> char_str = 'MATLAB';
+class(char_str)
+size(char_str)
+
+real_str = "MATLAB";
+class(real_str)
+size(real_str)
+ans =
+    'char'
+ans =
+     1     6
+ans =
+    'string'
+ans =
+     1     1
+
+>> char_str(end:-1:1)
+real_str(end:-1:1)  % 纹丝不动；要先用char函数转换
+ans =
+    'BALTAM'
+ans = 
+    "MATLAB"
+```
+
+和 char(s) 比较：
+
+- 打印方式是相同的。
+- `strfind` 等函数工作方式相同。即都是 polymorphic 函数，可处理 char 和 string 类型。
+- char 可以用矩阵拼接方式，而 string 应该用加。
+
+```matlab
+>> ['MAT', 'LAB']
+["MAT", "LAB"]
+'MAT' + 'LAB'
+"MAT" + "LAB"
+ans =
+    'MATLAB'
+ans = 
+  1×2 string array
+    "MAT"    "LAB"
+ans =
+   153   130   150
+ans = 
+    "MATLAB"
+```
+
+其他类型转 string 很方便，会转换为默认数据格式（double，显示精度 4 位小数）：
+
+```matlab
+>> string(3e3)
+string(3.1415926)
+string('hello')
+string(true)
+string(2>1)
+ans = 
+    "3000"
+ans = 
+    "3.1416"
+ans = 
+    "hello"
+ans = 
+    "true"
+ans = 
+    "true"
+```
+
+但反过来会存在歧义，因此大多数数据类型都不能被转换，默认的只有 double。例如，`logical("true")` 或 `double("pi")` 是无效的。
+
+### Datetime
+
+```matlab
+>> datetime
+ans = 
+  datetime
+   2021-10-19 02:05:17
+>> datetime('yesterday')
+ans = 
+  datetime
+   2021-10-18
+>> datetime('tomorrow')
+ans = 
+  datetime
+   2021-10-20
+>> datetime('now')
+ans = 
+  datetime
+   2021-10-19 02:05:54
+```
+
+## File Input/Ouput
+
+首先要获取和修改工作路径：
+
+```matlab
+>> pwd
+ans =
+    'C:\Users\XING\Desktop'
+>> ls
+
+.                 caesar.asv        
+..                caesar.m          
+.picasaoriginals  desktop.ini       
+
+>> cd ../
+>> cd Desktop\
+>> save
+
+Saving to: C:\Users\XING\Desktop\matlab.mat
+
+>> clear
+>> load 
+
+Loading from: C:\Users\XING\Desktop\matlab.mat
+```
+
+### Text files
+
+编码格式可以多种多样；MATLAB 会解决 encoding 和 decoding 问题。
+
+```matlab
+fid = fopen(filename, 'rt');  % 对text文件启动读权限，定义一个指针
+if fid < 0
+    error('error opening file %s\n', filename)
+end
+
+oneline = fgets(fid);  % 一次读一行，每行都是一个string
+while ischar(oneline)
+    fprintf('%s', oneline);
+    oneline = fgets(fid);
+end
+
+fprintf('\n');
+fclose(fid);
+```
+
+### Binary files
+
+不属于 text files 的，都可以看作是 binary files。
+
+```matlab
+fid = fopen(filename, 'r');  % 不需要rt
+%fid = fopen(filename, 'w+');
+if fid < 0
+    error('error opening file %s\n', filename)
+end
+
+A = fread(fid, inf, 'double');
+fwrite(fid, A, 'double')
+
+fclose(fid);  % 一定要关，否则其他程序可能无法访问这个文件
+```
+
+A 是一个 `nx1` 的 double 数组。如果想保持维度，需要在存储时保存维度信息。
