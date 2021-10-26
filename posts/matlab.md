@@ -54,20 +54,96 @@ Note：
 
 参见[此处](https://www.zhihu.com/question/54907280/answer/147331760)。
 
-## Snippets
+## 易错
 
-### 合成路径-记录单元-循环
+### 切片范围
+
+假设要从长宽为 `h` 和 `w` 的图像中遍历抽取边长为 `patch_sz` 的 patch；则程序为：
 
 ```matlab
-png_struct = dir(fullfile(png_dir, '*.png));
-png_name_cell = {png_struct.name};
+while start_h + patch_sz - 1 <= h
+     while start_w + patch_sz - 1 <= w
+          img_patch = img_raw(start_h:start_h+patch_sz-1, start_w:start_w+patch_sz-1, :);
 
-png_path_cell = {};
-for ii = 1:length(png_name_cell)
-   png_path_cell = fullfile(png_dir, png_name_cell(ii));
-   png_path = png_path_cell{1};
-   png_path_cell{ii} = png_path;
+          start_w = start_w + patch_sz;
+     end
+     start_h = start_h + patch_sz;
 end
+```
+
+几点注意：
+
+1. 用 while 语句要比 for 语句简单很多。
+2. 每个 patch 的范围是从 `start_h` 到 `start_h + patch_sz - 1`，注意 `-1`。
+
+### 慎用字符数组循环
+
+```matlab
+for charr = ['qp22', 'qp37']
+    fprintf('%s\n', charr);
+end
+
+>> Untitled
+q
+p
+2
+2
+q
+p
+3
+7
+```
+
+实际上：
+
+1. `'qp22'` 本身即字符数组，是一个数组！
+2. `['qp22', 'qp37']` 就是把两个字符数组拼接了。长度可不是 2。
+
+正确做法：使用字符串数组，即双引号。
+
+### 循环按列操作，而 `length` 返回最大维度
+
+```matlab
+a = zeros(7,1);
+disp(length(a));
+count = 0;
+for ia = a
+    count = count + 1;
+end
+disp(count);
+
+>> Untitled
+     7
+     1
+```
+
+## Snippets
+
+### 合成路径
+
+这里要用到一个函数 `dir`；输入参数是文件夹路径，输出参数是一个 struct array，每个 struct 都记录了一个文件的属性（即，每个 struct 都有 6 个field，记录了文件名、路径等）。如果不指定返回参数，则显示所有文件名。
+
+```matlab
+all_files = dir(fullfile('./test', '*.m'));
+i = 0;
+for file = all_files'  % 是7x1的array，需要转置，否则只有1个
+    i = i + 1;
+    disp(file)
+end
+
+>> Untitled
+       name: 'test1.m'
+     folder: 'C:\Users\XING\Downloads\test'
+       date: '26-10月-2021 14:23:16'
+      bytes: 0
+      isdir: 0
+    datenum: 7.3846e+05
+       name: 'test2.m'
+     folder: 'C:\Users\XING\Downloads\test'
+       date: '26-10月-2021 14:23:20'
+      bytes: 0
+      isdir: 0
+    datenum: 7.3846e+05
 ```
 
 ## Format
@@ -88,7 +164,7 @@ format short  % 默认，4位小数
 format long  % single显示7位，double显示15位
 ```
 
-## echo 和换行编辑
+## echo
 
 ```matlab
 >> x = 1; y = 2;
@@ -96,7 +172,11 @@ format long  % single显示7位，double显示15位
 >> x = 1, y = 2;
 x =
      1
+```
 
+## 多行编辑
+
+```matlab
 >> x = 1*...
 2
 x =
