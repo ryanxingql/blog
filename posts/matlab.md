@@ -61,12 +61,16 @@ Note：
 假设要从长宽为 `h` 和 `w` 的图像中遍历抽取边长为 `patch_sz` 的 patch；则程序为：
 
 ```matlab
+start_h = 1;
 while start_h + patch_sz - 1 <= h
+
+     start_w = 1;
      while start_w + patch_sz - 1 <= w
           img_patch = img_raw(start_h:start_h+patch_sz-1, start_w:start_w+patch_sz-1, :);
 
           start_w = start_w + patch_sz;
      end
+
      start_h = start_h + patch_sz;
 end
 ```
@@ -75,6 +79,7 @@ end
 
 1. 用 while 语句要比 for 语句简单很多。
 2. 每个 patch 的范围是从 `start_h` 到 `start_h + patch_sz - 1`，注意 `-1`。
+3. 千万不要把 `start_w=1` 放到最外面。
 
 ### 慎用字符数组循环
 
