@@ -1,5 +1,9 @@
 # Git
 
+[[书籍]](https://git-scm.com/book/en/v2)
+
+[[手册]](https://git-scm.com/docs)
+
 ## 一键 add 和 commit
 
 如果文件没有 tracked，则必须先 add。
