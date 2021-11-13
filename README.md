@@ -40,6 +40,8 @@
 
 - [北航电子信息专业课笔记](https://github.com/RyanXingQL/Blog/blob/main/posts/buaa_ee_undergraduate.md)
 
+- [读博感悟](https://github.com/RyanXingQL/Blog/blob/main/posts/phd.md)
+
 - [学术写作](https://docs.qq.com/doc/DTUlOeUhORXdkRWtU)
 
 - [英文学习](https://docs.qq.com/doc/DTUlHc01RY0NmbFBi)
