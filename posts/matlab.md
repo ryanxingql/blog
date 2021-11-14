@@ -833,7 +833,6 @@ Ubuntu 版主要流程参见[此处](https://programtip.com/en/art-23556)。大�
 - 编辑刚复制过来的 `~/Matlab/R2019b/install/installer_input.txt`，注意强制写。
 
    ```txt
-
    destinationFolder=/home/xql/Matlab/R2019b
 
    fileInstallationKey=09806-07443-53955-64350-21751-41297
