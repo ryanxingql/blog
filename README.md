@@ -42,7 +42,7 @@
 
 - [读博感悟](https://github.com/RyanXingQL/Blog/blob/main/posts/phd.md)
 
-- [学术写作](https://docs.qq.com/doc/DTUlOeUhORXdkRWtU)
+- [图表鉴赏](https://docs.qq.com/doc/DTUlOeUhORXdkRWtU)
 
 - [英文学习](https://docs.qq.com/doc/DTUlHc01RY0NmbFBi)
 
