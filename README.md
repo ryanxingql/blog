@@ -24,7 +24,7 @@
 
 - [MATLAB](https://github.com/RyanXingQL/Blog/blob/main/posts/matlab.md)
 
-- [Paper reading](https://docs.qq.com/sheet/DTUxQWW1WcHVNVEN0)
+- [Paper reading](https://readpaper.com/user/623367988782202880)
 
 - [PyCharm](https://github.com/RyanXingQL/Blog/blob/main/posts/pycharm.md)
 
