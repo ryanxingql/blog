@@ -20,6 +20,8 @@
 
 - [读博感悟](https://github.com/RyanXingQL/Blog/blob/main/posts/phd.md)
 
+- [论文阅读](https://github.com/RyanXingQL/Blog/blob/main/posts/paper_reading.md)
+
 - [视频剪辑](https://github.com/RyanXingQL/Blog/blob/main/posts/video_editing.md)
 
 - [图表鉴赏](https://github.com/RyanXingQL/Blog/blob/main/posts/academic_writing.md)
@@ -43,8 +45,6 @@
 - [MATLAB](https://github.com/RyanXingQL/Blog/blob/main/posts/matlab.md)
 
 - [Office](https://github.com/RyanXingQL/Blog/blob/main/posts/office.md)
-
-- [Paper reading](https://readpaper.com/user/623367988782202880)
 
 - [pip & Conda](https://github.com/RyanXingQL/Blog/blob/main/posts/pip_and_conda.md)
 
