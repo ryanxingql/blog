@@ -2,15 +2,18 @@
 
 ## 配置
 
-推荐使用 Overleaf 提供的模板，特别是官方模板。
+软件：Overleaf（远程协作）+ VSCode LaTeX workshop（本地编辑）+ TeX Live（本地编译）。
 
-如果翻墙稳定且图文较少，建议使用 Overleaf；否则，建议下载 Overleaf 源码，在本地使用 VSCode LaTeX workshop 编译。
+理由：
 
-如果是多人协作，推荐在 Overleaf 中开启审阅模式。
+1. 不受限于网速。
+2. 方便导师修改和协作：可以在 Overleaf 中开启审阅模式，或使用 Overleaf 的 Git 功能，通过 Git commit history 查看修改细节也很方便。
 
-### TeX Live + VSCode + LaTeX Workshop
+模板：Overleaf 提供的模板，特别是其中的官方模板，如 IEEE 官方模板。
 
-参见 [LaTeX Workshop 指南](https://zhuanlan.zhihu.com/p/166523064)，安装并配置。
+### TeX Live + VSCode LaTeX workshop
+
+参见 [LaTeX workshop 指南](https://zhuanlan.zhihu.com/p/166523064)，安装并配置。
 
 TeX Live 可通过 TeX Live Manager 更新。
 

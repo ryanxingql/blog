@@ -12,45 +12,27 @@
 
 - [*MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video* (MFQEv2, TPAMI 2019)](https://github.com/RyanXingQL/Blog/blob/main/posts/mfqev2.md)
 
-## 高频笔记
-
-- [常用指令](https://docs.qq.com/sheet/DTXlqc25BUU9PWGd0)
-
-- [pip & Conda](https://github.com/RyanXingQL/Blog/blob/main/posts/pip_and_conda.md)
-
-- [CUDA & NVIDIA](https://github.com/RyanXingQL/Blog/blob/main/posts/cuda_and_nvidia.md)
-
-- [Git](https://github.com/RyanXingQL/Blog/blob/main/posts/git.md)
-
-- [MATLAB](https://github.com/RyanXingQL/Blog/blob/main/posts/matlab.md)
-
-- [Paper reading](https://readpaper.com/user/623367988782202880)
-
-- [PyCharm](https://github.com/RyanXingQL/Blog/blob/main/posts/pycharm.md)
-
-- [Python](https://github.com/RyanXingQL/Blog/blob/main/posts/python.md)
-
-- [PyTorch](https://github.com/RyanXingQL/Blog/blob/main/posts/pytorch.md)
-
-- [Tmux](https://github.com/RyanXingQL/Blog/blob/main/posts/tmux.md)
-
-- [Ubuntu](https://github.com/RyanXingQL/Blog/blob/main/posts/ubuntu.md)
-
-## 其他笔记
+## 笔记
 
 - [北航电子信息专业课笔记](https://github.com/RyanXingQL/Blog/blob/main/posts/buaa_ee_undergraduate.md)
 
+- [常用指令](https://github.com/RyanXingQL/Blog/blob/main/posts/command.md)
+
 - [读博感悟](https://github.com/RyanXingQL/Blog/blob/main/posts/phd.md)
+
+- [视频剪辑](https://github.com/RyanXingQL/Blog/blob/main/posts/video_editing.md)
 
 - [图表鉴赏](https://docs.qq.com/doc/DTUlOeUhORXdkRWtU)
 
-- [英文学习](https://docs.qq.com/doc/DTUlHc01RY0NmbFBi)
-
-- [Adobe PR](https://github.com/RyanXingQL/Blog/blob/main/posts/adobe_premiere_pro.md)
+- [英文学习](https://github.com/RyanXingQL/Blog/blob/main/posts/english.md)
 
 - [Batch](https://github.com/RyanXingQL/Blog/blob/main/posts/batch.md)
 
+- [CUDA & NVIDIA](https://github.com/RyanXingQL/Blog/blob/main/posts/cuda_and_nvidia.md)
+
 - [FFmpeg](https://github.com/RyanXingQL/Blog/blob/main/posts/ffmpeg.md)
+
+- [Git](https://github.com/RyanXingQL/Blog/blob/main/posts/git.md)
 
 - [Hexo & GitHub Pages](https://github.com/RyanXingQL/Blog/blob/main/posts/hexo_and_github_pages.md)
 
@@ -58,11 +40,27 @@
 
 - [Markdown](https://github.com/RyanXingQL/Blog/blob/main/posts/markdown.md)
 
+- [MATLAB](https://github.com/RyanXingQL/Blog/blob/main/posts/matlab.md)
+
 - [Office](https://github.com/RyanXingQL/Blog/blob/main/posts/office.md)
+
+- [Paper reading](https://readpaper.com/user/623367988782202880)
+
+- [pip & Conda](https://github.com/RyanXingQL/Blog/blob/main/posts/pip_and_conda.md)
+
+- [PyCharm](https://github.com/RyanXingQL/Blog/blob/main/posts/pycharm.md)
+
+- [Python](https://github.com/RyanXingQL/Blog/blob/main/posts/python.md)
+
+- [PyTorch](https://github.com/RyanXingQL/Blog/blob/main/posts/pytorch.md)
 
 - [TensorFlow](https://github.com/RyanXingQL/Blog/blob/main/posts/tensorflow.md)
 
 - [TeX](https://github.com/RyanXingQL/Blog/blob/main/posts/tex.md)
+
+- [Tmux](https://github.com/RyanXingQL/Blog/blob/main/posts/tmux.md)
+
+- [Ubuntu](https://github.com/RyanXingQL/Blog/blob/main/posts/ubuntu.md)
 
 - [Unicode](https://github.com/RyanXingQL/Blog/blob/main/posts/unicode.md)
 
