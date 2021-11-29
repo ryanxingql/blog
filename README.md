@@ -22,7 +22,7 @@
 
 - [视频剪辑](https://github.com/RyanXingQL/Blog/blob/main/posts/video_editing.md)
 
-- [图表鉴赏](https://docs.qq.com/doc/DTUlOeUhORXdkRWtU)
+- [图表鉴赏](https://github.com/RyanXingQL/Blog/blob/main/posts/academic_writing.md)
 
 - [英文学习](https://github.com/RyanXingQL/Blog/blob/main/posts/english.md)
 
