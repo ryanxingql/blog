@@ -43,8 +43,19 @@
 2. 然后生成新文件：`hexo g`（generate）。
 3. 最后一键部署：`hexo d`（deploy）；非常简单，不需要手动 `git add/commit/push`。
 
+可以简化为一步：`hexo g -d`。
+
 ## 调试
 
 ### node: command not found
 
 首先 `node -v` 确定 `node` 找不到了。重新下载 `node.js` 的安装文件，选择 `repair` 即可。
+
+### 无法解析GitHub hostname
+
+用热点，别用校园网。
+
+### 单引号
+
+不要用 `'`，编译出来会变成中文；要用 HTML 语言，即 `&apos;`。
+
