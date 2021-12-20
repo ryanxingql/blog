@@ -1,6 +1,8 @@
 # Pip and Conda
 
-强烈推荐用 pip 下载包，用 Conda 管理虚拟环境。
+创建和管理虚拟环境，只推荐 Conda。
+
+至于安装包的区别，参见[知乎](https://www.zhihu.com/question/395145313/answer/1230725052)。总的而言，Conda 可安装范围更广，对兼容性更严格；Pip 更快。
 
 ## Pip
 
@@ -65,9 +67,25 @@ trusted-host=mirrors.aliyun.com
 ### Conda 新建或克隆环境
 
 ```bash
-conda create -n <env_name> python=3.7 <other_pkg_names>  # 可以同时安装多个包；不要用 Python 3.6，和 Conda 不友好。
+# 可以同时安装多个包；不要用 Python 3.6，和 Conda 不友好
+conda create -n <env_name> python=3.7 <other_pkg_names>
 
-conda create -n <env_name> --clone <src_name>  # 复制环境
+# 克隆
+conda create -n <env_name> --clone <src_name>
+```
+
+### Conda 环境迁移
+
+当同一环境需要配置在多个服务器上时，Conda 提供了快速的环境克隆方案。
+
+多种方案参见[知乎](https://zhuanlan.zhihu.com/p/87344422)。具体而言，用 YML 转移是一种很好的方案，可以兼顾 Pip 和 Conda 安装的包，且不要求系统平台相同；但需要联网重新下载所有包。
+
+```bash
+# 备份环境
+conda env export > <yml-name>.yml
+
+# 克隆已备份环境
+conda env create -f <yml-name>.yml
 ```
 
 ### Conda 离线安装包

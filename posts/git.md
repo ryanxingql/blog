@@ -71,6 +71,9 @@ git rm --cached <file>
 2. 若不再希望同步，应将其添加到 `.gitignore`。
 3. 若希望重新上传，则应重新 add + commit。
 
+## 多段 commit 信息
+
+多次 `-m` 即可：`git commit -m "change1" "change2"`
 
 ## 远程仓库
 
