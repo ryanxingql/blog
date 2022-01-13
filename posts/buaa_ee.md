@@ -23,6 +23,7 @@
 
 - [x] 15 最优化理论与算法
 - [x] 16 量子力学
+- [x] 17 矩阵理论
 
 请在 [Releases](https://github.com/RyanXingQL/Blog/releases/tag/v2) 页面下载最新版。
 

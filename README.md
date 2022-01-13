@@ -14,7 +14,7 @@
 
 ## 笔记
 
-- [北航电子信息专业课笔记](https://github.com/RyanXingQL/Blog/blob/main/posts/buaa_ee_undergraduate.md)
+- [北航电子信息专业课笔记](https://github.com/RyanXingQL/Blog/blob/main/posts/buaa_ee.md)
 
 - [常用指令](https://github.com/RyanXingQL/Blog/blob/main/posts/command.md)
 
