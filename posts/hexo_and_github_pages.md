@@ -1,4 +1,4 @@
-# Hexo and GitHub Pages
+# Hexo & GitHub Pages
 
 ## 完整流程
 

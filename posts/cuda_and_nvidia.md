@@ -1,4 +1,4 @@
-# CUDA and NVIDIA
+# CUDA & NVIDIA
 
 ## 安装或升级
 

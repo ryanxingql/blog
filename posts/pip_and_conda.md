@@ -1,4 +1,4 @@
-# Pip and Conda
+# Pip & Conda
 
 创建和管理虚拟环境，只推荐 Conda。
 
