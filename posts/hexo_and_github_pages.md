@@ -51,7 +51,7 @@
 
 首先 `node -v` 确定 `node` 找不到了。重新下载 `node.js` 的安装文件，选择 `repair` 即可。
 
-### 无法解析GitHub hostname
+### 无法解析 GitHub hostname
 
 用热点，别用校园网。
 

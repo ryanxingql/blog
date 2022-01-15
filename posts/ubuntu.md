@@ -2,32 +2,16 @@
 
 ## 系统
 
-### 简单指令
+### 特殊需求
 
 - **查各用户内存占用**：`ps --no-headers -eo user,rss | awk '{arr[$1]+=$2}; END {for (i in arr) {print i,arr[i]}}' | sort -nk2`。
 - **限制用户内存**：参见[此处](https://unix.stackexchange.com/questions/34334/how-to-create-a-user-with-limited-ram-usage)。
   - **快速占用 90% 内存测试**：`stress-ng --vm-bytes $(awk '/MemAvailable/{printf "%d\n", $2 * 0.9;}' < /proc/meminfo)k --vm-keep -m 1`。
-- **查各用户的 home 目录占用**：`sudo du -sh /home/*`。
-- **查当前目录下的文件信息（包括大小）**：`ll`。
-- **查当前文件夹占用空间**：`du -h --max-depth=1`。
-- **查各分区占用和剩余空间**：`df -hl`。
 - **查内核/操作系统**：`uname -a`。
 - **查 CPU 信息**：`cat /proc/cpuinfo`。
-- **查 IP**：`ifconfig`。
 - **关闭广播**：`mesg n`。
-
-- **安装 deb 文件**：`sudo dpkg -i <xxx.deb>`。
-- **命令行创建文件**：`echo "hello world!" > README.md`。
-- **查询软件位置**：`whereis matlab`。
-
 - **脚本开机自启动**：参见[博客](https://blog.csdn.net/weixin_42454034/article/details/106564783)。
 - **窗口置顶**：`alt + space`，选择 `always on top`。
-
-- **添加用户**：`sudo adduser <...>`。
-- **添加管理员**：`sudo vim /etc/sudoers`。
-- **改用户密码**：`passwd <user_name>`。
-  - **改为短密码**：必须先 `sudo`。
-
 - **安装微软雅黑字体**：参见[博客](https://www.cnblogs.com/feipeng8848/p/9649089.html)。
 
 ### 安装
