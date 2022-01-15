@@ -71,6 +71,28 @@ git rm --cached <file>
 2. 若不再希望同步，应将其添加到 `.gitignore`。
 3. 若希望重新上传，则应重新 add + commit。
 
+## Large File Storage
+
+[[手册]](https://git-lfs.github.com/)
+
+如果仓库中有一些大文件，之后 clone 会很慢。
+
+为了解决这个问题，github 提供了大文件存储方法。只需要指定哪些属于大文件，其余 git 操作都相同。在之后和远程仓库的互动过程中，大文件都上传到大文件仓库，并从大文件仓库中下载，速度会有提升。
+
+在 git 仓库下，指定需要大文件存储的文件格式：
+
+```bash
+git lfs track "*.zip"
+```
+
+其结果是，指定格式被记录在了 `.gitattributes`，即该文件被编辑了。因此需要记录：
+
+```bash
+git add .gitattributes
+```
+
+其他 git 操作没有区别。
+
 ## 多段 commit 信息
 
 多次 `-m` 即可：`git commit -m "change1" "change2"`
