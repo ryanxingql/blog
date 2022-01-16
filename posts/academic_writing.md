@@ -13,20 +13,20 @@
 
 信息量要充分，否则别画图表：
 
-<img src="../imgs/academic_writing_1.png" width="50%">
+<img src="../imgs/academic-writing.png" width="50%">
 
 如图，一张图表示了三个指标：质量，运行速度，参数量。
 
 布局应具有美感：
 
-<img src="../imgs/academic_writing_2.png" width="50%">
+<img src="../imgs/academic-writing-2.png" width="50%">
 
 这一点没啥好方法，只能多参考多借鉴。
 
 图文可以对应，文字更简洁严谨，图像更直观：
 
-<img src="../imgs/academic_writing_3.png" width="50%">
+<img src="../imgs/academic-writing-3.png" width="50%">
 
 图标可以简练，例如用一个圆圈表示一个卷积层，而无需画成方形：
 
-<img src="../imgs/academic_writing_4.png" width="50%">
+<img src="../imgs/academic-writing-4.png" width="50%">

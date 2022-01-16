@@ -270,7 +270,7 @@ callback=lambda x :pbar.update(1)
 原因：在 Python 中，同一时刻只有一个线程运行，约束方式即 GIL 锁。
 因此，Python 的多线程不是并行，而是并发。
 
-![python-1](../imgs/python_1.jpg)
+![python-1](../imgs/python.jpg)
 
 如图，Python 在工作一段时间（check interval）后，会主动释放 GIL，让其他线程也参与工作。
 在 Python 中，该间隔为 15 ms。

@@ -77,7 +77,7 @@
 |  | 查软件位置                     | `whereis <softwareName>` |||
 |  | 安装 deb 文件                  | `sudo dpkg -i <debName>` |||
 
-![tmux](../imgs/command_tmux.png)
+![tmux](../imgs/command-tmux.png)
 
 ## Windows
 
