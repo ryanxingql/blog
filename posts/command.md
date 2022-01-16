@@ -48,6 +48,7 @@
 | Hexo | 清空公开仓库 | `hexo clean` |||
 |  | 生成公开仓库 | `hexo g` |||
 |  | 部署公开仓库 | `hexo d` |||
+|  | 生成后部署 | `hexo g -d` |||
 | Markdown | 输入右箭头 | 输入 `&#8594;` |||
 | VSCode LaTeX | 反向搜索 | 鼠标双击 |||
 

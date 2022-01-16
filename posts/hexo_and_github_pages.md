@@ -17,9 +17,19 @@
 
 ### 安装 Hexo
 
+#### Windows
+
 首先要把 Hexo 及其依赖装好。随便找一个 [Windows + Hexo 的教程](https://www.jianshu.com/p/343934573342)，照着做就行。注意先别远程部署。
 
 然后根据[主题教程](https://github.com/PhosphorW/hexo-theme-academia)操作。
+
+#### macOS
+
+在博客所在文件夹下安装就行，虽然不能全局使用 hexo，但是安装过程简单，不会遇到各种权限问题。
+
+```bash
+npm install hexo-cli -g
+```
 
 ### 本地调整模板
 
