@@ -40,6 +40,10 @@
 | VSCode | 展示所有命令 | `shift + cmd + p` |||
 | VSCode LaTeX | 正向搜索 | `opt + cmd + j` |||
 |  | 注释/取消注释当前行 | `cmd + /` |||
+| XMind | 添加笔记 | `shift + cmd + n` |||
+|  | 添加链接 | `cmd + k` |||
+|  | 添加同级词条 | `enter` |||
+|  | 添加下一级词条 | `tab` |||
 
 ## 全平台
 
