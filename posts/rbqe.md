@@ -1,10 +1,10 @@
 # 论文速览：*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images*（ECCV 2020）
 
-[[论文]](https://arxiv.org/abs/2006.16581) [[代码]](https://github.com/RyanXingQL/RBQE)
+[[论文]](https://arxiv.org/abs/2006.16581) [[代码]](https://github.com/ryanxingql/rbqe)
 
 ## 1. 初衷
 
-在19年 [MFQEv2](https://github.com/RyanXingQL/MFQEv2.0) 的工作中，我们要针对不同失真类型的压缩视频，训练同一结构、不同参数的深度网络模型。例如，对于 HEVC 压缩的 5 种典型配置（固定 QP 为 22、27、32、37、42 编码），我们需要训练 5 个深度网络模型。
+在19年 [MFQEv2](https://github.com/ryanxingql/mfqev2.0) 的工作中，我们要针对不同失真类型的压缩视频，训练同一结构、不同参数的深度网络模型。例如，对于 HEVC 压缩的 5 种典型配置（固定 QP 为 22、27、32、37、42 编码），我们需要训练 5 个深度网络模型。
 
 这种训练思路会导致两个实际问题：
 
@@ -61,7 +61,7 @@ RBQE 的训练方法和 MSDNet 的基本是一致的。不同的是，我在训�
 
 ## 4. 质量判别
 
-在 [MFQEv2](https://github.com/RyanXingQL/MFQEv2.0) 和相关工作中，PSNR 和 SSIM 是主要的质量评价指标，因此本文也沿用了该指标（实际上，我最近也在研究感知质量指标，因为感知质量更贴合实际需求）。
+在 [MFQEv2](https://github.com/ryanxingql/mfqev2.0) 和相关工作中，PSNR 和 SSIM 是主要的质量评价指标，因此本文也沿用了该指标（实际上，我最近也在研究感知质量指标，因为感知质量更贴合实际需求）。
 
 比较困难的一点是：PSNR 是 FR IQA 指标，而 RBQE 是无参考的盲增强方法，无法获取参考图像。这就要求，我们的质量评估方法在压缩图像上的趋势，应尽可能逼近 PSNR 和 SSIM。
 

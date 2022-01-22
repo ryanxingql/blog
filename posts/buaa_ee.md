@@ -25,7 +25,7 @@
 - [x] 16 量子力学
 - [x] 17 矩阵理论
 
-请在 [Releases](https://github.com/RyanXingQL/Blog/releases/tag/v2) 页面下载最新版。
+请在 [Releases](https://github.com/ryanxingql/blog/releases/tag/v2) 页面下载最新版。
 
 ## 简介
 

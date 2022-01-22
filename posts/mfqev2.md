@@ -2,7 +2,7 @@
 
 这篇论文是 *Multi-frame quality enhancement for compressed video*（CVPR 2018）的升级版，于 2019 年 9 月被 TPAMI 接收。
 
-[[论文]](https://arxiv.org/abs/1902.09707) [[代码]](https://github.com/RyanXingQL/MFQEv2.0)
+[[论文]](https://arxiv.org/abs/1902.09707) [[代码]](https://github.com/ryanxingql/mfqev2.0)
 
 ## 1. 要点
 
@@ -154,7 +154,7 @@ MFQE 思想是有实际意义的。根据实验，简单的【相邻帧补偿】
 - 论文中提到用 raw 帧训练 MC-subnet；实际上，开源代码和论文的结果都是直接用压缩帧训练 MC-subnet 的。这样有两个优点：（1）简单；（2）个人认为效果可能更好，因为训练、测试阶段都使用压缩帧，模式匹配。关于这一点没有及时更正论文，非常抱歉。
 - MFQE 算法依赖于较为精确的运动建模（光流预测）。如果运动补偿不准确，那么总体效果可能不理想。
   - 已经有一些方法跳过了运动建模，例如使用 conv-LSTM 直接输入相邻帧（我认为有利有弊：隐式地建模运动，虽然简单，但增强性能可能下降）。
-  - 还有一些其他的 alignment 方法，例如 feature-wise 而不是 frame-wise 执行 alignment，参考本人复现的 [STDF（AAAI 2020）](https://github.com/RyanXingQL/STDF-PyTorch)工作。
+  - 还有一些其他的 alignment 方法，例如 feature-wise 而不是 frame-wise 执行 alignment，参考本人复现的 [STDF（AAAI 2020）](https://github.com/ryanxingql/stdf-pytorch)工作。
 - 我们只考虑了 PSNR 指标，因此在主观效果上表现一般。从 MFQE 以后我也在转向对感知质量的研究。
 - 在一些规律较强的编码模式，例如 CQP 模式下，建议使用简单的 QP 波动生成 PQF label。
   - 实验发现，CQP 模式下，用 PSNR 或 QP 波动定义的 PQF label 基本一致。
@@ -168,7 +168,7 @@ MFQE 思想是有实际意义的。根据实验，简单的【相邻帧补偿】
 - 小心场景切换
   - 在补偿时要注意：输入的三帧必须在同一场景下。一个视频中可能存在场景切换。可以用 SSIM 等指标检测切换。
 
-更多复现指南及开源视频数据库，请参见 [MFQEv2 代码仓库](https://github.com/RyanXingQL/MFQEv2.0)。
+更多复现指南及开源视频数据库，请参见 [MFQEv2 代码仓库](https://github.com/ryanxingql/mfqev2.0)。
 
 ## 6. 我和这篇工作
 
