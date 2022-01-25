@@ -1,16 +1,21 @@
 # 思维导图
 
+- [思维导图](#思维导图)
+  - [教程](#教程)
+  - [XMind](#xmind)
+  - [借助思维导图快速掌握一项技能](#借助思维导图快速掌握一项技能)
+
 整理的工作文档越来越多，不仅文档内部逻辑不清晰，而且文档之间的关系也很模糊。
 
 此时我发现思维导图是一个很好的整理工具，能让我有目的地规整知识点或工作记录，同时在日后快速检索到所需信息。
 
 ## 教程
 
-[[XMIND 官方]](https://www.xmind.net/user-guide/xmind/)
+[[XMind 官方]](https://www.xmind.net/user-guide/xmind/)
 
-[[bilibili 介绍]](https://www.bilibili.com/video/BV1tL4y1W7Ev?p=1)
+[[Bilibili 介绍]](https://www.bilibili.com/video/BV1tL4y1W7Ev?p=1)
 
-## XMIND
+## XMind
 
 免费版刚好够用。
 

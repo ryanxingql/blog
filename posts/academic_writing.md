@@ -1,5 +1,9 @@
 # 学术写作
 
+- [学术写作](#学术写作)
+  - [范文参考](#范文参考)
+  - [图表鉴赏](#图表鉴赏)
+
 ## 范文参考
 
 [Depth-Aware Video Frame Interpolation](https://openaccess.thecvf.com/content_CVPR_2019/papers/Bao_Depth-Aware_Video_Frame_Interpolation_CVPR_2019_paper.pdf)

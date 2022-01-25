@@ -1,5 +1,13 @@
 # 论文速览：*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images*（ECCV 2020）
 
+- [论文速览：*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images*（ECCV 2020）](#论文速览early-exit-or-not-resource-efficient-blind-quality-enhancement-for-compressed-imageseccv-2020)
+  - [1. 初衷](#1-初衷)
+  - [2. 思路演化](#2-思路演化)
+  - [3. 网络设计和训练方法](#3-网络设计和训练方法)
+  - [4. 质量判别](#4-质量判别)
+  - [5. 实验](#5-实验)
+  - [6. 我和这篇工作](#6-我和这篇工作)
+
 [[论文]](https://arxiv.org/abs/2006.16581) [[代码]](https://github.com/ryanxingql/rbqe)
 
 ## 1. 初衷

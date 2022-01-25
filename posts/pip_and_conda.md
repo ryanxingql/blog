@@ -1,5 +1,26 @@
 # Pip & Conda
 
+- [Pip & Conda](#pip--conda)
+  - [Pip](#pip)
+    - [Pip 添加国内源](#pip-添加国内源)
+    - [Pip 离线安装包](#pip-离线安装包)
+    - [Pip 调试](#pip-调试)
+      - [Pip 找不到安装包](#pip-找不到安装包)
+      - [Pip `timeout`](#pip-timeout)
+  - [Conda](#conda)
+    - [安装 Anaconda](#安装-anaconda)
+    - [Conda 简单指令](#conda-简单指令)
+    - [Conda 新建或克隆环境](#conda-新建或克隆环境)
+    - [Conda 环境迁移](#conda-环境迁移)
+    - [Conda 离线安装包](#conda-离线安装包)
+    - [Conda 添加国内源](#conda-添加国内源)
+    - [Conda 调试](#conda-调试)
+      - [Conda 找不到安装包](#conda-找不到安装包)
+      - [Conda `solving`](#conda-solving)
+      - [`CondaVerificationError`](#condaverificationerror)
+      - [Conda 不识别 ASCII 码](#conda-不识别-ascii-码)
+      - [Conda `timeout`](#conda-timeout)
+
 创建和管理虚拟环境，只推荐 Conda。
 
 至于安装包的区别，参见[知乎](https://www.zhihu.com/question/395145313/answer/1230725052)。总的而言，Conda 可安装范围更广，对兼容性更严格；Pip 更快。

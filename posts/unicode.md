@@ -1,5 +1,8 @@
 # Unicode
 
+- [Unicode](#unicode)
+  - [Box Drawing](#box-drawing)
+
 最常用的是 UTF-8，是一种针对 Unicode 的可变长度字符编码。
 
 合集[在此](https://unicode-table.com/en/sets/)。

@@ -1,6 +1,11 @@
 # PyTorch
 
-多看手册，少参考博客和书籍。
+- [PyTorch](#pytorch)
+  - [安装](#安装)
+  - [使用](#使用)
+    - [`view` vs. `reshape`](#view-vs-reshape)
+    - [维度](#维度)
+    - [多卡](#多卡)
 
 ## 安装
 
@@ -24,9 +29,9 @@ conda activate pt
 
 ## 使用
 
-### `view`, `reshape`, `contiguous`, `clone()` and `detach()`
+### `view` vs. `reshape`
 
-[[手册]](https://pytorch.org/docs/master/tensor_view.html#tensor-view-doc)
+[[doc]](https://pytorch.org/docs/master/tensor_view.html#tensor-view-doc)
 
 - `view` 会生成一个形状不同、底层数据共享（危险）的 tensor。这么做也是为了节约 copy 的成本。
 - `view` 可能使得一个 contiguous 的 tensor 变成 non-coutiguous。

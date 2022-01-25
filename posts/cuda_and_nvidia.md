@@ -1,5 +1,14 @@
 # CUDA & NVIDIA
 
+- [CUDA & NVIDIA](#cuda--nvidia)
+  - [安装或升级](#安装或升级)
+    - [安装 NVIDIA 驱动](#安装-nvidia-驱动)
+      - [禁用 nouveau 驱动](#禁用-nouveau-驱动)
+      - [安装驱动](#安装驱动)
+    - [安装 CUDA](#安装-cuda)
+  - [调试](#调试)
+    - [NVIDIA 无法通信](#nvidia-无法通信)
+
 ## 安装或升级
 
 `nvidia-smi` 查看显卡信息，`nvcc -V` 查看 CUDA 版本。

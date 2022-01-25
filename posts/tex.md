@@ -1,5 +1,12 @@
 # TeX
 
+- [TeX](#tex)
+  - [配置](#配置)
+    - [TeX Live plus VSCode LaTeX workshop](#tex-live-plus-vscode-latex-workshop)
+  - [使用](#使用)
+    - [Image placeholder](#image-placeholder)
+    - [Nonbreaking space](#nonbreaking-space)
+
 ## 配置
 
 软件：Overleaf（远程协作）+ VSCode LaTeX workshop（本地编辑）+ TeX Live（本地编译）。
@@ -11,7 +18,7 @@
 
 模板：Overleaf 提供的模板，特别是其中的官方模板，如 IEEE 官方模板。
 
-### TeX Live + VSCode LaTeX workshop
+### TeX Live plus VSCode LaTeX workshop
 
 参见 [LaTeX workshop 指南](https://zhuanlan.zhihu.com/p/166523064)，安装并配置。
 

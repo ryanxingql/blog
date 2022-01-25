@@ -1,5 +1,27 @@
 # Ubuntu
 
+- [Ubuntu](#ubuntu)
+  - [系统](#系统)
+    - [特殊需求](#特殊需求)
+    - [安装](#安装)
+    - [开机自动挂载硬盘](#开机自动挂载硬盘)
+    - [挂载/卸载硬盘](#挂载卸载硬盘)
+    - [切换工作区](#切换工作区)
+    - [软件更新](#软件更新)
+    - [软链接](#软链接)
+    - [Unity plus LightDM](#unity-plus-lightdm)
+  - [软件](#软件)
+    - [7Z](#7z)
+    - [Sunlogin](#sunlogin)
+    - [FRP plus supervisor 进程维持 plus supervisor 开机自启](#frp-plus-supervisor-进程维持-plus-supervisor-开机自启)
+    - [q2ray](#q2ray)
+    - [RAR](#rar)
+    - [Shadowsocks](#shadowsocks)
+    - [TAR.GZ](#targz)
+    - [ZIP](#zip)
+    - [输入法](#输入法)
+    - [视频播放器](#视频播放器)
+
 ## 系统
 
 ### 特殊需求
@@ -108,7 +130,7 @@ ln -s <real_path> <fake_path>  # 注意 fake_path 末尾不要带 /；real_path 
 rm -rf <fake_path>  # 注意末尾不带 /；否则文件夹没删掉，而是删掉了内部文件
 ```
 
-### Unity + LightDM
+### Unity plus LightDM
 
 [[安装]](https://www.linuxbabe.com/ubuntu/install-unity-desktop-environment-ubuntu-20-04)
 
@@ -124,7 +146,7 @@ Ubuntu 支持不好，不要用。
 
 比 AnyDesk 好用多了，还免费。参见[安装指南](https://www.jianshu.com/p/289001a00cb1)。
 
-### FRP + supervisor 进程维持 + supervisor 开机自启
+### FRP plus supervisor 进程维持 plus supervisor 开机自启
 
 参见[博客 #1](https://cloud.tencent.com/developer/article/1694829) 和[博客 #2](https://blog.csdn.net/yuwu00/article/details/108197283)。
 

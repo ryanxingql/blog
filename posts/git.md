@@ -1,216 +1,183 @@
 # Git
 
-[[书籍]](https://git-scm.com/book/en/v2)
+- [Git](#git)
+  - [权威](#权威)
+  - [追踪和暂存](#追踪和暂存)
+    - [不追踪指定文件](#不追踪指定文件)
+    - [已追踪，忽略后续修改](#已追踪忽略后续修改)
+    - [删除文件](#删除文件)
+    - [一键 add 和 commit](#一键-add-和-commit)
+    - [commit 多条信息](#commit-多条信息)
+    - [清空 commit 记录](#清空-commit-记录)
+  - [远程仓库](#远程仓库)
+    - [生成 SSH 密钥](#生成-ssh-密钥)
+    - [初始化 git 身份](#初始化-git-身份)
+    - [指定远程仓库并推送](#指定远程仓库并推送)
+    - [shallow clone](#shallow-clone)
+    - [大文件存储](#大文件存储)
+  - [submodule](#submodule)
+    - [添加子仓库](#添加子仓库)
+    - [含子仓库的 clone](#含子仓库的-clone)
+    - [删除子仓库](#删除子仓库)
 
-[[手册]](https://git-scm.com/docs)
+## 权威
 
-## 一键 add 和 commit
+[[手册 1]](https://git-scm.com/docs)
 
-如果文件没有 tracked，则必须先 add。
+[[手册 2]](https://git.wiki.kernel.org/index.php/Main_Page)
 
-如果文件已经处于 tracked 状态，那么 `git commit -am` 可以自动将没有 add 的变化 stage，然后一起 commit。
+## 追踪和暂存
 
-## 清空 commit 记录
+### 不追踪指定文件
 
-```bash
-git checkout --orphan latest_branch
+将文件记录在 `.gitignore` 里即可。
+注意，如果文件已经被追踪，那么该操作无效。
 
-git add -A
+注意文件格式：
 
-git commit -am "Init"
-
-git branch -D main
-
-git branch -m main
-
-git push -f origin main
-```
-
-参考 [Stack Overflow](https://stackoverflow.com/questions/13716658/how-to-delete-all-commit-history-in-github)。
-
-## 忽略本地文件变化
-
-如果不希望 track，那么要在 add 前，将文件记录在 `.gitignore` 里。
-
-```txt
-logs/  # 所有 logs/ 文件夹，包括子文件夹中的 logs/ 文件夹
-/logs/  # 当前路径下的 logs/ 文件夹，不包括子文件夹中的
-```
+- `logs/  # 所有 logs/ 文件夹，包括子文件夹中的 logs/ 文件夹`
+- `/logs/  # 当前路径下的 logs/ 文件夹，不包括子文件夹中的`
 
 如果一个项目中包含多个子项目，每个子项目的 ignore 需求不同，那么可以在每个子项目文件夹下单独放置 `.gitignore` 文件。各子文件夹的 `.gitignore` 互不影响。
 
-## 上传模板文件，忽略本地修改
+### [已追踪，忽略后续修改](http://git-scm.com/docs/git-update-index/)
 
-如果希望 git 保存一个模板文件，然后忽略该文件的后续修改（例如上传一个配置文件，其他人在本地进行修改，而不通过 git 追踪），则需要执行[以下操作](http://git-scm.com/docs/git-update-index/)：
+如果希望 git 保存一个模板文件，然后忽略该文件的后续修改（例如上传一个配置文件，其他人在本地进行修改，而不通过 git 追踪），则需要执行以下操作：
 
 ```bash
 git update-index --assume-unchanged [<file> ...]
 ```
 
-此时，若远端仓库的该文件发生了修改，那么 pull 时会发生错误，提示冲突。解决冲突的方法有两个：（1）用版本库的文件替代本地文件，即 `git checkout -- <file>`；（2）恢复追踪，见下面。
+此时，若远端仓库的该文件发生了修改，那么 pull 时会发生错误，提示冲突。解决冲突的方法有两个：
 
-快速找出所有 git 冻结文件：`git ls-files -v | grep "^[a-z]"`。
+1. 用版本库的文件替代本地文件：`git checkout -- <file>`
+2. 恢复追踪：
+   1. 快速找出所有 git 冻结文件：`git ls-files -v | grep "^[a-z]"`
+   2. `git update-index --no-assume-unchanged [<file> ...]`
 
-如果希望恢复追踪：
+### 删除文件
 
-```bash
-git update-index --no-assume-unchanged [<file> ...]
-```
+- `git rm <file>`：把文件从 working tree 和 index 中同时删除。即，文件从本地消失，且 git 不再追踪该文件。该删除操作会被 git 自动记录。
+- 直接删除：只从 working tree 中删除了，文件还在 index 里。为了记录这一个删除操作，必须手动 add，最终效果和 `git rm <file>` 一样。
+- `git rm --cached <file>`：只从 index 中删除，在 working tree 中的文件不受影响。即 git 停止追踪该文件，且本地文件也没有被删除。一旦同步到远端，远端仓库最新版本中该文件将消失。如果需要永远停止追踪，需要手动将文件加入 `.gitignore`。
 
-## 执行 git 删除而不删除本地文件
-
-```bash
-git rm --cached <file>
-```
-
-类似于告诉 git 执行 delete 任务；一旦同步到远端，远端仓库的该文件将消失。
-
-建议操作次序：
-
-1. 执行该操作。
-2. 若不再希望同步，应将其添加到 `.gitignore`。
-3. 若希望重新上传，则应重新 add + commit。
-
-## Large File Storage
-
-[[手册]](https://git-lfs.github.com/)
-
-如果仓库中有一些大文件，之后 clone 会很慢。
-
-为了解决这个问题，github 提供了大文件存储方法。只需要指定哪些属于大文件，其余 git 操作都相同。在之后和远程仓库的互动过程中，大文件都上传到大文件仓库，并从大文件仓库中下载，速度会有提升。
-
-在 git 仓库下，指定需要大文件存储的文件格式：
+### 一键 add 和 commit
 
 ```bash
-git lfs track "*.zip"
+git commit -am 'update'
 ```
 
-其结果是，指定格式被记录在了 `.gitattributes`，即该文件被编辑了。因此需要记录：
+将所有文件的修改（包括删除）commit；但对尚未 track 的文件无影响。
+
+`-a`：all。
+
+### commit 多条信息
 
 ```bash
-git add .gitattributes
+git commit -m msg1 -m msg2
 ```
 
-其他 git 操作没有区别。
+多条信息会被 concat 为一条信息、多个段落。
 
-## 多段 commit 信息
+### [清空 commit 记录](https://stackoverflow.com/questions/13716658/how-to-delete-all-commit-history-in-github)
 
-多次 `-m` 即可：`git commit -m "change1" "change2"`
+以 main 主分支为例：
+
+```bash
+git checkout --orphan latest_branch
+git add -A
+git commit -am "Init"
+git branch -D main
+git branch -m main
+git push -f origin main
+```
+
+慎用。除非 commit 很糟糕，例如包含了大文件，或有敏感信息。
 
 ## 远程仓库
 
-### SSH 基础
-
-#### 生成密钥
+### 生成 SSH 密钥
 
 ```bash
 ssh-keygen -t rsa -C <email>
 ```
 
-#### 免密登陆
+把公钥告知 GitHub，方便后续同步。
 
-如果经常访问一个地址，建议彼此之间保存公私钥。
-
-首先在本地编辑 `C:\Users\<usr_name>\.ssh\config` 或 `~/.ssh/config`（没有则新建）：
-
-```jason
-Host <host_name>
-  HostName <000.000.00.000>
-  User <xx>
-IdentityFile C:\Users\<usr_name>\.ssh\id_rsa
-```
-
-最后一行指定了本地的私钥位置。会自动发送给服务器，和以下的公钥合作，以识别身份。
-
-然后将本地公钥 `id_rsa.pub` 传到服务器的 `~/.ssh/` 路径下：
-
-```bash
-scp id_rsa.pub <host_name>:~/.ssh/hello.pub
-```
-
-一定要改名！不要覆盖了服务器的 `id_ras.pub`！
-
-在服务器 `~/.ssh/` 下执行
-
-```bash
-cat hello.pub >> authorized_keys
-```
-
-即将公钥加入可信列表。
-
-今后，直接 `ssh <host_name>`，就可以免密登录啦！
-
-### 初始化身份
+### 初始化 git 身份
 
 ```bash
 git config --global user.name <usr_name>
 git config --global user.email <email>
 ```
 
-### 仓库初始化，推送至远端
+### 指定远程仓库并推送
 
 ```bash
-echo > README.md
-git init
-git add README.md
-git commit -m "Init"
-git remote add origin <git_url>
-git push -u origin master
+git remote add origin <git-url>
+git push -u origin main
 ```
 
-### 只克隆最新 commit
+- 将 `<git-url>` 命名为 origin。还可以是别的代号，随便起。
+- 将 upstream 设置为刚命名的 origin。今后 pull 或 push 时，默认上游就是 origin，即 `-u` 参数可以省略。
+- 推送至 origin 的 main 分支。可以是其他 git 仓库或其他分支。
+
+### shallow clone
 
 ```bash
-git clone <url> --depth=1
+git clone --depth=1 <git-url> [<dir>]
 ```
 
-### Submodule
+- 只 clone 最新版本。
+- 默认只 clone 主分支，即 `--single-branch`。
+- 如果有子仓库，同时也希望浅拷贝，则需指定 `--shallow-submodules`。
+- 可以拷贝到一个不同命名的文件夹，用 `dir` 指定。
 
-可以调用一个仓库，作为当前仓库的一个子模块，使其在路径下可见。添加方式：
+### [大文件存储](https://git-lfs.github.com/)
+
+Large File Storage
+
+1. `git lfs track "*.zip"`
+2. `git add .gitattributes`
+
+第一步：在 git 仓库下指定需要大文件存储的文件格式。
+其结果是，指定格式被记录在了 `.gitattributes`，即该文件被编辑了。
+因此需要第二步，把 `.gitattributes` 用 git 追踪。
+其他 git 操作没有区别。
+
+如果仓库中有一些大文件，那么 git 需要存储大文件的多个历史版本，导致 clone 很慢。
+
+为了解决这个问题，github 提供了大文件存储方法。只需要指定哪些属于大文件，其余 git 操作都相同。在之后和远程仓库的互动过程中，大文件都上传到独立的大文件仓库，并从大文件仓库中下载，速度会有一定提升。
+
+## [submodule](https://git-scm.com/docs/git-submodule)
+
+### 添加子仓库
 
 ```bash
-# clone PythonUtils，存为utils
-git submodule add git@github.com:RyanXingQL/PythonUtils.git utils/
+git submodule add <git-url> [<dir>]
 ```
 
-子模块是独立更新的；更新子模块需要进入子模块路径手动更新。
+在某个 git 仓库下，执行该操作，使另一个 git 仓库存放为 `<dir>` 文件夹。
 
-- 当前库只记录子模块的当前版本，不会自动更新。
-- 假设有两个本地仓库对应同一个远程仓库；如果不手动更新子模块，会出现两个本地仓库来回扯皮版本号的情况。
+子模块是独立的 git 仓库。主仓库只追踪子仓库的版本号，不追踪内容。
 
-拉取含子模块的仓库时，必须增加循环参数，否则子模块是空的：
+### 含子仓库的 clone
+
+在 clone 时，加入循环参数：
 
 ```bash
-git clone --recursive <git_url>  # 不能简化为 -r
-
-git pull --recurse-submodules
+git clone --recurse-submodules <git-url>
 ```
 
-或正常拉取后（此时子模块是空的），初始化、更新子模块：
+如果 clone 没有执行该操作，子仓库就是一个无法访问的空文件。此时可以执行以下操作，获取文件：
 
 ```bash
-git submodule update --init --recursive
+git submodule update --init --recursive <pathspec>
 ```
 
-上一步拉取以后，拉取下来的子模块默认与原仓库是分离的（显示头指针分离于 xxx，具体表现为与原子模块无联系，无法正常上传和下拉）。如果想建立联系：
+### [删除子仓库](https://stackoverflow.com/a/1260982)
 
-```bash
-git submodule foreach -q --recursive 'git checkout $(git config -f $toplevel/.gitmodules submodule.$name.branch || echo main)'
-```
+有两部分：
 
-注意这里子模块的默认主分支为 `main`。此时，修改了子模块以后，也能往原仓库对比、提交。
-
-[[参考链接]](https://git-scm.com/book/zh/v2/Git-工具-子模块)
-
-删除子模块：
-
-```bash
-# Remove the submodule entry from .git/config
-git submodule deinit -f path/to/submodule
-
-# Remove the submodule directory from the superproject's .git/modules directory
-rm -rf .git/modules/path/to/submodule
-
-# Remove the entry in .gitmodules and remove the submodule directory located at path/to/submodule
-git rm -f path/to/submodule
-```
+1. 和主仓库解耦。
+2. 删除子仓库内容（危险）。

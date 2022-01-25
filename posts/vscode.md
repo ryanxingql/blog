@@ -1,5 +1,11 @@
 # VSCode
 
+- [VSCode](#vscode)
+  - [基础](#基础)
+  - [导出含中文的 Jupyter Notebook 为 PDF](#导出含中文的-jupyter-notebook-为-pdf)
+  - [插件](#插件)
+  - [调试](#调试)
+
 ## 基础
 
 - **折叠**：若展开文件列表过长，可使用折叠恢复。
