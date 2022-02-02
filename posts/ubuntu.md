@@ -11,16 +11,18 @@
     - [软链接](#软链接)
     - [Unity plus LightDM](#unity-plus-lightdm)
   - [软件](#软件)
-    - [7Z](#7z)
+    - [TAR](#tar)
+    - [压缩](#压缩)
+      - [TAR.GZ](#targz)
+      - [ZIP](#zip)
+      - [PIGZ](#pigz)
+      - [RAR](#rar)
+      - [7Z](#7z)
     - [Sunlogin](#sunlogin)
     - [FRP plus supervisor 进程维持 plus supervisor 开机自启](#frp-plus-supervisor-进程维持-plus-supervisor-开机自启)
-    - [q2ray](#q2ray)
-    - [RAR](#rar)
-    - [Shadowsocks](#shadowsocks)
-    - [TAR.GZ](#targz)
-    - [ZIP](#zip)
     - [输入法](#输入法)
     - [视频播放器](#视频播放器)
+    - [科学上网](#科学上网)
 
 ## 系统
 
@@ -138,75 +140,57 @@ rm -rf <fake_path>  # 注意末尾不带 /；否则文件夹没删掉，而是�
 
 ## 软件
 
-### 7Z
+### TAR
 
-Ubuntu 支持不好，不要用。
-
-### Sunlogin
-
-比 AnyDesk 好用多了，还免费。参见[安装指南](https://www.jianshu.com/p/289001a00cb1)。
-
-### FRP plus supervisor 进程维持 plus supervisor 开机自启
-
-参见[博客 #1](https://cloud.tencent.com/developer/article/1694829) 和[博客 #2](https://blog.csdn.net/yuwu00/article/details/108197283)。
-
-配置可以写在 `frpc.ini` 里，此时 command 比较简单：`./ frpc -c xxx/frpc.ini`。
-
-若提示无此命令，`sudo chmod +x frpc`，然后再执行：`./ frpc -c xxx/frpc.ini`。
-
-编辑完配置文件后，应按博客 2 重启 supervisor。
-
-### q2ray
-
-- 用 Snap 安装：`sudo snap install qv2ray`
-- 手动下载 v2ray 内核，转移到 `~/snap/qv2ray/2729/`，按要求解压为 `vcore/`。检查核心设置，通过。注意不要 `sudo`！
-- 在操作界面中将服务器导入。
-- Firefox 中设为系统 proxy 即可。
-- Chrome 要下载 [SWITCHYOMEGA](https://github.com/FelisCatus/SwitchyOmega/releases)，记得改端口号。
-- 系统 network 设置貌似不需要动。如果你选择 q2ray 的系统代理 &#8594; 禁用，network proxy 会自动 off；反之，会自动 manual，甚至端口号都设置好了。
-
-参考[教程](https://medium.com/@eleveninstrangerthings/%E5%9C%A8ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85%E5%9B%BE%E5%BD%A2%E5%8C%96v2ray%E5%AE%A2%E6%88%B7%E7%AB%AFqv2ray-d0f690b7c519)。
-
-### RAR
+[[博客]](https://zhuanlan.zhihu.com/p/407720976)
 
 ```bash
-sudo apt install rar unrar
-unrar x rar_name.rar
+# 将testfile1、2打包到archive.tar
+tar -cvf archive.tar testfile1 testfile2
+
+# 查看archive.tar内容
+tar -tvf archive.tar
+
+# 提取archive.tar中的文件到当前路径
+tar -xvf archive.tar
+
+# 只提取testfile1
+tar -xvf archive.tar testfile1
+
+# 保留testfile1所在的目录结构
+tar -xvf archive.tar dir1/testfile1
+
+# 提取archive.tar中文件至指定路径testpath下（必须存在）
+tar -xvf archive.tar -C testpath
 ```
 
-### Shadowsocks
+- `-c`：create，创建打包文件。
+- `-v`：verbose，显示进度。
+- `-f`：file，指定存档文件，名称为其后第一个参数。因此，不要随意调换参数顺序。例如 `-cfv` 会创建一个名为 `v` 的存档文件。
+- `-t`：list，列举。
+- `-x`：extract，提取打包文件。
+- `-C`：directory，指定路径。
 
-暂时失效。
+### 压缩
 
-- 先买了一个 Vultr 服务器：参考[这里](https://www.vultrblog.com/vultr-ss.html)。
-- 其中一键 SS-Server 的脚本参考[这里](https://github.com/dlxg/shadowsocks_install)。
-- Ubuntu 上安装 sslocal，写 JSON，命令行即可开启：参考这篇[教程](http://codetd.com/article/1790848)。
-- 设置里修改 network 协议和端口。
-- 注意这是全局的，未考虑分流。
+#### TAR.GZ
 
-常用指令（可能要 `sudo`，否则会报错）：
+实际上是先用 TAR 打包，然后用 GZIP 压缩。由于 TAR 和 GZIP 组合太常用了，因此 TAR 直接加入 GZIP 压缩参数。
 
 ```bash
-sudo sslocal -c ss.json -d start  # 后端启动，无任何信息。
-sudo sslocal -c ss.json -d stop
-sudo sslocal -c ss.json  # 前端启动，有日志
-sslocal -c xxx.xxx.xxx.xxx -p 2020 -k xxxx -b 127.0.0.1 -l 10808
+# 压缩testfolder至archive.tar.gz
+tar -zcvf archive.tar.gz testfolder
+
+# 解压archive.tar.gz
+tar -zxvf archive.tar.gz
+
+# 解压archive.tar.gz至指定路径testpath下（必须存在）
+tar -zxvf archive.tar.gz -C testpath
 ```
 
-### TAR.GZ
+打包文件的后缀可以是 `tar.gz` 或 `tgz`。
 
-Linux 常用，压缩率比 ZIP 高。
-
-```bash
-# 压缩
-tar -zcvf archive_name.tar.gz directory_to_compress
-
-# 解压
-tar -zxvf archive_name.tar.gz
-tar -zxvf archive_name.tar.gz -C /tmp/extract_here/
-```
-
-### ZIP
+#### ZIP
 
 各平台兼容，但压缩率不高。
 
@@ -250,6 +234,51 @@ zip -r -s 10m archive.zip directory/
 zip -s 0 archive.zip --out unsplit.zip && unzip unsplit.zip
 ```
 
+#### [PIGZ](https://zlib.net/pigz/pigz.pdf)
+
+有时候文件太多太大，GZ 和 ZIP 单线程太慢了。PIGZ 可以多线程。
+
+压缩文件夹：
+
+```bash
+tar --use-compress-program="pigz -k [-p 20] " -cvf out.tar.gz dir1 dir2
+```
+
+- 先用 TAR 将若干文件夹打包为一个 TAR 文件，然后用 PIGZ 压缩为 GZ。这是因为 PIGZ 只能打包文件，不能打包文件夹，因此要用 TAR 先打包成文件。
+- `-k`：保留源文件。
+- `-p`：指定进程数。默认使用所有进程。
+
+解压和 TAR.GZ 格式解压一样：
+
+```bash
+tar -zxvf output.tar.gz
+```
+
+#### RAR
+
+```bash
+sudo apt install rar unrar
+unrar x rar_name.rar
+```
+
+#### 7Z
+
+Ubuntu 支持不好，不建议用。
+
+### Sunlogin
+
+比 AnyDesk 好用多了，还免费。参见[安装指南](https://www.jianshu.com/p/289001a00cb1)。
+
+### FRP plus supervisor 进程维持 plus supervisor 开机自启
+
+参见博客：[[1]](https://cloud.tencent.com/developer/article/1694829) 和 [[2]](https://blog.csdn.net/yuwu00/article/details/108197283)。
+
+配置可以写在 `frpc.ini` 里，此时 command 比较简单：`./ frpc -c xxx/frpc.ini`。
+
+若提示无此命令，`sudo chmod +x frpc`，然后再执行：`./ frpc -c xxx/frpc.ini`。
+
+编辑完配置文件后，应按博客 2 重启 supervisor。
+
 ### 输入法
 
 推荐搜狗输入法；因为有人维护！
@@ -265,3 +294,11 @@ zip -s 0 archive.zip --out unsplit.zip && unzip unsplit.zip
 - 一般格式推荐 VLC。
 - YUV 格式推荐 Vooya。
   - 备选方案：GitHub 下载 YUView.AppImage，赋权限后可以直接使用。
+
+### 科学上网
+
+找个靠谱的机场，会有资源和教程供参考。
+
+Ubuntu 上推荐使用 q2ray 软件。
+
+在使用过程中搞清楚代理、端口、规则等概念，就会用了。
