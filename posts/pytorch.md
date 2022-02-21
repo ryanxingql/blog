@@ -5,6 +5,8 @@
   - [view 方法 vs. reshape 方法](#view-方法-vs-reshape-方法)
   - [理解维度](#理解维度)
   - [多卡](#多卡)
+  - [Dataloader](#dataloader)
+    - [Pre-fetcher](#pre-fetcher)
   - [Reproducibility](#reproducibility)
     - [如何控制](#如何控制)
       - [种子](#种子)
@@ -12,7 +14,7 @@
       - [PyTorch 随机算法](#pytorch-随机算法)
       - [CUDA 算子](#cuda-算子)
       - [CUDA RNN 和 LSTM](#cuda-rnn-和-lstm)
-      - [Dataloader](#dataloader)
+      - [Dataloader](#dataloader-1)
 
 ## 安装
 
@@ -79,6 +81,14 @@ tensor([[-0.0163],
 - [官方 DDP 教程](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html)
 - [知乎](https://zhuanlan.zhihu.com/p/178402798)
 - [知乎](https://zhuanlan.zhihu.com/p/76638962)
+
+## Dataloader
+
+### Pre-fetcher
+
+根据[讨论](https://discuss.pytorch.org/t/how-to-prefetch-data-when-processing-with-gpu/548/45)，当 worker 数目大于 0 时，不需要 prefetch；因为默认的机制是，会有多个 dataloder 副本。
+
+根据[讨论](https://discuss.pytorch.org/t/how-to-prefetch-data-when-processing-with-gpu/548/19)，当 CPU 空闲时，不建议使用 CUDA。
 
 ## [Reproducibility](https://pytorch.org/docs/stable/notes/randomness.html)
 

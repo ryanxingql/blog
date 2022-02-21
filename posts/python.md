@@ -24,6 +24,15 @@
     - [读写](#读写)
     - [`random`](#random)
     - [`reshape` vs. `resize`](#reshape-vs-resize)
+  - [NVIDIA DALI](#nvidia-dali)
+    - [教程](#教程)
+    - [`pytorch.DALIGenericIterator`](#pytorchdaligenericiterator)
+    - [Pipeline](#pipeline)
+    - [`fn.readers.video`](#fnreadersvideo)
+      - [对输入视频的编码器有要求](#对输入视频的编码器有要求)
+      - [多卡分工](#多卡分工)
+      - [Pair data loading 和 transform 解决方案](#pair-data-loading-和-transform-解决方案)
+    - [External](#external)
   - [Open](#open)
   - [Pathlib](#pathlib)
     - [路径对象](#路径对象)
@@ -356,6 +365,105 @@ np.fromfile(file, dtype=float, count=-1, sep='', offset=0)
 `np.resize()` 会返回一个新 array（数据不共享），而 `ndarray.resize()` 是 in-place 操作。
 
 `b = np.reshape(a, newshape)` 返回的是一个形状不同、但指向相同数据（危险）的数组。`reshape` 也有 in-place 操作。
+
+## NVIDIA DALI
+
+优点：速度是 PyTorch 原生 dataloader 的两倍。
+
+缺点：
+
+1. 硬件解码有损。
+2. 编码要在 YCbCr 上操作，转换为 RGB 有损。
+3. 文档不完善，代码较复杂；如果数据时间占训练时间比例不大，则收益较小。
+
+### 教程
+
+- [[安装]](https://developer.nvidia.com/dali-download-page)
+- [[Get started]](https://docs.nvidia.com/deeplearning/dali/user-guide/docs/examples/getting_started.html)
+- [[Video SR]](https://github.com/NVIDIA/DALI/tree/main/docs/examples/use_cases/video_superres)
+
+### `pytorch.DALIGenericIterator`
+
+在 DALILoader 类的 `init` 中，只需要 build 一次 pipeline。
+
+每个进程会单独跑一个 train，因此会单独调用一次 `dali_loader` 的创建过程。
+
+因为这个 `init` 会被每个进程分别调用一次，因此 build 也是分开的。
+
+`last_batch_policy` 要设为 drop 或 fill；partial 会导致错误，因为不同 sharding 的样本数可能不同，导致最后有的 dataloader 可能没有输出数据，最终导致训练 error。
+
+默认是 `["data", "label"]`，但咱们没有 label，因此指定为`["data"]`。
+
+`auto_reset`：每次 epoch 迭代完，自动而不需要手动恢复 iterator。
+
+在 pipeline 里就是随机取视频，因此不需要 shuffle 这个 iterator。
+
+### Pipeline
+
+有些参数是装饰器的参数，不会在自定义函数的参数中显示。
+
+`num_threads` 设为 batch size / gpu。
+
+看下 htop，设置了多少线程，应该有几个线程（乘以卡数）。
+
+`device_id` 就是 rank，每个进程调用的 loader 是相互独立的。
+
+`epoch_size`：不考虑 overlapping 的 sequence。建议不要使用；像 BasicVSR 一样，根据 iter 总数需求计算 epoch。
+
+Debug：没考虑 sharding。要自行除以 sharding 数目。
+
+### [`fn.readers.video`](https://docs.nvidia.com/deeplearning/dali/user-guide/docs/supported_ops.html?highlight=readers%20video#nvidia.dali.fn.readers.video)
+
+> Loads and decodes video files using FFmpeg and NVDECODE, which is the hardware-accelerated video decoding feature in the NVIDIA(R) GPU.
+
+应该借助了硬件解码。
+
+用 `file_list`，可以指定视频名、起始帧和终止帧；和 `filenames` 矛盾。
+
+[[参考]](https://docs.nvidia.com/deeplearning/dali/user-guide/docs/examples/sequence_processing/video/video_file_list_outputs.html)
+
+此时输出是 images 和 labels！
+如果用 filenames，则输出 images。
+
+要配合 `file_list_frame_num` 使用。如果设为 true，即 list 中标的是帧数；如果设为 false，即标的是 timestamp。
+
+`sequence_length`：由于 gt 和 lq 交错的设计，要设为真实需求的 2 倍。
+
+`random_shuffle`：应该是 shuffle 子序列。
+
+`image_type`：可以输出 YCbCr 或 RGB。
+
+`normalized`：文档没说怎么做的。实验证实是除以 255。
+
+`pad_last_batch`：我关掉了。文档没看懂。
+
+> If the number of batches differs across shards, this option can cause an entire batch of repeated samples to be added to the dataset.
+
+#### 对输入视频的编码器有要求
+
+如果要从 PNG 转为 MP4，必须指定输出视频编码器为 MPEG。H264 和 H265 都不行。
+
+#### 多卡分工
+
+- [[数据集 sharding]](https://docs.nvidia.com/deeplearning/dali/user-guide/docs/advanced_topics_sharding.html)
+
+- [[Sharding demo]](https://github.com/NVIDIA/DALI/blob/2d24052084739726c2775fb27113b2297ef964b1/docs/examples/use_cases/pytorch/single_stage_detector/src/coco_pipeline.py)
+
+- [[每个进程单独创建 pipeline]](https://github.com/NVIDIA/DALI/issues/2521)
+
+#### Pair data loading 和 transform 解决方案
+
+同一视频的 hq 和 lq 要逐帧穿插合并，否则在 `fn.readers.video` 读时不好控制读取哪一帧。
+
+如果穿插合并，那么原本读 30 帧，就指定读 60 帧即可。
+
+但要注意开始帧必须是 gt 帧。
+
+Transform 函数，例如 `fn.crop` 和 `fn.flip`，都支持对一批数据执行相同操作。但 `rotate` 不支持。
+
+### [External](https://docs.nvidia.com/deeplearning/dali/user-guide/docs/examples/general/data_loading/external_input.html#Defining-the-Pipeline)
+
+可以有效解决 pair data loading 的难题，但 transform 需要自己用 DALI 提供的函数写。
 
 ## [Open](https://docs.python.org/3/library/functions.html?highlight=built%20open#open)
 
