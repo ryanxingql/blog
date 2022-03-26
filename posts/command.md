@@ -64,32 +64,34 @@
 | | 部署公开仓库 | `hexo d` |
 | | 生成 + 部署 | `hexo g -d` |
 | Markdown | 输入右箭头 | 输入 `&#8594;` |
+| Vim | 全选 | 光标移到首行：`gg` | 进入可视模式：`V` | 光标移动到最后一行：`G` |
+| | 复制（yank） | 复制所选内容到 0 号寄存器：`y` | 复制到系统粘贴板：`"+y` |
 | VSCode LaTeX | 反向搜索 | 鼠标双击 |
 
 ## Linux
 
 | 对象 | 功能 | 步骤1 | 步骤2 | 步骤3 |
 | :- | :- | :- | :- | :- |
-| Tmux | 查看所有 session | `tmux ls` |||
-|  | 交换 window | `ctrl + b` | `:` | `swap-window -s 0 -t 1` |
-|  | 翻页 | `ctrl + b` | 翻页键 |  |
-|  | 自动调整 panel 大小 | `ctrl + b` | `space` |  |
-|  | 高亮/取消高亮当前 panel | `ctrl + b` | `m` |  |
-|  | 进入命令行模式 | `ctrl + b` |  |  |
-|  | 开启鼠标操作模式 | `ctrl + b` | `set mouse on` |  |
-| Ubuntu | 打开 terminal | `ctrl + alt + t` |||
-|  | 查各用户的 home 目录占用       | `sudo du -sh /home/*` |||
-|  | 改用户密码                     | `passwd <usrname>`（改短密码要权限） |||
-|  | 添加用户                       | `sudo adducer <usrname>` |||
-|  | 添加管理员权限                 | `sudo vim /etc/sudoers/` |编辑||
-|  | 快速创建文档                   | `echo haha > readme.txt` |||
-|  | 查看路径列表信息               | `ll` |||
-|  | 查看路径列表信息，包括隐藏文件 | `ll -ah` |||
-|  | 查看分区占用和剩余空间         | `df -hl` |||
-|  | 查看路径占用空间               | `du -h --max-depth=1` |||
-|  | 查 ip                          | `ifconfig` |||
-|  | 查软件位置                     | `whereis <softwareName>` |||
-|  | 安装 deb 文件                  | `sudo dpkg -i <debName>` |||
+| Tmux | 查看所有 session | `tmux ls` |
+| | 交换 window | `ctrl + b` | `:` | `swap-window -s 0 -t 1` |
+| | 翻页 | `ctrl + b` | 翻页键 |
+| | 自动调整 panel 大小 | `ctrl + b` | `space` |
+| | 高亮/取消高亮当前 panel | `ctrl + b` | `m` |
+| | 进入命令行模式 | `ctrl + b` |
+| | 开启鼠标操作模式 | `ctrl + b` | `set mouse on` |
+| Ubuntu | 打开 terminal | `ctrl + alt + t` |
+| | 查各用户的 home 目录占用 | `sudo du -sh /home/*` |
+| | 改用户密码 | `passwd <usrname>`（改短密码要权限） |
+| | 添加用户 | `sudo adducer <usrname>` |
+| | 添加管理员权限 | `sudo vim /etc/sudoers/` |编辑|
+| | 快速创建文档 | `echo haha > readme.txt` |
+| | 查看路径列表信息 | `ll` |
+| | 查看路径列表信息，包括隐藏文件 | `ll -ah` |
+| | 查看分区占用和剩余空间 | `df -hl` |
+| | 查看路径占用空间 | `du -h --max-depth=1` |
+| | 查 ip | `ifconfig` |
+| | 查软件位置 | `whereis <softwareName>` |
+| | 安装 deb 文件 | `sudo dpkg -i <debName>` |
 
 ![tmux](../imgs/command-tmux.png)
 
@@ -97,7 +99,6 @@
 
 | 对象 | 功能 | 步骤1 | 步骤2 | 步骤3 |
 |:-|:-|:-|:-|:-|
-| 罗技 MX Master 3 | 左右滑动 Edge 或 VSCode 页面 | 滚轮（需设置） |
 | Batch | 批量重命名文件 | `ren *_a.png *_b.png` |
 | PyCharm | 复制当前行到下一行 | `ctrl + d` |
 | | 注释/取消注释当前行 | `ctrl + /` |
