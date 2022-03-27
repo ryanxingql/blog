@@ -15,14 +15,21 @@ vidfrms=($list2)
 for ivid in `seq 1 15`
 do
 echo ${vidnames[$ivid-1]} ${vidfrms[$ivid-1]}
-for type in "origin" "r90" "r180" "r270" "flip" "flipr90" "flipr180" "flipr270";
-do
 for idx in `seq -f '%03g' 1 ${vidfrms[$ivid-1]}`
-do diff src/$type/${vidnames[$ivid-1]}/f$idx.png tar/$type/${vidnames[$ivid-1]}/f$idx.png
-done;
+do
+  diff ../work_dirs/track1/results_final_mkv_unzip/${vidnames[$ivid-1]}/f$idx.png ../work_dirs/track1/results_final/${vidnames[$ivid-1]}/f$idx.png
 done
 done
 ```
+
+注意，有些脚本需要解析 array，这个功能 sh 没有，bash 才有。需要这么执行脚本：
+
+```bash
+chmod +x <bash-name>.sh
+./<bash-name>.sh
+```
+
+[[参考]](https://unix.stackexchange.com/a/253900)
 
 索引格式化：
 
