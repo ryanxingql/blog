@@ -23,6 +23,7 @@
 - [英文学习](https://github.com/ryanxingql/blog/blob/main/posts/english.md)
 - [Bash](https://github.com/ryanxingql/blog/blob/main/posts/bash.md)
 - [CUDA & NVIDIA](https://github.com/ryanxingql/blog/blob/main/posts/cuda_and_nvidia.md)
+- [FFmpeg](https://github.com/ryanxingql/blog/blob/main/posts/ffmpeg.md)
 - [Git](https://github.com/ryanxingql/blog/blob/main/posts/git.md)
 - [Hexo & GitHub Pages](https://github.com/ryanxingql/blog/blob/main/posts/hexo_and_github_pages.md)
 - [Jupyter Notebook](https://github.com/ryanxingql/blog/blob/main/posts/jupyter_notebook.md)
