@@ -1,7 +1,7 @@
 # 论文阅读
 
 | 年份 | 标题 | 关键词 | 主要贡献 | 备注 |
-| :- | :- | :- | :- | :- | :- |
+| :- | :- | :- | :- | :- |
 | 2022 | [A ConvNet for the 2020s](https://arxiv.org/abs/2201.03545) | Transformer - 卷积 | 探究 transformer 成功案例，将它们的 trick 应用于卷积，在 high-level visions 上取得了显著效果 | 在增强上试了试，效果不好 |
 | 2022 | [VRT: A Video Restoration Transformer](https://arxiv.org/abs/2201.12288) | 视频恢复 - Transformer - 交互注意力 | 为视频帧设计了两两之间的 mutual attention 机制 | 显存要求高，无法同时处理较多帧，因而在长视频上无法超过 BasicVSR++ |
 | 2021 | [SwinIR: Image Restoration Using Swin Transformer](https://arxiv.org/abs/2108.10257) | Transformer - 图像恢复 | 基于 swin transformer layer，堆叠，加残差，得到 residual swin transformer block（RSTB）；再堆叠 RSTB，加残差，得到整体网络 | 每一次卷积前，都要从 patch 组合为 image，即 unembed |
