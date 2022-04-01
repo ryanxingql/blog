@@ -8,6 +8,7 @@
 
 ## 博文
 
+- [*How We Win the NTIRE 2022 Challenge on Super-Resolution and Quality Enhancement of Compressed Video* (NTIRE 2022)](https://github.com/ryanxingql/winner-ntire22-vqe)
 - [*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images* (RBQE, ECCV 2020)](https://github.com/ryanxingql/blog/blob/main/posts/rbqe.md)
 - [*MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video* (MFQEv2, TPAMI 2019)](https://github.com/ryanxingql/blog/blob/main/posts/mfqev2.md)
 
