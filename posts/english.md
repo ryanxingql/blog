@@ -10,3 +10,10 @@
 | PS (不加任何标点符号更常用) vs. P.S. | `PS Please show your friends this letter and the enclosed leaflet.` | 一定是大写的 | Cambridge Dictionary 说：PS 是英式写法，P.S. (加了 periods) 是美式写法；但“The Chicago Manual of Style”也推荐 PS |
 | [relationship vs. relation](http://www.kwuntung.net/tthp/topics/vocab/relationship.htm) | relationship [c.n.] 更强调情感：`She doesn't really want a relationship with me.`  | relation 更强调工作；例如种族、劳资、公共关系，国与国邦交关系，用 relations (复数)：`We need to do more to promote good race relations`；`Canada and Britain have established diplomatic relations with North Korea.` | 人与人或国与国的一般关系，用 relations 或 relationship 都可以：`The Chinese President has said the China will maintain its traditional friendly relationship with Bangladesh.`；`Relations between workers and management are generally good.` | 物与物的关系，无所谓：`The lessons bear no/little relation/relationship to the children's actual needs.` (两者关系不大) | 固定搭配：`sexual relationship`，`blood relation/relative` (有血缘关系的人)；`public relations exercise` (公关工作) |
 | [vs. (更常用) vs. Vs](https://english.stackexchange.com/questions/5392/how-should-i-abbreviate-versus) |
+
+## 报告结果
+
+表示结果接近，但不完全一样：
+
+We note that the mean of probabilities is a more general choice since logits can be arbitrarily scaled. In our experiments, we observe that they yield similar performance with the mean of logits being **marginally** better. The findings in our work hold true no matter which choice is used.
+
