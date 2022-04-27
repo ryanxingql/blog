@@ -1369,7 +1369,7 @@ ans =
 
 ### 合成路径
 
-这里要用到一个函数 `dir`；输入参数是文件夹路径，输出参数是一个 struct array，每个 struct 都记录了一个文件的属性（即，每个 struct 都有 6 个field，记录了文件名、路径等）。如果不指定返回参数，则显示所有文件名。
+这里要用到一个函数 `dir`；输入参数是文件夹路径，输出参数是一个 struct array，每个 struct 都记录了一个文件的属性（即，每个 struct 都有 6 个 field，记录了文件名、路径等）。如果不指定返回参数，则显示所有文件名。
 
 ```matlab
 all_files = dir(fullfile('./test', '*.m'));
