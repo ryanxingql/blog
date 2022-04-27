@@ -21,7 +21,7 @@
 - [视频剪辑](https://github.com/ryanxingql/blog/blob/main/posts/video_editing.md)
 - [思维导图](https://github.com/ryanxingql/blog/blob/main/posts/mindmap.md)
 - [学术写作](https://github.com/ryanxingql/blog/blob/main/posts/academic_writing.md)
-- [英文学习](https://github.com/ryanxingql/blog/blob/main/posts/english.md)
+- [英文学习](https://docs.google.com/spreadsheets/d/1jcXlXfi3k6W7PgDYHo1T3pz1DpaTSZM5VCesfKJVlNg/edit?usp=sharing)
 - [Bash](https://github.com/ryanxingql/blog/blob/main/posts/bash.md)
 - [CUDA & NVIDIA](https://github.com/ryanxingql/blog/blob/main/posts/cuda_and_nvidia.md)
 - [FFmpeg](https://github.com/ryanxingql/blog/blob/main/posts/ffmpeg.md)
