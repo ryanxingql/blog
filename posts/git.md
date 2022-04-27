@@ -104,6 +104,12 @@ ssh-keygen -t rsa -C <email>
 
 把公钥告知 GitHub，方便后续同步。
 
+PS 可以把公钥传到服务器，方便 SSH：
+
+```bash
+ssh-copy-id -i ~/.ssh/id_rsa.pub <user-name>@<remote-ip>
+```
+
 ### 初始化 git 身份
 
 ```bash
