@@ -17,7 +17,7 @@
 - [北航电子信息专业课笔记](https://github.com/ryanxingql/blog/blob/main/posts/buaa_ee.md)
 - [常用指令](https://github.com/ryanxingql/blog/blob/main/posts/command.md)
 - [读博感悟](https://github.com/ryanxingql/blog/blob/main/posts/phd.md)
-- [论文阅读](https://github.com/ryanxingql/blog/blob/main/posts/paper_reading.md)
+- [论文阅读](https://docs.google.com/spreadsheets/d/1sX3TRyjTBiKtCxV9B4gWe49S7TufthXieBnca-2sg3o/edit?usp=sharing)
 - [视频剪辑](https://github.com/ryanxingql/blog/blob/main/posts/video_editing.md)
 - [思维导图](https://github.com/ryanxingql/blog/blob/main/posts/mindmap.md)
 - [学术写作](https://github.com/ryanxingql/blog/blob/main/posts/academic_writing.md)
