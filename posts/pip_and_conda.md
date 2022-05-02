@@ -1,6 +1,13 @@
 # Pip & Conda
 
+创建和管理虚拟环境，只推荐 Conda。
+
+至于安装包的区别，参见[知乎](https://www.zhihu.com/question/395145313/answer/1230725052)。总的而言，Conda 可安装范围更广，对兼容性更严格；Pip 更快。
+
+## 目录
+
 - [Pip & Conda](#pip--conda)
+  - [目录](#目录)
   - [Pip](#pip)
     - [Pip 添加国内源](#pip-添加国内源)
     - [Pip 离线安装包](#pip-离线安装包)
@@ -20,10 +27,6 @@
       - [`CondaVerificationError`](#condaverificationerror)
       - [Conda 不识别 ASCII 码](#conda-不识别-ascii-码)
       - [Conda `timeout`](#conda-timeout)
-
-创建和管理虚拟环境，只推荐 Conda。
-
-至于安装包的区别，参见[知乎](https://www.zhihu.com/question/395145313/answer/1230725052)。总的而言，Conda 可安装范围更广，对兼容性更严格；Pip 更快。
 
 ## Pip
 

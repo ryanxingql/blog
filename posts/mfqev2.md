@@ -1,6 +1,13 @@
 # 论文速览：*MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video*（TPAMI 2019）
 
+这篇论文是 *Multi-frame quality enhancement for compressed video*（CVPR 2018）的升级版，于 2019 年 9 月被 TPAMI 接收。
+
+[[论文]](https://arxiv.org/abs/1902.09707) [[代码]](https://github.com/ryanxingql/mfqev2.0)
+
+## 目录
+
 - [论文速览：*MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video*（TPAMI 2019）](#论文速览mfqe-20-a-new-approach-for-multi-frame-quality-enhancement-on-compressed-videotpami-2019)
+  - [目录](#目录)
   - [1. 要点](#1-要点)
   - [2. 压缩视频特性分析](#2-压缩视频特性分析)
     - [2.1 质量波动](#21-质量波动)
@@ -17,10 +24,6 @@
     - [4.5 主观效果](#45-主观效果)
   - [5. 其他](#5-其他)
   - [6. 我和这篇工作](#6-我和这篇工作)
-
-这篇论文是 *Multi-frame quality enhancement for compressed video*（CVPR 2018）的升级版，于 2019 年 9 月被 TPAMI 接收。
-
-[[论文]](https://arxiv.org/abs/1902.09707) [[代码]](https://github.com/ryanxingql/mfqev2.0)
 
 ## 1. 要点
 

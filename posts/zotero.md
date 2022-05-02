@@ -1,6 +1,9 @@
 # Zotero
 
+## 目录
+
 - [Zotero](#zotero)
+  - [目录](#目录)
   - [递归显示分类](#递归显示分类)
   - [改变 ZotFile 存储路径](#改变-zotfile-存储路径)
   - [Markdown Here 插件](#markdown-here-插件)

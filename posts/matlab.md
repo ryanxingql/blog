@@ -1,6 +1,9 @@
 # MATLAB
 
+## 目录
+
 - [MATLAB](#matlab)
+  - [目录](#目录)
   - [Arithmetic](#arithmetic)
   - [Colon operator](#colon-operator)
   - [Data type](#data-type)
@@ -867,50 +870,76 @@ s = sum(matrx(:));
 
 Windows 版参见[此处](http://www.zhanshaoyi.com/12500.html)。
 
-Ubuntu 版大致流程：
+Ubuntu 版大致流程如下。
 
-- 新建一个挂载 ISO 的路径：`mkdir ~/minstall`。
-- 挂载：`sudo mount -o loop <iso_path> ~/minstall`。注意要 `sudo`。
-- 如果挂载提示 `read-only`，那么需要将挂载后的文件夹复制为新文件夹：`cp -rf ~/minstall ~/minstall_c`。后续操作中 `~/minstall_c` 为挂载路径。
-- 新建安装路径：`mkdir -p ~/Matlab/R2019b/install`。注意，强烈建议不要装在 `/usr` 下，后续能省去很多麻烦。
-- 把 `Crack` 里的许可复制到安装路径：`cp </path/to/license_standalone.lic> ~/Matlab/R2019b/install/`。
-- `cp ~/minstall_c/installer_input.txt ~/Matlab/R2019b/install/`
-- `cp ~/minstall_c/activate.ini ~/Matlab/R2019b/install/`
-- 编辑刚复制过来的 `~/Matlab/R2019b/install/installer_input.txt`，注意强制写。
+```bash
+# 新建一个挂载 ISO 的路径
+mkdir ~/minstall
 
-   ```txt
-   destinationFolder=/home/xql/Matlab/R2019b
+# 挂载；注意要 sudo
+sudo mount -o loop <iso_path> ~/minstall
 
-   fileInstallationKey=09806-07443-53955-64350-21751-41297
+# 如果挂载提示 read-only，那么需要将挂载后的文件夹复制为新文件夹
+# 后续操作中 ~/minstall_c 为挂载路径
+cp -rf ~/minstall ~/minstall_c
 
-   agreeToLicense=yes
+# 新建安装路径
+# 强烈建议不要装在 /usr 下，后续能省去很多麻烦
+mkdir -p ~/Matlab/R2019b/install
 
-   mode=silent
+# 把 Crack 里的许可复制到安装路径
+cp </path/to/license_standalone.lic> ~/Matlab/R2019b/install/
 
-   activationPropertiesFile=/home/xql/Matlab/R2019b/install/activate.ini
-   ```
+cp ~/minstall_c/installer_input.txt ~/Matlab/R2019b/install/
+cp ~/minstall_c/activate.ini ~/Matlab/R2019b/install/
+```
 
-- 编辑刚复制过来的 `~/Matlab/R2019b/install/activate.ini`，注意强制写。
+编辑刚复制过来的 `~/Matlab/R2019b/install/installer_input.txt`，注意强制写。
 
-   ```txt
-   isSilent=true
+```txt
+destinationFolder=/home/xql/Matlab/R2019b
 
-   activateCommand=activateOffline
+fileInstallationKey=09806-07443-53955-64350-21751-41297
 
-   licenseFile=/home/xql/Matlab/R2019b/install/license_standalone.lic
-   ```
+agreeToLicense=yes
 
-- 安装：`~/minstall_c/install -inputFile ~/Matlab/R2019b/install/installer_input.txt`。
-- 复制破解包里的 `.so` 文件；干脆直接把文件夹复制过来：`sudo cp -r <path/to/Crack>/R2019b ~/Matlab/`。
-- 破解：`~/Matlab/R2019b/bin/activate_matlab.sh -propertiesFile ~/Matlab/R2019b/install/activate.ini`。
-- 编辑环境变量：`export PATH=/home/xql/Matlab/R2019b/bin:$PATH`。
-- 测试，启动无桌面版：`matlab -nodesktop -nodisplay`；直接 `matlab` 也行。
-- 最后清理工作：`sudo umount ~/minstall`，然后删除 `~/{minstall,minstall_c}` 以及安装包（ISO 和破解包）。
+mode=silent
 
-Note：
+activationPropertiesFile=/home/xql/Matlab/R2019b/install/activate.ini
+```
 
-- 我只有一个 ISO 文件。
-- 我安装的是 R2019b。
+编辑刚复制过来的 `~/Matlab/R2019b/install/activate.ini`，注意强制写。
+
+```ini
+isSilent=true
+
+activateCommand=activateOffline
+
+licenseFile=/home/xql/Matlab/R2019b/install/license_standalone.lic
+```
+
+```bash
+# 安装
+~/minstall_c/install -inputFile ~/Matlab/R2019b/install/installer_input.txt
+
+# 复制破解包里的 .so 文件；干脆直接把文件夹复制过来
+sudo cp -r <path/to/Crack>/R2019b ~/Matlab/
+
+# 破解
+~/Matlab/R2019b/bin/activate_matlab.sh -propertiesFile ~/Matlab/R2019b/install/activate.ini
+
+# 编辑环境变量
+export PATH=/home/xql/Matlab/R2019b/bin:$PATH
+
+# 测试，启动无桌面版
+matlab -nodesktop -nodisplay
+# matlab
+
+# 清理
+sudo umount ~/minstall
+rm -r ~/{minstall,minstall_c}
+# 删除 ISO 和 Crack
+```
 
 ### 配置右键打开方式
 

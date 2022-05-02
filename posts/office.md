@@ -1,6 +1,17 @@
 # Office
 
+移动端建议使用 WPS。
+
+在 Pad 和手机上，由于很少涉及编辑功能，而只需要查看、备份文档，因此建议使用 WPS；加上北航商用会员授权，效果不错。
+
+PS Pad 版 Office 很垃圾。
+
+在 macOS 和 Windows 上建议使用学校授权的 Office。但注意，Windows 账户还是建议用自己的账号。
+
+## 目录
+
 - [Office](#office)
+  - [目录](#目录)
   - [使用](#使用)
     - [插入 Unicode 字符](#插入-unicode-字符)
     - [高质量导出 PDF](#高质量导出-pdf)
@@ -8,14 +19,6 @@
     - [OneNote 导出 PDF](#onenote-导出-pdf)
   - [调试](#调试)
     - [OneDrive 无法删除的错误](#onedrive-无法删除的错误)
-
-移动端建议使用 WPS。
-
-在 Pad 和手机上，由于很少涉及编辑功能，而只需要查看、备份文档，因此建议使用 WPS；加上北航商用会员授权，效果不错。
-
-PS Pad 版 Office 很垃圾。
-
-在 macOS 和 Windows 上建议使用北航授权的 Office。但注意，Windows 账户还是建议用自己的账号。
 
 ## 使用
 

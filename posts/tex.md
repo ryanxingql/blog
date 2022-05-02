@@ -1,6 +1,9 @@
 # TeX
 
+## 目录
+
 - [TeX](#tex)
+  - [目录](#目录)
   - [配置](#配置)
     - [TeX Live plus VSCode LaTeX workshop](#tex-live-plus-vscode-latex-workshop)
   - [使用](#使用)

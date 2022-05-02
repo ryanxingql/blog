@@ -1,6 +1,9 @@
 # Hexo & GitHub Pages
 
+## 目录
+
 - [Hexo & GitHub Pages](#hexo--github-pages)
+  - [目录](#目录)
   - [完整流程](#完整流程)
     - [选择模板](#选择模板)
     - [安装 Hexo](#安装-hexo)

@@ -1,6 +1,9 @@
 # VSCode
 
+## 目录
+
 - [VSCode](#vscode)
+  - [目录](#目录)
   - [基础](#基础)
   - [导出含中文的 Jupyter Notebook 为 PDF](#导出含中文的-jupyter-notebook-为-pdf)
   - [插件](#插件)

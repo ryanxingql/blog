@@ -1,13 +1,16 @@
 # 常用指令
 
+按应用平台分类。
+
+## 目录
+
 - [常用指令](#常用指令)
+  - [目录](#目录)
   - [macOS](#macos)
   - [全平台](#全平台)
   - [Linux](#linux)
   - [Windows](#windows)
   - [watchOS](#watchos)
-
-按应用平台分类。
 
 ## macOS
 
