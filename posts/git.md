@@ -1,30 +1,32 @@
 # Git
 
+## 目录
+
 - [Git](#git)
-  - [权威](#权威)
+  - [目录](#目录)
+  - [参考](#参考)
   - [追踪和暂存](#追踪和暂存)
     - [不追踪指定文件](#不追踪指定文件)
     - [已追踪，忽略后续修改](#已追踪忽略后续修改)
     - [删除文件](#删除文件)
-    - [一键 add 和 commit](#一键-add-和-commit)
-    - [commit 多条信息](#commit-多条信息)
-    - [清空 commit 记录](#清空-commit-记录)
+    - [一键 Add 和 Commit](#一键-add-和-commit)
+    - [Commit 多条信息](#commit-多条信息)
+    - [清空 Commit 记录](#清空-commit-记录)
   - [远程仓库](#远程仓库)
+    - [设置代理](#设置代理)
     - [生成 SSH 密钥](#生成-ssh-密钥)
-    - [初始化 git 身份](#初始化-git-身份)
+    - [初始化 Git 身份](#初始化-git-身份)
     - [指定远程仓库并推送](#指定远程仓库并推送)
-    - [shallow clone](#shallow-clone)
+    - [Shallow clone](#shallow-clone)
     - [大文件存储](#大文件存储)
-  - [submodule](#submodule)
+  - [Submodule](#submodule)
     - [添加子仓库](#添加子仓库)
-    - [含子仓库的 clone](#含子仓库的-clone)
+    - [含子仓库的 Clone](#含子仓库的-clone)
     - [删除子仓库](#删除子仓库)
 
-## 权威
+## 参考
 
-[[手册 1]](https://git-scm.com/docs)
-
-[[手册 2]](https://git.wiki.kernel.org/index.php/Main_Page)
+[[手册 1]](https://git-scm.com/docs) [[手册 2]](https://git.wiki.kernel.org/index.php/Main_Page)
 
 ## 追踪和暂存
 
@@ -61,7 +63,7 @@ git update-index --assume-unchanged [<file> ...]
 - 直接删除：只从 working tree 中删除了，文件还在 index 里。为了记录这一个删除操作，必须手动 add，最终效果和 `git rm <file>` 一样。
 - `git rm --cached <file>`：只从 index 中删除，在 working tree 中的文件不受影响。即 git 停止追踪该文件，且本地文件也没有被删除。一旦同步到远端，远端仓库最新版本中该文件将消失。如果需要永远停止追踪，需要手动将文件加入 `.gitignore`。
 
-### 一键 add 和 commit
+### 一键 Add 和 Commit
 
 ```bash
 git commit -am 'update'
@@ -71,7 +73,7 @@ git commit -am 'update'
 
 `-a`：all。
 
-### commit 多条信息
+### Commit 多条信息
 
 ```bash
 git commit -m msg1 -m msg2
@@ -79,7 +81,7 @@ git commit -m msg1 -m msg2
 
 多条信息会被 concat 为一条信息、多个段落。
 
-### [清空 commit 记录](https://stackoverflow.com/questions/13716658/how-to-delete-all-commit-history-in-github)
+### [清空 Commit 记录](https://stackoverflow.com/questions/13716658/how-to-delete-all-commit-history-in-github)
 
 以 main 主分支为例：
 
@@ -96,6 +98,12 @@ git push -f origin main
 
 ## 远程仓库
 
+### 设置代理
+
+```bash
+git config --global http.proxy 127.0.0.1:<port>
+```
+
 ### 生成 SSH 密钥
 
 ```bash
@@ -110,7 +118,7 @@ PS 可以把公钥传到服务器，方便 SSH：
 ssh-copy-id -i ~/.ssh/id_rsa.pub <user-name>@<remote-ip>
 ```
 
-### 初始化 git 身份
+### 初始化 Git 身份
 
 ```bash
 git config --global user.name <usr_name>
@@ -128,7 +136,7 @@ git push -u origin main
 - 将 upstream 设置为刚命名的 origin。今后 pull 或 push 时，默认上游就是 origin，即 `-u` 参数可以省略。
 - 推送至 origin 的 main 分支。可以是其他 git 仓库或其他分支。
 
-### shallow clone
+### Shallow clone
 
 ```bash
 git clone --depth=1 <git-url> [<dir>]
@@ -155,7 +163,7 @@ Large File Storage
 
 为了解决这个问题，github 提供了大文件存储方法。只需要指定哪些属于大文件，其余 git 操作都相同。在之后和远程仓库的互动过程中，大文件都上传到独立的大文件仓库，并从大文件仓库中下载，速度会有一定提升。
 
-## [submodule](https://git-scm.com/docs/git-submodule)
+## [Submodule](https://git-scm.com/docs/git-submodule)
 
 ### 添加子仓库
 
@@ -167,7 +175,7 @@ git submodule add <git-url> [<dir>]
 
 子模块是独立的 git 仓库。主仓库只追踪子仓库的版本号，不追踪内容。
 
-### 含子仓库的 clone
+### 含子仓库的 Clone
 
 在 clone 时，加入循环参数：
 
