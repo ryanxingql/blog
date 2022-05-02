@@ -927,9 +927,16 @@ sudo cp -r <path/to/Crack>/R2019b ~/Matlab/
 
 # 破解
 ~/Matlab/R2019b/bin/activate_matlab.sh -propertiesFile ~/Matlab/R2019b/install/activate.ini
+```
 
-# 编辑环境变量
+编辑环境变量：`vim ~/.bashrc`，添加一行：
+
+```shell
 export PATH=/home/xql/Matlab/R2019b/bin:$PATH
+```
+
+```bash
+source ~/.bashrc
 
 # 测试，启动无桌面版
 matlab -nodesktop -nodisplay
@@ -937,7 +944,7 @@ matlab -nodesktop -nodisplay
 
 # 清理
 sudo umount ~/minstall
-rm -r ~/{minstall,minstall_c}
+sudo rm -r ~/{minstall,minstall_c}
 # 删除 ISO 和 Crack
 ```
 
