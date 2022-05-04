@@ -10,10 +10,12 @@
   - [MATLAB](#matlab)
   - [Matplotlib](#matplotlib)
     - [新建图像和基本绘图](#新建图像和基本绘图)
-    - [colormap](#colormap)
+    - [Grid](#grid)
+    - [Text Property](#text-property)
+    - [Colormap](#colormap)
     - [图例](#图例)
     - [次序](#次序)
-    - [坐标](#坐标)
+    - [Ticks](#ticks)
     - [折线图](#折线图)
     - [散点图](#散点图)
     - [直方图](#直方图)
@@ -151,21 +153,19 @@ sort_orders = sorted(orders.items(), key=lambda x: x[1])
 
 一定要了解画布（fig）和坐标系（axes）的[区别](https://matplotlib.org/1.5.1/_images/fig_map.png)；fig 是白纸，axes 才是画框，是你真正画图的地方；因此几乎所有绘图属性都是在 axes 上操作的。
 
-```python3
+```python
 import matplotlib.pyplot as plt
 
-fig, ax = plt.subplots(2, 1, figsize(14, 7))  # 创建一个 2x1 的 fig；每一个 axe 都是一个列表，对应每一个 subplot
+fig, ax = plt.subplots(2, 1, figsize=(14, 7))  # 创建一个 2x1 的 fig；每一个 axe 都是一个列表，对应每一个 subplot
 
 ax[0].plot(a, b)  # 绘制第一个 axe；注意是在坐标系里绘图
 
 ax[0].set_title('Title', fontsize=18)
-ax[0].set_xlabel('xlabel', fontsize=18, fontfamily ='sans-serif', fontstyle='italic')
+ax[0].set_xlabel('xlabel', fontsize=18, fontfamily='sans-serif', fontstyle='italic')
 ax[0].set_ylabel('ylabel', fontsize='x-large', fontstyle='oblique')
 
-ax[0].grid(which='minor', axis='both')
-
 plt.tight_layout()  # 有时候，xlabel等无法正常显示；需要自适应调整
-axe.set_ylim([ymin, ymax])  # 设置可显示的最小、最大值；可设为 None
+ax.set_ylim([ymin, ymax])  # 设置可显示的最小、最大值；可设为 None
 
 fig.savefig(<path>)  # 注意先存图，后展示
 plt.show()
@@ -173,17 +173,37 @@ plt.show()
 
 如果是一张图，更简单：
 
-```python3
-fig, ax = plt.subplots(figsize(14, 7))  # 默认即 1 张；figsize 选填
+```python
+fig, ax = plt.subplots(figsize=(14, 7))  # 默认即 1 张；figsize 选填
 
 ax.plot(a, b)  # 此时 ax 不是列表
 ```
 
-### colormap
+### [Grid](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.grid.html)
+
+我认为比较好看的设置：双向格线，置于底层，略透明实线。
+
+```python
+ax[0].grid(axis='both', which='both', color='#999999', linestyle='-', alpha=0.2)
+ax[0].set_axisbelow(True)
+```
+
+格线可以分为主、次格线，分别设置不同的风格。参考这里：[[Link]](https://www.pythonpool.com/matplotlib-grid/#:~:text=The%20axis%20argument%20is%20%E2%80%98x%E2%80%99%20in%20the%20Matplotlib,Major%20and%20Minor%20Matplotlib%20grid%20%28%29%20in%20Python)
+
+### [Text Property](https://matplotlib.org/stable/tutorials/text/text_props.html)
+
+特别地，Font property 在[此](https://matplotlib.org/stable/tutorials/text/text_props.html#default-font)。常用：
+
+- `font.size`：可以设为数字，`smaller` 或 `x-large`。
+- `font.family`：可以设为 `'Times New Roman'`。
+- `font.style`：包括 `normal`，`italic` 和 `oblique`（不常用）。
+- `font.weight`：可以设为 `bold`。
+
+### Colormap
 
 以散点图为例；我希望绘制 `psnr_lst` 和 `pi_lst` 的散点图，颜色由 `mean_lst` 决定。
 
-```python3
+```python
 im = ax.scatter(psnr_lst, pi_lst, c=mean_lst, cmap='Oranges', s=8)
 fig.colorbar(im, ax=ax)
 ```
@@ -192,7 +212,7 @@ colormap 的风格选择参考[此处](https://matplotlib.org/stable/tutorials/c
 
 我们还可以设置多个颜色。
 
-```python3
+```python
 from matplotlib.colors import ListedColormap
 
 cmap = ListedColormap(["darkorange", "gold", "lawngreen"])  # 三段颜色
@@ -203,7 +223,7 @@ im = ax.scatter(psnr_lst, pi_lst, c=mean_lst, cmap=cmap, s=8)
 
 有很多方式。一种简单的方式：
 
-```python3
+```python
 plt.plot(a, b, label='hah')
 plt.plot(c, d, label='hei')
 
@@ -214,12 +234,12 @@ plt.legend()  # 自动就把对应 label 绘制上了
 
 默认是后绘制的覆盖先绘制的。如果希望按照从大到小排序绘制散点图，可以先排序，再绘图。
 
-### 坐标
+### Ticks
 
-```python3
-axe.set_xticks(ticks)  # 人为定义横坐标
+对 X 坐标索引为 0、1、2 处的标签设为三个月份：
 
-axe.tick_params(axis='x', rotation=45)  # 横坐标旋转 45 度
+```python
+ax.set_xticks(([0, 1, 2], ['January', 'February', 'March'], rotation=20, fontsize=16, fontfamily='Times New Roman', fontweight='normal'))
 ```
 
 ### 折线图
@@ -268,6 +288,13 @@ axe.tick_params(axis='x', rotation=45)  # 横坐标旋转 45 度
 - `x`：某个 bar 的横坐标。
 - `height, width`
 - `bottom`：该 bar 的底部位置。
+
+如果希望在 Bar 顶部显示数值，使用 [`bar_label`](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.bar_label.html?highlight=bar_label)：
+
+```python
+bar1 = ax[0].bar(x, y)
+ax[0].bar_label(bar1, fontsize=15, fontfamily='Times New Roman', fontweight='normal')
+```
 
 ### [`text`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.text.html)
 
