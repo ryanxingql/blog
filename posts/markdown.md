@@ -6,7 +6,7 @@
   - [目录](#目录)
   - [Unicode](#unicode)
   - [生成可自动更新的 TOC](#生成可自动更新的-toc)
-  - [Markdown plus GitHub](#markdown-plus-github)
+  - [GitHub Support](#github-support)
   - [多级目录](#多级目录)
   - [列表内多行](#列表内多行)
   - [定制插入图像](#定制插入图像)
@@ -31,11 +31,13 @@
 
 使用 Markdown all in One 插件；每次保存文档时自动更新。
 
-## Markdown plus GitHub
+## GitHub Support
 
-参见[此处](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf)。
+[[简要说明]](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf)
 
-GitHub 支持的 Emoji [在此](https://www.webfx.com/tools/emoji-cheat-sheet/)。
+Emoji：[[Link]](https://www.webfx.com/tools/emoji-cheat-sheet/)
+
+Languages：[[Link]](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)
 
 ## 多级目录
 
