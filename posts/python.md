@@ -13,7 +13,7 @@
     - [Grid](#grid)
     - [Text Property](#text-property)
     - [Colormap](#colormap)
-    - [图例](#图例)
+    - [Legend](#legend)
     - [次序](#次序)
     - [Ticks](#ticks)
     - [折线图](#折线图)
@@ -219,15 +219,14 @@ cmap = ListedColormap(["darkorange", "gold", "lawngreen"])  # 三段颜色
 im = ax.scatter(psnr_lst, pi_lst, c=mean_lst, cmap=cmap, s=8)
 ```
 
-### [图例](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.legend.html?highlight=legend#matplotlib.pyplot.legend)
+### [Legend](https://matplotlib.org/stable/tutorials/intermediate/legend_guide.html)
 
-有很多方式。一种简单的方式：
+可以不添加真实的数据，只添加图例。例如：[[Link]](https://stackoverflow.com/questions/44937101/matplotlib-custom-legend-with-hatching)
 
 ```python
-plt.plot(a, b, label='hah')
-plt.plot(c, d, label='hei')
-
-plt.legend()  # 自动就把对应 label 绘制上了
+patch1 = mpatches.Patch(facecolor='w', edgecolor='k', hatch="//", label='PCC', alpha=0.6)
+patch2 = mpatches.Patch(facecolor='w', edgecolor='k', hatch=".", label='SRCC', alpha=0.6)
+ax[0].legend(handles=[patch1, patch2], loc='best', prop={'family': 'Times New Roman', 'size': 16})
 ```
 
 ### 次序
@@ -286,8 +285,12 @@ ax.set_xticks(([0, 1, 2], ['January', 'February', 'March'], rotation=20, fontsiz
 输入参数：
 
 - `x`：某个 bar 的横坐标。
-- `height, width`
+- `height`
+- `width`
 - `bottom`：该 bar 的底部位置。
+- `color`
+- `edgecolor`
+- [`hatch`](https://matplotlib.org/3.5.0/gallery/shapes_and_collections/hatch_style_reference.html)：纹理。
 
 如果希望在 Bar 顶部显示数值，使用 [`bar_label`](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.bar_label.html?highlight=bar_label)：
 
