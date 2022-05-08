@@ -11,7 +11,7 @@
   - [Matplotlib](#matplotlib)
     - [新建图像和基本绘图](#新建图像和基本绘图)
     - [Grid](#grid)
-    - [Text Property](#text-property)
+    - [Text](#text)
     - [Colormap](#colormap)
     - [Legend](#legend)
     - [次序](#次序)
@@ -20,7 +20,7 @@
     - [散点图](#散点图)
     - [直方图](#直方图)
     - [柱状图](#柱状图)
-    - [`text`](#text)
+    - [热点图](#热点图)
   - [`multiprocessing`](#multiprocessing)
     - [基操](#基操)
     - [回调函数](#回调函数)
@@ -156,7 +156,9 @@ sort_orders = sorted(orders.items(), key=lambda x: x[1])
 ```python
 import matplotlib.pyplot as plt
 
-fig, ax = plt.subplots(2, 1, figsize=(14, 7))  # 创建一个 2x1 的 fig；每一个 axe 都是一个列表，对应每一个 subplot
+# 创建一个 2x1 的 fig；每一个 axe 都是一个列表，对应每一个 subplot
+# w 是 14，h 是 7
+fig, ax = plt.subplots(2, 1, figsize=(14, 7))
 
 ax[0].plot(a, b)  # 绘制第一个 axe；注意是在坐标系里绘图
 
@@ -190,9 +192,18 @@ ax[0].set_axisbelow(True)
 
 格线可以分为主、次格线，分别设置不同的风格。参考这里：[[Link]](https://www.pythonpool.com/matplotlib-grid/#:~:text=The%20axis%20argument%20is%20%E2%80%98x%E2%80%99%20in%20the%20Matplotlib,Major%20and%20Minor%20Matplotlib%20grid%20%28%29%20in%20Python)
 
-### [Text Property](https://matplotlib.org/stable/tutorials/text/text_props.html)
+### [Text](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.text.html)
 
-特别地，Font property 在[此](https://matplotlib.org/stable/tutorials/text/text_props.html#default-font)。常用：
+输入参数：
+
+- `x, y`：位置。
+- `s`：文本。
+
+文本属性：[[文档]](https://matplotlib.org/stable/tutorials/text/text_props.html)
+
+字体属性：[[文档]](https://matplotlib.org/stable/tutorials/text/text_props.html#default-font)
+
+常用：
 
 - `font.size`：可以设为数字，`smaller` 或 `x-large`。
 - `font.family`：可以设为 `'Times New Roman'`。
@@ -299,12 +310,9 @@ bar1 = ax[0].bar(x, y)
 ax[0].bar_label(bar1, fontsize=15, fontfamily='Times New Roman', fontweight='normal')
 ```
 
-### [`text`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.text.html)
+### 热点图
 
-输入参数：
-
-- `x, y`：位置。
-- `s`：文本。
+用 `imshow` 就可以绘制热点图，非常简单。[[文档]](https://matplotlib.org/3.5.0/gallery/images_contours_and_fields/image_annotated_heatmap.html)中提供了非常多好看的样例。
 
 ## [`multiprocessing`](https://docs.python.org/3/library/multiprocessing.html)
 
