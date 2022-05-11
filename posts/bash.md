@@ -51,3 +51,17 @@ for idx in `seq -f '%03g' 1 218`; do diff /dir1/${idx}.png /dir2/${idx}.png; don
 ```bash
 for idx in `seq -f '%03g' 1 300`; do echo 001-960x536-570-30/f00`expr $idx + 11`.png ; done
 ```
+
+## 获取文件夹下文件路径
+
+```bash
+# 假设图像在 ../data/raise/test_hq/ 路径下，以 rf 开头，以 .png 结尾
+img_list=$(ls ../data/raise/test_hq/rf*.png)
+for img in $img_list
+do
+  echo $img  # 路径
+  echo ${img##*/}  # 文件名，截取了路径 img 中最后一个 / 右侧的字符串
+done
+```
+
+其他字符串截取方式可以参考：[[博客]](http://c.biancheng.net/view/1120.html)
