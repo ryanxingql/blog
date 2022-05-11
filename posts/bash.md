@@ -60,7 +60,10 @@ img_list=$(ls ../data/raise/test_hq/rf*.png)
 for img in $img_list
 do
   echo $img  # 路径
-  echo ${img##*/}  # 文件名，截取了路径 img 中最后一个 / 右侧的字符串
+  img_name=${img##*/}  # 截取了路径中最后一个 / 右侧的字符串
+  echo $img_name
+  img_stem=${img_name%*.png}  # 截取了文件名中 .png 左侧的字符串
+  echo $img_stem
 done
 ```
 
