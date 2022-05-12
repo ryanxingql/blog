@@ -49,7 +49,7 @@
   - [ ] 要加标点符号。
 - [ ] 删掉 Biography 的图像，减小 PDF 体积。
 - [ ] 完善并公开文中出现的代码链接。
-- [ ] 参考这个 [写作指南](https://github.com/MLNLP-World/Paper_Writing_Tips) 逐一检查。
+- [ ] 参考 [写作指南](https://github.com/MLNLP-World/Paper_Writing_Tips) 逐一检查。
 - [ ] 投稿至 arXiv。
 
 ## Camera Ready
