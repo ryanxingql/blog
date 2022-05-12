@@ -4,43 +4,48 @@
 
 - [学术写作](#学术写作)
   - [目录](#目录)
-  - [写作指南](#写作指南)
-  - [图表鉴赏](#图表鉴赏)
-    - [多变量](#多变量)
-    - [美感](#美感)
-    - [图文对应](#图文对应)
-    - [排列](#排列)
+  - [图表参考](#图表参考)
+  - [投稿前检查](#投稿前检查)
+  - [Camera Ready](#camera-ready)
 
-## 写作指南
+## 图表参考
 
-[[参考]](https://github.com/MLNLP-World/Paper_Writing_Tips)
+[[参考]](https://docs.google.com/document/d/1euexHQCD1p7hfMFT2LkD6sU8ts-jes0mW_PeABAfg10/edit?usp=sharingc)
 
-## 图表鉴赏
+## 投稿前检查
 
-### 多变量
+- [ ] 根据投稿对象更换所需模版和 Header。
+- [ ] 注释掉致谢部分。
+- [ ] 避免使用 `vspace`。
+- [ ] 注意是否要匿名。
+- [ ] 注意是否要填 ID。
+- [ ] 使用 “\ie” 和 “\eg” 等命令符。
+- [ ] 使用 “Figure”，“Table” 和 “Section”（全称）。
+- [ ] 检查所有 Caption。
+  - [ ] 第一句要用于概括，可以加粗。
+  - [ ] 要加标点符号。
+- [ ] 去掉所有标注和非必要颜色。
+- [ ] 确认所有加粗、斜体、下划线、缩进。
+- [ ] 该用的 “The” 不要省略。
+- [ ] 小于 10 的数用英文，不小于 10 的数用数字。
+- [ ] 数字不要出现在句首。
+- [ ] 句内不要混杂表达式；用 “Larger than”、“Greater than”、“Equal” 等表达。
+- [ ] 统一数值精度，例如小数点后两位。
+- [ ] 删掉 Biography 的图像，减小 PDF 体积。
+- [ ] 根据模板文字说明，摘要、关键词中不要出现数学公式、特殊字符和参考文献。
+- [ ] 检查缩写出现首次是否标明全称。
+- [ ] 检查是否出现了不合适的 Hyphenation；若有，规范 `\hyphenation`。
+- [ ] 增加必要的参考文献。
+- [ ] 对不合格的参考文献格式，用 DBLP 和 Crossref 替换，然后手动修改。
+- [ ] 完善并公开文中出现的代码链接。
+- [ ] 参考这个 [写作指南](https://github.com/MLNLP-World/Paper_Writing_Tips) 逐一检查。
+- [ ] 投稿至 arXiv。
 
-如图，一张图表示了三个指标：质量，运行速度，参数量。
+## Camera Ready
 
-![img](../imgs/academic-writing.png)
-
-### 美感
-
-曲线很好看。
-
-![img](../imgs/academic-writing-2.png)
-
-图标可以简练，例如用一个圆圈表示一个卷积层，而无需画成方形。
-
-![img](../imgs/academic-writing-4.png)
-
-### 图文对应
-
-文字更简洁严谨，图像更直观。
-
-![img](../imgs/academic-writing-3.png)
-
-### 排列
-
-如图展示了一种主观图呈现方式。
-
-![img](../imgs/academic-writing-5.png)
+- [ ] 加上致谢。注意填上基金号。
+- [ ] 整理所有画图等代码片段，可以保存至博客。
+- [ ] 服务器所有文件都要传到本地保存。
+- [ ] 代码、写作仓库分别打包备份。
+- [ ] arXiv 更新为致谢版本，标明被接收。
+- [ ] GitHub 和知乎宣传。
