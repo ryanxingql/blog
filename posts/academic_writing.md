@@ -10,7 +10,7 @@
 
 ## 图表参考
 
-[[参考]](https://docs.google.com/document/d/1euexHQCD1p7hfMFT2LkD6sU8ts-jes0mW_PeABAfg10/edit?usp=sharingc)
+[[参考]](https://github.com/ryanxingql/awesome-computer-vision-illustration)
 
 ## 投稿前检查
 
