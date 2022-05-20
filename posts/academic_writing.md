@@ -4,13 +4,13 @@
 
 - [学术写作](#学术写作)
   - [目录](#目录)
-  - [图表参考](#图表参考)
+  - [图表鉴赏](#图表鉴赏)
   - [投稿前检查](#投稿前检查)
   - [Camera Ready](#camera-ready)
 
-## 图表参考
+## 图表鉴赏
 
-[[参考]](https://github.com/ryanxingql/awesome-computer-vision-illustration)
+[[图表鉴赏]](https://github.com/ryanxingql/awesome-computer-vision-illustration)
 
 ## 投稿前检查
 
