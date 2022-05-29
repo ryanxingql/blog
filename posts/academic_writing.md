@@ -4,11 +4,16 @@
 
 - [学术写作](#学术写作)
   - [目录](#目录)
-  - [图表鉴赏](#图表鉴赏)
+  - [实验设计](#实验设计)
+  - [图表绘制](#图表绘制)
   - [投稿前检查](#投稿前检查)
   - [Camera Ready](#camera-ready)
 
-## 图表鉴赏
+## 实验设计
+
+实验不是为了凑数量、拼规模、展示冗余的数值结果；实验是为了验证方法的有效性，同时向读者提供 Insight。
+
+## 图表绘制
 
 [[图表鉴赏]](https://github.com/ryanxingql/awesome-computer-vision-illustration)
 
