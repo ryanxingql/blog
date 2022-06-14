@@ -19,11 +19,9 @@
 
 ## 技法和随笔
 
-- [学术写作](https://github.com/ryanxingql/blog/blob/main/posts/academic_writing.md)
-  - [图表鉴赏](https://github.com/ryanxingql/awesome-computer-vision-illustration)
+- [学术写作](https://gist.github.com/ryanxingql/3d38c6fd12fb312af5b51dc6409d0b0b)
 - [论文阅读](https://docs.google.com/spreadsheets/d/1sX3TRyjTBiKtCxV9B4gWe49S7TufthXieBnca-2sg3o/edit?usp=sharing)
-- [播客](https://github.com/ryanxingql/blog/blob/main/posts/podcast.md)
-- [读博感悟](https://github.com/ryanxingql/blog/blob/main/posts/phd.md)
+- [读博感悟](https://gist.github.com/ryanxingql/87b5fe79bb5e10c8b6b54f2eac7d6908)
 - [北航电子信息专业课笔记](https://github.com/ryanxingql/blog/blob/main/posts/buaa_ee.md)
 
 ## 工具备忘
