@@ -7,6 +7,7 @@
   - [CPU](#cpu)
     - [物理核，逻辑核，超线程](#物理核逻辑核超线程)
     - [查询](#查询)
+  - [htop](#htop)
   - [系统](#系统)
     - [特殊需求](#特殊需求)
     - [安装](#安装)
@@ -57,6 +58,36 @@ nproc --all  # 显示逻辑核数量
 
 lscpu  # 更详细，还显示 CPU 型号和每个物理核的逻辑核数量
 ```
+
+## htop
+
+htop 列出的是逻辑 CPU 数量。例如一台四核心八线程计算机，htop 会显示有八核（逻辑核）。
+
+其中，红色表示 kernel thread（如系统任务）的 CPU 使用率，具有最高优先级；绿色是 normal priority thread；蓝色即最低优先级任务的使用率。
+
+memory：绿色表示被 process 占用的；蓝色是 buffer pages，存储的是 metadata；橘色是 cache pages，存的是档案内容。
+
+Swap 是转移到硬盘上的内存内容。
+
+Tasks 档位记录的是 process、thread、正在执行的 thread 数量。
+
+Load Average 记录的是最近 1、5、15 分钟平均有多少 thread 需要 CPU。如果远超逻辑核心数量，那么 CPU 就忙不过来了。
+
+每一行都记录了一个 process，PID 即 process 的 ID。
+
+Priority 是系统决定的优先级，数值越低优先级越高，可分配到的 CPU 时间越多。Nice 是可以手动设置的优先级，预设是 0，最低可以调到 -20。系统会选择性参考 Nice。
+
+Virtual memory 是一个 process 能使用到的 memory 的总和，通常远大于实际占用内存 resident，因此数值非常大也不用担心。Shared memory 是可分享的，通常不用看。
+
+State 就很好理解了，包括 running，sleeping 等。
+
+CPU% 即这段时间平均用了几颗 CPU。如果你在 3 秒内用满 4 颗 CPU，那么利用率为 400%。
+
+Memory% 类似，为一段时间内 resident 占总内存的百分比。
+
+Time+ 是指累积的 CPU time。例如，某 process 在过去 10 秒内平均使用了 2.8 颗 CPU，那么 CPU time 是 28 秒而不是 10 秒。
+
+[[参考]](https://medium.com/starbugs/do-you-understand-htop-ffb72b3d5629)
 
 ## 系统
 
