@@ -4,10 +4,10 @@
 
 - [PyTorch](#pytorch)
   - [目录](#目录)
+  - [多卡并行](#多卡并行)
   - [安装](#安装)
   - [view 方法 vs. reshape 方法](#view-方法-vs-reshape-方法)
   - [理解维度](#理解维度)
-  - [多卡](#多卡)
   - [Dataloader](#dataloader)
     - [Pre-fetcher](#pre-fetcher)
   - [Reproducibility](#reproducibility)
@@ -18,6 +18,14 @@
       - [CUDA 算子](#cuda-算子)
       - [CUDA RNN 和 LSTM](#cuda-rnn-和-lstm)
       - [Dataloader](#dataloader-1)
+
+## 多卡并行
+
+- [OpenMMLab 解读 PyTorch 源码](https://zhuanlan.zhihu.com/p/343951042)：重点思考为什么 DDP 效率不受 GPU 数量影响；因为 GPU 越多，每块 GPU 承载的通信任务越少，和 GPU 通信次数抵消了
+- [PyTorch 分布式文档](https://pytorch.org/docs/stable/distributed.html)
+- [PyTorch DDP 教程](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html)
+- [知乎专栏](https://zhuanlan.zhihu.com/p/178402798)
+- [知乎专栏](https://zhuanlan.zhihu.com/p/76638962)
 
 ## 安装
 
@@ -77,13 +85,6 @@ tensor([[-0.0163],
 在二维矩阵中，效果为横向取平均；在三维矩阵中，效果为在每个 `c` 中横向取平均。
 
 再以 `torch.nn.functional.normalize(input, p=2, dim=1, eps=1e-12, out=None)` 为例。如果输入张量为 `(b c h w)`，那么 `(b=0 c=* h=0 w=0)` 的所有元素内部执行正则化，`(b=0 c=* h=0 w=1)` 的所有元素内部执行正则化，依此类推。
-
-## 多卡
-
-- [官方分布式文档](https://pytorch.org/docs/stable/distributed.html)
-- [官方 DDP 教程](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html)
-- [知乎](https://zhuanlan.zhihu.com/p/178402798)
-- [知乎](https://zhuanlan.zhihu.com/p/76638962)
 
 ## Dataloader
 
