@@ -1,6 +1,6 @@
 # 论文速览：*Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images*（ECCV 2020）
 
-[[论文]](https://arxiv.org/abs/2006.16581) [[代码]](https://github.com/ryanxingql/rbqe)
+[\[论文\]](https://arxiv.org/abs/2006.16581) [\[代码\]](https://github.com/ryanxingql/rbqe)
 
 ## 目录
 

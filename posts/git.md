@@ -26,7 +26,7 @@
 
 ## 参考
 
-[[手册 1]](https://git-scm.com/docs) [[手册 2]](https://git.wiki.kernel.org/index.php/Main_Page)
+[\[手册 1\]](https://git-scm.com/docs) [\[手册 2\]](https://git.wiki.kernel.org/index.php/Main_Page)
 
 ## 追踪和暂存
 

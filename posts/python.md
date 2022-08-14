@@ -139,15 +139,15 @@ sort_orders = sorted(orders.items(), key=lambda x: x[1])
 
 ## [MATLAB](https://www.mathworks.com/help/matlab/matlab-engine-for-python.html?s_tid=CRUX_lftnav)
 
-- [[在 Python 环境中安装 MATLAB 包]](https://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html)
-- [[在 Python 脚本中调用 MATLAB 函数]](https://www.mathworks.com/help/matlab/matlab_external/call-matlab-functions-from-python.html)
+- [\[在 Python 环境中安装 MATLAB 包\]](https://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html)
+- [\[在 Python 脚本中调用 MATLAB 函数\]](https://www.mathworks.com/help/matlab/matlab_external/call-matlab-functions-from-python.html)
   - 开启过程很慢；不建议频繁调用。
-- [[向 MATLAB 传 Python 变量]](https://www.mathworks.com/help/matlab/matlab_external/pass-data-to-matlab-from-python.html)
+- [\[向 MATLAB 传 Python 变量\]](https://www.mathworks.com/help/matlab/matlab_external/pass-data-to-matlab-from-python.html)
   - 不支持 ndarray 格式；需要转换成 list。例如：`ndarray.tolist()`。
 
 ## [Matplotlib](https://matplotlib.org/)
 
-[[入门必看]](https://zhuanlan.zhihu.com/p/93423829)
+[\[入门必看\]](https://zhuanlan.zhihu.com/p/93423829)
 
 ### 新建图像和基本绘图
 
@@ -190,7 +190,7 @@ ax[0].grid(axis='both', which='both', color='#999999', linestyle='-', alpha=0.2)
 ax[0].set_axisbelow(True)
 ```
 
-格线可以分为主、次格线，分别设置不同的风格。参考这里：[[Link]](https://www.pythonpool.com/matplotlib-grid/#:~:text=The%20axis%20argument%20is%20%E2%80%98x%E2%80%99%20in%20the%20Matplotlib,Major%20and%20Minor%20Matplotlib%20grid%20%28%29%20in%20Python)
+格线可以分为主、次格线，分别设置不同的风格。参考这里：[\[Link\]](https://www.pythonpool.com/matplotlib-grid/#:~:text=The%20axis%20argument%20is%20%E2%80%98x%E2%80%99%20in%20the%20Matplotlib,Major%20and%20Minor%20Matplotlib%20grid%20%28%29%20in%20Python)
 
 ### [Text](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.text.html)
 
@@ -199,9 +199,9 @@ ax[0].set_axisbelow(True)
 - `x, y`：位置。
 - `s`：文本。
 
-文本属性：[[文档]](https://matplotlib.org/stable/tutorials/text/text_props.html)
+文本属性：[\[文档\]](https://matplotlib.org/stable/tutorials/text/text_props.html)
 
-字体属性：[[文档]](https://matplotlib.org/stable/tutorials/text/text_props.html#default-font)
+字体属性：[\[文档\]](https://matplotlib.org/stable/tutorials/text/text_props.html#default-font)
 
 常用：
 
@@ -232,7 +232,7 @@ im = ax.scatter(psnr_lst, pi_lst, c=mean_lst, cmap=cmap, s=8)
 
 ### [Legend](https://matplotlib.org/stable/tutorials/intermediate/legend_guide.html)
 
-可以不添加真实的数据，只添加图例。例如：[[Link]](https://stackoverflow.com/questions/44937101/matplotlib-custom-legend-with-hatching)
+可以不添加真实的数据，只添加图例。例如：[\[Link\]](https://stackoverflow.com/questions/44937101/matplotlib-custom-legend-with-hatching)
 
 ```python
 patch1 = mpatches.Patch(facecolor='w', edgecolor='k', hatch="//", label='PCC', alpha=0.6)
@@ -254,7 +254,7 @@ ax.set_xticks(([0, 1, 2], ['January', 'February', 'March'], rotation=20, fontsiz
 
 ### 折线图
 
-[[`pyplot.plot`]](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html?highlight=plot#matplotlib.pyplot.plot)
+[\[`pyplot.plot`\]](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html?highlight=plot#matplotlib.pyplot.plot)
 
 输入参数：
 
@@ -262,7 +262,7 @@ ax.set_xticks(([0, 1, 2], ['January', 'February', 'March'], rotation=20, fontsiz
 
 ### 散点图
 
-[[`pyplot.scatter`]](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html)
+[\[`pyplot.scatter`\]](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html)
 
 输入参数：
 
@@ -271,7 +271,7 @@ ax.set_xticks(([0, 1, 2], ['January', 'February', 'March'], rotation=20, fontsiz
 
 ### 直方图
 
-[[`pyplot.hist`]](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html?highlight=hist#matplotlib.pyplot.hist)
+[\[`pyplot.hist`\]](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html?highlight=hist#matplotlib.pyplot.hist)
 
 输入参数：
 
@@ -291,7 +291,7 @@ ax.set_xticks(([0, 1, 2], ['January', 'February', 'March'], rotation=20, fontsiz
 
 ### 柱状图
 
-[[`pyplot.bar`]](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html?highlight=bar#matplotlib.pyplot.bar)
+[\[`pyplot.bar`\]](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html?highlight=bar#matplotlib.pyplot.bar)
 
 输入参数：
 
@@ -312,7 +312,7 @@ ax[0].bar_label(bar1, fontsize=15, fontfamily='Times New Roman', fontweight='nor
 
 ### 热点图
 
-用 `imshow` 就可以绘制热点图，非常简单。[[文档]](https://matplotlib.org/3.5.0/gallery/images_contours_and_fields/image_annotated_heatmap.html)中提供了非常多好看的样例。
+用 `imshow` 就可以绘制热点图，非常简单。[\[文档\]](https://matplotlib.org/3.5.0/gallery/images_contours_and_fields/image_annotated_heatmap.html)中提供了非常多好看的样例。
 
 ## [`multiprocessing`](https://docs.python.org/3/library/multiprocessing.html)
 
@@ -419,9 +419,9 @@ np.fromfile(file, dtype=float, count=-1, sep='', offset=0)
 
 ### 教程
 
-- [[安装]](https://developer.nvidia.com/dali-download-page)
-- [[Get started]](https://docs.nvidia.com/deeplearning/dali/user-guide/docs/examples/getting_started.html)
-- [[Video SR]](https://github.com/NVIDIA/DALI/tree/main/docs/examples/use_cases/video_superres)
+- [\[安装\]](https://developer.nvidia.com/dali-download-page)
+- [\[Get started\]](https://docs.nvidia.com/deeplearning/dali/user-guide/docs/examples/getting_started.html)
+- [\[Video SR\]](https://github.com/NVIDIA/DALI/tree/main/docs/examples/use_cases/video_superres)
 
 ### `pytorch.DALIGenericIterator`
 
@@ -461,7 +461,7 @@ Debug：没考虑 sharding。要自行除以 sharding 数目。
 
 用 `file_list`，可以指定视频名、起始帧和终止帧；和 `filenames` 矛盾。
 
-[[参考]](https://docs.nvidia.com/deeplearning/dali/user-guide/docs/examples/sequence_processing/video/video_file_list_outputs.html)
+[\[参考\]](https://docs.nvidia.com/deeplearning/dali/user-guide/docs/examples/sequence_processing/video/video_file_list_outputs.html)
 
 此时输出是 images 和 labels！
 如果用 filenames，则输出 images。
@@ -486,11 +486,11 @@ Debug：没考虑 sharding。要自行除以 sharding 数目。
 
 #### 多卡分工
 
-- [[数据集 sharding]](https://docs.nvidia.com/deeplearning/dali/user-guide/docs/advanced_topics_sharding.html)
+- [\[数据集 sharding\]](https://docs.nvidia.com/deeplearning/dali/user-guide/docs/advanced_topics_sharding.html)
 
-- [[Sharding demo]](https://github.com/NVIDIA/DALI/blob/2d24052084739726c2775fb27113b2297ef964b1/docs/examples/use_cases/pytorch/single_stage_detector/src/coco_pipeline.py)
+- [\[Sharding demo\]](https://github.com/NVIDIA/DALI/blob/2d24052084739726c2775fb27113b2297ef964b1/docs/examples/use_cases/pytorch/single_stage_detector/src/coco_pipeline.py)
 
-- [[每个进程单独创建 pipeline]](https://github.com/NVIDIA/DALI/issues/2521)
+- [\[每个进程单独创建 pipeline\]](https://github.com/NVIDIA/DALI/issues/2521)
 
 #### Pair data loading 和 transform 解决方案
 
@@ -526,7 +526,7 @@ src_path.exists()  # True or False
 
 ### 创建文件夹
 
-[[`mkdir`]](https://docs.python.org/3/library/pathlib.html#pathlib.Path.mkdir)
+[\[`mkdir`\]](https://docs.python.org/3/library/pathlib.html#pathlib.Path.mkdir)
 
 ```python3
 src_path.mkdir(parents=True, exist_ok=True)  # 自动创建上级路径；如果已存在，不报错，也不创建；默认都是 False
@@ -652,20 +652,23 @@ while True:
 
 #### 写
 
-[[`to_csv`]](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html)
+[\[`to_csv`\]](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html)
 
 - 不要序号列（推荐）：`index=False`。
+
 - 不要抬头行（不推荐）：`header=False`。
+
 - 自定义顺序：`cols=[header1, header2]`。
+
 - 追加列：先读再一起写。不能追加，追加模式是追加行。
 
-    ```python3
-    try:
-        df = pd.read_csv(logger)
-        df['mean_value'] = mean_value_lst
-    except:
-        df = pd.DataFrame(dict(mean_value=mean_value_lst))
-    ```
+  ```python3
+  try:
+      df = pd.read_csv(logger)
+      df['mean_value'] = mean_value_lst
+  except:
+      df = pd.DataFrame(dict(mean_value=mean_value_lst))
+  ```
 
 ## Pickle
 

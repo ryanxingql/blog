@@ -47,11 +47,11 @@ TeX Live 可通过 TeX Live Manager 更新。
 \includegraphics[width=3cm]{example-image-golden}\qquad
 \includegraphics[width=3cm]{example-grid-100x100pt}
 
-\noindent\includegraphics[height=5cm]{example-image-b} 
+\noindent\includegraphics[height=5cm]{example-image-b}
 
-\noindent\includegraphics[scale=0.5]{example-image-c} 
+\noindent\includegraphics[scale=0.5]{example-image-c}
 
-\noindent\includegraphics[width=3cm]{example-image} 
+\noindent\includegraphics[width=3cm]{example-image}
 
 \end{document}
 ```

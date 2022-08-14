@@ -4,7 +4,6 @@
 
 - [Markdown](#markdown)
   - [目录](#目录)
-  - [Unicode](#unicode)
   - [生成可自动更新的 TOC](#生成可自动更新的-toc)
   - [GitHub Support](#github-support)
   - [多级目录](#多级目录)
@@ -12,18 +11,6 @@
   - [定制插入图像](#定制插入图像)
   - [页内跳转](#页内跳转)
   - [展开详情](#展开详情)
-
-## Unicode
-
-直接输入即可。例如想输入右箭头：
-
-```markdown
-&#8594;
-```
-
-&#8594;
-
-合集[在此](https://unicode-table.com/en/sets/)。
 
 ## 生成可自动更新的 TOC
 
@@ -33,11 +20,11 @@
 
 ## GitHub Support
 
-[[简要说明]](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf)
+[\[简要说明\]](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf)
 
-Emoji：[[Link]](https://www.webfx.com/tools/emoji-cheat-sheet/)
+Emoji：[\[Link\]](https://www.webfx.com/tools/emoji-cheat-sheet/)
 
-Languages：[[Link]](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)
+Languages：[\[Link\]](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)
 
 ## 多级目录
 

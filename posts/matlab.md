@@ -19,7 +19,7 @@
     - [字符数组循环](#字符数组循环)
     - [循环按列操作](#循环按列操作)
     - [`length` 返回的是最大维度](#length-返回的是最大维度)
-  - [File Input/Ouput](#file-inputouput)
+  - [File Input/Output](#file-inputoutput)
     - [Binary files](#binary-files)
     - [Text files](#text-files)
   - [Format](#format)
@@ -74,7 +74,7 @@ ans =
     19    22
     43    50
 
->> x ./ y  % array divison
+>> x ./ y  % array division
 ans =
     0.2000    0.3333
     0.4286    0.5000
@@ -288,19 +288,19 @@ str =
 
 ```matlab
 >> datetime
-ans = 
+ans =
   datetime
    2021-10-19 02:05:17
 >> datetime('yesterday')
-ans = 
+ans =
   datetime
    2021-10-18
 >> datetime('tomorrow')
-ans = 
+ans =
   datetime
    2021-10-20
 >> datetime('now')
-ans = 
+ans =
   datetime
    2021-10-19 02:05:54
 ```
@@ -323,9 +323,9 @@ ans =
 >> whos
   Name      Size            Bytes  Class     Attributes
 
-  ans       1x6                12  char                
-  x         1x1                 8  double              
-  y         3x4                96  double              
+  ans       1x6                12  char
+  x         1x1                 8  double
+  y         3x4                96  double
 
 ```
 
@@ -387,7 +387,7 @@ ans =
 real_str(end:-1:1)  % 纹丝不动；要先用char函数转换
 ans =
     'BALTAM'
-ans = 
+ans =
     "MATLAB"
 ```
 
@@ -404,12 +404,12 @@ ans =
 "MAT" + "LAB"
 ans =
     'MATLAB'
-ans = 
+ans =
   1×2 string array
     "MAT"    "LAB"
 ans =
    153   130   150
-ans = 
+ans =
     "MATLAB"
 ```
 
@@ -421,15 +421,15 @@ string(3.1415926)
 string('hello')
 string(true)
 string(2>1)
-ans = 
+ans =
     "3000"
-ans = 
+ans =
     "3.1416"
-ans = 
+ans =
     "hello"
-ans = 
+ans =
     "true"
-ans = 
+ans =
     "true"
 ```
 
@@ -449,7 +449,7 @@ ans =
 >> r.ssn = 123456
 class(r)
 class(r.ssn)
-r = 
+r =
   struct with fields:
 
     ssn: 123456
@@ -468,7 +468,7 @@ company.owner.age = 23;
 
 company(2).number = 2;  % 创建struct array；之前的即company(1)
 company(2)
-ans = 
+ans =
   struct with fields:
 
     number: 2
@@ -489,12 +489,12 @@ ans =
 ans =
   logical
    0
-company = 
+company =
   1×2 struct array with fields:
     number
     owner
 >> company(2)
-ans = 
+ans =
   struct with fields:
 
     number: 2
@@ -592,7 +592,7 @@ disp(length(b));
      7
 ```
 
-## File Input/Ouput
+## File Input/Output
 
 首先要获取和修改工作路径：
 
@@ -602,9 +602,9 @@ ans =
     'C:\Users\XING\Desktop'
 >> ls
 
-.                 caesar.asv        
-..                caesar.m          
-.picasaoriginals  desktop.ini       
+.                 caesar.asv
+..                caesar.m
+.picasaoriginals  desktop.ini
 
 >> cd ../
 >> cd Desktop\
@@ -613,7 +613,7 @@ ans =
 Saving to: C:\Users\XING\Desktop\matlab.mat
 
 >> clear
->> load 
+>> load
 
 Loading from: C:\Users\XING\Desktop\matlab.mat
 ```
@@ -761,7 +761,7 @@ This is a single quote: '
 ```matlab
 >> fprintf('1: %d; 2: %d; 3: %d; end\n', 1, 2, 3, 4)
 1: 1; 2: 2; 3: 3; end
-1: 4; 2: >> 
+1: 4; 2: >>
 ```
 
 这个性质可以帮助我们快速打印向量：

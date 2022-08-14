@@ -29,7 +29,7 @@ chmod +x <bash-name>.sh
 ./<bash-name>.sh
 ```
 
-[[参考]](https://unix.stackexchange.com/a/253900)
+[\[参考\]](https://unix.stackexchange.com/a/253900)
 
 索引格式化：
 
@@ -67,4 +67,4 @@ do
 done
 ```
 
-其他字符串截取方式可以参考：[[博客]](http://c.biancheng.net/view/1120.html)
+其他字符串截取方式可以参考：[\[博客\]](http://c.biancheng.net/view/1120.html)

@@ -23,11 +23,11 @@ ffmpeg -i ./001/%3d.png -c:v libx265 -x265-params lossless=1 001.mkv
 
 要注意，`libx265` 中 `qp = 4` 才是无损压缩。这一点比较奇葩，和 `libx264` 不同。
 
-[[参考]](https://x265.readthedocs.io/en/stable/lossless.html) [[参考]](https://forum.doom9.org/showthread.php?t=175638)
+[\[参考\]](https://x265.readthedocs.io/en/stable/lossless.html) [\[参考\]](https://forum.doom9.org/showthread.php?t=175638)
 
 如果重新解压得到 PNG，你可能会发现 PNG 变大了。别慌，这是因为 FFmpeg 默认不压缩，而你的原始 PNG 执行了无损压缩。
 
-[[参考]](https://stackoverflow.com/questions/48114173/why-ffmpeg-png-image-compression-output-file-bigger-than-input-file) [[参考]](https://www.howtogeek.com/203979/is-the-png-format-lossless-since-it-has-a-compression-parameter/)
+[\[参考\]](https://stackoverflow.com/questions/48114173/why-ffmpeg-png-image-compression-output-file-bigger-than-input-file) [\[参考\]](https://www.howtogeek.com/203979/is-the-png-format-lossless-since-it-has-a-compression-parameter/)
 
 为了比较两张 PNG 的编码内容是否相同，我们可以利用 FFmpeg 和 md5：
 
@@ -91,6 +91,6 @@ ffmpeg -pix_fmt yuv420p -s 960x540 -i 001_960x540_250.yuv -vf "crop=960:536:0:0"
 
 ## 用 YCbCr 无损保存 RGB24
 
-[[参考]](https://trac.ffmpeg.org/wiki/Scaling)
+[\[参考\]](https://trac.ffmpeg.org/wiki/Scaling)
 
 必须是 YCbCr 444 10bit。我猜测是因为矩阵操作存在精度损失。

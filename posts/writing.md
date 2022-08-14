@@ -12,7 +12,7 @@
 2. 图是理解难度最低的形式，也是大多数读者的第一印象来源。
 3. 可以掺杂"私货"：用一些代表性强的个例，或者加入一定创作。这无形中会增强工作的创新性。
 
-[[图表鉴赏]](https://github.com/ryanxingql/blog/blob/main/posts/illustrations.md)
+[\[图表鉴赏\]](https://github.com/ryanxingql/blog/blob/main/posts/illustrations.md)
 
 ## 实验设计
 
@@ -31,7 +31,7 @@
 - [ ] 注释掉致谢部分。
 - [ ] 避免使用 `vspace`。
 - [ ] 摘要、关键词中不要出现数学公式、特殊字符和参考文献。
-- [ ] 使用 “\ie” 和 “\eg” 等命令符。
+- [ ] 使用 “\\ie” 和 “\\eg” 等命令符。
 - [ ] 去掉所有标注和非必要颜色。
 - [ ] 确认所有加粗、斜体、下划线、缩进。
 - [ ] 统一数值精度，例如小数点后两位。
@@ -80,4 +80,4 @@
 - [ ] 缩写查询表和 BibTeX 沿用至今后的工作。
 - [ ] GitHub 和知乎宣传。
 
-[[BibTeX]](https://gist.github.com/ryanxingql/5d0ce37770256c1d1176227d734c5a42)
+[\[BibTeX\]](https://gist.github.com/ryanxingql/5d0ce37770256c1d1176227d734c5a42)

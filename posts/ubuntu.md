@@ -49,7 +49,7 @@ Hyper-threading：当一个逻辑核在等待时，可以让另一个逻辑核�
 
 例如，对于一台 4 核 CPU 计算机，若处理器具有 HT 技术，则 `top` 会显示系统有 8 个 CPU。
 
-[[参考]](https://bbs.huaweicloud.com/blogs/285576)
+[\[参考\]](https://bbs.huaweicloud.com/blogs/285576)
 
 ### 查询
 
@@ -87,7 +87,7 @@ Memory% 类似，为一段时间内 resident 占总内存的百分比。
 
 Time+ 是指累积的 CPU time。例如，某 process 在过去 10 秒内平均使用了 2.8 颗 CPU，那么 CPU time 是 28 秒而不是 10 秒。
 
-[[参考]](https://medium.com/starbugs/do-you-understand-htop-ffb72b3d5629)
+[\[参考\]](https://medium.com/starbugs/do-you-understand-htop-ffb72b3d5629)
 
 ## 系统
 
@@ -120,8 +120,8 @@ Time+ 是指累积的 CPU time。例如，某 process 在过去 10 秒内平均�
 2. 下载 UltraISO，试用即可。
 3. 制作启动盘：
    - 打开 UltraISO。
-   - 文件 -&#8594;> 打开 &#8594; ISO 文件。
-   - 启动 &#8594; 写入硬盘映像（注意不是软盘映像），选择硬盘驱动器为备用 U 盘（会被格式化，当心），写入方式 `USB-HDD+`，写入。
+   - 文件 -→> 打开 → ISO 文件。
+   - 启动 → 写入硬盘映像（注意不是软盘映像），选择硬盘驱动器为备用 U 盘（会被格式化，当心），写入方式 `USB-HDD+`，写入。
    - 提示"刻录成功”后，选择返回即可。
 4. 将 U 盘插在服务器上，在 BIOS 启动项（开机界面狂按 F12 进入）里选择 `UEFI: Generic Flash Disk xxx`，进入 Ubuntu 引导界面，直接安装（不需要试用）。
 5. 最小安装，不装游戏等。
@@ -199,15 +199,15 @@ rm -rf <fake_path>  # 注意末尾不带 /；否则文件夹没删掉，而是�
 
 ### Unity plus LightDM
 
-[[安装]](https://www.linuxbabe.com/ubuntu/install-unity-desktop-environment-ubuntu-20-04)
+[\[安装\]](https://www.linuxbabe.com/ubuntu/install-unity-desktop-environment-ubuntu-20-04)
 
-[[定制]](https://www.jianshu.com/p/1c4430d9084e)
+[\[定制\]](https://www.jianshu.com/p/1c4430d9084e)
 
 ## 软件
 
 ### TAR
 
-[[博客]](https://zhuanlan.zhihu.com/p/407720976)
+[\[博客\]](https://zhuanlan.zhihu.com/p/407720976)
 
 ```bash
 # 将testfile1、2打包到archive.tar
@@ -336,7 +336,7 @@ Ubuntu 支持不好，不建议用。
 
 ### FRP plus supervisor 进程维持 plus supervisor 开机自启
 
-参见博客：[[1]](https://cloud.tencent.com/developer/article/1694829) 和 [[2]](https://blog.csdn.net/yuwu00/article/details/108197283)。
+参见博客：[\[1\]](https://cloud.tencent.com/developer/article/1694829) 和 [\[2\]](https://blog.csdn.net/yuwu00/article/details/108197283)。
 
 配置可以写在 `frpc.ini` 里，此时 command 比较简单：`./ frpc -c xxx/frpc.ini`。
 
