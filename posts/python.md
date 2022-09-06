@@ -181,6 +181,8 @@ fig, ax = plt.subplots(figsize=(14, 7))  # 默认即 1 张；figsize 选填
 ax.plot(a, b)  # 此时 ax 不是列表
 ```
 
+如果是多行多列，则`ax`是一个列表（长度为行数），每个元素又是一个列表（长度为列数）。
+
 ### [Grid](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.grid.html)
 
 我认为比较好看的设置：双向格线，置于底层，略透明实线。
