@@ -2,15 +2,20 @@
 
 | 年份 | 论文 | 关键词 | 核心贡献 | 图 | 笔记 |
 | :- | :- | :- | :- | :- | :- |
-| 2022 | [Runner & Hook](https://b23.tv/USoGoJY) | OpenMMLab | 底层可拓展 |  | val方法为什么不用hook，而是作为runner的一个方法？因为val的过程中也有可能调用其他hook，hook调用hook不合理 |
+| 2022 | Synergistic Self-supervised and Quantization Learning | 对比学习 | 通过对比学习，拉近不同量化后模型表征的距离，从而让习得模型适应量化，维持模型量化后的性能 |  |  |
+| 2022 | AI Illustrator: Translating Raw Descriptions into Images by Prompt-based Cross-Modal Generation | 图像生成 | 根据文字生成图像 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209091303094.png) | 利用CLIP和styleGAN，分别完成文字到图像的特征转换，以及基于图像特征的图像生成 |
+| 2022 | [Runner & Hook](https://b23.tv/USoGoJY) | 框架 | 底层可拓展 |  | val方法为什么不用hook，而是作为runner的一个方法？因为val的过程中也有可能调用其他hook，hook调用hook不合理 |
 | 2022 | Metric Learning based Interactive Modulation for Real-World Super-Resolution | 图像复原 | 交互式图像复原，使得复原强度可控 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209091024407.png) | 现有的方法：在全监督训练时覆盖一些常见的失真，而对于其他失真就失效了。本文：用非监督方法，学习一个metric space中的非量化失真指标。虽然无监督，但需要定义最极端情况作为anchor；这好比，虽然是NR-IQA，但本质也是有参考的 |
 | 2022 | Bringing Old Films Back to Life | 视频增强 | 基于类似BasicVSR的增强框架实现老电影修复 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208221011981.png) | 貌似没用到三域方法。上色是基于关键帧的方法 |
 | 2022 | Vision Transformer with Deformable Attention | Transformer | DAT：类似显著性，K/V只对重要区域求，任意Q都和这些K/V配对算 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208221013585.png) | DAT并非万金油；跟在Swin后用效果好，单独用效果差 |
 | 2022 | NTIRE 2022 Challenge on Super-Resolution and Quality Enhancement of Compressed Video: Dataset, Methods and Results | 视频复原 | NTIRE赛事成绩官方背书 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208131930121.png) | 整合了一个LDV v2数据库 |
 | 2022 | Progressive Training of A Two-Stage Framework for Video Restoration | 视频复原 | NTIRE比赛论文，数据是真实实验数据 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208131928338.png) | 主要介绍了两阶段结构和pre-training训练方法 |
 | 2022 | [动态分辨率编码](https://mp.weixin.qq.com/s/Gx8SpGf9HGnVnCdvtth7Fw) | 视频编码 | 分辨率可以针对内容自适应，从而在保证QoE的同时降低码率需求 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208131920861.png) | |
+| 2021 | Blind Image Super-Resolution: A Survey and Beyond | 图像复原 | TPAMI综述 |  | |
+| 2021 | Unsupervised Degradation Representation Learning for Blind Super-Resolution | 图像复原 | DASR：用对比学习得到不同噪声强度的表征 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209091520063.png) | 当自监督训练完成后，模型可以感知未知噪声输入的噪声强度 |
 | 2021 | Multi-Stage Progressive Image Restoration | 图像复原 | MPRNet：性能很强的baseline结构 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208221013219.png) | 整体上是一个可提前退出的多阶段结构。底层阶段用UNet，高层结构用ORSNet。大量使用了CAB。UNet中encoder和skip connections都用CAB处理；升采样则使用bilinear+conv，而不是transposed conv，以避免棋盘效应。CSFF就是add。SAM是学残差，残差是根据该阶段输出图像简单卷积得到的。ORSNet由多个ORB组成，而ORB是CAB的堆叠 |
 | 2021 | Learning face image super-resolution through facial semantic attribute transformation and self-attentive structure enhancement | 人脸复原 | 先变换人脸属性，再复原人脸边缘结构 |  |  |
+| 2020 | Multi-level Wavelet-based Generative Adversarial Network for Perceptual Quality Enhancement of Compressed Video | 视频复原 | 验证压缩视频主观质量和高频分量最相关，进而增强高频分量 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209091600286.png) | |
 | 2020 | Spatio-Temporal Deformable Convolution for Compressed Video Quality Enhancement | 视频复原 | STDF：用特征域上的可形变卷积代替传统的MEMC，完成时序对齐 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208221018409.png) | |
 | 2020 | Bringing Old Photos Back to Life | 图像增强 | 老照片复原新范式 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208221014261.png) | 先检测缺损，然后nonlocal避开缺损。每个VAE有3个loss：第一个KL loss让特征分布趋于正态分布；第二个loss惩罚重建像素失真；第三个loss惩罚重建特征失真。用一个监督器和对抗loss来迫使真实和伪造假照片的分布趋于一致 |
 | 2020 | Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images | 图像复原 | RBQE：不同编码模式的复原可以共享推理结构和特征；真正的盲复原 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208221014443.png) | 用PSNR随网络深度增加的斜率表征复原难度，用QP简单表征以训练；这种对复原难度的衡量及刻画很初浅。此外，虽然计算复杂度降低了，但时间复杂度上去了；因为使用了可分离卷积 |
@@ -21,6 +26,7 @@
 | 2018 | Neural Nearest Neighbors Networks | 图像复原 | N-3 Net：把不可差分的non-local KNN匹配用可差分松弛近似，从而用神经网络端到端训练 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208131906865.png) | 其实就是对相似块加权，权重类似NCE。比传统的BM3D更高效 |
 | 2018 | [einops](https://github.com/arogozhnikov/einops) | 算法实现 | 一种深度学习算子 | | 我们关注的是变换前后的格式；而代码关注的是变换过程；二者错位让人非常痛苦。可参考[知乎](https://zhuanlan.zhihu.com/p/342675997) |
 | 2017 | Combined Internal and External Category-Specific Image Denoising | 图像复原 | 平滑块简单复原，纹理块参考外部图像复原 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/20220813111334.png) | 需要知道噪声强度来判断平滑/纹理（用的是SNR） |
+| 2017 | Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks | 图像转换 | CycleGAN：增加逆向监督，稳定非监督图像转换过程 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209111143261.png) |  |
 | 2016 | Layer Normalization | 规范化 | LN：针对每个sample处理，使得LN不受batch size影响 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208221016906.png) | LN是对每一个sample单独进行normalize，使得每个sample分布接近，减小sample之间的差异，但保留了sample内部的差异（例如token差异）。在transformer中，LN不仅针对不同sample处理，还针对不同位点处理，使得可变长sample不受长度差异影响。BN是在C上对NHW做norm，即减小C差异，保留NHW。考虑到CV中卷积核是在C上学，因此C上的NHW分布可控（例如高斯分布），可以让卷积更好学。总结：LN从保留sample内部差异的角度理解，BN从保证NHW一致性的角度理解。可参考[知乎](https://www.zhihu.com/question/487766088/answer/2422936310)和自己的[程序](https://gist.github.com/ryanxingql/f27d93c8fcc06488da9773d76fbd85a9) |
 | 2015 | Deep Learning Face Attributes in the Wild | 人脸属性分类 | 判断输入人脸图像是否在微笑、有胡须等 |  | 先执行人脸定位，再执行属性预测。两个子网络分别预训练，再一起训练 |
 | 2014 | Method and apparatus for automatically tuning a parameter of an image enhancement algorithm based on an attribute of an original image | 图像增强 | 判断输入图像的特征（characterist），做相对应的增强 | | 图像的属性（attribute）有很多，例如平均像素强度、像素强度范围、高/低强度区域比例、高/低强度区域细节数量等。我们调整X/Y方向采样率、高斯滤波器参数、alpha blending值等 |
