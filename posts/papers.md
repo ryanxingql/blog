@@ -29,6 +29,8 @@
 | 2020 | Lossy Image Compression with Normalizing Flows | 图像压缩 | 第一个用normalizing flows做图像压缩，突破自编码器范式 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209132248522.png) | 低码率下表现不佳 |
 | 2020 | Bringing Old Photos Back to Life | 图像增强 | 老照片复原新范式 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208221014261.png) | 先检测缺损，然后nonlocal避开缺损。每个VAE有3个loss：第一个KL loss让特征分布趋于正态分布；第二个loss惩罚重建像素失真；第三个loss惩罚重建特征失真。用一个监督器和对抗loss来迫使真实和伪造假照片的分布趋于一致 |
 | 2020 | Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images | 图像复原 | RBQE：不同编码模式的复原可以共享推理结构和特征；真正的盲复原 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208221014443.png) | 用PSNR随网络深度增加的斜率表征复原难度，用QP简单表征以训练；这种对复原难度的衡量及刻画很初浅。此外，虽然计算复杂度降低了，但时间复杂度上去了；因为使用了可分离卷积 |
+| 2020 | A Unified End-to-End Framework for Efficient Deep Image Compression | 图像压缩 | Flickr2W数据集 |  |  |
+| 2019 | Video Enhancement with Task-Oriented Flow | 视频复原 | TOFlow：端到端光流 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209141108771.png) | 受任务目标的制约，此光流并非精确的光流，但却是最有意义的光流。本文还提出了Vimeo-90K视频序列数据集 |
 | 2019 | MFQE 2.0: A New Approach for Multi-Frame Quality Enhancement on Compressed Video | 视频复原 | MFQEv2：相邻帧具有相关性；编码视频存在关键帧；先提取视频中的关键帧，然后充分利用关键帧对非关键帧进行质量提升，有效缓和质量波动情况 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208221015804.png) | 只考虑了LDP模式，其关键帧分布比较规律，因此提取也更容易。此外，IQA采用NIQE，和目标PSNR不一致 |
 | 2019 | Path-Restore: Learning Network Path Selection for Image Restoration | 图像复原 | Path-Restore：用一个多路径CNN，处理一张图像内不同纹理强度、不同失真程度的区域；用RL学一个路径决策器 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/20220812170655.png) | 每个dynamic block共享一个path finder，只能通过loss来迫使每个block输入分布一致。性能上和CNN有差距。为了避免棋盘效应，特别提出了Mask模式，即输入图整图而不是块；我猜后续CNN仍然是按块处理，因为被mask为0的区域可以跳过CNN，从而节约计算量；如果按图输入CNN，即使某个区域置零也无法跳过 |
 | 2019 | Deep Defocus Map Estimation using Domain Adaptation | 失焦预测 | DMENet：用深度学习预测defocus blur | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208221015499.png) | 建库：基于深度图像库，采用thin-lens模型和高斯模糊生成defocus图像。domain adaption：使用对抗学习，聚焦真实图像。每个loss都很重要，参见图3 |
@@ -41,6 +43,7 @@
 | 2016 | Layer Normalization | 规范化 | LN：针对每个sample处理，使得LN不受batch size影响 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208221016906.png) | LN是对每一个sample单独进行normalize，使得每个sample分布接近，减小sample之间的差异，但保留了sample内部的差异（例如token差异）。在transformer中，LN不仅针对不同sample处理，还针对不同位点处理，使得可变长sample不受长度差异影响。BN是在C上对NHW做norm，即减小C差异，保留NHW。考虑到CV中卷积核是在C上学，因此C上的NHW分布可控（例如高斯分布），可以让卷积更好学。总结：LN从保留sample内部差异的角度理解，BN从保证NHW一致性的角度理解。可参考[知乎](https://www.zhihu.com/question/487766088/answer/2422936310)和自己的[程序](https://gist.github.com/ryanxingql/f27d93c8fcc06488da9773d76fbd85a9) |
 | 2015 | Deep Learning Face Attributes in the Wild | 人脸属性分类 | 判断输入人脸图像是否在微笑、有胡须等 |  | 先执行人脸定位，再执行属性预测。两个子网络分别预训练，再一起训练 |
 | 2014 | Nice: Non-linear independent components estimation | 密度估计 |  | | INNs的非线性表征能力通常较差 |
+| 2014 | TESTIMAGES: a Large-scale Archive for Testing Visual Devices and Basic Image Processing Algorithms | 图像数据库 | Tecnick数据集：旧版包含100张1200x1200图像 | |  |
 | 2014 | Method and apparatus for automatically tuning a parameter of an image enhancement algorithm based on an attribute of an original image | 图像增强 | 判断输入图像的特征（characterist），做相对应的增强 | | 图像的属性（attribute）有很多，例如平均像素强度、像素强度范围、高/低强度区域比例、高/低强度区域细节数量等。我们调整X/Y方向采样率、高斯滤波器参数、alpha blending值等 |
 
 ## 工具
