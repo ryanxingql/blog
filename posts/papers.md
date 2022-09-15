@@ -2,11 +2,13 @@
 
 | 年份 | 论文 | 关键词 | 核心贡献 | 图 | 笔记 |
 | :- | :- | :- | :- | :- | :- |
+| 2022 | Joint Image Compression and Denoising via Latent-Space Scalability | 图像压缩；图像去噪 | 用额外的码流，支持去噪模型 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209151433281.png) | 简单粗暴 |
 | 2022 | Synergistic Self-supervised and Quantization Learning | 对比学习 | 通过对比学习，拉近不同量化后模型表征的距离，从而让习得模型适应量化，维持模型量化后的性能 |  |  |
 | 2022 | AI Illustrator: Translating Raw Descriptions into Images by Prompt-based Cross-Modal Generation | 图像生成 | 根据文字生成图像 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209091303094.png) | 利用CLIP和styleGAN，分别完成文字到图像的特征转换，以及基于图像特征的图像生成 |
 | 2022 | [Runner & Hook](https://b23.tv/USoGoJY) | 框架 | 底层可拓展 |  | val方法为什么不用hook，而是作为runner的一个方法？因为val的过程中也有可能调用其他hook，hook调用hook不合理 |
 | 2022 | Metric Learning based Interactive Modulation for Real-World Super-Resolution | 图像复原 | 交互式图像复原，使得复原强度可控 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209091024407.png) | 现有的方法：在全监督训练时覆盖一些常见的失真，而对于其他失真就失效了。本文：用非监督方法，学习一个metric space中的非量化失真指标。虽然无监督，但需要定义最极端情况作为anchor；这好比，虽然是NR-IQA，但本质也是有参考的 |
 | 2022 | Bringing Old Films Back to Life | 视频增强 | 基于类似BasicVSR的增强框架实现老电影修复 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208221011981.png) | 貌似没用到三域方法。上色是基于关键帧的方法 |
+| 2022 | Optimizing Image Compression via Joint Learning with Denoising | 图像压缩；图像去噪 | 先去噪，再压缩，降低压缩负担 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209151439763.png) | 分开处理去噪和压缩是欠佳的。去噪力度不好把握，可能会导致过度平滑，丢掉了一些对压缩有益的信息。本文先用干净图像训练压缩器，然后再在有噪图像上finetune。有点失望。这种方法类似于Modeling Lost Information in Lossy Image Compression这篇工作里的蒸馏，让编码器鲁棒 |
 | 2022 | Vision Transformer with Deformable Attention | Transformer | DAT：类似显著性，K/V只对重要区域求，任意Q都和这些K/V配对算 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208221013585.png) | DAT并非万金油；跟在Swin后用效果好，单独用效果差 |
 | 2022 | NTIRE 2022 Challenge on Super-Resolution and Quality Enhancement of Compressed Video: Dataset, Methods and Results | 视频复原 | NTIRE赛事成绩官方背书 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208131930121.png) | 整合了一个LDV v2数据库 |
 | 2022 | Progressive Training of A Two-Stage Framework for Video Restoration | 视频复原 | NTIRE比赛论文，数据是真实实验数据 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208131928338.png) | 主要介绍了两阶段结构和pre-training训练方法 |
@@ -37,6 +39,9 @@
 | 2018 | Crafting a Toolchain for Image Restoration by Deep Reinforcement Learning | 图像复原 | RL-Restore：用RL选择工具箱的其中一个工具，来复原图像 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208141608716.png) | 工具箱中的工具可以有不同的复杂度、不同的功能（去噪、去压缩伪影等），因此比较灵活 |
 | 2018 | Neural Nearest Neighbors Networks | 图像复原 | N-3 Net：把不可差分的non-local KNN匹配用可差分松弛近似，从而用神经网络端到端训练 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208131906865.png) | 其实就是对相似块加权，权重类似NCE。比传统的BM3D更高效 |
 | 2018 | Joint Autoregressive and Hierarchical Priors for Learned Image Compression | 图像压缩 | 将编码前后的信息，作为context，指导高斯变量的熵编码 | ![image-20220914095229619](/Users/xing/Library/Application Support/typora-user-images/image-20220914095229619.png) |  |
+| 2018 | Joint denoising and decompression using CNN regularization | 图像解码；图像去噪 | 在基于小波变换的压缩图像的解码时，考虑图像去噪 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209151342115.png) | 大致意思：噪声强度和小波系数之间有一定相关性。详细参见：JOINT DENOISING AND DECOMPRESSION: A PATCH-BASED BAYESIAN APPROACH |
+| 2018 | Film Grain Synthesis for AV1 Video Codec | 视频压缩 | 影视节目中需要颗粒感，但这种颗粒噪声很难压缩。本文提出一种生成颗粒感的方法 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209151448163.png) | In many films and photographs, film grain gives a lived-in, weathered, and textured look |
+| 2018 | Variational image compression with a scale hyperprior | 图像压缩 | 将熵模型拆解，使得交叉熵预测更精确 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209151106687.png) | |
 | 2017 | Combined Internal and External Category-Specific Image Denoising | 图像复原 | 平滑块简单复原，纹理块参考外部图像复原 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/20220813111334.png) | 需要知道噪声强度来判断平滑/纹理（用的是SNR） |
 | 2017 | Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks | 图像转换 | CycleGAN：增加逆向监督，稳定非监督图像转换过程 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209111143261.png) |  |
 | 2017 | Density estimation using real NVP | 密度估计 | Real NVP：设计一个学习、采样、推理、评估可追溯的网络来估计密度 |  | |
