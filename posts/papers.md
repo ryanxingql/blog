@@ -5,7 +5,6 @@
 | 2022 | Joint Image Compression and Denoising via Latent-Space Scalability | 图像压缩；图像去噪 | 用额外的码流，支持去噪模型 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209151433281.png) | 简单粗暴 |
 | 2022 | Synergistic Self-supervised and Quantization Learning | 对比学习 | 通过对比学习，拉近不同量化后模型表征的距离，从而让习得模型适应量化，维持模型量化后的性能 |  |  |
 | 2022 | AI Illustrator: Translating Raw Descriptions into Images by Prompt-based Cross-Modal Generation | 图像生成 | 根据文字生成图像 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209091303094.png) | 利用CLIP和styleGAN，分别完成文字到图像的特征转换，以及基于图像特征的图像生成 |
-| 2022 | [Runner & Hook](https://b23.tv/USoGoJY) | 框架 | 底层可拓展 |  | val方法为什么不用hook，而是作为runner的一个方法？因为val的过程中也有可能调用其他hook，hook调用hook不合理 |
 | 2022 | Metric Learning based Interactive Modulation for Real-World Super-Resolution | 图像复原 | 交互式图像复原，使得复原强度可控 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209091024407.png) | 现有的方法：在全监督训练时覆盖一些常见的失真，而对于其他失真就失效了。本文：用非监督方法，学习一个metric space中的非量化失真指标。虽然无监督，但需要定义最极端情况作为anchor；这好比，虽然是NR-IQA，但本质也是有参考的 |
 | 2022 | Bringing Old Films Back to Life | 视频增强 | 基于类似BasicVSR的增强框架实现老电影修复 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208221011981.png) | 貌似没用到三域方法。上色是基于关键帧的方法 |
 | 2022 | Optimizing Image Compression via Joint Learning with Denoising | 图像压缩；图像去噪 | 先去噪，再压缩，降低压缩负担 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209151439763.png) | 分开处理去噪和压缩是欠佳的。去噪力度不好把握，可能会导致过度平滑，丢掉了一些对压缩有益的信息。本文先用干净图像训练压缩器，然后再在有噪图像上finetune。有点失望。这种方法类似于Modeling Lost Information in Lossy Image Compression这篇工作里的蒸馏，让编码器鲁棒 |
@@ -15,6 +14,7 @@
 | 2022 | Exploring CLIP for Assessing the Look and Feel of Images | 图像质量评估 | 用CLIP来表达图像质量 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209111829503.png) | 开宗明义：图像质量和人类语言是强耦合的 |
 | 2022 | [动态分辨率编码](https://mp.weixin.qq.com/s/Gx8SpGf9HGnVnCdvtth7Fw) | 视频压缩 | 分辨率可以针对内容自适应，从而在保证QoE的同时降低码率需求 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208131920861.png) | |
 | 2021 | TANet: Target Attention Network for Video Bit-Depth Enhancement | 视频增强 | 增大视频的色彩深度 |  | |
+| 2021 | IICNet: A Generic Framework for Reversible Image Conversion | 图像转换 | 用一个统一的可逆架构完成多种图像转换任务，例如图像隐写、抠图、放缩等 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209181555733.png) | |
 | 2021 | Enhanced Invertible Encoding for Learned Image Compression | 图像压缩 | 用可逆网络来实现特征、图像之间的转换 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209131009318.png) | 不再关注熵模型，而是关注特征、图像之间的转换。用可逆网络代替传统的可变分自编码器。可逆网络有很多局限性；为此，本文提出了注意力通道压缩层以及特征增强模块，和INN搭配使用。本文对基于深度学习的图像压缩方法review得很好，值得一读 |
 | 2021 | CLIP4Caption: CLIP for Video Caption | 视频概述 | 利用基于CLIP预训练的图像特征提取器；因为它和文本高度相关，因此能服务于后续的文本生成 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209111813464.png) | |
 | 2021 | ActionCLIP: A New Paradigm for Video Action Recognition | 视频动作识别 | ActionCLIP：把传统的分类问题，转换为动作、文字匹配问题 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209111800185.png) | 传统方法：视频到one-hot向量，两个域之间的映射问题。现在的方法：视频到表征，分类到表征，从而在表征上进行匹配；这是三个域 |
@@ -31,6 +31,7 @@
 | 2020 | Lossy Image Compression with Normalizing Flows | 图像压缩 | 第一个用normalizing flows做图像压缩，突破自编码器范式 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209132248522.png) | 低码率下表现不佳 |
 | 2020 | Bringing Old Photos Back to Life | 图像增强 | 老照片复原新范式 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208221014261.png) | 先检测缺损，然后nonlocal避开缺损。每个VAE有3个loss：第一个KL loss让特征分布趋于正态分布；第二个loss惩罚重建像素失真；第三个loss惩罚重建特征失真。用一个监督器和对抗loss来迫使真实和伪造假照片的分布趋于一致 |
 | 2020 | Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images | 图像复原 | RBQE：不同编码模式的复原可以共享推理结构和特征；真正的盲复原 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208221014443.png) | 用PSNR随网络深度增加的斜率表征复原难度，用QP简单表征以训练；这种对复原难度的衡量及刻画很初浅。此外，虽然计算复杂度降低了，但时间复杂度上去了；因为使用了可分离卷积 |
+| 2020 | Learned Image Compression with Discretized Gaussian Mixture Likelihoods and Attention Modules | 图像压缩 | 用GMM搭建熵模型；在$g_a$和$g_s$中使用注意力机制 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209181405695.png) | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209181400486.png) |
 | 2020 | A Unified End-to-End Framework for Efficient Deep Image Compression | 图像压缩 | Flickr2W数据集 |  |  |
 | 2019 | Video Enhancement with Task-Oriented Flow | 视频复原 | TOFlow：端到端光流 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209141108771.png) | 受任务目标的制约，此光流并非精确的光流，但却是最有意义的光流。本文还提出了Vimeo-90K视频序列数据集 |
 | 2019 | MFQE 2.0: A New Approach for Multi-Frame Quality Enhancement on Compressed Video | 视频复原 | MFQEv2：相邻帧具有相关性；编码视频存在关键帧；先提取视频中的关键帧，然后充分利用关键帧对非关键帧进行质量提升，有效缓和质量波动情况 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208221015804.png) | 只考虑了LDP模式，其关键帧分布比较规律，因此提取也更容易。此外，IQA采用NIQE，和目标PSNR不一致 |
@@ -57,4 +58,5 @@
 | :- | :- | :- | :- |
 | [ImgBot](https://imgbot.net) | 压缩项目中图体积 | | 用户如果等待图加载太久，很可能就离开了 |
 | [einops](https://github.com/arogozhnikov/einops) | 一种深度学习算子 | | 我们关注的是变换前后的格式；而代码关注的是变换过程；二者错位让人非常痛苦。可参考[知乎](https://zhuanlan.zhihu.com/p/342675997) |
-
+| [Open MMLab Runner & Hook](https://b23.tv/USoGoJY) | 底层可拓展 |  | val方法为什么不用hook，而是作为runner的一个方法？因为val的过程中也有可能调用其他hook，hook调用hook不合理 |
+| [Exploring Invertibility in Image Processing and Restoration](https://www.bilibili.com/video/BV1654y177ew?spm_id_from=333.337.search-card.all.click&vd_source=1b8561cfaa0a59ea70f8de6dc0131790) | 利用近乎可逆的过程 | | ISP，图像压缩，图像恢复 |
