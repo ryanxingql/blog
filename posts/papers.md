@@ -24,6 +24,7 @@
 | 2021 | Unsupervised Degradation Representation Learning for Blind Super-Resolution | 图像复原 | DASR：用对比学习得到不同噪声强度的表征 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209091520063.png) | 当自监督训练完成后，模型可以感知未知噪声输入的噪声强度 |
 | 2021 | Multi-Stage Progressive Image Restoration | 图像复原 | MPRNet：性能很强的baseline结构 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208221013219.png) | 整体上是一个可提前退出的多阶段结构。底层阶段用UNet，高层结构用ORSNet。大量使用了CAB。UNet中encoder和skip connections都用CAB处理；升采样则使用bilinear+conv，而不是transposed conv，以避免棋盘效应。CSFF就是add。SAM是学残差，残差是根据该阶段输出图像简单卷积得到的。ORSNet由多个ORB组成，而ORB是CAB的堆叠 |
 | 2021 | Learning face image super-resolution through facial semantic attribute transformation and self-attentive structure enhancement | 人脸复原 | 先变换人脸属性，再复原人脸边缘结构 |  |  |
+| 2021 | Patch-Wise Spatial-Temporal Quality Enhancement for HEVC Compressed Video | 视频复原 | 空域和时域提取特征，基于attention做patch-wise融合 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209231555661.png) | 不同区域确实应该区别考虑，因为质量不同，motion不同 |
 | 2020 | Invertible Image Rescaling | 图像放缩 | 利用可逆网络，同时使用了随机采样技巧降低图像容量 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209141048995.png) | |
 | 2020 | Multi-level Wavelet-based Generative Adversarial Network for Perceptual Quality Enhancement of Compressed Video | 视频复原 | 验证压缩视频主观质量和高频分量最相关，进而增强高频分量 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209091600286.png) | |
 | 2020 | CompressAI: a PyTorch library and evaluation platform for end-to-end compression research | 图像编解码 | CompressAI：基于深度学习的压缩方法框架 |  | |
@@ -59,8 +60,9 @@
 
 | 名称 | 核心贡献 | 图 | 笔记 |
 | :- | :- | :- | :- |
-| [ImgBot](https://imgbot.net) | 压缩项目中图体积 | | 用户如果等待图加载太久，很可能就离开了 |
-| [einops](https://github.com/arogozhnikov/einops) | 一种深度学习算子 | | 我们关注的是变换前后的格式；而代码关注的是变换过程；二者错位让人非常痛苦。可参考[知乎](https://zhuanlan.zhihu.com/p/342675997) |
-| [Open MMLab Runner & Hook](https://b23.tv/USoGoJY) | 底层可拓展 |  | val方法为什么不用hook，而是作为runner的一个方法？因为val的过程中也有可能调用其他hook，hook调用hook不合理 |
-| [Exploring Invertibility in Image Processing and Restoration](https://www.bilibili.com/video/BV1654y177ew?spm_id_from=333.337.search-card.all.click&vd_source=1b8561cfaa0a59ea70f8de6dc0131790) | 利用近乎可逆的过程 | | ISP，图像编解码，图像恢复 |
-| [PCS 2018 – Learned Image Compression](https://www.youtube.com/watch?v=x_q7cZviXkY) | LIC | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209230925043.png) | LIC避免了各组件分别优化导致的块效应、振铃效应等。上世纪的工作（基于变换的编码）主要基于线性变换 |
+| [ImgBot](https://imgbot.net) | 压缩项目中图体积 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209231502111.png) | 用户如果等待图加载太久，很可能就离开了 |
+| [einops](https://github.com/arogozhnikov/einops) | 一种深度学习算子 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209231504133.png) | 我们关注的是变换前后的格式；而代码关注的是变换过程；二者错位让人非常痛苦。可参考[知乎](https://zhuanlan.zhihu.com/p/342675997) |
+| [Open MMLab Runner & Hook](https://b23.tv/USoGoJY) | 底层可拓展 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209231505864.png) | val方法为什么不用hook，而是作为runner的一个方法？因为val的过程中也有可能调用其他hook，hook调用hook不合理 |
+| [Exploring Invertibility in Image Processing and Restoration](https://www.bilibili.com/video/BV1654y177ew?spm_id_from=333.337.search-card.all.click&vd_source=1b8561cfaa0a59ea70f8de6dc0131790) | 利用近乎可逆的过程 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209231505034.png) | ISP，图像编解码，图像恢复 |
+| [PCS 2018 – Learned Image Compression](https://www.youtube.com/watch?v=x_q7cZviXkY) | 图像编解码 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209230925043.png) | LIC避免了各组件分别优化导致的块效应、振铃效应等。上世纪的工作（基于变换的编码）主要基于线性变换 |
+| [VCIP 2020 - Learned Image and Video Compression with Deep Neural Networks](https://www.polybox.ethz.ch/index.php/s/PSmRYBTyvljzkbm) | 图像编解码 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209231502191.png) | 对不同的熵模型有形象的介绍 |
