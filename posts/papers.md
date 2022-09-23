@@ -13,6 +13,7 @@
 | 2022 | Progressive Training of A Two-Stage Framework for Video Restoration | 视频复原 | NTIRE比赛论文，数据是真实实验数据 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208131928338.png) | 主要介绍了两阶段结构和pre-training训练方法 |
 | 2022 | Exploring CLIP for Assessing the Look and Feel of Images | 图像质量评估 | 用CLIP来表达图像质量 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209111829503.png) | 开宗明义：图像质量和人类语言是强耦合的 |
 | 2022 | [动态分辨率编码](https://mp.weixin.qq.com/s/Gx8SpGf9HGnVnCdvtth7Fw) | 视频压缩 | 分辨率可以针对内容自适应，从而在保证QoE的同时降低码率需求 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208131920861.png) | |
+| 2022 | ELIC: Efficient Learned Image Compression with Unevenly Grouped Space-Channel Contextual Adaptive Coding | 图像编解码 |  | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209231115958.png) | [[视频]](https://www.zhihu.com/zvideo/1526166844448321536) |
 | 2021 | TANet: Target Attention Network for Video Bit-Depth Enhancement | 视频增强 | 增大视频的色彩深度 |  | |
 | 2021 | IICNet: A Generic Framework for Reversible Image Conversion | 图像转换 | 用一个统一的可逆架构完成多种图像转换任务，例如图像隐写、抠图、放缩等 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209181555733.png) | |
 | 2021 | Enhanced Invertible Encoding for Learned Image Compression | 图像编解码 | 用可逆网络来实现特征、图像之间的转换 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209131009318.png) | 不再关注熵模型，而是关注特征、图像之间的转换。用可逆网络代替传统的可变分自编码器。可逆网络有很多局限性；为此，本文提出了注意力通道压缩层以及特征增强模块，和INN搭配使用。本文对基于深度学习的图像编解码方法review得很好，值得一读 |
@@ -43,11 +44,11 @@
 | 2018 | Joint denoising and decompression using CNN regularization | 图像解码；图像去噪 | 在基于小波变换的压缩图像的解码时，考虑图像去噪 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209151342115.png) | 大致意思：噪声强度和小波系数之间有一定相关性。详细参见：JOINT DENOISING AND DECOMPRESSION: A PATCH-BASED BAYESIAN APPROACH |
 | 2018 | Film Grain Synthesis for AV1 Video Codec | 视频压缩 | 影视节目中需要颗粒感，但这种颗粒噪声很难压缩。本文提出一种生成颗粒感的方法 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209151448163.png) | In many films and photographs, film grain gives a lived-in, weathered, and textured look |
 | 2018 | Variational image compression with a scale hyperprior | 图像编解码 | 将熵模型拆解，使得交叉熵预测更精确 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209151106687.png) | 从factorized到hyper的演化讲得很清楚，值得一读 |
-| 2017 | End-to-end Optimized Image Compression | 图像编解码 |  | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209221003014.png) | 要读懂LIC，得从这篇文章开始 |
+| 2017 | End-to-end Optimized Image Compression | 图像编解码 |  | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209221003014.png) | 和End-to-end optimization of nonlinear transform codes for perceptual quality异曲同工 |
 | 2017 | Combined Internal and External Category-Specific Image Denoising | 图像复原 | 平滑块简单复原，纹理块参考外部图像复原 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/20220813111334.png) | 需要知道噪声强度来判断平滑/纹理（用的是SNR） |
 | 2017 | Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks | 图像转换 | CycleGAN：增加逆向监督，稳定非监督图像转换过程 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209111143261.png) |  |
 | 2017 | Density estimation using real NVP | 密度估计 | Real NVP：设计一个学习、采样、推理、评估可追溯的网络来估计密度 |  | |
-| 2016 | End-to-end optimization of nonlinear transform codes for perceptual quality | 图像编解码 | 和End-to-end Optimized Image Compression异曲同工，但关注感知质量 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209221003014.png) |  |
+| 2016 | End-to-end optimization of nonlinear transform codes for perceptual quality | 图像编解码 | 要读懂LIC，得从这篇文章开始 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209221003014.png) | 将不可差分的量化替换为加性均匀噪声，用以优化 |
 | 2016 | Layer Normalization | 规范化 | LN：针对每个sample处理，使得LN不受batch size影响 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202208221016906.png) | LN是对每一个sample单独进行normalize，使得每个sample分布接近，减小sample之间的差异，但保留了sample内部的差异（例如token差异）。在transformer中，LN不仅针对不同sample处理，还针对不同位点处理，使得可变长sample不受长度差异影响。BN是在C上对NHW做norm，即减小C差异，保留NHW。考虑到CV中卷积核是在C上学，因此C上的NHW分布可控（例如高斯分布），可以让卷积更好学。总结：LN从保留sample内部差异的角度理解，BN从保证NHW一致性的角度理解。可参考[知乎](https://www.zhihu.com/question/487766088/answer/2422936310)和自己的[程序](https://gist.github.com/ryanxingql/f27d93c8fcc06488da9773d76fbd85a9) |
 | 2015 | Deep Learning Face Attributes in the Wild | 人脸属性分类 | 判断输入人脸图像是否在微笑、有胡须等 |  | 先执行人脸定位，再执行属性预测。两个子网络分别预训练，再一起训练 |
 | 2014 | Nice: Non-linear independent components estimation | 密度估计 |  | | INNs的非线性表征能力通常较差 |
@@ -62,3 +63,4 @@
 | [einops](https://github.com/arogozhnikov/einops) | 一种深度学习算子 | | 我们关注的是变换前后的格式；而代码关注的是变换过程；二者错位让人非常痛苦。可参考[知乎](https://zhuanlan.zhihu.com/p/342675997) |
 | [Open MMLab Runner & Hook](https://b23.tv/USoGoJY) | 底层可拓展 |  | val方法为什么不用hook，而是作为runner的一个方法？因为val的过程中也有可能调用其他hook，hook调用hook不合理 |
 | [Exploring Invertibility in Image Processing and Restoration](https://www.bilibili.com/video/BV1654y177ew?spm_id_from=333.337.search-card.all.click&vd_source=1b8561cfaa0a59ea70f8de6dc0131790) | 利用近乎可逆的过程 | | ISP，图像编解码，图像恢复 |
+| [PCS 2018 – Learned Image Compression](https://www.youtube.com/watch?v=x_q7cZviXkY) | LIC | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209230925043.png) | LIC避免了各组件分别优化导致的块效应、振铃效应等。上世纪的工作（基于变换的编码）主要基于线性变换 |
