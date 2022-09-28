@@ -56,13 +56,15 @@
 | 2014 | TESTIMAGES: a Large-scale Archive for Testing Visual Devices and Basic Image Processing Algorithms | 图像数据库 | Tecnick数据集：旧版包含100张1200x1200图像 | |  |
 | 2014 | Method and apparatus for automatically tuning a parameter of an image enhancement algorithm based on an attribute of an original image | 图像增强 | 判断输入图像的特征（characterist），做相对应的增强 | | 图像的属性（attribute）有很多，例如平均像素强度、像素强度范围、高/低强度区域比例、高/低强度区域细节数量等。我们调整X/Y方向采样率、高斯滤波器参数、alpha blending值等 |
 
-## 工具/教程
+## 工具/教程/数据
 
-| 名称 | 核心贡献 | 图 | 笔记 |
+| 名称 | 核心贡献 | 笔记 | 图 |
 | :- | :- | :- | :- |
-| [ImgBot](https://imgbot.net) | 压缩项目中图体积 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209231502111.png) | 用户如果等待图加载太久，很可能就离开了 |
-| [einops](https://github.com/arogozhnikov/einops) | 一种深度学习算子 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209231504133.png) | 我们关注的是变换前后的格式；而代码关注的是变换过程；二者错位让人非常痛苦。可参考[知乎](https://zhuanlan.zhihu.com/p/342675997) |
-| [Open MMLab Runner & Hook](https://b23.tv/USoGoJY) | 底层可拓展 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209231505864.png) | val方法为什么不用hook，而是作为runner的一个方法？因为val的过程中也有可能调用其他hook，hook调用hook不合理 |
-| [Exploring Invertibility in Image Processing and Restoration](https://www.bilibili.com/video/BV1654y177ew?spm_id_from=333.337.search-card.all.click&vd_source=1b8561cfaa0a59ea70f8de6dc0131790) | 利用近乎可逆的过程 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209231505034.png) | ISP，图像编解码，图像恢复 |
-| [PCS 2018 – Learned Image Compression](https://www.youtube.com/watch?v=x_q7cZviXkY) | 图像编解码 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209230925043.png) | LIC避免了各组件分别优化导致的块效应、振铃效应等。上世纪的工作（基于变换的编码）主要基于线性变换 |
-| [VCIP 2020 - Learned Image and Video Compression with Deep Neural Networks](https://www.polybox.ethz.ch/index.php/s/PSmRYBTyvljzkbm) | 图像编解码 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209231502191.png) | 对不同的熵模型有形象的介绍 |
+| [ImgBot](https://imgbot.net) | 压缩项目中图体积 | 用户如果等待图加载太久，很可能就离开了 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209231502111.png) |
+| [einops](https://github.com/arogozhnikov/einops) | 一种深度学习算子 | 我们关注的是变换前后的格式；而代码关注的是变换过程；二者错位让人非常痛苦。可参考[知乎](https://zhuanlan.zhihu.com/p/342675997) | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209231504133.png) |
+| [Open MMLab Runner & Hook](https://b23.tv/USoGoJY) | 底层可拓展 | val方法为什么不用hook，而是作为runner的一个方法？因为val的过程中也有可能调用其他hook，hook调用hook不合理 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209231505864.png) |
+| [Exploring Invertibility in Image Processing and Restoration](https://www.bilibili.com/video/BV1654y177ew?spm_id_from=333.337.search-card.all.click&vd_source=1b8561cfaa0a59ea70f8de6dc0131790) | 利用近乎可逆的过程 | ISP，图像编解码，图像恢复 |![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209231505034.png) |
+| [PCS 2018 – Learned Image Compression](https://www.youtube.com/watch?v=x_q7cZviXkY) | 图像编解码 | LIC避免了各组件分别优化导致的块效应、振铃效应等。上世纪的工作（基于变换的编码）主要基于线性变换 | ![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209230925043.png) |
+| [VCIP 2020 - Learned Image and Video Compression with Deep Neural Networks](https://www.polybox.ethz.ch/index.php/s/PSmRYBTyvljzkbm) | 图像编解码 | 对不同的熵模型有形象的介绍 |![](https://raw.githubusercontent.com/ryanxingql/picgo/main/202209231502191.png) |
+| [LAION-AESTHETICS](https://laion.ai/blog/laion-aesthetics/) | 美学数据库 | 计算机生成图像数据库，由主观评分选出其中的高质量图像 |  |
+| [Flow-based Generative Model](https://www.youtube.com/watch?v=uXY18nzdSsM) | 生成模型 | 直接优化真实数据采样点在生成分布中产生的概率 |  |
