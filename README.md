@@ -19,7 +19,6 @@
 ## 随记
 
 - [英语学习](https://github.com/ryanxingql/blog/blob/main/posts/english.md)
-- [论文阅读](https://github.com/ryanxingql/blog/blob/main/posts/papers.md)
 - [视频剪辑](https://github.com/ryanxingql/blog/blob/main/posts/video_editing.md)
 - [学术写作](https://github.com/ryanxingql/blog/blob/main/posts/writing.md)
 - [Bash](https://github.com/ryanxingql/blog/blob/main/posts/bash.md)
