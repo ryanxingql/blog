@@ -14,7 +14,7 @@
 - 图是理解难度最低的形式，也是大多数读者的第一印象来源。
 - 可以掺杂"私货"：用一些代表性强的个例，或者加入一定创作。这无形中会增强工作的创新性。
 
-[[图表鉴赏]](https://github.com/ryanxingql/blog/blob/main/posts/illustrations.md)
+[\[图表鉴赏\]](https://github.com/ryanxingql/blog/blob/main/posts/illustrations.md)
 
 ### 合理设计实验
 
@@ -55,7 +55,7 @@
 ### 语法
 
 - 公式也要有标点符号。
-- 缩写如果逐字母发音，则加the，否则不加。[[参考]](https://editorsmanual.com/articles/definite-article-the-with-acronyms-abbreviations/)
+- 缩写如果逐字母发音，则加the，否则不加。[\[参考\]](https://editorsmanual.com/articles/definite-article-the-with-acronyms-abbreviations/)
 
 ### 投稿前再关注
 
@@ -104,4 +104,3 @@
 - 整理所有画图等代码片段，可以保存至博客。
 - 服务器所有文件都要传到本地保存。
 - 代码、写作仓库分别打包备份。
-

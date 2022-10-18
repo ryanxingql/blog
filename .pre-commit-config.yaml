@@ -1,16 +1,4 @@
 repos:
-  - repo: https://github.com/PyCQA/flake8
-    rev: 3.7.9
-    hooks:
-      - id: flake8
-  - repo: https://github.com/PyCQA/isort
-    rev: 5.10.1
-    hooks:
-      - id: isort
-  - repo: https://github.com/pre-commit/mirrors-yapf
-    rev: v0.29.0
-    hooks:
-      - id: yapf
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.1.0
     hooks:
