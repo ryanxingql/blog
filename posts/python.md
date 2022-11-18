@@ -375,7 +375,7 @@ callback=lambda x :pbar.update(1)
 原因：在 Python 中，同一时刻只有一个线程运行，约束方式即 GIL 锁。
 因此，Python 的多线程不是并行，而是并发。
 
-![python-1](https://user-images.githubusercontent.com/34084019/183278143-2f661d15-b0a9-4016-a4b7-3563e4a3cd43.jpg)
+![python-1](./assets/183278143-2f661d15-b0a9-4016-a4b7-3563e4a3cd43.jpg)
 
 如图，Python 在工作一段时间（check interval）后，会主动释放 GIL，让其他线程也参与工作。
 在 Python 中，该间隔为 15 ms。
@@ -637,7 +637,7 @@ with open('somefile') as openfileobject:
 
 # 当 EOF 时，会一直返回 ''，即 False；注意空行是 \n，不是 ''
 while True:
-    line = fo.readline()
+    line = fp.readline()
     if not line:
         break
 ```
