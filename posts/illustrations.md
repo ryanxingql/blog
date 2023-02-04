@@ -6,7 +6,7 @@
 | Pipeline   | ![](./assets/202208221021521.png) | 把视频帧展开                                                                   | Viewport-Based CNN: A Multi-Task Approach for Assessing 360° Video Quality      |
 | Pipeline   | ![](./assets/202208221022621.png) | 简单；图文并茂                                                                 | Vision Transformer with Deformable Attention                                    |
 | Pipeline   | ![](./assets/202208221022153.png) | 简单、清楚地说明了方法原理。看多了复杂的网络结构图，感觉还是这种直来直去的简洁风格最让人喜欢。要做到“简单”一点也不简单，需要抽象出方法的本质 | DeepQTMT: A Deep Learning Approach for Fast QTMT-based CU Partition of Intra-mode VVC |
-| Pipeline   | ![](./assets/202208221023350.png) | 基本的Framework和展开                                                          | Viewport-Based CNN: A Multi-Task Approach for Assessing 360° Video Quality      |
+| Pipeline   | ![](./assets/202208221023350.png) | 基本的 Framework 和展开                                                        | Viewport-Based CNN: A Multi-Task Approach for Assessing 360° Video Quality      |
 | Pipeline   | ![](./assets/202208221023462.png) |                                                                                | Reducing Complexity of HEVC: A Deep Learning Approach                           |
 | Pipeline   | ![](./assets/202208221023154.png) |                                                                                | Reducing Complexity of HEVC: A Deep Learning Approach                           |
 | Pipeline   | ![](./assets/202208221024231.png) |                                                                                | Reducing Complexity of HEVC: A Deep Learning Approach                           |
