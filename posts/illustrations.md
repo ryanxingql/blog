@@ -26,5 +26,5 @@
 | Statistics | ![](./assets/202208221046906.png) |                                                                                | BasicVSR: The Search for Essential Components in Video Super-Resolution and Beyond |
 | Demo       | ![](./assets/202208221021963.png) | 把识别目标都调成了翠绿色，衬托橙色锚点                                         | Vision Transformer with Deformable Attention                                    |
 | Demo       | ![](./assets/202208221028441.png) | 把识别目标都调成了翠绿色，衬托橙色锚点                                         | Vision Transformer with Deformable Attention                                    |
-| Demo       | ![](./assets/202209181603479.png) | 主观图不明显，那就加上残差                                                     | https://arxiv.org/pdf/2109.04242.pdf                                            |
+| Demo       | ![](./assets/202209181603479.png) | 主观图不明显，那就加上残差                                                     | IICNet: A Generic Framework for Reversible Image Conversion                     |
 | Demo       | ![](./assets/202208221022184.png) | 图文并茂                                                                       | Reducing Complexity of HEVC: A Deep Learning Approach                           |

@@ -8,4 +8,4 @@
 - [计算机视觉论文的插图鉴赏](https://github.com/ryanxingql/blog/blob/main/posts/illustrations.md)
 - [北航电子信息专业课笔记](https://github.com/ryanxingql/blog/blob/main/posts/buaa_ee.md)
 
-> 排版主要遵循[中文技术文档写作规范](https://github.com/ruanyf/document-style-guide)和[中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)。
+> 排版主要遵循「[中文技术文档写作规范](https://github.com/ruanyf/document-style-guide)」和「[中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)」。
