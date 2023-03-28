@@ -15,6 +15,10 @@
 1. 绝不用人工方式完成任务：否则需求一改，一切都要推倒重来。
 2. 任务有一定自由度：文献列表只需要尽可能完整，并没有要求基于某个特定数据库检索。
 
+本文方案最终效果：
+
+![image-20230328133509642](./bib.assets/image-20230328133509642.png)
+
 ## 方案总体设计
 
 1. 用 dblp 数据库导出每一位老师的文献记录（BibTeX 格式）。dblp 有几大优点：
@@ -50,7 +54,7 @@ pandoc name1.bib -s -f biblatex -t csljson > name1.json
 pandoc name2.bib -s -f biblatex -t csljson > name2.json
 ```
 
-转换前：
+以下为效果展示。转换前：
 
 ```bibtex
 @article{DBLP:journals/pami/GuanJ0XJZL23,
@@ -143,7 +147,7 @@ pandoc name2.bib -s -f biblatex -t csljson > name2.json
 4. 根据「year-id」排序字典的 keys，从而实现「根据时间排序条目」。
 5. 根据排序好的 key，将字典 item 写入 Word。可以在每个条目前加上序号。
 
-由于要导入至 Word，因此用到了 `python-docx` 包，可以用 `pip` 或 `conda` 安装。最终 Python 程序如下所示：
+最终 Python 程序如下所示。直接运行即可。由于要导入至 Word，因此用到了 `python-docx` 包；可以用 `pip` 或 `conda` 安装。
 
 ```python
 import json
@@ -340,7 +344,7 @@ document.save('output.docx')
 
 ```
 
-在实现了初版代码后，我们检查导出数据，发现了几个问题：
+程序细节：
 
 1. dblp 大量使用了缩写，如上例中的「IEEE Trans. Pattern Anal. Mach. Intell.」。而我们需要全称。我暂时没有办法解决这个问题，只好人工标注，即找出所有缩写（搜索「.」），记录缩写和全称到子程序 `parse_journal` 中的字典里。
 2. dblp 的会议名称太冗长。例如「IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops, CVPR Workshops 2022, New Orleans, LA, USA, June 19-20, 2022」，我们只需要逗号前的字符串，即「IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops」。注意，有些会议名称中有逗号，例如「IEEE international conference on acoustics, speech and signal processing」。我将缩写和全称记录到子程序 `parse_conference` 中的字典里。
