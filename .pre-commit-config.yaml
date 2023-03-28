@@ -28,7 +28,7 @@ repos:
     rev: v2.2.2
     hooks:
       - id: codespell
-        args: ["--skip", "*.ipynb"]
+        args: ["--skip", "*.ipynb,posts/bib.md"]
   - repo: https://github.com/executablebooks/mdformat
     rev: 0.7.16
     hooks:
