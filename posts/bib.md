@@ -47,7 +47,7 @@
 
 BibTeX 属于文本格式，不利于我们的数据处理。因此我们必须要先把数据转换为 JSON 等易处理格式。
 
-用 `pip` 或 `conda` 安装 `pandoc`，然后执行：
+用 pip 或 Conda 安装 Pandoc，然后执行：
 
 ```bash
 pandoc name1.bib -s -f biblatex -t csljson > name1.json
@@ -147,7 +147,7 @@ pandoc name2.bib -s -f biblatex -t csljson > name2.json
 4. 根据「year-id」排序字典的 keys，从而实现「根据时间排序条目」。
 5. 根据排序好的 key，将字典 item 写入 Word。可以在每个条目前加上序号。
 
-最终 Python 程序如下所示。直接运行即可。由于要导入至 Word，因此用到了 `python-docx` 包；可以用 `pip` 或 `conda` 安装。
+最终 Python 程序如下所示。直接运行即可。注意，由于要导入至 Word，因此程序用到了 `python-docx` 包；可以用 pip 或 Conda 安装。
 
 ```python
 import json
@@ -346,10 +346,10 @@ document.save('output.docx')
 
 程序细节：
 
-1. dblp 大量使用了缩写，如上例中的「IEEE Trans. Pattern Anal. Mach. Intell.」。而我们需要全称。我暂时没有办法解决这个问题，只好人工标注，即找出所有缩写（搜索「.」），记录缩写和全称到子程序 `parse_journal` 中的字典里。
-2. dblp 的会议名称太冗长。例如「IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops, CVPR Workshops 2022, New Orleans, LA, USA, June 19-20, 2022」，我们只需要逗号前的字符串，即「IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops」。注意，有些会议名称中有逗号，例如「IEEE international conference on acoustics, speech and signal processing」。我将缩写和全称记录到子程序 `parse_conference` 中的字典里。
-3. 有的条目可能缺少 volume、number 或 page。程序自动检测 JSON 条目中是否存在这些信息，如果有依次加入条目，如果没有也不会报错。
-4. 期刊和会议名称以斜体记录在 Word 中。
+1. 将某些期刊名称缩写转为全称。dblp 大量使用了缩写，如上例中的「IEEE Trans. Pattern Anal. Mach. Intell.」。而我们需要全称。我暂时没有办法解决这个问题，只好人工标注，即找出所有缩写（搜索「.」），记录缩写和全称到子程序 `parse_journal` 中的字典里。
+2. 精炼某些会议名称。dblp 的会议名称太冗长。例如「IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops, CVPR Workshops 2022, New Orleans, LA, USA, June 19-20, 2022」，我们只需要逗号前的字符串，即「IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops」。注意，有些会议名称中有逗号，例如「IEEE international conference on acoustics, speech and signal processing」。我将缩写和全称记录到子程序 `parse_conference` 中的字典里。
+3. 自适应缺项。有的条目可能缺少 volume、number 或 page；程序自动检测 JSON 条目中是否存在这些信息，如果有依次加入条目，如果没有也不会报错。
+4. 期刊和会议名称要求以斜体记录在 Word 中。
 
 最终效果（Word 截图）：
 
