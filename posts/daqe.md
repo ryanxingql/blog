@@ -1,6 +1,6 @@
-# 论文速览：感知图像失焦特性的压缩图像质量增强
+# 论文速览：感知图像失焦特性的压缩图像质量增强（TPAMI 23'）
 
-论文标题：*DAQE: Enhancing the Quality of Compressed Images by Exploiting the Inherent Characteristic of Defocus*（TPAMI 2023）
+论文标题：*DAQE: Enhancing the Quality of Compressed Images by Exploiting the Inherent Characteristic of Defocus*
 
 论文链接：https://arxiv.org/abs/2211.10984
 
