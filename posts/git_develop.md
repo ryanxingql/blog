@@ -64,7 +64,7 @@ $ git pull
 
 ![image-20230413160901037](./git_branch.assets/image-20230413160901037.png)
 
-理想情况下，我们应当从主分支的最新提交（即 e5839d56）切出子分支。我们使用 [git rebase](https://git-scm.com/docs/git-rebase) 功能。
+理想情况下，我们应当从主分支的最新提交（即 e5839d56）切出子分支。我们使用 git rebase[^1] 功能。
 
 > Rebase 是将子分支 auto-greeting 所有的提交缓存，然后从主分支的最新提交 e5839d56 重新切出子分支 auto-greeting，再应用缓存的提交。
 
@@ -109,10 +109,13 @@ $ git switch main
 $ git merge --no-ff -m 'Support auto-greeting' auto-greeting
 ```
 
-> 这里禁用了 fast-forward 模式。如果使用 ff 模式，merge 不会产生下图中的交汇节点，而是简单地让主分支指向子分支的最新提交 d6ed41ea，相当于让子分支所有提交在主分支上重新应用一遍。ff 模式下，主分支产生多个提交；禁用 ff 模式下，在主分支有且仅有一次新的提交。
+> 这里禁用了 fast-forward[^2] 模式。如果使用 ff 模式，merge 不会产生下图中的交汇节点，而是简单地让主分支指向子分支的最新提交 d6ed41ea，相当于让子分支所有提交在主分支上重新应用一遍。ff 模式下，主分支产生多个提交；禁用 ff 模式下，在主分支有且仅有一次新的提交。
 
 ![image-20230413162231626](./git_branch.assets/image-20230413162231626.png)
 
 如图，merge 会产生一次提交，从而产生子分支和主分支的一个交汇节点。Merge 相当于把子分支所有提交汇总成了一个提交，然后应用在主分支的最新提交上。
 
 > 图中的 git graph 是我理想中的形态。（1）主分支和子分支分别都是直线形，简洁明了；（2）子分支以 merge 的形式汇入主分支，保留开发印记；（3）借助 rebase，子分支从主分支的最新提交切出，保证只要子分支通过测试，主分支肯定也能通过测试。
+
+[^1]: https://git-scm.com/docs/git-rebase
+[^2]: https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
