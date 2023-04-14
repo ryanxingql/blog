@@ -5,7 +5,7 @@
 ```bash
 # 创建子分支 auto-greeting 再开发
 $ git checkout -b auto-greeting
-# Develop feature ...
+# 开发
 
 # 更新本地的主分支
 $ git switch main
@@ -14,12 +14,13 @@ $ git pull
 # 解决冲突
 $ git switch auto-greeting
 $ git rebase main
-# Solve conflict ...
-$ git rebase --continue  # 如果解决了冲突才需要执行
+# 逐个解决有问题的提交
+$ git rebase --continue  # 解决当前冲突后执行；可能会有多次
+# $ git rebase --abort  # 也可以放弃 rebase
 
 # 汇入主分支
 $ git switch main
-$ git merge --no-ff -m "Merge branch 'auto-greeting'" auto-greeting
+$ git merge --no-ff -m 'Support auto-greeting' auto-greeting  # 禁用 ff 模式
 ```
 
 具体流程如下。
@@ -36,7 +37,6 @@ $ git merge --no-ff -m "Merge branch 'auto-greeting'" auto-greeting
 
 ```bash
 $ git checkout -b auto-greeting
-# Develop feature ...
 ```
 
 子分支可以随意造，大不了毁灭删掉。我通常是直线开发，且通常会有多个提交：
@@ -64,7 +64,7 @@ $ git pull
 
 ![image-20230413160901037](./git_branch.assets/image-20230413160901037.png)
 
-理想情况下，我们应当从主分支的最新提交（即 e5839d56）切出子分支。我们使用 rebase 功能。
+理想情况下，我们应当从主分支的最新提交（即 e5839d56）切出子分支。我们使用 [git rebase](https://git-scm.com/docs/git-rebase) 功能。
 
 > Rebase 是将子分支 auto-greeting 所有的提交缓存，然后从主分支的最新提交 e5839d56 重新切出子分支 auto-greeting，再应用缓存的提交。
 
@@ -81,7 +81,7 @@ hint: To abort and get back to the state before "git rebase", run "git rebase --
 Could not apply a6c5fcc... Add version
 ```
 
-不幸的是，主分支最新提交和子分支修改了同一个文件（如 README.md）；因此我们需要手动解决冲突。
+不幸的是，在上例中，主分支最新提交和子分支修改了同一个文件（如 README.md）；因此我们需要手动解决冲突。
 
 > 所谓解决冲突，是指 git 无法确认 README.md 应当处于何种状态；因为主分支和子分支都对该文件有修改，且二者修改不是顺序发生的（如果是顺序发生的，就以最后一次修改后的状态为准）。因此，我们需要人工介入，查看并编辑 README.md，确认其为最终所需状态后，提交本次修改。
 
@@ -92,11 +92,13 @@ $ git add README.md
 $ git rebase --continue
 ```
 
-本次修改会合并到子分支的最新提交中。冲突解决后，子分支改为从主分支最新提交（e5839d56）切出，然后重新执行了原 3 次提交，其中最后一次是修改后的提交。
+Git 会依次检查所有子分支的提交，暂停在有问题的提交，等待我们手动解决问题，然后继续，直至解决所有冲突。在上例中，有问题的是最后一次提交 a6c5fcc0，因此本次修改是对 a6c5fcc0 的修改。
+
+冲突解决后，子分支改为从主分支最新提交（e5839d56）切出，然后重新执行了原 3 次提交，其中最后一次是修改后的提交。
 
 ![image-20230413161819376](./git_branch.assets/image-20230413161819376.png)
 
-> 前面提到过，rebase 是将子分支 auto-greeting 所有的提交缓存，然后从主分支的最新提交 e5839d56 重新切出子分支 auto-greeting，再应用缓存的提交。因此，这 3 次提交已经不是原提交，故 ID 都是新的。
+> 前面提到，rebase 是将子分支 auto-greeting 所有的提交缓存，然后从主分支的最新提交 e5839d56 重新切出子分支 auto-greeting，再应用缓存的提交。因此，这 3 次提交是「重新应用」的新提交，故 ID 都是新的。
 
 ## 汇入主分支
 
@@ -104,8 +106,10 @@ $ git rebase --continue
 
 ```bash
 $ git switch main
-$ git merge --no-ff -m "Merge branch 'auto-greeting'" auto-greeting
+$ git merge --no-ff -m 'Support auto-greeting' auto-greeting
 ```
+
+> 这里禁用了 fast-forward 模式。如果使用 ff 模式，merge 不会产生下图中的交汇节点，而是简单地让主分支指向子分支的最新提交 d6ed41ea，相当于让子分支所有提交在主分支上重新应用一遍。ff 模式下，主分支产生多个提交；禁用 ff 模式下，在主分支有且仅有一次新的提交。
 
 ![image-20230413162231626](./git_branch.assets/image-20230413162231626.png)
 
