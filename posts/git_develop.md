@@ -118,4 +118,5 @@ $ git merge --no-ff -m 'Support auto-greeting' auto-greeting
 > 图中的 git graph 是我理想中的形态。（1）主分支和子分支分别都是直线形，简洁明了；（2）子分支以 merge 的形式汇入主分支，保留开发印记；（3）借助 rebase，子分支从主分支的最新提交切出，保证只要子分支通过测试，主分支肯定也能通过测试。
 
 [^1]: https://git-scm.com/docs/git-rebase
+
 [^2]: https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
