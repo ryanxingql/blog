@@ -36,7 +36,9 @@ $ ssh-copy-id -i ~/.ssh/id_rsa.pub remote-3
 
 ## 获取邮件服务器授权码
 
-我使用的是 QQ 邮箱发送提醒邮件。还可以使用 163 邮箱等，请参考链接<sup>1</sup>。拿到授权码请记录下来。
+我使用的是 QQ 邮箱发送提醒邮件。还可以使用 163 邮箱等，请参考\[文章\]\[获取邮件服务器授权码-知乎\]。
+
+拿到授权码请记录下来。
 
 ## 配置其他所需信息
 
@@ -91,6 +93,8 @@ toolbox/
 程序：send_email.py
 
 ```python
+# https://stackoverflow.com/a/52442331
+# https://zhuanlan.zhihu.com/p/89868804
 import smtplib
 from contextlib import contextmanager, redirect_stderr, redirect_stdout
 from email.header import Header
@@ -298,8 +302,3 @@ while True:
           f"[{time.strftime('%H:%M', time.localtime())}]")
     time.sleep(time_step)
 ```
-
-## 参考
-
-1. https://zhuanlan.zhihu.com/p/89868804
-2. https://stackoverflow.com/a/52442331
