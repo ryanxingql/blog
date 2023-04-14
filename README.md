@@ -11,6 +11,7 @@
 
 ## 其他
 
+- [自动检查程序运行情况并发邮件通知](https://github.com/ryanxingql/blog/blob/main/posts/check_pid.md)
 - [Git 子分支开发并汇入主分支](https://github.com/ryanxingql/blog/blob/main/posts/git_develop.md)
 - [统计某作者所有文献并按格式要求导出](https://github.com/ryanxingql/blog/blob/main/posts/bib.md)
 - [北航电子信息本科及高博班课程笔记](https://github.com/ryanxingql/blog/blob/main/posts/buaa.md)
