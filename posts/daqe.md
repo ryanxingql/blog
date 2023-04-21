@@ -4,7 +4,7 @@
 
 论文链接：https://arxiv.org/abs/2211.10984
 
-本文提出了一种感知图像失焦特征的压缩图像增强方法（Defocus Aware Quality Enhancement，DAQE），是首个考虑压缩图像内部质量差异的增强算法。DAQE 方法体现了笔者课题组继资源节约型盲增强方法（Resource-Efficient Blind Quality Enhancement，RBQE）[^1]之后，针对压缩图像细粒度增强的新思考。
+本文提出了一种感知图像失焦特征的压缩图像增强方法（Defocus Aware Quality Enhancement，DAQE），是首个考虑压缩图像内部质量差异的增强算法。DAQE 方法体现了笔者课题组继资源节约型盲增强方法（Resource-Efficient Blind Quality Enhancement，RBQE）[^rbqe]之后，针对压缩图像细粒度增强的新思考。
 
 ## 图像细粒度增强是大势所趋
 
@@ -12,8 +12,8 @@
 
 近年来深度学习网络展现出优异的性能，因此本文也聚焦于「基于深度学习的质量增强方法」。相关方法通常是针对整张图进行操作的，即不考虑图像内部的质量和纹理差异。考虑图像内部差异的典型方法包括：
 
-1. 将图像在空域上分为纹理（texture）、边缘（edge）和平坦区域（flat/smooth area），然后分而治之。这是因为在统计上，前两者的增强难度比平坦区域的要大得多。代表工作有参考文献[^2]。
-2. 设计一个多分支网络，然后学习一个分支决策器，让图像增强难度各异的区域经过不同的增强分支。通常不同分支具有不同的计算复杂度。例如，Path-Restore 方法[^3]基于训练损失和强化学习方法得到分支决策器，而 ClassSR 方法[^4]基于预先计算的 PSNR 结果和难度三分类损失函数。这一类方法往往会得到和上一类方法相似的结论，即增强困难区域往往是纹理和边缘区域。
+1. 将图像在空域上分为纹理（texture）、边缘（edge）和平坦区域（flat/smooth area），然后分而治之。这是因为在统计上，前两者的增强难度比平坦区域的要大得多。代表工作有参考文献[^divide]。
+2. 设计一个多分支网络，然后学习一个分支决策器，让图像增强难度各异的区域经过不同的增强分支。通常不同分支具有不同的计算复杂度。例如，Path-Restore 方法[^path]基于训练损失和强化学习方法得到分支决策器，而 ClassSR 方法[^classsr]基于预先计算的 PSNR 结果和难度三分类损失函数。这一类方法往往会得到和上一类方法相似的结论，即增强困难区域往往是纹理和边缘区域。
 
 笔者认为，这种考虑图像内部差异的细粒度增强是大势所趋。一方面，细粒度增强可以节约计算资源，即在简单的区域简单增强；另一方面，细粒度增强可以实现更具有针对性的定制化增强，即针对不同的物体、纹理或特征执行特定的增强。
 
@@ -21,14 +21,14 @@
 
 ![图像失焦与压缩质量具有强相关性](./daqe.assets/image-20230410105945859.png)
 
-上述相关工作可以迁移到压缩图像增强任务上，但还是过于复杂了。笔者在思考，是否存在一种针对「压缩图像质量增强」具有重大意义的图像底层特征或先验知识。笔者的思考是受到了经典的视频插帧算法 DAIN（Depth-Aware Video Frame Interpolation）[^5]的启发。在 DAIN 中，作者巧妙利用了图像深度信息，使得有遮挡情况下的视频插帧结果更加合理。
+上述相关工作可以迁移到压缩图像增强任务上，但还是过于复杂了。笔者在思考，是否存在一种针对「压缩图像质量增强」具有重大意义的图像底层特征或先验知识。笔者的思考是受到了经典的视频插帧算法 DAIN（Depth-Aware Video Frame Interpolation）[^dain]的启发。在 DAIN 中，作者巧妙利用了图像深度信息，使得有遮挡情况下的视频插帧结果更加合理。
 
 笔者给出的答案是「图像失焦」特征。这一特征具有很多好的性质：
 
 1. 图像失焦是图像成像阶段固有的光学畸变过程，是自然图像中普遍存在的光学特征。并且，图像失焦也是一项非常成熟的渲染技术，也被广泛用于生成图像。经过分析，大部分数据集，尤其是摄影数据集（例如 DIV2K 数据集），其中的图像都具有非常显著的图像内部失焦差异。即，图像内部不同区域的失焦程度差异较大。这种差异性为全文基于失焦差异的增强奠定了基础。
 2. 图像失焦产生了类似低通滤波器的效果。即，失焦越严重的区域，高频细节丢失得越多。在图像压缩时，这一类区域的压缩质量通常较高，因为更好压缩。这一相关性为之后的基于压缩质量的提前退出策略奠定了基础。
 3. 因为性质 2，失焦程度相似的区域，其纹理也更相似。这一相关性为之后的分治策略奠定了基础。
-4. 作为一个底层图像特征，图像失焦还在一定程度上反映了高级视觉特征，例如视觉注意力。因为对于摄影师而言，失焦区域往往是视觉非热点区域，聚焦区域往往是视觉热点区域。因此，已经有文献[^6]借助图像失焦检测图像显著性。这体现了图像失焦特性在图像处理领域的巨大潜力。
+4. 作为一个底层图像特征，图像失焦还在一定程度上反映了高级视觉特征，例如视觉注意力。因为对于摄影师而言，失焦区域往往是视觉非热点区域，聚焦区域往往是视觉热点区域。因此，已经有文献[^saliency]借助图像失焦检测图像显著性。这体现了图像失焦特性在图像处理领域的巨大潜力。
 
 笔者重点考察了前三点性质，参见原文第三章。
 
@@ -56,14 +56,14 @@ DAQE 方法主要有以下几点局限性：
 2. 图像失焦预测引入了额外的计算复杂度。
 3. 分治策略并不是万能的。当训练数据较少时，或不同类样本数量严重不均衡时，使用分治策略容易导致小样本类别训练不充分。
 
-[^1]: Early Exit Or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images. ECCV 2020.
+[^rbqe]: Early Exit Or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images. ECCV 2020.
 
-[^2]: Component Divide-and-Conquer for Real-World Image Super-Resolution. ECCV 2020.
+[^divide]: Component Divide-and-Conquer for Real-World Image Super-Resolution. ECCV 2020.
 
-[^3]: Path-Restore: Learning Network Path Selection for Image Restoration. IEEE TPAMI 2021.
+[^path]: Path-Restore: Learning Network Path Selection for Image Restoration. IEEE TPAMI 2021.
 
-[^4]: ClassSR: A General Framework to Accelerate Super-Resolution Networks by Data Characteristic. CVPR 2021.
+[^classsr]: ClassSR: A General Framework to Accelerate Super-Resolution Networks by Data Characteristic. CVPR 2021.
 
-[^5]: Depth-Aware Video Frame Interpolation. CVPR 2019.
+[^dain]: Depth-Aware Video Frame Interpolation. CVPR 2019.
 
-[^6]: Salient Region Detection by UFO: Uniqueness, Focusness and Objectness. ICCV 2013.
+[^saliency]: Salient Region Detection by UFO: Uniqueness, Focusness and Objectness. ICCV 2013.

@@ -36,7 +36,7 @@ $ ssh-copy-id -i ~/.ssh/id_rsa.pub remote-3
 
 ## 获取邮件服务器授权码
 
-我使用的是 QQ 邮箱发送提醒邮件。还可以使用 163 邮箱等，请参考文章[^1]。
+我使用的是 QQ 邮箱发送提醒邮件。还可以使用 163 邮箱等，请参考[文章](https://zhuanlan.zhihu.com/p/89868804)。
 
 拿到授权码请记录下来。
 
@@ -302,5 +302,3 @@ while True:
           f"[{time.strftime('%H:%M', time.localtime())}]")
     time.sleep(time_step)
 ```
-
-[^1]: https://zhuanlan.zhihu.com/p/89868804

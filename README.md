@@ -11,13 +11,10 @@
 
 ## 其他
 
+- [Python 多进程最佳实践](./posts/python_multiprocessing.md)
 - [自动检查程序运行情况并发邮件通知](./posts/check_pid.md)
 - [Git 子分支开发并汇入主分支](./posts/git_develop.md)
 - [统计某作者所有文献并按格式要求导出](./posts/bib.md)
 - [北航电子信息本科及高博班课程笔记](./posts/buaa.md)
 
-> 排版主要遵循「中文技术文档写作规范」[^1]和「中文文案排版指北」[^2]。
-
-[^1]: https://github.com/ruanyf/document-style-guide
-
-[^2]: https://github.com/sparanoid/chinese-copywriting-guidelines
+> 排版主要遵循[「中文技术文档写作规范」](https://github.com/ruanyf/document-style-guide)和[「中文文案排版指北」](https://github.com/sparanoid/chinese-copywriting-guidelines)。
