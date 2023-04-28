@@ -4,23 +4,23 @@
 
 ```bash
 # 创建子分支 auto-greeting 再开发
-$ git checkout -b auto-greeting
+git checkout -b auto-greeting
 # 开发
 
 # 更新本地的主分支
-$ git switch main
-$ git pull
+git switch main
+git pull
 
 # 解决冲突
-$ git switch auto-greeting
-$ git rebase main
+git switch auto-greeting
+git rebase main
 # 逐个解决有问题的提交
-$ git rebase --continue  # 解决当前冲突后执行；可能会有多次
-# $ git rebase --abort  # 也可以放弃 rebase
+git rebase --continue  # 解决当前冲突后执行；可能会有多次
+# git rebase --abort  # 也可以放弃 rebase
 
 # 汇入主分支
-$ git switch main
-$ git merge --no-ff -m 'Support auto-greeting' auto-greeting  # 禁用 ff 模式
+git switch main
+git merge --no-ff -m 'Support auto-greeting' auto-greeting  # 禁用 ff 模式
 ```
 
 具体流程如下。
@@ -36,7 +36,7 @@ $ git merge --no-ff -m 'Support auto-greeting' auto-greeting  # 禁用 ff 模式
 为了开发新功能（例如自动打招呼），我们不要直接修改主分支，而是从主分支的最新节点切出一个子分支（可以命名为 auto-greeting 分支），在子分支上开发：
 
 ```bash
-$ git checkout -b auto-greeting
+git checkout -b auto-greeting
 ```
 
 子分支可以随意造，大不了毁灭删掉。我通常是直线开发，且通常会有多个提交：
@@ -56,8 +56,8 @@ $ git checkout -b auto-greeting
 为了确定这一点，我们要更新本地的主分支。
 
 ```bash
-$ git switch main
-$ git pull
+git switch main
+git pull
 ```
 
 果然，主分支出现了比 57558c5e 更新的提交（e5839d56）：
@@ -69,8 +69,13 @@ $ git pull
 > Rebase 是将子分支 auto-greeting 所有的提交缓存，然后从主分支的最新提交 e5839d56 重新切出子分支 auto-greeting，再应用缓存的提交。
 
 ```bash
-$ git switch auto-greeting
-$ git rebase main
+git switch auto-greeting
+git rebase main
+```
+
+输出：
+
+```txt
 Auto-merging README.md
 CONFLICT (content): Merge conflict in README.md
 error: could not apply a6c5fcc... Add version
@@ -88,8 +93,8 @@ Could not apply a6c5fcc... Add version
 直接打开 README.md，确认文件的最终形态，保存并退出文件，然后执行：
 
 ```bash
-$ git add README.md
-$ git rebase --continue
+git add README.md
+git rebase --continue
 ```
 
 Git 会依次检查所有子分支的提交，暂停在有问题的提交，等待我们手动解决问题，然后继续，直至解决所有冲突。在上例中，有问题的是最后一次提交 a6c5fcc0，因此本次修改是对 a6c5fcc0 的修改。
@@ -105,8 +110,8 @@ Git 会依次检查所有子分支的提交，暂停在有问题的提交，等�
 最后，我们将子分支汇入主分支。由于之前完成了 rebase，说明子分支和主分支不存在冲突了。因此 merge 会很顺利。
 
 ```bash
-$ git switch main
-$ git merge --no-ff -m 'Support auto-greeting' auto-greeting
+git switch main
+git merge --no-ff -m 'Support auto-greeting' auto-greeting
 ```
 
 > 这里禁用了 [fast-forward](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) 模式。如果使用 ff 模式，merge 不会产生下图中的交汇节点，而是简单地让主分支指向子分支的最新提交 d6ed41ea，相当于让子分支所有提交在主分支上重新应用一遍。ff 模式下，主分支产生多个提交；禁用 ff 模式下，在主分支有且仅有一次新的提交。

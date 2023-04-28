@@ -30,8 +30,8 @@ Host remote-3
 把 remote-1 的公钥发送到 remote-2/3 上，方便之后 remote-1 检查 remote-2/3 的情况。在 remote-1 上执行：
 
 ```bash
-$ ssh-copy-id -i ~/.ssh/id_rsa.pub remote-2
-$ ssh-copy-id -i ~/.ssh/id_rsa.pub remote-3
+ssh-copy-id -i ~/.ssh/id_rsa.pub remote-2
+ssh-copy-id -i ~/.ssh/id_rsa.pub remote-3
 ```
 
 ## 获取邮件服务器授权码
@@ -42,11 +42,11 @@ $ ssh-copy-id -i ~/.ssh/id_rsa.pub remote-3
 
 ## 配置其他所需信息
 
-以下为样例，请参考备注修改，保存为 config.yaml。
+以下为样例，请参考备注修改，保存为「config.yaml」。
 
 ```yaml
-time_step: 10 # X分钟查一次
-regular_send_time_step: 8 # X小时报一次平安
+time_step: 10 # X 分钟查一次
+regular_send_time_step: 8 # X 小时报一次平安平安
 
 # 服务器
 # 通过密钥认证登陆，因此第一步需要配置 SSH config
@@ -81,7 +81,7 @@ email_cfg:
 
 ## 运行程序
 
-将以下两个程序与「config.yaml」放置在同一路径下，然后直接运行：`$ python main.py`
+将以下两个程序与「config.yaml」放置在同一路径下，然后直接运行：`python main.py`
 
 ```txt
 toolbox/
