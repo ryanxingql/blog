@@ -81,7 +81,7 @@ email_cfg:
 
 ## 运行程序
 
-将以下两个程序与 config.yaml 放置在同一路径下，然后运行：`$ python main.py`
+将以下两个程序与「config.yaml」放置在同一路径下，然后直接运行：`$ python main.py`
 
 ```txt
 toolbox/
@@ -90,7 +90,7 @@ toolbox/
 `-- send_email.py
 ```
 
-程序：send_email.py
+程序：「send_email.py」
 
 ```python
 # https://zhuanlan.zhihu.com/p/89868804
@@ -183,7 +183,7 @@ if __name__ == '__main__':
     )
 ```
 
-程序：main.py
+程序：「main.py」
 
 ```python
 import subprocess

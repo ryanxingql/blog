@@ -44,7 +44,7 @@ end 3
 
 ## 回调函数
 
-以 tqdm 为例，即我们想查看程序进度，获取 ETA（预计结束时间）。此时，我们在 pool.apply_async 中加入 callback 函数，令其为 tqdm 进度条的更新函数。程序可以修改为：
+以 tqdm 为例，即我们想查看程序进度，获取 ETA（预计结束时间）。此时，我们在 `pool.apply_async` 中加入 `callback` 函数，令其为 tqdm 进度条的更新函数。程序可以修改为：
 
 ```python
 import multiprocessing as mp
@@ -68,7 +68,7 @@ if __name__ == '__main__':
     pbar.close()
 ```
 
-在上例中，每当 func_demo 执行完毕，callback 函数就会接收到其返回结果。虽然例子中 func_demo 没有返回值，但 callback 仍然会接收到 `None`；因此 callback 设置了一个形参。
+在上例中，每当 `func_demo` 执行完毕，`callback` 函数就会接收到其返回结果。虽然例中 `func_demo` 没有返回值，但 `callback` 仍然会接收到 `None`；因此 `callback` 设置了一个形参。
 
 输出：
 
@@ -82,5 +82,5 @@ if __name__ == '__main__':
 
 - 根据系统情况选择合适的进程池大小；配合 htop 监控运行情况。
 - 把主程序写在 `if __name__ == '__main__':` 里，防止被子程序调用。
-- 子程序 func_demo 尽量不要使用全局变量。即越简洁越好。
+- 子程序 `func_demo` 尽量不要使用全局变量。即越简洁越好。
 - 这里使用的是多进程而不是多线程。可参考[知乎](https://zhuanlan.zhihu.com/p/76343641)。

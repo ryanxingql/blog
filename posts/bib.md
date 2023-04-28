@@ -35,9 +35,9 @@
 以两位老师为例。一个一个来。
 
 1. 在 dblp 中找到所有老师的档案（注意有重名的，不要选错）。
-2. 如下图所示，取消勾选「Informal」，只保留期刊和会议。
+2. 如下图所示，取消勾选 `Informal`，只保留期刊和会议。
 3. 此时会出现如图的红色感叹号，如下图所示。光标移动到感叹号处，选择 BibTeX 格式导出。
-4. 右键「download as .bib file」，选择「下载链接文件为」，将下载文件命名为「<name>.bib」。
+4. 右键 `download as .bib file`，选择「下载链接文件为」，将下载文件命名为 `<name>.bib`。
 
 ![image-20230328125248180](./bib.assets/image-20230328125248180.png)
 
@@ -135,19 +135,19 @@ pandoc name2.bib -s -f biblatex -t csljson > name2.json
 ]
 ```
 
-额外的好处：原本 BibTeX 中的「{IEEE}」被转换为 JSON 中的「IEEE」，即去掉了括号。
+额外的好处：原本 BibTeX 中的 `{IEEE}` 被转换为 JSON 中的 `IEEE`，即去掉了括号。
 
 ## 步骤三：数据处理
 
 处理逻辑：
 
 1. 依次读入两个 JSON 文件。将所有数据合并为一个列表。
-2. 根据「id」，跳过重复项。这是因为不同老师可能发表了同一篇论文。
-3. 对于每一个条目，提取所需信息，根据要求生成格式化的条目，并用「year-id」作为 key 记录至一个字典中。「year」为 JSON 中的「issued:date-parts」。
-4. 根据「year-id」排序字典的 keys，从而实现「根据时间排序条目」。
+2. 根据 id，跳过重复项。这是因为不同老师可能发表了同一篇论文。
+3. 对于每一个条目，提取所需信息，根据要求生成格式化的条目，并用 `year-id` 作为 key 记录至一个字典中。`year` 为 JSON 中的 `issued:date-parts`。
+4. 根据 `year-id` 排序字典的 keys，从而实现「根据时间排序条目」。
 5. 根据排序好的 key，将字典 item 写入 Word。可以在每个条目前加上序号。
 
-最终 Python 程序如下所示。直接运行即可。注意，由于要导入至 Word，因此程序用到了 `python-docx` 包；可以用 pip 或 Conda 安装。
+最终 Python 程序如下所示。直接运行即可。注意，由于要导入至 Word，因此程序用到了 python-docx 包；可以用 pip 或 Conda 安装。
 
 ```python
 import json
@@ -346,9 +346,9 @@ document.save('output.docx')
 
 程序细节：
 
-1. 将某些期刊名称缩写转为全称。dblp 大量使用了缩写，如上例中的「IEEE Trans. Pattern Anal. Mach. Intell.」。而我们需要全称。我暂时没有办法解决这个问题，只好人工标注，即找出所有缩写（搜索「.」），记录缩写和全称到子程序 `parse_journal` 中的字典里。
-2. 精炼某些会议名称。dblp 的会议名称太冗长。例如「IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops, CVPR Workshops 2022, New Orleans, LA, USA, June 19-20, 2022」，我们只需要逗号前的字符串，即「IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops」。注意，有些会议名称中有逗号，例如「IEEE international conference on acoustics, speech and signal processing」。我将缩写和全称记录到子程序 `parse_conference` 中的字典里。
-3. 自适应缺项。有的条目可能缺少 volume、number 或 page；程序自动检测 JSON 条目中是否存在这些信息，如果有依次加入条目，如果没有也不会报错。
+1. 将某些期刊名称缩写转为全称。dblp 大量使用了缩写，如上例中的 `IEEE Trans. Pattern Anal. Mach. Intell.`；而我们需要全称。我暂时没有办法解决这个问题，只好人工标注，即找出所有缩写（搜索 `.`），记录缩写和全称到子程序 `parse_journal` 中的字典里。
+2. 精炼某些会议名称。dblp 的会议名称太冗长。例如 `IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops, CVPR Workshops 2022, New Orleans, LA, USA, June 19-20, 2022`，我们只需要逗号前的字符串，即 `IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops`。注意，有些会议名称中有逗号，例如 `IEEE international conference on acoustics, speech and signal processing`。我将缩写和全称记录到子程序 `parse_conference` 中的字典里。
+3. 自适应缺项。有的条目可能缺少 `volume`、`number` 或 `page`；程序自动检测 JSON 条目中是否存在这些信息，如果有依次加入条目，如果没有也不会报错。
 4. 期刊和会议名称要求以斜体记录在 Word 中。
 
 最终效果（Word 截图）：
@@ -357,7 +357,7 @@ document.save('output.docx')
 
 如果要进一步优化结果，还有几点可以做：
 
-1. 增加条目：dblp 不全；可以结合谷歌学术等检索库进一步增加条目。
+1. 增加条目：dblp 不全；可以结合谷歌学术等检索库进一步增加条目。dblp 收录的主要是计算机领域的论文。
 2. 删减条目：有的条目可能是 dblp 中其他重名作者的条目，需要人工筛查和删除。
 3. 优化条目：论文标题、期刊会议名称的大小写方法不统一。
 

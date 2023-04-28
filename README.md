@@ -18,4 +18,4 @@
 - [统计某作者所有文献并按格式要求导出](./posts/bib.md)
 - [北航电子信息本科及高博班课程笔记](./posts/buaa.md)
 
-> 排版主要遵循[「中文技术文档写作规范」](https://github.com/ruanyf/document-style-guide)和[「中文文案排版指北」](https://github.com/sparanoid/chinese-copywriting-guidelines)。
+> 排版主要遵循[写作规范](./posts/document_style.md)。
