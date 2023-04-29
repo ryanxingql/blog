@@ -2,6 +2,8 @@
 
 欢迎来到我的博客！
 
+排版主要遵循[写作规范](./posts/document_style.md)。
+
 ## 科研项目
 
 - [感知图像失焦特性的压缩图像质量增强（TPAMI'23）](./posts/daqe.md)
@@ -17,5 +19,3 @@
 - [Git 子分支开发并汇入主分支](./posts/git_develop.md)
 - [统计某作者所有文献并按格式要求导出](./posts/bib.md)
 - [北航电子信息本科及高博班课程笔记](./posts/buaa.md)
-
-> 排版主要遵循[写作规范](./posts/document_style.md)。
