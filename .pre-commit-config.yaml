@@ -16,7 +16,7 @@ repos:
     rev: v2.2.4
     hooks:
       - id: codespell
-        args: ["--skip", "*.ipynb,posts/bib.md"]
+        args: ["--skip", "*.ipynb,demo/compile_publications/main.py"]
   - repo: https://github.com/executablebooks/mdformat
     rev: 0.7.16
     hooks:

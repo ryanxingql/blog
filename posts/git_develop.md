@@ -29,7 +29,7 @@ git merge --no-ff -m 'Support auto-greeting' auto-greeting  # 禁用 ff 模式
 
 假设最原始的主分支（main 分支）如图：
 
-![image-20230413153618091](./git_branch.assets/image-20230413153618091.png)
+![image-20230413153618091](assets/git_develop/image-20230413153618091.png)
 
 图中的主分支是一根光秃秃的直线，只有 2 次提交，最新提交为 57558c5e。
 
@@ -39,9 +39,14 @@ git merge --no-ff -m 'Support auto-greeting' auto-greeting  # 禁用 ff 模式
 git checkout -b auto-greeting
 ```
 
-子分支可以随意造，大不了毁灭删掉。我通常是直线开发，且通常会有多个提交：
+好处：
 
-![image-20230413154740740](./git_branch.assets/image-20230413154740740.png)
+- 子分支可以随意造，大不了毁灭删掉。
+- 子分支开发不影响主分支，用户能正常使用主分支而不受影响。
+
+在子分支上，我通常是直线开发，且通常会有多个提交：
+
+![image-20230413154740740](assets/git_develop/image-20230413154740740.png)
 
 如图，我们从主分支最新提交 57558c5e 切出子分支，然后在子分支产生了 3 次提交。
 
@@ -62,7 +67,7 @@ git pull
 
 果然，主分支出现了比 57558c5e 更新的提交（e5839d56）：
 
-![image-20230413160901037](./git_branch.assets/image-20230413160901037.png)
+![image-20230413160901037](assets/git_develop/image-20230413160901037.png)
 
 理想情况下，我们应当从主分支的最新提交（即 e5839d56）切出子分支。我们使用 [git rebase](https://git-scm.com/docs/git-rebase) 功能。
 
@@ -101,7 +106,7 @@ Git 会依次检查所有子分支的提交，暂停在有问题的提交，等�
 
 冲突解决后，子分支改为从主分支最新提交（e5839d56）切出，然后重新执行了原 3 次提交，其中最后一次是修改后的提交。
 
-![image-20230413161819376](./git_branch.assets/image-20230413161819376.png)
+![image-20230413161819376](assets/git_develop/image-20230413161819376.png)
 
 > 前面提到，rebase 是将子分支 auto-greeting 所有的提交缓存，然后从主分支的最新提交 e5839d56 重新切出子分支 auto-greeting，再应用缓存的提交。因此，这 3 次提交是「重新应用」的新提交，故 ID 都是新的。
 
@@ -116,7 +121,7 @@ git merge --no-ff -m 'Support auto-greeting' auto-greeting
 
 > 这里禁用了 [fast-forward](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) 模式。如果使用 ff 模式，merge 不会产生下图中的交汇节点，而是简单地让主分支指向子分支的最新提交 d6ed41ea，相当于让子分支所有提交在主分支上重新应用一遍。ff 模式下，主分支产生多个提交；禁用 ff 模式下，在主分支有且仅有一次新的提交。
 
-![image-20230413162231626](./git_branch.assets/image-20230413162231626.png)
+![image-20230413162231626](assets/git_develop/image-20230413162231626.png)
 
 如图，merge 会产生一次提交，从而产生子分支和主分支的一个交汇节点。Merge 相当于把子分支所有提交汇总成了一个提交，然后应用在主分支的最新提交上。
 

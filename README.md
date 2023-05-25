@@ -13,9 +13,9 @@
 
 ## 其他
 
-- [图像及 planar 格式转换](posts/convert_img_planar.md)
-- [Python 多进程最佳实践](posts/python_multiprocessing.md)
-- [自动检查程序运行情况并发邮件通知](posts/check_pid.md)
 - [Git 子分支开发并汇入主分支](posts/git_develop.md)
-- [统计某作者所有文献并按格式要求导出](posts/bib.md)
+- [统计某作者所有文献并按格式要求导出](posts/compile_publications.md)
+- [自动监测程序运行情况并发邮件通知](posts/check_pid.md)
 - [北航电子信息本科及高博班课程笔记](posts/buaa.md)
+- [Python 多进程最佳实践](posts/python_multiprocessing.md)
+- [图像及 planar 格式转换](posts/convert_img_planar.md)
