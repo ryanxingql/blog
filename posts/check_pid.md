@@ -61,7 +61,7 @@ ssh-copy-id -i ~/.ssh/id_ed25519.pub remote#3
   - 如果待查程序和监测程序不在同一服务器上，需要通过 SSH 连接。
 - 如果距离上一次发邮件过去了较长时间，发送一封报平安邮件。
 
-所需程序放在「blog/demo/check_pid」下。直接运行「main.py」即可。注意修改「main.py」的输入参数。
+最终的主程序在[这里](../demo/check_pid/main.py)。直接运行即可。注意修改其输入参数。
 
 重要参数解释：
 
