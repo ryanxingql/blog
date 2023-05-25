@@ -6,33 +6,38 @@
 
 1. 配置 SSH config。
 2. 获取邮件服务器授权码。
-3. 配置其他所需信息。
-4. 运行程序。
+3. 运行程序。
 
 以下为具体流程。
 
 ## 配置 SSH config
 
-假设我要在服务器 remote-1 上运行自动检查程序，程序可能运行在 remote-1/2/3 上。那么修改 remote-1 的 SSH config：
+假设我要在服务器 remote#1 上运行自动检查程序，程序可能运行在 remote#1/2/3 上。那么修改 remote#1 的 SSH config（通常位于 "~/.ssh/config"）：
 
 ```txt
-Host remote-2
+Host remote#1
     HostName xx.xxx.xxx.x
     User ryan
     identityfile ~/.ssh/id_rsa
 
-Host remote-3
+Host remote#3
     HostName xx.xxx.xxx.x
     User ryan
     identityfile ~/.ssh/id_rsa
 ```
 
-把 remote-1 的公钥发送到 remote-2/3 上，方便之后 remote-1 检查 remote-2/3 的情况。在 remote-1 上执行：
+把 remote#1 的公钥发送到 remote#2/3 上，方便之后 remote#1 通过 SSH 连接并查看 remote#2/3。在 remote#1 上执行：
 
 ```bash
-ssh-copy-id -i ~/.ssh/id_rsa.pub remote-2
-ssh-copy-id -i ~/.ssh/id_rsa.pub remote-3
+ssh-copy-id -i ~/.ssh/id_ed25519.pub remote#2
+ssh-copy-id -i ~/.ssh/id_ed25519.pub remote#3
 ```
+
+> 如果公钥不存在，需要先生成：
+>
+> ```bash
+> ssh-keygen -t ed25519
+> ```
 
 ## 获取邮件服务器授权码
 
@@ -40,61 +45,19 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub remote-3
 
 拿到授权码请记录下来。
 
-## 配置其他所需信息
+## 修改并运行程序
 
-以下为样例，请参考备注修改，保存为「config.yaml」。
-
-```yaml
-time_step: 10 # X 分钟查一次
-regular_send_time_step: 8 # X 小时报一次平安平安
-
-# 服务器
-# 通过密钥认证登陆，因此第一步需要配置 SSH config
-hosts:
-  remote-1:
-    user: ryan # 登陆用户名
-    if_local: True # 就是本机，不需要 SSH
-  remote-2:
-    user: ryan
-  remote-3:
-    user: ryan
-
-# 待检程序
-profiles:
-  exp1: # 实验名；随便起
-    host: remote-1 # 在 remote-1 上运行
-    pid: 2721185 # 用 nvidia-smi 查看 PID；多进程记录一个 PID 即可
-  exp2:
-    host: remote-3
-    pid: 68239
-
-# 邮件部分
-if_email: True # 是否开启邮件提醒功能
-email_cfg:
-  mail_host: smtp.qq.com # 发件邮箱
-  name: ryan # 收发件人名；随便起
-  mail_sender: ryanyyds@foxmail.com # 发信地址
-  mail_license: aabbcc # 发信邮箱授权码
-  mail_receivers: ryanyyds@foxmail.com # 收信地址；可以简单设置为自己发给自己
-  subject_content: "Auto PID Check" # 邮件标题
-```
-
-## 运行程序
-
-将以下两个程序与「config.yaml」放置在同一路径下，然后直接运行：`python main.py`
+将以下两个程序放置在同一路径下，然后直接运行：`python main.py`
 
 ```txt
-toolbox/
-|-- config.yaml
-|-- main.py
-`-- send_email.py
+toolbox
+|-- send_email.py
+`-- main.py
 ```
 
 程序：「send_email.py」
 
 ```python
-# https://zhuanlan.zhihu.com/p/89868804
-# https://stackoverflow.com/a/52442331
 import smtplib
 from contextlib import contextmanager, redirect_stderr, redirect_stdout
 from email.header import Header
@@ -105,7 +68,7 @@ from os import devnull
 
 @contextmanager
 def suppress_stdout_stderr():
-    """A context manager that redirects stdout and stderr to devnull"""
+    """A context manager that redirects stdout and stderr to devnull."""
     with open(devnull, 'w') as fnull:
         with redirect_stderr(fnull) as err, redirect_stdout(fnull) as out:
             yield (err, out)
@@ -175,9 +138,9 @@ if __name__ == '__main__':
     send_email_silent(
         mail_host='smtp.qq.com',
         name='ryan',
-        mail_sender='ryanyyds@foxmail.com',
-        mail_license='aabbcc',
-        mail_receivers='ryanyyds@foxmail.com',
+        mail_sender='ryan@foxmail.com',
+        mail_license='aaabbbccc',
+        mail_receivers='ryan@foxmail.com',
         subject_content='Test',
         body_content='Test.',
     )
@@ -186,50 +149,27 @@ if __name__ == '__main__':
 程序：「main.py」
 
 ```python
+import argparse
+import ast
+import copy
 import subprocess
 import time
-import yaml
-
-with open('config.yaml', 'r') as f:
-    cfg = yaml.safe_load(f)
-
-time_step = cfg['time_step'] * 60
-hosts = cfg['hosts']
-profiles = cfg['profiles']
-if_email = cfg['if_email']
-
-if if_email:
-    from send_email import send_email_silent
-
-    regular_send_time_step = cfg['regular_send_time_step'] * 3600
-    email_cfg = cfg['email_cfg']
-
-    last_time_stamp = time.time()
-    send_email_silent(
-        body_content="Auto check has started.",
-        **cfg['email_cfg'],
-    )
-
-if if_email:
-    if_emailed = dict()
-    for exp_name in profiles:
-        if_emailed[exp_name] = False
 
 
-def check_connection(login_info, port=22):
+def check_connection(login_info):
     try:
-        cmd = f'ssh -p {port} {login_info} "exit"'
+        cmd = f'ssh {login_info} "exit"'
         subprocess.call(cmd, shell=True, stdout=subprocess.DEVNULL)
         return True
     except subprocess.CalledProcessError:
         return False
 
 
-def check_pid(login_info, pid, if_local=False, port=22):
+def check_pid(login_info, pid, if_local=False):
     if if_local:
         cmd = f'ps -o pid= -p {pid}'
     else:
-        cmd = f'ssh -p {port} {login_info} "ps -o pid= -p {pid}"'
+        cmd = f'ssh {login_info} "ps -o pid= -p {pid}"'
     try:
         subprocess.run(cmd, shell=True, stdout=subprocess.DEVNULL, check=True)
         return True
@@ -237,68 +177,128 @@ def check_pid(login_info, pid, if_local=False, port=22):
         return False
 
 
+def ret_time():
+    return time.strftime('%H:%M', time.localtime())
+
+
+def ret_overview(profiles):
+    ret_str = f'Time: {ret_time()}\n'
+    for status, pros in profiles.items():
+        if pros:  # not empty
+            ret_str += f'{status.capitalize()}:\n'
+            count = 0
+            for exp_name, pro in pros.items():
+                count += 1
+                host = pro['host']
+                ret_str += f'{count}. {exp_name} @ {host}\n'
+    return ret_str
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument('-m', '--monitor', type=str, default='remote#1')
+parser.add_argument(
+    '-c',
+    '--cfg',
+    type=str,
+    default=r"{'exp1': {'host': 'remote#1', 'pid': 26550}, 'exp2': {'host': 'remote#3', 'pid': 1200}}")
+parser.add_argument('--check-inter-sec',
+                    type=int,
+                    default=600,
+                    help='check once every N seconds')
+parser.add_argument('--regular-report-inter-sec',
+                    type=int,
+                    default=36000,
+                    help='report safety once every N seconds')
+parser.add_argument('--if-email', action='store_false')
+parser.add_argument('--mail-host',
+                    type=str,
+                    default='smtp.qq.com',
+                    help='sender email host')
+parser.add_argument('--mail-name',
+                    type=str,
+                    default='ryan',
+                    help='sender/receiver name')
+parser.add_argument('--mail-sender',
+                    type=str,
+                    default='ryan@foxmail.com',
+                    help='sender email address')
+parser.add_argument('--mail-license',
+                    type=str,
+                    default='aaabbbccc',
+                    help='sender email key')
+parser.add_argument('--mail-receivers',
+                    type=str,
+                    default='ryan@foxmail.com',
+                    help='receiver email address')
+args = parser.parse_args()
+
+profiles = dict(running=ast.literal_eval(args.cfg), lost=dict(), ended=dict())
+
+overview = ret_overview(profiles)
+print('\n' + overview)
+
+if args.if_email:
+    from send_email import send_email_silent
+
+    email_cfg = dict(mail_host=args.mail_host,
+                     name=args.mail_name,
+                     mail_sender=args.mail_sender,
+                     mail_license=args.mail_license,
+                     mail_receivers=args.mail_receivers,
+                     subject_content=f'Automatic PID Check @ {args.monitor}')
+    send_email_silent(body_content=overview, **email_cfg)
+    latest_email_timestamp = time.time()
+
 while True:
-    print(f"\nStart: [{time.strftime('%H:%M', time.localtime())}]")
-
-    lost_hosts = []
-    for exp_name, profile in profiles.items():
+    profiles_backup = copy.deepcopy(profiles)
+    for exp_name, profile in profiles_backup['running'].items():
         host = profile['host']
-        host_profile = hosts[host]
-        if host in lost_hosts:
-            print(f'Skip: [{exp_name}]')
-            continue
-
-        if_local = (True if ('if_local' in host_profile
-                             and host_profile['if_local']) else False)
-
-        login_info = f"{host_profile['user']}@{host}"
-        if not if_local:
-            if_connected = check_connection(
-                login_info=login_info,
-                port=22,
-            )
-            if not if_connected:
-                warn_info = f'CONNECTION LOST: [{login_info}]'
-                print(warn_info)
-                lost_hosts.append(host)
-                if if_email and (not if_emailed[exp_name]):
-                    send_email_silent(
-                        body_content=warn_info,
-                        **cfg['email_cfg'],
-                    )
-                    if_emailed[exp_name] = True
-                continue
-
         pid = profile['pid']
-        if_running = check_pid(
-            login_info=login_info,
-            pid=pid,
-            port=22,
-            if_local=if_local,
-        )
-        if if_running:
-            print(f'Running: [{host}] - [{exp_name}]')
-            if_emailed[exp_name] = False
 
-        else:
-            warn_info = f'PID NOT FOUND: [{host}] - [{exp_name}]'
-            print(warn_info)
-            if if_email and (not if_emailed[exp_name]):
-                send_email_silent(
-                    body_content=warn_info,
-                    **cfg['email_cfg'],
-                )
-                if_emailed[exp_name] = True
+        # SSH connection check
+        login_info = host
+        if_local = True if host == args.monitor else False
+        if not if_local:
+            if_connected = check_connection(login_info=login_info)
+            if not if_connected:
+                profiles['lost'][exp_name] = profile
+                del profiles['running'][exp_name]
+                continue  # skip checking
 
-    normal_gap = int(time.time() - last_time_stamp)
-    if if_email and normal_gap > regular_send_time_step:
-        send_email_silent(
-            body_content='Checking normally.',
-            **cfg['email_cfg'],
-        )
-    last_time_stamp = time.time()
+        # PID check
+        if_running = check_pid(login_info=login_info,
+                               pid=pid,
+                               if_local=if_local)
+        if not if_running:
+            profiles['ended'][exp_name] = profile
+            del profiles['running'][exp_name]
 
-    print(f'Sleep for {time_step:d}s: '
-          f"[{time.strftime('%H:%M', time.localtime())}]")
-    time.sleep(time_step)
+    # report
+    if profiles != profiles_backup:  # something changed
+        overview = ret_overview(profiles)
+        print('\n' + overview)
+        send_email_silent(body_content=overview, **email_cfg)
+        latest_email_timestamp = time.time()
+    else:
+        email_gap = int(time.time() - latest_email_timestamp)
+        if args.if_email and email_gap > args.regular_report_inter_sec:
+            overview = ret_overview(profiles)
+            print('\n' + overview)
+            send_email_silent(body_content=overview, **email_cfg)
+            latest_email_timestamp = time.time()
+
+    time.sleep(args.check_inter_sec)
 ```
+
+调整「main.py」的参数，直接运行「main.py」即可。重要参数解释：
+
+- `monitor`：运行该检查程序的服务器名称。如果待查程序正好位于该服务器上，则无需 SSH，否则需要 SSH。
+- `cfg`：按照字典格式，将待查程序的实验名称、所在服务器、以及 PID（选择一个进程的 PID 就行）记录为字符串。
+- `mail-license`：邮箱授权码。
+
+逻辑：
+
+1. 解析 `cfg`，得到待查程序字典。将待查字典发送邮件。
+2. 通过检查 PID 状态来判断程序运行情况。需要借助 SSH 连接其他服务器。
+3. 每 `check-inter-sec` 秒查一次。如果有异常，发送邮箱，否则静默。
+4. 如果距离上一次发邮件超过 `regular-report-inter-sec` 秒，发送一封报平安邮件。
