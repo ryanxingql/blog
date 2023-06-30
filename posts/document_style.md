@@ -51,11 +51,11 @@
 （3）尊重专有名词的原有大小写。
 
 > 我在使用 GitHub/LaTeX/BibTeX。
->
+
 > 我在使用 VS Code。
->
+
 > 我在使用 iPad/iPhone/iOS/iCloud/macOS。
->
+
 > 我在使用 dblp/tmux。
 
 如果专有名词出现在英文句首，首字母必须大写。
@@ -64,23 +64,31 @@
 
 ## 代码
 
-（1）文件名使用引号括起，表示是一个整体。
+（1）文件名、变量名、变量值等代码成分作为行内代码处理。注意行内代码前后使用一个空格与正文（除标点符号外）隔开。
 
-> Please refer to "README.md".
->
-> 请参见「README.md」。
+示例代码：
 
-（2）变量名、变量值等代码成分作为行内代码处理。注意行内代码前后使用一个空格与正文（除标点符号外）隔开。
+```markdown
+Please refer to `models/__init__.py`.
+```
 
-> 参考代码：
->
-> ```markdown
+渲染效果：
+
+> Please refer to `models/__init__.py`.
+
+如果不使用行内代码，这里的 `__init__` 可能会被编译为对「init」加粗。
+
+示例代码：
+
+```markdown
+函数 `func_demo` 输出值 `1`。
+```
+
+渲染效果：
+
 > 函数 `func_demo` 输出值 `1`。
-> ```
->
-> 渲染效果：函数 `func_demo` 输出值 `1`。
 
-（3）指令前不使用美元符号。
+（2）指令前不使用美元符号。
 
 > 请执行 `python main.py`。
 
@@ -92,24 +100,28 @@
 
 （1）通常使用链接功能即可。
 
-> 参考代码：
->
-> ```markdown
+示例代码：
+
+```markdown
+参见我的 [GitHub](https://github.com/ryanxingql)。
+```
+
+渲染效果：
+
 > 参见我的 [GitHub](https://github.com/ryanxingql)。
-> ```
->
-> 渲染效果：参见我的 [GitHub](https://github.com/ryanxingql)。
 
 （2）如果链接需要进一步解释，如文献名称，则使用脚注。
 
-> 参考代码：
->
-> ```markdown
+示例代码：
+
+```markdown
+MFQEv2 数据库[^mfqev2]是一个常用的数据库。
+
+[^mfqev2]: *MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video*, 2019.
+```
+
+渲染效果：
+
 > MFQEv2 数据库[^mfqev2]是一个常用的数据库。
->
-> [^mfqev2]: *MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video*, 2019.
-> ```
->
-> 渲染效果：MFQEv2 数据库[^mfqev2]是一个常用的数据库。
 
 [^mfqev2]: *MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video*, 2019.
