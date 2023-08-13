@@ -9,7 +9,7 @@ from os import devnull
 @contextmanager
 def suppress_stdout_stderr():
     """A context manager that redirects stdout and stderr to devnull."""
-    with open(devnull, 'w') as fnull:
+    with open(devnull, "w") as fnull:
         with redirect_stderr(fnull) as err, redirect_stdout(fnull) as out:
             yield (err, out)
 
@@ -23,14 +23,14 @@ def send_email(
     subject_content,
     body_content,
 ):
-    mm = MIMEMultipart('related')
+    mm = MIMEMultipart("related")
 
-    mm['From'] = f'{name}<{mail_sender}>'
-    mm['To'] = f'{name}<{mail_receivers}>'
+    mm["From"] = f"{name}<{mail_sender}>"
+    mm["To"] = f"{name}<{mail_receivers}>"
 
-    mm['Subject'] = Header(subject_content, 'utf-8')
+    mm["Subject"] = Header(subject_content, "utf-8")
 
-    message_text = MIMEText(body_content, 'plain', 'utf-8')
+    message_text = MIMEText(body_content, "plain", "utf-8")
     mm.attach(message_text)
 
     stp = smtplib.SMTP()
@@ -74,13 +74,13 @@ def send_email_silent(
         )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     send_email_silent(
-        mail_host='smtp.qq.com',
-        name='ryan',
-        mail_sender='ryan@foxmail.com',
-        mail_license='aaabbbccc',
-        mail_receivers='ryan@foxmail.com',
-        subject_content='Test',
-        body_content='Test.',
+        mail_host="smtp.qq.com",
+        name="ryan",
+        mail_sender="ryan@foxmail.com",
+        mail_license="aaabbbccc",
+        mail_receivers="ryan@foxmail.com",
+        subject_content="Test",
+        body_content="Test.",
     )
