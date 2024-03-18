@@ -57,8 +57,10 @@ graph LR
 如果将三种图像视为随机变量，上述关系表明，在压缩图像这一条件下，原始图像和增强图像是独立的：
 
 $$
-p(\text{原始}, \text{增强} | \text{压缩}) \!=\! \underbrace{p(\text{原始} | \text{压缩}) \!\cdot\! p(\text{增强} | \text{原始}, \text{压缩})}_{\text{Chain rule}} \!=\! \underbrace{p(\text{原始} | \text{压缩}) \!\cdot\! p(\text{增强} | \text{压缩})}_{\text{Causality}}
+p(\text{原始}, \text{增强} | \text{压缩}) = p(\text{原始} | \text{压缩}) \cdot p(\text{增强} | \text{原始}, \text{压缩}) = p(\text{原始} | \text{压缩}) \cdot p(\text{增强} | \text{压缩})
 $$
+
+> 前者是因为链式法则，后者是因为因果关系。
 
 因此，将压缩图像引入 GANs 鉴别器将允许鉴别器分辨两个条件独立的变量，而非两个相关变量。这种改变有可能改善模式坍塌问题。
 
