@@ -97,6 +97,6 @@ $$
 
 [^dualformer]: On the Effectiveness of Spectral Discriminators for Perceptual Quality Improvement. ICCV 2023.
 
-[^triangle]:, 理论上需要满足三角不等式。但实践中均满足。
+[^triangle]: 理论上需满足三角不等式。实践中均满足。
 
 [^hific]: High-Fidelity Generative Image Compression, NeurIPS 2020.
