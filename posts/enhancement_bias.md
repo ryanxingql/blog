@@ -33,7 +33,7 @@
 
 进一步，作者通过三角图表测量并描绘了压缩图像、原始图像和增强图像集之间的 FID 差异[^triangle]，并量化了顶点相对于底边中心的偏移量：
 
-<img src="assets/enhancement_bias/observation_triangles.png" width="50%">
+<img src="assets/enhancement_bias/observation_triangles.png" width="60%">
 
 如图所示，增强图像集与压缩图像集的相似度较高，反映出增强仍有提升空间。
 
@@ -74,7 +74,7 @@ $$
 
 此外，作者还试图在训练中引入关于原始-压缩差异的先验知识。当增强-压缩差异小于原始-压缩差异时，网络被损失函数引导以扩大差异。
 
-<img src="assets/enhancement_bias/method_difference.png" width="50%">
+<img src="assets/enhancement_bias/method_difference.png" width="60%">
 
 引入损失函数后，如图所示，增强-压缩差异趋近于原始-压缩差异，而之前通常情况下，前者小于后者。
 
@@ -82,13 +82,13 @@ $$
 
 实验结果证实，改善压缩偏置后，生成质量（以 FID 为例）有显著提高：
 
-<img src="assets/enhancement_bias/fig1.png" width="50%">
+<img src="assets/enhancement_bias/fig1.png" width="60%">
 
 图中展示，改善后的 Real-ESRGAN 在 FID 指标上（8.77）优于增强前（9.73），FID 值越低代表生成质量越高。有意思的是，改善前的 Real-ESRGAN 在 FID 指标上仅达到 10.58，不如增强前水平。
 
 <img src="assets/enhancement_bias/fig1_residual.png" width="60%">
 
-图中显示，改善后的 Real-ESRGAN 生成了更多细节。
+图中显示的是压缩图像以及与压缩图像的残差图。可见，改善后的 Real-ESRGAN 生成了更多细节，与原始图像更为接近。
 
 尽管如此，本文的局限性在于：
 
