@@ -117,11 +117,11 @@ Please refer to `models/__init__.py`.
 ```markdown
 MFQEv2 数据库[^mfqev2]是一个常用的数据库。
 
-[^mfqev2]: *MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video*, 2019.
+[^mfqev2]: MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video. TPAMI 2019.
 ```
 
 渲染效果：
 
 > MFQEv2 数据库[^mfqev2]是一个常用的数据库。
 
-[^mfqev2]: *MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video*, 2019.
+[^mfqev2]: MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video. TPAMI 2019.

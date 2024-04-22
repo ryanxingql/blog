@@ -99,4 +99,4 @@ $$
 
 [^triangle]: 理论上需满足三角不等式。实践中均满足。
 
-[^hific]: High-Fidelity Generative Image Compression, NeurIPS 2020.
+[^hific]: High-Fidelity Generative Image Compression. NeurIPS 2020.
